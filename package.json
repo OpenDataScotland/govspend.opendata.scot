@@ -1,0 +1,17 @@
+{
+  "name": "govspend.opendata.scot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:eleventy": "eleventy --serve",
+    "build:eleventy": "eleventy",
+    "build": "npm run build:eleventy"
+  },
+  "keywords": [],
+  "author": "Open Data Scotland",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
