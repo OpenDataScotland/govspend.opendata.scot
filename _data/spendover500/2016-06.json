@@ -1,0 +1,386 @@
+[
+    {
+        "Directorate":"DIRECTORATE FOR AGRICULTURE,FOOD & RURAL COMM",
+        "Merchant Name":"R H A S S",
+        "Merchant Code Description":"ORGANISATIONS, CHARITABLE AND SOCIAL SERVICES",
+        "Financial Transaction Date":"09\/06\/2016",
+        "Financial Transaction Amount (£)":727.0,
+        "Expense Description":"External event - fees"
+    },
+    {
+        "Directorate":"DIRECTORATE FOR AGRICULTURE,FOOD & RURAL COMM",
+        "Merchant Name":"4IMPRINT",
+        "Merchant Code Description":"DIRECT MARKETING-OTHER DIRECT MARKETERS\/NOT ELSEW.",
+        "Financial Transaction Date":"07\/06\/2016",
+        "Financial Transaction Amount (£)":754.62,
+        "Expense Description":"External event - promotional material"
+    },
+    {
+        "Directorate":"DIRECTORATE FOR AGRICULTURE,FOOD & RURAL COMM",
+        "Merchant Name":"CJS DIRECT LTD",
+        "Merchant Code Description":"BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
+        "Financial Transaction Date":"01\/06\/2016",
+        "Financial Transaction Amount (£)":2227.68,
+        "Expense Description":"Specialist laboratory equipment"
+    },
+    {
+        "Directorate":"DIRECTORATE FOR AGRICULTURE,FOOD & RURAL COMM",
+        "Merchant Name":"ISAE2016LTD",
+        "Merchant Code Description":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
+        "Financial Transaction Date":"08\/06\/2016",
+        "Financial Transaction Amount (£)":642.0,
+        "Expense Description":"External conference - fees"
+    },
+    {
+        "Directorate":"DIRECTORATE FOR AGRICULTURE,FOOD & RURAL COMM",
+        "Merchant Name":"MOUNTAIN SUPPLIES",
+        "Merchant Code Description":"SPORTING GOODS STORES",
+        "Financial Transaction Date":"03\/06\/2016",
+        "Financial Transaction Amount (£)":963.9,
+        "Expense Description":"Specialist protective clothing"
+    },
+    {
+        "Directorate":"DIRECTORATE FOR AGRICULTURE,FOOD & RURAL COMM",
+        "Merchant Name":"ARNOLD CLARK CAR & VAN",
+        "Merchant Code Description":"AUTOMOBILE RENTAL AGENCY-NOT ELSEWHERE CLASSIFIED",
+        "Financial Transaction Date":"06\/06\/2016",
+        "Financial Transaction Amount (£)":561.79,
+        "Expense Description":"Car hire"
+    },
+    {
+        "Directorate":"DIRECTORATE FOR AGRICULTURE,FOOD & RURAL COMM",
+        "Merchant Name":"ENTERPRISE",
+        "Merchant Code Description":"ENTERPRISE RENT-A-CAR",
+        "Financial Transaction Date":"09\/06\/2016",
+        "Financial Transaction Amount (£)":597.6,
+        "Expense Description":"Car hire"
+    },
+    {
+        "Directorate":"DIRECTORATE FOR AGRICULTURE,FOOD & RURAL COMM",
+        "Merchant Name":"SPECTRUM COMPUTERS LTD",
+        "Merchant Code Description":"COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Financial Transaction Date":"23\/06\/2016",
+        "Financial Transaction Amount (£)":584.03,
+        "Expense Description":"IT consumables"
+    },
+    {
+        "Directorate":"DIRECTORATE FOR AGRICULTURE,FOOD & RURAL COMM",
+        "Merchant Name":"SPECTRUM COMPUTERS LTD",
+        "Merchant Code Description":"COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Financial Transaction Date":"01\/06\/2016",
+        "Financial Transaction Amount (£)":770.28,
+        "Expense Description":"IT consumables"
+    },
+    {
+        "Directorate":"DIRECTORATE FOR CHIEF NURSING OFFICER",
+        "Merchant Name":"SPECTRUM COMPUTERS LTD",
+        "Merchant Code Description":"COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Financial Transaction Date":"22\/06\/2016",
+        "Financial Transaction Amount (£)":1115.14,
+        "Expense Description":"IT consumables"
+    },
+    {
+        "Directorate":"DIRECTORATE FOR DIGITAL",
+        "Merchant Name":"DIGICERT INC",
+        "Merchant Code Description":"BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
+        "Financial Transaction Date":"22\/06\/2016",
+        "Financial Transaction Amount (£)":984.19,
+        "Expense Description":"Ssl web certificate for Skype for business server"
+    },
+    {
+        "Directorate":"DIRECTORATE FOR DIGITAL",
+        "Merchant Name":"HARVEST",
+        "Merchant Code Description":"COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Financial Transaction Date":"27\/06\/2016",
+        "Financial Transaction Amount (£)":828.0,
+        "Expense Description":"Professional subscription - fees"
+    },
+    {
+        "Directorate":"DIRECTORATE FOR DIGITAL",
+        "Merchant Name":"EB UX SCOTLAND 2016",
+        "Merchant Code Description":"BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
+        "Financial Transaction Date":"02\/06\/2016",
+        "Financial Transaction Amount (£)":955.2,
+        "Expense Description":"External conference - fees"
+    },
+    {
+        "Directorate":"DIRECTORATE FOR DIGITAL",
+        "Merchant Name":"AMAZON WEB SERVICES",
+        "Merchant Code Description":"BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
+        "Financial Transaction Date":"03\/06\/2016",
+        "Financial Transaction Amount (£)":4235.99,
+        "Expense Description":"Mygov.scot - web hosting - June 2016"
+    },
+    {
+        "Directorate":"DIRECTORATE FOR HEALTH PERFORMANCE & DELIVERY",
+        "Merchant Name":"SPECTRUM COMPUTERS LTD",
+        "Merchant Code Description":"COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Financial Transaction Date":"27\/06\/2016",
+        "Financial Transaction Amount (£)":553.43,
+        "Expense Description":"IT consumables"
+    },
+    {
+        "Directorate":"DIRECTORATE FOR HOUSING AND SOCIAL JUSTICE",
+        "Merchant Name":"SODEXO LTD",
+        "Merchant Code Description":"EATING PLACES, RESTAURANTS",
+        "Financial Transaction Date":"28\/06\/2016",
+        "Financial Transaction Amount (£)":597.6,
+        "Expense Description":"Catering"
+    },
+    {
+        "Directorate":"DIRECTORATE FOR HOUSING AND SOCIAL JUSTICE",
+        "Merchant Name":"SODEXO LTD",
+        "Merchant Code Description":"EATING PLACES, RESTAURANTS",
+        "Financial Transaction Date":"07\/06\/2016",
+        "Financial Transaction Amount (£)":525.18,
+        "Expense Description":"Catering"
+    },
+    {
+        "Directorate":"DIRECTORATE FOR HOUSING AND SOCIAL JUSTICE",
+        "Merchant Name":"SODEXO LTD",
+        "Merchant Code Description":"EATING PLACES, RESTAURANTS",
+        "Financial Transaction Date":"02\/06\/2016",
+        "Financial Transaction Amount (£)":568.56,
+        "Expense Description":"Catering"
+    },
+    {
+        "Directorate":"DIRECTORATE FOR LEGAL SERVICES",
+        "Merchant Name":"AM.UK XING GTD MASTE",
+        "Merchant Code Description":"THEATRICAL PRODUCERS(EXCL MOTION PIX),TICKET AGENCY",
+        "Financial Transaction Date":"02\/06\/2016",
+        "Financial Transaction Amount (£)":540.0,
+        "Expense Description":"External training course – fees"
+    },
+    {
+        "Directorate":"DIRECTORATE FOR LEGAL SERVICES",
+        "Merchant Name":"SPECTRUM COMPUTERS LTD",
+        "Merchant Code Description":"COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Financial Transaction Date":"21\/06\/2016",
+        "Financial Transaction Amount (£)":780.78,
+        "Expense Description":"IT consumables"
+    },
+    {
+        "Directorate":"DIRECTORATE FOR LOCAL GOVERNMENT & COMMUNITIES",
+        "Merchant Name":"SCOTTISH EXHIBITION CE",
+        "Merchant Code Description":"PROFESSIONAL SERVICES-NOT ELSEWHERE CLASSIFIED",
+        "Financial Transaction Date":"14\/06\/2016",
+        "Financial Transaction Amount (£)":564.31,
+        "Expense Description":"Specialist IT equipment"
+    },
+    {
+        "Directorate":"DIRECTORATE FOR POPULATION HEALTH",
+        "Merchant Name":"SODEXO LTD",
+        "Merchant Code Description":"EATING PLACES, RESTAURANTS",
+        "Financial Transaction Date":"06\/06\/2016",
+        "Financial Transaction Amount (£)":607.2,
+        "Expense Description":"Catering"
+    },
+    {
+        "Directorate":"FINANCE DIRECTORATE",
+        "Merchant Name":"MR MEMORY",
+        "Merchant Code Description":"ELECTRONIC SALES",
+        "Financial Transaction Date":"22\/06\/2016",
+        "Financial Transaction Amount (£)":2880.0,
+        "Expense Description":"IT consumables"
+    },
+    {
+        "Directorate":"FINANCE DIRECTORATE",
+        "Merchant Name":"MR MEMORY",
+        "Merchant Code Description":"ELECTRONIC SALES",
+        "Financial Transaction Date":"21\/06\/2016",
+        "Financial Transaction Amount (£)":4000.0,
+        "Expense Description":"IT consumables"
+    },
+    {
+        "Directorate":"FINANCE DIRECTORATE",
+        "Merchant Name":"MR MEMORY",
+        "Merchant Code Description":"ELECTRONIC SALES",
+        "Financial Transaction Date":"21\/06\/2016",
+        "Financial Transaction Amount (£)":1575.2,
+        "Expense Description":"IT consumables"
+    },
+    {
+        "Directorate":"INSPECTORATE OF PROSECUTIONS",
+        "Merchant Name":"ABBEYCONFERENCE.COM",
+        "Merchant Code Description":"TRAVEL AGENCIES AND TOUR OPERATORS",
+        "Financial Transaction Date":"16\/06\/2016",
+        "Financial Transaction Amount (£)":736.57,
+        "Expense Description":"External conference - fees"
+    },
+    {
+        "Directorate":"MARINE SCOTLAND",
+        "Merchant Name":"SALLY WATER TRAINING",
+        "Merchant Code Description":"CLUBS-CNTRY,MBRSHIP(ATHLET,REC,SPRTS,PRIVATE GOLF",
+        "Financial Transaction Date":"28\/06\/2016",
+        "Financial Transaction Amount (£)":750.0,
+        "Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"MARINE SCOTLAND",
+        "Merchant Name":"WWW.THERMOMETER-POINT.",
+        "Merchant Code Description":"INDUSTRIAL SUPPLIES NOT ELSEWHERE CLASSIFIED",
+        "Financial Transaction Date":"22\/06\/2016",
+        "Financial Transaction Amount (£)":794.34,
+        "Expense Description":"Specialist laboratory equipment"
+    },
+    {
+        "Directorate":"MARINE SCOTLAND",
+        "Merchant Name":"OCEAN SCIENTIFIC INTL",
+        "Merchant Code Description":"MISCELLANEOUS AND SPECIALTY RETAIL STORES",
+        "Financial Transaction Date":"17\/06\/2016",
+        "Financial Transaction Amount (£)":1164.0,
+        "Expense Description":"Specialist laboratory equipment"
+    },
+    {
+        "Directorate":"MARINE SCOTLAND",
+        "Merchant Name":"WWW.DTAPUBLICATIONS.CO",
+        "Merchant Code Description":"ORGANISATIONS, MEMBERSHIP-NOT ELSEWHERE CLASSIFIED",
+        "Financial Transaction Date":"09\/06\/2016",
+        "Financial Transaction Amount (£)":4212.0,
+        "Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"MARINE SCOTLAND",
+        "Merchant Name":"WWW.THEHUBEVENTS.COM",
+        "Merchant Code Description":"CONSULTING, MANAGEMENT, AND PUBLIC RELATIONS SVCS",
+        "Financial Transaction Date":"02\/06\/2016",
+        "Financial Transaction Amount (£)":594.0,
+        "Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"MARINE SCOTLAND",
+        "Merchant Name":"IMPROVE INTERNATIONAL",
+        "Merchant Code Description":"BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
+        "Financial Transaction Date":"21\/06\/2016",
+        "Financial Transaction Amount (£)":1290.0,
+        "Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"MARINE SCOTLAND",
+        "Merchant Name":"LION LABORATORIES LTD",
+        "Merchant Code Description":"DENTAL\/LAB\/MED\/OPHTHALMIC HOSP EQUIP & SUPPLIES",
+        "Financial Transaction Date":"21\/06\/2016",
+        "Financial Transaction Amount (£)":1162.39,
+        "Expense Description":"Vessel safety equipment"
+    },
+    {
+        "Directorate":"MARINE SCOTLAND",
+        "Merchant Name":"RS COMPONENTS",
+        "Merchant Code Description":"ELECTRICAL PARTS AND EQUIPMENT",
+        "Financial Transaction Date":"21\/06\/2016",
+        "Financial Transaction Amount (£)":505.57,
+        "Expense Description":"Specialist laboratory equipment"
+    },
+    {
+        "Directorate":"MARINE SCOTLAND",
+        "Merchant Name":"AMAZON EU",
+        "Merchant Code Description":"DIRECT MARKETING-OTHER DIRECT MARKETERS\/NOT ELSEW.",
+        "Financial Transaction Date":"21\/06\/2016",
+        "Financial Transaction Amount (£)":743.75,
+        "Expense Description":"Specialist IT equipment"
+    },
+    {
+        "Directorate":"MARINE SCOTLAND",
+        "Merchant Name":"KE-BURGMANN UK",
+        "Merchant Code Description":"BUILDING MATERIALS, LUMBER STORES",
+        "Financial Transaction Date":"17\/06\/2016",
+        "Financial Transaction Amount (£)":1315.1,
+        "Expense Description":"Vessel engineering spares"
+    },
+    {
+        "Directorate":"MARINE SCOTLAND",
+        "Merchant Name":"WJ ELECTRICAL SUPPS LT",
+        "Merchant Code Description":"HOUSEHOLD APPLIANCE STORES",
+        "Financial Transaction Date":"07\/06\/2016",
+        "Financial Transaction Amount (£)":812.4,
+        "Expense Description":"Vessel engineering spares"
+    },
+    {
+        "Directorate":"MARINE SCOTLAND",
+        "Merchant Name":"AM BIRLINN",
+        "Merchant Code Description":"EATING PLACES, RESTAURANTS",
+        "Financial Transaction Date":"16\/06\/2016",
+        "Financial Transaction Amount (£)":790.0,
+        "Expense Description":"External catering - fees"
+    },
+    {
+        "Directorate":"MARINE SCOTLAND",
+        "Merchant Name":"SMARTTRANSFERS SCOTL",
+        "Merchant Code Description":"COMPUTER SOFTWARE STORES",
+        "Financial Transaction Date":"10\/06\/2016",
+        "Financial Transaction Amount (£)":635.0,
+        "Expense Description":"External travel - fees"
+    },
+    {
+        "Directorate":"MARINE SCOTLAND",
+        "Merchant Name":"WWW.ARCHER-YATES.CO.UK",
+        "Merchant Code Description":"BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
+        "Financial Transaction Date":"07\/06\/2016",
+        "Financial Transaction Amount (£)":864.0,
+        "Expense Description":"External conference - fees"
+    },
+    {
+        "Directorate":"MARINE SCOTLAND",
+        "Merchant Name":"WWW.POWERHOUSEDIRECT.C",
+        "Merchant Code Description":"NONDURABLE GOODS (NOT ELSEWHERE CLASSIFIED)",
+        "Financial Transaction Date":"26\/06\/2016",
+        "Financial Transaction Amount (£)":584.97,
+        "Expense Description":"Vessel equipment"
+    },
+    {
+        "Directorate":"MARINE SCOTLAND",
+        "Merchant Name":"RESIDENCE INN",
+        "Merchant Code Description":"RESIDENCE INN",
+        "Financial Transaction Date":"04\/06\/2016",
+        "Financial Transaction Amount (£)":531.26,
+        "Expense Description":"External accommodation - fees"
+    },
+    {
+        "Directorate":"MARINE SCOTLAND",
+        "Merchant Name":"WATERFRONT FISHOUSE RE",
+        "Merchant Code Description":"EATING PLACES, RESTAURANTS",
+        "Financial Transaction Date":"15\/06\/2016",
+        "Financial Transaction Amount (£)":788.65,
+        "Expense Description":"External catering - fees"
+    },
+    {
+        "Directorate":"MARINE SCOTLAND",
+        "Merchant Name":"SPECTRUM COMPUTERS LTD",
+        "Merchant Code Description":"COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Financial Transaction Date":"23\/06\/2016",
+        "Financial Transaction Amount (£)":630.02,
+        "Expense Description":"IT consumables"
+    },
+    {
+        "Directorate":"MINISTERIAL PORTFOLIOS",
+        "Merchant Name":"SODEXO, SCOTTISH PARLI",
+        "Merchant Code Description":"CATERERS",
+        "Financial Transaction Date":"07\/06\/2016",
+        "Financial Transaction Amount (£)":1393.5,
+        "Expense Description":"Catering"
+    },
+    {
+        "Directorate":"MINISTERIAL PORTFOLIOS",
+        "Merchant Name":"SPECTRUM COMPUTERS LTD",
+        "Merchant Code Description":"COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Financial Transaction Date":"01\/06\/2016",
+        "Financial Transaction Amount (£)":599.06,
+        "Expense Description":"IT consumables"
+    },
+    {
+        "Directorate":"PEOPLE DIRECTORATE",
+        "Merchant Name":"ROSPA",
+        "Merchant Code Description":"DIRECT MARKETING-CATALOG MERCHANTS",
+        "Financial Transaction Date":"02\/06\/2016",
+        "Financial Transaction Amount (£)":552.0,
+        "Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"SCOTTISH PROCUREMENT & COMMERCIAL DIRECTORATE",
+        "Merchant Name":"PAYPAL ATTACAT LTD",
+        "Merchant Code Description":"ADVERTISING SERVICES",
+        "Financial Transaction Date":"08\/06\/2016",
+        "Financial Transaction Amount (£)":1497.6,
+        "Expense Description":"External training course - fees"
+    }
+]

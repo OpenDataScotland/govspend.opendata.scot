@@ -1,0 +1,524 @@
+[
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"Arnold Clark Car & Van",
+        "Merchant Code Description":"Automobile rental agency - not elsewhere classified",
+        "Transaction Date":"06\/06\/2017",
+        "Transaction Amount":1693.78,
+        "Expense Description":"Vehicle hire",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"Banner Group LTD",
+        "Merchant Code Description":"Office, school supply & stationery stores",
+        "Transaction Date":"22\/06\/2017",
+        "Transaction Amount":647.85,
+        "Expense Description":"IT consumables",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"Banner Group LTD",
+        "Merchant Code Description":"Office, school supply & stationery stores",
+        "Transaction Date":"09\/06\/2017",
+        "Transaction Amount":578.81,
+        "Expense Description":"IT consumables",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"Banner Group LTD",
+        "Merchant Code Description":"Office, school supply & stationery stores",
+        "Transaction Date":"26\/06\/2017",
+        "Transaction Amount":510.41,
+        "Expense Description":"IT consumables",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"Enterprise",
+        "Merchant Code Description":"Enterprise rent-a-car",
+        "Transaction Date":"09\/06\/2017",
+        "Transaction Amount":588.0,
+        "Expense Description":"Vehicle hire",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"Enterprise",
+        "Merchant Code Description":"Enterprise rent-a-car",
+        "Transaction Date":"06\/06\/2017",
+        "Transaction Amount":588.0,
+        "Expense Description":"Vehicle hire",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"Enterprise",
+        "Merchant Code Description":"Enterprise rent-a-car",
+        "Transaction Date":"20\/06\/2017",
+        "Transaction Amount":588.0,
+        "Expense Description":"Vehicle hire",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"Enterprise",
+        "Merchant Code Description":"Enterprise rent-a-car",
+        "Transaction Date":"26\/06\/2017",
+        "Transaction Amount":588.0,
+        "Expense Description":"Vehicle hire",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"Ilasco LTD",
+        "Merchant Code Description":"Childrens and infant's wear stores",
+        "Transaction Date":"01\/06\/2017",
+        "Transaction Amount":530.96,
+        "Expense Description":"Personal Protective Equipment - clothing",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"Panasonic MA",
+        "Merchant Code Description":"Computer programming, data processing, integrated systems design services",
+        "Transaction Date":"14\/06\/2017",
+        "Transaction Amount":1064.9,
+        "Expense Description":"Specialist equipment - GPS accessories",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"Sweetcow LTD",
+        "Merchant Code Description":"Computers, computer peripheral equipment & software",
+        "Transaction Date":"02\/06\/2017",
+        "Transaction Amount":4367.39,
+        "Expense Description":"IT equipment",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"Irm UK Strategic",
+        "Merchant Code Description":"Consulting, management & public relations services",
+        "Transaction Date":"21\/06\/2017",
+        "Transaction Amount":3091.5,
+        "Expense Description":"External conference - fees",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"Amazon EU",
+        "Merchant Code Description":"Direct marketing - other direct marketers\/not elsewhere classified",
+        "Transaction Date":"01\/06\/2017",
+        "Transaction Amount":649.36,
+        "Expense Description":"Photographic consumables",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"Bedifol GMBH",
+        "Merchant Code Description":"Miscellaneous & specialty retail stores",
+        "Transaction Date":"19\/06\/2017",
+        "Transaction Amount":584.28,
+        "Expense Description":"Specialist equipment - GPS accessories",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Chief Medical Officer",
+        "Merchant Name":"Banner Group LTD",
+        "Merchant Code Description":"Office, school supply & stationery stores",
+        "Transaction Date":"09\/06\/2017",
+        "Transaction Amount":680.77,
+        "Expense Description":"IT consumables",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Chief Medical Officer",
+        "Merchant Name":"Sodexo LTD",
+        "Merchant Code Description":"Eating places, restaurants",
+        "Transaction Date":"26\/06\/2017",
+        "Transaction Amount":815.18,
+        "Expense Description":"Catering",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Communications & Ministerial Support",
+        "Merchant Name":"Lyreco UK LTD",
+        "Merchant Code Description":"Office, school supply & stationery stores",
+        "Transaction Date":"01\/06\/2017",
+        "Transaction Amount":507.6,
+        "Expense Description":"Stationery",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Communications & Ministerial Support",
+        "Merchant Name":"Lyreco UK LTD",
+        "Merchant Code Description":"Office, school supply & stationery stores",
+        "Transaction Date":"21\/06\/2017",
+        "Transaction Amount":679.06,
+        "Expense Description":"Stationery",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Communications & Ministerial Support",
+        "Merchant Name":"Rolec services LTD",
+        "Merchant Code Description":"Electrical parts & equipment",
+        "Transaction Date":"31\/05\/2017",
+        "Transaction Amount":1800.0,
+        "Expense Description":"Building equipment",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Communications & Ministerial Support",
+        "Merchant Name":"WWW.VIKING-DIRECT.CO.U",
+        "Merchant Code Description":"Stationery, office supplies, printing & writing paper",
+        "Transaction Date":"09\/06\/2017",
+        "Transaction Amount":659.88,
+        "Expense Description":"Building equipment",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Digital",
+        "Merchant Name":"Aberdeen & Grampian",
+        "Merchant Code Description":"Attorneys & legal services",
+        "Transaction Date":"20\/06\/2017",
+        "Transaction Amount":888.0,
+        "Expense Description":"External event - fees",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Digital",
+        "Merchant Name":"Amazon Web Services",
+        "Merchant Code Description":"Business services - not elsewhere classified",
+        "Transaction Date":"03\/06\/2017",
+        "Transaction Amount":2684.67,
+        "Expense Description":"Mygov.scot - web service - service charge",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Digital",
+        "Merchant Name":"Harvest",
+        "Merchant Code Description":"Computers, computer peripheral equipment & software",
+        "Transaction Date":"27\/06\/2017",
+        "Transaction Amount":865.25,
+        "Expense Description":"IT - specialist software",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Digital",
+        "Merchant Name":"WWW.TURINGFESTIVALCOM",
+        "Merchant Code Description":"Consulting, management & public relations services",
+        "Transaction Date":"08\/06\/2017",
+        "Transaction Amount":1460.16,
+        "Expense Description":"External conference - fees",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Digital",
+        "Merchant Name":"QD Events LTD",
+        "Merchant Code Description":"Professional services - not elsewhere classified",
+        "Transaction Date":"28\/06\/2017",
+        "Transaction Amount":1440.0,
+        "Expense Description":"External conference - fees",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Energy & Climate Change",
+        "Merchant Name":"INCISIVEMEDIA.COM",
+        "Merchant Code Description":"Miscellaneous publishing & printing",
+        "Transaction Date":"07\/06\/2017",
+        "Transaction Amount":702.0,
+        "Expense Description":"Professional subscription - fees",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Environment & Forestry",
+        "Merchant Name":"Sodexo LTD",
+        "Merchant Code Description":"Eating places, restaurants",
+        "Transaction Date":"07\/06\/2017",
+        "Transaction Amount":872.64,
+        "Expense Description":"Catering",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Environment & Forestry",
+        "Merchant Name":"Favershamho",
+        "Merchant Code Description":"Miscellaneous publishing & printing",
+        "Transaction Date":"19\/06\/2017",
+        "Transaction Amount":758.4,
+        "Expense Description":"External conference - fees",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for External Affairs",
+        "Merchant Name":"Agile Printing CO, INC",
+        "Merchant Code Description":"Stationery, office supplies, printing & writing paper",
+        "Transaction Date":"14\/06\/2017",
+        "Transaction Amount":572.2,
+        "Expense Description":"Publication - marketing - fees",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Fair Work, Employability & Skills",
+        "Merchant Name":"Learning & Work Institute",
+        "Merchant Code Description":"Organizations, charitable & social services",
+        "Transaction Date":"08\/06\/2017",
+        "Transaction Amount":564.0,
+        "Expense Description":"External conference - fees",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Fair Work, Employability & Skills",
+        "Merchant Name":"Learning & Work Institute",
+        "Merchant Code Description":"Organizations, charitable & social services",
+        "Transaction Date":"08\/06\/2017",
+        "Transaction Amount":564.0,
+        "Expense Description":"External conference - fees",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Health Performance & Delivery",
+        "Merchant Name":"BMJ Publishing Group",
+        "Merchant Code Description":"Direct marketing - other direct marketers\/not elsewhere classified",
+        "Transaction Date":"07\/06\/2017",
+        "Transaction Amount":1137.42,
+        "Expense Description":"External conference - fees",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Housing Regeneration",
+        "Merchant Name":"Sodexo LTD",
+        "Merchant Code Description":"Eating places, restaurants",
+        "Transaction Date":"13\/06\/2017",
+        "Transaction Amount":506.82,
+        "Expense Description":"Catering",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Legal Services",
+        "Merchant Name":"Elior Head Office",
+        "Merchant Code Description":"Caterers",
+        "Transaction Date":"12\/06\/2017",
+        "Transaction Amount":2250.0,
+        "Expense Description":"External event - venue hire",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Legal Services",
+        "Merchant Name":"Bankton House Hotel",
+        "Merchant Code Description":"Lodging, hotels, motels, resorts - not elsewhere classified",
+        "Transaction Date":"28\/06\/2017",
+        "Transaction Amount":1128.0,
+        "Expense Description":"External event - venue hire",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Local Government & Communities",
+        "Merchant Name":"Lyreco UK LTD",
+        "Merchant Code Description":"Office, school supply & stationery stores",
+        "Transaction Date":"14\/06\/2017",
+        "Transaction Amount":1116.44,
+        "Expense Description":"Stationery",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Local Government & Communities",
+        "Merchant Name":"Sodexo LTD",
+        "Merchant Code Description":"Eating places, restaurants",
+        "Transaction Date":"21\/06\/2017",
+        "Transaction Amount":719.28,
+        "Expense Description":"Catering",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"City Electrical FA",
+        "Merchant Code Description":"Building materials & lumber stores",
+        "Transaction Date":"19\/06\/2017",
+        "Transaction Amount":588.07,
+        "Expense Description":"Vessel equipment",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"TDC (Aberdeen) LTD",
+        "Merchant Code Description":"Heating, plumbing, air conditioning contractors",
+        "Transaction Date":"12\/06\/2017",
+        "Transaction Amount":543.84,
+        "Expense Description":"Vessel engineering repairs",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"TDC (Aberdeen) LTD",
+        "Merchant Code Description":"Heating, plumbing, air conditioning contractors",
+        "Transaction Date":"19\/06\/2017",
+        "Transaction Amount":1297.8,
+        "Expense Description":"Vessel equipment",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"WWW.LEDISON-LED-LIGHTS",
+        "Merchant Code Description":"Household appliance stores",
+        "Transaction Date":"05\/06\/2017",
+        "Transaction Amount":664.8,
+        "Expense Description":"Vessel engineering equipment",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"WWW.LEDISON-LED-LIGHTS",
+        "Merchant Code Description":"Household appliance stores",
+        "Transaction Date":"20\/06\/2017",
+        "Transaction Amount":562.8,
+        "Expense Description":"Vessel engineering equipment",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Airedale int air",
+        "Merchant Code Description":"Industrial supplier - not elsewhere classified",
+        "Transaction Date":"13\/06\/2017",
+        "Transaction Amount":618.7,
+        "Expense Description":"Vessel equipment",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Alibob at Cairn Omohr",
+        "Merchant Code Description":"Miscellaneous food store - convenience, market, specialty, vending machines",
+        "Transaction Date":"02\/06\/2017",
+        "Transaction Amount":700.0,
+        "Expense Description":"Accommodation - scientific field work",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Alibob at Cairn Omohr",
+        "Merchant Code Description":"Miscellaneous food store - convenience, market, specialty, vending machines",
+        "Transaction Date":"02\/06\/2017",
+        "Transaction Amount":700.0,
+        "Expense Description":"Accommodation - scientific field work",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Ocean Scientific International",
+        "Merchant Code Description":"Miscellaneous & specialty retail stores",
+        "Transaction Date":"02\/06\/2017",
+        "Transaction Amount":685.2,
+        "Expense Description":"Specialist laboratory equipment",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Aberdeen Journals LTD",
+        "Merchant Code Description":"Organizations, membership - not elsewhere classified",
+        "Transaction Date":"01\/06\/2017",
+        "Transaction Amount":883.2,
+        "Expense Description":"Publication - public advert - fees",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Glasgow Angling LTD",
+        "Merchant Code Description":"Sporting good stores",
+        "Transaction Date":"27\/06\/2017",
+        "Transaction Amount":634.94,
+        "Expense Description":"Personal Protective Equipment - clothing",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"WYNVR.CO.UK Holiday Accommodation",
+        "Merchant Code Description":"Travel agencies & tour operators",
+        "Transaction Date":"20\/06\/2017",
+        "Transaction Amount":597.0,
+        "Expense Description":"Accommodation - scientific field work",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"WYNVR.CO.UK Holiday Accommodation",
+        "Merchant Code Description":"Travel agencies & tour operators",
+        "Transaction Date":"21\/06\/2017",
+        "Transaction Amount":1563.0,
+        "Expense Description":"Accommodation - scientific field work",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"WYNVR.CO.UK Holiday Accommodation",
+        "Merchant Code Description":"Travel agencies & tour operators",
+        "Transaction Date":"21\/06\/2017",
+        "Transaction Amount":667.0,
+        "Expense Description":"Accommodation - scientific field work",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"WYNVR.CO.UK Holiday Accommodation",
+        "Merchant Code Description":"Travel agencies & tour operators",
+        "Transaction Date":"02\/06\/2017",
+        "Transaction Amount":1541.0,
+        "Expense Description":"Accommodation - scientific field work",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"WYNVR.CO.UK Holiday Accommodation",
+        "Merchant Code Description":"Travel agencies & tour operators",
+        "Transaction Date":"02\/06\/2017",
+        "Transaction Amount":505.0,
+        "Expense Description":"Accommodation - scientific field work",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Office of the Chief Executive NHS Scotland",
+        "Merchant Name":"Argos Retail Group",
+        "Merchant Code Description":"Discount stores",
+        "Transaction Date":"13\/06\/2017",
+        "Transaction Amount":535.91,
+        "Expense Description":"IT equipment",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Office of the Chief Executive NHS Scotland",
+        "Merchant Name":"Argos Retail Group",
+        "Merchant Code Description":"Discount stores",
+        "Transaction Date":"13\/06\/2017",
+        "Transaction Amount":999.9,
+        "Expense Description":"IT equipment",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Scottish Procurement & Commercial Directorate",
+        "Merchant Name":"University of Nottingham",
+        "Merchant Code Description":"Colleges, universities, professional schools & junior colleges",
+        "Transaction Date":"30\/05\/2017",
+        "Transaction Amount":1190.0,
+        "Expense Description":"External conference - fees",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Scottish Procurement & Commercial Directorate",
+        "Merchant Name":"PMO Conference UK",
+        "Merchant Code Description":"Professional services - not elsewhere classified",
+        "Transaction Date":"07\/06\/2017",
+        "Transaction Amount":600.0,
+        "Expense Description":"External conference - fees",
+        "Unnamed: 6":null
+    },
+    {
+        "Directorate":"Scottish Procurement & Commercial Directorate",
+        "Merchant Name":"Edinburgh Military Tattoo",
+        "Merchant Code Description":"Theatrical producers (excluding motion pictures), ticket agency",
+        "Transaction Date":"01\/06\/2017",
+        "Transaction Amount":540.0,
+        "Expense Description":"External event - venue hire",
+        "Unnamed: 6":null
+    }
+]

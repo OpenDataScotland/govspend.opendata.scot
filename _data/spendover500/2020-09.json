@@ -1,0 +1,650 @@
+[
+    {
+        "Directorate":"Directorate for Agriculture and Rural Economy",
+        "Merchant Name":"WWW.SHEARWELL.CO.UK",
+        "Merchant Category Description":"Miscellaneous & specialty retail stores",
+        "Transaction Date":"17\/09\/2020",
+        "Transaction Amount":"£3,466.08",
+        "Final Expense Description":"Inspection equipment"
+    },
+    {
+        "Directorate":"Directorate for Agriculture and Rural Economy",
+        "Merchant Name":"VSN International",
+        "Merchant Category Description":"Computer Software Stores",
+        "Transaction Date":"07\/09\/2020",
+        "Transaction Amount":"£3,069.60",
+        "Final Expense Description":"Specialist software - renewal"
+    },
+    {
+        "Directorate":"Directorate for Agriculture and Rural Economy",
+        "Merchant Name":"WWW.QA.COM",
+        "Merchant Category Description":"Schools and Educational SVC - Not elsewhere classified",
+        "Transaction Date":"03\/09\/2020",
+        "Transaction Amount":"£1,921.68",
+        "Final Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate for Agriculture and Rural Economy",
+        "Merchant Name":"WWW.QA.COM",
+        "Merchant Category Description":"Schools and Educational SVC - Not elsewhere classified",
+        "Transaction Date":"23\/09\/2020",
+        "Transaction Amount":"£1,860.60",
+        "Final Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate for Agriculture and Rural Economy",
+        "Merchant Name":"WWW.SHEARWELL.CO.UK",
+        "Merchant Category Description":"Miscellaneous & specialty retail stores",
+        "Transaction Date":"25\/09\/2020",
+        "Transaction Amount":"£1,751.04",
+        "Final Expense Description":"Inspection equipment"
+    },
+    {
+        "Directorate":"Directorate for Agriculture and Rural Economy",
+        "Merchant Name":"HTTPS:\/\/WWW.JOHNSTONFUELS.CO.UK",
+        "Merchant Category Description":"Fuel Dealers - Coal, Fuel oil, Liqud Petroleum, Wood",
+        "Transaction Date":"11\/09\/2020",
+        "Transaction Amount":"£1,696.87",
+        "Final Expense Description":"Laboratory - fees"
+    },
+    {
+        "Directorate":"Directorate for Agriculture and Rural Economy",
+        "Merchant Name":"Springer Nature",
+        "Merchant Category Description":"Miscellaneous Publishing and Printing",
+        "Transaction Date":"16\/09\/2020",
+        "Transaction Amount":"£1,668.00",
+        "Final Expense Description":"Publication - fees"
+    },
+    {
+        "Directorate":"Directorate for Agriculture and Rural Economy",
+        "Merchant Name":"Specialist Computer",
+        "Merchant Category Description":"Computers, computer peripheral equipment, software",
+        "Transaction Date":"04\/09\/2020",
+        "Transaction Amount":"£1,476.78",
+        "Final Expense Description":"IT hardware - specialist equipment"
+    },
+    {
+        "Directorate":"Directorate for Agriculture and Rural Economy",
+        "Merchant Name":"Nutrend Office and Contract Furniture",
+        "Merchant Category Description":"Office and Commercial Furniture",
+        "Transaction Date":"14\/09\/2020",
+        "Transaction Amount":"£1,167.36",
+        "Final Expense Description":"Office equipment"
+    },
+    {
+        "Directorate":"Directorate for Agriculture and Rural Economy",
+        "Merchant Name":"WWW.SHEARWELL.CO.UK",
+        "Merchant Category Description":"Miscellaneous & specialty retail stores",
+        "Transaction Date":"17\/09\/2020",
+        "Transaction Amount":"£889.20",
+        "Final Expense Description":"inspection equipment"
+    },
+    {
+        "Directorate":"Directorate for Agriculture and Rural Economy",
+        "Merchant Name":"WWW.SHEARWELL.CO.UK",
+        "Merchant Category Description":"Miscellaneous & specialty retail stores",
+        "Transaction Date":"29\/09\/2020",
+        "Transaction Amount":"£887.04",
+        "Final Expense Description":"inspection equipment"
+    },
+    {
+        "Directorate":"Directorate for Agriculture and Rural Economy",
+        "Merchant Name":"Adobe Creative Cloud",
+        "Merchant Category Description":"Computer Software Stores",
+        "Transaction Date":"31\/08\/2020",
+        "Transaction Amount":"£849.60",
+        "Final Expense Description":"Specialist IT equipment"
+    },
+    {
+        "Directorate":"Directorate for Agriculture and Rural Economy",
+        "Merchant Name":"Ilasco LTD",
+        "Merchant Category Description":"Sports Apparel, Riding Apparel Stores",
+        "Transaction Date":"18\/09\/2020",
+        "Transaction Amount":"£811.49",
+        "Final Expense Description":"Personal protective equipment OR Specialist protective clothing"
+    },
+    {
+        "Directorate":"Directorate for Agriculture and Rural Economy",
+        "Merchant Name":"LDS (Shetland) LTD",
+        "Merchant Category Description":"Equipment, Furniture, Home Furnishings stores (Except appliances)",
+        "Transaction Date":"04\/09\/2020",
+        "Transaction Amount":"£780.00",
+        "Final Expense Description":"Office equipment"
+    },
+    {
+        "Directorate":"Directorate for Agriculture and Rural Economy",
+        "Merchant Name":"Royal Mail Online Shop",
+        "Merchant Category Description":"Postal Services - Government only",
+        "Transaction Date":"28\/09\/2020",
+        "Transaction Amount":"£750.00",
+        "Final Expense Description":"Postal Fees"
+    },
+    {
+        "Directorate":"Directorate for Agriculture and Rural Economy",
+        "Merchant Name":"Kingsfield C",
+        "Merchant Category Description":"Computer programing,data processing,integrated system design services",
+        "Transaction Date":"07\/09\/2020",
+        "Transaction Amount":"£611.70",
+        "Final Expense Description":"IT hardware - specialist equipment"
+    },
+    {
+        "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
+        "Merchant Name":"A C Taylor Body Shop",
+        "Merchant Category Description":"Automotive Body Repair Shops",
+        "Transaction Date":"28\/09\/2020",
+        "Transaction Amount":"£1,420.96",
+        "Final Expense Description":"Vehicle - maintenance"
+    },
+    {
+        "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
+        "Merchant Name":"D Sutherland",
+        "Merchant Category Description":"Towing Services",
+        "Transaction Date":"22\/09\/2020",
+        "Transaction Amount":"£1,183.56",
+        "Final Expense Description":"Vehicle - maintenance"
+    },
+    {
+        "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
+        "Merchant Name":"J R C Motor Engineers",
+        "Merchant Category Description":"Automotive service shops",
+        "Transaction Date":"11\/09\/2020",
+        "Transaction Amount":"£641.83",
+        "Final Expense Description":"Vehicle - maintenance"
+    },
+    {
+        "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
+        "Merchant Name":"Macklin Motors",
+        "Merchant Category Description":"Auto & truck dealers - sales,service, repairs,parts, & leasing",
+        "Transaction Date":"07\/09\/2020",
+        "Transaction Amount":"£978.51",
+        "Final Expense Description":"Vehicle - maintenance"
+    },
+    {
+        "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
+        "Merchant Name":"BLS Truck and Van Aberdeen",
+        "Merchant Category Description":"Auto & truck dealers - sales,service, repairs,parts, & leasing",
+        "Transaction Date":"04\/09\/2020",
+        "Transaction Amount":"£1,804.67",
+        "Final Expense Description":"Vehicle - maintenance"
+    },
+    {
+        "Directorate":"Directorate for Digital",
+        "Merchant Name":"Enterprise rent-a-car",
+        "Merchant Category Description":"Enterprise Rent-a-Car",
+        "Transaction Date":"11\/09\/2020",
+        "Transaction Amount":"£516.42",
+        "Final Expense Description":"Vehicle - hire"
+    },
+    {
+        "Directorate":"Directorate for Digital",
+        "Merchant Name":"Amazon Web Services",
+        "Merchant Category Description":"Business Services - Not elsewhere classified",
+        "Transaction Date":"03\/09\/2020",
+        "Transaction Amount":"£2,461.33",
+        "Final Expense Description":"Web service - service charge - August 2020"
+    },
+    {
+        "Directorate":"Directorate for Digital",
+        "Merchant Name":"WWW.QA.COM",
+        "Merchant Category Description":"Schools and Educational SVC - Not elsewhere classified",
+        "Transaction Date":"16\/09\/2020",
+        "Transaction Amount":"£1,975.20",
+        "Final Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate for Digital",
+        "Merchant Name":"Cisco Webex",
+        "Merchant Category Description":"Computer Software Stores",
+        "Transaction Date":"29\/09\/2020",
+        "Transaction Amount":"£1,350.00",
+        "Final Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate for Digital",
+        "Merchant Name":"Pluralsight",
+        "Merchant Category Description":"Schools and Educational SVC - Not elsewhere classified",
+        "Transaction Date":"15\/09\/2020",
+        "Transaction Amount":"£1,282.05",
+        "Final Expense Description":"Professional licence - fees OR Professional licence - renewal"
+    },
+    {
+        "Directorate":"Directorate for Digital",
+        "Merchant Name":"Focus Project Management",
+        "Merchant Category Description":"Schools , Businesses and Secretarial",
+        "Transaction Date":"14\/09\/2020",
+        "Transaction Amount":"£1,078.80",
+        "Final Expense Description":"Professional subscription - fees"
+    },
+    {
+        "Directorate":"Directorate for Digital",
+        "Merchant Name":"Harvest",
+        "Merchant Category Description":"Computers, computer peripheral equipment, software",
+        "Transaction Date":"28\/09\/2020",
+        "Transaction Amount":"£972.87",
+        "Final Expense Description":"Professional licence - fees OR Professional licence - renewal"
+    },
+    {
+        "Directorate":"Directorate for Environment and Forestry",
+        "Merchant Name":"D & GC Internet",
+        "Merchant Category Description":"Government services - not elsewhere classified",
+        "Transaction Date":"11\/09\/2020",
+        "Transaction Amount":"£1,029.97",
+        "Final Expense Description":"Building - payment charge"
+    },
+    {
+        "Directorate":"Directorate for Environment and Forestry",
+        "Merchant Name":"Infogram",
+        "Merchant Category Description":"Computers, computer peripheral equipment, software",
+        "Transaction Date":"04\/09\/2020",
+        "Transaction Amount":"£746.24",
+        "Final Expense Description":"Specialist softwares OR Specialist software - renewal"
+    },
+    {
+        "Directorate":"Directorate for Financial Management",
+        "Merchant Name":"WWW.EASYSOFT.COM",
+        "Merchant Category Description":"Computers, computer peripheral equipment, software",
+        "Transaction Date":"16\/09\/2020",
+        "Transaction Amount":"£2,428.38",
+        "Final Expense Description":"Specialist software - renewal"
+    },
+    {
+        "Directorate":"Directorate for Financial Management",
+        "Merchant Name":"Kaplan Financial LTD",
+        "Merchant Category Description":"Schools , Businesses and Secretarial",
+        "Transaction Date":"15\/09\/2020",
+        "Transaction Amount":"£806.00",
+        "Final Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate for Financial Management",
+        "Merchant Name":"Kaplan Financial LTD",
+        "Merchant Category Description":"Schools , Businesses and Secretarial",
+        "Transaction Date":"22\/09\/2020",
+        "Transaction Amount":"£646.20",
+        "Final Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate for Health Performance and Delivery",
+        "Merchant Name":"Cartridge Save",
+        "Merchant Category Description":"Stationery\/Office supplies\/Printing and Writing paper",
+        "Transaction Date":"29\/09\/2020",
+        "Transaction Amount":"£731.29",
+        "Final Expense Description":"Sationery"
+    },
+    {
+        "Directorate":"Directorate for Health Workforce and Leadership",
+        "Merchant Name":"Comms Creatives LTD",
+        "Merchant Category Description":"Consulting, management, & public relations services",
+        "Transaction Date":"29\/09\/2020",
+        "Transaction Amount":"£990.00",
+        "Final Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate for Health Workforce and Leadership",
+        "Merchant Name":"Comms Creatives LTD",
+        "Merchant Category Description":"Consulting, management, & public relations services",
+        "Transaction Date":"29\/09\/2020",
+        "Transaction Amount":"£990.00",
+        "Final Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate for Housing and Social Justice",
+        "Merchant Name":"Indigo Business",
+        "Merchant Category Description":"Professional services - not elsewhere classified",
+        "Transaction Date":"18\/09\/2020",
+        "Transaction Amount":"£2,970.00",
+        "Final Expense Description":"External support services"
+    },
+    {
+        "Directorate":"Directorate for Internal Audit and Assurance",
+        "Merchant Name":"WWW.ACCOUNTS@IIA.ORG.U",
+        "Merchant Category Description":"Accounting, Auditing and Bookkeeping Services",
+        "Transaction Date":"17\/09\/2020",
+        "Transaction Amount":"£1,720.80",
+        "Final Expense Description":"External conference - fees"
+    },
+    {
+        "Directorate":"Directorate for Internal Audit and Assurance",
+        "Merchant Name":"WWW.QA.COM",
+        "Merchant Category Description":"Schools and Educational SVC - Not elsewhere classified",
+        "Transaction Date":"28\/09\/2020",
+        "Transaction Amount":"£997.20",
+        "Final Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate for International trade and Investment",
+        "Merchant Name":"Premiere Conferencing",
+        "Merchant Category Description":"Business Services - Not elsewhere classified",
+        "Transaction Date":"31\/08\/2020",
+        "Transaction Amount":"£1,119.45",
+        "Final Expense Description":"Professional subscription - fees"
+    },
+    {
+        "Directorate":"Directorate for International trade and Investment",
+        "Merchant Name":"Premiere Conferencing",
+        "Merchant Category Description":"Business Services - Not elsewhere classified",
+        "Transaction Date":"31\/08\/2020",
+        "Transaction Amount":"£725.74",
+        "Final Expense Description":"Professional subscription - fees"
+    },
+    {
+        "Directorate":"Directorate for Legal Services",
+        "Merchant Name":"AVIEMORE",
+        "Merchant Category Description":"Lodging-hotels,motels,resorts - not elsewhere classified",
+        "Transaction Date":"23\/09\/2020",
+        "Transaction Amount":"£8,500.00",
+        "Final Expense Description":"External event - room hire"
+    },
+    {
+        "Directorate":"Directorate for Legal Services",
+        "Merchant Name":"AVIEMORE",
+        "Merchant Category Description":"Lodging-hotels,motels,resorts - not elsewhere classified",
+        "Transaction Date":"23\/09\/2020",
+        "Transaction Amount":"£1,600.00",
+        "Final Expense Description":"External event - room hire"
+    },
+    {
+        "Directorate":"Directorate for Legal Services",
+        "Merchant Name":"WWW.LAWSCOT.ORG.UK",
+        "Merchant Category Description":"Organizations, membership - not elsewhere classified",
+        "Transaction Date":"29\/09\/2020",
+        "Transaction Amount":"£1,130.00",
+        "Final Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate for Legal Services",
+        "Merchant Name":"Argos LTD",
+        "Merchant Category Description":"Discount stores",
+        "Transaction Date":"07\/09\/2020",
+        "Transaction Amount":"£559.98",
+        "Final Expense Description":"IT hardware - specialist equipment"
+    },
+    {
+        "Directorate":"Directorate for Local Government and Communities",
+        "Merchant Name":"Premiere Conferencing",
+        "Merchant Category Description":"Business Services - Not elsewhere classified",
+        "Transaction Date":"03\/09\/2020",
+        "Transaction Amount":"£1,657.29",
+        "Final Expense Description":"Professional subscription - fees"
+    },
+    {
+        "Directorate":"Directorate for Local Government and Communities",
+        "Merchant Name":"MSFT",
+        "Merchant Category Description":"Computers, computer peripheral equipment, software",
+        "Transaction Date":"12\/09\/2020",
+        "Transaction Amount":"£846.16",
+        "Final Expense Description":"Specialist software - renewal"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"WWW.INPD.CO.UK",
+        "Merchant Category Description":"Consulting, management, & public relations services",
+        "Transaction Date":"01\/09\/2020",
+        "Transaction Amount":"£6,000.00",
+        "Final Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Diversified Communications",
+        "Merchant Category Description":"Business Services - Not elsewhere classified",
+        "Transaction Date":"29\/09\/2020",
+        "Transaction Amount":"£6,000.00",
+        "Final Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Atlassian",
+        "Merchant Category Description":"Computer Software Stores",
+        "Transaction Date":"07\/09\/2020",
+        "Transaction Amount":"£4,447.54",
+        "Final Expense Description":"Professional licence - renewal"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Associated British Ports",
+        "Merchant Category Description":"Marinas, marine service\/supplies",
+        "Transaction Date":"08\/09\/2020",
+        "Transaction Amount":"£2,566.56",
+        "Final Expense Description":"Vessel berthing fees"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Associated British Ports",
+        "Merchant Category Description":"Marinas, marine service\/supplies",
+        "Transaction Date":"29\/09\/2020",
+        "Transaction Amount":"£2,380.56",
+        "Final Expense Description":"Vessel berthing fees"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"WWW.STRATHMOREHOTELS.COM",
+        "Merchant Category Description":"Lodging-hotels,motels,resorts - not elsewhere classified",
+        "Transaction Date":"18\/09\/2020",
+        "Transaction Amount":"£1,740.00",
+        "Final Expense Description":"Accomodation - fees"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Ocean Scientific International Ltd",
+        "Merchant Category Description":"Miscellaneous & specialty retail stores",
+        "Transaction Date":"28\/09\/2020",
+        "Transaction Amount":"£1,676.40",
+        "Final Expense Description":"Specialist Laboratory Equipment"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Selmar Technologies S.R.L.",
+        "Merchant Category Description":"Miscellaneous general merchandise",
+        "Transaction Date":"01\/09\/2020",
+        "Transaction Amount":"£1,503.54",
+        "Final Expense Description":"Vessel engineering spares"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"BioMérieux",
+        "Merchant Category Description":"Dental\/labaratory\/medical\/ophthalmic hospital equipment & supplies",
+        "Transaction Date":"23\/09\/2020",
+        "Transaction Amount":"£1,305.56",
+        "Final Expense Description":"Specialist laboratory equipment"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Plasticabay",
+        "Merchant Category Description":"Associations - Civic, Social and Fraternal",
+        "Transaction Date":"31\/08\/2020",
+        "Transaction Amount":"£1,200.00",
+        "Final Expense Description":"Scientific publication - fees"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Ideals UK",
+        "Merchant Category Description":"Equipment Rental & Leasing services, Furniture \/ Tool rental",
+        "Transaction Date":"15\/09\/2020",
+        "Transaction Amount":"£1,110.00",
+        "Final Expense Description":"Vessel engineering equipment"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"MacQueen Bros LTD",
+        "Merchant Category Description":"Freight carrier, trucking - licence\/long distance, mvg\/storage",
+        "Transaction Date":"28\/09\/2020",
+        "Transaction Amount":"£1,095.01",
+        "Final Expense Description":null
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Open University Moto",
+        "Merchant Category Description":"Colleges, universities, professional schools & junior colleges",
+        "Transaction Date":"07\/09\/2020",
+        "Transaction Amount":"£1,032.00",
+        "Final Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Marine Vaccum",
+        "Merchant Category Description":"Door-to-Door Sales",
+        "Transaction Date":"21\/09\/2020",
+        "Transaction Amount":"£859.47",
+        "Final Expense Description":"Vessel engineering equipment - maintenance"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"ICES",
+        "Merchant Category Description":"Schools, Trade and Vocational",
+        "Transaction Date":"15\/09\/2020",
+        "Transaction Amount":"£714.92",
+        "Final Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Payatrader",
+        "Merchant Category Description":"Business Services - Not elsewhere classified",
+        "Transaction Date":"15\/09\/2020",
+        "Transaction Amount":"£685.50",
+        "Final Expense Description":"Vessel engineering spares"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"BioMérieux",
+        "Merchant Category Description":"Dental\/labaratory\/medical\/ophthalmic hospital equipment & supplies",
+        "Transaction Date":"17\/09\/2020",
+        "Transaction Amount":"£624.14",
+        "Final Expense Description":"Specialist laboratory equipment"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Uttings Limited",
+        "Merchant Category Description":"Sporting Goods Stores",
+        "Transaction Date":"28\/09\/2020",
+        "Transaction Amount":"£559.00",
+        "Final Expense Description":"Scientific equipment"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Vigier Web",
+        "Merchant Category Description":"Electrical and Small Appliances Repair Shops",
+        "Transaction Date":"25\/09\/2020",
+        "Transaction Amount":"£557.47",
+        "Final Expense Description":"Vessel engineering equipment - maintenance"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Atlantic All Trucks Training",
+        "Merchant Category Description":"Schools and Educational SVC - Not elsewhere classified",
+        "Transaction Date":"03\/09\/2020",
+        "Transaction Amount":"£547.00",
+        "Final Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Simon Safety and Lifting Centre Ltd",
+        "Merchant Category Description":"Dental\/labaratory\/medical\/ophthalmic hospital equipment & supplies",
+        "Transaction Date":"07\/09\/2020",
+        "Transaction Amount":"£503.95",
+        "Final Expense Description":"Vessel safety equipment - clothing"
+    },
+    {
+        "Directorate":"Directorate for People",
+        "Merchant Name":"RNE757800024F UKVI",
+        "Merchant Category Description":"Government services - not elsewhere classified",
+        "Transaction Date":"29\/09\/2020",
+        "Transaction Amount":"£1,476.00",
+        "Final Expense Description":"External support services"
+    },
+    {
+        "Directorate":"Directorate for Safer Communities",
+        "Merchant Name":"GCSP",
+        "Merchant Category Description":"Business Services - Not elsewhere classified",
+        "Transaction Date":"15\/09\/2020",
+        "Transaction Amount":"£1,151.87",
+        "Final Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate for Social Security",
+        "Merchant Name":"Slack",
+        "Merchant Category Description":"Computer Software Stores",
+        "Transaction Date":"05\/09\/2020",
+        "Transaction Amount":"£3,042.39",
+        "Final Expense Description":"Professional membership - fees OR Professional subscription - fees"
+    },
+    {
+        "Directorate":"Directorate for Social Security",
+        "Merchant Name":"User Vision",
+        "Merchant Category Description":"Consulting, management, & public relations services",
+        "Transaction Date":"04\/09\/2020",
+        "Transaction Amount":"£1,425.00",
+        "Final Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate for Social Security",
+        "Merchant Name":"WWW.QA.COM",
+        "Merchant Category Description":"Schools and Educational SVC - Not elsewhere classified",
+        "Transaction Date":"17\/09\/2020",
+        "Transaction Amount":"£1,307.40",
+        "Final Expense Description":"Professional licence - fees OR Professional licence - renewal"
+    },
+    {
+        "Directorate":"Directorate for Social Security",
+        "Merchant Name":"WWW.QA.COM",
+        "Merchant Category Description":"Schools and Educational SVC - Not elsewhere classified",
+        "Transaction Date":"29\/09\/2020",
+        "Transaction Amount":"£1,294.80",
+        "Final Expense Description":"Professional licence - fees OR Professional licence - renewal"
+    },
+    {
+        "Directorate":"Directorate for Social Security",
+        "Merchant Name":"Elite Training",
+        "Merchant Category Description":"Computer programing,data processing,integrated system design services",
+        "Transaction Date":"15\/09\/2020",
+        "Transaction Amount":"£714.00",
+        "Final Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate for Social Security",
+        "Merchant Name":"Computacenter (UK) LTD",
+        "Merchant Category Description":"Computers, computer peripheral equipment, software",
+        "Transaction Date":"23\/09\/2020",
+        "Transaction Amount":"£2,876.52",
+        "Final Expense Description":"IT consumables"
+    },
+    {
+        "Directorate":"Directorate for Social Security",
+        "Merchant Name":"Computacenter (UK) LTD",
+        "Merchant Category Description":"Computers, Computer Peripheral Equipment, Software",
+        "Transaction Date":"31\/08\/2020",
+        "Transaction Amount":"£5,018.28",
+        "Final Expense Description":"IT consumables"
+    },
+    {
+        "Directorate":"Directorate of Communication, Ministerial support and Facilities",
+        "Merchant Name":"Lyreco UK LTD",
+        "Merchant Category Description":"Office, School Supplies and Stationery Stores",
+        "Transaction Date":"21\/09\/2020",
+        "Transaction Amount":"£654.48",
+        "Final Expense Description":"IT consumables"
+    },
+    {
+        "Directorate":"Scottish Procurement and Property Directorate",
+        "Merchant Name":"Sigaria Limited",
+        "Merchant Category Description":"Schools and Educational SVC - Not elsewhere classified",
+        "Transaction Date":"23\/09\/2020",
+        "Transaction Amount":"£28,728.00",
+        "Final Expense Description":"Professional membership - renewal fees OR Professional subscription - renewal fees"
+    },
+    {
+        "Directorate":"Scottish Procurement and Property Directorate",
+        "Merchant Name":"WWW.CIPS.ORG",
+        "Merchant Category Description":"Organizations, membership - not elsewhere classified",
+        "Transaction Date":"24\/09\/2020",
+        "Transaction Amount":"£13,230.00",
+        "Final Expense Description":"Professional membership - renewal fees OR Professional subscription - renewal fees"
+    },
+    {
+        "Directorate":"Scottish Procurement and Property Directorate",
+        "Merchant Name":"WWW.WESTMINSTER-BRIEFING.COM",
+        "Merchant Category Description":"Schools , Businesses and Secretarial",
+        "Transaction Date":"07\/09\/2020",
+        "Transaction Amount":"£534.00",
+        "Final Expense Description":"External training course - fees"
+    }
+]

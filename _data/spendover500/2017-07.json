@@ -1,0 +1,226 @@
+[
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"Enterprise",
+        "Merchant Code Description":"Enterprise rent-a-car",
+        "Transaction Date":"06\/07\/2017",
+        "Transaction Amount":588.0,
+        "Expense Description":"Vehicle hire"
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"Enterprise",
+        "Merchant Code Description":"Enterprise rent-a-car",
+        "Transaction Date":"06\/07\/2017",
+        "Transaction Amount":588.0,
+        "Expense Description":"Vehicle hire"
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"Enterprise",
+        "Merchant Code Description":"Enterprise rent-a-car",
+        "Transaction Date":"19\/07\/2017",
+        "Transaction Amount":588.0,
+        "Expense Description":"Vehicle hire"
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"Enterprise",
+        "Merchant Code Description":"Enterprise rent-a-car",
+        "Transaction Date":"24\/07\/2017",
+        "Transaction Amount":588.0,
+        "Expense Description":"Vehicle hire"
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"Enterprise",
+        "Merchant Code Description":"Enterprise rent-a-car",
+        "Transaction Date":"24\/07\/2017",
+        "Transaction Amount":588.0,
+        "Expense Description":"Vehicle hire"
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"Banner Group LTD",
+        "Merchant Code Description":"Office, school supply & stationery stores",
+        "Transaction Date":"28\/07\/2017",
+        "Transaction Amount":538.12,
+        "Expense Description":"IT consumables"
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"EB Lean Agile Scotland",
+        "Merchant Code Description":"Business services - not elsewhere classified",
+        "Transaction Date":"21\/07\/2017",
+        "Transaction Amount":504.0,
+        "Expense Description":"External event - fees"
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"Paypal Airsciencet",
+        "Merchant Code Description":"Chemicals, allied products - not elsewhere classified",
+        "Transaction Date":"05\/07\/2017",
+        "Transaction Amount":1290.0,
+        "Expense Description":"Protective equipment"
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"VSCHT - Registration",
+        "Merchant Code Description":"Colleges, universities, professional schools & junior colleges",
+        "Transaction Date":"27\/07\/2017",
+        "Transaction Amount":560.3,
+        "Expense Description":"External conference - fees"
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"VSCHT - Registration",
+        "Merchant Code Description":"Colleges, universities, professional schools & junior colleges",
+        "Transaction Date":"27\/07\/2017",
+        "Transaction Amount":560.3,
+        "Expense Description":"External conference - fees"
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"Dnastar INC",
+        "Merchant Code Description":"Computer software stores",
+        "Transaction Date":"07\/07\/2017",
+        "Transaction Amount":2160.0,
+        "Expense Description":"Specialist software"
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"BT Business Direct LTD",
+        "Merchant Code Description":"Computers, computer peripheral equipment & softwares",
+        "Transaction Date":"03\/07\/2017",
+        "Transaction Amount":1096.6,
+        "Expense Description":"Specialist IT equipment"
+    },
+    {
+        "Directorate":"Directorate for Agriculture & Rural Economy",
+        "Merchant Name":"National Milk Records",
+        "Merchant Code Description":"Professional services - not elsewhere classified",
+        "Transaction Date":"18\/07\/2017",
+        "Transaction Amount":3151.68,
+        "Expense Description":"Laboratory research testing"
+    },
+    {
+        "Directorate":"Directorate for Communications & Ministerial Support",
+        "Merchant Name":"Secret Herb Garden",
+        "Merchant Code Description":"Lawn & garden supply stores",
+        "Transaction Date":"20\/07\/2017",
+        "Transaction Amount":701.8,
+        "Expense Description":"Building landscaping"
+    },
+    {
+        "Directorate":"Directorate for Communications & Ministerial Support",
+        "Merchant Name":"John Lewis",
+        "Merchant Code Description":"Department stores",
+        "Transaction Date":"23\/07\/2017",
+        "Transaction Amount":519.99,
+        "Expense Description":"Cleaning equipment"
+    },
+    {
+        "Directorate":"Directorate for Communications & Ministerial Support",
+        "Merchant Name":"Amazon UK Marketplace",
+        "Merchant Code Description":"Book stores",
+        "Transaction Date":"21\/07\/2017",
+        "Transaction Amount":2156.4,
+        "Expense Description":"Office equipment - Notice Boards"
+    },
+    {
+        "Directorate":"Directorate for Communications & Ministerial Support",
+        "Merchant Name":"WWW.PMGLTD.CO.UK",
+        "Merchant Code Description":"Business services - not elsewhere classified",
+        "Transaction Date":"27\/07\/2017",
+        "Transaction Amount":534.0,
+        "Expense Description":"Health and Safety - Training materials"
+    },
+    {
+        "Directorate":"Directorate for Digital",
+        "Merchant Name":"Amazon Web Services",
+        "Merchant Code Description":"Business services - not elsewhere classified",
+        "Transaction Date":"03\/07\/2017",
+        "Transaction Amount":2424.61,
+        "Expense Description":"Web services - Monthly charge"
+    },
+    {
+        "Directorate":"Directorate for Health Performance & Delivery",
+        "Merchant Name":"CCC\/Rightslink",
+        "Merchant Code Description":"Business services - not elsewhere classified",
+        "Transaction Date":"28\/06\/2017",
+        "Transaction Amount":1620.0,
+        "Expense Description":"Publication - copyright"
+    },
+    {
+        "Directorate":"Directorate for Legal Services",
+        "Merchant Name":"Cartridge Save",
+        "Merchant Code Description":"Stationery, office supplies, printing & writing paper",
+        "Transaction Date":"03\/07\/2017",
+        "Transaction Amount":589.43,
+        "Expense Description":"Stationery"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Banner Group LTD",
+        "Merchant Code Description":"Office, school supply & stationery stores",
+        "Transaction Date":"19\/07\/2017",
+        "Transaction Amount":1446.1,
+        "Expense Description":"IT consumables"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Morse Watchmans UK LTD",
+        "Merchant Code Description":"Household appliance stores",
+        "Transaction Date":"11\/07\/2017",
+        "Transaction Amount":510.7,
+        "Expense Description":"Vessel engineering equipment"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Discount Displays LTD",
+        "Merchant Code Description":"Miscellaneous & specialty retail stores",
+        "Transaction Date":"10\/07\/2017",
+        "Transaction Amount":594.94,
+        "Expense Description":"External event - accomodation"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"Modern Engraving LTD",
+        "Merchant Code Description":"Miscellaneous publishing & printing",
+        "Transaction Date":"10\/07\/2017",
+        "Transaction Amount":780.0,
+        "Expense Description":"Scientific equipment"
+    },
+    {
+        "Directorate":"Directorate for Marine Scotland",
+        "Merchant Name":"B Hepworth & CO",
+        "Merchant Code Description":"Office & commercial furniture",
+        "Transaction Date":"04\/07\/2017",
+        "Transaction Amount":560.52,
+        "Expense Description":"Vessel equipment"
+    },
+    {
+        "Directorate":"Directorate for People",
+        "Merchant Name":"DBL Software LTD",
+        "Merchant Code Description":"Computer software stores",
+        "Transaction Date":"28\/07\/2017",
+        "Transaction Amount":564.81,
+        "Expense Description":"Specialist software - renewal"
+    },
+    {
+        "Directorate":"Directorate for People",
+        "Merchant Name":"WWW.ICO.GOV.UK",
+        "Merchant Code Description":"Government services - not elsewhere classified",
+        "Transaction Date":"04\/07\/2017",
+        "Transaction Amount":500.0,
+        "Expense Description":"Specialist software - renewal"
+    },
+    {
+        "Directorate":"Directorate for Safer Communities",
+        "Merchant Name":"Banner Group LTD",
+        "Merchant Code Description":"Office, school supply & stationery stores",
+        "Transaction Date":"03\/07\/2017",
+        "Transaction Amount":532.46,
+        "Expense Description":"IT consumables"
+    }
+]
