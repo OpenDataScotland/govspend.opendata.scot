@@ -36,7 +36,7 @@ def extract_report(tag_href, tag_text, monthly_spend_url):
     report_dataframe = pd.read_html(str(report_table), header=0, encoding="utf8")[0]
 
     report_dataframe.to_json(
-        f"data/{report_year_month}.json",
+        f"_data/spend-over-500/{report_year_month}.json",
         orient="records",
         date_format="iso",
         indent=4,
@@ -49,8 +49,8 @@ def extract_report(tag_href, tag_text, monthly_spend_url):
 def main():
 
     # Pre-check if the data folder exists and if not, create it
-    if not os.path.exists('data'):
-        os.makedirs('data')
+    if not os.path.exists('_data/spend-over-500'):
+        os.makedirs('_data/spend-over-500')
 
     index_page_html = requests.get(MONTHLY_SPEND_URL)
 

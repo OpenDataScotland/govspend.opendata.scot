@@ -4,3 +4,15 @@ title: Home
 ---
 
 <h1>govspend.opendata.scot</h1>
+
+<ul>
+    {% for spendData in collections.spendsOver500 %}
+      <li>{{spendData[0]}}
+        <ul>
+          {% for spendDataRow in spendData[1] %}
+            <li>{{spendDataRow | jsonify }}</li>
+          {% endfor %}
+        </ul>
+      </li>
+    {% endfor %}
+</ul>
