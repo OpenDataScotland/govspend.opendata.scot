@@ -1,0 +1,50 @@
+---
+pagination:
+    data: collections.spendsOver500
+    size: 1
+    alias: spends
+permalink: "spends/{{ spends.title | slugify }}/"
+layout: base
+title: spends.title
+---
+
+{# Temp styling #}
+<style>
+table, th, td {
+  border: 1px solid;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+</style>
+
+<a href="/">Back to home</a>
+
+<h1>{{spends.title}}</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Directorate</th>
+            <th>Merchant name</th>
+            <th>Merchant category name</th>
+            <th>Transaction date</th>
+            <th>Transaction amount</th>
+            <th>Expense description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in spends.data %}
+            <tr>
+                <td>{{row["Directorate"]}}</td>
+                <td>{{row["Merchant Name"]}}</td>
+                <td>{{row["Merchant Category Name"]}}</td>
+                <td>{{row["Transaction Date"]}}</td>
+                <td>{{row["Transaction Amount"]}}</td>
+                <td>{{row["Expense Description"]}}</td>
+            </tr>
+            {%endfor%}
+        </tbody>
+    </table>
