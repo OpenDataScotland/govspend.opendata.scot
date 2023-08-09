@@ -7,11 +7,9 @@ title: Home
 
 <ul>
     {% for spendData in collections.spendsOver500 %}
-      <li>{{spendData[0]}}
+      <li>{{spendData.title}}
         <ul>
-          {% for spendDataRow in spendData[1] %}
-            <li>{{spendDataRow | jsonify }}</li>
-          {% endfor %}
+            {{spendData.data.length}} entries
         </ul>
       </li>
     {% endfor %}
