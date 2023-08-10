@@ -3,10 +3,13 @@ layout: base
 title: Home
 ---
 
-<h1>govspend.opendata.scot</h1>
+<h1 class="mt-5">Welcome to Open Data Scotland GovSpend</h1>
+<p class="lead">An open data source of Scottish Government spending data</p>
 
 <ul>
-    {% for spendData in collections.spendsOver500 %}
-      <li><a href="spends/{{spendData.title}}">{{spendData.title}} - {{spendData.data.length}} entries</a></li>
-    {% endfor %}
+  {% for spendData in collections.spendsOver500 %}
+    <li>
+      <a href="spends/{{spendData.title}}">{{spendData.title}} - {{spendData.data.length}} entries</a>
+    </li>
+  {% endfor %}
 </ul>

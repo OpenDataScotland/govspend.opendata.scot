@@ -3,28 +3,17 @@ pagination:
     data: collections.spendsOver500
     size: 1
     alias: spends
+    layout: base
 permalink: "spends/{{ spends.title | slugify }}/"
 layout: base
 title: spends.title
 ---
 
-{# Temp styling #}
-<style>
-table, th, td {
-  border: 1px solid;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-</style>
-
-<a href="/">Back to home</a>
+<a href="./">Back to home</a>
 
 <h1>{{spends.title}}</h1>
 
-<table>
+<table class="table table-bordered table-striped">
     <thead>
         <tr>
             <th>Directorate</th>
