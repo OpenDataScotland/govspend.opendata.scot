@@ -2,681 +2,681 @@
     {
         "Directorate":"Directorate For Advanced Learning And Science",
         "Merchant Name":"Civil Service College",
-        "Merchant Category Description":"Schools And Educational Services - Not Elsewhere Classified",
+        "Merchant Category Name":"Schools And Educational Services - Not Elsewhere Classified",
         "Transaction Date":"22\/06\/2021",
         "Transaction Amount":500.0,
-        "Final Expense Description":"External conference - fees"
+        "Expense Description":"External conference - fees"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
         "Merchant Name":"Integrity Print",
-        "Merchant Category Description":"Quick Copy,Reproduction And Blueprinting Services",
+        "Merchant Category Name":"Quick Copy,Reproduction And Blueprinting Services",
         "Transaction Date":"15\/06\/2021",
         "Transaction Amount":1363.32,
-        "Final Expense Description":"Scientific farm equipment"
+        "Expense Description":"Scientific farm equipment"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
         "Merchant Name":"WWW.THETAPESTORE.CO.UK",
-        "Merchant Category Description":"Miscellaneous And Specialty Retail Stores",
+        "Merchant Category Name":"Miscellaneous And Specialty Retail Stores",
         "Transaction Date":"01\/06\/2021",
         "Transaction Amount":1436.34,
-        "Final Expense Description":"Scientific farm equipment"
+        "Expense Description":"Scientific farm equipment"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
         "Merchant Name":"WWW.GOOUTDOORS.CO.UK",
-        "Merchant Category Description":"Sporting Goods Stores",
+        "Merchant Category Name":"Sporting Goods Stores",
         "Transaction Date":"18\/06\/2021",
         "Transaction Amount":702.0,
-        "Final Expense Description":"GPS accessories"
+        "Expense Description":"GPS accessories"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
         "Merchant Name":"WWW.QA.COM",
-        "Merchant Category Description":"Schools And Educational Services - Not Elsewhere Classified",
+        "Merchant Category Name":"Schools And Educational Services - Not Elsewhere Classified",
         "Transaction Date":"21\/06\/2021",
         "Transaction Amount":534.0,
-        "Final Expense Description":"Professional licence - fees"
+        "Expense Description":"Professional licence - fees"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
         "Merchant Name":"Uv Light Tech Ltd",
-        "Merchant Category Description":"Miscellaneous And Specialty Retail Stores",
+        "Merchant Category Name":"Miscellaneous And Specialty Retail Stores",
         "Transaction Date":"09\/06\/2021",
         "Transaction Amount":3357.46,
-        "Final Expense Description":"Scientific farm equipment"
+        "Expense Description":"Scientific farm equipment"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
         "Merchant Name":"Amznmktplace",
-        "Merchant Category Description":"Miscellaneous And Specialty Retail Stores",
+        "Merchant Category Name":"Miscellaneous And Specialty Retail Stores",
         "Transaction Date":"04\/06\/2021",
         "Transaction Amount":599.8,
-        "Final Expense Description":"IT hardware - specialist equipment"
+        "Expense Description":"IT hardware - specialist equipment"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
         "Merchant Name":"Nationwide Platforms -",
-        "Merchant Category Description":"Equipment Rental And Leasing Services, Furniture Rental, Tool Rental",
+        "Merchant Category Name":"Equipment Rental And Leasing Services, Furniture Rental, Tool Rental",
         "Transaction Date":"22\/06\/2021",
         "Transaction Amount":2662.8,
-        "Final Expense Description":"Farm equipment - Hire"
+        "Expense Description":"Farm equipment - Hire"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
         "Merchant Name":"WWW.QA.COM",
-        "Merchant Category Description":"Consulting, Management, And Public Relations Services",
+        "Merchant Category Name":"Consulting, Management, And Public Relations Services",
         "Transaction Date":"23\/06\/2021",
         "Transaction Amount":681.12,
-        "Final Expense Description":"Stationery"
+        "Expense Description":"Stationery"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
         "Merchant Name":"Scottish Power",
-        "Merchant Category Description":"Utilities - Electric, Gas, Heating Oil, Sanitary, Water",
+        "Merchant Category Name":"Utilities - Electric, Gas, Heating Oil, Sanitary, Water",
         "Transaction Date":"03\/06\/2021",
         "Transaction Amount":1378.9,
-        "Final Expense Description":"Building - payment charge"
+        "Expense Description":"Building - payment charge"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
         "Merchant Name":"WWW.CIPR.CO.UK",
-        "Merchant Category Description":"Organizations, Membership-Not Elsewhere Classified",
+        "Merchant Category Name":"Organizations, Membership-Not Elsewhere Classified",
         "Transaction Date":"21\/06\/2021",
         "Transaction Amount":546.0,
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
         "Merchant Name":"Unisto",
-        "Merchant Category Description":"Nondurable Goods (Not Elsewhere Classified)",
+        "Merchant Category Name":"Nondurable Goods (Not Elsewhere Classified)",
         "Transaction Date":"10\/06\/2021",
         "Transaction Amount":4260.0,
-        "Final Expense Description":"Scientific farm equipment"
+        "Expense Description":"Scientific farm equipment"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
         "Merchant Name":"Unisto",
-        "Merchant Category Description":"Nondurable Goods (Not Elsewhere Classified)",
+        "Merchant Category Name":"Nondurable Goods (Not Elsewhere Classified)",
         "Transaction Date":"10\/06\/2021",
         "Transaction Amount":884.4,
-        "Final Expense Description":"Scientific farm equipment"
+        "Expense Description":"Scientific farm equipment"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
         "Merchant Name":"Unisto",
-        "Merchant Category Description":"Nondurable Goods (Not Elsewhere Classified)",
+        "Merchant Category Name":"Nondurable Goods (Not Elsewhere Classified)",
         "Transaction Date":"10\/06\/2021",
         "Transaction Amount":1749.6,
-        "Final Expense Description":"Scientific farm equipment"
+        "Expense Description":"Scientific farm equipment"
     },
     {
         "Directorate":"Directorate For Comms, Ministerial Support & Facil",
         "Merchant Name":"I.D Management Systems",
-        "Merchant Category Description":"Commercial Equipment, Not Elsewhere Classified",
+        "Merchant Category Name":"Commercial Equipment, Not Elsewhere Classified",
         "Transaction Date":"29\/06\/2021",
         "Transaction Amount":848.1,
-        "Final Expense Description":"Stationery"
+        "Expense Description":"Stationery"
     },
     {
         "Directorate":"Directorate For Comms, Ministerial Support & Facil",
         "Merchant Name":"Westfield Motors",
-        "Merchant Category Description":"Automotive Service Shops",
+        "Merchant Category Name":"Automotive Service Shops",
         "Transaction Date":"25\/06\/2021",
         "Transaction Amount":1205.39,
-        "Final Expense Description":"Vehicle - maintenance"
+        "Expense Description":"Vehicle - maintenance"
     },
     {
         "Directorate":"Directorate For Comms, Ministerial Support & Facil",
         "Merchant Name":"I And K Motors",
-        "Merchant Category Description":"Service Stations With Or Without Ancillary Service",
+        "Merchant Category Name":"Service Stations With Or Without Ancillary Service",
         "Transaction Date":"21\/06\/2021",
         "Transaction Amount":918.18,
-        "Final Expense Description":"Vehicle - maintenance"
+        "Expense Description":"Vehicle - maintenance"
     },
     {
         "Directorate":"Directorate For Culture, Tourism & Major Events",
         "Merchant Name":"Airdna, Llc",
-        "Merchant Category Description":"Consulting, Management, And Public Relations Services",
+        "Merchant Category Name":"Consulting, Management, And Public Relations Services",
         "Transaction Date":"25\/06\/2021",
         "Transaction Amount":4110.0,
-        "Final Expense Description":"External support services"
+        "Expense Description":"External support services"
     },
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"WWW.QA.COM",
-        "Merchant Category Description":"Schools And Educational Services - Not Elsewhere Classified",
+        "Merchant Category Name":"Schools And Educational Services - Not Elsewhere Classified",
         "Transaction Date":"09\/06\/2021",
         "Transaction Amount":978.0,
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"Figma Annual Renewal",
-        "Merchant Category Description":"Computer Programming, Data Processing, And Integrated Systems Design Services",
+        "Merchant Category Name":"Computer Programming, Data Processing, And Integrated Systems Design Services",
         "Transaction Date":"18\/06\/2021",
         "Transaction Amount":532.76,
-        "Final Expense Description":"Specialist softwares OR Specialist software - renewal"
+        "Expense Description":"Specialist softwares OR Specialist software - renewal"
     },
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"WWW.TURINGFEST.COM",
-        "Merchant Category Description":"Consulting, Management, And Public Relations Services",
+        "Merchant Category Name":"Consulting, Management, And Public Relations Services",
         "Transaction Date":"08\/06\/2021",
         "Transaction Amount":3588.0,
-        "Final Expense Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"Slingsby",
-        "Merchant Category Description":"Computers, Computer Peripheral Equipment, Software",
+        "Merchant Category Name":"Computers, Computer Peripheral Equipment, Software",
         "Transaction Date":"09\/06\/2021",
         "Transaction Amount":803.99,
-        "Final Expense Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"WWW.QA.COM",
-        "Merchant Category Description":"Schools And Educational Services - Not Elsewhere Classified",
+        "Merchant Category Name":"Schools And Educational Services - Not Elsewhere Classified",
         "Transaction Date":"28\/06\/2021",
         "Transaction Amount":10080.0,
-        "Final Expense Description":"Professional licence - fees OR Professional licence - renewal"
+        "Expense Description":"Professional licence - fees OR Professional licence - renewal"
     },
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"Axure Software",
-        "Merchant Category Description":"Computers, Computer Peripheral Equipment, Software",
+        "Merchant Category Name":"Computers, Computer Peripheral Equipment, Software",
         "Transaction Date":"15\/06\/2021",
         "Transaction Amount":1106.37,
-        "Final Expense Description":"Specialist softwares OR Specialist software - renewal"
+        "Expense Description":"Specialist softwares OR Specialist software - renewal"
     },
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"Optimal Workshop",
-        "Merchant Category Description":"Computer Software Stores",
+        "Merchant Category Name":"Computer Software Stores",
         "Transaction Date":"09\/06\/2021",
         "Transaction Amount":1450.83,
-        "Final Expense Description":"Specialist softwares OR Specialist software - renewal"
+        "Expense Description":"Specialist softwares OR Specialist software - renewal"
     },
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"WWW.QA.COM",
-        "Merchant Category Description":"Schools And Educational Services - Not Elsewhere Classified",
+        "Merchant Category Name":"Schools And Educational Services - Not Elsewhere Classified",
         "Transaction Date":"08\/06\/2021",
         "Transaction Amount":14873.64,
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"WWW.QA.COM",
-        "Merchant Category Description":"Schools And Educational Services - Not Elsewhere Classified",
+        "Merchant Category Name":"Schools And Educational Services - Not Elsewhere Classified",
         "Transaction Date":"08\/06\/2021",
         "Transaction Amount":14579.82,
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"WWW.QA.COM",
-        "Merchant Category Description":"Schools And Educational Services - Not Elsewhere Classified",
+        "Merchant Category Name":"Schools And Educational Services - Not Elsewhere Classified",
         "Transaction Date":"07\/06\/2021",
         "Transaction Amount":14640.48,
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"WWW.QA.COM",
-        "Merchant Category Description":"Schools And Educational Services - Not Elsewhere Classified",
+        "Merchant Category Name":"Schools And Educational Services - Not Elsewhere Classified",
         "Transaction Date":"07\/06\/2021",
         "Transaction Amount":7259.22,
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"WWW.QA.COM",
-        "Merchant Category Description":"Schools And Educational Services - Not Elsewhere Classified",
+        "Merchant Category Name":"Schools And Educational Services - Not Elsewhere Classified",
         "Transaction Date":"07\/06\/2021",
         "Transaction Amount":14598.3,
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"WWW.QA.COM",
-        "Merchant Category Description":"Schools And Educational Services - Not Elsewhere Classified",
+        "Merchant Category Name":"Schools And Educational Services - Not Elsewhere Classified",
         "Transaction Date":"07\/06\/2021",
         "Transaction Amount":14684.34,
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"WWW.QA.COM",
-        "Merchant Category Description":"Schools And Educational Services - Not Elsewhere Classified",
+        "Merchant Category Name":"Schools And Educational Services - Not Elsewhere Classified",
         "Transaction Date":"07\/06\/2021",
         "Transaction Amount":14900.4,
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"Amazon Web Services",
-        "Merchant Category Description":"Business Services-Not Elsewhere Classified",
+        "Merchant Category Name":"Business Services-Not Elsewhere Classified",
         "Transaction Date":"03\/06\/2021",
         "Transaction Amount":2339.45,
-        "Final Expense Description":"Web service - service charge - month + year"
+        "Expense Description":"Web service - service charge - month + year"
     },
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"Enterprise Rent-A-Car",
-        "Merchant Category Description":"Enterprise Rent-A-Car",
+        "Merchant Category Name":"Enterprise Rent-A-Car",
         "Transaction Date":"18\/06\/2021",
         "Transaction Amount":1154.15,
-        "Final Expense Description":"Vehicle hire"
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate For Economic Development",
         "Merchant Name":"Economicdev",
-        "Merchant Category Description":"Associations-Civic, Social, And Fraternal",
+        "Merchant Category Name":"Associations-Civic, Social, And Fraternal",
         "Transaction Date":"01\/06\/2021",
         "Transaction Amount":540.0,
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For External Affairs",
         "Merchant Name":"Canva 03082-18410281",
-        "Merchant Category Description":"Photographic Studios",
+        "Merchant Category Name":"Photographic Studios",
         "Transaction Date":"10\/06\/2021",
         "Transaction Amount":859.59,
-        "Final Expense Description":"Specialist softwares OR Specialist software - renewal"
+        "Expense Description":"Specialist softwares OR Specialist software - renewal"
     },
     {
         "Directorate":"Directorate For Health Finance",
         "Merchant Name":"Cipfa Finance",
-        "Merchant Category Description":"Miscellaneous And Specialty Retail Stores",
+        "Merchant Category Name":"Miscellaneous And Specialty Retail Stores",
         "Transaction Date":"17\/06\/2021",
         "Transaction Amount":846.0,
-        "Final Expense Description":"External training course - learning material"
+        "Expense Description":"External training course - learning material"
     },
     {
         "Directorate":"Directorate For Health Performance & Delivery",
         "Merchant Name":"Surveymonkey",
-        "Merchant Category Description":"Computer Programming, Data Processing, And Integrated Systems Design Services",
+        "Merchant Category Name":"Computer Programming, Data Processing, And Integrated Systems Design Services",
         "Transaction Date":"24\/06\/2021",
         "Transaction Amount":900.0,
-        "Final Expense Description":"Online IT survey"
+        "Expense Description":"Online IT survey"
     },
     {
         "Directorate":"Directorate For International Trade & Investment",
         "Merchant Name":"Parlicentre.Org",
-        "Merchant Category Description":"Organizations, Membership-Not Elsewhere Classified",
+        "Merchant Category Name":"Organizations, Membership-Not Elsewhere Classified",
         "Transaction Date":"09\/06\/2021",
         "Transaction Amount":4392.0,
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Legal Services",
         "Merchant Name":"Dri Cisco Webex",
-        "Merchant Category Description":"Computer Software Stores",
+        "Merchant Category Name":"Computer Software Stores",
         "Transaction Date":"11\/06\/2021",
         "Transaction Amount":1620.0,
-        "Final Expense Description":"Specialist softwares OR Specialist software - renewal"
+        "Expense Description":"Specialist softwares OR Specialist software - renewal"
     },
     {
         "Directorate":"Directorate For Local Government & Communities",
         "Merchant Name":"Mural",
-        "Merchant Category Description":"Computer Software Stores",
+        "Merchant Category Name":"Computer Software Stores",
         "Transaction Date":"07\/06\/2021",
         "Transaction Amount":3684.09,
-        "Final Expense Description":"Specialist softwares OR Specialist software - renewal"
+        "Expense Description":"Specialist softwares OR Specialist software - renewal"
     },
     {
         "Directorate":"Directorate For Local Government & Communities",
         "Merchant Name":"PIXSY.COM",
-        "Merchant Category Description":"Photographic Studios",
+        "Merchant Category Name":"Photographic Studios",
         "Transaction Date":"07\/06\/2021",
         "Transaction Amount":1450.0,
-        "Final Expense Description":"Image copyright – fees"
+        "Expense Description":"Image copyright – fees"
     },
     {
         "Directorate":"Directorate For Local Government & Communities",
         "Merchant Name":"Msft E0700Etolx",
-        "Merchant Category Description":"Computers, Computer Peripheral Equipment, Software",
+        "Merchant Category Name":"Computers, Computer Peripheral Equipment, Software",
         "Transaction Date":"15\/06\/2021",
         "Transaction Amount":4259.44,
-        "Final Expense Description":"Specialist softwares OR Specialist software - renewal"
+        "Expense Description":"Specialist softwares OR Specialist software - renewal"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Ultima Computers Ltd",
-        "Merchant Category Description":"Computers, Computer Peripheral Equipment, Software",
+        "Merchant Category Name":"Computers, Computer Peripheral Equipment, Software",
         "Transaction Date":"08\/06\/2021",
         "Transaction Amount":2020.8,
-        "Final Expense Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Amznmktplace Amazon.Co",
-        "Merchant Category Description":"Miscellaneous And Specialty Retail Stores",
+        "Merchant Category Name":"Miscellaneous And Specialty Retail Stores",
         "Transaction Date":"01\/06\/2021",
         "Transaction Amount":510.48,
-        "Final Expense Description":"IT hardware - specialist equipment"
+        "Expense Description":"IT hardware - specialist equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Amznmktplace",
-        "Merchant Category Description":"Miscellaneous And Specialty Retail Stores",
+        "Merchant Category Name":"Miscellaneous And Specialty Retail Stores",
         "Transaction Date":"01\/06\/2021",
         "Transaction Amount":556.41,
-        "Final Expense Description":"IT hardware - specialist equipment"
+        "Expense Description":"IT hardware - specialist equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"WWW.SHOPSHIELDS.CO.UK",
-        "Merchant Category Description":"Dental\/Lab\/Med\/Ophthalmic Hosp Equip & Supplies",
+        "Merchant Category Name":"Dental\/Lab\/Med\/Ophthalmic Hosp Equip & Supplies",
         "Transaction Date":"15\/06\/2021",
         "Transaction Amount":500.34,
-        "Final Expense Description":"Health & safety equipment"
+        "Expense Description":"Health & safety equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Industrial Pow Unit Lt",
-        "Merchant Category Description":"Motor Vehicle Supplies And New Parts",
+        "Merchant Category Name":"Motor Vehicle Supplies And New Parts",
         "Transaction Date":"18\/06\/2021",
         "Transaction Amount":1792.3,
-        "Final Expense Description":"Vessel engineering equipment"
+        "Expense Description":"Vessel engineering equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Sp Glencraft Luxury",
-        "Merchant Category Description":"Computer Software Stores",
+        "Merchant Category Name":"Computer Software Stores",
         "Transaction Date":"21\/06\/2021",
         "Transaction Amount":612.0,
-        "Final Expense Description":"Vessel equipment OR Vessel scientific equipment"
+        "Expense Description":"Vessel equipment OR Vessel scientific equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Sp Glencraft Luxury",
-        "Merchant Category Description":"Computer Software Stores",
+        "Merchant Category Name":"Computer Software Stores",
         "Transaction Date":"23\/06\/2021",
         "Transaction Amount":1200.0,
-        "Final Expense Description":"Vessel equipment OR Vessel scientific equipment"
+        "Expense Description":"Vessel equipment OR Vessel scientific equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Argos Ltd",
-        "Merchant Category Description":"Discount Stores",
+        "Merchant Category Name":"Discount Stores",
         "Transaction Date":"08\/06\/2021",
         "Transaction Amount":499.99,
-        "Final Expense Description":"Vessel equipment OR Vessel scientific equipment"
+        "Expense Description":"Vessel equipment OR Vessel scientific equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Sp Sjcam Official St",
-        "Merchant Category Description":"Computer Software Stores",
+        "Merchant Category Name":"Computer Software Stores",
         "Transaction Date":"04\/06\/2021",
         "Transaction Amount":690.0,
-        "Final Expense Description":"Vessel surveillance equipment"
+        "Expense Description":"Vessel surveillance equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Screwfix Dir Ltd",
-        "Merchant Category Description":"Building Materials, Lumber Stores",
+        "Merchant Category Name":"Building Materials, Lumber Stores",
         "Transaction Date":"06\/06\/2021",
         "Transaction Amount":504.51,
-        "Final Expense Description":"Vessel engineering equipment"
+        "Expense Description":"Vessel engineering equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Sp Best Gym Equip",
-        "Merchant Category Description":"Computer Software Stores",
+        "Merchant Category Name":"Computer Software Stores",
         "Transaction Date":"15\/06\/2021",
         "Transaction Amount":2674.0,
-        "Final Expense Description":"Vessel equipment OR Vessel scientific equipment"
+        "Expense Description":"Vessel equipment OR Vessel scientific equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"28638Lf - Mf Furniture",
-        "Merchant Category Description":"Miscellaneous And Specialty Retail Stores",
+        "Merchant Category Name":"Miscellaneous And Specialty Retail Stores",
         "Transaction Date":"17\/06\/2021",
         "Transaction Amount":1544.46,
-        "Final Expense Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Chambership",
-        "Merchant Category Description":"Consulting, Management, And Public Relations Services",
+        "Merchant Category Name":"Consulting, Management, And Public Relations Services",
         "Transaction Date":"09\/06\/2021",
         "Transaction Amount":1863.12,
-        "Final Expense Description":"Online IT survey"
+        "Expense Description":"Online IT survey"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"John A Smith And Sons",
-        "Merchant Category Description":"Fuel Dealers-Coal, Fuel Oil, Liq Petroleum, Wood",
+        "Merchant Category Name":"Fuel Dealers-Coal, Fuel Oil, Liq Petroleum, Wood",
         "Transaction Date":"16\/06\/2021",
         "Transaction Amount":541.4,
-        "Final Expense Description":"Vessel equipment OR Vessel scientific equipment"
+        "Expense Description":"Vessel equipment OR Vessel scientific equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Surveymonkey",
-        "Merchant Category Description":"Computer Programming, Data Processing, And Integrated Systems Design Services",
+        "Merchant Category Name":"Computer Programming, Data Processing, And Integrated Systems Design Services",
         "Transaction Date":"09\/06\/2021",
         "Transaction Amount":1260.0,
-        "Final Expense Description":"Online IT survey"
+        "Expense Description":"Online IT survey"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Opodo",
-        "Merchant Category Description":"Travel Agencies And Tour Operators",
+        "Merchant Category Name":"Travel Agencies And Tour Operators",
         "Transaction Date":"16\/06\/2021",
         "Transaction Amount":704.99,
-        "Final Expense Description":"Travel costs - flight OR Travel costs - Rail travel"
+        "Expense Description":"Travel costs - flight OR Travel costs - Rail travel"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Wells Offshore",
-        "Merchant Category Description":"Drug Stores, Pharmacies",
+        "Merchant Category Name":"Drug Stores, Pharmacies",
         "Transaction Date":"07\/06\/2021",
         "Transaction Amount":813.61,
-        "Final Expense Description":"Vessel medical peripherals"
+        "Expense Description":"Vessel medical peripherals"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Oup Journals",
-        "Merchant Category Description":"Book Stores",
+        "Merchant Category Name":"Book Stores",
         "Transaction Date":"08\/06\/2021",
         "Transaction Amount":2772.0,
-        "Final Expense Description":"Learning material"
+        "Expense Description":"Learning material"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Stayaheadtr",
-        "Merchant Category Description":"Computer Programming, Data Processing, And Integrated Systems Design Services",
+        "Merchant Category Name":"Computer Programming, Data Processing, And Integrated Systems Design Services",
         "Transaction Date":"24\/06\/2021",
         "Transaction Amount":2760.0,
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"BROWSERSTACK.COM",
-        "Merchant Category Description":"Computer Programming, Data Processing, And Integrated Systems Design Services",
+        "Merchant Category Name":"Computer Programming, Data Processing, And Integrated Systems Design Services",
         "Transaction Date":"21\/06\/2021",
         "Transaction Amount":2686.26,
-        "Final Expense Description":"Specialist softwares OR Specialist software - renewal"
+        "Expense Description":"Specialist softwares OR Specialist software - renewal"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Royal Mail Online Shop",
-        "Merchant Category Description":"Postal Services-Government Only",
+        "Merchant Category Name":"Postal Services-Government Only",
         "Transaction Date":"15\/06\/2021",
         "Transaction Amount":1395.0,
-        "Final Expense Description":"Postal Services - stamps"
+        "Expense Description":"Postal Services - stamps"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Northern Diver (Intnl)",
-        "Merchant Category Description":"Sporting Goods Stores",
+        "Merchant Category Name":"Sporting Goods Stores",
         "Transaction Date":"16\/06\/2021",
         "Transaction Amount":2208.6,
-        "Final Expense Description":"Vessel safety equipment - clothing"
+        "Expense Description":"Vessel safety equipment - clothing"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"WWW.CUTWEL.CO.UK",
-        "Merchant Category Description":"Hardware Equipment And Supplies",
+        "Merchant Category Name":"Hardware Equipment And Supplies",
         "Transaction Date":"02\/06\/2021",
         "Transaction Amount":568.04,
-        "Final Expense Description":"Vessel engineering equipment"
+        "Expense Description":"Vessel engineering equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Cathelco Ltd",
-        "Merchant Category Description":"Marinas, Marine Service\/Supplies",
+        "Merchant Category Name":"Marinas, Marine Service\/Supplies",
         "Transaction Date":"02\/06\/2021",
         "Transaction Amount":1147.0,
-        "Final Expense Description":"Vessel engineering equipment"
+        "Expense Description":"Vessel engineering equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Lloyds Register",
-        "Merchant Category Description":"Colleges, Univ, Pro Schools, Junior Colleges",
+        "Merchant Category Name":"Colleges, Univ, Pro Schools, Junior Colleges",
         "Transaction Date":"09\/06\/2021",
         "Transaction Amount":1014.9,
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Enterprise Rent-A-Car",
-        "Merchant Category Description":"Enterprise Rent-A-Car",
+        "Merchant Category Name":"Enterprise Rent-A-Car",
         "Transaction Date":"03\/06\/2021",
         "Transaction Amount":735.5,
-        "Final Expense Description":"Vehicle hire"
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate For People",
         "Merchant Name":"Posturite Ltd",
-        "Merchant Category Description":"Business Services-Not Elsewhere Classified",
+        "Merchant Category Name":"Business Services-Not Elsewhere Classified",
         "Transaction Date":"14\/06\/2021",
         "Transaction Amount":1700.38,
-        "Final Expense Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate For People",
         "Merchant Name":"Posturite Ltd",
-        "Merchant Category Description":"Business Services-Not Elsewhere Classified",
+        "Merchant Category Name":"Business Services-Not Elsewhere Classified",
         "Transaction Date":"14\/06\/2021",
         "Transaction Amount":1256.22,
-        "Final Expense Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate For People",
         "Merchant Name":"C2E784300283C Ukvi",
-        "Merchant Category Description":"Government Services-Not Elsewhere Classified",
+        "Merchant Category Name":"Government Services-Not Elsewhere Classified",
         "Transaction Date":"21\/06\/2021",
         "Transaction Amount":3199.0,
-        "Final Expense Description":"External support services"
+        "Expense Description":"External support services"
     },
     {
         "Directorate":"Directorate For People",
         "Merchant Name":"C2E782500313G Ukvi",
-        "Merchant Category Description":"Government Services-Not Elsewhere Classified",
+        "Merchant Category Name":"Government Services-Not Elsewhere Classified",
         "Transaction Date":"03\/06\/2021",
         "Transaction Amount":3199.0,
-        "Final Expense Description":"External support services"
+        "Expense Description":"External support services"
     },
     {
         "Directorate":"Directorate For People",
         "Merchant Name":"Capp & Co Limited",
-        "Merchant Category Description":"Business Services-Not Elsewhere Classified",
+        "Merchant Category Name":"Business Services-Not Elsewhere Classified",
         "Transaction Date":"14\/06\/2021",
         "Transaction Amount":648.0,
-        "Final Expense Description":"Learning & Development"
+        "Expense Description":"Learning & Development"
     },
     {
         "Directorate":"Directorate For Population Health",
         "Merchant Name":"MIRO.COM",
-        "Merchant Category Description":"Computer Programming, Data Processing, And Integrated Systems Design Services",
+        "Merchant Category Name":"Computer Programming, Data Processing, And Integrated Systems Design Services",
         "Transaction Date":"17\/06\/2021",
         "Transaction Amount":842.93,
-        "Final Expense Description":"Professional licence - fees OR Professional licence - renewal"
+        "Expense Description":"Professional licence - fees OR Professional licence - renewal"
     },
     {
         "Directorate":"Directorate For Safer Communities",
         "Merchant Name":"Www.B-C-Training.Co.Uk",
-        "Merchant Category Description":"Schools, Business And Secretarial",
+        "Merchant Category Name":"Schools, Business And Secretarial",
         "Transaction Date":"02\/06\/2021",
         "Transaction Amount":630.0,
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Social Security",
         "Merchant Name":"Elite Training",
-        "Merchant Category Description":"Computer Programming, Data Processing, And Integrated Systems Design Services",
+        "Merchant Category Name":"Computer Programming, Data Processing, And Integrated Systems Design Services",
         "Transaction Date":"22\/06\/2021",
         "Transaction Amount":1314.0,
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Social Security",
         "Merchant Name":"Elite Training",
-        "Merchant Category Description":"Computer Programming, Data Processing, And Integrated Systems Design Services",
+        "Merchant Category Name":"Computer Programming, Data Processing, And Integrated Systems Design Services",
         "Transaction Date":"21\/06\/2021",
         "Transaction Amount":1188.0,
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Social Security",
         "Merchant Name":"Elite Training",
-        "Merchant Category Description":"Computer Programming, Data Processing, And Integrated Systems Design Services",
+        "Merchant Category Name":"Computer Programming, Data Processing, And Integrated Systems Design Services",
         "Transaction Date":"21\/06\/2021",
         "Transaction Amount":834.0,
-        "Final Expense Description":"Computer Software"
+        "Expense Description":"Computer Software"
     },
     {
         "Directorate":"Directorate For Social Security",
         "Merchant Name":"WWW.QA.COM",
-        "Merchant Category Description":"Schools And Educational Services - Not Elsewhere Classified",
+        "Merchant Category Name":"Schools And Educational Services - Not Elsewhere Classified",
         "Transaction Date":"21\/06\/2021",
         "Transaction Amount":1864.74,
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Social Security",
         "Merchant Name":"WWW.QA.COM",
-        "Merchant Category Description":"Schools And Educational Services - Not Elsewhere Classified",
+        "Merchant Category Name":"Schools And Educational Services - Not Elsewhere Classified",
         "Transaction Date":"16\/06\/2021",
         "Transaction Amount":1864.74,
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Social Security",
         "Merchant Name":"Slack T6Ssmjn6T",
-        "Merchant Category Description":"Computer Software Stores",
+        "Merchant Category Name":"Computer Software Stores",
         "Transaction Date":"05\/06\/2021",
         "Transaction Amount":4831.27,
-        "Final Expense Description":"Professional Subscription - Renewal Fees"
+        "Expense Description":"Professional Subscription - Renewal Fees"
     },
     {
         "Directorate":"Scottish Procurement & Property Directorate",
         "Merchant Name":"WWW.CIPR.CO.UK",
-        "Merchant Category Description":"Organizations, Membership-Not Elsewhere Classified",
+        "Merchant Category Name":"Organizations, Membership-Not Elsewhere Classified",
         "Transaction Date":"09\/06\/2021",
         "Transaction Amount":1056.0,
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Scottish Procurement & Property Directorate",
         "Merchant Name":"WWW.CIPR.CO.UK",
-        "Merchant Category Description":"Organizations, Membership-Not Elsewhere Classified",
+        "Merchant Category Name":"Organizations, Membership-Not Elsewhere Classified",
         "Transaction Date":"09\/06\/2021",
         "Transaction Amount":744.0,
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Scottish Procurement & Property Directorate",
         "Merchant Name":"WWW.CIPR.CO.UK",
-        "Merchant Category Description":"Organizations, Membership-Not Elsewhere Classified",
+        "Merchant Category Name":"Organizations, Membership-Not Elsewhere Classified",
         "Transaction Date":"07\/06\/2021",
         "Transaction Amount":528.0,
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     }
 ]

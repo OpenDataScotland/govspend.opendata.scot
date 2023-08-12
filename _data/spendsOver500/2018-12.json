@@ -2,624 +2,713 @@
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
         "Merchant Name":"Enterprise Rent-A-Car",
-        "Merchant Category Description":"Enterprise rent-a-car",
+        "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"17\/12\/2018",
-        "Transaction Amount":588.0
+        "Transaction Amount":588.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
         "Merchant Name":"Enterprise Rent-A-Car",
-        "Merchant Category Description":"Enterprise rent-a-car",
+        "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"13\/12\/2018",
-        "Transaction Amount":588.0
+        "Transaction Amount":588.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
         "Merchant Name":"Enterprise Rent-A-Car",
-        "Merchant Category Description":"Enterprise rent-a-car",
+        "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"13\/12\/2018",
-        "Transaction Amount":595.39
+        "Transaction Amount":595.39,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
         "Merchant Name":"Enterprise Rent-A-Car",
-        "Merchant Category Description":"Enterprise rent-a-car",
+        "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"13\/12\/2018",
-        "Transaction Amount":589.0
+        "Transaction Amount":589.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
         "Merchant Name":"Enterprise Rent-A-Car",
-        "Merchant Category Description":"Enterprise rent-a-car",
+        "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"20\/12\/2018",
-        "Transaction Amount":588.0
+        "Transaction Amount":588.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
         "Merchant Name":"Enterprise Rent-A-Car",
-        "Merchant Category Description":"Enterprise rent-a-car",
+        "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"17\/12\/2018",
-        "Transaction Amount":588.0
+        "Transaction Amount":588.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
         "Merchant Name":"Enterprise Rent-A-Car",
-        "Merchant Category Description":"Enterprise rent-a-car",
+        "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"05\/12\/2018",
-        "Transaction Amount":588.0
+        "Transaction Amount":588.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
         "Merchant Name":"Enterprise Rent-A-Car",
-        "Merchant Category Description":"Enterprise rent-a-car",
+        "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"17\/12\/2018",
-        "Transaction Amount":588.0
+        "Transaction Amount":588.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
         "Merchant Name":"Enterprise Rent-A-Car",
-        "Merchant Category Description":"Enterprise rent-a-car",
+        "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"13\/12\/2018",
-        "Transaction Amount":588.0
+        "Transaction Amount":588.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
         "Merchant Name":"Enterprise Rent-A-Car",
-        "Merchant Category Description":"Enterprise rent-a-car",
+        "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"05\/12\/2018",
-        "Transaction Amount":504.0
+        "Transaction Amount":504.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
         "Merchant Name":"Lyreco UK LTD",
-        "Merchant Category Description":"Office, school supply & stationery stores",
+        "Merchant Category Name":"Office, school supply & stationery stores",
         "Transaction Date":"04\/12\/2018",
-        "Transaction Amount":665.95
+        "Transaction Amount":665.95,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
         "Merchant Name":"Jigsaw Systems LTD",
-        "Merchant Category Description":"Computers, computer peripheral equipment & software",
+        "Merchant Category Name":"Computers, computer peripheral equipment & software",
         "Transaction Date":"28\/11\/2018",
-        "Transaction Amount":2367.83
+        "Transaction Amount":2367.83,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
         "Merchant Name":"Omniplex",
-        "Merchant Category Description":"Computer programming, data processing, integrated system design services",
+        "Merchant Category Name":"Computer programming, data processing, integrated system design services",
         "Transaction Date":"18\/12\/2018",
-        "Transaction Amount":1206.0
+        "Transaction Amount":1206.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
         "Merchant Name":"RICS SUBS UK CYBS",
-        "Merchant Category Description":"Organizations, membership - not elsewhere classified",
+        "Merchant Category Name":"Organizations, membership - not elsewhere classified",
         "Transaction Date":"19\/12\/2018",
-        "Transaction Amount":529.0
+        "Transaction Amount":529.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
         "Merchant Name":"The Moredun Foundation",
-        "Merchant Category Description":"Associations, civic, social & fraternal",
+        "Merchant Category Name":"Associations, civic, social & fraternal",
         "Transaction Date":"06\/12\/2018",
-        "Transaction Amount":2769.0
+        "Transaction Amount":2769.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
         "Merchant Name":"WWW.PROPRINTSOLUTIONS.",
-        "Merchant Category Description":"Business services - not elsewhere classified",
+        "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"13\/12\/2018",
-        "Transaction Amount":1707.13
+        "Transaction Amount":1707.13,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
         "Merchant Name":"WWW.SEPA.ORG.UK",
-        "Merchant Category Description":"Government services - not elsewhere classified",
+        "Merchant Category Name":"Government services - not elsewhere classified",
         "Transaction Date":"20\/12\/2018",
-        "Transaction Amount":630.0
+        "Transaction Amount":630.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Chief Economist",
         "Merchant Name":"Hilton Edinburgh Carlton",
-        "Merchant Category Description":"Lodging, hotels, motels, resorts - not elsewhere classified",
+        "Merchant Category Name":"Lodging, hotels, motels, resorts - not elsewhere classified",
         "Transaction Date":"18\/12\/2018",
-        "Transaction Amount":550.0
+        "Transaction Amount":550.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Chief Medical Officer",
         "Merchant Name":"The Hub Event",
-        "Merchant Category Description":"Consulting, management & public relations services",
+        "Merchant Category Name":"Consulting, management & public relations services",
         "Transaction Date":"10\/12\/2018",
-        "Transaction Amount":696.0
+        "Transaction Amount":696.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Children & Families",
         "Merchant Name":"Crowne Plaza Hotels",
-        "Merchant Category Description":"Crowne plaza hotels",
+        "Merchant Category Name":"Crowne plaza hotels",
         "Transaction Date":"10\/12\/2018",
-        "Transaction Amount":6783.0
+        "Transaction Amount":6783.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Children & Families",
         "Merchant Name":"Hilton Garden Inn",
-        "Merchant Category Description":"Hilton garden inn",
+        "Merchant Category Name":"Hilton garden inn",
         "Transaction Date":"13\/12\/2018",
-        "Transaction Amount":14300.0
+        "Transaction Amount":14300.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Children & Families",
         "Merchant Name":"Knowdata Limited",
-        "Merchant Category Description":"Schools & educational services - not elswhere classified",
+        "Merchant Category Name":"Schools & educational services - not elswhere classified",
         "Transaction Date":"18\/12\/2018",
-        "Transaction Amount":853.2
+        "Transaction Amount":853.2,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Children & Families",
         "Merchant Name":"Mercure Glasgow City Hotel",
-        "Merchant Category Description":"Lodging, hotels, motels, resorts - not elsewhere classified",
+        "Merchant Category Name":"Lodging, hotels, motels, resorts - not elsewhere classified",
         "Transaction Date":"06\/12\/2018",
-        "Transaction Amount":4500.0
+        "Transaction Amount":4500.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
         "Merchant Name":"Western Volkswagen",
-        "Merchant Category Description":"Auto & truck dealers, sales, services, repairs, parts & leasing",
+        "Merchant Category Name":"Auto & truck dealers, sales, services, repairs, parts & leasing",
         "Transaction Date":"18\/12\/2018",
-        "Transaction Amount":759.23
+        "Transaction Amount":759.23,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
         "Merchant Name":"Blair Atholl Garage",
-        "Merchant Category Description":"Service stations with or without ancillary service",
+        "Merchant Category Name":"Service stations with or without ancillary service",
         "Transaction Date":"05\/12\/2018",
-        "Transaction Amount":1432.44
+        "Transaction Amount":1432.44,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
         "Merchant Name":"British Parking association",
-        "Merchant Category Description":"Organizations, membership - not elsewhere classified",
+        "Merchant Category Name":"Organizations, membership - not elsewhere classified",
         "Transaction Date":"21\/12\/2018",
-        "Transaction Amount":1396.8
+        "Transaction Amount":1396.8,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
         "Merchant Name":"Lyreco UK LTD",
-        "Merchant Category Description":"Office, school supply & stationery stores",
+        "Merchant Category Name":"Office, school supply & stationery stores",
         "Transaction Date":"13\/12\/2018",
-        "Transaction Amount":615.38
+        "Transaction Amount":615.38,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Culture, Tourism & Major Events",
         "Merchant Name":"Benugo Limited",
-        "Merchant Category Description":"Eating places, restaurants",
+        "Merchant Category Name":"Eating places, restaurants",
         "Transaction Date":"18\/12\/2018",
-        "Transaction Amount":1266.0
+        "Transaction Amount":1266.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Digital",
         "Merchant Name":"Lyreco UK LTD",
-        "Merchant Category Description":"Office, school supply & stationery stores",
+        "Merchant Category Name":"Office, school supply & stationery stores",
         "Transaction Date":"26\/11\/2018",
-        "Transaction Amount":1378.8
+        "Transaction Amount":1378.8,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Digital",
         "Merchant Name":"Lyreco UK LTD",
-        "Merchant Category Description":"Office, school supply & stationery stores",
+        "Merchant Category Name":"Office, school supply & stationery stores",
         "Transaction Date":"05\/12\/2018",
-        "Transaction Amount":1378.8
+        "Transaction Amount":1378.8,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Digital",
         "Merchant Name":"Lyreco UK LTD",
-        "Merchant Category Description":"Office, school supply & stationery stores",
+        "Merchant Category Name":"Office, school supply & stationery stores",
         "Transaction Date":"13\/12\/2018",
-        "Transaction Amount":1378.8
+        "Transaction Amount":1378.8,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Digital",
         "Merchant Name":"Lyreco UK LTD",
-        "Merchant Category Description":"Office, school supply & stationery stores",
+        "Merchant Category Name":"Office, school supply & stationery stores",
         "Transaction Date":"18\/12\/2018",
-        "Transaction Amount":1378.8
+        "Transaction Amount":1378.8,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Digital",
         "Merchant Name":"123RF LTD",
-        "Merchant Category Description":"Commercial art, graphics & photography",
+        "Merchant Category Name":"Commercial art, graphics & photography",
         "Transaction Date":"18\/12\/2018",
-        "Transaction Amount":563.36
+        "Transaction Amount":563.36,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Digital",
         "Merchant Name":"Amazon Web Services",
-        "Merchant Category Description":"Business services - not elsewhere classified",
+        "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"03\/12\/2018",
-        "Transaction Amount":1825.0
+        "Transaction Amount":1825.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Digital",
         "Merchant Name":"David Lynas Consultation",
-        "Merchant Category Description":"Schools & educational services - not elswhere classified",
+        "Merchant Category Name":"Schools & educational services - not elswhere classified",
         "Transaction Date":"07\/12\/2018",
-        "Transaction Amount":2868.0
+        "Transaction Amount":2868.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Digital",
         "Merchant Name":"Harvest",
-        "Merchant Category Description":"Computers, computer peripheral equipment & software",
+        "Merchant Category Name":"Computers, computer peripheral equipment & software",
         "Transaction Date":"28\/12\/2018",
-        "Transaction Amount":895.44
+        "Transaction Amount":895.44,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Digital",
         "Merchant Name":"Novotel Hotel",
-        "Merchant Category Description":"Novotel Hotels",
+        "Merchant Category Name":"Novotel Hotels",
         "Transaction Date":"30\/11\/2018",
-        "Transaction Amount":544.0
+        "Transaction Amount":544.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Economic Development",
         "Merchant Name":"Institute of Directors",
-        "Merchant Category Description":"Organizations, membership - not elsewhere classified",
+        "Merchant Category Name":"Organizations, membership - not elsewhere classified",
         "Transaction Date":"11\/12\/2018",
-        "Transaction Amount":7200.0
+        "Transaction Amount":7200.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Energy & Climate Change",
         "Merchant Name":"Doubletree by Hilton",
-        "Merchant Category Description":"Doubletree",
+        "Merchant Category Name":"Doubletree",
         "Transaction Date":"03\/12\/2018",
-        "Transaction Amount":740.0
+        "Transaction Amount":740.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Energy & Climate Change",
         "Merchant Name":"Glasgow City Council Lighthouse",
-        "Merchant Category Description":"Government services - not elsewhere classified",
+        "Merchant Category Name":"Government services - not elsewhere classified",
         "Transaction Date":"04\/12\/2018",
-        "Transaction Amount":535.2
+        "Transaction Amount":535.2,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for External Affairs",
         "Merchant Name":"EB Personal Impact",
-        "Merchant Category Description":"Business services - not elsewhere classified",
+        "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"17\/12\/2018",
-        "Transaction Amount":1560.0
+        "Transaction Amount":1560.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for External Affairs",
         "Merchant Name":"Financial Times LTD",
-        "Merchant Category Description":"Books, periodicals & newspapers",
+        "Merchant Category Name":"Books, periodicals & newspapers",
         "Transaction Date":"05\/12\/2018",
-        "Transaction Amount":5526.0
+        "Transaction Amount":5526.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for External Affairs",
         "Merchant Name":"Solvedine 5",
-        "Merchant Category Description":"Professional services - not elsewhere classified",
+        "Merchant Category Name":"Professional services - not elsewhere classified",
         "Transaction Date":"11\/12\/2018",
-        "Transaction Amount":663.64
+        "Transaction Amount":663.64,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for External Affairs",
         "Merchant Name":"Sumup Chef 2 Rent",
-        "Merchant Category Description":"Caterers",
+        "Merchant Category Name":"Caterers",
         "Transaction Date":"20\/12\/2018",
-        "Transaction Amount":4547.65
+        "Transaction Amount":4547.65,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for External Affairs",
         "Merchant Name":"Sumup Chef 2 Rent",
-        "Merchant Category Description":"Caterers",
+        "Merchant Category Name":"Caterers",
         "Transaction Date":"11\/12\/2018",
-        "Transaction Amount":4686.62
+        "Transaction Amount":4686.62,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for External Affairs",
         "Merchant Name":"West Lothian Chamber of Commerce",
-        "Merchant Category Description":"Eating places, restaurants",
+        "Merchant Category Name":"Eating places, restaurants",
         "Transaction Date":"19\/12\/2018",
-        "Transaction Amount":1375.0
+        "Transaction Amount":1375.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Financial Management",
         "Merchant Name":"LIVEGROUP.CO.UK",
-        "Merchant Category Description":"Business services - not elsewhere classified",
+        "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"18\/12\/2018",
-        "Transaction Amount":684.0
+        "Transaction Amount":684.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Financial Management",
         "Merchant Name":"LIVEGROUP.CO.UK",
-        "Merchant Category Description":"Business services - not elsewhere classified",
+        "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"05\/12\/2018",
-        "Transaction Amount":720.0
+        "Transaction Amount":720.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Health Performance & Delivery",
         "Merchant Name":"Step",
-        "Merchant Category Description":"Business services - not elsewhere classified",
+        "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"21\/12\/2018",
-        "Transaction Amount":532.5
+        "Transaction Amount":532.5,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Health Performance & Delivery",
         "Merchant Name":"Ten Hill Place Hotel",
-        "Merchant Category Description":"Lodging, hotels, motels, resorts - not elsewhere classified",
+        "Merchant Category Name":"Lodging, hotels, motels, resorts - not elsewhere classified",
         "Transaction Date":"06\/12\/2018",
-        "Transaction Amount":2080.0
+        "Transaction Amount":2080.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Housing & Social Justice",
         "Merchant Name":"Apex City Quay Hotel",
-        "Merchant Category Description":"Lodging, hotels, motels, resorts - not elsewhere classified",
+        "Merchant Category Name":"Lodging, hotels, motels, resorts - not elsewhere classified",
         "Transaction Date":"19\/12\/2018",
-        "Transaction Amount":2800.0
+        "Transaction Amount":2800.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Housing & Social Justice",
         "Merchant Name":"Glasgow City Council Access",
-        "Merchant Category Description":"Government services - not elsewhere classified",
+        "Merchant Category Name":"Government services - not elsewhere classified",
         "Transaction Date":"19\/12\/2018",
-        "Transaction Amount":1391.8
+        "Transaction Amount":1391.8,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Internal Audit",
         "Merchant Name":"NMS Enterprise",
-        "Merchant Category Description":"Gift, card, novelty & souvenir shops",
+        "Merchant Category Name":"Gift, card, novelty & souvenir shops",
         "Transaction Date":"04\/12\/2018",
-        "Transaction Amount":630.0
+        "Transaction Amount":630.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Learning",
         "Merchant Name":"Amazon",
-        "Merchant Category Description":"Direct marketing - other direct marketers not elsewhere classified",
+        "Merchant Category Name":"Direct marketing - other direct marketers not elsewhere classified",
         "Transaction Date":"05\/12\/2018",
-        "Transaction Amount":680.0
+        "Transaction Amount":680.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Legal Services",
         "Merchant Name":"Aston Ventures LTD",
-        "Merchant Category Description":"Lodging, hotels, motels, resorts - not elsewhere classified",
+        "Merchant Category Name":"Lodging, hotels, motels, resorts - not elsewhere classified",
         "Transaction Date":"06\/12\/2018",
-        "Transaction Amount":510.0
+        "Transaction Amount":510.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Legal Services",
         "Merchant Name":"IICJ.NET",
-        "Merchant Category Description":"Direct marketing - continuity & subscription merchants",
+        "Merchant Category Name":"Direct marketing - continuity & subscription merchants",
         "Transaction Date":"12\/12\/2018",
-        "Transaction Amount":510.0
+        "Transaction Amount":510.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Local Government & Communities",
         "Merchant Name":"Lyreco UK LTD",
-        "Merchant Category Description":"Office, school supply & stationery stores",
+        "Merchant Category Name":"Office, school supply & stationery stores",
         "Transaction Date":"06\/12\/2018",
-        "Transaction Amount":506.21
+        "Transaction Amount":506.21,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Local Government & Communities",
         "Merchant Name":"Drumossie Hotel",
-        "Merchant Category Description":"Lodging, hotels, motels, resorts - not elsewhere classified",
+        "Merchant Category Name":"Lodging, hotels, motels, resorts - not elsewhere classified",
         "Transaction Date":"11\/12\/2018",
-        "Transaction Amount":1067.0
+        "Transaction Amount":1067.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Local Government & Communities",
         "Merchant Name":"Hilton",
-        "Merchant Category Description":"Hilton",
+        "Merchant Category Name":"Hilton",
         "Transaction Date":"05\/12\/2018",
-        "Transaction Amount":680.0
+        "Transaction Amount":680.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Local Government & Communities",
         "Merchant Name":"Metro Broadcast",
-        "Merchant Category Description":"Business services - not elsewhere classified",
+        "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"21\/12\/2018",
-        "Transaction Amount":7416.0
+        "Transaction Amount":7416.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Local Government & Communities",
         "Merchant Name":"RIAS Edinburgh",
-        "Merchant Category Description":"Book stores",
+        "Merchant Category Name":"Book stores",
         "Transaction Date":"20\/12\/2018",
-        "Transaction Amount":536.0
+        "Transaction Amount":536.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Local Government & Communities",
         "Merchant Name":"RICS SUBS UK CYBS",
-        "Merchant Category Description":"Organizations, membership - not elsewhere classified",
+        "Merchant Category Name":"Organizations, membership - not elsewhere classified",
         "Transaction Date":"14\/12\/2018",
-        "Transaction Amount":529.0
+        "Transaction Amount":529.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Local Government & Communities",
         "Merchant Name":"WWW.WESTMINSTER-BRIEFI",
-        "Merchant Category Description":"Schools, business & secretarial",
+        "Merchant Category Name":"Schools, business & secretarial",
         "Transaction Date":"18\/12\/2018",
-        "Transaction Amount":1620.0
+        "Transaction Amount":1620.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
         "Merchant Name":"Enterprise Rent-A-Car",
-        "Merchant Category Description":"Enterprise rent-a-car",
+        "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"13\/12\/2018",
-        "Transaction Amount":531.4
+        "Transaction Amount":531.4,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
         "Merchant Name":"Lyreco UK LTD",
-        "Merchant Category Description":"Office, school supply & stationery stores",
+        "Merchant Category Name":"Office, school supply & stationery stores",
         "Transaction Date":"12\/12\/2018",
-        "Transaction Amount":584.15
+        "Transaction Amount":584.15,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
         "Merchant Name":"Biomerieux",
-        "Merchant Category Description":"Dental, laboratory, ophthalmic hospital equipment & supplies",
+        "Merchant Category Name":"Dental, laboratory, ophthalmic hospital equipment & supplies",
         "Transaction Date":"10\/12\/2018",
-        "Transaction Amount":760.58
+        "Transaction Amount":760.58,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
         "Merchant Name":"Cellpack Solutions LTD",
-        "Merchant Category Description":"Camera & photographic supply stores",
+        "Merchant Category Name":"Camera & photographic supply stores",
         "Transaction Date":"20\/12\/2018",
-        "Transaction Amount":1815.06
+        "Transaction Amount":1815.06,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
         "Merchant Name":"Cellpack Solutions LTD",
-        "Merchant Category Description":"Camera & photographic supply stores",
+        "Merchant Category Name":"Camera & photographic supply stores",
         "Transaction Date":"20\/12\/2018",
-        "Transaction Amount":1626.0
+        "Transaction Amount":1626.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
         "Merchant Name":"Gael Force Marine",
-        "Merchant Category Description":"Marinas, marine services & supplies",
+        "Merchant Category Name":"Marinas, marine services & supplies",
         "Transaction Date":"18\/12\/2018",
-        "Transaction Amount":1035.97
+        "Transaction Amount":1035.97,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
         "Merchant Name":"Group Binc",
-        "Merchant Category Description":"Camera & photographic supply stores",
+        "Merchant Category Name":"Camera & photographic supply stores",
         "Transaction Date":"11\/12\/2018",
-        "Transaction Amount":2270.67
+        "Transaction Amount":2270.67,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
         "Merchant Name":"Leica Geosystems Limited",
-        "Merchant Category Description":"Commercial equipment - not elsewhere classified",
+        "Merchant Category Name":"Commercial equipment - not elsewhere classified",
         "Transaction Date":"14\/12\/2018",
-        "Transaction Amount":522.72
+        "Transaction Amount":522.72,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
         "Merchant Name":"Marine & Industrial LLP",
-        "Merchant Category Description":"Boat dealers",
+        "Merchant Category Name":"Boat dealers",
         "Transaction Date":"05\/12\/2018",
-        "Transaction Amount":1253.5
+        "Transaction Amount":1253.5,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
         "Merchant Name":"WWW.DISCOUNTDISPLAYS.C",
-        "Merchant Category Description":"Miscellaneous & specialty retail stores",
+        "Merchant Category Name":"Miscellaneous & specialty retail stores",
         "Transaction Date":"07\/12\/2018",
-        "Transaction Amount":1161.9
+        "Transaction Amount":1161.9,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Population Health",
         "Merchant Name":"Doubletree by Hilton",
-        "Merchant Category Description":"Lodging, hotels, motels, resorts - not elsewhere classified",
+        "Merchant Category Name":"Lodging, hotels, motels, resorts - not elsewhere classified",
         "Transaction Date":"04\/12\/2018",
-        "Transaction Amount":5328.0
+        "Transaction Amount":5328.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Population Health",
         "Merchant Name":"Scottish Sports Future",
-        "Merchant Category Description":"Organizations, charitable & social services",
+        "Merchant Category Name":"Organizations, charitable & social services",
         "Transaction Date":"04\/12\/2018",
-        "Transaction Amount":1000.0
+        "Transaction Amount":1000.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Safer Communities",
         "Merchant Name":"Apex Waterloo Place Hotel",
-        "Merchant Category Description":"Lodging, hotels, motels, resorts - not elsewhere classified",
+        "Merchant Category Name":"Lodging, hotels, motels, resorts - not elsewhere classified",
         "Transaction Date":"06\/12\/2018",
-        "Transaction Amount":1025.0
+        "Transaction Amount":1025.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Safer Communities",
         "Merchant Name":"WWW.LAWSCOT.ORG.UK",
-        "Merchant Category Description":"Organizations, membership - not elsewhere classified",
+        "Merchant Category Name":"Organizations, membership - not elsewhere classified",
         "Transaction Date":"11\/12\/2018",
-        "Transaction Amount":617.92
+        "Transaction Amount":617.92,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Social Security",
         "Merchant Name":"Atlassian",
-        "Merchant Category Description":"Computer software stores",
+        "Merchant Category Name":"Computer software stores",
         "Transaction Date":"28\/12\/2018",
-        "Transaction Amount":4049.87
+        "Transaction Amount":4049.87,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Social Security",
         "Merchant Name":"BROWSERSTACK.COM",
-        "Merchant Category Description":"Computer programming, data processing, integrated system design services",
+        "Merchant Category Name":"Computer programming, data processing, integrated system design services",
         "Transaction Date":"20\/12\/2018",
-        "Transaction Amount":2929.3
+        "Transaction Amount":2929.3,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Social Security",
         "Merchant Name":"Cartridge Save",
-        "Merchant Category Description":"Stationery, office supplies, printing & writing paper",
+        "Merchant Category Name":"Stationery, office supplies, printing & writing paper",
         "Transaction Date":"05\/12\/2018",
-        "Transaction Amount":712.85
+        "Transaction Amount":712.85,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Social Security",
         "Merchant Name":"Cartridge Save",
-        "Merchant Category Description":"Stationery, office supplies, printing & writing paper",
+        "Merchant Category Name":"Stationery, office supplies, printing & writing paper",
         "Transaction Date":"05\/12\/2018",
-        "Transaction Amount":712.85
+        "Transaction Amount":712.85,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Social Security",
         "Merchant Name":"Slack",
-        "Merchant Category Description":"Computer software stores",
+        "Merchant Category Name":"Computer software stores",
         "Transaction Date":"05\/12\/2018",
-        "Transaction Amount":635.87
+        "Transaction Amount":635.87,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Social Security",
         "Merchant Name":"Udemy Online Courses",
-        "Merchant Category Description":"Schools & educational services - not elswhere classified",
+        "Merchant Category Name":"Schools & educational services - not elswhere classified",
         "Transaction Date":"21\/12\/2018",
-        "Transaction Amount":977.94
+        "Transaction Amount":977.94,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Directorate for Social Security",
         "Merchant Name":"Xchange Training",
-        "Merchant Category Description":"Schools & educational services - not elswhere classified",
+        "Merchant Category Name":"Schools & educational services - not elswhere classified",
         "Transaction Date":"05\/12\/2018",
-        "Transaction Amount":1194.0
+        "Transaction Amount":1194.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Scottish Law Commission",
         "Merchant Name":"John Smith & Son Group",
-        "Merchant Category Description":"Book stores",
+        "Merchant Category Name":"Book stores",
         "Transaction Date":"19\/12\/2018",
-        "Transaction Amount":1043.91
+        "Transaction Amount":1043.91,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Scottish Procurement & Commercial Directorate",
         "Merchant Name":"RICS SUBS UK CYBS",
-        "Merchant Category Description":"Organizations, membership - not elsewhere classified",
+        "Merchant Category Name":"Organizations, membership - not elsewhere classified",
         "Transaction Date":"19\/12\/2018",
-        "Transaction Amount":529.0
+        "Transaction Amount":529.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Scottish Procurement & Commercial Directorate",
         "Merchant Name":"RICS SUBS UK CYBS",
-        "Merchant Category Description":"Organizations, membership - not elsewhere classified",
+        "Merchant Category Name":"Organizations, membership - not elsewhere classified",
         "Transaction Date":"19\/12\/2018",
-        "Transaction Amount":529.0
+        "Transaction Amount":529.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Scottish Procurement & Commercial Directorate",
         "Merchant Name":"RICS SUBS UK CYBS",
-        "Merchant Category Description":"Organizations, membership - not elsewhere classified",
+        "Merchant Category Name":"Organizations, membership - not elsewhere classified",
         "Transaction Date":"11\/12\/2018",
-        "Transaction Amount":529.0
+        "Transaction Amount":529.0,
+        "Expense Description":"Not specified in data source"
     },
     {
         "Directorate":"Scottish Procurement & Commercial Directorate",
         "Merchant Name":"RICS SUBS UK CYBS",
-        "Merchant Category Description":"Organizations, membership - not elsewhere classified",
+        "Merchant Category Name":"Organizations, membership - not elsewhere classified",
         "Transaction Date":"05\/12\/2018",
-        "Transaction Amount":529.0
+        "Transaction Amount":529.0,
+        "Expense Description":"Not specified in data source"
     }
 ]

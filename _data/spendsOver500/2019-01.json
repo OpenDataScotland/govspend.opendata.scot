@@ -5,7 +5,7 @@
         "Merchant Category Name":"Health practitioners, medical services - not elsewhere classified",
         "Transaction Date":"25\/01\/2019",
         "Transaction Amount":9157.57,
-        "Description":"Laboratory - consumables"
+        "Expense Description":"Laboratory - consumables"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -13,7 +13,7 @@
         "Merchant Category Name":"Architectural, engineering & surveying services",
         "Transaction Date":"03\/01\/2019",
         "Transaction Amount":4372.66,
-        "Description":"Laboratory - equipment"
+        "Expense Description":"Laboratory - equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -21,7 +21,7 @@
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"30\/01\/2019",
         "Transaction Amount":1782.31,
-        "Description":"Specialist software - renewal"
+        "Expense Description":"Specialist software - renewal"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -29,7 +29,7 @@
         "Merchant Category Name":"Professional services - not elsewhere classified",
         "Transaction Date":"22\/01\/2019",
         "Transaction Amount":1205.1,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -37,7 +37,7 @@
         "Merchant Category Name":"Lawn & garden supply stores",
         "Transaction Date":"25\/01\/2019",
         "Transaction Amount":1198.41,
-        "Description":"Farm equipment - maintenance"
+        "Expense Description":"Farm equipment - maintenance"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -45,7 +45,7 @@
         "Merchant Category Name":"Dental\/labaratory\/ophtalmic hospital equipment & supplies",
         "Transaction Date":"17\/01\/2019",
         "Transaction Amount":1038.56,
-        "Description":"Laboratory - consumables"
+        "Expense Description":"Laboratory - consumables"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -53,7 +53,7 @@
         "Merchant Category Name":"Landscaping & horticultural services",
         "Transaction Date":"16\/01\/2019",
         "Transaction Amount":968.04,
-        "Description":"Farm equipment - maintenance"
+        "Expense Description":"Farm equipment - maintenance"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -61,7 +61,7 @@
         "Merchant Category Name":"Colleges, universitites, pro schools, junior colleges",
         "Transaction Date":"30\/01\/2019",
         "Transaction Amount":750.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -69,7 +69,7 @@
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"14\/01\/2019",
         "Transaction Amount":652.45,
-        "Description":"Laboratory - consumables"
+        "Expense Description":"Laboratory - consumables"
     },
     {
         "Directorate":"Directorate for Agriculture & the Rural Communities",
@@ -77,7 +77,7 @@
         "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"16\/01\/2019",
         "Transaction Amount":588.0,
-        "Description":"Vehicle hire"
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Agriculture & the Rural Communities",
@@ -85,7 +85,7 @@
         "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"09\/01\/2019",
         "Transaction Amount":588.0,
-        "Description":"Vehicle hire"
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Agriculture & the Rural Communities",
@@ -93,7 +93,7 @@
         "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"08\/01\/2019",
         "Transaction Amount":588.0,
-        "Description":"Vehicle hire"
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Agriculture & the Rural Communities",
@@ -101,7 +101,7 @@
         "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"08\/01\/2019",
         "Transaction Amount":588.0,
-        "Description":"Vehicle hire"
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Chief Economist",
@@ -109,7 +109,7 @@
         "Merchant Category Name":"Caterers",
         "Transaction Date":"15\/01\/2019",
         "Transaction Amount":600.0,
-        "Description":"Training External Venue fee."
+        "Expense Description":"Training External Venue fee."
     },
     {
         "Directorate":"Directorate for Chief Medical Officer",
@@ -117,7 +117,7 @@
         "Merchant Category Name":"Direct marketing - combination catalogue\/retail merchandise",
         "Transaction Date":"22\/01\/2019",
         "Transaction Amount":759.76,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Chief Nursing Officer",
@@ -125,7 +125,7 @@
         "Merchant Category Name":"Direct marketing - combination catalogue\/retail merchandise",
         "Transaction Date":"28\/01\/2019",
         "Transaction Amount":3798.78,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Children & Families",
@@ -133,7 +133,7 @@
         "Merchant Category Name":"Hotel ibis",
         "Transaction Date":"21\/01\/2019",
         "Transaction Amount":9100.0,
-        "Description":"External conference - accomodation fees"
+        "Expense Description":"External conference - accomodation fees"
     },
     {
         "Directorate":"Directorate for Children & Families",
@@ -141,7 +141,7 @@
         "Merchant Category Name":"Lodging-hotels,motels,resorts - not elsewhere classified",
         "Transaction Date":"16\/01\/2019",
         "Transaction Amount":7524.0,
-        "Description":"External conference - accomodation fees"
+        "Expense Description":"External conference - accomodation fees"
     },
     {
         "Directorate":"Directorate for Children & Families",
@@ -149,7 +149,7 @@
         "Merchant Category Name":"Lodging-hotels,motels,resorts - not elsewhere classified",
         "Transaction Date":"16\/01\/2019",
         "Transaction Amount":2400.0,
-        "Description":"External conference - accomodation fees"
+        "Expense Description":"External conference - accomodation fees"
     },
     {
         "Directorate":"Directorate for Children & Families",
@@ -157,7 +157,7 @@
         "Merchant Category Name":"Government services - not elsewhere classified",
         "Transaction Date":"21\/01\/2019",
         "Transaction Amount":1008.84,
-        "Description":"External event - room hire"
+        "Expense Description":"External event - room hire"
     },
     {
         "Directorate":"Directorate for Children & Families",
@@ -165,7 +165,7 @@
         "Merchant Category Name":"Government services - not elsewhere classified",
         "Transaction Date":"21\/01\/2019",
         "Transaction Amount":869.1,
-        "Description":"External event - room hire"
+        "Expense Description":"External event - room hire"
     },
     {
         "Directorate":"Directorate for Children & Families",
@@ -173,7 +173,7 @@
         "Merchant Category Name":"Doctors - not elsewhere classified",
         "Transaction Date":"29\/01\/2019",
         "Transaction Amount":750.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Children & Families",
@@ -181,7 +181,7 @@
         "Merchant Category Name":"Commercial equipment - not elsewhere classified",
         "Transaction Date":"16\/01\/2019",
         "Transaction Amount":500.0,
-        "Description":"Postal Services"
+        "Expense Description":"Postal Services"
     },
     {
         "Directorate":"Directorate for Commercial and Procurement",
@@ -189,7 +189,7 @@
         "Merchant Category Name":"Eating places, restaurants",
         "Transaction Date":"10\/01\/2019",
         "Transaction Amount":507.84,
-        "Description":"Catering"
+        "Expense Description":"Catering"
     },
     {
         "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
@@ -197,7 +197,7 @@
         "Merchant Category Name":"Quick copy, reproduction & blueprinting services",
         "Transaction Date":"24\/01\/2019",
         "Transaction Amount":1875.13,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
@@ -205,7 +205,7 @@
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"10\/01\/2019",
         "Transaction Amount":1080.0,
-        "Description":"Specialist software"
+        "Expense Description":"Specialist software"
     },
     {
         "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
@@ -213,7 +213,7 @@
         "Merchant Category Name":"Schools & educational services - not elsewhere classified",
         "Transaction Date":"17\/01\/2019",
         "Transaction Amount":996.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
@@ -221,7 +221,7 @@
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"07\/01\/2019",
         "Transaction Amount":697.2,
-        "Description":"IT hardware - accessories"
+        "Expense Description":"IT hardware - accessories"
     },
     {
         "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
@@ -229,7 +229,7 @@
         "Merchant Category Name":"Government services - not elsewhere classified",
         "Transaction Date":"30\/01\/2019",
         "Transaction Amount":750.0,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
@@ -237,7 +237,7 @@
         "Merchant Category Name":"Government services - not elsewhere classified",
         "Transaction Date":"30\/01\/2019",
         "Transaction Amount":750.0,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
@@ -245,7 +245,7 @@
         "Merchant Category Name":"Automotive service shops",
         "Transaction Date":"28\/01\/2019",
         "Transaction Amount":926.57,
-        "Description":"Vehicle - maintenance"
+        "Expense Description":"Vehicle - maintenance"
     },
     {
         "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
@@ -253,7 +253,7 @@
         "Merchant Category Name":"Motor vehicle supplies & new parts",
         "Transaction Date":"25\/01\/2019",
         "Transaction Amount":1372.12,
-        "Description":"Vehicle - maintenance"
+        "Expense Description":"Vehicle - maintenance"
     },
     {
         "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
@@ -261,7 +261,7 @@
         "Merchant Category Name":"Auto & truck dealers - sales, servicing, repairs, parts & leasing",
         "Transaction Date":"23\/01\/2019",
         "Transaction Amount":604.03,
-        "Description":"Vehicle - maintenance"
+        "Expense Description":"Vehicle - maintenance"
     },
     {
         "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
@@ -269,7 +269,7 @@
         "Merchant Category Name":"Automotive service shops",
         "Transaction Date":"22\/01\/2019",
         "Transaction Amount":918.69,
-        "Description":"Vehicle - maintenance"
+        "Expense Description":"Vehicle - maintenance"
     },
     {
         "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
@@ -277,7 +277,7 @@
         "Merchant Category Name":"Automotive service shops",
         "Transaction Date":"16\/01\/2019",
         "Transaction Amount":596.83,
-        "Description":"Vehicle - maintenance"
+        "Expense Description":"Vehicle - maintenance"
     },
     {
         "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
@@ -285,7 +285,7 @@
         "Merchant Category Name":"Automotive service shops",
         "Transaction Date":"03\/01\/2019",
         "Transaction Amount":1154.87,
-        "Description":"Vehicle - maintenance"
+        "Expense Description":"Vehicle - maintenance"
     },
     {
         "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
@@ -293,7 +293,7 @@
         "Merchant Category Name":"Automotive service shops",
         "Transaction Date":"28\/01\/2019",
         "Transaction Amount":926.57,
-        "Description":"Vehicle - maintenance"
+        "Expense Description":"Vehicle - maintenance"
     },
     {
         "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
@@ -301,7 +301,7 @@
         "Merchant Category Name":"Office, school supply & stationery stores",
         "Transaction Date":"08\/01\/2019",
         "Transaction Amount":1287.18,
-        "Description":"Stationery"
+        "Expense Description":"Stationery"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -309,7 +309,7 @@
         "Merchant Category Name":"Miscellaneous publishing & printing",
         "Transaction Date":"25\/01\/2019",
         "Transaction Amount":7343.28,
-        "Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -317,7 +317,7 @@
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"02\/01\/2019",
         "Transaction Amount":1686.97,
-        "Description":"IT Mygov.scot - web hosting - December 2018"
+        "Expense Description":"IT Mygov.scot - web hosting - December 2018"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -325,7 +325,7 @@
         "Merchant Category Name":"Organisations, membership - not elsewhere classified",
         "Transaction Date":"23\/01\/2019",
         "Transaction Amount":960.0,
-        "Description":"Professional membership - fees"
+        "Expense Description":"Professional membership - fees"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -333,7 +333,7 @@
         "Merchant Category Name":"Construction materials - not elsewhere classified",
         "Transaction Date":"22\/01\/2019",
         "Transaction Amount":740.77,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -341,7 +341,7 @@
         "Merchant Category Name":"Novotel hotels",
         "Transaction Date":"18\/01\/2019",
         "Transaction Amount":600.0,
-        "Description":"External conference - accomodation fees"
+        "Expense Description":"External conference - accomodation fees"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -349,7 +349,7 @@
         "Merchant Category Name":"Tax preparation service",
         "Transaction Date":"24\/01\/2019",
         "Transaction Amount":546.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -357,7 +357,7 @@
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"11\/01\/2019",
         "Transaction Amount":532.9,
-        "Description":"Professional licence - renewal"
+        "Expense Description":"Professional licence - renewal"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -365,7 +365,7 @@
         "Merchant Category Name":"Office, school supply & stationery stores",
         "Transaction Date":"29\/01\/2019",
         "Transaction Amount":1408.98,
-        "Description":"Stationery"
+        "Expense Description":"Stationery"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -373,7 +373,7 @@
         "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"24\/01\/2019",
         "Transaction Amount":504.0,
-        "Description":"Vehicle hire"
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -381,7 +381,7 @@
         "Merchant Category Name":"Office, school supply & stationery stores",
         "Transaction Date":"23\/01\/2019",
         "Transaction Amount":1378.8,
-        "Description":"Stationery"
+        "Expense Description":"Stationery"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -389,7 +389,7 @@
         "Merchant Category Name":"Office, school supply & stationery stores",
         "Transaction Date":"21\/01\/2019",
         "Transaction Amount":1378.8,
-        "Description":"Stationery"
+        "Expense Description":"Stationery"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -397,7 +397,7 @@
         "Merchant Category Name":"Office, school supply & stationery stores",
         "Transaction Date":"18\/01\/2019",
         "Transaction Amount":1402.94,
-        "Description":"Stationery"
+        "Expense Description":"Stationery"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -405,7 +405,7 @@
         "Merchant Category Name":"Office, school supply & stationery stores",
         "Transaction Date":"16\/01\/2019",
         "Transaction Amount":1378.8,
-        "Description":"Stationery"
+        "Expense Description":"Stationery"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -413,7 +413,7 @@
         "Merchant Category Name":"Office, school supply & stationery stores",
         "Transaction Date":"15\/01\/2019",
         "Transaction Amount":1378.8,
-        "Description":"Stationery"
+        "Expense Description":"Stationery"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -421,7 +421,7 @@
         "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"10\/01\/2019",
         "Transaction Amount":638.97,
-        "Description":"Vehicle hire"
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -429,7 +429,7 @@
         "Merchant Category Name":"Office, school supply & stationery stores",
         "Transaction Date":"08\/01\/2019",
         "Transaction Amount":1499.52,
-        "Description":"Stationery"
+        "Expense Description":"Stationery"
     },
     {
         "Directorate":"Directorate for Economic Policy & Capability",
@@ -437,7 +437,7 @@
         "Merchant Category Name":"Schools, trade & vocational",
         "Transaction Date":"29\/01\/2019",
         "Transaction Amount":1485.46,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Economic Policy & Capability",
@@ -445,7 +445,7 @@
         "Merchant Category Name":"Schools, trade & vocational",
         "Transaction Date":"24\/01\/2019",
         "Transaction Amount":997.5,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Economic Policy & Capability",
@@ -453,7 +453,7 @@
         "Merchant Category Name":"Schools, business & secretarial",
         "Transaction Date":"22\/01\/2019",
         "Transaction Amount":708.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Energy & Climate Change",
@@ -461,7 +461,7 @@
         "Merchant Category Name":"Other services - not elsewhere classified",
         "Transaction Date":"24\/01\/2019",
         "Transaction Amount":2568.0,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Energy & Climate Change",
@@ -469,7 +469,7 @@
         "Merchant Category Name":"Books, periodicals & newspapers",
         "Transaction Date":"08\/01\/2019",
         "Transaction Amount":944.3,
-        "Description":"Professional subscription - fees"
+        "Expense Description":"Professional subscription - fees"
     },
     {
         "Directorate":"Directorate for Energy & Climate Change",
@@ -477,7 +477,7 @@
         "Merchant Category Name":"Lodging-hotels,motels,resorts - not elsewhere classified",
         "Transaction Date":"23\/01\/2019",
         "Transaction Amount":630.0,
-        "Description":"External event - room hire"
+        "Expense Description":"External event - room hire"
     },
     {
         "Directorate":"Directorate for Energy & Climate Change",
@@ -485,7 +485,7 @@
         "Merchant Category Name":"Schools & educational services - not elsewhere classified",
         "Transaction Date":"08\/01\/2019",
         "Transaction Amount":556.44,
-        "Description":"Translation - fees"
+        "Expense Description":"Translation - fees"
     },
     {
         "Directorate":"Directorate for Energy & Climate Change",
@@ -493,7 +493,7 @@
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"15\/01\/2019",
         "Transaction Amount":500.0,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for External Affairs",
@@ -501,7 +501,7 @@
         "Merchant Category Name":"Eating places, restaurants",
         "Transaction Date":"18\/01\/2019",
         "Transaction Amount":6539.1,
-        "Description":"External event - catering costs - (Dublin)"
+        "Expense Description":"External event - catering costs - (Dublin)"
     },
     {
         "Directorate":"Directorate for External Affairs",
@@ -509,7 +509,7 @@
         "Merchant Category Name":"Travel agencies & tour operators",
         "Transaction Date":"29\/01\/2019",
         "Transaction Amount":1437.59,
-        "Description":"Travel costs - flight"
+        "Expense Description":"Travel costs - flight"
     },
     {
         "Directorate":"Directorate for External Affairs",
@@ -517,7 +517,7 @@
         "Merchant Category Name":"Professional services - not elsewhere classified",
         "Transaction Date":"10\/01\/2019",
         "Transaction Amount":1213.1,
-        "Description":"External event - accomodation"
+        "Expense Description":"External event - accomodation"
     },
     {
         "Directorate":"Directorate for External Affairs",
@@ -525,7 +525,7 @@
         "Merchant Category Name":"Miscellaneous general merchandise",
         "Transaction Date":"16\/01\/2019",
         "Transaction Amount":798.0,
-        "Description":"External event - room hire"
+        "Expense Description":"External event - room hire"
     },
     {
         "Directorate":"Directorate for External Affairs",
@@ -533,7 +533,7 @@
         "Merchant Category Name":"Theatrical producers (Excl motion pix), ticket agency",
         "Transaction Date":"29\/01\/2019",
         "Transaction Amount":594.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for External Affairs",
@@ -541,7 +541,7 @@
         "Merchant Category Name":"Theatrical producers (Excl motion pix), ticket agency",
         "Transaction Date":"14\/01\/2019",
         "Transaction Amount":594.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for External Affairs",
@@ -549,7 +549,7 @@
         "Merchant Category Name":"Direct marketing - combination catalogue\/retail merchandise",
         "Transaction Date":"18\/01\/2019",
         "Transaction Amount":558.24,
-        "Description":"External event - material"
+        "Expense Description":"External event - material"
     },
     {
         "Directorate":"Directorate for Fair Work, Employability & Skills",
@@ -557,7 +557,7 @@
         "Merchant Category Name":"Schools & educational services - not elsewhere classified",
         "Transaction Date":"30\/01\/2019",
         "Transaction Amount":1074.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Health & Social Care Integration",
@@ -565,7 +565,7 @@
         "Merchant Category Name":"Miscellaneous & speciality retail stores",
         "Transaction Date":"23\/01\/2019",
         "Transaction Amount":12500.0,
-        "Description":"Yearly Secretarial service to Cipfa"
+        "Expense Description":"Yearly Secretarial service to Cipfa"
     },
     {
         "Directorate":"Directorate for Health & Social Care Integration",
@@ -573,7 +573,7 @@
         "Merchant Category Name":"Direct marketing - combination catalogue\/retail merchandise",
         "Transaction Date":"29\/01\/2019",
         "Transaction Amount":2545.51,
-        "Description":"External conference - fees"
+        "Expense Description":"External conference - fees"
     },
     {
         "Directorate":"Directorate for Health Performance & Delivery",
@@ -581,7 +581,7 @@
         "Merchant Category Name":"Direct marketing - combination catalogue\/retail merchandise",
         "Transaction Date":"29\/01\/2019",
         "Transaction Amount":1526.0,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Health Performance & Delivery",
@@ -589,7 +589,7 @@
         "Merchant Category Name":"Direct marketing - combination catalogue\/retail merchandise",
         "Transaction Date":"25\/01\/2019",
         "Transaction Amount":1526.0,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Health Performance & Delivery",
@@ -597,7 +597,7 @@
         "Merchant Category Name":"Lodging-hotels,motels,resorts - not elsewhere classified",
         "Transaction Date":"18\/01\/2019",
         "Transaction Amount":1267.5,
-        "Description":"External event (fees)"
+        "Expense Description":"External event (fees)"
     },
     {
         "Directorate":"Directorate for Health Performance & Delivery",
@@ -605,7 +605,7 @@
         "Merchant Category Name":"Lodging-hotels,motels,resorts - not elsewhere classified",
         "Transaction Date":"16\/01\/2019",
         "Transaction Amount":1250.0,
-        "Description":"External event (fees)"
+        "Expense Description":"External event (fees)"
     },
     {
         "Directorate":"Directorate for Health Performance & Delivery",
@@ -613,7 +613,7 @@
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"29\/01\/2019",
         "Transaction Amount":1163.1,
-        "Description":"External event (fees)"
+        "Expense Description":"External event (fees)"
     },
     {
         "Directorate":"Directorate for Health Performance & Delivery",
@@ -621,7 +621,7 @@
         "Merchant Category Name":"Direct marketing - combination catalogue\/retail merchandise",
         "Transaction Date":"29\/01\/2019",
         "Transaction Amount":1013.01,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Health Workforce",
@@ -629,7 +629,7 @@
         "Merchant Category Name":"Office, school supply & stationery stores",
         "Transaction Date":"17\/01\/2019",
         "Transaction Amount":706.62,
-        "Description":"IT consumables"
+        "Expense Description":"IT consumables"
     },
     {
         "Directorate":"Directorate for Healthcare Quality & Improvement",
@@ -637,7 +637,7 @@
         "Merchant Category Name":"Direct marketing - combination catalogue\/retail merchandise",
         "Transaction Date":"17\/01\/2019",
         "Transaction Amount":3039.01,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Healthcare Quality & Improvement",
@@ -645,7 +645,7 @@
         "Merchant Category Name":"Schools, business & secretarial",
         "Transaction Date":"25\/01\/2019",
         "Transaction Amount":1890.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Healthcare Quality & Improvement",
@@ -653,7 +653,7 @@
         "Merchant Category Name":"Direct marketing - combination catalogue\/retail merchandise",
         "Transaction Date":"28\/01\/2019",
         "Transaction Amount":1526.01,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Healthcare Quality & Improvement",
@@ -661,7 +661,7 @@
         "Merchant Category Name":"Direct marketing - combination catalogue\/retail merchandise",
         "Transaction Date":"17\/01\/2019",
         "Transaction Amount":1526.0,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Healthcare Quality & Improvement",
@@ -669,7 +669,7 @@
         "Merchant Category Name":"Direct marketing - combination catalogue\/retail merchandise",
         "Transaction Date":"28\/01\/2019",
         "Transaction Amount":1519.51,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Healthcare Quality & Improvement",
@@ -677,7 +677,7 @@
         "Merchant Category Name":"Direct marketing - combination catalogue\/retail merchandise",
         "Transaction Date":"28\/01\/2019",
         "Transaction Amount":759.76,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Healthcare Quality & Improvement",
@@ -685,7 +685,7 @@
         "Merchant Category Name":"Organisations, membership - not elsewhere classified",
         "Transaction Date":"14\/01\/2019",
         "Transaction Amount":529.0,
-        "Description":"Professional subscription - fees"
+        "Expense Description":"Professional subscription - fees"
     },
     {
         "Directorate":"Directorate for Housing & Social Justice",
@@ -693,7 +693,7 @@
         "Merchant Category Name":"Colleges, universitites, pro schools, junior colleges",
         "Transaction Date":"23\/01\/2019",
         "Transaction Amount":520.0,
-        "Description":"External conference - fees"
+        "Expense Description":"External conference - fees"
     },
     {
         "Directorate":"Directorate for Justice",
@@ -701,7 +701,7 @@
         "Merchant Category Name":"Eating places, restaurants",
         "Transaction Date":"30\/01\/2019",
         "Transaction Amount":1705.62,
-        "Description":"External event - catering costs"
+        "Expense Description":"External event - catering costs"
     },
     {
         "Directorate":"Directorate for Justice",
@@ -709,7 +709,7 @@
         "Merchant Category Name":"Office, school supply & stationery stores",
         "Transaction Date":"21\/01\/2019",
         "Transaction Amount":812.09,
-        "Description":"Stationery"
+        "Expense Description":"Stationery"
     },
     {
         "Directorate":"Directorate for Legal Services",
@@ -717,7 +717,7 @@
         "Merchant Category Name":"Lodging-hotels,motels,resorts - not elsewhere classified",
         "Transaction Date":"24\/01\/2019",
         "Transaction Amount":1260.0,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Legal Services",
@@ -725,7 +725,7 @@
         "Merchant Category Name":"Organisations, charitable & social services",
         "Transaction Date":"30\/01\/2019",
         "Transaction Amount":640.0,
-        "Description":"External event - accomodation"
+        "Expense Description":"External event - accomodation"
     },
     {
         "Directorate":"Directorate for Legal Services",
@@ -733,7 +733,7 @@
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"18\/01\/2019",
         "Transaction Amount":575.28,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Local Government & Commuities",
@@ -741,7 +741,7 @@
         "Merchant Category Name":"Theatrical producers (Excl motion pix), ticket agency",
         "Transaction Date":"11\/01\/2019",
         "Transaction Amount":2198.4,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Local Government & Commuities",
@@ -749,7 +749,7 @@
         "Merchant Category Name":"Theatrical producers (Excl motion pix), ticket agency",
         "Transaction Date":"11\/01\/2019",
         "Transaction Amount":1274.4,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Local Government & Commuities",
@@ -757,7 +757,7 @@
         "Merchant Category Name":"Consulting, management & public relations services",
         "Transaction Date":"08\/01\/2019",
         "Transaction Amount":624.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Local Government & Commuities",
@@ -765,7 +765,7 @@
         "Merchant Category Name":"Lodging-hotels,motels,resorts - not elsewhere classified",
         "Transaction Date":"25\/01\/2019",
         "Transaction Amount":576.0,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Local Government & Communities",
@@ -773,7 +773,7 @@
         "Merchant Category Name":"Miscellaneous publishing & printing",
         "Transaction Date":"22\/01\/2019",
         "Transaction Amount":834.0,
-        "Description":"Publication - fees"
+        "Expense Description":"Publication - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -781,7 +781,7 @@
         "Merchant Category Name":"Marinas, marine service\/supplies",
         "Transaction Date":"09\/01\/2019",
         "Transaction Amount":6982.81,
-        "Description":"Vessel engineering equipment - maintenance"
+        "Expense Description":"Vessel engineering equipment - maintenance"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -789,7 +789,7 @@
         "Merchant Category Name":"Chemicals\/allied products - not elsewhere classified",
         "Transaction Date":"14\/01\/2019",
         "Transaction Amount":3954.0,
-        "Description":"Vessel safety equipment"
+        "Expense Description":"Vessel safety equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -797,7 +797,7 @@
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"23\/01\/2019",
         "Transaction Amount":3334.87,
-        "Description":"Vessel engineering equipment"
+        "Expense Description":"Vessel engineering equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -805,7 +805,7 @@
         "Merchant Category Name":"Consulting, management & public relations services",
         "Transaction Date":"14\/01\/2019",
         "Transaction Amount":3168.0,
-        "Description":"Professional membership - fees"
+        "Expense Description":"Professional membership - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -813,7 +813,7 @@
         "Merchant Category Name":"Household appliance stores",
         "Transaction Date":"16\/01\/2019",
         "Transaction Amount":2425.74,
-        "Description":"Vessel scientific equipment"
+        "Expense Description":"Vessel scientific equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -821,7 +821,7 @@
         "Merchant Category Name":"Plumbing & heating equipment",
         "Transaction Date":"25\/01\/2019",
         "Transaction Amount":1550.4,
-        "Description":"Vessel engineering equipment - maintenance"
+        "Expense Description":"Vessel engineering equipment - maintenance"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -829,7 +829,7 @@
         "Merchant Category Name":"Passenger railways",
         "Transaction Date":"04\/01\/2019",
         "Transaction Amount":1550.0,
-        "Description":"Travel costs - Rail travel"
+        "Expense Description":"Travel costs - Rail travel"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -837,7 +837,7 @@
         "Merchant Category Name":"Industrial supplies - not elsewhere classified",
         "Transaction Date":"30\/01\/2019",
         "Transaction Amount":1540.8,
-        "Description":"Vessel engineering equipment - maintenance"
+        "Expense Description":"Vessel engineering equipment - maintenance"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -845,7 +845,7 @@
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"08\/01\/2019",
         "Transaction Amount":1511.45,
-        "Description":"Vessel engineering equipment - maintenance"
+        "Expense Description":"Vessel engineering equipment - maintenance"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -853,7 +853,7 @@
         "Merchant Category Name":"Nondurable goods - not elsewhere classified",
         "Transaction Date":"09\/01\/2019",
         "Transaction Amount":1399.0,
-        "Description":"Vessel equipment"
+        "Expense Description":"Vessel equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -861,7 +861,7 @@
         "Merchant Category Name":"Plumbing & heating equipment",
         "Transaction Date":"09\/01\/2019",
         "Transaction Amount":1265.22,
-        "Description":"Vessel engineering equipment - maintenance"
+        "Expense Description":"Vessel engineering equipment - maintenance"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -869,7 +869,7 @@
         "Merchant Category Name":"Lodging-hotels,motels,resorts - not elsewhere classified",
         "Transaction Date":"11\/01\/2019",
         "Transaction Amount":1261.19,
-        "Description":"External event - accomodation"
+        "Expense Description":"External event - accomodation"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -877,7 +877,7 @@
         "Merchant Category Name":"Consulting, management & public relations",
         "Transaction Date":"03\/01\/2019",
         "Transaction Amount":1152.0,
-        "Description":"Professional membership - fees"
+        "Expense Description":"Professional membership - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -885,7 +885,7 @@
         "Merchant Category Name":"Clubs - country (athletics, recreation, sports, private golf clubs)",
         "Transaction Date":"18\/01\/2019",
         "Transaction Amount":744.0,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -893,7 +893,7 @@
         "Merchant Category Name":"Household appliance stores",
         "Transaction Date":"29\/01\/2019",
         "Transaction Amount":678.12,
-        "Description":"Vessel engineering equipment"
+        "Expense Description":"Vessel engineering equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -901,7 +901,7 @@
         "Merchant Category Name":"Marinas, marine service\/supplies",
         "Transaction Date":"24\/01\/2019",
         "Transaction Amount":657.18,
-        "Description":"Vessel engineering equipment"
+        "Expense Description":"Vessel engineering equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -909,7 +909,7 @@
         "Merchant Category Name":"Automotive parts, accessories stores",
         "Transaction Date":"30\/01\/2019",
         "Transaction Amount":584.77,
-        "Description":"Vessel equipment"
+        "Expense Description":"Vessel equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -917,7 +917,7 @@
         "Merchant Category Name":"Utilities - electric, gas, heating oil, sanitary, water",
         "Transaction Date":"18\/01\/2019",
         "Transaction Amount":528.0,
-        "Description":"Vessel equipment"
+        "Expense Description":"Vessel equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -925,7 +925,7 @@
         "Merchant Category Name":"Book stores",
         "Transaction Date":"21\/01\/2019",
         "Transaction Amount":518.0,
-        "Description":"Vessel engineering equipment - maintenance"
+        "Expense Description":"Vessel engineering equipment - maintenance"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -933,7 +933,7 @@
         "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"31\/12\/2018",
         "Transaction Amount":716.8,
-        "Description":"Vehicle hire"
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for People",
@@ -941,7 +941,7 @@
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"29\/01\/2019",
         "Transaction Amount":1398.6,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for People",
@@ -949,7 +949,7 @@
         "Merchant Category Name":"Schools, business & secretarial",
         "Transaction Date":"29\/01\/2019",
         "Transaction Amount":1062.0,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for People",
@@ -957,7 +957,7 @@
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"21\/01\/2019",
         "Transaction Amount":674.21,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Population Health",
@@ -965,7 +965,7 @@
         "Merchant Category Name":"Direct marketing - combination catalogue\/retail merchandise",
         "Transaction Date":"17\/01\/2019",
         "Transaction Amount":1013.0,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Population Health",
@@ -973,7 +973,7 @@
         "Merchant Category Name":"Direct marketing - combination catalogue\/retail merchandise",
         "Transaction Date":"16\/01\/2019",
         "Transaction Amount":1013.0,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Safer Communities",
@@ -981,7 +981,7 @@
         "Merchant Category Name":"Computer programming, data processing, integrated system design services",
         "Transaction Date":"28\/01\/2019",
         "Transaction Amount":712.96,
-        "Description":"General IT equipment"
+        "Expense Description":"General IT equipment"
     },
     {
         "Directorate":"Directorate for Social Security",
@@ -989,7 +989,7 @@
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"28\/01\/2019",
         "Transaction Amount":4026.49,
-        "Description":"Professional subscription - fees"
+        "Expense Description":"Professional subscription - fees"
     },
     {
         "Directorate":"Directorate for Social Security",
@@ -997,7 +997,7 @@
         "Merchant Category Name":"Schools, business & secretarial",
         "Transaction Date":"29\/01\/2019",
         "Transaction Amount":3000.0,
-        "Description":"External Event - fees"
+        "Expense Description":"External Event - fees"
     },
     {
         "Directorate":"Directorate for Social Security",
@@ -1005,7 +1005,7 @@
         "Merchant Category Name":"Colleges, universitites, pro schools, junior colleges",
         "Transaction Date":"07\/01\/2019",
         "Transaction Amount":2160.0,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Social Security",
@@ -1013,7 +1013,7 @@
         "Merchant Category Name":"Household appliance stores",
         "Transaction Date":"24\/01\/2019",
         "Transaction Amount":1497.0,
-        "Description":"Portable video equipment"
+        "Expense Description":"Portable video equipment"
     },
     {
         "Directorate":"Directorate for Social Security",
@@ -1021,7 +1021,7 @@
         "Merchant Category Name":"Office, school supply & stationery stores",
         "Transaction Date":"25\/01\/2019",
         "Transaction Amount":906.0,
-        "Description":"Stationery"
+        "Expense Description":"Stationery"
     },
     {
         "Directorate":"Directorate for Social Security",
@@ -1029,7 +1029,7 @@
         "Merchant Category Name":"Office, school supply & stationery stores",
         "Transaction Date":"15\/01\/2019",
         "Transaction Amount":1331.9,
-        "Description":"Stationery"
+        "Expense Description":"Stationery"
     },
     {
         "Directorate":"Directorate for Social Security",
@@ -1037,7 +1037,7 @@
         "Merchant Category Name":"Office, school supply & stationery stores",
         "Transaction Date":"15\/01\/2019",
         "Transaction Amount":1331.9,
-        "Description":"Stationery"
+        "Expense Description":"Stationery"
     },
     {
         "Directorate":"Directorate for Social Security Scotland",
@@ -1045,7 +1045,7 @@
         "Merchant Category Name":"Electronic sales",
         "Transaction Date":"15\/01\/2019",
         "Transaction Amount":4485.6,
-        "Description":"Portable video equipment"
+        "Expense Description":"Portable video equipment"
     },
     {
         "Directorate":"Directorate for Social Security Scotland",
@@ -1053,7 +1053,7 @@
         "Merchant Category Name":"Automotive parts, accessories stores",
         "Transaction Date":"29\/01\/2019",
         "Transaction Amount":3000.0,
-        "Description":"Fleet management fees"
+        "Expense Description":"Fleet management fees"
     },
     {
         "Directorate":"Directorate for Social Security Scotland",
@@ -1061,7 +1061,7 @@
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"10\/01\/2019",
         "Transaction Amount":2099.0,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Social Security Scotland",
@@ -1069,7 +1069,7 @@
         "Merchant Category Name":"Postal services - government only",
         "Transaction Date":"18\/01\/2019",
         "Transaction Amount":1394.99,
-        "Description":"External Services Support"
+        "Expense Description":"External Services Support"
     },
     {
         "Directorate":"Directorate for Social Security Scotland",
@@ -1077,7 +1077,7 @@
         "Merchant Category Name":"Electronic sales",
         "Transaction Date":"11\/01\/2019",
         "Transaction Amount":1047.95,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Social Security Scotland",
@@ -1085,7 +1085,7 @@
         "Merchant Category Name":"Postal services - government only",
         "Transaction Date":"08\/01\/2019",
         "Transaction Amount":954.82,
-        "Description":"External Services Support"
+        "Expense Description":"External Services Support"
     },
     {
         "Directorate":"Directorate for Social Security Scotland",
@@ -1093,7 +1093,7 @@
         "Merchant Category Name":"Organisations, charitable & social services",
         "Transaction Date":"18\/01\/2019",
         "Transaction Amount":874.8,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Office of the Chief Executive NHS Scotland",
@@ -1101,6 +1101,6 @@
         "Merchant Category Name":"Direct marketing - combination catalogue\/retail merchandise",
         "Transaction Date":"09\/01\/2019",
         "Transaction Amount":1272.76,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     }
 ]

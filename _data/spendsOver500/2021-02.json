@@ -5,7 +5,7 @@
         "Merchant Category Name":"Lawn and garden supply stores",
         "Transaction Date":"08\/02\/2021",
         "Transaction Amount":"£680.00",
-        "Final Expense Description":"Farm equipment OR Agricultural supplies"
+        "Expense Description":"Farm equipment OR Agricultural supplies"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
@@ -13,7 +13,7 @@
         "Merchant Category Name":"Equipment, furniture, home furnishings stroes (excpt appliannces)",
         "Transaction Date":"11\/02\/2021",
         "Transaction Amount":"£1,134.00",
-        "Final Expense Description":"Health & safety equipment"
+        "Expense Description":"Health & safety equipment"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
@@ -21,7 +21,7 @@
         "Merchant Category Name":"Schools & educational service-not elsewhere classified",
         "Transaction Date":"19\/02\/2021",
         "Transaction Amount":"£5,652.00",
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
@@ -29,7 +29,7 @@
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"02\/02\/2021",
         "Transaction Amount":"£3,156.23",
-        "Final Expense Description":"Professional subscription - fees"
+        "Expense Description":"Professional subscription - fees"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
@@ -37,7 +37,7 @@
         "Merchant Category Name":"Industrial supplies not elsewhere classified",
         "Transaction Date":"29\/01\/2021",
         "Transaction Amount":"£3,354.98",
-        "Final Expense Description":"Scientific supplies"
+        "Expense Description":"Scientific supplies"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
@@ -45,7 +45,7 @@
         "Merchant Category Name":"Automotive tire stores",
         "Transaction Date":"18\/02\/2021",
         "Transaction Amount":"£765.00",
-        "Final Expense Description":"Vehicle - maintenance"
+        "Expense Description":"Vehicle - maintenance"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
@@ -53,7 +53,7 @@
         "Merchant Category Name":"Men's and women's clothing stores",
         "Transaction Date":"24\/02\/2021",
         "Transaction Amount":"£1,176.39",
-        "Final Expense Description":"Personal protective equipment"
+        "Expense Description":"Personal protective equipment"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
@@ -61,7 +61,7 @@
         "Merchant Category Name":"Landscaping and horticultural services",
         "Transaction Date":"12\/02\/2021",
         "Transaction Amount":"£704.95",
-        "Final Expense Description":"Personal protective equipment"
+        "Expense Description":"Personal protective equipment"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
@@ -69,7 +69,7 @@
         "Merchant Category Name":"Organisations, membership-not elsewhere classified",
         "Transaction Date":"03\/02\/2021",
         "Transaction Amount":"£539.00",
-        "Final Expense Description":"Professional membership - fees"
+        "Expense Description":"Professional membership - fees"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
@@ -77,7 +77,7 @@
         "Merchant Category Name":"Electronic sales",
         "Transaction Date":"11\/02\/2021",
         "Transaction Amount":"£2,400.97",
-        "Final Expense Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
@@ -85,7 +85,7 @@
         "Merchant Category Name":"Miscellaneous general merchandise",
         "Transaction Date":"10\/02\/2021",
         "Transaction Amount":"£2,956.60",
-        "Final Expense Description":"Horticultural supplies"
+        "Expense Description":"Horticultural supplies"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
@@ -93,7 +93,7 @@
         "Merchant Category Name":"Industrial supplies not elsewhere classified",
         "Transaction Date":"11\/02\/2021",
         "Transaction Amount":"£1,554.91",
-        "Final Expense Description":"Scientific supplies"
+        "Expense Description":"Scientific supplies"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
@@ -101,7 +101,7 @@
         "Merchant Category Name":"Dental\/labotory\/medical\/ophthalmic hospital equipment & supplies",
         "Transaction Date":"11\/02\/2021",
         "Transaction Amount":"£738.00",
-        "Final Expense Description":"Scientific equipment"
+        "Expense Description":"Scientific equipment"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
@@ -109,7 +109,7 @@
         "Merchant Category Name":"Health practitioners, medical services-not elsewhere classified",
         "Transaction Date":"11\/02\/2021",
         "Transaction Amount":"£1,188.00",
-        "Final Expense Description":"Scientific supplies"
+        "Expense Description":"Scientific supplies"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
@@ -117,7 +117,7 @@
         "Merchant Category Name":"Household appliance stores",
         "Transaction Date":"22\/02\/2021",
         "Transaction Amount":"£683.00",
-        "Final Expense Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
@@ -125,7 +125,7 @@
         "Merchant Category Name":"Household appliance stores",
         "Transaction Date":"03\/02\/2021",
         "Transaction Amount":"£714.00",
-        "Final Expense Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
@@ -133,7 +133,7 @@
         "Merchant Category Name":"Camera and photographic supply stores",
         "Transaction Date":"16\/02\/2021",
         "Transaction Amount":"£2,002.99",
-        "Final Expense Description":"Photographic equipment"
+        "Expense Description":"Photographic equipment"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
@@ -141,7 +141,7 @@
         "Merchant Category Name":"Camera and photographic supply stores",
         "Transaction Date":"10\/02\/2021",
         "Transaction Amount":"£2,564.60",
-        "Final Expense Description":"Photographic equipment"
+        "Expense Description":"Photographic equipment"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
@@ -149,7 +149,7 @@
         "Merchant Category Name":"Camera and photographic supply stores",
         "Transaction Date":"10\/02\/2021",
         "Transaction Amount":"£779.27",
-        "Final Expense Description":"Photographic equipment"
+        "Expense Description":"Photographic equipment"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
@@ -157,7 +157,7 @@
         "Merchant Category Name":"Office, School Supply, And Stationery Stores",
         "Transaction Date":"25\/02\/2021",
         "Transaction Amount":"£606.62",
-        "Final Expense Description":"Stationery"
+        "Expense Description":"Stationery"
     },
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
@@ -165,7 +165,7 @@
         "Merchant Category Name":"Enterprise Rent-A-Car",
         "Transaction Date":"19\/02\/2021",
         "Transaction Amount":"£542.30",
-        "Final Expense Description":"Vehicle hire"
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate For Children & Families",
@@ -173,7 +173,7 @@
         "Merchant Category Name":"Computer programing,data processing,integrated system design services",
         "Transaction Date":"03\/02\/2021",
         "Transaction Amount":"£612.25",
-        "Final Expense Description":"Professional subscription - fees"
+        "Expense Description":"Professional subscription - fees"
     },
     {
         "Directorate":"Directorate For Children & Families",
@@ -181,7 +181,7 @@
         "Merchant Category Name":"Commercial art, graphics, photography",
         "Transaction Date":"03\/02\/2021",
         "Transaction Amount":"£900.00",
-        "Final Expense Description":"Professional subscription - fees"
+        "Expense Description":"Professional subscription - fees"
     },
     {
         "Directorate":"Directorate For Children & Families",
@@ -189,7 +189,7 @@
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"11\/02\/2021",
         "Transaction Amount":"£663.29",
-        "Final Expense Description":"Specialist softwares OR Specialist software - renewal"
+        "Expense Description":"Specialist softwares OR Specialist software - renewal"
     },
     {
         "Directorate":"Directorate For Comms, Ministerial Support & Facil",
@@ -197,7 +197,7 @@
         "Merchant Category Name":"Office, School Supply, And Stationery Stores",
         "Transaction Date":"23\/02\/2021",
         "Transaction Amount":"£3,826.80",
-        "Final Expense Description":"Stationery"
+        "Expense Description":"Stationery"
     },
     {
         "Directorate":"Directorate For Comms, Ministerial Support & Facil",
@@ -205,7 +205,7 @@
         "Merchant Category Name":"Computers, Computer Peripheral Equipment, Software",
         "Transaction Date":"29\/01\/2021",
         "Transaction Amount":"£1,507.20",
-        "Final Expense Description":"IT peripherals"
+        "Expense Description":"IT peripherals"
     },
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
@@ -213,7 +213,7 @@
         "Merchant Category Name":"Miscellaneous Publishing And Printing",
         "Transaction Date":"24\/02\/2021",
         "Transaction Amount":"£4,320.00",
-        "Final Expense Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
@@ -221,7 +221,7 @@
         "Merchant Category Name":"Organizations, Membership-Not Elsewhere Classified",
         "Transaction Date":"15\/02\/2021",
         "Transaction Amount":"£1,423.20",
-        "Final Expense Description":"Professional membership - fees OR Professional subscription - fees"
+        "Expense Description":"Professional membership - fees OR Professional subscription - fees"
     },
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
@@ -229,7 +229,7 @@
         "Merchant Category Name":"Business Services-Not Elsewhere Classified",
         "Transaction Date":"08\/02\/2021",
         "Transaction Amount":"£636.39",
-        "Final Expense Description":"Professional subscription - fees"
+        "Expense Description":"Professional subscription - fees"
     },
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
@@ -237,7 +237,7 @@
         "Merchant Category Name":"Computers, Computer Peripheral Equipment, Software",
         "Transaction Date":"09\/02\/2021",
         "Transaction Amount":"£1,507.20",
-        "Final Expense Description":"IT peripherals"
+        "Expense Description":"IT peripherals"
     },
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
@@ -245,7 +245,7 @@
         "Merchant Category Name":"Office, School Supply, And Stationery Stores",
         "Transaction Date":"02\/02\/2021",
         "Transaction Amount":"£2,044.56",
-        "Final Expense Description":"Stationery"
+        "Expense Description":"Stationery"
     },
     {
         "Directorate":"Directorate For Community Health & Care",
@@ -253,7 +253,7 @@
         "Merchant Category Name":"Organisations, membership-not elsewhere classified",
         "Transaction Date":"25\/02\/2021",
         "Transaction Amount":"£1,368.00",
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Community Health & Care",
@@ -261,7 +261,7 @@
         "Merchant Category Name":"Business services-not elsewhere classified",
         "Transaction Date":"22\/02\/2021",
         "Transaction Amount":"£720.00",
-        "Final Expense Description":"Professional subscription - fees"
+        "Expense Description":"Professional subscription - fees"
     },
     {
         "Directorate":"Directorate For Digital",
@@ -269,7 +269,7 @@
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"16\/02\/2021",
         "Transaction Amount":"£792.00",
-        "Final Expense Description":"Specialist softwares OR Specialist software - renewal"
+        "Expense Description":"Specialist softwares OR Specialist software - renewal"
     },
     {
         "Directorate":"Directorate For Digital",
@@ -277,7 +277,7 @@
         "Merchant Category Name":"Direct marketing-other direct marketers\/not elsewhere classified",
         "Transaction Date":"25\/02\/2021",
         "Transaction Amount":"£1,193.99",
-        "Final Expense Description":"IT hardware - specialist equipment"
+        "Expense Description":"IT hardware - specialist equipment"
     },
     {
         "Directorate":"Directorate For Digital",
@@ -285,7 +285,7 @@
         "Merchant Category Name":"Direct marketing-other direct marketers\/not elsewhere classified",
         "Transaction Date":"18\/02\/2021",
         "Transaction Amount":"£1,653.99",
-        "Final Expense Description":"IT hardware - specialist equipment"
+        "Expense Description":"IT hardware - specialist equipment"
     },
     {
         "Directorate":"Directorate For Digital",
@@ -293,7 +293,7 @@
         "Merchant Category Name":"Electronic sales",
         "Transaction Date":"12\/02\/2021",
         "Transaction Amount":"£2,480.00",
-        "Final Expense Description":"IT hardware - specialist equipment"
+        "Expense Description":"IT hardware - specialist equipment"
     },
     {
         "Directorate":"Directorate For Digital",
@@ -301,7 +301,7 @@
         "Merchant Category Name":"Digital goods software applications",
         "Transaction Date":"20\/02\/2021",
         "Transaction Amount":"£1,764.14",
-        "Final Expense Description":"Professional licence - fees OR Professional licence - renewal"
+        "Expense Description":"Professional licence - fees OR Professional licence - renewal"
     },
     {
         "Directorate":"Directorate For Digital",
@@ -309,7 +309,7 @@
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"25\/02\/2021",
         "Transaction Amount":"£9,968.00",
-        "Final Expense Description":"Specialist softwares OR Specialist software - renewal"
+        "Expense Description":"Specialist softwares OR Specialist software - renewal"
     },
     {
         "Directorate":"Directorate For Digital",
@@ -317,7 +317,7 @@
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"02\/02\/2021",
         "Transaction Amount":"£1,094.92",
-        "Final Expense Description":"IT hardware - specialist equipment"
+        "Expense Description":"IT hardware - specialist equipment"
     },
     {
         "Directorate":"Directorate For Digital",
@@ -325,7 +325,7 @@
         "Merchant Category Name":"Business services-not elsewhere classified",
         "Transaction Date":"03\/02\/2021",
         "Transaction Amount":"£2,872.68",
-        "Final Expense Description":"Web service - service charge - month + year"
+        "Expense Description":"Web service - service charge - month + year"
     },
     {
         "Directorate":"Directorate For Digital",
@@ -333,7 +333,7 @@
         "Merchant Category Name":"Enterprise Rent-A-Car",
         "Transaction Date":"01\/02\/2021",
         "Transaction Amount":"£1,154.15",
-        "Final Expense Description":"Vehicle hire"
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate For Energy & Climate Change",
@@ -341,7 +341,7 @@
         "Merchant Category Name":"Schools, business and secretarial",
         "Transaction Date":"10\/02\/2021",
         "Transaction Amount":"£2,400.00",
-        "Final Expense Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate For External Affairs",
@@ -349,7 +349,7 @@
         "Merchant Category Name":"Caterers",
         "Transaction Date":"11\/02\/2021",
         "Transaction Amount":"£518.82",
-        "Final Expense Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate For Fair Work, Employability & Skills",
@@ -357,7 +357,7 @@
         "Merchant Category Name":"Associations-civic, social, and fraternal",
         "Transaction Date":"19\/02\/2021",
         "Transaction Amount":"£933.60",
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Financial Management",
@@ -365,7 +365,7 @@
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"04\/02\/2021",
         "Transaction Amount":"£1,207.99",
-        "Final Expense Description":"Professional subscription - fees"
+        "Expense Description":"Professional subscription - fees"
     },
     {
         "Directorate":"Directorate For Health Performance & Delivery",
@@ -373,7 +373,7 @@
         "Merchant Category Name":"Schools, trade and vocational",
         "Transaction Date":"04\/02\/2021",
         "Transaction Amount":"£1,192.80",
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Internal Audit And Assurance",
@@ -381,7 +381,7 @@
         "Merchant Category Name":"Accounting, auditing and bookkeeping services",
         "Transaction Date":"18\/02\/2021",
         "Transaction Amount":"£8,059.00",
-        "Final Expense Description":"Professional membership - fees OR Professional subscription - fees"
+        "Expense Description":"Professional membership - fees OR Professional subscription - fees"
     },
     {
         "Directorate":"Directorate For Justice",
@@ -389,7 +389,7 @@
         "Merchant Category Name":"Business services-not elsewhere classified",
         "Transaction Date":"29\/01\/2021",
         "Transaction Amount":"£1,582.78",
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Learning",
@@ -397,7 +397,7 @@
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"06\/02\/2021",
         "Transaction Amount":"£592.80",
-        "Final Expense Description":"Professional subscription - fees"
+        "Expense Description":"Professional subscription - fees"
     },
     {
         "Directorate":"Directorate For Local Government & Communities",
@@ -405,7 +405,7 @@
         "Merchant Category Name":"Professional services-not elsewhere classified",
         "Transaction Date":"29\/01\/2021",
         "Transaction Amount":"£594.00",
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Local Government & Communities",
@@ -413,7 +413,7 @@
         "Merchant Category Name":"Colleges, universities, professional schools & junior colleges",
         "Transaction Date":"01\/02\/2021",
         "Transaction Amount":"£835.20",
-        "Final Expense Description":"External training course - accommodation"
+        "Expense Description":"External training course - accommodation"
     },
     {
         "Directorate":"Directorate For Local Government & Communities",
@@ -421,7 +421,7 @@
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"12\/02\/2021",
         "Transaction Amount":"£4,366.07",
-        "Final Expense Description":"Professional subscription - fees"
+        "Expense Description":"Professional subscription - fees"
     },
     {
         "Directorate":"Directorate For Local Government & Communities",
@@ -429,7 +429,7 @@
         "Merchant Category Name":"Organisations, membership-not elsewhere classified",
         "Transaction Date":"10\/02\/2021",
         "Transaction Amount":"£674.04",
-        "Final Expense Description":"Specialist softwares OR Specialist software - renewal"
+        "Expense Description":"Specialist softwares OR Specialist software - renewal"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -437,7 +437,7 @@
         "Merchant Category Name":"Marinas, marine service\/supplies",
         "Transaction Date":"29\/01\/2021",
         "Transaction Amount":"£730.41",
-        "Final Expense Description":"Vehicle - maintenance"
+        "Expense Description":"Vehicle - maintenance"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -445,7 +445,7 @@
         "Merchant Category Name":"Schools, business and secretarial",
         "Transaction Date":"17\/02\/2021",
         "Transaction Amount":"£1,200.00",
-        "Final Expense Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -453,7 +453,7 @@
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"18\/02\/2021",
         "Transaction Amount":"£522.64",
-        "Final Expense Description":"Specialist softwares OR specialist software - renewal"
+        "Expense Description":"Specialist softwares OR specialist software - renewal"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -461,7 +461,7 @@
         "Merchant Category Name":"Hardware equipment and supplies",
         "Transaction Date":"19\/02\/2021",
         "Transaction Amount":"£2,782.90",
-        "Final Expense Description":"Engineering hardware"
+        "Expense Description":"Engineering hardware"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -469,7 +469,7 @@
         "Merchant Category Name":"Industrial supplies not elsewhere classified",
         "Transaction Date":"25\/02\/2021",
         "Transaction Amount":"£979.00",
-        "Final Expense Description":"Vessel engineering equipment"
+        "Expense Description":"Vessel engineering equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -477,7 +477,7 @@
         "Merchant Category Name":"Electrical parts and equipment",
         "Transaction Date":"19\/02\/2021",
         "Transaction Amount":"£584.77",
-        "Final Expense Description":"Vessel engineering equipment"
+        "Expense Description":"Vessel engineering equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -485,7 +485,7 @@
         "Merchant Category Name":"Miscellaneous and specialty retail stores",
         "Transaction Date":"13\/02\/2021",
         "Transaction Amount":"£1,175.84",
-        "Final Expense Description":"IT hardware - specialist equipment"
+        "Expense Description":"IT hardware - specialist equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -493,7 +493,7 @@
         "Merchant Category Name":"Construction materials not elsewhere classified",
         "Transaction Date":"02\/02\/2021",
         "Transaction Amount":"£700.80",
-        "Final Expense Description":"Vessel equipment OR Vessel scientific equipment"
+        "Expense Description":"Vessel equipment OR Vessel scientific equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -501,7 +501,7 @@
         "Merchant Category Name":"Sporting goods stores",
         "Transaction Date":"01\/02\/2021",
         "Transaction Amount":"£1,566.45",
-        "Final Expense Description":"IT hardware - specialist equipment"
+        "Expense Description":"IT hardware - specialist equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -509,7 +509,7 @@
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"07\/02\/2021",
         "Transaction Amount":"£1,224.00",
-        "Final Expense Description":"Specialist softwares OR Specialist software - renewal"
+        "Expense Description":"Specialist softwares OR Specialist software - renewal"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -517,7 +517,7 @@
         "Merchant Category Name":"Bakeries",
         "Transaction Date":"19\/02\/2021",
         "Transaction Amount":"£1,113.64",
-        "Final Expense Description":"Vessel food stores"
+        "Expense Description":"Vessel food stores"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -525,7 +525,7 @@
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"16\/02\/2021",
         "Transaction Amount":"£1,486.87",
-        "Final Expense Description":"Specialist softwares OR specialist software - renewal"
+        "Expense Description":"Specialist softwares OR specialist software - renewal"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -533,7 +533,7 @@
         "Merchant Category Name":"Household appliance stores",
         "Transaction Date":"15\/02\/2021",
         "Transaction Amount":"£684.96",
-        "Final Expense Description":"Vessel engineering equipment"
+        "Expense Description":"Vessel engineering equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -541,7 +541,7 @@
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"04\/02\/2021",
         "Transaction Amount":"£1,482.84",
-        "Final Expense Description":"Specialist Lab equipment"
+        "Expense Description":"Specialist Lab equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -549,7 +549,7 @@
         "Merchant Category Name":"Miscellaneous and specialty retail stores",
         "Transaction Date":"01\/02\/2021",
         "Transaction Amount":"£540.00",
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -557,7 +557,7 @@
         "Merchant Category Name":"Schools & educational service-not elsewhere classified",
         "Transaction Date":"24\/02\/2021",
         "Transaction Amount":"£799.56",
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -565,7 +565,7 @@
         "Merchant Category Name":"Schools & educational service-not elsewhere classified",
         "Transaction Date":"08\/02\/2021",
         "Transaction Amount":"£1,016.77",
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -573,7 +573,7 @@
         "Merchant Category Name":"Theatrical producers(excluding motion picture),ticket agency",
         "Transaction Date":"22\/02\/2021",
         "Transaction Amount":"£5,400.00",
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -581,7 +581,7 @@
         "Merchant Category Name":"Sports apparel, riding apparel stores",
         "Transaction Date":"11\/02\/2021",
         "Transaction Amount":"£818.93",
-        "Final Expense Description":"Vessel safety equipment - clothing"
+        "Expense Description":"Vessel safety equipment - clothing"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -589,7 +589,7 @@
         "Merchant Category Name":"Electrical parts and equipment",
         "Transaction Date":"23\/02\/2021",
         "Transaction Amount":"£5,829.60",
-        "Final Expense Description":"Photographic equipment - accessories"
+        "Expense Description":"Photographic equipment - accessories"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -597,7 +597,7 @@
         "Merchant Category Name":"Electrical parts and equipment",
         "Transaction Date":"23\/02\/2021",
         "Transaction Amount":"£5,810.40",
-        "Final Expense Description":"Photographic equipment - accessories"
+        "Expense Description":"Photographic equipment - accessories"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -605,7 +605,7 @@
         "Merchant Category Name":"Office and commercial furniture",
         "Transaction Date":"15\/02\/2021",
         "Transaction Amount":"£838.80",
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -613,7 +613,7 @@
         "Merchant Category Name":"Direct marketing-other direct marketers\/not elsew.",
         "Transaction Date":"31\/01\/2021",
         "Transaction Amount":"£678.33",
-        "Final Expense Description":"IT hardware - specialist equipment"
+        "Expense Description":"IT hardware - specialist equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -621,7 +621,7 @@
         "Merchant Category Name":"Electrical parts and equipment",
         "Transaction Date":"23\/02\/2021",
         "Transaction Amount":"£5,810.40",
-        "Final Expense Description":"Photographic equipment - accessories"
+        "Expense Description":"Photographic equipment - accessories"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -629,7 +629,7 @@
         "Merchant Category Name":"Electrical parts and equipment",
         "Transaction Date":"08\/02\/2021",
         "Transaction Amount":"£1,908.41",
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -637,7 +637,7 @@
         "Merchant Category Name":"Automotive parts, accessories stores",
         "Transaction Date":"15\/02\/2021",
         "Transaction Amount":"£540.00",
-        "Final Expense Description":"IT hardware - specialist equipment"
+        "Expense Description":"IT hardware - specialist equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -645,7 +645,7 @@
         "Merchant Category Name":"Automotive parts, accessories stores",
         "Transaction Date":"23\/02\/2021",
         "Transaction Amount":"£509.56",
-        "Final Expense Description":"Vehicle - maintenance"
+        "Expense Description":"Vehicle - maintenance"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -653,7 +653,7 @@
         "Merchant Category Name":"Home supply warehouse stores",
         "Transaction Date":"18\/02\/2021",
         "Transaction Amount":"£687.80",
-        "Final Expense Description":"Vessel safety equipment"
+        "Expense Description":"Vessel safety equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -661,7 +661,7 @@
         "Merchant Category Name":"Direct marketing-other direct marketers\/not elsewhere classified",
         "Transaction Date":"15\/02\/2021",
         "Transaction Amount":"£1,240.20",
-        "Final Expense Description":"IT hardware - specialist equipment"
+        "Expense Description":"IT hardware - specialist equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -669,7 +669,7 @@
         "Merchant Category Name":"Direct marketing-other direct marketers\/not elsewhere classified",
         "Transaction Date":"11\/02\/2021",
         "Transaction Amount":"£809.70",
-        "Final Expense Description":"IT hardware - specialist equipment"
+        "Expense Description":"IT hardware - specialist equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -677,7 +677,7 @@
         "Merchant Category Name":"Miscellaneous and specialty retail stores",
         "Transaction Date":"09\/02\/2021",
         "Transaction Amount":"£649.19",
-        "Final Expense Description":"Vessel engineering equipment"
+        "Expense Description":"Vessel engineering equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -685,7 +685,7 @@
         "Merchant Category Name":"Computer programing,data processing,integrated system design services",
         "Transaction Date":"01\/02\/2021",
         "Transaction Amount":"£3,582.00",
-        "Final Expense Description":"Specialist softwares OR Specialist software - renewal"
+        "Expense Description":"Specialist softwares OR Specialist software - renewal"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -693,7 +693,7 @@
         "Merchant Category Name":"Direct marketing-other direct marketers\/not elsewhere classified",
         "Transaction Date":"21\/02\/2021",
         "Transaction Amount":"£564.46",
-        "Final Expense Description":"Vessel safety equipment"
+        "Expense Description":"Vessel safety equipment"
     },
     {
         "Directorate":"Directorate For Marine Scotland",
@@ -701,7 +701,7 @@
         "Merchant Category Name":"Business services-not elsewhere classified",
         "Transaction Date":"01\/02\/2021",
         "Transaction Amount":"£840.84",
-        "Final Expense Description":"Vessel engineering equipment - maintenance"
+        "Expense Description":"Vessel engineering equipment - maintenance"
     },
     {
         "Directorate":"Directorate For People",
@@ -709,7 +709,7 @@
         "Merchant Category Name":"Miscellaneous and specialty retail stores",
         "Transaction Date":"24\/02\/2021",
         "Transaction Amount":"£4,329.05",
-        "Final Expense Description":"IT hardware - specialist equipment"
+        "Expense Description":"IT hardware - specialist equipment"
     },
     {
         "Directorate":"Directorate For People",
@@ -717,7 +717,7 @@
         "Merchant Category Name":"Electronic sales",
         "Transaction Date":"17\/02\/2021",
         "Transaction Amount":"£1,030.80",
-        "Final Expense Description":"IT hardware - specialist equipment"
+        "Expense Description":"IT hardware - specialist equipment"
     },
     {
         "Directorate":"Directorate For People",
@@ -725,7 +725,7 @@
         "Merchant Category Name":"Electronic sales",
         "Transaction Date":"17\/02\/2021",
         "Transaction Amount":"£1,030.80",
-        "Final Expense Description":"IT hardware - specialist equipment"
+        "Expense Description":"IT hardware - specialist equipment"
     },
     {
         "Directorate":"Directorate For People",
@@ -733,7 +733,7 @@
         "Merchant Category Name":"Electronic sales",
         "Transaction Date":"16\/02\/2021",
         "Transaction Amount":"£1,030.80",
-        "Final Expense Description":"IT hardware - specialist equipment"
+        "Expense Description":"IT hardware - specialist equipment"
     },
     {
         "Directorate":"Directorate For People",
@@ -741,7 +741,7 @@
         "Merchant Category Name":"Business services-not elsewhere classified",
         "Transaction Date":"29\/01\/2021",
         "Transaction Amount":"£1,294.74",
-        "Final Expense Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate For People",
@@ -749,7 +749,7 @@
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"04\/02\/2021",
         "Transaction Amount":"£1,908.00",
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Performance & Strategic Outcomes",
@@ -757,7 +757,7 @@
         "Merchant Category Name":"Colleges, universities, professional schools & junior colleges",
         "Transaction Date":"15\/02\/2021",
         "Transaction Amount":"£500.00",
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Safer Communities",
@@ -765,7 +765,7 @@
         "Merchant Category Name":"Hardware stores",
         "Transaction Date":"22\/02\/2021",
         "Transaction Amount":"£1,098.00",
-        "Final Expense Description":"Specialist equipment"
+        "Expense Description":"Specialist equipment"
     },
     {
         "Directorate":"Directorate For Safer Communities",
@@ -773,7 +773,7 @@
         "Merchant Category Name":"Hardware stores",
         "Transaction Date":"22\/02\/2021",
         "Transaction Amount":"£1,098.00",
-        "Final Expense Description":"Specialist equipment"
+        "Expense Description":"Specialist equipment"
     },
     {
         "Directorate":"Directorate For Safer Communities",
@@ -781,7 +781,7 @@
         "Merchant Category Name":"Hardware stores",
         "Transaction Date":"22\/02\/2021",
         "Transaction Amount":"£1,098.00",
-        "Final Expense Description":"Specialist equipment"
+        "Expense Description":"Specialist equipment"
     },
     {
         "Directorate":"Directorate For Safer Communities",
@@ -789,7 +789,7 @@
         "Merchant Category Name":"Hardware stores",
         "Transaction Date":"19\/02\/2021",
         "Transaction Amount":"£1,098.00",
-        "Final Expense Description":"Specialist equipment"
+        "Expense Description":"Specialist equipment"
     },
     {
         "Directorate":"Directorate For Safer Communities",
@@ -797,7 +797,7 @@
         "Merchant Category Name":"Hardware stores",
         "Transaction Date":"18\/02\/2021",
         "Transaction Amount":"£1,098.00",
-        "Final Expense Description":"Specialist equipment"
+        "Expense Description":"Specialist equipment"
     },
     {
         "Directorate":"Directorate For Safer Communities",
@@ -805,7 +805,7 @@
         "Merchant Category Name":"Hardware stores",
         "Transaction Date":"17\/02\/2021",
         "Transaction Amount":"£1,098.00",
-        "Final Expense Description":"Specialist equipment"
+        "Expense Description":"Specialist equipment"
     },
     {
         "Directorate":"Directorate For Safer Communities",
@@ -813,7 +813,7 @@
         "Merchant Category Name":"Business services-not elsewhere classified",
         "Transaction Date":"15\/02\/2021",
         "Transaction Amount":"£984.00",
-        "Final Expense Description":"Professional licence - fees OR Professional licence - renewal"
+        "Expense Description":"Professional licence - fees OR Professional licence - renewal"
     },
     {
         "Directorate":"Directorate For Safer Communities",
@@ -821,7 +821,7 @@
         "Merchant Category Name":"Book stores",
         "Transaction Date":"16\/02\/2021",
         "Transaction Amount":"£568.00",
-        "Final Expense Description":"Professional licence - fees OR Professional licence - renewal"
+        "Expense Description":"Professional licence - fees OR Professional licence - renewal"
     },
     {
         "Directorate":"Directorate For Social Security",
@@ -829,7 +829,7 @@
         "Merchant Category Name":"Computer programing,data processing,integrated system design services",
         "Transaction Date":"22\/02\/2021",
         "Transaction Amount":"£595.00",
-        "Final Expense Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Social Security",
@@ -837,7 +837,7 @@
         "Merchant Category Name":"Photographic studios",
         "Transaction Date":"11\/02\/2021",
         "Transaction Amount":"£8,723.49",
-        "Final Expense Description":"Professional licence - fees"
+        "Expense Description":"Professional licence - fees"
     },
     {
         "Directorate":"Directorate For Social Security",
@@ -845,7 +845,7 @@
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"05\/02\/2021",
         "Transaction Amount":"£4,541.72",
-        "Final Expense Description":"Professional Subscription - Renewal Fees"
+        "Expense Description":"Professional Subscription - Renewal Fees"
     },
     {
         "Directorate":"Directorate For Social Security",
@@ -853,7 +853,7 @@
         "Merchant Category Name":"Computers, Computer Peripheral Equipment, Software",
         "Transaction Date":"23\/02\/2021",
         "Transaction Amount":"£684.60",
-        "Final Expense Description":"IT peripherals"
+        "Expense Description":"IT peripherals"
     },
     {
         "Directorate":"Scottish Procurement & Property Directorate",
@@ -861,7 +861,7 @@
         "Merchant Category Name":"Organisations, membership-not elsewhere classified",
         "Transaction Date":"02\/02\/2021",
         "Transaction Amount":"£658.00",
-        "Final Expense Description":"professional memberships"
+        "Expense Description":"professional memberships"
     },
     {
         "Directorate":"Scottish Procurement & Property Directorate",
@@ -869,7 +869,7 @@
         "Merchant Category Name":"Organisations, membership-not elsewhere classified",
         "Transaction Date":"01\/02\/2021",
         "Transaction Amount":"£539.00",
-        "Final Expense Description":"professional memberships"
+        "Expense Description":"professional memberships"
     },
     {
         "Directorate":"Scottish Procurement & Property Directorate",
@@ -877,7 +877,7 @@
         "Merchant Category Name":"Organisations, membership-not elsewhere classified",
         "Transaction Date":"01\/02\/2021",
         "Transaction Amount":"£539.00",
-        "Final Expense Description":"professional memberships"
+        "Expense Description":"professional memberships"
     },
     {
         "Directorate":"Scottish Procurement & Property Directorate",
@@ -885,7 +885,7 @@
         "Merchant Category Name":"Organisations, membership-not elsewhere classified",
         "Transaction Date":"29\/01\/2021",
         "Transaction Amount":"£539.00",
-        "Final Expense Description":"professional memberships"
+        "Expense Description":"professional memberships"
     },
     {
         "Directorate":"Scottish Procurement & Property Directorate",
@@ -893,7 +893,7 @@
         "Merchant Category Name":"Organisations, membership-not elsewhere classified",
         "Transaction Date":"29\/01\/2021",
         "Transaction Amount":"£539.00",
-        "Final Expense Description":"professional memberships"
+        "Expense Description":"professional memberships"
     },
     {
         "Directorate":"Scottish Procurement & Property Directorate",
@@ -901,7 +901,7 @@
         "Merchant Category Name":"Organisations, membership-not elsewhere classified",
         "Transaction Date":"29\/01\/2021",
         "Transaction Amount":"£564.00",
-        "Final Expense Description":"professional memberships"
+        "Expense Description":"professional memberships"
     },
     {
         "Directorate":"Scottish Procurement & Property Directorate",
@@ -909,7 +909,7 @@
         "Merchant Category Name":"Organisations, membership-not elsewhere classified",
         "Transaction Date":"29\/01\/2021",
         "Transaction Amount":"£539.00",
-        "Final Expense Description":"professional memberships"
+        "Expense Description":"professional memberships"
     },
     {
         "Directorate":"Scottish Procurement & Property Directorate",
@@ -917,7 +917,7 @@
         "Merchant Category Name":"Organisations, membership-not elsewhere classified",
         "Transaction Date":"29\/01\/2021",
         "Transaction Amount":"£539.00",
-        "Final Expense Description":"professional memberships"
+        "Expense Description":"professional memberships"
     },
     {
         "Directorate":"Scottish Procurement & Property Directorate",
@@ -925,6 +925,6 @@
         "Merchant Category Name":"Organisations, membership-not elsewhere classified",
         "Transaction Date":"29\/01\/2021",
         "Transaction Amount":"£658.00",
-        "Final Expense Description":"professional memberships"
+        "Expense Description":"professional memberships"
     }
 ]

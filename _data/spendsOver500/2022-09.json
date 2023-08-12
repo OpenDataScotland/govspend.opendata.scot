@@ -5,7 +5,7 @@
         "Merchant Category Name":"SCHOOLS, BUSINESS AND SECRETARIAL",
         "Transaction Date":"09\/09\/2022",
         "Transaction Amount":"£896.00",
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -13,7 +13,7 @@
         "Merchant Category Name":"GOVERNMENT SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"26\/09\/2022",
         "Transaction Amount":"£676.00",
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -21,7 +21,7 @@
         "Merchant Category Name":"BUILDING MATERIALS, LUMBER STORES",
         "Transaction Date":"29\/09\/2022",
         "Transaction Amount":"£653.40",
-        "Description":"Agrigultural supplies"
+        "Expense Description":"Agrigultural supplies"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -29,7 +29,7 @@
         "Merchant Category Name":"MISCELLANEOUS AND SPECIALTY RETAIL STORES",
         "Transaction Date":"14\/09\/2022",
         "Transaction Amount":"£813.60",
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -37,7 +37,7 @@
         "Merchant Category Name":"BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"02\/09\/2022",
         "Transaction Amount":"£632.61",
-        "Description":"Specialist softwares"
+        "Expense Description":"Specialist softwares"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -45,7 +45,7 @@
         "Merchant Category Name":"BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"02\/09\/2022",
         "Transaction Amount":"£653.08",
-        "Description":"Specialist softwares"
+        "Expense Description":"Specialist softwares"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -53,7 +53,7 @@
         "Merchant Category Name":"BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"02\/09\/2022",
         "Transaction Amount":"£5,565.73",
-        "Description":"Specialist softwares"
+        "Expense Description":"Specialist softwares"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -61,7 +61,7 @@
         "Merchant Category Name":"CAMERA AND PHOTOGRAPHIC SUPPLY STORES",
         "Transaction Date":"22\/09\/2022",
         "Transaction Amount":"£1,793.94",
-        "Description":"Photographic equipment - accessories"
+        "Expense Description":"Photographic equipment - accessories"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -69,7 +69,7 @@
         "Merchant Category Name":"MOTOR VEHICLE SUPPLIES AND NEW PARTS",
         "Transaction Date":"22\/09\/2022",
         "Transaction Amount":"£803.72",
-        "Description":"Photographic equipment - accessories"
+        "Expense Description":"Photographic equipment - accessories"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -77,7 +77,7 @@
         "Merchant Category Name":"ENTERPRISE RENT-A-CAR",
         "Transaction Date":"28\/09\/2022",
         "Transaction Amount":"£793.00",
-        "Description":"Vehicle hire"
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -85,7 +85,7 @@
         "Merchant Category Name":"ENTERPRISE RENT-A-CAR",
         "Transaction Date":"28\/09\/2022",
         "Transaction Amount":"£667.35",
-        "Description":"Vehicle hire"
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -93,7 +93,7 @@
         "Merchant Category Name":"ENTERPRISE RENT-A-CAR",
         "Transaction Date":"02\/09\/2022",
         "Transaction Amount":"£561.11",
-        "Description":"Vehicle hire"
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -101,7 +101,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
         "Transaction Amount":"£4,717.89",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -109,7 +109,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
         "Transaction Amount":"£3,571.84",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -117,7 +117,7 @@
         "Merchant Category Name":"MISC\/AUTO\/AIRCRAFT\/FARM EQUIP NOT ELSEWHERE CLASS",
         "Transaction Date":"29\/09\/2022",
         "Transaction Amount":"£4,010.04",
-        "Description":"Farm Equipment - maintenance"
+        "Expense Description":"Farm Equipment - maintenance"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -125,7 +125,7 @@
         "Merchant Category Name":"COLLEGES, UNIV, PRO SCHOOLS, JUNIOR COLLEGES",
         "Transaction Date":"06\/09\/2022",
         "Transaction Amount":"£537.00",
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -133,7 +133,7 @@
         "Merchant Category Name":"COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
         "Transaction Date":"22\/09\/2022",
         "Transaction Amount":"£1,465.77",
-        "Description":"External conference - fees"
+        "Expense Description":"External conference - fees"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -141,7 +141,7 @@
         "Merchant Category Name":"POSTAL SERVICES-GOVERNMENT ONLY",
         "Transaction Date":"07\/09\/2022",
         "Transaction Amount":"£1,305.30",
-        "Description":"Postal Services"
+        "Expense Description":"Postal Services"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -149,7 +149,7 @@
         "Merchant Category Name":"POSTAL SERVICES-GOVERNMENT ONLY",
         "Transaction Date":"07\/09\/2022",
         "Transaction Amount":"£1,010.88",
-        "Description":"Postal Services"
+        "Expense Description":"Postal Services"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -157,7 +157,7 @@
         "Merchant Category Name":"POSTAL SERVICES-GOVERNMENT ONLY",
         "Transaction Date":"06\/09\/2022",
         "Transaction Amount":"£812.36",
-        "Description":"Postal Services"
+        "Expense Description":"Postal Services"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -165,7 +165,7 @@
         "Merchant Category Name":"POSTAL SERVICES-GOVERNMENT ONLY",
         "Transaction Date":"01\/09\/2022",
         "Transaction Amount":"£535.50",
-        "Description":"Postal Services"
+        "Expense Description":"Postal Services"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -173,7 +173,7 @@
         "Merchant Category Name":"FUEL DEALERS-COAL, FUEL OIL, LIQ PETROLEUM, WOOD",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£813.06",
-        "Description":"Building - payment charge"
+        "Expense Description":"Building - payment charge"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -181,7 +181,7 @@
         "Merchant Category Name":"FUEL DEALERS-COAL, FUEL OIL, LIQ PETROLEUM, WOOD",
         "Transaction Date":"29\/09\/2022",
         "Transaction Amount":"£1,193.47",
-        "Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -189,7 +189,7 @@
         "Merchant Category Name":"OFFICE, SCHOOL SUPPLY, AND STATIONERY STORES",
         "Transaction Date":"15\/09\/2022",
         "Transaction Amount":"£709.75",
-        "Description":"Stationery"
+        "Expense Description":"Stationery"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -197,7 +197,7 @@
         "Merchant Category Name":"GOVERNMENT SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"26\/09\/2022",
         "Transaction Amount":"£706.38",
-        "Description":"Professional membership - fees"
+        "Expense Description":"Professional membership - fees"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -205,7 +205,7 @@
         "Merchant Category Name":"COMPUTER SOFTWARE STORES",
         "Transaction Date":"09\/09\/2022",
         "Transaction Amount":"£3,944.40",
-        "Description":"Specialist software - renewal"
+        "Expense Description":"Specialist software - renewal"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -213,7 +213,7 @@
         "Merchant Category Name":"BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"09\/09\/2022",
         "Transaction Amount":"£1,674.00",
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -221,7 +221,7 @@
         "Merchant Category Name":"UTLTS-ELCTRC, GAS, HEATING OIL, SANITARY, WATER",
         "Transaction Date":"14\/09\/2022",
         "Transaction Amount":"£16,070.40",
-        "Description":"Building - payment charge"
+        "Expense Description":"Building - payment charge"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -229,7 +229,7 @@
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"23\/09\/2022",
         "Transaction Amount":"£4,246.80",
-        "Description":"Professional licence - fees"
+        "Expense Description":"Professional licence - fees"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -237,7 +237,7 @@
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"23\/09\/2022",
         "Transaction Amount":"£1,529.04",
-        "Description":"Professional licence - fees"
+        "Expense Description":"Professional licence - fees"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -245,7 +245,7 @@
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"05\/09\/2022",
         "Transaction Amount":"£556.80",
-        "Description":"Professional licence - fees"
+        "Expense Description":"Professional licence - fees"
     },
     {
         "Directorate":"Directorate for Chief Medical Officer",
@@ -253,7 +253,7 @@
         "Merchant Category Name":"LODGING-HOTELS,MOTELS,RESORTS-NOT CLASSIFIED",
         "Transaction Date":"05\/09\/2022",
         "Transaction Amount":"£1,662.00",
-        "Description":"External event – accommodation"
+        "Expense Description":"External event – accommodation"
     },
     {
         "Directorate":"Directorate for Constitution & Cabinet",
@@ -261,7 +261,7 @@
         "Merchant Category Name":"ACCOUNTING, AUDITING AND BOOKKEEPING SERVICES",
         "Transaction Date":"01\/09\/2022",
         "Transaction Amount":"£2,400.00",
-        "Description":"Professional subscription - fees"
+        "Expense Description":"Professional subscription - fees"
     },
     {
         "Directorate":"Directorate for Constitution & Cabinet",
@@ -269,7 +269,7 @@
         "Merchant Category Name":"LODGING-HOTELS,MOTELS,RESORTS-NOT CLASSIFIED",
         "Transaction Date":"26\/09\/2022",
         "Transaction Amount":"£550.00",
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Constitution & Cabinet",
@@ -277,7 +277,7 @@
         "Merchant Category Name":"SIXT CAR RENTAL",
         "Transaction Date":"15\/09\/2022",
         "Transaction Amount":"£1,103.50",
-        "Description":"Travel costs - car hire"
+        "Expense Description":"Travel costs - car hire"
     },
     {
         "Directorate":"Directorate for Corporate Transformation & Workplace",
@@ -285,7 +285,7 @@
         "Merchant Category Name":"AUTOMOTIVE SERVICE SHOPS",
         "Transaction Date":"20\/09\/2022",
         "Transaction Amount":"£985.00",
-        "Description":"Vehicle - maintenance"
+        "Expense Description":"Vehicle - maintenance"
     },
     {
         "Directorate":"Directorate for Corporate Transformation & Workplace",
@@ -293,7 +293,7 @@
         "Merchant Category Name":"AUTO & TRUCK DLRS-SALES,SVC, REPRS,PRTS, & LEASING",
         "Transaction Date":"13\/09\/2022",
         "Transaction Amount":"£513.70",
-        "Description":"Vehicle - maintenance"
+        "Expense Description":"Vehicle - maintenance"
     },
     {
         "Directorate":"Directorate for Corporate Transformation & Workplace",
@@ -301,7 +301,7 @@
         "Merchant Category Name":"AUTO & TRUCK DLRS-SALES,SVC, REPRS,PRTS, & LEASING",
         "Transaction Date":"16\/09\/2022",
         "Transaction Amount":"£544.47",
-        "Description":"Vehicle - maintenance"
+        "Expense Description":"Vehicle - maintenance"
     },
     {
         "Directorate":"Directorate for Corporate Transformation & Workplace",
@@ -309,7 +309,7 @@
         "Merchant Category Name":"AUTOMOTIVE SERVICE SHOPS",
         "Transaction Date":"16\/09\/2022",
         "Transaction Amount":"£886.25",
-        "Description":"Vehicle - maintenance"
+        "Expense Description":"Vehicle - maintenance"
     },
     {
         "Directorate":"Directorate for Corporate Transformation & Workplace",
@@ -317,7 +317,7 @@
         "Merchant Category Name":"AUTO & TRUCK DLRS-SALES,SVC, REPRS,PRTS, & LEASING",
         "Transaction Date":"16\/09\/2022",
         "Transaction Amount":"£546.00",
-        "Description":"Vehicle - maintenance"
+        "Expense Description":"Vehicle - maintenance"
     },
     {
         "Directorate":"Directorate for Corporate Transformation & Workplace",
@@ -325,7 +325,7 @@
         "Merchant Category Name":"SIXT CAR RENTAL",
         "Transaction Date":"11\/09\/2022",
         "Transaction Amount":"£1,103.50",
-        "Description":"Travel costs - car hire"
+        "Expense Description":"Travel costs - car hire"
     },
     {
         "Directorate":"Directorate for Corporate Transformation & Workplace",
@@ -333,7 +333,7 @@
         "Merchant Category Name":"SCHOOLS, TRADE AND VOCATIONAL",
         "Transaction Date":"09\/09\/2022",
         "Transaction Amount":"£792.00",
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Corporate Transformation & Workplace",
@@ -341,7 +341,7 @@
         "Merchant Category Name":"AUTOMOTIVE TIRE STORES",
         "Transaction Date":"21\/09\/2022",
         "Transaction Amount":"£791.96",
-        "Description":"Vehicle - maintenance"
+        "Expense Description":"Vehicle - maintenance"
     },
     {
         "Directorate":"Directorate for Corporate Transformation & Workplace",
@@ -349,7 +349,7 @@
         "Merchant Category Name":"AUTOMOTIVE TIRE STORES",
         "Transaction Date":"21\/09\/2022",
         "Transaction Amount":"£735.86",
-        "Description":"Vehicle - maintenance"
+        "Expense Description":"Vehicle - maintenance"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -357,7 +357,7 @@
         "Merchant Category Name":"BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"15\/09\/2022",
         "Transaction Amount":"£2,755.46",
-        "Description":"Professional subscription - fees"
+        "Expense Description":"Professional subscription - fees"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -365,7 +365,7 @@
         "Merchant Category Name":"BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"06\/09\/2022",
         "Transaction Amount":"£1,140.00",
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -373,7 +373,7 @@
         "Merchant Category Name":"ENTERPRISE RENT-A-CAR",
         "Transaction Date":"14\/09\/2022",
         "Transaction Amount":"£1,154.15",
-        "Description":"Vehicle hire"
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -381,7 +381,7 @@
         "Merchant Category Name":"DIGITAL GOODS SOFTWARE APPLICATIONS",
         "Transaction Date":"08\/09\/2022",
         "Transaction Amount":"£901.78",
-        "Description":"Specialist software - renewal"
+        "Expense Description":"Specialist software - renewal"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -389,7 +389,7 @@
         "Merchant Category Name":"DIGITAL GOODS SOFTWARE APPLICATIONS",
         "Transaction Date":"30\/08\/2022",
         "Transaction Amount":"£1,678.65",
-        "Description":"Specialist software - renewal"
+        "Expense Description":"Specialist software - renewal"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -397,7 +397,7 @@
         "Merchant Category Name":"COMPUTER SOFTWARE STORES",
         "Transaction Date":"28\/09\/2022",
         "Transaction Amount":"£1,733.32",
-        "Description":"Specialist softwares"
+        "Expense Description":"Specialist softwares"
     },
     {
         "Directorate":"Directorate for Digital Health & Care",
@@ -405,7 +405,7 @@
         "Merchant Category Name":"BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"27\/09\/2022",
         "Transaction Amount":"£1,686.00",
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Equality, Inclusion & Human Rights",
@@ -413,7 +413,7 @@
         "Merchant Category Name":"ENTERPRISE RENT-A-CAR",
         "Transaction Date":"28\/09\/2022",
         "Transaction Amount":"£722.73",
-        "Description":"Vehicle hire"
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Equality, Inclusion & Human Rights",
@@ -421,7 +421,7 @@
         "Merchant Category Name":"ENTERPRISE RENT-A-CAR",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£731.13",
-        "Description":"Vehicle hire"
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Equality, Inclusion & Human Rights",
@@ -429,7 +429,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
         "Transaction Amount":"£3,665.26",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for Equality, Inclusion & Human Rights",
@@ -437,7 +437,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
         "Transaction Amount":"£4,159.31",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for External Affairs",
@@ -445,7 +445,7 @@
         "Merchant Category Name":"VETERINARY SERVICES",
         "Transaction Date":"02\/09\/2022",
         "Transaction Amount":"£700.75",
-        "Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate for External Affairs",
@@ -453,7 +453,7 @@
         "Merchant Category Name":"HYATT HOTELS",
         "Transaction Date":"21\/09\/2022",
         "Transaction Amount":"£520.43",
-        "Description":"Accomodation - fees"
+        "Expense Description":"Accomodation - fees"
     },
     {
         "Directorate":"Directorate for External Affairs",
@@ -461,7 +461,7 @@
         "Merchant Category Name":"LODGING-HOTELS,MOTELS,RESORTS-NOT CLASSIFIED",
         "Transaction Date":"26\/09\/2022",
         "Transaction Amount":"£505.33",
-        "Description":"Accomodation - fees"
+        "Expense Description":"Accomodation - fees"
     },
     {
         "Directorate":"Directorate for External Affairs",
@@ -469,7 +469,7 @@
         "Merchant Category Name":"CATERERS",
         "Transaction Date":"16\/09\/2022",
         "Transaction Amount":"£687.86",
-        "Description":"Catering"
+        "Expense Description":"Catering"
     },
     {
         "Directorate":"Directorate for External Affairs",
@@ -477,7 +477,7 @@
         "Merchant Category Name":"CATERERS",
         "Transaction Date":"27\/09\/2022",
         "Transaction Amount":"£572.81",
-        "Description":"Catering"
+        "Expense Description":"Catering"
     },
     {
         "Directorate":"Directorate for External Affairs",
@@ -485,7 +485,7 @@
         "Merchant Category Name":"CATERERS",
         "Transaction Date":"27\/09\/2022",
         "Transaction Amount":"£1,596.96",
-        "Description":"Catering"
+        "Expense Description":"Catering"
     },
     {
         "Directorate":"Directorate for Health Workforce & Leadership",
@@ -493,7 +493,7 @@
         "Merchant Category Name":"MISCELLANEOUS PUBLISHING AND PRINTING",
         "Transaction Date":"16\/09\/2022",
         "Transaction Amount":"£5,700.00",
-        "Description":"External conference - fees"
+        "Expense Description":"External conference - fees"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -501,7 +501,7 @@
         "Merchant Category Name":"BOOKS,PERIODICALS AND NEWSPAPERS",
         "Transaction Date":"06\/09\/2022",
         "Transaction Amount":"£3,539.00",
-        "Description":"Professional subscription - fees"
+        "Expense Description":"Professional subscription - fees"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -509,7 +509,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
         "Transaction Amount":"£4,443.71",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -517,7 +517,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
         "Transaction Amount":"£3,095.52",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -525,7 +525,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
         "Transaction Amount":"£3,842.51",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -533,7 +533,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
         "Transaction Amount":"£5,192.01",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -541,7 +541,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
         "Transaction Amount":"£4,575.36",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -549,7 +549,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
         "Transaction Amount":"£4,894.26",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -557,7 +557,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
         "Transaction Amount":"£4,593.02",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -565,7 +565,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£2,971.14",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -573,7 +573,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£2,416.59",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -581,7 +581,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£2,836.59",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -589,7 +589,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£3,046.24",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -597,7 +597,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£3,037.44",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -605,7 +605,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£2,816.64",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -613,7 +613,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£2,634.29",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -621,7 +621,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£2,780.79",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -629,7 +629,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£2,452.79",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -637,7 +637,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£3,095.34",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -645,7 +645,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£2,817.94",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -653,7 +653,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£3,089.94",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -661,7 +661,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£3,396.76",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -669,7 +669,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£2,294.76",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -677,7 +677,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£3,039.26",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -685,7 +685,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£2,853.29",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -693,7 +693,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£2,975.69",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -701,7 +701,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£3,289.79",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -709,7 +709,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£3,689.09",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for Legal Services",
@@ -717,7 +717,7 @@
         "Merchant Category Name":"ORGANIZATIONS, MEMBERSHIP-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"23\/09\/2022",
         "Transaction Amount":"£700.00",
-        "Description":"Professional licence - fees"
+        "Expense Description":"Professional licence - fees"
     },
     {
         "Directorate":"Directorate for Legal Services",
@@ -725,7 +725,7 @@
         "Merchant Category Name":"GIFT, CARD, NOVELTY AND SOUVENIR SHOPS",
         "Transaction Date":"22\/09\/2022",
         "Transaction Amount":"£780.70",
-        "Description":"External event - room hire"
+        "Expense Description":"External event - room hire"
     },
     {
         "Directorate":"Directorate for Legal Services",
@@ -733,7 +733,7 @@
         "Merchant Category Name":"GIFT, CARD, NOVELTY AND SOUVENIR SHOPS",
         "Transaction Date":"21\/09\/2022",
         "Transaction Amount":"£740.00",
-        "Description":"External event - room hire"
+        "Expense Description":"External event - room hire"
     },
     {
         "Directorate":"Directorate for Local Government & Housing",
@@ -741,7 +741,7 @@
         "Merchant Category Name":"COMPUTER SOFTWARE STORES",
         "Transaction Date":"06\/09\/2022",
         "Transaction Amount":"£922.61",
-        "Description":"Specialist software – renewal"
+        "Expense Description":"Specialist software – renewal"
     },
     {
         "Directorate":"Directorate for Local Government & Housing",
@@ -749,7 +749,7 @@
         "Merchant Category Name":"ASSOCIATIONS-CIVIC, SOCIAL, AND FRATERNAL",
         "Transaction Date":"01\/09\/2022",
         "Transaction Amount":"£3,900.00",
-        "Description":"External event - award ceremony"
+        "Expense Description":"External event - award ceremony"
     },
     {
         "Directorate":"Directorate for Local Government & Housing",
@@ -757,7 +757,7 @@
         "Merchant Category Name":"COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
         "Transaction Date":"12\/09\/2022",
         "Transaction Amount":"£6,226.59",
-        "Description":"Professional subscription - fees"
+        "Expense Description":"Professional subscription - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -765,7 +765,7 @@
         "Merchant Category Name":"TRAVEL AGENCIES AND TOUR OPERATORS",
         "Transaction Date":"02\/09\/2022",
         "Transaction Amount":"£5,962.65",
-        "Description":"Accomodation - fees"
+        "Expense Description":"Accomodation - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -773,7 +773,7 @@
         "Merchant Category Name":"TRAVEL AGENCIES AND TOUR OPERATORS",
         "Transaction Date":"03\/09\/2022",
         "Transaction Amount":"£5,023.74",
-        "Description":"Accomodation - fees"
+        "Expense Description":"Accomodation - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -781,7 +781,7 @@
         "Merchant Category Name":"TRAVEL AGENCIES AND TOUR OPERATORS",
         "Transaction Date":"02\/09\/2022",
         "Transaction Amount":"£4,956.10",
-        "Description":"Accomodation - fees"
+        "Expense Description":"Accomodation - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -789,7 +789,7 @@
         "Merchant Category Name":"TRAVEL AGENCIES AND TOUR OPERATORS",
         "Transaction Date":"02\/09\/2022",
         "Transaction Amount":"£5,513.85",
-        "Description":"Accomodation - fees"
+        "Expense Description":"Accomodation - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -797,7 +797,7 @@
         "Merchant Category Name":"TRAVEL AGENCIES AND TOUR OPERATORS",
         "Transaction Date":"02\/09\/2022",
         "Transaction Amount":"£4,075.40",
-        "Description":"Accomodation - fees"
+        "Expense Description":"Accomodation - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -805,7 +805,7 @@
         "Merchant Category Name":"DIRECT MARKETING-OTHER DIRECT MARKETERS\/NOT ELSEW.",
         "Transaction Date":"21\/09\/2022",
         "Transaction Amount":"£1,439.90",
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -813,7 +813,7 @@
         "Merchant Category Name":"GROCERY STORES, SUPERMARKETS",
         "Transaction Date":"09\/09\/2022",
         "Transaction Amount":"£1,046.30",
-        "Description":"Vessel food stores"
+        "Expense Description":"Vessel food stores"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -821,7 +821,7 @@
         "Merchant Category Name":"MISCELLANEOUS AND SPECIALTY RETAIL STORES",
         "Transaction Date":"19\/09\/2022",
         "Transaction Amount":"£644.75",
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -829,7 +829,7 @@
         "Merchant Category Name":"MISCELLANEOUS AND SPECIALTY RETAIL STORES",
         "Transaction Date":"15\/09\/2022",
         "Transaction Amount":"£747.50",
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -837,7 +837,7 @@
         "Merchant Category Name":"MISCELLANEOUS AND SPECIALTY RETAIL STORES",
         "Transaction Date":"15\/09\/2022",
         "Transaction Amount":"£850.90",
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -845,7 +845,7 @@
         "Merchant Category Name":"LODGING-HOTELS,MOTELS,RESORTS-NOT CLASSIFIED",
         "Transaction Date":"12\/09\/2022",
         "Transaction Amount":"£500.00",
-        "Description":"Accomodation - fees"
+        "Expense Description":"Accomodation - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -853,7 +853,7 @@
         "Merchant Category Name":"MARINAS, MARINE SERVICE\/SUPPLIES",
         "Transaction Date":"28\/09\/2022",
         "Transaction Amount":"£550.00",
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -861,7 +861,7 @@
         "Merchant Category Name":"COMPUTER SOFTWARE STORES",
         "Transaction Date":"06\/09\/2022",
         "Transaction Amount":"£4,250.92",
-        "Description":"Professional licence - fees"
+        "Expense Description":"Professional licence - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -869,7 +869,7 @@
         "Merchant Category Name":"DURABLE GOODS, NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£668.16",
-        "Description":"Specialist laboratory equipment"
+        "Expense Description":"Specialist laboratory equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -877,7 +877,7 @@
         "Merchant Category Name":"MISC FOOD STORE-CONVENIENCE,MRKT,SPLTY,VENDNG MACS",
         "Transaction Date":"06\/09\/2022",
         "Transaction Amount":"£1,046.84",
-        "Description":"Vessel food stores"
+        "Expense Description":"Vessel food stores"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -885,7 +885,7 @@
         "Merchant Category Name":"MISC FOOD STORE-CONVENIENCE,MRKT,SPLTY,VENDNG MACS",
         "Transaction Date":"29\/09\/2022",
         "Transaction Amount":"£717.71",
-        "Description":"Vessel food stores"
+        "Expense Description":"Vessel food stores"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -893,7 +893,7 @@
         "Merchant Category Name":"COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
         "Transaction Date":"07\/09\/2022",
         "Transaction Amount":"£54,198.00",
-        "Description":"IT peripherals"
+        "Expense Description":"IT peripherals"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -901,7 +901,7 @@
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"22\/09\/2022",
         "Transaction Amount":"£990.00",
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -909,7 +909,7 @@
         "Merchant Category Name":"LODGING-HOTELS,MOTELS,RESORTS-NOT CLASSIFIED",
         "Transaction Date":"07\/09\/2022",
         "Transaction Amount":"£690.00",
-        "Description":"Accomodation - fees"
+        "Expense Description":"Accomodation - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -917,7 +917,7 @@
         "Merchant Category Name":"MISCELLANEOUS AND SPECIALTY RETAIL STORES",
         "Transaction Date":"02\/09\/2022",
         "Transaction Amount":"£1,228.80",
-        "Description":"Vehicle - maintenance"
+        "Expense Description":"Vehicle - maintenance"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -925,7 +925,7 @@
         "Merchant Category Name":"MISCELLANEOUS AND SPECIALTY RETAIL STORES",
         "Transaction Date":"22\/09\/2022",
         "Transaction Amount":"£1,242.00",
-        "Description":"Scientific Equipment"
+        "Expense Description":"Scientific Equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -933,7 +933,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
         "Transaction Amount":"£4,167.36",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -941,7 +941,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
         "Transaction Amount":"£3,913.36",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -949,7 +949,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
         "Transaction Amount":"£3,286.61",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -957,7 +957,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
         "Transaction Amount":"£3,126.76",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -965,7 +965,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
         "Transaction Amount":"£3,186.16",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -973,7 +973,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
         "Transaction Amount":"£4,078.86",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -981,7 +981,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
         "Transaction Amount":"£3,899.91",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -989,7 +989,7 @@
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
         "Transaction Amount":"£3,829.31",
-        "Description":"UKR - Resettlement"
+        "Expense Description":"UKR - Resettlement"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -997,7 +997,7 @@
         "Merchant Category Name":"GROCERY STORES, SUPERMARKETS",
         "Transaction Date":"27\/09\/2022",
         "Transaction Amount":"£535.78",
-        "Description":"Vessel food stores"
+        "Expense Description":"Vessel food stores"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1005,7 +1005,7 @@
         "Merchant Category Name":"INDUSTRIAL SUPPLIES NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"05\/09\/2022",
         "Transaction Amount":"£4,811.88",
-        "Description":"Scientific equipment"
+        "Expense Description":"Scientific equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1013,7 +1013,7 @@
         "Merchant Category Name":"MARINAS, MARINE SERVICE\/SUPPLIES",
         "Transaction Date":"22\/09\/2022",
         "Transaction Amount":"£668.14",
-        "Description":"Vessel medical peripherals"
+        "Expense Description":"Vessel medical peripherals"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1021,7 +1021,7 @@
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"06\/09\/2022",
         "Transaction Amount":"£567.85",
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1029,7 +1029,7 @@
         "Merchant Category Name":"ELECTRONIC SALES",
         "Transaction Date":"16\/09\/2022",
         "Transaction Amount":"£4,199.67",
-        "Description":"Vessel equipment"
+        "Expense Description":"Vessel equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1037,7 +1037,7 @@
         "Merchant Category Name":"GENERAL CONTRACTORS\/RESIDENTIAL BUILDINGS",
         "Transaction Date":"10\/09\/2022",
         "Transaction Amount":"£525.00",
-        "Description":"Vessel safety equipment - clothing"
+        "Expense Description":"Vessel safety equipment - clothing"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1045,7 +1045,7 @@
         "Merchant Category Name":"STATIONERY\/OFFICE SUPPLIES\/PRINTING & WRITING PAP.",
         "Transaction Date":"13\/09\/2022",
         "Transaction Amount":"£709.94",
-        "Description":"IT consumables"
+        "Expense Description":"IT consumables"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1053,7 +1053,7 @@
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"06\/09\/2022",
         "Transaction Amount":"£2,520.00",
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1061,7 +1061,7 @@
         "Merchant Category Name":"GLASS, PAINT, WALLPAPER STORES",
         "Transaction Date":"03\/09\/2022",
         "Transaction Amount":"£548.95",
-        "Description":"Vessel equipment"
+        "Expense Description":"Vessel equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1069,7 +1069,7 @@
         "Merchant Category Name":"MARINAS, MARINE SERVICE\/SUPPLIES",
         "Transaction Date":"10\/09\/2022",
         "Transaction Amount":"£759.90",
-        "Description":"Vessel safety equipment - clothing"
+        "Expense Description":"Vessel safety equipment - clothing"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1077,7 +1077,7 @@
         "Merchant Category Name":"MARINAS, MARINE SERVICE\/SUPPLIES",
         "Transaction Date":"12\/09\/2022",
         "Transaction Amount":"£759.90",
-        "Description":"Vessel safety equipment - clothing"
+        "Expense Description":"Vessel safety equipment - clothing"
     },
     {
         "Directorate":"Directorate for Mental Health",
@@ -1085,7 +1085,7 @@
         "Merchant Category Name":"ORGANIZATIONS, CHARITABLE AND SOCIAL SERVICES",
         "Transaction Date":"08\/09\/2022",
         "Transaction Amount":"£805.14",
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Mental Health",
@@ -1093,7 +1093,7 @@
         "Merchant Category Name":"OFFICE, SCHOOL SUPPLY, AND STATIONERY STORES",
         "Transaction Date":"08\/09\/2022",
         "Transaction Amount":"£933.58",
-        "Description":"Stationery"
+        "Expense Description":"Stationery"
     },
     {
         "Directorate":"Directorate for People",
@@ -1101,7 +1101,7 @@
         "Merchant Category Name":"GOVERNMENT SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"13\/09\/2022",
         "Transaction Amount":"£3,199.00",
-        "Description":"Professional licence - fees"
+        "Expense Description":"Professional licence - fees"
     },
     {
         "Directorate":"Directorate for People",
@@ -1109,7 +1109,7 @@
         "Merchant Category Name":"GOVERNMENT SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"13\/09\/2022",
         "Transaction Amount":"£3,199.00",
-        "Description":"Professional licence - fees"
+        "Expense Description":"Professional licence - fees"
     },
     {
         "Directorate":"Directorate for People",
@@ -1117,7 +1117,7 @@
         "Merchant Category Name":"GOVERNMENT SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"13\/09\/2022",
         "Transaction Amount":"£3,199.00",
-        "Description":"Professional licence - fees"
+        "Expense Description":"Professional licence - fees"
     },
     {
         "Directorate":"Directorate for People",
@@ -1125,7 +1125,7 @@
         "Merchant Category Name":"ELECTRONIC SALES",
         "Transaction Date":"29\/09\/2022",
         "Transaction Amount":"£837.60",
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for People",
@@ -1133,7 +1133,7 @@
         "Merchant Category Name":"MISCELLANEOUS HOUSE FURNISHING SPECIALTY SHOPS",
         "Transaction Date":"01\/09\/2022",
         "Transaction Amount":"£1,353.30",
-        "Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate for Perf, Delivery & Resilience",
@@ -1141,7 +1141,7 @@
         "Merchant Category Name":"ORGANIZATIONS, MEMBERSHIP-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"29\/09\/2022",
         "Transaction Amount":"£1,140.00",
-        "Description":"Professional membership - fees"
+        "Expense Description":"Professional membership - fees"
     },
     {
         "Directorate":"Directorate for Safer Communities",
@@ -1149,7 +1149,7 @@
         "Merchant Category Name":"DIGITAL GOODS AUDIOVISUAL MEDIA",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£1,800.00",
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Safer Communities",
@@ -1157,7 +1157,7 @@
         "Merchant Category Name":"BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"07\/09\/2022",
         "Transaction Amount":"£4,800.00",
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Safer Communities",
@@ -1165,7 +1165,7 @@
         "Merchant Category Name":"ASSOCIATIONS-CIVIC, SOCIAL, AND FRATERNAL",
         "Transaction Date":"14\/09\/2022",
         "Transaction Amount":"£1,200.00",
-        "Description":"External conference - fees"
+        "Expense Description":"External conference - fees"
     },
     {
         "Directorate":"Directorate for Safer Communities",
@@ -1173,7 +1173,7 @@
         "Merchant Category Name":"ORGANIZATIONS, CHARITABLE AND SOCIAL SERVICES",
         "Transaction Date":"21\/09\/2022",
         "Transaction Amount":"£6,494.40",
-        "Description":"Professional membership - fees"
+        "Expense Description":"Professional membership - fees"
     },
     {
         "Directorate":"Directorate for Safer Communities",
@@ -1181,7 +1181,7 @@
         "Merchant Category Name":"BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"05\/09\/2022",
         "Transaction Amount":"£1,200.00",
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Social & National Care",
@@ -1189,7 +1189,7 @@
         "Merchant Category Name":"ASSOCIATIONS-CIVIC, SOCIAL, AND FRATERNAL",
         "Transaction Date":"07\/09\/2022",
         "Transaction Amount":"£504.25",
-        "Description":"External consultancy - fees"
+        "Expense Description":"External consultancy - fees"
     },
     {
         "Directorate":"Directorate for Social Security",
@@ -1197,7 +1197,7 @@
         "Merchant Category Name":"LODGING-HOTELS,MOTELS,RESORTS-NOT CLASSIFIED",
         "Transaction Date":"16\/09\/2022",
         "Transaction Amount":"£1,125.75",
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for Social Security",
@@ -1205,7 +1205,7 @@
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"20\/09\/2022",
         "Transaction Amount":"£1,560.00",
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Social Security",
@@ -1213,7 +1213,7 @@
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£1,696.80",
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Social Security",
@@ -1221,7 +1221,7 @@
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"07\/09\/2022",
         "Transaction Amount":"£1,412.40",
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Social Security",
@@ -1229,7 +1229,7 @@
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"06\/09\/2022",
         "Transaction Amount":"£1,412.40",
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Social Security",
@@ -1237,7 +1237,7 @@
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"06\/09\/2022",
         "Transaction Amount":"£1,412.40",
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Social Security",
@@ -1245,7 +1245,7 @@
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"06\/09\/2022",
         "Transaction Amount":"£1,412.40",
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Social Security",
@@ -1253,7 +1253,7 @@
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"06\/09\/2022",
         "Transaction Amount":"£1,412.40",
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Social Security",
@@ -1261,7 +1261,7 @@
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£1,412.40",
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Social Security",
@@ -1269,7 +1269,7 @@
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"31\/08\/2022",
         "Transaction Amount":"£1,412.40",
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for The Chief Operating Officer, Nhs",
@@ -1277,7 +1277,7 @@
         "Merchant Category Name":"LODGING-HOTELS,MOTELS,RESORTS-NOT CLASSIFIED",
         "Transaction Date":"28\/09\/2022",
         "Transaction Amount":"£800.00",
-        "Description":"Accomodation - fees"
+        "Expense Description":"Accomodation - fees"
     },
     {
         "Directorate":"Scottish Procurement & Property Directorate",
@@ -1285,6 +1285,6 @@
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"14\/09\/2022",
         "Transaction Amount":"£28,728.00",
-        "Description":"Professional subscription - fees"
+        "Expense Description":"Professional subscription - fees"
     }
 ]

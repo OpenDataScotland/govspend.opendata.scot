@@ -2,6 +2,7 @@
     {
         "Directorate":"Directorate for Agriculture & Rural Delivery",
         "Merchant Name":"Lyreco Uk Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"24\/01\/2020",
         "Transaction Amount":500.86,
         "Expense Description":"Stationery"
@@ -9,6 +10,7 @@
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
         "Merchant Name":"Livingston Garden Mach",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"17\/01\/2020",
         "Transaction Amount":667.81,
         "Expense Description":"Agricultural supplies"
@@ -16,6 +18,7 @@
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
         "Merchant Name":"Livingston Garden Mach",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"09\/01\/2020",
         "Transaction Amount":877.05,
         "Expense Description":"Agricultural supplies"
@@ -23,6 +26,7 @@
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
         "Merchant Name":"Amznmktplace Amazon.Co",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"08\/01\/2020",
         "Transaction Amount":606.23,
         "Expense Description":"Protective clothing"
@@ -30,6 +34,7 @@
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
         "Merchant Name":"Robot Coupe (Uk)Lt",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"13\/01\/2020",
         "Transaction Amount":1749.16,
         "Expense Description":"Scientific item (repair\/maintenance)"
@@ -37,6 +42,7 @@
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
         "Merchant Name":"WWW.CAPITA.CO.UK",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"07\/01\/2020",
         "Transaction Amount":800.4,
         "Expense Description":"Laboratory research testing"
@@ -44,6 +50,7 @@
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
         "Merchant Name":"Alpha Visa Congres",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"09\/01\/2020",
         "Transaction Amount":1138.51,
         "Expense Description":"External conference - fees"
@@ -51,6 +58,7 @@
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
         "Merchant Name":"20286892",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"23\/01\/2020",
         "Transaction Amount":561.46,
         "Expense Description":"IT hardware - accessories"
@@ -58,6 +66,7 @@
     {
         "Directorate":"Directorate For Agriculture & Rural Economy",
         "Merchant Name":"Currys Online",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"21\/01\/2020",
         "Transaction Amount":687.0,
         "Expense Description":"Office equipment"
@@ -65,6 +74,7 @@
     {
         "Directorate":"Directorate For Chief Economist",
         "Merchant Name":"Edinburgh Training Cen",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"29\/01\/2020",
         "Transaction Amount":632.4,
         "Expense Description":"External event - room hire"
@@ -72,6 +82,7 @@
     {
         "Directorate":"Directorate For Chief Nursing Officer",
         "Merchant Name":"Hilton",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"29\/01\/2020",
         "Transaction Amount":2250.0,
         "Expense Description":"External event - room hire"
@@ -79,6 +90,7 @@
     {
         "Directorate":"Directorate For Chief Nursing Officer",
         "Merchant Name":"Golden Jubilee Confere",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"28\/01\/2020",
         "Transaction Amount":2599.0,
         "Expense Description":"External event - room hire"
@@ -86,6 +98,7 @@
     {
         "Directorate":"Directorate For Chief Nursing Officer",
         "Merchant Name":"Healthcare Inf Soc",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"20\/01\/2020",
         "Transaction Amount":1845.0,
         "Expense Description":"External conference - fees"
@@ -93,6 +106,7 @@
     {
         "Directorate":"Directorate For Children & Families",
         "Merchant Name":"Mci Suisse Sa",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"30\/01\/2020",
         "Transaction Amount":5025.13,
         "Expense Description":"External conference - fees"
@@ -100,6 +114,7 @@
     {
         "Directorate":"Directorate For Children & Families",
         "Merchant Name":"Novotel Hotels",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"07\/01\/2020",
         "Transaction Amount":4760.0,
         "Expense Description":"External conference - accomodation fees"
@@ -107,6 +122,7 @@
     {
         "Directorate":"Directorate For Children & Families",
         "Merchant Name":"WWW.GROUP.BMJ.COM",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"21\/01\/2020",
         "Transaction Amount":1325.79,
         "Expense Description":"External conference - fees"
@@ -114,6 +130,7 @@
     {
         "Directorate":"Directorate For Children & Families",
         "Merchant Name":"WWW.FPMAILING.CO.UK",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"24\/01\/2020",
         "Transaction Amount":500.0,
         "Expense Description":"Postal Services"
@@ -121,6 +138,7 @@
     {
         "Directorate":"Directorate For Children & Families",
         "Merchant Name":"WWW.FPMAILING.CO.UK",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"08\/01\/2020",
         "Transaction Amount":500.0,
         "Expense Description":"Postal Services"
@@ -128,6 +146,7 @@
     {
         "Directorate":"Directorate For Children & Families",
         "Merchant Name":"Best Western Hotels",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"09\/01\/2020",
         "Transaction Amount":514.0,
         "Expense Description":"Travel costs - accomodation"
@@ -135,6 +154,7 @@
     {
         "Directorate":"Directorate For Children & Families",
         "Merchant Name":"Edinburgh Training Cen",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"10\/01\/2020",
         "Transaction Amount":992.4,
         "Expense Description":"External event - room hire"
@@ -142,6 +162,7 @@
     {
         "Directorate":"Directorate for Commercial and Procurement",
         "Merchant Name":"Computacenter (Uk) Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"29\/01\/2020",
         "Transaction Amount":549.74,
         "Expense Description":"It Peripherals"
@@ -149,6 +170,7 @@
     {
         "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
         "Merchant Name":"Lyreco Uk Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"15\/01\/2020",
         "Transaction Amount":796.14,
         "Expense Description":"Stationery"
@@ -156,6 +178,7 @@
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
         "Merchant Name":"WWW.BLUEPRINT-TRAINING",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"22\/01\/2020",
         "Transaction Amount":800.0,
         "Expense Description":"External training course - fees"
@@ -163,6 +186,7 @@
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
         "Merchant Name":"WWW.BLUEPRINT-TRAINING",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"14\/01\/2020",
         "Transaction Amount":600.0,
         "Expense Description":"External training course - fees"
@@ -170,6 +194,7 @@
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
         "Merchant Name":"Amznmktplace Amazon.Co",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"12\/01\/2020",
         "Transaction Amount":3149.53,
         "Expense Description":"Office equipment"
@@ -177,6 +202,7 @@
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
         "Merchant Name":"WWW.EVCONNECTORS.COM",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"15\/01\/2020",
         "Transaction Amount":663.0,
         "Expense Description":"Vehicle - maintenance"
@@ -184,6 +210,7 @@
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
         "Merchant Name":"D Sutherland Inv",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"13\/01\/2020",
         "Transaction Amount":543.58,
         "Expense Description":"Vehicle - maintenance"
@@ -191,6 +218,7 @@
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
         "Merchant Name":"K & E Coachworks L",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"29\/01\/2020",
         "Transaction Amount":2451.07,
         "Expense Description":"Vehicle - maintenance"
@@ -198,6 +226,7 @@
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
         "Merchant Name":"Autocosse - Burrelton",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"28\/01\/2020",
         "Transaction Amount":992.49,
         "Expense Description":"Vehicle - maintenance"
@@ -205,6 +234,7 @@
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
         "Merchant Name":"Bls Truck And Van",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"23\/01\/2020",
         "Transaction Amount":722.06,
         "Expense Description":"Vehicle - maintenance"
@@ -212,6 +242,7 @@
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
         "Merchant Name":"Seafield Motors",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"21\/01\/2020",
         "Transaction Amount":780.5,
         "Expense Description":"Vehicle - maintenance"
@@ -219,6 +250,7 @@
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
         "Merchant Name":"Gpg (Montrose) Limited",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"17\/01\/2020",
         "Transaction Amount":512.94,
         "Expense Description":"Vehicle - maintenance"
@@ -226,6 +258,7 @@
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
         "Merchant Name":"Tesla_Gb",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"10\/01\/2020",
         "Transaction Amount":750.0,
         "Expense Description":"Vehicle - maintenance"
@@ -233,6 +266,7 @@
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
         "Merchant Name":"Tesla_Gb",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"10\/01\/2020",
         "Transaction Amount":750.0,
         "Expense Description":"Vehicle - maintenance"
@@ -240,6 +274,7 @@
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
         "Merchant Name":"Sheraton",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"24\/01\/2020",
         "Transaction Amount":1350.0,
         "Expense Description":"Accomodation - fees"
@@ -247,6 +282,7 @@
     {
         "Directorate":"Directorate For Community Health & Care",
         "Merchant Name":"Rnib Charity",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"09\/01\/2020",
         "Transaction Amount":816.22,
         "Expense Description":"External support services"
@@ -254,6 +290,7 @@
     {
         "Directorate":"Directorate For Community Health & Care",
         "Merchant Name":"Apex Waterloo Place Ho",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"08\/01\/2020",
         "Transaction Amount":720.0,
         "Expense Description":"External event - room hire"
@@ -261,6 +298,7 @@
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"WWW.QA.COM",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"14\/01\/2020",
         "Transaction Amount":846.0,
         "Expense Description":"External training course - fees"
@@ -268,6 +306,7 @@
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"Harvest",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"28\/01\/2020",
         "Transaction Amount":832.18,
         "Expense Description":"Professional membership - renewal fees"
@@ -275,6 +314,7 @@
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"Aanmelder.Nl",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"15\/01\/2020",
         "Transaction Amount":641.07,
         "Expense Description":"External training course - fees"
@@ -282,6 +322,7 @@
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"Surveymonkey",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"13\/01\/2020",
         "Transaction Amount":3946.4,
         "Expense Description":"Professional membership - renewal fees"
@@ -289,6 +330,7 @@
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"Cogntionx Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"30\/01\/2020",
         "Transaction Amount":595.0,
         "Expense Description":"External conference - fees"
@@ -296,6 +338,7 @@
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"WWW.QA.COM",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"21\/01\/2020",
         "Transaction Amount":1194.0,
         "Expense Description":"External training course - fees"
@@ -303,6 +346,7 @@
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"Bls Monday.Com",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"07\/01\/2020",
         "Transaction Amount":532.53,
         "Expense Description":"Professional licence - renewal"
@@ -310,6 +354,7 @@
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"Edinburgh Training And",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"28\/01\/2020",
         "Transaction Amount":1152.0,
         "Expense Description":"External training course - fees"
@@ -317,6 +362,7 @@
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"1 Spatial",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"22\/01\/2020",
         "Transaction Amount":5136.0,
         "Expense Description":"External event - room hire"
@@ -324,6 +370,7 @@
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"Eb Storytelling For B",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"22\/01\/2020",
         "Transaction Amount":3120.0,
         "Expense Description":"External training course - fees"
@@ -331,6 +378,7 @@
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"Arlo Software Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"20\/01\/2020",
         "Transaction Amount":2852.4,
         "Expense Description":"Specialist software - renewal"
@@ -338,6 +386,7 @@
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"David Lloyd Leisur",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"10\/01\/2020",
         "Transaction Amount":1015.5,
         "Expense Description":"External event - room hire"
@@ -345,6 +394,7 @@
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"Paypal Etopiatrain",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"08\/01\/2020",
         "Transaction Amount":1494.0,
         "Expense Description":"External event - room hire"
@@ -352,6 +402,7 @@
     {
         "Directorate":"Directorate For Digital",
         "Merchant Name":"Amazon Web Services",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"03\/01\/2020",
         "Transaction Amount":2184.47,
         "Expense Description":"web hosting - month + year"
@@ -359,6 +410,7 @@
     {
         "Directorate":"Directorate for Digital",
         "Merchant Name":"Computacenter (Uk) Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"30\/01\/2020",
         "Transaction Amount":4128.36,
         "Expense Description":"IT peripherals"
@@ -366,6 +418,7 @@
     {
         "Directorate":"Directorate for Digital",
         "Merchant Name":"Computacenter (Uk) Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"28\/01\/2020",
         "Transaction Amount":527.82,
         "Expense Description":"IT peripherals"
@@ -373,6 +426,7 @@
     {
         "Directorate":"Directorate for Digital",
         "Merchant Name":"Computacenter (Uk) Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"23\/01\/2020",
         "Transaction Amount":786.9,
         "Expense Description":"IT peripherals"
@@ -380,6 +434,7 @@
     {
         "Directorate":"Directorate for Digital",
         "Merchant Name":"Enterprise Rent-A-Car",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"22\/01\/2020",
         "Transaction Amount":663.59,
         "Expense Description":"Vehicle hire"
@@ -387,6 +442,7 @@
     {
         "Directorate":"Directorate For Economic Development",
         "Merchant Name":"Civil Service College",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"21\/01\/2020",
         "Transaction Amount":780.0,
         "Expense Description":"External event - fees"
@@ -394,6 +450,7 @@
     {
         "Directorate":"Directorate For Economic Development",
         "Merchant Name":"Paypal Economicdev",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"14\/01\/2020",
         "Transaction Amount":600.0,
         "Expense Description":"External training course - fees"
@@ -401,6 +458,7 @@
     {
         "Directorate":"Directorate For Economic Policy & Capability",
         "Merchant Name":"Malmaison",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"16\/01\/2020",
         "Transaction Amount":972.5,
         "Expense Description":"External event - catering costs - (location)"
@@ -408,6 +466,7 @@
     {
         "Directorate":"Directorate For Energy & Climate Change",
         "Merchant Name":"Edinburgh Training Cen",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"24\/01\/2020",
         "Transaction Amount":501.6,
         "Expense Description":"External event - room hire"
@@ -415,6 +474,7 @@
     {
         "Directorate":"Directorate For Energy & Climate Change",
         "Merchant Name":"Edinburgh Training Cen",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"27\/01\/2020",
         "Transaction Amount":1920.0,
         "Expense Description":"External event - room hire"
@@ -422,6 +482,7 @@
     {
         "Directorate":"Directorate For Energy & Climate Change",
         "Merchant Name":"Bluesky Experience Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"28\/01\/2020",
         "Transaction Amount":1200.0,
         "Expense Description":"External event - room hire"
@@ -429,6 +490,7 @@
     {
         "Directorate":"Directorate For Energy & Climate Change",
         "Merchant Name":"WWW.CARBON-PULSE.COM",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"15\/01\/2020",
         "Transaction Amount":979.3,
         "Expense Description":"Professional subscription - fees"
@@ -436,6 +498,7 @@
     {
         "Directorate":"Directorate for Energy and Climate Change",
         "Merchant Name":"Sodexo Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"27\/01\/2020",
         "Transaction Amount":1322.88,
         "Expense Description":"Catering"
@@ -443,6 +506,7 @@
     {
         "Directorate":"Directorate For Environment & Forestry",
         "Merchant Name":"Holyrood Hotel",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"20\/01\/2020",
         "Transaction Amount":795.0,
         "Expense Description":"External event - room hire"
@@ -450,6 +514,7 @@
     {
         "Directorate":"Directorate for Environment and Forestry",
         "Merchant Name":"Sodexo Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"21\/01\/2020",
         "Transaction Amount":519.46,
         "Expense Description":"Catering"
@@ -457,6 +522,7 @@
     {
         "Directorate":"Directorate For External Affairs",
         "Merchant Name":"Paypal Humansdubli",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"28\/01\/2020",
         "Transaction Amount":877.07,
         "Expense Description":"External event - material"
@@ -464,6 +530,7 @@
     {
         "Directorate":"Directorate For External Affairs",
         "Merchant Name":"Sumup Whisky Kiss",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"30\/01\/2020",
         "Transaction Amount":1878.0,
         "Expense Description":"External event - fees"
@@ -471,6 +538,7 @@
     {
         "Directorate":"Directorate For External Affairs",
         "Merchant Name":"Sumup Timo Mehrlande",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"30\/01\/2020",
         "Transaction Amount":1112.9,
         "Expense Description":"External event - fees"
@@ -478,6 +546,7 @@
     {
         "Directorate":"Directorate For External Affairs",
         "Merchant Name":"British Chamber Of Com",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"16\/01\/2020",
         "Transaction Amount":1499.25,
         "Expense Description":"Professional membership - renewal fees"
@@ -485,6 +554,7 @@
     {
         "Directorate":"Directorate For External Affairs",
         "Merchant Name":"Vistapr Vistaprint.Com",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"17\/01\/2020",
         "Transaction Amount":561.41,
         "Expense Description":"External event - promotional material"
@@ -492,6 +562,7 @@
     {
         "Directorate":"Directorate For External Affairs",
         "Merchant Name":"Sp Flags And Flagpol",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"28\/01\/2020",
         "Transaction Amount":529.37,
         "Expense Description":"External event - room hire"
@@ -499,6 +570,7 @@
     {
         "Directorate":"Directorate For External Affairs",
         "Merchant Name":"Doubletree",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"27\/01\/2020",
         "Transaction Amount":920.8,
         "Expense Description":"External conference - fees"
@@ -506,6 +578,7 @@
     {
         "Directorate":"Directorate For External Affairs",
         "Merchant Name":"Doubletree",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"22\/01\/2020",
         "Transaction Amount":1857.0,
         "Expense Description":"External event - room hire"
@@ -513,6 +586,7 @@
     {
         "Directorate":"Directorate For External Affairs",
         "Merchant Name":"Bond Ngo",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"24\/01\/2020",
         "Transaction Amount":1896.0,
         "Expense Description":"External conference - fees"
@@ -520,6 +594,7 @@
     {
         "Directorate":"Directorate For External Affairs",
         "Merchant Name":"Lutece Langue",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"14\/01\/2020",
         "Transaction Amount":1725.27,
         "Expense Description":"External training course - fees"
@@ -527,6 +602,7 @@
     {
         "Directorate":"Directorate For External Affairs",
         "Merchant Name":"Ocde",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"10\/01\/2020",
         "Transaction Amount":859.3,
         "Expense Description":"External event - room hire"
@@ -534,6 +610,7 @@
     {
         "Directorate":"Directorate For Fair Work, Employability & Skills",
         "Merchant Name":"City Of Glasgow College",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"21\/01\/2020",
         "Transaction Amount":616.8,
         "Expense Description":"External event - room hire"
@@ -541,6 +618,7 @@
     {
         "Directorate":"Directorate For Fair Work, Employability & Skills",
         "Merchant Name":"City Of Glasgow College",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"21\/01\/2020",
         "Transaction Amount":720.5,
         "Expense Description":"External event - room hire"
@@ -548,6 +626,7 @@
     {
         "Directorate":"Directorate For Health Finance",
         "Merchant Name":"Stirling Highland Hotel",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"29\/01\/2020",
         "Transaction Amount":580.0,
         "Expense Description":"External event - room hire"
@@ -555,6 +634,7 @@
     {
         "Directorate":"Directorate For Health Finance",
         "Merchant Name":"Edinburgh Training Cen",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"20\/01\/2020",
         "Transaction Amount":876.0,
         "Expense Description":"External event - room hire"
@@ -562,6 +642,7 @@
     {
         "Directorate":"Directorate For Health Finance",
         "Merchant Name":"Citizen Ticket",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"06\/01\/2020",
         "Transaction Amount":600.0,
         "Expense Description":"External conference - fees"
@@ -569,6 +650,7 @@
     {
         "Directorate":"Directorate For Health Performance & Delivery",
         "Merchant Name":"WWW.GROUP.BMJ.COM",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"30\/01\/2020",
         "Transaction Amount":2651.58,
         "Expense Description":"External conference - fees"
@@ -576,6 +658,7 @@
     {
         "Directorate":"Directorate For Health Performance & Delivery",
         "Merchant Name":"Edinburgh Training Cen",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"27\/01\/2020",
         "Transaction Amount":765.6,
         "Expense Description":"External event - room hire"
@@ -583,6 +666,7 @@
     {
         "Directorate":"Directorate For Health Performance & Delivery",
         "Merchant Name":"Doubletree By Hilton G",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"21\/01\/2020",
         "Transaction Amount":1120.0,
         "Expense Description":"External event - room hire"
@@ -590,6 +674,7 @@
     {
         "Directorate":"Directorate For Health Performance & Delivery",
         "Merchant Name":"Ten Hill Place Hotel",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"21\/01\/2020",
         "Transaction Amount":4250.0,
         "Expense Description":"External conference - fees"
@@ -597,6 +682,7 @@
     {
         "Directorate":"Directorate For Health Performance & Delivery",
         "Merchant Name":"Ten Hill Place Hotel",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"21\/01\/2020",
         "Transaction Amount":4250.0,
         "Expense Description":"External conference - fees"
@@ -604,6 +690,7 @@
     {
         "Directorate":"Directorate For Health Performance & Delivery",
         "Merchant Name":"Edinburgh Training Cen",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"21\/01\/2020",
         "Transaction Amount":691.2,
         "Expense Description":"External event - room hire"
@@ -611,6 +698,7 @@
     {
         "Directorate":"Directorate For Health Performance & Delivery",
         "Merchant Name":"Simul8 Corporation",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"14\/01\/2020",
         "Transaction Amount":714.0,
         "Expense Description":"External training course - fees"
@@ -618,6 +706,7 @@
     {
         "Directorate":"Directorate For Healthcare Quality & Improvement",
         "Merchant Name":"Malmaison Edinburg",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"21\/01\/2020",
         "Transaction Amount":500.5,
         "Expense Description":"External event - room hire"
@@ -625,6 +714,7 @@
     {
         "Directorate":"Directorate For Healthcare Quality & Improvement",
         "Merchant Name":"Mci Suisse Sa",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"13\/01\/2020",
         "Transaction Amount":2153.66,
         "Expense Description":"External event - accommodation"
@@ -632,6 +722,7 @@
     {
         "Directorate":"Directorate For Healthcare Quality & Improvement",
         "Merchant Name":"WWW.GROUP.BMJ.COM",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"30\/01\/2020",
         "Transaction Amount":3442.99,
         "Expense Description":"External conference - fees"
@@ -639,6 +730,7 @@
     {
         "Directorate":"Directorate For Housing & Social Justice",
         "Merchant Name":"Hilton",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"09\/01\/2020",
         "Transaction Amount":3560.0,
         "Expense Description":"External event - room hire"
@@ -646,6 +738,7 @@
     {
         "Directorate":"Directorate For Housing & Social Justice",
         "Merchant Name":"University Of Essex",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"07\/01\/2020",
         "Transaction Amount":2765.0,
         "Expense Description":"External training course - fees"
@@ -653,6 +746,7 @@
     {
         "Directorate":"Directorate For Housing & Social Justice",
         "Merchant Name":"Easterbrook Hall",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"30\/01\/2020",
         "Transaction Amount":601.8,
         "Expense Description":"External event - room hire"
@@ -660,6 +754,7 @@
     {
         "Directorate":"Directorate For Housing & Social Justice",
         "Merchant Name":"Marriott",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"24\/01\/2020",
         "Transaction Amount":1180.0,
         "Expense Description":"External event - room hire"
@@ -667,6 +762,7 @@
     {
         "Directorate":"Directorate for Housing & Social Justice",
         "Merchant Name":"Sodexo Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"15\/01\/2020",
         "Transaction Amount":975.0,
         "Expense Description":"Catering"
@@ -674,6 +770,7 @@
     {
         "Directorate":"Directorate For International Trade & Investment",
         "Merchant Name":"Paypal Scotchwhisk",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"28\/01\/2020",
         "Transaction Amount":699.0,
         "Expense Description":"Professional subscription - fees"
@@ -681,6 +778,7 @@
     {
         "Directorate":"Directorate For International Trade & Investment",
         "Merchant Name":"Financial Times Lt",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"06\/01\/2020",
         "Transaction Amount":7200.0,
         "Expense Description":"Professional subscription - fees"
@@ -688,6 +786,7 @@
     {
         "Directorate":"Directorate For Justice",
         "Merchant Name":"WWW.SONDER.COM",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"24\/01\/2020",
         "Transaction Amount":1194.62,
         "Expense Description":"External conference - accomodation fees"
@@ -695,6 +794,7 @@
     {
         "Directorate":"Directorate for Justice",
         "Merchant Name":"Lyreco Uk Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"10\/01\/2020",
         "Transaction Amount":1003.38,
         "Expense Description":"Stationery"
@@ -702,6 +802,7 @@
     {
         "Directorate":"Directorate For Legal Services",
         "Merchant Name":"WWW.WESTMINSTER-BRIEFI",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"08\/01\/2020",
         "Transaction Amount":1800.0,
         "Expense Description":"External training course - fees"
@@ -709,6 +810,7 @@
     {
         "Directorate":"Directorate For Legal Services",
         "Merchant Name":"WWW.WESTMINSTER-BRIEFI",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"24\/01\/2020",
         "Transaction Amount":708.0,
         "Expense Description":"External training course - fees"
@@ -716,6 +818,7 @@
     {
         "Directorate":"Directorate For Local Government & Communities",
         "Merchant Name":"Sq Anywhereworks",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"13\/01\/2020",
         "Transaction Amount":600.0,
         "Expense Description":"External event - room hire"
@@ -723,6 +826,7 @@
     {
         "Directorate":"Directorate For Local Government & Communities",
         "Merchant Name":"Elite Training",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"23\/01\/2020",
         "Transaction Amount":795.0,
         "Expense Description":"External training course - fees"
@@ -730,6 +834,7 @@
     {
         "Directorate":"Directorate For Local Government & Communities",
         "Merchant Name":"The Melting Pot",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"27\/01\/2020",
         "Transaction Amount":728.4,
         "Expense Description":"External event - room hire"
@@ -737,6 +842,7 @@
     {
         "Directorate":"Directorate For Local Government & Communities",
         "Merchant Name":"Radisson Blu",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"17\/01\/2020",
         "Transaction Amount":3240.0,
         "Expense Description":"External event - room hire"
@@ -744,6 +850,7 @@
     {
         "Directorate":"Directorate For Local Government & Communities",
         "Merchant Name":"Amazon.Co.Uk Rg6Hf8905",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"15\/01\/2020",
         "Transaction Amount":1399.98,
         "Expense Description":"IT hardware"
@@ -751,6 +858,7 @@
     {
         "Directorate":"Directorate For Local Government & Communities",
         "Merchant Name":"Thomson Reuters Uk Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"20\/01\/2020",
         "Transaction Amount":1410.0,
         "Expense Description":"Professional subscription - fees"
@@ -758,6 +866,7 @@
     {
         "Directorate":"Directorate For Local Government & Communities",
         "Merchant Name":"Royal Town Planning",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"03\/01\/2020",
         "Transaction Amount":2866.5,
         "Expense Description":"Professional membership - fees"
@@ -765,6 +874,7 @@
     {
         "Directorate":"Directorate For Local Government & Communities",
         "Merchant Name":"Royal Town Planning",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"03\/01\/2020",
         "Transaction Amount":2866.5,
         "Expense Description":"Professional membership - fees"
@@ -772,6 +882,7 @@
     {
         "Directorate":"Directorate For Local Government & Communities",
         "Merchant Name":"Ovolo Nishi",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"07\/01\/2020",
         "Transaction Amount":540.48,
         "Expense Description":"Travel costs - accomodation"
@@ -779,6 +890,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Airbnb Hmatw2Zthe",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"29\/01\/2020",
         "Transaction Amount":3465.26,
         "Expense Description":"Accomodation - fees"
@@ -786,6 +898,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Airbnb Hmsfzjrtwf",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"03\/01\/2020",
         "Transaction Amount":2797.39,
         "Expense Description":"Accomodation - fees"
@@ -793,6 +906,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Hilton",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"16\/01\/2020",
         "Transaction Amount":960.0,
         "Expense Description":"External conference - fees"
@@ -800,6 +914,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"G J Johnson & Sons Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"08\/01\/2020",
         "Transaction Amount":828.0,
         "Expense Description":"Vessel food stores"
@@ -807,6 +922,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Echa Microbiology Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"29\/01\/2020",
         "Transaction Amount":4872.0,
         "Expense Description":"Vessel scientific equipment"
@@ -814,6 +930,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Atlantic All Trucks Tr",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"23\/01\/2020",
         "Transaction Amount":576.0,
         "Expense Description":"External training course - fees"
@@ -821,6 +938,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Ddz Engineering Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"17\/01\/2020",
         "Transaction Amount":952.67,
         "Expense Description":"Vessel engineering spares"
@@ -828,6 +946,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Ddz Marine Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"17\/01\/2020",
         "Transaction Amount":1840.39,
         "Expense Description":"Vessel equipment"
@@ -835,6 +954,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"WWW.PETROFACTRAINING.C",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"08\/01\/2020",
         "Transaction Amount":690.0,
         "Expense Description":"External training course - fees"
@@ -842,6 +962,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Douneside House",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"16\/01\/2020",
         "Transaction Amount":2420.4,
         "Expense Description":"External training course - fees"
@@ -849,6 +970,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Caledon Slpr Web",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"06\/01\/2020",
         "Transaction Amount":1650.0,
         "Expense Description":"Travel costs - Rail travel"
@@ -856,6 +978,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Aalco (Aberdeen)",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"20\/01\/2020",
         "Transaction Amount":1187.6,
         "Expense Description":"Vessel equipment"
@@ -863,6 +986,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Ddz Marine Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"07\/01\/2020",
         "Transaction Amount":696.0,
         "Expense Description":"Vessel engineering equipment - maintenance"
@@ -870,6 +994,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"WWW.UTTINGS.CO.UK",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"03\/01\/2020",
         "Transaction Amount":559.0,
         "Expense Description":"Vessel equipment"
@@ -877,6 +1002,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Rentokil Initial Pest",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"20\/01\/2020",
         "Transaction Amount":1852.56,
         "Expense Description":"Vessel safety equipment"
@@ -884,6 +1010,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Indespension",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"29\/01\/2020",
         "Transaction Amount":4900.0,
         "Expense Description":"Vessel equipment"
@@ -891,6 +1018,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Rodgers Electrical",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"04\/01\/2020",
         "Transaction Amount":549.99,
         "Expense Description":"Vessel equipment"
@@ -898,6 +1026,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Tesco Stores 2549",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"24\/01\/2020",
         "Transaction Amount":715.62,
         "Expense Description":"Vessel food stores"
@@ -905,6 +1034,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Professional Academy",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"27\/01\/2020",
         "Transaction Amount":2486.4,
         "Expense Description":"External training course - fees"
@@ -912,6 +1042,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Logmein Pro2",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"28\/01\/2020",
         "Transaction Amount":839.99,
         "Expense Description":"Specialist software - renewal"
@@ -919,6 +1050,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Tnt Uk Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"07\/01\/2020",
         "Transaction Amount":5204.42,
         "Expense Description":"Postal Services"
@@ -926,6 +1058,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Avanti West Coast",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"16\/01\/2020",
         "Transaction Amount":692.0,
         "Expense Description":"Travel costs - Rail travel"
@@ -933,6 +1066,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Associated British Por",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"22\/01\/2020",
         "Transaction Amount":1009.38,
         "Expense Description":"Vessel berthing fees"
@@ -940,6 +1074,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"R&L Slaughter Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"16\/01\/2020",
         "Transaction Amount":1776.32,
         "Expense Description":"Specialist laboratory equipment"
@@ -947,6 +1082,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Elsevier Inc.",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"14\/01\/2020",
         "Transaction Amount":3061.3,
         "Expense Description":"Scientific publication - fees"
@@ -954,6 +1090,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Simon Safety And Lifti",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"09\/01\/2020",
         "Transaction Amount":700.8,
         "Expense Description":"Specialist laboratory equipment"
@@ -961,6 +1098,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Rs Components",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"08\/01\/2020",
         "Transaction Amount":510.0,
         "Expense Description":"Vessel engineering spares"
@@ -968,6 +1106,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Apex City Quay Hotel A",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"08\/01\/2020",
         "Transaction Amount":1436.0,
         "Expense Description":"External event - room hire"
@@ -975,6 +1114,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Morse Watchmans Uk Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"07\/01\/2020",
         "Transaction Amount":522.32,
         "Expense Description":"Vessel safety equipment"
@@ -982,6 +1122,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Eb Understanding Uk S",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"07\/01\/2020",
         "Transaction Amount":1056.12,
         "Expense Description":"External training course - fees"
@@ -989,6 +1130,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"WWW.AGI-ORG.UK",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"20\/01\/2020",
         "Transaction Amount":744.0,
         "Expense Description":"Professional membership - fees"
@@ -996,6 +1138,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Asda Stores",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"22\/01\/2020",
         "Transaction Amount":522.07,
         "Expense Description":"Vessel food stores"
@@ -1003,6 +1146,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Tracks Laser & Electro",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"16\/01\/2020",
         "Transaction Amount":557.4,
         "Expense Description":"Vessel equipment"
@@ -1010,6 +1154,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Tyco Electronics",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"20\/01\/2020",
         "Transaction Amount":748.8,
         "Expense Description":"Vessel engineering spares"
@@ -1017,6 +1162,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Astutis Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"14\/01\/2020",
         "Transaction Amount":2655.0,
         "Expense Description":"External training course - fees"
@@ -1024,6 +1170,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Astutis Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"14\/01\/2020",
         "Transaction Amount":2655.0,
         "Expense Description":"External training course - fees"
@@ -1031,6 +1178,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"WWW.GAELFORCEMARINE.CO",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"21\/01\/2020",
         "Transaction Amount":606.89,
         "Expense Description":"Vessel equipment"
@@ -1038,6 +1186,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Pitlochry Garage Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"21\/01\/2020",
         "Transaction Amount":580.56,
         "Expense Description":"Vehicle - maintenance"
@@ -1045,6 +1194,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"Gowestconferences.Ie",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"17\/01\/2020",
         "Transaction Amount":866.79,
         "Expense Description":"External conference - fees"
@@ -1052,6 +1202,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"British Red Cross",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"08\/01\/2020",
         "Transaction Amount":667.2,
         "Expense Description":"External training course - fees"
@@ -1059,6 +1210,7 @@
     {
         "Directorate":"Directorate For Marine Scotland",
         "Merchant Name":"WWW.GEMINIDATALOGGERS.",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"07\/01\/2020",
         "Transaction Amount":3227.94,
         "Expense Description":"Scientific equipment"
@@ -1066,6 +1218,7 @@
     {
         "Directorate":"Directorate For People",
         "Merchant Name":"Apex Waterloo Place Ho",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"14\/01\/2020",
         "Transaction Amount":574.55,
         "Expense Description":"External event - room hire"
@@ -1073,6 +1226,7 @@
     {
         "Directorate":"Directorate For People",
         "Merchant Name":"Ukba13223775636",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"22\/01\/2020",
         "Transaction Amount":2199.0,
         "Expense Description":"External support services"
@@ -1080,6 +1234,7 @@
     {
         "Directorate":"Directorate For People",
         "Merchant Name":"Edinburgh Training Cen",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"28\/01\/2020",
         "Transaction Amount":1057.2,
         "Expense Description":"External event - room hire"
@@ -1087,6 +1242,7 @@
     {
         "Directorate":"Directorate For People",
         "Merchant Name":"Humanwareeu",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"23\/01\/2020",
         "Transaction Amount":2405.0,
         "Expense Description":"Office equipment"
@@ -1094,6 +1250,7 @@
     {
         "Directorate":"Directorate For People",
         "Merchant Name":"Capp & Co Limited",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"21\/01\/2020",
         "Transaction Amount":540.0,
         "Expense Description":"External event - learning material"
@@ -1101,6 +1258,7 @@
     {
         "Directorate":"Directorate for People",
         "Merchant Name":"Computacenter (Uk) Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"16\/01\/2020",
         "Transaction Amount":1144.39,
         "Expense Description":"IT Peripherals"
@@ -1108,6 +1266,7 @@
     {
         "Directorate":"Directorate for Performance & Delivery",
         "Merchant Name":"Sodexo Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"28\/01\/2020",
         "Transaction Amount":645.3,
         "Expense Description":"Catering"
@@ -1115,6 +1274,7 @@
     {
         "Directorate":"Directorate for Performance & Delivery",
         "Merchant Name":"Sodexo Ltd",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"22\/01\/2020",
         "Transaction Amount":542.94,
         "Expense Description":"Catering"
@@ -1122,6 +1282,7 @@
     {
         "Directorate":"Directorate For Population Health",
         "Merchant Name":"Scottish Youth Theatre",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"23\/01\/2020",
         "Transaction Amount":701.28,
         "Expense Description":"External event - room hire"
@@ -1129,6 +1290,7 @@
     {
         "Directorate":"Directorate For Safer Communities",
         "Merchant Name":"WWW.LOCAL.GOV.UK",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"07\/01\/2020",
         "Transaction Amount":1188.0,
         "Expense Description":"External conference - fees"
@@ -1136,6 +1298,7 @@
     {
         "Directorate":"Directorate For Safer Communities",
         "Merchant Name":"WWW.WESTMINSTER-BRIEFI",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"29\/01\/2020",
         "Transaction Amount":3000.0,
         "Expense Description":"External conference - fees"
@@ -1143,6 +1306,7 @@
     {
         "Directorate":"Directorate For Safer Communities",
         "Merchant Name":"Sage Publications Uk",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"29\/01\/2020",
         "Transaction Amount":654.0,
         "Expense Description":"Professional subscription - fees"
@@ -1150,6 +1314,7 @@
     {
         "Directorate":"Directorate For Safer Communities",
         "Merchant Name":"WWW.INDIGOBUSINESS",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"22\/01\/2020",
         "Transaction Amount":1047.6,
         "Expense Description":"External training course - fees"
@@ -1157,6 +1322,7 @@
     {
         "Directorate":"Directorate For Safer Communities",
         "Merchant Name":"WWW.OUP.COM",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"21\/01\/2020",
         "Transaction Amount":664.8,
         "Expense Description":"Professional subscription - fees"
@@ -1164,6 +1330,7 @@
     {
         "Directorate":"Directorate For Social Security",
         "Merchant Name":"Edinburgh Training Cen",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"10\/01\/2020",
         "Transaction Amount":696.0,
         "Expense Description":"External event - room hire"
@@ -1171,6 +1338,7 @@
     {
         "Directorate":"Directorate For Social Security",
         "Merchant Name":"Eb Dare To Lead",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"28\/01\/2020",
         "Transaction Amount":750.0,
         "Expense Description":"External event - fees"
@@ -1178,6 +1346,7 @@
     {
         "Directorate":"Directorate For Social Security",
         "Merchant Name":"WWW.QA.COM",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"14\/01\/2020",
         "Transaction Amount":1137.6,
         "Expense Description":"External training course - fees"
@@ -1185,6 +1354,7 @@
     {
         "Directorate":"Directorate For Social Security",
         "Merchant Name":"Atlassian",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"28\/01\/2020",
         "Transaction Amount":8417.77,
         "Expense Description":"Professional subscription - fees"
@@ -1192,6 +1362,7 @@
     {
         "Directorate":"Directorate For Social Security",
         "Merchant Name":"Slack",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"05\/01\/2020",
         "Transaction Amount":1019.9,
         "Expense Description":"Professional subscription - fees"
@@ -1199,6 +1370,7 @@
     {
         "Directorate":"Local Government Boundary Commision For Scotland",
         "Merchant Name":"Amznmktplace",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"30\/01\/2020",
         "Transaction Amount":577.0,
         "Expense Description":"IT hardware - specialist equipment"
@@ -1206,6 +1378,7 @@
     {
         "Directorate":"Office Of The Chief Executive Nhs Scotland",
         "Merchant Name":"Symplur.Com",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"17\/01\/2020",
         "Transaction Amount":3786.05,
         "Expense Description":"Professional subscription - fees"
@@ -1213,6 +1386,7 @@
     {
         "Directorate":"Scottish Procurement & Property Directorate",
         "Merchant Name":"Rics",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"29\/01\/2020",
         "Transaction Amount":599.4,
         "Expense Description":"External event - fees"
@@ -1220,6 +1394,7 @@
     {
         "Directorate":"Scottish Procurement & Property Directorate",
         "Merchant Name":"PAYPAL P LEADERS",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"22\/01\/2020",
         "Transaction Amount":6786.0,
         "Expense Description":"External conference - fees"
@@ -1227,6 +1402,7 @@
     {
         "Directorate":"Scottish Procurement & Property Directorate",
         "Merchant Name":"RICS SUBS UK CYBS",
+        "Merchant Category Name":"Not specified in data source",
         "Transaction Date":"15\/01\/2020",
         "Transaction Amount":539.0,
         "Expense Description":"Professional membership - renewal fees"

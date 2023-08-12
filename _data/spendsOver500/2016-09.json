@@ -2,369 +2,369 @@
     {
         "Directorate":"Directorate for Agriculture, Food & Rural Communities",
         "Merchant Name":"Bioreba",
-        "Merchant Code Description":"Chemicals\/allied products not elsewhere classified",
-        "Financial Transaction Date":"31\/08\/2016",
-        "Financial Transaction Amount (£)":600.95,
-        "Expense description":"Laboratory research testing"
+        "Merchant Category Name":"Chemicals\/allied products not elsewhere classified",
+        "Transaction Date":"31\/08\/2016",
+        "Transaction Amount":600.95,
+        "Expense Description":"Laboratory research testing"
     },
     {
         "Directorate":"Directorate for Agriculture, Food & Rural Communities",
         "Merchant Name":"Black Hat",
-        "Merchant Code Description":"Advertising services",
-        "Financial Transaction Date":"28\/09\/2016",
-        "Financial Transaction Amount (£)":3118.8,
-        "Expense description":"External training course - fees"
+        "Merchant Category Name":"Advertising services",
+        "Transaction Date":"28\/09\/2016",
+        "Transaction Amount":3118.8,
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Agriculture, Food & Rural Communities",
         "Merchant Name":"Bioreba",
-        "Merchant Code Description":"Chemicals\/allied products not elsewhere classified",
-        "Financial Transaction Date":"22\/09\/2016",
-        "Financial Transaction Amount (£)":1526.72,
-        "Expense description":"Laboratory research - testing"
+        "Merchant Category Name":"Chemicals\/allied products not elsewhere classified",
+        "Transaction Date":"22\/09\/2016",
+        "Transaction Amount":1526.72,
+        "Expense Description":"Laboratory research - testing"
     },
     {
         "Directorate":"Directorate for Agriculture, Food & Rural Communities",
         "Merchant Name":"16085607",
-        "Merchant Code Description":"Miscellaneous and specialty retail stores",
-        "Financial Transaction Date":"21\/09\/2016",
-        "Financial Transaction Amount (£)":571.57,
-        "Expense description":"IT consumables"
+        "Merchant Category Name":"Miscellaneous and specialty retail stores",
+        "Transaction Date":"21\/09\/2016",
+        "Transaction Amount":571.57,
+        "Expense Description":"IT consumables"
     },
     {
         "Directorate":"Directorate for Agriculture, Food & Rural Communities",
         "Merchant Name":"Parthen R&S Bv",
-        "Merchant Code Description":"Business services - not elsewhere classified",
-        "Financial Transaction Date":"06\/09\/2016",
-        "Financial Transaction Amount (£)":608.93,
-        "Expense description":"External conference - fees"
+        "Merchant Category Name":"Business services - not elsewhere classified",
+        "Transaction Date":"06\/09\/2016",
+        "Transaction Amount":608.93,
+        "Expense Description":"External conference - fees"
     },
     {
         "Directorate":"Directorate for Agriculture, Food & Rural Communities",
         "Merchant Name":"Arnold Clark can & van rental",
-        "Merchant Code Description":"Automobile rental agency - not elsewhere classified",
-        "Financial Transaction Date":"23\/09\/2016",
-        "Financial Transaction Amount (£)":561.79,
-        "Expense description":"Vehicle hire"
+        "Merchant Category Name":"Automobile rental agency - not elsewhere classified",
+        "Transaction Date":"23\/09\/2016",
+        "Transaction Amount":561.79,
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Agriculture, Food & Rural Communities",
         "Merchant Name":"Enterprise",
-        "Merchant Code Description":"Enterprise rent-a-car",
-        "Financial Transaction Date":"29\/09\/2016",
-        "Financial Transaction Amount (£)":589.2,
-        "Expense description":"Vehicle hire"
+        "Merchant Category Name":"Enterprise rent-a-car",
+        "Transaction Date":"29\/09\/2016",
+        "Transaction Amount":589.2,
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Agriculture, Food & Rural Communities",
         "Merchant Name":"Enterprise",
-        "Merchant Code Description":"Enterprise rent-a-car",
-        "Financial Transaction Date":"27\/09\/2016",
-        "Financial Transaction Amount (£)":589.2,
-        "Expense description":"Vehicle hire"
+        "Merchant Category Name":"Enterprise rent-a-car",
+        "Transaction Date":"27\/09\/2016",
+        "Transaction Amount":589.2,
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Agriculture, Food & Rural Communities",
         "Merchant Name":"Enterprise",
-        "Merchant Code Description":"Enterprise rent-a-car",
-        "Financial Transaction Date":"27\/09\/2016",
-        "Financial Transaction Amount (£)":589.2,
-        "Expense description":"Vehicle hire"
+        "Merchant Category Name":"Enterprise rent-a-car",
+        "Transaction Date":"27\/09\/2016",
+        "Transaction Amount":589.2,
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Agriculture, Food & Rural Communities",
         "Merchant Name":"Enterprise",
-        "Merchant Code Description":"Enterprise rent-a-car",
-        "Financial Transaction Date":"14\/09\/2016",
-        "Financial Transaction Amount (£)":589.2,
-        "Expense description":"Vehicle hire"
+        "Merchant Category Name":"Enterprise rent-a-car",
+        "Transaction Date":"14\/09\/2016",
+        "Transaction Amount":589.2,
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Agriculture, Food & Rural Communities",
         "Merchant Name":"Enterprise",
-        "Merchant Code Description":"Enterprise rent-a-car",
-        "Financial Transaction Date":"01\/09\/2016",
-        "Financial Transaction Amount (£)":589.2,
-        "Expense description":"Vehicle hire"
+        "Merchant Category Name":"Enterprise rent-a-car",
+        "Transaction Date":"01\/09\/2016",
+        "Transaction Amount":589.2,
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Agriculture, Food & Rural Communities",
         "Merchant Name":"Enterprise",
-        "Merchant Code Description":"Enterprise rent-a-car",
-        "Financial Transaction Date":"31\/08\/2016",
-        "Financial Transaction Amount (£)":589.2,
-        "Expense description":"Vehicle hire"
+        "Merchant Category Name":"Enterprise rent-a-car",
+        "Transaction Date":"31\/08\/2016",
+        "Transaction Amount":589.2,
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Agriculture, Food & Rural Communities",
         "Merchant Name":"Enterprise",
-        "Merchant Code Description":"Enterprise rent-a-car",
-        "Financial Transaction Date":"31\/08\/2016",
-        "Financial Transaction Amount (£)":589.2,
-        "Expense description":"Vehicle hire"
+        "Merchant Category Name":"Enterprise rent-a-car",
+        "Transaction Date":"31\/08\/2016",
+        "Transaction Amount":589.2,
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Agriculture, Food & Rural Communities",
         "Merchant Name":"Spectrum computers ltd",
-        "Merchant Code Description":"Computers, computer peripheral equipment, software",
-        "Financial Transaction Date":"12\/09\/2016",
-        "Financial Transaction Amount (£)":984.95,
-        "Expense description":"IT consumables"
+        "Merchant Category Name":"Computers, computer peripheral equipment, software",
+        "Transaction Date":"12\/09\/2016",
+        "Transaction Amount":984.95,
+        "Expense Description":"IT consumables"
     },
     {
         "Directorate":"Directorate for Children & Families",
         "Merchant Name":"WWW.CLT.CO.UK",
-        "Merchant Code Description":"Colleges, univ, pro schools, junior colleges",
-        "Financial Transaction Date":"07\/09\/2016",
-        "Financial Transaction Amount (£)":834.0,
-        "Expense description":"External training course - fees"
+        "Merchant Category Name":"Colleges, univ, pro schools, junior colleges",
+        "Transaction Date":"07\/09\/2016",
+        "Transaction Amount":834.0,
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Children & Families",
         "Merchant Name":"Finnish baby box ltd",
-        "Merchant Code Description":"Children's and infant's wear stores",
-        "Financial Transaction Date":"22\/09\/2016",
-        "Financial Transaction Amount (£)":1344.76,
-        "Expense description":"Baby box initiative - promotional materials"
+        "Merchant Category Name":"Children's and infant's wear stores",
+        "Transaction Date":"22\/09\/2016",
+        "Transaction Amount":1344.76,
+        "Expense Description":"Baby box initiative - promotional materials"
     },
     {
         "Directorate":"Directorate for Communications and Ministerial Support",
         "Merchant Name":"VIP & business center",
-        "Merchant Code Description":"Airports, airport terminals, flying fields",
-        "Financial Transaction Date":"01\/09\/2016",
-        "Financial Transaction Amount (£)":831.25,
-        "Expense description":"Meeting facilities at foreign airport"
+        "Merchant Category Name":"Airports, airport terminals, flying fields",
+        "Transaction Date":"01\/09\/2016",
+        "Transaction Amount":831.25,
+        "Expense Description":"Meeting facilities at foreign airport"
     },
     {
         "Directorate":"Directorate for Communications and Ministerial Support",
         "Merchant Name":"Paypal Charteredin",
-        "Merchant Code Description":"Consulting, management and public relations svcs",
-        "Financial Transaction Date":"23\/09\/2016",
-        "Financial Transaction Amount (£)":1185.6,
-        "Expense description":"External event - awards ceremony"
+        "Merchant Category Name":"Consulting, management and public relations svcs",
+        "Transaction Date":"23\/09\/2016",
+        "Transaction Amount":1185.6,
+        "Expense Description":"External event - awards ceremony"
     },
     {
         "Directorate":"Directorate for Communications and Ministerial Support",
         "Merchant Name":"Spectrum computers ltd",
-        "Merchant Code Description":"Computers, computer peripheral equipment, software",
-        "Financial Transaction Date":"26\/09\/2016",
-        "Financial Transaction Amount (£)":629.12,
-        "Expense description":"IT consumables"
+        "Merchant Category Name":"Computers, computer peripheral equipment, software",
+        "Transaction Date":"26\/09\/2016",
+        "Transaction Amount":629.12,
+        "Expense Description":"IT consumables"
     },
     {
         "Directorate":"Directorate for Communications and Ministerial Support",
         "Merchant Name":"Spectrum computers ltd",
-        "Merchant Code Description":"Computers, computer peripheral equipment, software",
-        "Financial Transaction Date":"22\/09\/2016",
-        "Financial Transaction Amount (£)":743.83,
-        "Expense description":"IT consumables"
+        "Merchant Category Name":"Computers, computer peripheral equipment, software",
+        "Transaction Date":"22\/09\/2016",
+        "Transaction Amount":743.83,
+        "Expense Description":"IT consumables"
     },
     {
         "Directorate":"Directorate for Digital",
         "Merchant Name":"Paypal wealthdynam",
-        "Merchant Code Description":"Professional services - not elsewhere classified",
-        "Financial Transaction Date":"21\/09\/2016",
-        "Financial Transaction Amount (£)":994.03,
-        "Expense description":"Licenses for website"
+        "Merchant Category Name":"Professional services - not elsewhere classified",
+        "Transaction Date":"21\/09\/2016",
+        "Transaction Amount":994.03,
+        "Expense Description":"Licenses for website"
     },
     {
         "Directorate":"Directorate for Digital",
         "Merchant Name":"Amazon web services",
-        "Merchant Code Description":"Business services - not elsewhere classified",
-        "Financial Transaction Date":"03\/09\/2016",
-        "Financial Transaction Amount (£)":5758.29,
-        "Expense description":"Web service- service charges - August 2016"
+        "Merchant Category Name":"Business services - not elsewhere classified",
+        "Transaction Date":"03\/09\/2016",
+        "Transaction Amount":5758.29,
+        "Expense Description":"Web service- service charges - August 2016"
     },
     {
         "Directorate":"Directorate for Digital",
         "Merchant Name":"Amazon web services",
-        "Merchant Code Description":"Business services - not elsewhere classified",
-        "Financial Transaction Date":"02\/09\/2016",
-        "Financial Transaction Amount (£)":5226.55,
-        "Expense description":"Web service - service charges - July 2016"
+        "Merchant Category Name":"Business services - not elsewhere classified",
+        "Transaction Date":"02\/09\/2016",
+        "Transaction Amount":5226.55,
+        "Expense Description":"Web service - service charges - July 2016"
     },
     {
         "Directorate":"Directorate for External Affairs",
         "Merchant Name":"Air bnb",
-        "Merchant Code Description":"Lodging - hotels, motels, resorts - not classified",
-        "Financial Transaction Date":"16\/09\/2016",
-        "Financial Transaction Amount (£)":761.0,
-        "Expense description":"External conference - accommodation fees"
+        "Merchant Category Name":"Lodging - hotels, motels, resorts - not classified",
+        "Transaction Date":"16\/09\/2016",
+        "Transaction Amount":761.0,
+        "Expense Description":"External conference - accommodation fees"
     },
     {
         "Directorate":"Directorate for external Affairs",
         "Merchant Name":"Air bnb",
-        "Merchant Code Description":"Lodging - hotels, motels, resorts - not classified",
-        "Financial Transaction Date":"15\/09\/2016",
-        "Financial Transaction Amount (£)":676.0,
-        "Expense description":"External conference - accommodation fees"
+        "Merchant Category Name":"Lodging - hotels, motels, resorts - not classified",
+        "Transaction Date":"15\/09\/2016",
+        "Transaction Amount":676.0,
+        "Expense Description":"External conference - accommodation fees"
     },
     {
         "Directorate":"Directorate for External Affairs",
         "Merchant Name":"Air bnb",
-        "Merchant Code Description":"Lodging - hotels, motels, resorts - not classified",
-        "Financial Transaction Date":"09\/09\/2016",
-        "Financial Transaction Amount (£)":763.0,
-        "Expense description":"External conference - accommodation fees"
+        "Merchant Category Name":"Lodging - hotels, motels, resorts - not classified",
+        "Transaction Date":"09\/09\/2016",
+        "Transaction Amount":763.0,
+        "Expense Description":"External conference - accommodation fees"
     },
     {
         "Directorate":"Directorate for External Affairs",
         "Merchant Name":"Webucator",
-        "Merchant Code Description":"Schools & educational svc - not elsewhere classified",
-        "Financial Transaction Date":"14\/09\/2016",
-        "Financial Transaction Amount (£)":506.03,
-        "Expense description":"External training course - fees"
+        "Merchant Category Name":"Schools & educational svc - not elsewhere classified",
+        "Transaction Date":"14\/09\/2016",
+        "Transaction Amount":506.03,
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Health Finance",
         "Merchant Name":"Spectrum computers ltd",
-        "Merchant Code Description":"Computers, computer peripheral equipment, software",
-        "Financial Transaction Date":"21\/09\/2016",
-        "Financial Transaction Amount (£)":523.16,
-        "Expense description":"IT consumables"
+        "Merchant Category Name":"Computers, computer peripheral equipment, software",
+        "Transaction Date":"21\/09\/2016",
+        "Transaction Amount":523.16,
+        "Expense Description":"IT consumables"
     },
     {
         "Directorate":"Directorate for Housing, Regeneration and Welfare",
         "Merchant Name":"WWW.MOVERSANDSHAKERS.U",
-        "Merchant Code Description":"Organizations, membership - not elsewhere classified",
-        "Financial Transaction Date":"01\/09\/2016",
-        "Financial Transaction Amount (£)":630.0,
-        "Expense description":"External conference - fees"
+        "Merchant Category Name":"Organizations, membership - not elsewhere classified",
+        "Transaction Date":"01\/09\/2016",
+        "Transaction Amount":630.0,
+        "Expense Description":"External conference - fees"
     },
     {
         "Directorate":"Directorate of Learning",
         "Merchant Name":"Sodexo ltd",
-        "Merchant Code Description":"Eating places, restaurants",
-        "Financial Transaction Date":"31\/08\/2016",
-        "Financial Transaction Amount (£)":632.52,
-        "Expense description":"Catering"
+        "Merchant Category Name":"Eating places, restaurants",
+        "Transaction Date":"31\/08\/2016",
+        "Transaction Amount":632.52,
+        "Expense Description":"Catering"
     },
     {
         "Directorate":"Directorate of Local Government & Communities",
         "Merchant Name":"Sodexo ltd",
-        "Merchant Code Description":"Eating places, restaurants",
-        "Financial Transaction Date":"15\/09\/2016",
-        "Financial Transaction Amount (£)":640.87,
-        "Expense description":"Catering"
+        "Merchant Category Name":"Eating places, restaurants",
+        "Transaction Date":"15\/09\/2016",
+        "Transaction Amount":640.87,
+        "Expense Description":"Catering"
     },
     {
         "Directorate":"Directorate of Marine Scotland",
         "Merchant Name":"Tesco Stores 5441",
-        "Merchant Code Description":"Grocery stores, supermarkets",
-        "Financial Transaction Date":"22\/09\/2016",
-        "Financial Transaction Amount (£)":531.43,
-        "Expense description":"Vessel food stores"
+        "Merchant Category Name":"Grocery stores, supermarkets",
+        "Transaction Date":"22\/09\/2016",
+        "Transaction Amount":531.43,
+        "Expense Description":"Vessel food stores"
     },
     {
         "Directorate":"Directorate of Marine Scotland",
         "Merchant Name":"ST-ANDREWS.AC.UK",
-        "Merchant Code Description":"Colleges, univ, pro schools, junior colleges",
-        "Financial Transaction Date":"16\/09\/2016",
-        "Financial Transaction Amount (£)":555.0,
-        "Expense description":"External conference - fees"
+        "Merchant Category Name":"Colleges, univ, pro schools, junior colleges",
+        "Transaction Date":"16\/09\/2016",
+        "Transaction Amount":555.0,
+        "Expense Description":"External conference - fees"
     },
     {
         "Directorate":"Directorate of Marine Scotland",
         "Merchant Name":"WWW.THEHUBEVENTS.COM",
-        "Merchant Code Description":"Consulting, management and public relations svcs",
-        "Financial Transaction Date":"15\/09\/2016",
-        "Financial Transaction Amount (£)":588.0,
-        "Expense description":"External training course - fees"
+        "Merchant Category Name":"Consulting, management and public relations svcs",
+        "Transaction Date":"15\/09\/2016",
+        "Transaction Amount":588.0,
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate of Marine Scotland",
         "Merchant Name":"Mafco (UK) ltd",
-        "Merchant Code Description":"Sporting goods stores",
-        "Financial Transaction Date":"21\/09\/2016",
-        "Financial Transaction Amount (£)":3583.71,
-        "Expense description":"Vessel equipment"
+        "Merchant Category Name":"Sporting goods stores",
+        "Transaction Date":"21\/09\/2016",
+        "Transaction Amount":3583.71,
+        "Expense Description":"Vessel equipment"
     },
     {
         "Directorate":"Directorate of Marine Scotland",
         "Merchant Name":"RS components",
-        "Merchant Code Description":"Electrical parts and equipment",
-        "Financial Transaction Date":"20\/09\/2016",
-        "Financial Transaction Amount (£)":906.6,
-        "Expense description":"Scientific equipment"
+        "Merchant Category Name":"Electrical parts and equipment",
+        "Transaction Date":"20\/09\/2016",
+        "Transaction Amount":906.6,
+        "Expense Description":"Scientific equipment"
     },
     {
         "Directorate":"Directorate of Marine Scotland",
         "Merchant Name":"ESEDIRECT.CO.UK",
-        "Merchant Code Description":"Office, school supply and stationery stores",
-        "Financial Transaction Date":"09\/09\/2016",
-        "Financial Transaction Amount (£)":866.82,
-        "Expense description":"Scientific equipment"
+        "Merchant Category Name":"Office, school supply and stationery stores",
+        "Transaction Date":"09\/09\/2016",
+        "Transaction Amount":866.82,
+        "Expense Description":"Scientific equipment"
     },
     {
         "Directorate":"Directorate of Marine Scotland",
         "Merchant Name":"Saltire softwood",
-        "Merchant Code Description":"Building materials, lumber stores",
-        "Financial Transaction Date":"31\/08\/2016",
-        "Financial Transaction Amount (£)":749.0,
-        "Expense description":"Scientific equipment"
+        "Merchant Category Name":"Building materials, lumber stores",
+        "Transaction Date":"31\/08\/2016",
+        "Transaction Amount":749.0,
+        "Expense Description":"Scientific equipment"
     },
     {
         "Directorate":"Directorate of Marine Scotland",
         "Merchant Name":"GB Informa UK moto GB",
-        "Merchant Code Description":"Miscellaneous publishing and printing",
-        "Financial Transaction Date":"01\/09\/2016",
-        "Financial Transaction Amount (£)":556.6,
-        "Expense description":"Professional subscription - fees"
+        "Merchant Category Name":"Miscellaneous publishing and printing",
+        "Transaction Date":"01\/09\/2016",
+        "Transaction Amount":556.6,
+        "Expense Description":"Professional subscription - fees"
     },
     {
         "Directorate":"Directorate of Marine Scotland",
         "Merchant Name":"Paypal quikslinglt",
-        "Merchant Code Description":"Durable goods, not elsewhere classified",
-        "Financial Transaction Date":"13\/09\/2016",
-        "Financial Transaction Amount (£)":2394.0,
-        "Expense description":"Vessel safety equipment"
+        "Merchant Category Name":"Durable goods, not elsewhere classified",
+        "Transaction Date":"13\/09\/2016",
+        "Transaction Amount":2394.0,
+        "Expense Description":"Vessel safety equipment"
     },
     {
         "Directorate":"Directorate of Marine Scotland",
         "Merchant Name":"WWW.BEARINGBOYS.CO.UK",
-        "Merchant Code Description":"Hardware stores",
-        "Financial Transaction Date":"14\/09\/2016",
-        "Financial Transaction Amount (£)":1794.58,
-        "Expense description":"Vessel engineering spares"
+        "Merchant Category Name":"Hardware stores",
+        "Transaction Date":"14\/09\/2016",
+        "Transaction Amount":1794.58,
+        "Expense Description":"Vessel engineering spares"
     },
     {
         "Directorate":"Directorate of Marine Scotland",
         "Merchant Name":"RGBE events",
-        "Merchant Code Description":"Eating places, restaurants",
-        "Financial Transaction Date":"02\/09\/2016",
-        "Financial Transaction Amount (£)":5000.0,
-        "Expense description":"External event - catering costs"
+        "Merchant Category Name":"Eating places, restaurants",
+        "Transaction Date":"02\/09\/2016",
+        "Transaction Amount":5000.0,
+        "Expense Description":"External event - catering costs"
     },
     {
         "Directorate":"Directorate of Marine Scotland",
         "Merchant Name":"RGBE events",
-        "Merchant Code Description":"Eating places, restaurants",
-        "Financial Transaction Date":"02\/09\/2016",
-        "Financial Transaction Amount (£)":2530.36,
-        "Expense description":"External event - catering costs"
+        "Merchant Category Name":"Eating places, restaurants",
+        "Transaction Date":"02\/09\/2016",
+        "Transaction Amount":2530.36,
+        "Expense Description":"External event - catering costs"
     },
     {
         "Directorate":"Directorate of Marine Scotland",
         "Merchant Name":"Spectrum computers ltd",
-        "Merchant Code Description":"Computers, computer peripheral equipment, software",
-        "Financial Transaction Date":"02\/09\/2016",
-        "Financial Transaction Amount (£)":810.18,
-        "Expense description":"IT consumables"
+        "Merchant Category Name":"Computers, computer peripheral equipment, software",
+        "Transaction Date":"02\/09\/2016",
+        "Transaction Amount":810.18,
+        "Expense Description":"IT consumables"
     },
     {
         "Directorate":"People Directorate",
         "Merchant Name":"DBL software ltd",
-        "Merchant Code Description":"Computer software stores",
-        "Financial Transaction Date":"09\/09\/2016",
-        "Financial Transaction Amount (£)":542.84,
-        "Expense description":"Specialist software - renewal"
+        "Merchant Category Name":"Computer software stores",
+        "Transaction Date":"09\/09\/2016",
+        "Transaction Amount":542.84,
+        "Expense Description":"Specialist software - renewal"
     },
     {
         "Directorate":null,
         "Merchant Name":null,
-        "Merchant Code Description":null,
-        "Financial Transaction Date":null,
-        "Financial Transaction Amount (£)":null,
-        "Expense description":null
+        "Merchant Category Name":null,
+        "Transaction Date":null,
+        "Transaction Amount":null,
+        "Expense Description":null
     }
 ]

@@ -5,7 +5,7 @@
         "Merchant Category Name":"Colleges, Universities, Professional Schools & Junior Colleges",
         "Transaction Date":"08\/03\/2022",
         "Transaction Amount":579.99,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Advanced Learning & Science",
@@ -13,7 +13,7 @@
         "Merchant Category Name":"Royal Dutch Airlines (Klm)",
         "Transaction Date":"23\/03\/2022",
         "Transaction Amount":576.74,
-        "Description":"Travel costs - flight"
+        "Expense Description":"Travel costs - flight"
     },
     {
         "Directorate":"Directorate for Advanced Learning & Science",
@@ -21,7 +21,7 @@
         "Merchant Category Name":"Miscellaneous House Furnishing Specialty Shops",
         "Transaction Date":"23\/03\/2022",
         "Transaction Amount":1059.06,
-        "Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -29,7 +29,7 @@
         "Merchant Category Name":"Colleges, Universities, Professional Schools & Junior Colleges",
         "Transaction Date":"21\/03\/2022",
         "Transaction Amount":1074.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -37,7 +37,7 @@
         "Merchant Category Name":"Men's And Women's Clothing Stores",
         "Transaction Date":"09\/03\/2022",
         "Transaction Amount":576.81,
-        "Description":"Specialist protective clothing"
+        "Expense Description":"Specialist protective clothing"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -45,7 +45,7 @@
         "Merchant Category Name":"Miscellaneous And Specialty Retail Stores",
         "Transaction Date":"16\/03\/2022",
         "Transaction Amount":576.59,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -53,7 +53,7 @@
         "Merchant Category Name":"Computer Programing,Data Prcocessing, Integrated System Design Services",
         "Transaction Date":"08\/03\/2022",
         "Transaction Amount":1495.68,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -61,7 +61,7 @@
         "Merchant Category Name":"Quick Copy,Reproduction & Blueprinting Services",
         "Transaction Date":"01\/03\/2022",
         "Transaction Amount":3595.39,
-        "Description":"Specialist Field Equipment"
+        "Expense Description":"Specialist Field Equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -69,7 +69,7 @@
         "Merchant Category Name":"Direct Marketing - Catalog Merchants",
         "Transaction Date":"01\/03\/2022",
         "Transaction Amount":509.34,
-        "Description":"Specialist laboratory equipment"
+        "Expense Description":"Specialist laboratory equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -77,7 +77,7 @@
         "Merchant Category Name":"Camera & Photographic Supply Stores",
         "Transaction Date":"25\/03\/2022",
         "Transaction Amount":1049.0,
-        "Description":"Photographic equipment"
+        "Expense Description":"Photographic equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -85,7 +85,7 @@
         "Merchant Category Name":"Electronic Sales",
         "Transaction Date":"19\/03\/2022",
         "Transaction Amount":1449.0,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -93,7 +93,7 @@
         "Merchant Category Name":"Electronic Sales",
         "Transaction Date":"19\/03\/2022",
         "Transaction Amount":1449.0,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -101,7 +101,7 @@
         "Merchant Category Name":"Men's And Women's Clothing Stores",
         "Transaction Date":"21\/03\/2022",
         "Transaction Amount":1894.26,
-        "Description":"Specialist protective clothing"
+        "Expense Description":"Specialist protective clothing"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -109,7 +109,7 @@
         "Merchant Category Name":"Consulting, Management & Public Relations Services",
         "Transaction Date":"18\/03\/2022",
         "Transaction Amount":742.25,
-        "Description":"Farm equipment"
+        "Expense Description":"Farm equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -117,7 +117,7 @@
         "Merchant Category Name":"Consulting, Management & Public Relations Services",
         "Transaction Date":"18\/03\/2022",
         "Transaction Amount":680.39,
-        "Description":"Farm equipment"
+        "Expense Description":"Farm equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -125,7 +125,7 @@
         "Merchant Category Name":"Consulting, Management & Public Relations Services",
         "Transaction Date":"09\/03\/2022",
         "Transaction Amount":2649.39,
-        "Description":"Farm equipment"
+        "Expense Description":"Farm equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -133,7 +133,7 @@
         "Merchant Category Name":"Consulting, Management & Public Relations Services",
         "Transaction Date":"09\/03\/2022",
         "Transaction Amount":2134.58,
-        "Description":"Farm equipment"
+        "Expense Description":"Farm equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -141,7 +141,7 @@
         "Merchant Category Name":"Consulting, Management & Public Relations Services",
         "Transaction Date":"09\/03\/2022",
         "Transaction Amount":2649.39,
-        "Description":"Farm equipment"
+        "Expense Description":"Farm equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -149,7 +149,7 @@
         "Merchant Category Name":"Consulting, Management & Public Relations Services",
         "Transaction Date":"09\/03\/2022",
         "Transaction Amount":1757.89,
-        "Description":"Farm equipment"
+        "Expense Description":"Farm equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -157,7 +157,7 @@
         "Merchant Category Name":"Computer Network\/Information Services",
         "Transaction Date":"14\/03\/2022",
         "Transaction Amount":551.98,
-        "Description":"Specialist software - renewal"
+        "Expense Description":"Specialist software - renewal"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -165,7 +165,7 @@
         "Merchant Category Name":"Automotive Tire Stores",
         "Transaction Date":"23\/03\/2022",
         "Transaction Amount":1452.0,
-        "Description":"Vehicle - maintenance"
+        "Expense Description":"Vehicle - maintenance"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -173,7 +173,7 @@
         "Merchant Category Name":"Computer Software Stores",
         "Transaction Date":"18\/03\/2022",
         "Transaction Amount":2084.94,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -181,7 +181,7 @@
         "Merchant Category Name":"Computer Software Stores",
         "Transaction Date":"17\/03\/2022",
         "Transaction Amount":2084.94,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -189,7 +189,7 @@
         "Merchant Category Name":"Organizations Membership - Not Elsewhere Classified",
         "Transaction Date":"25\/03\/2022",
         "Transaction Amount":594.0,
-        "Description":"External conference - fees"
+        "Expense Description":"External conference - fees"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -197,7 +197,7 @@
         "Merchant Category Name":"Building Materials, Lumber Stores",
         "Transaction Date":"04\/03\/2022",
         "Transaction Amount":663.5,
-        "Description":"Farm equipment - maintenance"
+        "Expense Description":"Farm equipment - maintenance"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -205,7 +205,7 @@
         "Merchant Category Name":"Camera & Photographic Supply Stores",
         "Transaction Date":"02\/03\/2022",
         "Transaction Amount":1296.41,
-        "Description":"Photographic equipment"
+        "Expense Description":"Photographic equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -213,7 +213,7 @@
         "Merchant Category Name":"Package Stores, Beer, Wine, Liquor",
         "Transaction Date":"28\/03\/2022",
         "Transaction Amount":699.0,
-        "Description":"Professional subscription - fees"
+        "Expense Description":"Professional subscription - fees"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -221,7 +221,7 @@
         "Merchant Category Name":"Architectural, Engineering,& Surveying Services",
         "Transaction Date":"16\/03\/2022",
         "Transaction Amount":19500.0,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -229,7 +229,7 @@
         "Merchant Category Name":"Consulting, Management & Public Relations Services",
         "Transaction Date":"01\/03\/2022",
         "Transaction Amount":2649.39,
-        "Description":"Specialist laboratory equipment"
+        "Expense Description":"Specialist laboratory equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -237,7 +237,7 @@
         "Merchant Category Name":"Health Practitioners, Medical Services - Not Elsewhere Classified",
         "Transaction Date":"07\/03\/2022",
         "Transaction Amount":1182.0,
-        "Description":"Specialist laboratory equipment"
+        "Expense Description":"Specialist laboratory equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -245,7 +245,7 @@
         "Merchant Category Name":"Health Practitioners, Medical Services - Not Elsewhere Classified",
         "Transaction Date":"28\/02\/2022",
         "Transaction Amount":9336.0,
-        "Description":"Specialist laboratory equipment"
+        "Expense Description":"Specialist laboratory equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -253,7 +253,7 @@
         "Merchant Category Name":"Miscellaneous And Specialty Retail Stores",
         "Transaction Date":"28\/03\/2022",
         "Transaction Amount":1914.22,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -261,7 +261,7 @@
         "Merchant Category Name":"Direct Marketing - Other Direct Marketers - Not Elsewhere Classified",
         "Transaction Date":"23\/03\/2022",
         "Transaction Amount":1410.92,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -269,7 +269,7 @@
         "Merchant Category Name":"Computers, Computer Peripheral Equipment, Software",
         "Transaction Date":"24\/03\/2022",
         "Transaction Amount":672.44,
-        "Description":"Professional membership - renewal fees"
+        "Expense Description":"Professional membership - renewal fees"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -277,7 +277,7 @@
         "Merchant Category Name":"Schools & Educational Services - Not Elsewhere Classified",
         "Transaction Date":"14\/03\/2022",
         "Transaction Amount":3897.6,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -285,7 +285,7 @@
         "Merchant Category Name":"Schools & Educational Services - Not Elsewhere Classified",
         "Transaction Date":"14\/03\/2022",
         "Transaction Amount":804.6,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -293,7 +293,7 @@
         "Merchant Category Name":"Office, School Supply & Stationery Stores",
         "Transaction Date":"23\/03\/2022",
         "Transaction Amount":900.0,
-        "Description":"Farm equipment - maintenance"
+        "Expense Description":"Farm equipment - maintenance"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -301,7 +301,7 @@
         "Merchant Category Name":"Business Services - Not Elsewhere Classified",
         "Transaction Date":"18\/03\/2022",
         "Transaction Amount":756.0,
-        "Description":"External conference - fees"
+        "Expense Description":"External conference - fees"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -309,7 +309,7 @@
         "Merchant Category Name":"Dental\/Lab\/Med\/Ophthalmic Hosp Equip & Supplies",
         "Transaction Date":"08\/03\/2022",
         "Transaction Amount":1665.12,
-        "Description":"Scientific equipment"
+        "Expense Description":"Scientific equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -317,7 +317,7 @@
         "Merchant Category Name":"Government Services - Not Elsewhere Classified",
         "Transaction Date":"11\/03\/2022",
         "Transaction Amount":2382.2,
-        "Description":"Building - payment charge"
+        "Expense Description":"Building - payment charge"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -325,7 +325,7 @@
         "Merchant Category Name":"Organizations, Membership - Not Elsewhere Classified",
         "Transaction Date":"09\/03\/2022",
         "Transaction Amount":539.0,
-        "Description":"Professional licence - renewal"
+        "Expense Description":"Professional licence - renewal"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -333,7 +333,7 @@
         "Merchant Category Name":"Family Clothing Stores",
         "Transaction Date":"21\/03\/2022",
         "Transaction Amount":776.52,
-        "Description":"Specialist protective clothing"
+        "Expense Description":"Specialist protective clothing"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -341,7 +341,7 @@
         "Merchant Category Name":"Family Clothing Stores",
         "Transaction Date":"16\/03\/2022",
         "Transaction Amount":1064.64,
-        "Description":"Specialist protective clothing"
+        "Expense Description":"Specialist protective clothing"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -349,7 +349,7 @@
         "Merchant Category Name":"Men's And Women's Clothing Stores",
         "Transaction Date":"21\/03\/2022",
         "Transaction Amount":1003.86,
-        "Description":"Specialist protective clothing"
+        "Expense Description":"Specialist protective clothing"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -357,7 +357,7 @@
         "Merchant Category Name":"Camera & Photographic Supply Stores",
         "Transaction Date":"25\/03\/2022",
         "Transaction Amount":1660.26,
-        "Description":"Photographic equipment"
+        "Expense Description":"Photographic equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -365,7 +365,7 @@
         "Merchant Category Name":"Camera & Photographic Supply Stores",
         "Transaction Date":"01\/03\/2022",
         "Transaction Amount":820.14,
-        "Description":"Photographic equipment"
+        "Expense Description":"Photographic equipment"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -373,7 +373,7 @@
         "Merchant Category Name":"COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
         "Transaction Date":"14\/03\/2022",
         "Transaction Amount":700.44,
-        "Description":"IT peripherals"
+        "Expense Description":"IT peripherals"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -381,7 +381,7 @@
         "Merchant Category Name":"ENTERPRISE RENT-A-CAR",
         "Transaction Date":"14\/03\/2022",
         "Transaction Amount":542.3,
-        "Description":"Vehicle hire"
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -389,7 +389,7 @@
         "Merchant Category Name":"OFFICE, SCHOOL SUPPLY, AND STATIONERY STORES",
         "Transaction Date":"03\/03\/2022",
         "Transaction Amount":957.38,
-        "Description":"Stationery"
+        "Expense Description":"Stationery"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -397,7 +397,7 @@
         "Merchant Category Name":"OFFICE, SCHOOL SUPPLY, AND STATIONERY STORES",
         "Transaction Date":"28\/02\/2022",
         "Transaction Amount":809.12,
-        "Description":"Stationery"
+        "Expense Description":"Stationery"
     },
     {
         "Directorate":"Directorate for Agriculture & Rural Economy",
@@ -405,7 +405,7 @@
         "Merchant Category Name":"Camera & Photographic Supply Stores",
         "Transaction Date":"01\/03\/2022",
         "Transaction Amount":1468.71,
-        "Description":"Photographic equipment"
+        "Expense Description":"Photographic equipment"
     },
     {
         "Directorate":"Directorate for Chief Economist",
@@ -413,7 +413,7 @@
         "Merchant Category Name":"Eating Places, Restaurants",
         "Transaction Date":"07\/03\/2022",
         "Transaction Amount":1080.0,
-        "Description":"Exterma; Evemt - catering fees"
+        "Expense Description":"Exterma; Evemt - catering fees"
     },
     {
         "Directorate":"Directorate for Chief Medical Officer",
@@ -421,7 +421,7 @@
         "Merchant Category Name":"Government Services - Not Elsewhere Classified",
         "Transaction Date":"29\/03\/2022",
         "Transaction Amount":840.0,
-        "Description":"External conference - fees"
+        "Expense Description":"External conference - fees"
     },
     {
         "Directorate":"Directorate for Child Poverty & Social Justice",
@@ -429,7 +429,7 @@
         "Merchant Category Name":"Electronic Sales",
         "Transaction Date":"17\/03\/2022",
         "Transaction Amount":849.0,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Child Poverty & Social Justice",
@@ -437,7 +437,7 @@
         "Merchant Category Name":"Business Services - Not Elsewhere Classified",
         "Transaction Date":"04\/03\/2022",
         "Transaction Amount":1080.0,
-        "Description":"Professional licence - fees"
+        "Expense Description":"Professional licence - fees"
     },
     {
         "Directorate":"Directorate for Children & Families",
@@ -445,7 +445,7 @@
         "Merchant Category Name":"Consulting, Management, And Public Relations Services",
         "Transaction Date":"23\/03\/2022",
         "Transaction Amount":5000.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Children & Families",
@@ -453,7 +453,7 @@
         "Merchant Category Name":"Consulting, Management, And Public Relations Services",
         "Transaction Date":"21\/03\/2022",
         "Transaction Amount":1250.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Children & Families",
@@ -461,7 +461,7 @@
         "Merchant Category Name":"Computers, Computer Peripheral Equipment, Software",
         "Transaction Date":"25\/03\/2022",
         "Transaction Amount":1720.38,
-        "Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate for Children & Families",
@@ -469,7 +469,7 @@
         "Merchant Category Name":"Schools & Educational Services - Not Elsewhere Classified",
         "Transaction Date":"28\/02\/2022",
         "Transaction Amount":1620.02,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Commercial & Procurement",
@@ -477,7 +477,7 @@
         "Merchant Category Name":"OFFICE, SCHOOL SUPPLY, AND STATIONERY STORES",
         "Transaction Date":"02\/03\/2022",
         "Transaction Amount":508.34,
-        "Description":"Stationery"
+        "Expense Description":"Stationery"
     },
     {
         "Directorate":"Directorate for Constitution & Cabinet",
@@ -485,7 +485,7 @@
         "Merchant Category Name":"ENTERPRISE RENT-A-CAR",
         "Transaction Date":"08\/03\/2022",
         "Transaction Amount":833.15,
-        "Description":"Vehicle hire"
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Corporate Transformation & Workplace",
@@ -493,7 +493,7 @@
         "Merchant Category Name":"Commercial Equipment - Not Elsewhere Classified",
         "Transaction Date":"08\/03\/2022",
         "Transaction Amount":565.8,
-        "Description":"Photographic equipment - accessories"
+        "Expense Description":"Photographic equipment - accessories"
     },
     {
         "Directorate":"Directorate for Corporate Transformation & Workplace",
@@ -501,7 +501,7 @@
         "Merchant Category Name":"Telecommunication Equipment Including Telephone Sales",
         "Transaction Date":"17\/03\/2022",
         "Transaction Amount":20186.4,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Corporate Transformation & Workplace",
@@ -509,7 +509,7 @@
         "Merchant Category Name":"Computer Software Stores",
         "Transaction Date":"24\/03\/2022",
         "Transaction Amount":936.92,
-        "Description":"Specialist software - renewal"
+        "Expense Description":"Specialist software - renewal"
     },
     {
         "Directorate":"Directorate for Corporate Transformation & Workplace",
@@ -517,7 +517,7 @@
         "Merchant Category Name":"Automotive Body Repair Shops",
         "Transaction Date":"09\/03\/2022",
         "Transaction Amount":1004.71,
-        "Description":"Vehicle - maintenance"
+        "Expense Description":"Vehicle - maintenance"
     },
     {
         "Directorate":"Directorate for Corporate Transformation & Workplace",
@@ -525,7 +525,7 @@
         "Merchant Category Name":"Auto & Truck Dealers - Sales,Svc, Repairs,Parts & Leasing",
         "Transaction Date":"03\/03\/2022",
         "Transaction Amount":792.75,
-        "Description":"Vehicle - maintenance"
+        "Expense Description":"Vehicle - maintenance"
     },
     {
         "Directorate":"Directorate for Corporate Transformation & Workplace",
@@ -533,7 +533,7 @@
         "Merchant Category Name":"Telecommunication Equipment Including Telephone Sales",
         "Transaction Date":"17\/03\/2022",
         "Transaction Amount":579.67,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Corporate Transformation & Workplace",
@@ -541,7 +541,7 @@
         "Merchant Category Name":"Organizations, Membership - Not Elsewhere Classified",
         "Transaction Date":"29\/03\/2022",
         "Transaction Amount":570.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Covid Public Health",
@@ -549,7 +549,7 @@
         "Merchant Category Name":"Attorneys, Legal Services",
         "Transaction Date":"30\/03\/2022",
         "Transaction Amount":831.0,
-        "Description":"External consultancy - fees"
+        "Expense Description":"External consultancy - fees"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -557,7 +557,7 @@
         "Merchant Category Name":"Consulting, Management, & Public Relations Services",
         "Transaction Date":"01\/03\/2022",
         "Transaction Amount":995.0,
-        "Description":"Professional subscription - fees"
+        "Expense Description":"Professional subscription - fees"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -565,7 +565,7 @@
         "Merchant Category Name":"Business Services - Not Elsewhere Classified",
         "Transaction Date":"22\/03\/2022",
         "Transaction Amount":1339.21,
-        "Description":"Specialist softwares"
+        "Expense Description":"Specialist softwares"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -573,7 +573,7 @@
         "Merchant Category Name":"Computers, Computer Peripheral Equipment, Software",
         "Transaction Date":"19\/03\/2022",
         "Transaction Amount":567.46,
-        "Description":"Specialist software - renewal"
+        "Expense Description":"Specialist software - renewal"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -581,7 +581,7 @@
         "Merchant Category Name":"Schools & Educational Services - Not Elsewhere Classified",
         "Transaction Date":"22\/03\/2022",
         "Transaction Amount":1670.4,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -589,7 +589,7 @@
         "Merchant Category Name":"Schools & Educational Services - Not Elsewhere Classified",
         "Transaction Date":"22\/03\/2022",
         "Transaction Amount":1486.8,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -597,7 +597,7 @@
         "Merchant Category Name":"Organizations, Charitable & Social Services",
         "Transaction Date":"29\/03\/2022",
         "Transaction Amount":945.53,
-        "Description":"Professional licence - fees"
+        "Expense Description":"Professional licence - fees"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -605,7 +605,7 @@
         "Merchant Category Name":"Consulting, Management & Public Relations Services",
         "Transaction Date":"30\/03\/2022",
         "Transaction Amount":4584.0,
-        "Description":"External conference - fees"
+        "Expense Description":"External conference - fees"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -613,7 +613,7 @@
         "Merchant Category Name":"Electronic Sales",
         "Transaction Date":"06\/03\/2022",
         "Transaction Amount":1849.0,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -621,7 +621,7 @@
         "Merchant Category Name":"Schools & Educational Services - Not Elsewhere Classified",
         "Transaction Date":"23\/03\/2022",
         "Transaction Amount":5005.2,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -629,7 +629,7 @@
         "Merchant Category Name":"Direct Marketing - Continuity\/Subscription Merchants",
         "Transaction Date":"19\/03\/2022",
         "Transaction Amount":500.0,
-        "Description":"Specialist software - renewal"
+        "Expense Description":"Specialist software - renewal"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -637,7 +637,7 @@
         "Merchant Category Name":"Computer Software Stores",
         "Transaction Date":"01\/03\/2022",
         "Transaction Amount":12643.0,
-        "Description":"Specialist software - renewal"
+        "Expense Description":"Specialist software - renewal"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -645,7 +645,7 @@
         "Merchant Category Name":"Photographic Studios",
         "Transaction Date":"29\/03\/2022",
         "Transaction Amount":8849.28,
-        "Description":"Specialist softwares"
+        "Expense Description":"Specialist softwares"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -653,7 +653,7 @@
         "Merchant Category Name":"Schools & Educational Services - Not Elsewhere Classified",
         "Transaction Date":"14\/03\/2022",
         "Transaction Amount":6958.53,
-        "Description":"Professional licence - fees"
+        "Expense Description":"Professional licence - fees"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -661,7 +661,7 @@
         "Merchant Category Name":"Schools & Educational Services - Not Elsewhere Classified",
         "Transaction Date":"22\/03\/2022",
         "Transaction Amount":5522.4,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -669,7 +669,7 @@
         "Merchant Category Name":"Business Services - Not Elsewhere Classified",
         "Transaction Date":"03\/03\/2022",
         "Transaction Amount":2307.35,
-        "Description":"Professional subscription - fees"
+        "Expense Description":"Professional subscription - fees"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -677,7 +677,7 @@
         "Merchant Category Name":"COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
         "Transaction Date":"28\/03\/2022",
         "Transaction Amount":1176.6,
-        "Description":"IT peripherals"
+        "Expense Description":"IT peripherals"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -685,7 +685,7 @@
         "Merchant Category Name":"COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
         "Transaction Date":"21\/03\/2022",
         "Transaction Amount":54200.1,
-        "Description":"IT peripherals"
+        "Expense Description":"IT peripherals"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -693,7 +693,7 @@
         "Merchant Category Name":"COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
         "Transaction Date":"21\/03\/2022",
         "Transaction Amount":95652.0,
-        "Description":"IT peripherals"
+        "Expense Description":"IT peripherals"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -701,7 +701,7 @@
         "Merchant Category Name":"COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
         "Transaction Date":"21\/03\/2022",
         "Transaction Amount":20151.24,
-        "Description":"IT peripherals"
+        "Expense Description":"IT peripherals"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -709,7 +709,7 @@
         "Merchant Category Name":"COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
         "Transaction Date":"21\/03\/2022",
         "Transaction Amount":62183.81,
-        "Description":"IT peripherals"
+        "Expense Description":"IT peripherals"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -717,7 +717,7 @@
         "Merchant Category Name":"COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
         "Transaction Date":"21\/03\/2022",
         "Transaction Amount":17196.05,
-        "Description":"IT peripherals"
+        "Expense Description":"IT peripherals"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -725,7 +725,7 @@
         "Merchant Category Name":"COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
         "Transaction Date":"21\/03\/2022",
         "Transaction Amount":1943.42,
-        "Description":"IT peripherals"
+        "Expense Description":"IT peripherals"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -733,7 +733,7 @@
         "Merchant Category Name":"ENTERPRISE RENT-A-CAR",
         "Transaction Date":"28\/03\/2022",
         "Transaction Amount":1154.15,
-        "Description":"Vehicle hire"
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Digital",
@@ -741,7 +741,7 @@
         "Merchant Category Name":"ENTERPRISE RENT-A-CAR",
         "Transaction Date":"28\/02\/2022",
         "Transaction Amount":1154.15,
-        "Description":"Vehicle hire"
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Digital Health & Care",
@@ -749,7 +749,7 @@
         "Merchant Category Name":"Marriott",
         "Transaction Date":"07\/03\/2022",
         "Transaction Amount":560.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Energy & Climate Change",
@@ -757,7 +757,7 @@
         "Merchant Category Name":"Books,Periodicals & Newspapers",
         "Transaction Date":"14\/03\/2022",
         "Transaction Amount":1744.2,
-        "Description":"Professional subscription - renewal fees"
+        "Expense Description":"Professional subscription - renewal fees"
     },
     {
         "Directorate":"Directorate for Environment & forestry",
@@ -765,7 +765,7 @@
         "Merchant Category Name":"Schools, Business & Secretarial",
         "Transaction Date":"11\/03\/2022",
         "Transaction Amount":3300.0,
-        "Description":"External conference - fees"
+        "Expense Description":"External conference - fees"
     },
     {
         "Directorate":"Directorate for Environment & forestry",
@@ -773,7 +773,7 @@
         "Merchant Category Name":"Comp Programing, Data Processing, Integrated System Design Services",
         "Transaction Date":"11\/03\/2022",
         "Transaction Amount":517.93,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Environment & forestry",
@@ -781,7 +781,7 @@
         "Merchant Category Name":"Miscellaneous & Specialty Retail Stores",
         "Transaction Date":"12\/03\/2022",
         "Transaction Amount":653.7,
-        "Description":"IT hardware - accessories"
+        "Expense Description":"IT hardware - accessories"
     },
     {
         "Directorate":"Directorate for Environment & forestry",
@@ -789,7 +789,7 @@
         "Merchant Category Name":"Schools, Business & Secretarial",
         "Transaction Date":"17\/03\/2022",
         "Transaction Amount":720.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Environment & forestry",
@@ -797,7 +797,7 @@
         "Merchant Category Name":"Schools, Business & Secretarial",
         "Transaction Date":"16\/03\/2022",
         "Transaction Amount":2640.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Environment & forestry",
@@ -805,7 +805,7 @@
         "Merchant Category Name":"Consulting, Management & Public Relations Services",
         "Transaction Date":"03\/03\/2022",
         "Transaction Amount":3000.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Environment & forestry",
@@ -813,7 +813,7 @@
         "Merchant Category Name":"Comp Programing, Data Processing, Integrated System Design Services",
         "Transaction Date":"18\/03\/2022",
         "Transaction Amount":5815.8,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Environment & forestry",
@@ -821,7 +821,7 @@
         "Merchant Category Name":"Comp Programing, Data Processing, Integrated System Design Services",
         "Transaction Date":"07\/03\/2022",
         "Transaction Amount":4139.53,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for External Affairs",
@@ -829,7 +829,7 @@
         "Merchant Category Name":"Schools & Educational Services - Not Elsewhere Classified",
         "Transaction Date":"08\/03\/2022",
         "Transaction Amount":614.27,
-        "Description":"External event - catering costs"
+        "Expense Description":"External event - catering costs"
     },
     {
         "Directorate":"Directorate for External Affairs",
@@ -837,7 +837,7 @@
         "Merchant Category Name":"Office, School Supply & Stationery Stores",
         "Transaction Date":"16\/03\/2022",
         "Transaction Amount":791.27,
-        "Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate for External Affairs",
@@ -845,7 +845,7 @@
         "Merchant Category Name":"Package Stores, Beer, Wine, Liquor",
         "Transaction Date":"30\/03\/2022",
         "Transaction Amount":1422.37,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate for External Affairs",
@@ -853,7 +853,7 @@
         "Merchant Category Name":"Commercial Art, Graphics, Photography",
         "Transaction Date":"30\/03\/2022",
         "Transaction Amount":4941.0,
-        "Description":"Portable video equipment"
+        "Expense Description":"Portable video equipment"
     },
     {
         "Directorate":"Directorate for External Affairs",
@@ -861,7 +861,7 @@
         "Merchant Category Name":"Digital Goods Audiovisual Media",
         "Transaction Date":"29\/03\/2022",
         "Transaction Amount":4516.67,
-        "Description":"Professional subscription - fees"
+        "Expense Description":"Professional subscription - fees"
     },
     {
         "Directorate":"Directorate for External Affairs",
@@ -869,7 +869,7 @@
         "Merchant Category Name":"Schools & Educational Services - Not Elsewhere Classified",
         "Transaction Date":"15\/03\/2022",
         "Transaction Amount":9830.4,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for External Affairs",
@@ -877,7 +877,7 @@
         "Merchant Category Name":"Holiday Inns",
         "Transaction Date":"16\/03\/2022",
         "Transaction Amount":569.41,
-        "Description":"External conference - fees"
+        "Expense Description":"External conference - fees"
     },
     {
         "Directorate":"Directorate for Financial Management",
@@ -885,7 +885,7 @@
         "Merchant Category Name":"Computer Software Stores",
         "Transaction Date":"02\/03\/2022",
         "Transaction Amount":1236.14,
-        "Description":"Specialist software - renewal"
+        "Expense Description":"Specialist software - renewal"
     },
     {
         "Directorate":"Directorate for Financial Management",
@@ -893,7 +893,7 @@
         "Merchant Category Name":"Books,Periodicals & Newspapers",
         "Transaction Date":"02\/03\/2022",
         "Transaction Amount":871.0,
-        "Description":"Professional subscription - renewal fees"
+        "Expense Description":"Professional subscription - renewal fees"
     },
     {
         "Directorate":"Directorate for Financial Management",
@@ -901,7 +901,7 @@
         "Merchant Category Name":"Computer Software Stores",
         "Transaction Date":"30\/03\/2022",
         "Transaction Amount":596.33,
-        "Description":"Specialist software - renewal"
+        "Expense Description":"Specialist software - renewal"
     },
     {
         "Directorate":"Directorate for Financial Management",
@@ -909,7 +909,7 @@
         "Merchant Category Name":"Consulting, Management & Public Relations Services",
         "Transaction Date":"10\/03\/2022",
         "Transaction Amount":3132.0,
-        "Description":"External conference - fees"
+        "Expense Description":"External conference - fees"
     },
     {
         "Directorate":"Directorate for Health Performance & Delivery",
@@ -917,7 +917,7 @@
         "Merchant Category Name":"Comp Programing, Data Processing, Integrated System Design Services",
         "Transaction Date":"27\/03\/2022",
         "Transaction Amount":900.0,
-        "Description":"Specialist software - renewal"
+        "Expense Description":"Specialist software - renewal"
     },
     {
         "Directorate":"Directorate for Health Performance & Delivery",
@@ -925,7 +925,7 @@
         "Merchant Category Name":"Consulting, Management & Public Relations Services",
         "Transaction Date":"11\/03\/2022",
         "Transaction Amount":696.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Internal Audit & Assurance",
@@ -933,7 +933,7 @@
         "Merchant Category Name":"Direct Marketing - Other Direct Marketers - Not Elsewhere Classified",
         "Transaction Date":"22\/03\/2022",
         "Transaction Amount":1350.0,
-        "Description":"Specialist software - renewal"
+        "Expense Description":"Specialist software - renewal"
     },
     {
         "Directorate":"Directorate for Internal Audit & Assurance",
@@ -941,7 +941,7 @@
         "Merchant Category Name":"Accounting, Auditing & Bookkeeping Services",
         "Transaction Date":"17\/03\/2022",
         "Transaction Amount":4622.4,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Internal Audit & Assurance",
@@ -949,7 +949,7 @@
         "Merchant Category Name":"Accounting, Auditing & Bookkeeping Services",
         "Transaction Date":"09\/03\/2022",
         "Transaction Amount":4622.4,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Internal Audit & Assurance",
@@ -957,7 +957,7 @@
         "Merchant Category Name":"Accounting, Auditing & Bookkeeping Services",
         "Transaction Date":"09\/03\/2022",
         "Transaction Amount":4622.4,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Internal Audit & Assurance",
@@ -965,7 +965,7 @@
         "Merchant Category Name":"Accounting, Auditing & Bookkeeping Services",
         "Transaction Date":"09\/03\/2022",
         "Transaction Amount":686.4,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Internal Audit & Assurance",
@@ -973,7 +973,7 @@
         "Merchant Category Name":"Accounting, Auditing & Bookkeeping Services",
         "Transaction Date":"09\/03\/2022",
         "Transaction Amount":686.4,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Internal Audit & Assurance",
@@ -981,7 +981,7 @@
         "Merchant Category Name":"Accounting, Auditing & Bookkeeping Services",
         "Transaction Date":"18\/03\/2022",
         "Transaction Amount":536.4,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Internal Audit & Assurance",
@@ -989,7 +989,7 @@
         "Merchant Category Name":"Organizations, Membership - Not Elsewhere Classified",
         "Transaction Date":"08\/03\/2022",
         "Transaction Amount":1056.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Internal Audit & Assurance",
@@ -997,7 +997,7 @@
         "Merchant Category Name":"Organizations, Membership - Not Elsewhere Classified",
         "Transaction Date":"08\/03\/2022",
         "Transaction Amount":3318.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Internal Audit & Assurance",
@@ -1005,7 +1005,7 @@
         "Merchant Category Name":"Organizations, Membership - Not Elsewhere Classified",
         "Transaction Date":"18\/03\/2022",
         "Transaction Amount":1260.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Internal Audit & Assurance",
@@ -1013,7 +1013,7 @@
         "Merchant Category Name":"Schools & Educational Services - Not Elsewhere Classified",
         "Transaction Date":"15\/03\/2022",
         "Transaction Amount":2502.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -1021,7 +1021,7 @@
         "Merchant Category Name":"Schools & Educational Services - Not Elsewhere Classified",
         "Transaction Date":"30\/03\/2022",
         "Transaction Amount":2200.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -1029,7 +1029,7 @@
         "Merchant Category Name":"Lodging-Hotels, Motels, Resorts - Not Classified",
         "Transaction Date":"07\/03\/2022",
         "Transaction Amount":1230.14,
-        "Description":"Accomodation - fees"
+        "Expense Description":"Accomodation - fees"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -1037,7 +1037,7 @@
         "Merchant Category Name":"Lodging-Hotels, Motels, Resorts - Not Classified",
         "Transaction Date":"07\/03\/2022",
         "Transaction Amount":527.2,
-        "Description":"Accomodation - fees"
+        "Expense Description":"Accomodation - fees"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -1045,7 +1045,7 @@
         "Merchant Category Name":"Lodging-Hotels, Motels, Resorts - Not Classified",
         "Transaction Date":"07\/03\/2022",
         "Transaction Amount":1230.14,
-        "Description":"Accomodation - fees"
+        "Expense Description":"Accomodation - fees"
     },
     {
         "Directorate":"Directorate for International Trade & Investment",
@@ -1053,7 +1053,7 @@
         "Merchant Category Name":"Lodging-Hotels, Motels, Resorts - Not Classified",
         "Transaction Date":"07\/03\/2022",
         "Transaction Amount":1054.41,
-        "Description":"Accomodation - fees"
+        "Expense Description":"Accomodation - fees"
     },
     {
         "Directorate":"Directorate for Justice",
@@ -1061,7 +1061,7 @@
         "Merchant Category Name":"Artist Supply Stores, Craft Shops",
         "Transaction Date":"21\/03\/2022",
         "Transaction Amount":559.9,
-        "Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate for Justice",
@@ -1069,7 +1069,7 @@
         "Merchant Category Name":"Miscellaneous & Specialty Retail Stores",
         "Transaction Date":"25\/03\/2022",
         "Transaction Amount":1745.93,
-        "Description":"IT hardware - specialist equipment"
+        "Expense Description":"IT hardware - specialist equipment"
     },
     {
         "Directorate":"Directorate for Legal Services",
@@ -1077,7 +1077,7 @@
         "Merchant Category Name":"Miscellaneous & Specialty Retail Stores",
         "Transaction Date":"22\/03\/2022",
         "Transaction Amount":2663.37,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Legal Services",
@@ -1085,7 +1085,7 @@
         "Merchant Category Name":"Computer Software Stores",
         "Transaction Date":"17\/03\/2022",
         "Transaction Amount":4071.86,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Legal Services",
@@ -1093,7 +1093,7 @@
         "Merchant Category Name":"Telecom Incl Prepaid\/Recurring Phone Services",
         "Transaction Date":"25\/03\/2022",
         "Transaction Amount":1918.8,
-        "Description":"Specialist softwares"
+        "Expense Description":"Specialist softwares"
     },
     {
         "Directorate":"Directorate for Local Government & Housing",
@@ -1101,7 +1101,7 @@
         "Merchant Category Name":"Lodging-Hotels, Motels, Resorts - Not Classified",
         "Transaction Date":"24\/03\/2022",
         "Transaction Amount":1638.1,
-        "Description":"Accomodation - fees"
+        "Expense Description":"Accomodation - fees"
     },
     {
         "Directorate":"Directorate for Local Government & Housing",
@@ -1109,7 +1109,7 @@
         "Merchant Category Name":"Telecom Incl Prepaid\/Recurring Phone Services",
         "Transaction Date":"05\/03\/2022",
         "Transaction Amount":1918.8,
-        "Description":"Professional licence - fees"
+        "Expense Description":"Professional licence - fees"
     },
     {
         "Directorate":"Directorate for Local Government & Housing",
@@ -1117,7 +1117,7 @@
         "Merchant Category Name":"Computers, Computer Peripheral Equipment, Software",
         "Transaction Date":"12\/03\/2022",
         "Transaction Amount":6447.2,
-        "Description":"Specialist software - renewal"
+        "Expense Description":"Specialist software - renewal"
     },
     {
         "Directorate":"Directorate for Local Government & Housing",
@@ -1125,7 +1125,7 @@
         "Merchant Category Name":"Computer Software Stores",
         "Transaction Date":"06\/03\/2022",
         "Transaction Amount":585.36,
-        "Description":"Specialist software - renewal"
+        "Expense Description":"Specialist software - renewal"
     },
     {
         "Directorate":"Directorate for Local Government & Housing",
@@ -1133,7 +1133,7 @@
         "Merchant Category Name":"Organizations, Membership - Not Elsewhere Classified",
         "Transaction Date":"23\/03\/2022",
         "Transaction Amount":539.0,
-        "Description":"Professional licence - fees"
+        "Expense Description":"Professional licence - fees"
     },
     {
         "Directorate":"Directorate for Local Government & Housing",
@@ -1141,7 +1141,7 @@
         "Merchant Category Name":"Associations-Civic, Social & Fraternal",
         "Transaction Date":"22\/03\/2022",
         "Transaction Amount":2520.0,
-        "Description":"Professional licence - fees"
+        "Expense Description":"Professional licence - fees"
     },
     {
         "Directorate":"Directorate for Local Government & Housing",
@@ -1149,7 +1149,7 @@
         "Merchant Category Name":"Schools & Educational Services - Not Elsewhere Classified",
         "Transaction Date":"29\/03\/2022",
         "Transaction Amount":2200.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1157,7 +1157,7 @@
         "Merchant Category Name":"Freezer, Locker Meat Provisioners",
         "Transaction Date":"07\/03\/2022",
         "Transaction Amount":1127.0,
-        "Description":"Vessel food stores"
+        "Expense Description":"Vessel food stores"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1165,7 +1165,7 @@
         "Merchant Category Name":"Electronic Sales",
         "Transaction Date":"12\/03\/2022",
         "Transaction Amount":644.0,
-        "Description":"Vessel equipment"
+        "Expense Description":"Vessel equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1173,7 +1173,7 @@
         "Merchant Category Name":"Industrial Supplies - Not Elsewhere Classified",
         "Transaction Date":"17\/03\/2022",
         "Transaction Amount":3132.0,
-        "Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1181,7 +1181,7 @@
         "Merchant Category Name":"Miscellaneous & Specialty Retail Stores",
         "Transaction Date":"28\/03\/2022",
         "Transaction Amount":2645.3,
-        "Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1189,7 +1189,7 @@
         "Merchant Category Name":"Miscellaneous & Specialty Retail Stores",
         "Transaction Date":"24\/03\/2022",
         "Transaction Amount":958.59,
-        "Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1197,7 +1197,7 @@
         "Merchant Category Name":"Commercial Equipment - Not Elsewhere Classified",
         "Transaction Date":"04\/03\/2022",
         "Transaction Amount":1380.0,
-        "Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1205,7 +1205,7 @@
         "Merchant Category Name":"Cleaning & Maintenance, Janitorial Services",
         "Transaction Date":"07\/03\/2022",
         "Transaction Amount":1110.02,
-        "Description":"Vessel equipment"
+        "Expense Description":"Vessel equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1213,7 +1213,7 @@
         "Merchant Category Name":"Miscellaneous General Merchandise",
         "Transaction Date":"07\/03\/2022",
         "Transaction Amount":890.09,
-        "Description":"Vessel equipment"
+        "Expense Description":"Vessel equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1221,7 +1221,7 @@
         "Merchant Category Name":"Roofing & Siding, Sheet Metal Work Contractors",
         "Transaction Date":"08\/03\/2022",
         "Transaction Amount":583.2,
-        "Description":"Building landscaping"
+        "Expense Description":"Building landscaping"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1229,7 +1229,7 @@
         "Merchant Category Name":"Miscellaneous General Merchandise",
         "Transaction Date":"07\/03\/2022",
         "Transaction Amount":627.6,
-        "Description":"Vessel equipment"
+        "Expense Description":"Vessel equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1237,7 +1237,7 @@
         "Merchant Category Name":"Cleaning & Maintenance, Janitorial Services",
         "Transaction Date":"08\/03\/2022",
         "Transaction Amount":1426.0,
-        "Description":"Vessel equipment"
+        "Expense Description":"Vessel equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1245,7 +1245,7 @@
         "Merchant Category Name":"Electronic Sales",
         "Transaction Date":"21\/03\/2022",
         "Transaction Amount":563.0,
-        "Description":"Vessel engineering spares"
+        "Expense Description":"Vessel engineering spares"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1253,7 +1253,7 @@
         "Merchant Category Name":"Misc Food Store - Convenience, Mrkt,Splty,Vendng Machines",
         "Transaction Date":"16\/03\/2022",
         "Transaction Amount":597.02,
-        "Description":"Vessel food stores"
+        "Expense Description":"Vessel food stores"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1261,7 +1261,7 @@
         "Merchant Category Name":"Household Appliance Stores",
         "Transaction Date":"28\/03\/2022",
         "Transaction Amount":1238.07,
-        "Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1269,7 +1269,7 @@
         "Merchant Category Name":"Lodging-Hotels, Motels, Resorts - Not Classified",
         "Transaction Date":"24\/03\/2022",
         "Transaction Amount":850.0,
-        "Description":"Accomodation - fees"
+        "Expense Description":"Accomodation - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1277,7 +1277,7 @@
         "Merchant Category Name":"Wholesale Clubs",
         "Transaction Date":"10\/03\/2022",
         "Transaction Amount":1170.02,
-        "Description":"Vessel surveillance equipment"
+        "Expense Description":"Vessel surveillance equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1285,7 +1285,7 @@
         "Merchant Category Name":"Computer Software Stores",
         "Transaction Date":"16\/03\/2022",
         "Transaction Amount":2646.16,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1293,7 +1293,7 @@
         "Merchant Category Name":"Dental\/Lab\/Med\/Ophthalmic Hosp Equipment & Supplies",
         "Transaction Date":"16\/03\/2022",
         "Transaction Amount":659.78,
-        "Description":"Vessel scientific equipment"
+        "Expense Description":"Vessel scientific equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1301,7 +1301,7 @@
         "Merchant Category Name":"Sporting Goods Stores",
         "Transaction Date":"18\/03\/2022",
         "Transaction Amount":557.29,
-        "Description":"Vessel equipment"
+        "Expense Description":"Vessel equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1309,7 +1309,7 @@
         "Merchant Category Name":"Miscellaneous & Specialty Retail Stores",
         "Transaction Date":"18\/03\/2022",
         "Transaction Amount":2184.22,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1317,7 +1317,7 @@
         "Merchant Category Name":"Electrical Parts & Equipment",
         "Transaction Date":"16\/03\/2022",
         "Transaction Amount":1159.98,
-        "Description":"Specialist IT equipment - maintenance"
+        "Expense Description":"Specialist IT equipment - maintenance"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1325,7 +1325,7 @@
         "Merchant Category Name":"Miscellaneous & Specialty Retail Stores",
         "Transaction Date":"28\/03\/2022",
         "Transaction Amount":4866.0,
-        "Description":"Vessel engineering equipment - maintenance"
+        "Expense Description":"Vessel engineering equipment - maintenance"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1333,7 +1333,7 @@
         "Merchant Category Name":"Miscellaneous & Specialty Retail Stores",
         "Transaction Date":"16\/03\/2022",
         "Transaction Amount":901.19,
-        "Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1341,7 +1341,7 @@
         "Merchant Category Name":"Miscellaneous & Specialty Retail Stores",
         "Transaction Date":"16\/03\/2022",
         "Transaction Amount":4866.0,
-        "Description":"Vessel engineering equipment - maintenance"
+        "Expense Description":"Vessel engineering equipment - maintenance"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1349,7 +1349,7 @@
         "Merchant Category Name":"Professional Services - Not Elsewhere Classified",
         "Transaction Date":"21\/03\/2022",
         "Transaction Amount":629.1,
-        "Description":"Vessel safety equipment"
+        "Expense Description":"Vessel safety equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1357,7 +1357,7 @@
         "Merchant Category Name":"Industrial Supplies - Not Elsewhere Classified",
         "Transaction Date":"07\/03\/2022",
         "Transaction Amount":876.8,
-        "Description":"Vessel equipment"
+        "Expense Description":"Vessel equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1365,7 +1365,7 @@
         "Merchant Category Name":"Camera & Photographic Supply Stores",
         "Transaction Date":"08\/03\/2022",
         "Transaction Amount":1772.81,
-        "Description":"Photographic equipment"
+        "Expense Description":"Photographic equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1373,7 +1373,7 @@
         "Merchant Category Name":"Camera & Photographic Supply Stores",
         "Transaction Date":"25\/03\/2022",
         "Transaction Amount":891.94,
-        "Description":"Scientific equipment"
+        "Expense Description":"Scientific equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1381,7 +1381,7 @@
         "Merchant Category Name":"Eating Places, Restaurants",
         "Transaction Date":"04\/03\/2022",
         "Transaction Amount":1210.39,
-        "Description":"External conference - fees"
+        "Expense Description":"External conference - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1389,7 +1389,7 @@
         "Merchant Category Name":"Direct Marketing - Other Direct Marketers - Not Elsewhere Classified",
         "Transaction Date":"13\/03\/2022",
         "Transaction Amount":636.73,
-        "Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1397,7 +1397,7 @@
         "Merchant Category Name":"Business Services - Not Elsewhere Classified",
         "Transaction Date":"03\/03\/2022",
         "Transaction Amount":718.56,
-        "Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1405,7 +1405,7 @@
         "Merchant Category Name":"Theatrical Producers(Excl Motion Pix),Ticket Agency",
         "Transaction Date":"02\/03\/2022",
         "Transaction Amount":1530.0,
-        "Description":"External conference - fees"
+        "Expense Description":"External conference - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1413,7 +1413,7 @@
         "Merchant Category Name":"Lodging-Hotels, Motels, Resorts - Not Classified",
         "Transaction Date":"30\/03\/2022",
         "Transaction Amount":855.0,
-        "Description":"Accomodation - fees"
+        "Expense Description":"Accomodation - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1421,7 +1421,7 @@
         "Merchant Category Name":"Lodging-Hotels, Motels, Resorts - Not Classified",
         "Transaction Date":"03\/03\/2022",
         "Transaction Amount":963.3,
-        "Description":"Accomodation - fees"
+        "Expense Description":"Accomodation - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1429,7 +1429,7 @@
         "Merchant Category Name":"Miscellaneous & Specialty Retail Stores",
         "Transaction Date":"16\/03\/2022",
         "Transaction Amount":753.95,
-        "Description":"Vessel equipment"
+        "Expense Description":"Vessel equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1437,7 +1437,7 @@
         "Merchant Category Name":"Courier Svc-Air & Ground, Freight Forwarders",
         "Transaction Date":"30\/03\/2022",
         "Transaction Amount":625.37,
-        "Description":"Vessel equipment"
+        "Expense Description":"Vessel equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1445,7 +1445,7 @@
         "Merchant Category Name":"Other Services - Not Elsewhere Classified",
         "Transaction Date":"01\/03\/2022",
         "Transaction Amount":2969.69,
-        "Description":"Specialist softwares"
+        "Expense Description":"Specialist softwares"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1453,7 +1453,7 @@
         "Merchant Category Name":"Theatrical Producers(Excl Motion Pix),Ticket Agency",
         "Transaction Date":"28\/03\/2022",
         "Transaction Amount":1442.59,
-        "Description":"External conference - fees"
+        "Expense Description":"External conference - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1461,7 +1461,7 @@
         "Merchant Category Name":"Contractors,Special Trade - Not Elsewhere Classified",
         "Transaction Date":"30\/03\/2022",
         "Transaction Amount":2968.8,
-        "Description":"Vessel engineering equipment - maintenance"
+        "Expense Description":"Vessel engineering equipment - maintenance"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1469,7 +1469,7 @@
         "Merchant Category Name":"Electronic Sales",
         "Transaction Date":"03\/03\/2022",
         "Transaction Amount":2168.58,
-        "Description":"Specialist IT equipment - maintenance"
+        "Expense Description":"Specialist IT equipment - maintenance"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1477,7 +1477,7 @@
         "Merchant Category Name":"Other Services - Not Elsewhere Classified",
         "Transaction Date":"17\/03\/2022",
         "Transaction Amount":540.0,
-        "Description":"Scientific equipment"
+        "Expense Description":"Scientific equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1485,7 +1485,7 @@
         "Merchant Category Name":"Theatrical Producers(Excl Motion Pix),Ticket Agency",
         "Transaction Date":"28\/03\/2022",
         "Transaction Amount":1312.24,
-        "Description":"External conference - fees"
+        "Expense Description":"External conference - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1493,7 +1493,7 @@
         "Merchant Category Name":"Household Appliance Stores",
         "Transaction Date":"07\/03\/2022",
         "Transaction Amount":3035.94,
-        "Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1501,7 +1501,7 @@
         "Merchant Category Name":"Electronic Sales",
         "Transaction Date":"11\/03\/2022",
         "Transaction Amount":838.8,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1509,7 +1509,7 @@
         "Merchant Category Name":"Business Services - Not Elsewhere Classified",
         "Transaction Date":"09\/03\/2022",
         "Transaction Amount":905.75,
-        "Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1517,7 +1517,7 @@
         "Merchant Category Name":"Building Materials, Lumber Stores",
         "Transaction Date":"01\/03\/2022",
         "Transaction Amount":659.94,
-        "Description":"Vessel equipment"
+        "Expense Description":"Vessel equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1525,7 +1525,7 @@
         "Merchant Category Name":"Miscellaneous & Specialty Retail Stores",
         "Transaction Date":"17\/03\/2022",
         "Transaction Amount":659.0,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1533,7 +1533,7 @@
         "Merchant Category Name":"Direct Marketing - Other Direct Marketers - Not Elsewhere Classified",
         "Transaction Date":"11\/03\/2022",
         "Transaction Amount":778.35,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1541,7 +1541,7 @@
         "Merchant Category Name":"Miscellaneous & Specialty Retail Stores",
         "Transaction Date":"15\/03\/2022",
         "Transaction Amount":712.93,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1549,7 +1549,7 @@
         "Merchant Category Name":"Miscellaneous & Specialty Retail Stores",
         "Transaction Date":"21\/03\/2022",
         "Transaction Amount":2168.98,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1557,7 +1557,7 @@
         "Merchant Category Name":"Miscellaneous & Specialty Retail Stores",
         "Transaction Date":"02\/03\/2022",
         "Transaction Amount":4320.0,
-        "Description":"Vessel scientific equipment"
+        "Expense Description":"Vessel scientific equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1565,7 +1565,7 @@
         "Merchant Category Name":"Electrical Parts & Equipment",
         "Transaction Date":"10\/03\/2022",
         "Transaction Amount":1159.98,
-        "Description":"Specialist IT equipment - maintenance"
+        "Expense Description":"Specialist IT equipment - maintenance"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1573,7 +1573,7 @@
         "Merchant Category Name":"Industrial Supplies - Not Elsewhere Classified",
         "Transaction Date":"14\/03\/2022",
         "Transaction Amount":1639.07,
-        "Description":"Vessel scientific equipment"
+        "Expense Description":"Vessel scientific equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1581,7 +1581,7 @@
         "Merchant Category Name":"Miscellaneous & Specialty Retail Stores",
         "Transaction Date":"15\/03\/2022",
         "Transaction Amount":3900.0,
-        "Description":"Vessel scientific equipment"
+        "Expense Description":"Vessel scientific equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1589,7 +1589,7 @@
         "Merchant Category Name":"Miscellaneous & Specialty Retail Stores",
         "Transaction Date":"18\/03\/2022",
         "Transaction Amount":499.96,
-        "Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1597,7 +1597,7 @@
         "Merchant Category Name":"Men's\/Women's\/Children's Uniforms\/Commercial Clothing",
         "Transaction Date":"18\/03\/2022",
         "Transaction Amount":3847.68,
-        "Description":"Vessel safety equipment - clothing"
+        "Expense Description":"Vessel safety equipment - clothing"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1605,7 +1605,7 @@
         "Merchant Category Name":"Commercial Equipment - Not Elsewhere Classified",
         "Transaction Date":"23\/03\/2022",
         "Transaction Amount":691.2,
-        "Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1613,7 +1613,7 @@
         "Merchant Category Name":"Sporting Goods Stores",
         "Transaction Date":"25\/03\/2022",
         "Transaction Amount":1402.2,
-        "Description":"Vessel equipment"
+        "Expense Description":"Vessel equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1621,7 +1621,7 @@
         "Merchant Category Name":"Marinas, Marine Service\/Supplies",
         "Transaction Date":"25\/03\/2022",
         "Transaction Amount":1126.55,
-        "Description":"Vessel equipment"
+        "Expense Description":"Vessel equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1629,7 +1629,7 @@
         "Merchant Category Name":"Motor Vehicle Supplies & New Parts",
         "Transaction Date":"08\/03\/2022",
         "Transaction Amount":623.58,
-        "Description":"Vessel engineering equipment - maintenance"
+        "Expense Description":"Vessel engineering equipment - maintenance"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1637,7 +1637,7 @@
         "Merchant Category Name":"Business Services - Not Elsewhere Classified",
         "Transaction Date":"03\/03\/2022",
         "Transaction Amount":604.32,
-        "Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1645,7 +1645,7 @@
         "Merchant Category Name":"Sporting Goods Stores",
         "Transaction Date":"24\/03\/2022",
         "Transaction Amount":554.97,
-        "Description":"Vessel safety equipment - clothing"
+        "Expense Description":"Vessel safety equipment - clothing"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1653,7 +1653,7 @@
         "Merchant Category Name":"Lodging-Hotels, Motels, Resorts - Not Classified",
         "Transaction Date":"01\/03\/2022",
         "Transaction Amount":3385.13,
-        "Description":"Accomodation - fees"
+        "Expense Description":"Accomodation - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1661,7 +1661,7 @@
         "Merchant Category Name":"Lodging-Hotels, Motels, Resorts - Not Classified",
         "Transaction Date":"10\/03\/2022",
         "Transaction Amount":4284.16,
-        "Description":"Accomodation - fees"
+        "Expense Description":"Accomodation - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1669,7 +1669,7 @@
         "Merchant Category Name":"Lodging-Hotels, Motels, Resorts - Not Classified",
         "Transaction Date":"21\/03\/2022",
         "Transaction Amount":1044.28,
-        "Description":"Accomodation - fees"
+        "Expense Description":"Accomodation - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1677,7 +1677,7 @@
         "Merchant Category Name":"Schools & Educational Services - Not Elsewhere Classified",
         "Transaction Date":"01\/03\/2022",
         "Transaction Amount":730.8,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1685,7 +1685,7 @@
         "Merchant Category Name":"Electrical Parts & Equipment",
         "Transaction Date":"22\/03\/2022",
         "Transaction Amount":1848.0,
-        "Description":"Vessel surveillance equipment"
+        "Expense Description":"Vessel surveillance equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1693,7 +1693,7 @@
         "Merchant Category Name":"Marinas, Marine Service\/Supplies",
         "Transaction Date":"01\/03\/2022",
         "Transaction Amount":4967.81,
-        "Description":"Vessel equipment"
+        "Expense Description":"Vessel equipment"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1701,7 +1701,7 @@
         "Merchant Category Name":"COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
         "Transaction Date":"28\/02\/2022",
         "Transaction Amount":748.18,
-        "Description":"IT peripherals"
+        "Expense Description":"IT peripherals"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1709,7 +1709,7 @@
         "Merchant Category Name":"ENTERPRISE RENT-A-CAR",
         "Transaction Date":"10\/03\/2022",
         "Transaction Amount":654.62,
-        "Description":"Vehicle hire"
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1717,7 +1717,7 @@
         "Merchant Category Name":"ENTERPRISE RENT-A-CAR",
         "Transaction Date":"10\/03\/2022",
         "Transaction Amount":675.47,
-        "Description":"Vehicle hire"
+        "Expense Description":"Vehicle hire"
     },
     {
         "Directorate":"Directorate for Marine Scotland",
@@ -1725,7 +1725,7 @@
         "Merchant Category Name":"OFFICE, SCHOOL SUPPLY, AND STATIONERY STORES",
         "Transaction Date":"28\/03\/2022",
         "Transaction Amount":615.84,
-        "Description":"Stationery"
+        "Expense Description":"Stationery"
     },
     {
         "Directorate":"Directorate for Mental Health",
@@ -1733,7 +1733,7 @@
         "Merchant Category Name":"Direct Marketing - Other Direct Marketers - Not Elsewhere Classified",
         "Transaction Date":"23\/03\/2022",
         "Transaction Amount":2155.0,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Directorate for Mental Health",
@@ -1741,7 +1741,7 @@
         "Merchant Category Name":"Schools, Business & Secretarial",
         "Transaction Date":"29\/03\/2022",
         "Transaction Amount":1500.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Performance, Delivery & Resilience",
@@ -1749,7 +1749,7 @@
         "Merchant Category Name":"Miscellaneous & Specialty Retail Stores",
         "Transaction Date":"17\/03\/2022",
         "Transaction Amount":1369.0,
-        "Description":"IT hardware - specialist equipment"
+        "Expense Description":"IT hardware - specialist equipment"
     },
     {
         "Directorate":"Directorate for Population Health",
@@ -1757,7 +1757,7 @@
         "Merchant Category Name":"Business Services - Not Elsewhere Classified",
         "Transaction Date":"16\/03\/2022",
         "Transaction Amount":2100.0,
-        "Description":"External conference - fees"
+        "Expense Description":"External conference - fees"
     },
     {
         "Directorate":"Directorate for Safer Communities",
@@ -1765,7 +1765,7 @@
         "Merchant Category Name":"Colleges, Universities, Professional Schools & Junior Colleges",
         "Transaction Date":"14\/03\/2022",
         "Transaction Amount":1934.48,
-        "Description":"External event - room hire"
+        "Expense Description":"External event - room hire"
     },
     {
         "Directorate":"Directorate for Safer Communities",
@@ -1773,7 +1773,7 @@
         "Merchant Category Name":"Consulting, Management & Public Relations Services",
         "Transaction Date":"21\/03\/2022",
         "Transaction Amount":1250.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Safer Communities",
@@ -1781,7 +1781,7 @@
         "Merchant Category Name":"COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
         "Transaction Date":"28\/02\/2022",
         "Transaction Amount":19348.58,
-        "Description":"IT peripherals"
+        "Expense Description":"IT peripherals"
     },
     {
         "Directorate":"Directorate for Social Security",
@@ -1789,7 +1789,7 @@
         "Merchant Category Name":"Schools & Educational Services - Not Elsewhere Classified",
         "Transaction Date":"03\/03\/2022",
         "Transaction Amount":858.6,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Social Security",
@@ -1797,7 +1797,7 @@
         "Merchant Category Name":"Schools & Educational Services - Not Elsewhere Classified",
         "Transaction Date":"16\/03\/2022",
         "Transaction Amount":1568.88,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Social Security",
@@ -1805,7 +1805,7 @@
         "Merchant Category Name":"Lodging-Hotels, Motels, Resorts - Not Classified",
         "Transaction Date":"28\/02\/2022",
         "Transaction Amount":1728.5,
-        "Description":"Accomodation - fees"
+        "Expense Description":"Accomodation - fees"
     },
     {
         "Directorate":"Directorate for Social Security",
@@ -1813,7 +1813,7 @@
         "Merchant Category Name":"Schools & Educational Services - Not Elsewhere Classified",
         "Transaction Date":"18\/03\/2022",
         "Transaction Amount":1294.8,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Social Security",
@@ -1821,7 +1821,7 @@
         "Merchant Category Name":"Schools & Educational Services - Not Elsewhere Classified",
         "Transaction Date":"28\/02\/2022",
         "Transaction Amount":1195.2,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Social Security",
@@ -1829,7 +1829,7 @@
         "Merchant Category Name":"Schools & Educational Services - Not Elsewhere Classified",
         "Transaction Date":"28\/02\/2022",
         "Transaction Amount":1250.4,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Taxation & Fiscal Sustainability",
@@ -1837,7 +1837,7 @@
         "Merchant Category Name":"Consulting, Management & Public Relations Services",
         "Transaction Date":"22\/03\/2022",
         "Transaction Amount":624.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate for Taxation & Fiscal Sustainability",
@@ -1845,7 +1845,7 @@
         "Merchant Category Name":"Schools, Business & Secretarial",
         "Transaction Date":"03\/03\/2022",
         "Transaction Amount":1200.0,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Healthcare Quality and Improvement Directorate",
@@ -1853,7 +1853,7 @@
         "Merchant Category Name":"Schools, Business & Secretarial",
         "Transaction Date":"10\/03\/2022",
         "Transaction Amount":1800.0,
-        "Description":"External conference - fees"
+        "Expense Description":"External conference - fees"
     },
     {
         "Directorate":"Healthcare Quality and Improvement Directorate",
@@ -1861,7 +1861,7 @@
         "Merchant Category Name":"Schools & Educational Services - Not Elsewhere Classified",
         "Transaction Date":"04\/03\/2022",
         "Transaction Amount":834.0,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Scottish Procurement & Property Directorate",
@@ -1869,7 +1869,7 @@
         "Merchant Category Name":"Computers, Computer Peripheral Equipment, Software",
         "Transaction Date":"14\/03\/2022",
         "Transaction Amount":2194.8,
-        "Description":"Specialist IT equipment"
+        "Expense Description":"Specialist IT equipment"
     },
     {
         "Directorate":"Scottish Procurement & Property Directorate",
@@ -1877,7 +1877,7 @@
         "Merchant Category Name":"Computer Software Stores",
         "Transaction Date":"11\/03\/2022",
         "Transaction Amount":1699.2,
-        "Description":"Specialist software - renewal"
+        "Expense Description":"Specialist software - renewal"
     },
     {
         "Directorate":"Scottish Procurement & Property Directorate",
@@ -1885,7 +1885,7 @@
         "Merchant Category Name":"Computer Software Stores",
         "Transaction Date":"11\/03\/2022",
         "Transaction Amount":2548.8,
-        "Description":"Specialist software - renewal"
+        "Expense Description":"Specialist software - renewal"
     },
     {
         "Directorate":"Scottish Procurement & Property Directorate",
@@ -1893,7 +1893,7 @@
         "Merchant Category Name":"Consulting, Managemen & Public Relations Services",
         "Transaction Date":"07\/03\/2022",
         "Transaction Amount":510.0,
-        "Description":"External event - fees"
+        "Expense Description":"External event - fees"
     },
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
@@ -1901,7 +1901,7 @@
         "Merchant Category Name":"Lodging-Hotels,Motels,Resorts - Not Classified",
         "Transaction Date":"20\/03\/2022",
         "Transaction Amount":884.87,
-        "Description":"Accomodation - fees"
+        "Expense Description":"Accomodation - fees"
     },
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
@@ -1909,7 +1909,7 @@
         "Merchant Category Name":"Lodging-Hotels,Motels,Resorts - Not Classified",
         "Transaction Date":"18\/03\/2022",
         "Transaction Amount":886.33,
-        "Description":"Accomodation - fees"
+        "Expense Description":"Accomodation - fees"
     },
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
@@ -1917,7 +1917,7 @@
         "Merchant Category Name":"Computer Software Stores",
         "Transaction Date":"30\/03\/2022",
         "Transaction Amount":945.76,
-        "Description":"Specialist softwares"
+        "Expense Description":"Specialist softwares"
     },
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
@@ -1925,7 +1925,7 @@
         "Merchant Category Name":"Advertising Services",
         "Transaction Date":"18\/03\/2022",
         "Transaction Amount":982.8,
-        "Description":"External training course - fees"
+        "Expense Description":"External training course - fees"
     },
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
@@ -1933,7 +1933,7 @@
         "Merchant Category Name":"Computer Software Stores",
         "Transaction Date":"08\/03\/2022",
         "Transaction Amount":1810.39,
-        "Description":"Specialist software - renewal"
+        "Expense Description":"Specialist software - renewal"
     },
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
@@ -1941,7 +1941,7 @@
         "Merchant Category Name":"Miscellaneous & Specialty Retail Stores",
         "Transaction Date":"04\/03\/2022",
         "Transaction Amount":1096.81,
-        "Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
@@ -1949,7 +1949,7 @@
         "Merchant Category Name":"Miscellaneous & Specialty Retail Stores",
         "Transaction Date":"30\/03\/2022",
         "Transaction Amount":5329.77,
-        "Description":"Office equipment"
+        "Expense Description":"Office equipment"
     },
     {
         "Directorate":"Directorate For Communications, Ministerial Support & Facilities",
@@ -1957,7 +1957,7 @@
         "Merchant Category Name":"Computer Software Stores",
         "Transaction Date":"18\/03\/2022",
         "Transaction Amount":1399.03,
-        "Description":"Specialist software - renewal"
+        "Expense Description":"Specialist software - renewal"
     },
     {
         "Directorate":"Directorate for Communications, Ministerial Support & Facilities",
@@ -1965,6 +1965,6 @@
         "Merchant Category Name":"OFFICE, SCHOOL SUPPLY, AND STATIONERY STORES",
         "Transaction Date":"25\/03\/2022",
         "Transaction Amount":569.46,
-        "Description":"Stationery"
+        "Expense Description":"Stationery"
     }
 ]
