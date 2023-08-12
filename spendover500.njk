@@ -6,10 +6,11 @@ pagination:
     layout: base
 permalink: "spends/{{ spends.title | slugify }}/"
 layout: base
-title: {{ spends.title | jsonify }}
+eleventyComputed:
+    title: "{{ spends.title }}"
 ---
 
-<a href="./">Back to home</a>
+<a href="/">Back to home</a>
 
 <h1>{{spends.title}}</h1>
 
