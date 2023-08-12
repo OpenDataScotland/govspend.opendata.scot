@@ -5,6 +5,7 @@ on:
       - main
     paths-ignore:
       - '**.py'
+      - 'requirements.txt'
 
 jobs:
   build:

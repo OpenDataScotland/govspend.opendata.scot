@@ -2,7 +2,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
 
   eleventyConfig.addCollection("spendsOver500", (collection) => {
-    const allItems = collection.getAll()[0].data.spendover500;
+    const allItems = collection.getAll()[0].data.spendsOver500;
 
     var spendCollection = [];
 

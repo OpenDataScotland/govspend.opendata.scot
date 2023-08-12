@@ -1,18 +1,25 @@
+"""Script to scrape payment card spend data over £500 from gov.scot"""
+
+import concurrent.futures
+import os
+import urllib.parse
 from datetime import datetime
+
+import pandas as pd
 import requests
 from bs4 import BeautifulSoup
-import urllib.parse
-import concurrent.futures
-import pandas as pd
-import os
-
 
 MONTHLY_SPEND_URL = (
     "https://www.gov.scot/collections/government-spend-over-gbp500-monthly-reports/"
 )
 
+TIMEOUT = 30
+
+SAVE_PATH = "_data/spendsOver500"
 
 def extract_report(tag_href, tag_text, monthly_spend_url):
+    """Extracts the month's spending report from the given href URL and saves it to a JSON file"""
+
     report_url = tag_href
 
     split_tag_text = tag_text.split()
@@ -27,7 +34,7 @@ def extract_report(tag_href, tag_text, monthly_spend_url):
     print(f"Accessing spend for {report_title} at {report_url}...")
 
     report_url = urllib.parse.urljoin(monthly_spend_url, report_url)
-    report_html = requests.get(report_url)
+    report_html = requests.get(report_url, timeout=TIMEOUT)
 
     report_soup = BeautifulSoup(report_html.content, "html.parser")
 
@@ -36,7 +43,7 @@ def extract_report(tag_href, tag_text, monthly_spend_url):
     report_dataframe = pd.read_html(str(report_table), header=0, encoding="utf8")[0]
 
     report_dataframe.to_json(
-        f"_data/spend-over-500/{report_year_month}.json",
+        f"{SAVE_PATH}/{report_year_month}.json",
         orient="records",
         date_format="iso",
         indent=4,
@@ -47,12 +54,13 @@ def extract_report(tag_href, tag_text, monthly_spend_url):
 
 
 def main():
+    """Main method"""
 
     # Pre-check if the data folder exists and if not, create it
-    if not os.path.exists('_data/spend-over-500'):
-        os.makedirs('_data/spend-over-500')
+    if not os.path.exists(SAVE_PATH):
+        os.makedirs(SAVE_PATH)
 
-    index_page_html = requests.get(MONTHLY_SPEND_URL)
+    index_page_html = requests.get(MONTHLY_SPEND_URL, timeout=TIMEOUT)
 
     index_soup = BeautifulSoup(index_page_html.content, "html.parser")
 
