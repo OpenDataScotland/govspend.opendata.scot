@@ -23,7 +23,20 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("fixed", function (value, length) { return value?.toFixed(length || 2) });
 
-  eleventyConfig.addFilter("size", function (value) { return value.length });
+  eleventyConfig.addFilter("sum", function (value, propName) {
+    return value.reduce((accumulator, currentValue) => {
+      return accumulator + currentValue[propName]
+    }, 0);
+  });
+
+  eleventyConfig.addFilter("toCurrency", function (value) {
+    let GBPFormat = new Intl.NumberFormat('en-GB', {
+        style: 'currency',
+        currency: 'GBP',
+    });
+
+    return GBPFormat.format(value);
+  })
 
   eleventyConfig.addPassthroughCopy("CNAME");
 
