@@ -8216,13 +8216,19914 @@ enableDismissTrigger(Toast);
  */
 
 defineJQueryPlugin(Toast);
-},{"@popperjs/core":"aw71"}],"8ymq":[function(require,module,exports) {
+},{"@popperjs/core":"aw71"}],"iJA9":[function(require,module,exports) {
+"use strict";
 
-},{}],"epB2":[function(require,module,exports) {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.GBPFormat = void 0;
+var GBPFormat = new Intl.NumberFormat('en-GB', {
+  style: 'currency',
+  currency: 'GBP'
+});
+exports.GBPFormat = GBPFormat;
+},{}],"aJ5B":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.spendByDirectorate = spendByDirectorate;
+
+var _constants = require("./constants");
+
+function spendByDirectorate(jsonElementId, chartElementId) {
+  var json = JSON.parse(document.getElementById(jsonElementId).textContent);
+
+  var groupedData = _(json).groupBy("Directorate").map(function (directorate, total) {
+    return {
+      directorate: total,
+      total: _.sumBy(directorate, "Transaction Amount")
+    };
+  }).orderBy("total", "desc").value();
+
+  var chart = Highcharts.chart(chartElementId, {
+    chart: {
+      type: 'bar'
+    },
+    title: {
+      text: 'Spend by Directorate'
+    },
+    xAxis: {
+      categories: groupedData.map(function (x) {
+        return x.directorate;
+      })
+    },
+    yAxis: {
+      title: {
+        text: 'Spend in £'
+      }
+    },
+    series: [{
+      name: "Spend for month",
+      data: groupedData.map(function (x) {
+        return x.total;
+      })
+    }],
+    tooltip: {
+      formatter: function formatter() {
+        return _constants.GBPFormat.format(this.y);
+      }
+    },
+    credits: {
+      enabled: false
+    }
+  });
+}
+},{"./constants":"iJA9"}],"8ymq":[function(require,module,exports) {
+
+},{}],"Dm41":[function(require,module,exports) {
+var define;
+/*
+ Highcharts JS v11.1.0 (2023-06-05)
+
+ (c) 2009-2021 Torstein Honsi
+
+ License: www.highcharts.com/license
+*/
+'use strict';(function(U,M){"object"===typeof module&&module.exports?(M["default"]=M,module.exports=U.document?M(U):M):"function"===typeof define&&define.amd?define("highcharts/highcharts",function(){return M(U)}):(U.Highcharts&&U.Highcharts.error(16,!0),U.Highcharts=M(U))})("undefined"!==typeof window?window:this,function(U){function M(a,y,I,L){a.hasOwnProperty(y)||(a[y]=L.apply(null,I),"function"===typeof CustomEvent&&U.dispatchEvent(new CustomEvent("HighchartsModuleLoaded",{detail:{path:y,module:a[y]}})))}
+var a={};M(a,"Core/Globals.js",[],function(){var a;(function(a){a.SVG_NS="http://www.w3.org/2000/svg";a.product="Highcharts";a.version="11.1.0";a.win="undefined"!==typeof U?U:{};a.doc=a.win.document;a.svg=a.doc&&a.doc.createElementNS&&!!a.doc.createElementNS(a.SVG_NS,"svg").createSVGRect;a.userAgent=a.win.navigator&&a.win.navigator.userAgent||"";a.isChrome=-1!==a.userAgent.indexOf("Chrome");a.isFirefox=-1!==a.userAgent.indexOf("Firefox");a.isMS=/(edge|msie|trident)/i.test(a.userAgent)&&!a.win.opera;
+a.isSafari=!a.isChrome&&-1!==a.userAgent.indexOf("Safari");a.isTouchDevice=/(Mobile|Android|Windows Phone)/.test(a.userAgent);a.isWebKit=-1!==a.userAgent.indexOf("AppleWebKit");a.deg2rad=2*Math.PI/360;a.hasBidiBug=a.isFirefox&&4>parseInt(a.userAgent.split("Firefox/")[1],10);a.hasTouch=!!a.win.TouchEvent;a.marginNames=["plotTop","marginRight","marginBottom","plotLeft"];a.noop=function(){};a.supportsPassiveEvents=function(){let x=!1;if(!a.isMS){const y=Object.defineProperty({},"passive",{get:function(){x=
+!0}});a.win.addEventListener&&a.win.removeEventListener&&(a.win.addEventListener("testPassive",a.noop,y),a.win.removeEventListener("testPassive",a.noop,y))}return x}();a.charts=[];a.dateFormats={};a.seriesTypes={};a.symbolSizes={};a.chartCount=0})(a||(a={}));"";return a});M(a,"Core/Utilities.js",[a["Core/Globals.js"]],function(a){function x(c,b,f,k){const n=b?"Highcharts error":"Highcharts warning";32===c&&(c=`${n}: Deprecated member`);const r=u(c);let e=r?`${n} #${c}: www.highcharts.com/errors/${c}/`:
+c.toString();if("undefined"!==typeof k){let c="";r&&(e+="?");E(k,function(b,n){c+=`\n - ${n}: ${b}`;r&&(e+=encodeURI(n)+"="+encodeURI(b))});e+=c}d(a,"displayError",{chart:f,code:c,message:e,params:k},function(){if(b)throw Error(e);q.console&&-1===x.messages.indexOf(e)&&console.warn(e)});x.messages.push(e)}function I(c,b){return parseInt(c,b||10)}function L(c){return"string"===typeof c}function C(c){c=Object.prototype.toString.call(c);return"[object Array]"===c||"[object Array Iterator]"===c}function z(c,
+b){return!!c&&"object"===typeof c&&(!b||!C(c))}function H(c){return z(c)&&"number"===typeof c.nodeType}function B(c){const b=c&&c.constructor;return!(!z(c,!0)||H(c)||!b||!b.name||"Object"===b.name)}function u(c){return"number"===typeof c&&!isNaN(c)&&Infinity>c&&-Infinity<c}function v(c){return"undefined"!==typeof c&&null!==c}function l(c,b,f){const n=L(b)&&!v(f);let d;const k=(b,f)=>{v(b)?c.setAttribute(f,b):n?(d=c.getAttribute(f))||"class"!==f||(d=c.getAttribute(f+"Name")):c.removeAttribute(f)};
+L(b)?k(f,b):E(b,k);return d}function p(c){return C(c)?c:[c]}function t(c,b){let n;c||(c={});for(n in b)c[n]=b[n];return c}function m(){const c=arguments,b=c.length;for(let n=0;n<b;n++){const b=c[n];if("undefined"!==typeof b&&null!==b)return b}}function h(c,b){a.isMS&&!a.svg&&b&&v(b.opacity)&&(b.filter=`alpha(opacity=${100*b.opacity})`);t(c.style,b)}function g(c){return Math.pow(10,Math.floor(Math.log(c)/Math.LN10))}function e(c,b){return 1E14<c?c:parseFloat(c.toPrecision(b||14))}function w(c,b,f){let n;
+if("width"===b)return b=Math.min(c.offsetWidth,c.scrollWidth),f=c.getBoundingClientRect&&c.getBoundingClientRect().width,f<b&&f>=b-1&&(b=Math.floor(f)),Math.max(0,b-(w(c,"padding-left",!0)||0)-(w(c,"padding-right",!0)||0));if("height"===b)return Math.max(0,Math.min(c.offsetHeight,c.scrollHeight)-(w(c,"padding-top",!0)||0)-(w(c,"padding-bottom",!0)||0));if(c=q.getComputedStyle(c,void 0))n=c.getPropertyValue(b),m(f,"opacity"!==b)&&(n=I(n));return n}function E(c,b,f){for(const n in c)Object.hasOwnProperty.call(c,
+n)&&b.call(f||c[n],c[n],n,c)}function F(c,b,f){function n(b,n){const f=c.removeEventListener;f&&f.call(c,b,n,!1)}function d(f){let d,K;c.nodeName&&(b?(d={},d[b]=!0):d=f,E(d,function(c,b){if(f[b])for(K=f[b].length;K--;)n(b,f[b][K].fn)}))}var k="function"===typeof c&&c.prototype||c;if(Object.hasOwnProperty.call(k,"hcEvents")){const c=k.hcEvents;b?(k=c[b]||[],f?(c[b]=k.filter(function(c){return f!==c.fn}),n(b,f)):(d(c),c[b]=[])):(d(c),delete k.hcEvents)}}function d(c,b,f,d){f=f||{};if(r.createEvent&&
+(c.dispatchEvent||c.fireEvent&&c!==a)){var n=r.createEvent("Events");n.initEvent(b,!0,!0);f=t(n,f);c.dispatchEvent?c.dispatchEvent(f):c.fireEvent(b,f)}else if(c.hcEvents){f.target||t(f,{preventDefault:function(){f.defaultPrevented=!0},target:c,type:b});n=[];let d=c,K=!1;for(;d.hcEvents;)Object.hasOwnProperty.call(d,"hcEvents")&&d.hcEvents[b]&&(n.length&&(K=!0),n.unshift.apply(n,d.hcEvents[b])),d=Object.getPrototypeOf(d);K&&n.sort((c,b)=>c.order-b.order);n.forEach(b=>{!1===b.fn.call(c,f)&&f.preventDefault()})}d&&
+!f.defaultPrevented&&d.call(c,f)}const {charts:k,doc:r,win:q}=a;(x||(x={})).messages=[];Math.easeInOutSine=function(c){return-.5*(Math.cos(Math.PI*c)-1)};var G=Array.prototype.find?function(c,b){return c.find(b)}:function(c,b){let f;const n=c.length;for(f=0;f<n;f++)if(b(c[f],f))return c[f]};E({map:"map",each:"forEach",grep:"filter",reduce:"reduce",some:"some"},function(c,b){a[b]=function(f){x(32,!1,void 0,{[`Highcharts.${b}`]:`use Array.${c}`});return Array.prototype[c].apply(f,[].slice.call(arguments,
+1))}});let b;const f=function(){const c=Math.random().toString(36).substring(2,9)+"-";let f=0;return function(){return"highcharts-"+(b?"":c)+f++}}();q.jQuery&&(q.jQuery.fn.highcharts=function(){const c=[].slice.call(arguments);if(this[0])return c[0]?(new (a[L(c[0])?c.shift():"Chart"])(this[0],c[0],c[1]),this):k[l(this[0],"data-highcharts-chart")]});G={addEvent:function(c,b,f,d={}){var n="function"===typeof c&&c.prototype||c;Object.hasOwnProperty.call(n,"hcEvents")||(n.hcEvents={});n=n.hcEvents;a.Point&&
+c instanceof a.Point&&c.series&&c.series.chart&&(c.series.chart.runTrackerClick=!0);const k=c.addEventListener;k&&k.call(c,b,f,a.supportsPassiveEvents?{passive:void 0===d.passive?-1!==b.indexOf("touch"):d.passive,capture:!1}:!1);n[b]||(n[b]=[]);n[b].push({fn:f,order:"number"===typeof d.order?d.order:Infinity});n[b].sort((c,b)=>c.order-b.order);return function(){F(c,b,f)}},arrayMax:function(c){let b=c.length,f=c[0];for(;b--;)c[b]>f&&(f=c[b]);return f},arrayMin:function(c){let b=c.length,f=c[0];for(;b--;)c[b]<
+f&&(f=c[b]);return f},attr:l,clamp:function(c,b,f){return c>b?c<f?c:f:b},clearTimeout:function(c){v(c)&&clearTimeout(c)},correctFloat:e,createElement:function(c,b,f,d,K){c=r.createElement(c);b&&t(c,b);K&&h(c,{padding:"0",border:"none",margin:"0"});f&&h(c,f);d&&d.appendChild(c);return c},css:h,defined:v,destroyObjectProperties:function(c,b){E(c,function(f,n){f&&f!==b&&f.destroy&&f.destroy();delete c[n]})},diffObjects:function(c,b,f,d){function n(b,c,K,k){const A=f?c:b;E(b,function(f,q){if(!k&&d&&-1<
+d.indexOf(q)&&c[q]){f=p(f);K[q]=[];for(let b=0;b<Math.max(f.length,c[q].length);b++)c[q][b]&&(void 0===f[b]?K[q][b]=c[q][b]:(K[q][b]={},n(f[b],c[q][b],K[q][b],k+1)))}else if(z(f,!0)&&!f.nodeType)K[q]=C(f)?[]:{},n(f,c[q]||{},K[q],k+1),0!==Object.keys(K[q]).length||"colorAxis"===q&&0===k||delete K[q];else if(b[q]!==c[q]||q in b&&!(q in c))K[q]=A[q]})}const k={};n(c,b,k,0);return k},discardElement:function(b){b&&b.parentElement&&b.parentElement.removeChild(b)},erase:function(b,f){let c=b.length;for(;c--;)if(b[c]===
+f){b.splice(c,1);break}},error:x,extend:t,extendClass:function(b,f){const c=function(){};c.prototype=new b;t(c.prototype,f);return c},find:G,fireEvent:d,getClosestDistance:function(b,f){const c=!f;let d,n,k,q;b.forEach(b=>{if(1<b.length)for(q=n=b.length-1;0<q;q--)k=b[q]-b[q-1],0>k&&!c?(null===f||void 0===f?void 0:f(),f=void 0):k&&("undefined"===typeof d||k<d)&&(d=k)});return d},getMagnitude:g,getNestedProperty:function(b,f){for(b=b.split(".");b.length&&v(f);){const c=b.shift();if("undefined"===typeof c||
+"__proto__"===c)return;if("this"===c){let b;z(f)&&(b=f["@this"]);return null!==b&&void 0!==b?b:f}f=f[c];if(!v(f)||"function"===typeof f||"number"===typeof f.nodeType||f===q)return}return f},getStyle:w,inArray:function(b,f,d){x(32,!1,void 0,{"Highcharts.inArray":"use Array.indexOf"});return f.indexOf(b,d)},insertItem:function(b,f){const c=b.options.index,d=f.length;let n;for(n=b.options.isInternal?d:0;n<d+1;n++)if(!f[n]||u(c)&&c<m(f[n].options.index,f[n]._i)||f[n].options.isInternal){f.splice(n,0,
+b);break}return n},isArray:C,isClass:B,isDOMElement:H,isFunction:function(b){return"function"===typeof b},isNumber:u,isObject:z,isString:L,keys:function(b){x(32,!1,void 0,{"Highcharts.keys":"use Object.keys"});return Object.keys(b)},merge:function(){let b,f=arguments,d={};const k=function(b,c){"object"!==typeof b&&(b={});E(c,function(f,d){"__proto__"!==d&&"constructor"!==d&&(!z(f,!0)||B(f)||H(f)?b[d]=c[d]:b[d]=k(b[d]||{},f))});return b};!0===f[0]&&(d=f[1],f=Array.prototype.slice.call(f,2));const K=
+f.length;for(b=0;b<K;b++)d=k(d,f[b]);return d},normalizeTickInterval:function(b,f,d,k,K){let c=b;d=m(d,g(b));const n=b/d;f||(f=K?[1,1.2,1.5,2,2.5,3,4,5,6,8,10]:[1,2,2.5,5,10],!1===k&&(1===d?f=f.filter(function(b){return 0===b%1}):.1>=d&&(f=[1/d])));for(k=0;k<f.length&&!(c=f[k],K&&c*d>=b||!K&&n<=(f[k]+(f[k+1]||f[k]))/2);k++);return c=e(c*d,-Math.round(Math.log(.001)/Math.LN10))},objectEach:E,offset:function(b){const c=r.documentElement;b=b.parentElement||b.parentNode?b.getBoundingClientRect():{top:0,
+left:0,width:0,height:0};return{top:b.top+(q.pageYOffset||c.scrollTop)-(c.clientTop||0),left:b.left+(q.pageXOffset||c.scrollLeft)-(c.clientLeft||0),width:b.width,height:b.height}},pad:function(b,f,d){return Array((f||2)+1-String(b).replace("-","").length).join(d||"0")+b},pick:m,pInt:I,pushUnique:function(b,f){return 0>b.indexOf(f)&&!!b.push(f)},relativeLength:function(b,f,d){return/%$/.test(b)?f*parseFloat(b)/100+(d||0):parseFloat(b)},removeEvent:F,splat:p,stableSort:function(b,f){const c=b.length;
+let d,k;for(k=0;k<c;k++)b[k].safeI=k;b.sort(function(b,c){d=f(b,c);return 0===d?b.safeI-c.safeI:d});for(k=0;k<c;k++)delete b[k].safeI},syncTimeout:function(b,f,d){if(0<f)return setTimeout(b,f,d);b.call(0,d);return-1},timeUnits:{millisecond:1,second:1E3,minute:6E4,hour:36E5,day:864E5,week:6048E5,month:24192E5,year:314496E5},uniqueKey:f,useSerialIds:function(c){return b=m(c,b)},wrap:function(b,f,d){const c=b[f];b[f]=function(){const b=arguments,f=this;return d.apply(this,[function(){return c.apply(f,
+arguments.length?arguments:b)}].concat([].slice.call(arguments)))}}};"";return G});M(a,"Core/Chart/ChartDefaults.js",[],function(){return{alignThresholds:!1,panning:{enabled:!1,type:"x"},styledMode:!1,borderRadius:0,colorCount:10,allowMutatingData:!0,ignoreHiddenSeries:!0,spacing:[10,10,15,10],resetZoomButton:{theme:{zIndex:6},position:{align:"right",x:-10,y:10}},reflow:!0,type:"line",zooming:{singleTouch:!1,resetButton:{theme:{zIndex:6},position:{align:"right",x:-10,y:10}}},width:null,height:null,
+borderColor:"#334eff",backgroundColor:"#ffffff",plotBorderColor:"#cccccc"}});M(a,"Core/Color/Color.js",[a["Core/Globals.js"],a["Core/Utilities.js"]],function(a,y){const {isNumber:x,merge:L,pInt:C}=y;class z{static parse(a){return a?new z(a):z.None}constructor(x){this.rgba=[NaN,NaN,NaN,NaN];this.input=x;const B=a.Color;if(B&&B!==z)return new B(x);this.init(x)}init(a){let B;let u;if("object"===typeof a&&"undefined"!==typeof a.stops)this.stops=a.stops.map(l=>new z(l[1]));else if("string"===typeof a){this.input=
+a=z.names[a.toLowerCase()]||a;if("#"===a.charAt(0)){var v=a.length;var l=parseInt(a.substr(1),16);7===v?B=[(l&16711680)>>16,(l&65280)>>8,l&255,1]:4===v&&(B=[(l&3840)>>4|(l&3840)>>8,(l&240)>>4|l&240,(l&15)<<4|l&15,1])}if(!B)for(l=z.parsers.length;l--&&!B;)u=z.parsers[l],(v=u.regex.exec(a))&&(B=u.parse(v))}B&&(this.rgba=B)}get(a){const B=this.input,u=this.rgba;if("object"===typeof B&&"undefined"!==typeof this.stops){const v=L(B);v.stops=[].slice.call(v.stops);this.stops.forEach((l,p)=>{v.stops[p]=[v.stops[p][0],
+l.get(a)]});return v}return u&&x(u[0])?"rgb"===a||!a&&1===u[3]?"rgb("+u[0]+","+u[1]+","+u[2]+")":"a"===a?`${u[3]}`:"rgba("+u.join(",")+")":B}brighten(a){const B=this.rgba;if(this.stops)this.stops.forEach(function(u){u.brighten(a)});else if(x(a)&&0!==a)for(let u=0;3>u;u++)B[u]+=C(255*a),0>B[u]&&(B[u]=0),255<B[u]&&(B[u]=255);return this}setOpacity(a){this.rgba[3]=a;return this}tweenTo(a,B){const u=this.rgba,v=a.rgba;if(!x(u[0])||!x(v[0]))return a.input||"none";a=1!==v[3]||1!==u[3];return(a?"rgba(":
+"rgb(")+Math.round(v[0]+(u[0]-v[0])*(1-B))+","+Math.round(v[1]+(u[1]-v[1])*(1-B))+","+Math.round(v[2]+(u[2]-v[2])*(1-B))+(a?","+(v[3]+(u[3]-v[3])*(1-B)):"")+")"}}z.names={white:"#ffffff",black:"#000000"};z.parsers=[{regex:/rgba\(\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*,\s*([0-9]?(?:\.[0-9]+)?)\s*\)/,parse:function(a){return[C(a[1]),C(a[2]),C(a[3]),parseFloat(a[4],10)]}},{regex:/rgb\(\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*\)/,parse:function(a){return[C(a[1]),C(a[2]),
+C(a[3]),1]}}];z.None=new z("");"";return z});M(a,"Core/Color/Palettes.js",[],function(){return{colors:"#2caffe #544fc5 #00e272 #fe6a35 #6b8abc #d568fb #2ee0ca #fa4b42 #feb56a #91e8e1".split(" ")}});M(a,"Core/Time.js",[a["Core/Globals.js"],a["Core/Utilities.js"]],function(a,y){const {win:x}=a,{defined:L,error:C,extend:z,isObject:H,merge:B,objectEach:u,pad:v,pick:l,splat:p,timeUnits:t}=y,m=a.isSafari&&x.Intl&&x.Intl.DateTimeFormat.prototype.formatRange,h=a.isSafari&&x.Intl&&!x.Intl.DateTimeFormat.prototype.formatRange;
+class g{constructor(e){this.options={};this.variableTimezone=this.useUTC=!1;this.Date=x.Date;this.getTimezoneOffset=this.timezoneOffsetFunction();this.update(e)}get(e,g){if(this.variableTimezone||this.timezoneOffset){const h=g.getTime(),m=h-this.getTimezoneOffset(g);g.setTime(m);e=g["getUTC"+e]();g.setTime(h);return e}return this.useUTC?g["getUTC"+e]():g["get"+e]()}set(e,g,h){if(this.variableTimezone||this.timezoneOffset){if("Milliseconds"===e||"Seconds"===e||"Minutes"===e&&0===this.getTimezoneOffset(g)%
+36E5)return g["setUTC"+e](h);var w=this.getTimezoneOffset(g);w=g.getTime()-w;g.setTime(w);g["setUTC"+e](h);e=this.getTimezoneOffset(g);w=g.getTime()+e;return g.setTime(w)}return this.useUTC||m&&"FullYear"===e?g["setUTC"+e](h):g["set"+e](h)}update(e={}){const g=l(e.useUTC,!0);this.options=e=B(!0,this.options,e);this.Date=e.Date||x.Date||Date;this.timezoneOffset=(this.useUTC=g)&&e.timezoneOffset||void 0;this.getTimezoneOffset=this.timezoneOffsetFunction();this.variableTimezone=g&&!(!e.getTimezoneOffset&&
+!e.timezone)}makeTime(e,g,m,p,d,k){let r,q,w;this.useUTC?(r=this.Date.UTC.apply(0,arguments),q=this.getTimezoneOffset(r),r+=q,w=this.getTimezoneOffset(r),q!==w?r+=w-q:q-36E5!==this.getTimezoneOffset(r-36E5)||h||(r-=36E5)):r=(new this.Date(e,g,l(m,1),l(p,0),l(d,0),l(k,0))).getTime();return r}timezoneOffsetFunction(){const e=this,g=this.options,h=g.getTimezoneOffset,m=g.moment||x.moment;if(!this.useUTC)return function(d){return 6E4*(new Date(d.toString())).getTimezoneOffset()};if(g.timezone){if(m)return function(d){return 6E4*
+-m.tz(d,g.timezone).utcOffset()};C(25)}return this.useUTC&&h?function(d){return 6E4*h(d.valueOf())}:function(){return 6E4*(e.timezoneOffset||0)}}dateFormat(e,g,h){if(!L(g)||isNaN(g))return a.defaultOptions.lang&&a.defaultOptions.lang.invalidDate||"";e=l(e,"%Y-%m-%d %H:%M:%S");const m=this;var d=new this.Date(g);const k=this.get("Hours",d),r=this.get("Day",d),q=this.get("Date",d),w=this.get("Month",d),b=this.get("FullYear",d),f=a.defaultOptions.lang,c=f&&f.weekdays,n=f&&f.shortWeekdays;d=z({a:n?n[r]:
+c[r].substr(0,3),A:c[r],d:v(q),e:v(q,2," "),w:r,b:f.shortMonths[w],B:f.months[w],m:v(w+1),o:w+1,y:b.toString().substr(2,2),Y:b,H:v(k),k,I:v(k%12||12),l:k%12||12,M:v(this.get("Minutes",d)),p:12>k?"AM":"PM",P:12>k?"am":"pm",S:v(d.getSeconds()),L:v(Math.floor(g%1E3),3)},a.dateFormats);u(d,function(b,c){for(;-1!==e.indexOf("%"+c);)e=e.replace("%"+c,"function"===typeof b?b.call(m,g):b)});return h?e.substr(0,1).toUpperCase()+e.substr(1):e}resolveDTLFormat(e){return H(e,!0)?e:(e=p(e),{main:e[0],from:e[1],
+to:e[2]})}getTimeTicks(e,g,h,m){const d=this,k=[],r={};var q=new d.Date(g);const w=e.unitRange,b=e.count||1;let f;m=l(m,1);if(L(g)){d.set("Milliseconds",q,w>=t.second?0:b*Math.floor(d.get("Milliseconds",q)/b));w>=t.second&&d.set("Seconds",q,w>=t.minute?0:b*Math.floor(d.get("Seconds",q)/b));w>=t.minute&&d.set("Minutes",q,w>=t.hour?0:b*Math.floor(d.get("Minutes",q)/b));w>=t.hour&&d.set("Hours",q,w>=t.day?0:b*Math.floor(d.get("Hours",q)/b));w>=t.day&&d.set("Date",q,w>=t.month?1:Math.max(1,b*Math.floor(d.get("Date",
+q)/b)));if(w>=t.month){d.set("Month",q,w>=t.year?0:b*Math.floor(d.get("Month",q)/b));var c=d.get("FullYear",q)}w>=t.year&&d.set("FullYear",q,c-c%b);w===t.week&&(c=d.get("Day",q),d.set("Date",q,d.get("Date",q)-c+m+(c<m?-7:0)));c=d.get("FullYear",q);m=d.get("Month",q);const n=d.get("Date",q),e=d.get("Hours",q);g=q.getTime();!d.variableTimezone&&d.useUTC||!L(h)||(f=h-g>4*t.month||d.getTimezoneOffset(g)!==d.getTimezoneOffset(h));g=q.getTime();for(q=1;g<h;)k.push(g),g=w===t.year?d.makeTime(c+q*b,0):w===
+t.month?d.makeTime(c,m+q*b):!f||w!==t.day&&w!==t.week?f&&w===t.hour&&1<b?d.makeTime(c,m,n,e+q*b):g+w*b:d.makeTime(c,m,n+q*b*(w===t.day?1:7)),q++;k.push(g);w<=t.hour&&1E4>k.length&&k.forEach(function(b){0===b%18E5&&"000000000"===d.dateFormat("%H%M%S%L",b)&&(r[b]="day")})}k.info=z(e,{higherRanks:r,totalRange:w*b});return k}getDateFormat(e,g,h,m){const d=this.dateFormat("%m-%d %H:%M:%S.%L",g),k={millisecond:15,second:12,minute:9,hour:6,day:3};let r,q="millisecond";for(r in t){if(e===t.week&&+this.dateFormat("%w",
+g)===h&&"00:00:00.000"===d.substr(6)){r="week";break}if(t[r]>e){r=q;break}if(k[r]&&d.substr(k[r])!=="01-01 00:00:00.000".substr(k[r]))break;"week"!==r&&(q=r)}return this.resolveDTLFormat(m[r]).main}}"";return g});M(a,"Core/Defaults.js",[a["Core/Chart/ChartDefaults.js"],a["Core/Color/Color.js"],a["Core/Globals.js"],a["Core/Color/Palettes.js"],a["Core/Time.js"],a["Core/Utilities.js"]],function(a,y,I,L,C,z){const {isTouchDevice:x,svg:B}=I,{merge:u}=z,v={colors:L.colors,symbols:["circle","diamond","square",
+"triangle","triangle-down"],lang:{loading:"Loading...",months:"January February March April May June July August September October November December".split(" "),shortMonths:"Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split(" "),weekdays:"Sunday Monday Tuesday Wednesday Thursday Friday Saturday".split(" "),decimalPoint:".",numericSymbols:"kMGTPE".split(""),resetZoom:"Reset zoom",resetZoomTitle:"Reset zoom level 1:1",thousandsSep:" "},global:{},time:{Date:void 0,getTimezoneOffset:void 0,timezone:void 0,
+timezoneOffset:0,useUTC:!0},chart:a,title:{style:{color:"#333333",fontWeight:"bold"},text:"Chart title",align:"center",margin:15,widthAdjust:-44},subtitle:{style:{color:"#666666",fontSize:"0.8em"},text:"",align:"center",widthAdjust:-44},caption:{margin:15,style:{color:"#666666",fontSize:"0.8em"},text:"",align:"left",verticalAlign:"bottom"},plotOptions:{},legend:{enabled:!0,align:"center",alignColumns:!0,className:"highcharts-no-tooltip",layout:"horizontal",itemMarginBottom:2,itemMarginTop:2,labelFormatter:function(){return this.name},
+borderColor:"#999999",borderRadius:0,navigation:{style:{fontSize:"0.8em"},activeColor:"#0022ff",inactiveColor:"#cccccc"},itemStyle:{color:"#333333",cursor:"pointer",fontSize:"0.8em",textDecoration:"none",textOverflow:"ellipsis"},itemHoverStyle:{color:"#000000"},itemHiddenStyle:{color:"#666666",textDecoration:"line-through"},shadow:!1,itemCheckboxStyle:{position:"absolute",width:"13px",height:"13px"},squareSymbol:!0,symbolPadding:5,verticalAlign:"bottom",x:0,y:0,title:{style:{fontSize:"0.8em",fontWeight:"bold"}}},
+loading:{labelStyle:{fontWeight:"bold",position:"relative",top:"45%"},style:{position:"absolute",backgroundColor:"#ffffff",opacity:.5,textAlign:"center"}},tooltip:{enabled:!0,animation:B,borderRadius:3,dateTimeLabelFormats:{millisecond:"%A, %e %b, %H:%M:%S.%L",second:"%A, %e %b, %H:%M:%S",minute:"%A, %e %b, %H:%M",hour:"%A, %e %b, %H:%M",day:"%A, %e %b %Y",week:"Week from %A, %e %b %Y",month:"%B %Y",year:"%Y"},footerFormat:"",headerShape:"callout",hideDelay:500,padding:8,shape:"callout",shared:!1,
+snap:x?25:10,headerFormat:'<span style="font-size: 0.8em">{point.key}</span><br/>',pointFormat:'<span style="color:{point.color}">\u25cf</span> {series.name}: <b>{point.y}</b><br/>',backgroundColor:"#ffffff",borderWidth:void 0,shadow:!0,stickOnContact:!1,style:{color:"#333333",cursor:"default",fontSize:"0.8em"},useHTML:!1},credits:{enabled:!0,href:"https://www.highcharts.com?credits",position:{align:"right",x:-10,verticalAlign:"bottom",y:-5},style:{cursor:"pointer",color:"#999999",fontSize:"0.6em"},
+text:"Highcharts.com"}};v.chart.styledMode=!1;"";const l=new C(v.time);a={defaultOptions:v,defaultTime:l,getOptions:function(){return v},setOptions:function(a){u(!0,v,a);if(a.time||a.global)I.time?I.time.update(u(v.global,v.time,a.global,a.time)):I.time=l;return v}};"";return a});M(a,"Core/Animation/Fx.js",[a["Core/Color/Color.js"],a["Core/Globals.js"],a["Core/Utilities.js"]],function(a,y,I){const {parse:x}=a,{win:C}=y,{isNumber:z,objectEach:H}=I;class B{constructor(a,v,l){this.pos=NaN;this.options=
+v;this.elem=a;this.prop=l}dSetter(){var a=this.paths;const v=a&&a[0];a=a&&a[1];const l=this.now||0;let p=[];if(1!==l&&v&&a)if(v.length===a.length&&1>l)for(let t=0;t<a.length;t++){const m=v[t],h=a[t],g=[];for(let e=0;e<h.length;e++){const w=m[e],a=h[e];z(w)&&z(a)&&("A"!==h[0]||4!==e&&5!==e)?g[e]=w+l*(a-w):g[e]=a}p.push(g)}else p=a;else p=this.toD||[];this.elem.attr("d",p,void 0,!0)}update(){const a=this.elem,v=this.prop,l=this.now,p=this.options.step;if(this[v+"Setter"])this[v+"Setter"]();else a.attr?
+a.element&&a.attr(v,l,null,!0):a.style[v]=l+this.unit;p&&p.call(a,l,this)}run(a,v,l){const p=this,t=p.options,m=function(e){return m.stopped?!1:p.step(e)},h=C.requestAnimationFrame||function(e){setTimeout(e,13)},g=function(){for(let e=0;e<B.timers.length;e++)B.timers[e]()||B.timers.splice(e--,1);B.timers.length&&h(g)};a!==v||this.elem["forceAnimate:"+this.prop]?(this.startTime=+new Date,this.start=a,this.end=v,this.unit=l,this.now=this.start,this.pos=0,m.elem=this.elem,m.prop=this.prop,m()&&1===B.timers.push(m)&&
+h(g)):(delete t.curAnim[this.prop],t.complete&&0===Object.keys(t.curAnim).length&&t.complete.call(this.elem))}step(a){const v=+new Date,l=this.options,p=this.elem,t=l.complete,m=l.duration,h=l.curAnim;let g;p.attr&&!p.element?a=!1:a||v>=m+this.startTime?(this.now=this.end,this.pos=1,this.update(),g=h[this.prop]=!0,H(h,function(e){!0!==e&&(g=!1)}),g&&t&&t.call(p),a=!1):(this.pos=l.easing((v-this.startTime)/m),this.now=this.start+(this.end-this.start)*this.pos,this.update(),a=!0);return a}initPath(a,
+v,l){function p(d,k){for(;d.length<E;){var r=d[0];const q=k[E-d.length];q&&"M"===r[0]&&(d[0]="C"===q[0]?["C",r[1],r[2],r[1],r[2],r[1],r[2]]:["L",r[1],r[2]]);d.unshift(r);g&&(r=d.pop(),d.push(d[d.length-1],r))}}function t(d,k){for(;d.length<E;)if(k=d[Math.floor(d.length/e)-1].slice(),"C"===k[0]&&(k[1]=k[5],k[2]=k[6]),g){const r=d[Math.floor(d.length/e)].slice();d.splice(d.length/2,0,k,r)}else d.push(k)}const m=a.startX,h=a.endX;l=l.slice();const g=a.isArea,e=g?2:1;let w,E,F;v=v&&v.slice();if(!v)return[l,
+l];if(m&&h&&h.length){for(a=0;a<m.length;a++)if(m[a]===h[0]){w=a;break}else if(m[0]===h[h.length-m.length+a]){w=a;F=!0;break}else if(m[m.length-1]===h[h.length-m.length+a]){w=m.length-a;break}"undefined"===typeof w&&(v=[])}v.length&&z(w)&&(E=l.length+w*e,F?(p(v,l),t(l,v)):(p(l,v),t(v,l)));return[v,l]}fillSetter(){B.prototype.strokeSetter.apply(this,arguments)}strokeSetter(){this.elem.attr(this.prop,x(this.start).tweenTo(x(this.end),this.pos),void 0,!0)}}B.timers=[];return B});M(a,"Core/Animation/AnimationUtilities.js",
+[a["Core/Animation/Fx.js"],a["Core/Utilities.js"]],function(a,y){function x(a){return u(a)?v({duration:500,defer:0},a):{duration:a?500:0,defer:0}}function L(l,m){let h=a.timers.length;for(;h--;)a.timers[h].elem!==l||m&&m!==a.timers[h].prop||(a.timers[h].stopped=!0)}const {defined:C,getStyle:z,isArray:H,isNumber:B,isObject:u,merge:v,objectEach:l,pick:p}=y;return{animate:function(p,m,h){let g,e="",w,E,F;u(h)||(F=arguments,h={duration:F[2],easing:F[3],complete:F[4]});B(h.duration)||(h.duration=400);
+h.easing="function"===typeof h.easing?h.easing:Math[h.easing]||Math.easeInOutSine;h.curAnim=v(m);l(m,function(d,k){L(p,k);E=new a(p,h,k);w=void 0;"d"===k&&H(m.d)?(E.paths=E.initPath(p,p.pathArray,m.d),E.toD=m.d,g=0,w=1):p.attr?g=p.attr(k):(g=parseFloat(z(p,k))||0,"opacity"!==k&&(e="px"));w||(w=d);"string"===typeof w&&w.match("px")&&(w=w.replace(/px/g,""));E.run(g,w,e)})},animObject:x,getDeferredAnimation:function(a,m,h){const g=x(m);let e=0,w=0;(h?[h]:a.series).forEach(h=>{h=x(h.options.animation);
+e=m&&C(m.defer)?g.defer:Math.max(e,h.duration+h.defer);w=Math.min(g.duration,h.duration)});a.renderer.forExport&&(e=0);return{defer:Math.max(0,e-w),duration:Math.min(e,w)}},setAnimation:function(a,m){m.renderer.globalAnimation=p(a,m.options.chart.animation,!0)},stop:L}});M(a,"Core/Renderer/HTML/AST.js",[a["Core/Globals.js"],a["Core/Utilities.js"]],function(a,y){const {SVG_NS:x,win:L}=a,{attr:C,createElement:z,css:H,error:B,isFunction:u,isString:v,objectEach:l,splat:p}=y;({trustedTypes:y}=L);const t=
+y&&u(y.createPolicy)&&y.createPolicy("highcharts",{createHTML:e=>e});y=t?t.createHTML(""):"";try{var m=!!(new DOMParser).parseFromString(y,"text/html")}catch(e){m=!1}const h=m;class g{static filterUserAttributes(e){l(e,(h,m)=>{let a=!0;-1===g.allowedAttributes.indexOf(m)&&(a=!1);-1!==["background","dynsrc","href","lowsrc","src"].indexOf(m)&&(a=v(h)&&g.allowedReferences.some(d=>0===h.indexOf(d)));a||(B(33,!1,void 0,{"Invalid attribute in config":`${m}`}),delete e[m]);v(h)&&e[m]&&(e[m]=h.replace(/</g,
+"&lt;"))});return e}static parseStyle(e){return e.split(";").reduce((e,g)=>{g=g.split(":").map(d=>d.trim());const h=g.shift();h&&g.length&&(e[h.replace(/-([a-z])/g,d=>d[1].toUpperCase())]=g.join(":"));return e},{})}static setElementHTML(e,h){e.innerHTML=g.emptyHTML;h&&(new g(h)).addToDOM(e)}constructor(e){this.nodes="string"===typeof e?this.parseMarkup(e):e}addToDOM(e){function h(e,m){let d;p(e).forEach(function(k){var e=k.tagName;const q=k.textContent?a.doc.createTextNode(k.textContent):void 0,w=
+g.bypassHTMLFiltering;let b;if(e)if("#text"===e)b=q;else if(-1!==g.allowedTags.indexOf(e)||w){e=a.doc.createElementNS("svg"===e?x:m.namespaceURI||x,e);const f=k.attributes||{};l(k,function(b,d){"tagName"!==d&&"attributes"!==d&&"children"!==d&&"style"!==d&&"textContent"!==d&&(f[d]=b)});C(e,w?f:g.filterUserAttributes(f));k.style&&H(e,k.style);q&&e.appendChild(q);h(k.children||[],e);b=e}else B(33,!1,void 0,{"Invalid tagName in config":e});b&&m.appendChild(b);d=b});return d}return h(this.nodes,e)}parseMarkup(e){const m=
+[];e=e.trim().replace(/ style=(["'])/g," data-style=$1");if(h)e=(new DOMParser).parseFromString(t?t.createHTML(e):e,"text/html");else{const g=z("div");g.innerHTML=e;e={body:g}}const a=(e,d)=>{var k=e.nodeName.toLowerCase();const r={tagName:k};"#text"===k&&(r.textContent=e.textContent||"");if(k=e.attributes){const d={};[].forEach.call(k,k=>{"data-style"===k.name?r.style=g.parseStyle(k.value):d[k.name]=k.value});r.attributes=d}if(e.childNodes.length){const d=[];[].forEach.call(e.childNodes,k=>{a(k,
+d)});d.length&&(r.children=d)}d.push(r)};[].forEach.call(e.body.childNodes,e=>a(e,m));return m}}g.allowedAttributes="alt aria-controls aria-describedby aria-expanded aria-haspopup aria-hidden aria-label aria-labelledby aria-live aria-pressed aria-readonly aria-roledescription aria-selected class clip-path color colspan cx cy d dx dy disabled fill flood-color flood-opacity height href id in markerHeight markerWidth offset opacity orient padding paddingLeft paddingRight patternUnits r refX refY role scope slope src startOffset stdDeviation stroke stroke-linecap stroke-width style tableValues result rowspan summary target tabindex text-align text-anchor textAnchor textLength title type valign width x x1 x2 xlink:href y y1 y2 zIndex".split(" ");
+g.allowedReferences="https:// http:// mailto: / ../ ./ #".split(" ");g.allowedTags="a abbr b br button caption circle clipPath code dd defs div dl dt em feComponentTransfer feDropShadow feFuncA feFuncB feFuncG feFuncR feGaussianBlur feOffset feMerge feMergeNode filter h1 h2 h3 h4 h5 h6 hr i img li linearGradient marker ol p path pattern pre rect small span stop strong style sub sup svg table text textPath thead title tbody tspan td th tr u ul #text".split(" ");g.emptyHTML=y;g.bypassHTMLFiltering=
+!1;"";return g});M(a,"Core/Templating.js",[a["Core/Defaults.js"],a["Core/Utilities.js"]],function(a,y){function x(h="",g,e){const a=/\{([a-zA-Z0-9:\.,;\-\/<>%_@"'= #\(\)]+)\}/g,l=/\(([a-zA-Z0-9:\.,;\-\/<>%_@"'= ]+)\)/g,v=[],d=/f$/,k=/\.([0-9])/,r=C.lang,q=e&&e.time||z,G=e&&e.numberFormatter||L,b=(b="")=>{let c;return"true"===b?!0:"false"===b?!1:(c=Number(b)).toString()===b?c:B(b,g)};let f,c,n=0,P;for(;null!==(f=a.exec(h));){const b=l.exec(f[1]);b&&(f=b,P=!0);c&&c.isBlock||(c={ctx:g,expression:f[1],
+find:f[0],isBlock:"#"===f[1].charAt(0),start:f.index,startInner:f.index+f[0].length,length:f[0].length});var D=f[1].split(" ")[0].replace("#","");m[D]&&(c.isBlock&&D===c.fn&&n++,c.fn||(c.fn=D));D="else"===f[1];if(c.isBlock&&c.fn&&(f[1]===`/${c.fn}`||D))if(n)D||n--;else{var K=c.startInner;K=h.substr(K,f.index-K);void 0===c.body?(c.body=K,c.startInner=f.index+f[0].length):c.elseBody=K;c.find+=K+f[0];D||(v.push(c),c=void 0)}else c.isBlock||v.push(c);if(b&&(null===c||void 0===c||!c.isBlock))break}v.forEach(c=>
+{const {body:f,elseBody:n,expression:K,fn:e}=c;var A;if(e){var a=[c],w=K.split(" ");for(A=m[e].length;A--;)a.unshift(b(w[A+1]));A=m[e].apply(g,a);c.isBlock&&"boolean"===typeof A&&(A=x(A?f:n,g))}else a=K.split(":"),A=b(a.shift()||""),a.length&&"number"===typeof A&&(a=a.join(":"),d.test(a)?(w=parseInt((a.match(k)||["","-1"])[1],10),null!==A&&(A=G(A,w,r.decimalPoint,-1<a.indexOf(",")?r.thousandsSep:""))):A=q.dateFormat(a,A));h=h.replace(c.find,p(A,""))});return P?x(h,g,e):h}function L(h,g,e,a){h=+h||
+0;g=+g;const m=C.lang;var w=(h.toString().split(".")[1]||"").split("e")[0].length;const d=h.toString().split("e"),k=g;if(-1===g)g=Math.min(w,20);else if(!v(g))g=2;else if(g&&d[1]&&0>d[1]){var r=g+ +d[1];0<=r?(d[0]=(+d[0]).toExponential(r).split("e")[0],g=r):(d[0]=d[0].split(".")[0]||0,h=20>g?(d[0]*Math.pow(10,d[1])).toFixed(g):0,d[1]=0)}r=(Math.abs(d[1]?d[0]:h)+Math.pow(10,-Math.max(g,w)-1)).toFixed(g);w=String(t(r));const q=3<w.length?w.length%3:0;e=p(e,m.decimalPoint);a=p(a,m.thousandsSep);h=(0>
+h?"-":"")+(q?w.substr(0,q)+a:"");h=0>+d[1]&&!k?"0":h+w.substr(q).replace(/(\d{3})(?=\d)/g,"$1"+a);g&&(h+=e+r.slice(-g));d[1]&&0!==+h&&(h+="e"+d[1]);return h}const {defaultOptions:C,defaultTime:z}=a,{extend:H,getNestedProperty:B,isArray:u,isNumber:v,isObject:l,pick:p,pInt:t}=y,m={add:(h,g)=>h+g,divide:(h,g)=>0!==g?h/g:"",eq:(h,g)=>h==g,each:function(h){const g=arguments[arguments.length-1];return u(h)?h.map((e,a)=>x(g.body,H(l(e)?e:{"@this":e},{"@index":a,"@first":0===a,"@last":a===h.length-1}))).join(""):
+!1},ge:(h,g)=>h>=g,gt:(h,g)=>h>g,"if":h=>!!h,le:(h,g)=>h<=g,lt:(h,g)=>h<g,multiply:(h,g)=>h*g,ne:(h,g)=>h!=g,subtract:(h,g)=>h-g,unless:h=>!h};return{dateFormat:function(h,g,e){return z.dateFormat(h,g,e)},format:x,helpers:m,numberFormat:L}});M(a,"Core/Renderer/RendererUtilities.js",[a["Core/Utilities.js"]],function(a){const {clamp:x,pick:I,stableSort:L}=a;var C;(function(a){function y(a,u,v){const l=a;var p=l.reducedLen||u,t=(e,g)=>(g.rank||0)-(e.rank||0);const m=(e,g)=>e.target-g.target;let h,g=
+!0,e=[],w=0;for(h=a.length;h--;)w+=a[h].size;if(w>p){L(a,t);for(w=h=0;w<=p;)w+=a[h].size,h++;e=a.splice(h-1,a.length)}L(a,m);for(a=a.map(e=>({size:e.size,targets:[e.target],align:I(e.align,.5)}));g;){for(h=a.length;h--;)p=a[h],t=(Math.min.apply(0,p.targets)+Math.max.apply(0,p.targets))/2,p.pos=x(t-p.size*p.align,0,u-p.size);h=a.length;for(g=!1;h--;)0<h&&a[h-1].pos+a[h-1].size>a[h].pos&&(a[h-1].size+=a[h].size,a[h-1].targets=a[h-1].targets.concat(a[h].targets),a[h-1].align=.5,a[h-1].pos+a[h-1].size>
+u&&(a[h-1].pos=u-a[h-1].size),a.splice(h,1),g=!0)}l.push.apply(l,e);h=0;a.some(e=>{let g=0;return(e.targets||[]).some(()=>{l[h].pos=e.pos+g;if("undefined"!==typeof v&&Math.abs(l[h].pos-l[h].target)>v)return l.slice(0,h+1).forEach(d=>delete d.pos),l.reducedLen=(l.reducedLen||u)-.1*u,l.reducedLen>.1*u&&y(l,u,v),!0;g+=l[h].size;h++;return!1})});L(l,m);return l}a.distribute=y})(C||(C={}));return C});M(a,"Core/Renderer/SVG/SVGElement.js",[a["Core/Animation/AnimationUtilities.js"],a["Core/Color/Color.js"],
+a["Core/Globals.js"],a["Core/Utilities.js"]],function(a,y,I,L){const {animate:x,animObject:z,stop:H}=a,{deg2rad:B,doc:u,svg:v,SVG_NS:l,win:p}=I,{addEvent:t,attr:m,createElement:h,css:g,defined:e,erase:w,extend:E,fireEvent:F,isArray:d,isFunction:k,isObject:r,isString:q,merge:G,objectEach:b,pick:f,pInt:c,syncTimeout:n,uniqueKey:P}=L;class D{constructor(){this.element=void 0;this.onEvents={};this.opacity=1;this.renderer=void 0;this.SVG_NS=l}_defaultGetter(b){b=f(this[b+"Value"],this[b],this.element?
+this.element.getAttribute(b):null,0);/^[\-0-9\.]+$/.test(b)&&(b=parseFloat(b));return b}_defaultSetter(b,c,f){f.setAttribute(c,b)}add(b){const c=this.renderer,f=this.element;let d;b&&(this.parentGroup=b);"undefined"!==typeof this.textStr&&"text"===this.element.nodeName&&c.buildText(this);this.added=!0;if(!b||b.handleZ||this.zIndex)d=this.zIndexSetter();d||(b?b.element:c.box).appendChild(f);if(this.onAdd)this.onAdd();return this}addClass(b,c){const f=c?"":this.attr("class")||"";b=(b||"").split(/ /g).reduce(function(b,
+c){-1===f.indexOf(c)&&b.push(c);return b},f?[f]:[]).join(" ");b!==f&&this.attr("class",b);return this}afterSetters(){this.doTransform&&(this.updateTransform(),this.doTransform=!1)}align(b,c,d){const k={};var n=this.renderer,e=n.alignedObjects,A;let K,g;if(b){if(this.alignOptions=b,this.alignByTranslate=c,!d||q(d))this.alignTo=A=d||"renderer",w(e,this),e.push(this),d=void 0}else b=this.alignOptions,c=this.alignByTranslate,A=this.alignTo;d=f(d,n[A],"scrollablePlotBox"===A?n.plotBox:void 0,n);A=b.align;
+const a=b.verticalAlign;n=(d.x||0)+(b.x||0);e=(d.y||0)+(b.y||0);"right"===A?K=1:"center"===A&&(K=2);K&&(n+=(d.width-(b.width||0))/K);k[c?"translateX":"x"]=Math.round(n);"bottom"===a?g=1:"middle"===a&&(g=2);g&&(e+=(d.height-(b.height||0))/g);k[c?"translateY":"y"]=Math.round(e);this[this.placed?"animate":"attr"](k);this.placed=!0;this.alignAttr=k;return this}alignSetter(b){const c={left:"start",center:"middle",right:"end"};c[b]&&(this.alignValue=b,this.element.setAttribute("text-anchor",c[b]))}animate(c,
+d,k){const e=z(f(d,this.renderer.globalAnimation,!0));d=e.defer;u.hidden&&(e.duration=0);0!==e.duration?(k&&(e.complete=k),n(()=>{this.element&&x(this,c,e)},d)):(this.attr(c,void 0,k||e.complete),b(c,function(b,c){e.step&&e.step.call(this,b,{prop:c,pos:1,elem:this})},this));return this}applyTextOutline(b){const c=this.element;-1!==b.indexOf("contrast")&&(b=b.replace(/contrast/g,this.renderer.getContrast(c.style.fill)));var f=b.split(" ");b=f[f.length-1];if((f=f[0])&&"none"!==f&&I.svg){this.fakeTS=
+!0;f=f.replace(/(^[\d\.]+)(.*?)$/g,function(b,c,f){return 2*Number(c)+f});this.removeTextOutline();const d=u.createElementNS(l,"tspan");m(d,{"class":"highcharts-text-outline",fill:b,stroke:b,"stroke-width":f,"stroke-linejoin":"round"});b=c.querySelector("textPath")||c;[].forEach.call(b.childNodes,b=>{const c=b.cloneNode(!0);c.removeAttribute&&["fill","stroke","stroke-width","stroke"].forEach(b=>c.removeAttribute(b));d.appendChild(c)});let k=0;[].forEach.call(b.querySelectorAll("text tspan"),b=>{k+=
+Number(b.getAttribute("dy"))});f=u.createElementNS(l,"tspan");f.textContent="\u200b";m(f,{x:Number(c.getAttribute("x")),dy:-k});d.appendChild(f);b.insertBefore(d,b.firstChild)}}attr(c,f,d,k){const n=this.element,e=D.symbolCustomAttribs;let A,q,g=this,a,K;"string"===typeof c&&"undefined"!==typeof f&&(A=c,c={},c[A]=f);"string"===typeof c?g=(this[c+"Getter"]||this._defaultGetter).call(this,c,n):(b(c,function(b,f){a=!1;k||H(this,f);this.symbolName&&-1!==e.indexOf(f)&&(q||(this.symbolAttr(c),q=!0),a=!0);
+!this.rotation||"x"!==f&&"y"!==f||(this.doTransform=!0);a||(K=this[f+"Setter"]||this._defaultSetter,K.call(this,b,f,n))},this),this.afterSetters());d&&d.call(this);return g}clip(b){return this.attr("clip-path",b?"url("+this.renderer.url+"#"+b.id+")":"none")}crisp(b,c){c=c||b.strokeWidth||0;const f=Math.round(c)%2/2;b.x=Math.floor(b.x||this.x||0)+f;b.y=Math.floor(b.y||this.y||0)+f;b.width=Math.floor((b.width||this.width||0)-2*f);b.height=Math.floor((b.height||this.height||0)-2*f);e(b.strokeWidth)&&
+(b.strokeWidth=c);return b}complexColor(c,f,k){const n=this.renderer;let q,g,A,a,r,K,h,J,m,O,w=[],l;F(this.renderer,"complexColor",{args:arguments},function(){c.radialGradient?g="radialGradient":c.linearGradient&&(g="linearGradient");if(g){A=c[g];r=n.gradients;K=c.stops;m=k.radialReference;d(A)&&(c[g]=A={x1:A[0],y1:A[1],x2:A[2],y2:A[3],gradientUnits:"userSpaceOnUse"});"radialGradient"===g&&m&&!e(A.gradientUnits)&&(a=A,A=G(A,n.getRadialAttr(m,a),{gradientUnits:"userSpaceOnUse"}));b(A,function(b,c){"id"!==
+c&&w.push(c,b)});b(K,function(b){w.push(b)});w=w.join(",");if(r[w])O=r[w].attr("id");else{A.id=O=P();const b=r[w]=n.createElement(g).attr(A).add(n.defs);b.radAttr=a;b.stops=[];K.forEach(function(c){0===c[1].indexOf("rgba")?(q=y.parse(c[1]),h=q.get("rgb"),J=q.get("a")):(h=c[1],J=1);c=n.createElement("stop").attr({offset:c[0],"stop-color":h,"stop-opacity":J}).add(b);b.stops.push(c)})}l="url("+n.url+"#"+O+")";k.setAttribute(f,l);k.gradient=w;c.toString=function(){return l}}})}css(f){const d=this.styles,
+k={},n=this.element;let e,q=!d;d&&b(f,function(b,c){d&&d[c]!==b&&(k[c]=b,q=!0)});if(q){d&&(f=E(d,k));null===f.width||"auto"===f.width?delete this.textWidth:"text"===n.nodeName.toLowerCase()&&f.width&&(e=this.textWidth=c(f.width));this.styles=f;e&&!v&&this.renderer.forExport&&delete f.width;const b=G(f);n.namespaceURI===this.SVG_NS&&(["textOutline","textOverflow","width"].forEach(c=>b&&delete b[c]),b.color&&(b.fill=b.color));g(n,b)}this.added&&("text"===this.element.nodeName&&this.renderer.buildText(this),
+f.textOutline&&this.applyTextOutline(f.textOutline));return this}dashstyleSetter(b){let d=this["stroke-width"];"inherit"===d&&(d=1);if(b=b&&b.toLowerCase()){const k=b.replace("shortdashdotdot","3,1,1,1,1,1,").replace("shortdashdot","3,1,1,1").replace("shortdot","1,1,").replace("shortdash","3,1,").replace("longdash","8,3,").replace(/dot/g,"1,3,").replace("dash","4,3,").replace(/,$/,"").split(",");for(b=k.length;b--;)k[b]=""+c(k[b])*f(d,NaN);b=k.join(",").replace(/NaN/g,"none");this.element.setAttribute("stroke-dasharray",
+b)}}destroy(){const c=this;var f=c.element||{};const d=c.renderer;var k=f.ownerSVGElement;let n="SPAN"===f.nodeName&&c.parentGroup||void 0;f.onclick=f.onmouseout=f.onmouseover=f.onmousemove=f.point=null;H(c);if(c.clipPath&&k){const b=c.clipPath;[].forEach.call(k.querySelectorAll("[clip-path],[CLIP-PATH]"),function(c){-1<c.getAttribute("clip-path").indexOf(b.element.id)&&c.removeAttribute("clip-path")});c.clipPath=b.destroy()}if(c.stops){for(k=0;k<c.stops.length;k++)c.stops[k].destroy();c.stops.length=
+0;c.stops=void 0}for(c.safeRemoveChild(f);n&&n.div&&0===n.div.childNodes.length;)f=n.parentGroup,c.safeRemoveChild(n.div),delete n.div,n=f;c.alignTo&&w(d.alignedObjects,c);b(c,function(b,f){c[f]&&c[f].parentGroup===c&&c[f].destroy&&c[f].destroy();delete c[f]})}dSetter(b,c,f){d(b)&&("string"===typeof b[0]&&(b=this.renderer.pathToSegments(b)),this.pathArray=b,b=b.reduce((b,c,f)=>c&&c.join?(f?b+" ":"")+c.join(" "):(c||"").toString(),""));/(NaN| {2}|^$)/.test(b)&&(b="M 0 0");this[c]!==b&&(f.setAttribute(c,
+b),this[c]=b)}fadeOut(b){const c=this;c.animate({opacity:0},{duration:f(b,150),complete:function(){c.hide()}})}fillSetter(b,c,f){"string"===typeof b?f.setAttribute(c,b):b&&this.complexColor(b,c,f)}getBBox(b,c){const {alignValue:d,element:n,renderer:q,styles:a,textStr:A}=this,{cache:r,cacheKeys:h}=q;var m=n.namespaceURI===this.SVG_NS;c=f(c,this.rotation,0);var K=q.styledMode?n&&D.prototype.getStyle.call(n,"font-size"):a&&a.fontSize;let J;let N;e(A)&&(N=A.toString(),-1===N.indexOf("<")&&(N=N.replace(/[0-9]/g,
+"0")),N+=["",q.rootFontSize,K,c,this.textWidth,d,a&&a.textOverflow,a&&a.fontWeight].join());N&&!b&&(J=r[N]);if(!J){if(m||q.forExport){try{var O=this.fakeTS&&function(b){const c=n.querySelector(".highcharts-text-outline");c&&g(c,{display:b})};k(O)&&O("none");J=n.getBBox?E({},n.getBBox()):{width:n.offsetWidth,height:n.offsetHeight,x:0,y:0};k(O)&&O("")}catch(fa){""}if(!J||0>J.width)J={x:0,y:0,width:0,height:0}}else J=this.htmlGetBBox();O=J.width;b=J.height;m&&(J.height=b={"11px,17":14,"13px,20":16}[`${K||
+""},${Math.round(b)}`]||b);if(c){m=Number(n.getAttribute("y")||0)-J.y;K={right:1,center:.5}[d||0]||0;var w=c*B,l=(c-90)*B,p=O*Math.cos(w);c=O*Math.sin(w);var G=Math.cos(l);w=Math.sin(l);O=J.x+K*(O-p)+m*G;l=O+p;G=l-b*G;p=G-p;m=J.y+m-K*c+m*w;K=m+c;b=K-b*w;c=b-c;J.x=Math.min(O,l,G,p);J.y=Math.min(m,K,b,c);J.width=Math.max(O,l,G,p)-J.x;J.height=Math.max(m,K,b,c)-J.y}}if(N&&(""===A||0<J.height)){for(;250<h.length;)delete r[h.shift()];r[N]||h.push(N);r[N]=J}return J}getStyle(b){return p.getComputedStyle(this.element||
+this,"").getPropertyValue(b)}hasClass(b){return-1!==(""+this.attr("class")).split(" ").indexOf(b)}hide(){return this.attr({visibility:"hidden"})}htmlGetBBox(){return{height:0,width:0,x:0,y:0}}init(b,c){this.element="span"===c?h(c):u.createElementNS(this.SVG_NS,c);this.renderer=b;F(this,"afterInit")}on(b,c){const {onEvents:f}=this;if(f[b])f[b]();f[b]=t(this.element,b,c);return this}opacitySetter(b,c,f){this.opacity=b=Number(Number(b).toFixed(3));f.setAttribute(c,b)}removeClass(b){return this.attr("class",
+(""+this.attr("class")).replace(q(b)?new RegExp(`(^| )${b}( |$)`):b," ").replace(/ +/g," ").trim())}removeTextOutline(){const b=this.element.querySelector("tspan.highcharts-text-outline");b&&this.safeRemoveChild(b)}safeRemoveChild(b){const c=b.parentNode;c&&c.removeChild(b)}setRadialReference(b){const c=this.element.gradient&&this.renderer.gradients[this.element.gradient];this.element.radialReference=b;c&&c.radAttr&&c.animate(this.renderer.getRadialAttr(b,c.radAttr));return this}setTextPath(b,c){c=
+G(!0,{enabled:!0,attributes:{dy:-5,startOffset:"50%",textAnchor:"middle"}},c);const f=this.renderer.url,d=this.text||this,k=d.textPath,{attributes:n,enabled:A}=c;b=b||k&&k.path;k&&k.undo();b&&A?(c=t(d,"afterModifyTree",c=>{if(b&&A){let A=b.attr("id");A||b.attr("id",A=P());var k={x:0,y:0};e(n.dx)&&(k.dx=n.dx,delete n.dx);e(n.dy)&&(k.dy=n.dy,delete n.dy);d.attr(k);this.attr({transform:""});this.box&&(this.box=this.box.destroy());k=c.nodes.slice(0);c.nodes.length=0;c.nodes[0]={tagName:"textPath",attributes:E(n,
+{"text-anchor":n.textAnchor,href:`${f}#${A}`}),children:k}}}),d.textPath={path:b,undo:c}):(d.attr({dx:0,dy:0}),delete d.textPath);this.added&&(d.textCache="",this.renderer.buildText(d));return this}shadow(b){var c;const {renderer:f}=this,d=G(90===(null===(c=this.parentGroup)||void 0===c?void 0:c.rotation)?{offsetX:-1,offsetY:-1}:{},r(b)?b:{});c=f.shadowDefinition(d);return this.attr({filter:b?`url(${f.url}#${c})`:"none"})}show(b=!0){return this.attr({visibility:b?"inherit":"visible"})}["stroke-widthSetter"](b,
+c,f){this[c]=b;f.setAttribute(c,b)}strokeWidth(){if(!this.renderer.styledMode)return this["stroke-width"]||0;const b=this.getStyle("stroke-width");let f=0,d;b.indexOf("px")===b.length-2?f=c(b):""!==b&&(d=u.createElementNS(l,"rect"),m(d,{width:b,"stroke-width":0}),this.element.parentNode.appendChild(d),f=d.getBBox().width,d.parentNode.removeChild(d));return f}symbolAttr(b){const c=this;D.symbolCustomAttribs.forEach(function(d){c[d]=f(b[d],c[d])});c.attr({d:c.renderer.symbols[c.symbolName](c.x,c.y,
+c.width,c.height,c)})}textSetter(b){b!==this.textStr&&(delete this.textPxLength,this.textStr=b,this.added&&this.renderer.buildText(this))}titleSetter(b){const c=this.element,d=c.getElementsByTagName("title")[0]||u.createElementNS(this.SVG_NS,"title");c.insertBefore?c.insertBefore(d,c.firstChild):c.appendChild(d);d.textContent=String(f(b,"")).replace(/<[^>]*>/g,"").replace(/&lt;/g,"<").replace(/&gt;/g,">")}toFront(){const b=this.element;b.parentNode.appendChild(b);return this}translate(b,c){return this.attr({translateX:b,
+translateY:c})}updateTransform(){const {element:b,matrix:c,rotation:d=0,scaleX:k,scaleY:n,translateX:q=0,translateY:A=0}=this,g=["translate("+q+","+A+")"];e(c)&&g.push("matrix("+c.join(",")+")");d&&g.push("rotate("+d+" "+f(this.rotationOriginX,b.getAttribute("x"),0)+" "+f(this.rotationOriginY,b.getAttribute("y")||0)+")");(e(k)||e(n))&&g.push("scale("+f(k,1)+" "+f(n,1)+")");g.length&&!(this.text||this).textPath&&b.setAttribute("transform",g.join(" "))}visibilitySetter(b,c,f){"inherit"===b?f.removeAttribute(c):
+this[c]!==b&&f.setAttribute(c,b);this[c]=b}xGetter(b){"circle"===this.element.nodeName&&("x"===b?b="cx":"y"===b&&(b="cy"));return this._defaultGetter(b)}zIndexSetter(b,f){var d=this.renderer,k=this.parentGroup;const n=(k||d).element||d.box,q=this.element;d=n===d.box;let A=!1,g;var a=this.added;let r;e(b)?(q.setAttribute("data-z-index",b),b=+b,this[f]===b&&(a=!1)):e(this[f])&&q.removeAttribute("data-z-index");this[f]=b;if(a){(b=this.zIndex)&&k&&(k.handleZ=!0);f=n.childNodes;for(r=f.length-1;0<=r&&
+!A;r--)if(k=f[r],a=k.getAttribute("data-z-index"),g=!e(a),k!==q)if(0>b&&g&&!d&&!r)n.insertBefore(q,f[r]),A=!0;else if(c(a)<=b||g&&(!e(b)||0<=b))n.insertBefore(q,f[r+1]),A=!0;A||(n.insertBefore(q,f[d?3:0]),A=!0)}return A}}D.symbolCustomAttribs="anchorX anchorY clockwise end height innerR r start width x y".split(" ");D.prototype.strokeSetter=D.prototype.fillSetter;D.prototype.yGetter=D.prototype.xGetter;D.prototype.matrixSetter=D.prototype.rotationOriginXSetter=D.prototype.rotationOriginYSetter=D.prototype.rotationSetter=
+D.prototype.scaleXSetter=D.prototype.scaleYSetter=D.prototype.translateXSetter=D.prototype.translateYSetter=D.prototype.verticalAlignSetter=function(b,c){this[c]=b;this.doTransform=!0};"";return D});M(a,"Core/Renderer/RendererRegistry.js",[a["Core/Globals.js"]],function(a){var x;(function(x){x.rendererTypes={};let y;x.getRendererType=function(a=y){return x.rendererTypes[a]||x.rendererTypes[y]};x.registerRendererType=function(C,z,H){x.rendererTypes[C]=z;if(!y||H)y=C,a.Renderer=z}})(x||(x={}));return x});
+M(a,"Core/Renderer/SVG/SVGLabel.js",[a["Core/Renderer/SVG/SVGElement.js"],a["Core/Utilities.js"]],function(a,y){const {defined:x,extend:L,isNumber:C,merge:z,pick:H,removeEvent:B}=y;class u extends a{constructor(a,l,p,t,m,h,g,e,w,E){super();this.paddingRightSetter=this.paddingLeftSetter=this.paddingSetter;this.init(a,"g");this.textStr=l;this.x=p;this.y=t;this.anchorX=h;this.anchorY=g;this.baseline=w;this.className=E;this.addClass("button"===E?"highcharts-no-tooltip":"highcharts-label");E&&this.addClass("highcharts-"+
+E);this.text=a.text(void 0,0,0,e).attr({zIndex:1});let v;"string"===typeof m&&((v=/^url\((.*?)\)$/.test(m))||this.renderer.symbols[m])&&(this.symbolKey=m);this.bBox=u.emptyBBox;this.padding=3;this.baselineOffset=0;this.needsBox=a.styledMode||v;this.deferredAttr={};this.alignFactor=0}alignSetter(a){a={left:0,center:.5,right:1}[a];a!==this.alignFactor&&(this.alignFactor=a,this.bBox&&C(this.xSetting)&&this.attr({x:this.xSetting}))}anchorXSetter(a,l){this.anchorX=a;this.boxAttr(l,Math.round(a)-this.getCrispAdjust()-
+this.xSetting)}anchorYSetter(a,l){this.anchorY=a;this.boxAttr(l,a-this.ySetting)}boxAttr(a,l){this.box?this.box.attr(a,l):this.deferredAttr[a]=l}css(v){if(v){const a={};v=z(v);u.textProps.forEach(l=>{"undefined"!==typeof v[l]&&(a[l]=v[l],delete v[l])});this.text.css(a);"fontSize"in a||"fontWeight"in a?this.updateTextPadding():("width"in a||"textOverflow"in a)&&this.updateBoxSize()}return a.prototype.css.call(this,v)}destroy(){B(this.element,"mouseenter");B(this.element,"mouseleave");this.text&&this.text.destroy();
+this.box&&(this.box=this.box.destroy());a.prototype.destroy.call(this)}fillSetter(a,l){a&&(this.needsBox=!0);this.fill=a;this.boxAttr(l,a)}getBBox(){this.textStr&&0===this.bBox.width&&0===this.bBox.height&&this.updateBoxSize();const a=this.padding,l=H(this.paddingLeft,a);return{width:this.width,height:this.height,x:this.bBox.x-l,y:this.bBox.y-a}}getCrispAdjust(){return this.renderer.styledMode&&this.box?this.box.strokeWidth()%2/2:(this["stroke-width"]?parseInt(this["stroke-width"],10):0)%2/2}heightSetter(a){this.heightSetting=
+a}onAdd(){this.text.add(this);this.attr({text:H(this.textStr,""),x:this.x||0,y:this.y||0});this.box&&x(this.anchorX)&&this.attr({anchorX:this.anchorX,anchorY:this.anchorY})}paddingSetter(a,l){C(a)?a!==this[l]&&(this[l]=a,this.updateTextPadding()):this[l]=void 0}rSetter(a,l){this.boxAttr(l,a)}strokeSetter(a,l){this.stroke=a;this.boxAttr(l,a)}["stroke-widthSetter"](a,l){a&&(this.needsBox=!0);this["stroke-width"]=a;this.boxAttr(l,a)}["text-alignSetter"](a){this.textAlign=a}textSetter(a){"undefined"!==
+typeof a&&this.text.attr({text:a});this.updateTextPadding()}updateBoxSize(){var a=this.text;const l={},p=this.padding,t=this.bBox=C(this.widthSetting)&&C(this.heightSetting)&&!this.textAlign||!x(a.textStr)?u.emptyBBox:a.getBBox();this.width=this.getPaddedWidth();this.height=(this.heightSetting||t.height||0)+2*p;const m=this.renderer.fontMetrics(a);this.baselineOffset=p+Math.min((this.text.firstLineMetrics||m).b,t.height||Infinity);this.heightSetting&&(this.baselineOffset+=(this.heightSetting-m.h)/
+2);this.needsBox&&!a.textPath&&(this.box||(a=this.box=this.symbolKey?this.renderer.symbol(this.symbolKey):this.renderer.rect(),a.addClass(("button"===this.className?"":"highcharts-label-box")+(this.className?" highcharts-"+this.className+"-box":"")),a.add(this)),a=this.getCrispAdjust(),l.x=a,l.y=(this.baseline?-this.baselineOffset:0)+a,l.width=Math.round(this.width),l.height=Math.round(this.height),this.box.attr(L(l,this.deferredAttr)),this.deferredAttr={})}updateTextPadding(){const a=this.text;if(!a.textPath){this.updateBoxSize();
+const l=this.baseline?0:this.baselineOffset;let p=H(this.paddingLeft,this.padding);x(this.widthSetting)&&this.bBox&&("center"===this.textAlign||"right"===this.textAlign)&&(p+={center:.5,right:1}[this.textAlign]*(this.widthSetting-this.bBox.width));if(p!==a.x||l!==a.y)a.attr("x",p),a.hasBoxWidthChanged&&(this.bBox=a.getBBox(!0)),"undefined"!==typeof l&&a.attr("y",l);a.x=p;a.y=l}}widthSetter(a){this.widthSetting=C(a)?a:void 0}getPaddedWidth(){var a=this.padding;const l=H(this.paddingLeft,a);a=H(this.paddingRight,
+a);return(this.widthSetting||this.bBox.width||0)+l+a}xSetter(a){this.x=a;this.alignFactor&&(a-=this.alignFactor*this.getPaddedWidth(),this["forceAnimate:x"]=!0);this.xSetting=Math.round(a);this.attr("translateX",this.xSetting)}ySetter(a){this.ySetting=this.y=Math.round(a);this.attr("translateY",this.ySetting)}}u.emptyBBox={width:0,height:0,x:0,y:0};u.textProps="color direction fontFamily fontSize fontStyle fontWeight lineHeight textAlign textDecoration textOutline textOverflow whiteSpace width".split(" ");
+return u});M(a,"Core/Renderer/SVG/Symbols.js",[a["Core/Utilities.js"]],function(a){function x(a,u,v,l,p){const t=[];if(p){const m=p.start||0,h=H(p.r,v);v=H(p.r,l||v);l=(p.end||0)-.001;const g=p.innerR,e=H(p.open,.001>Math.abs((p.end||0)-m-2*Math.PI)),w=Math.cos(m),E=Math.sin(m),F=Math.cos(l),d=Math.sin(l),k=H(p.longArc,.001>l-m-Math.PI?0:1);let r=["A",h,v,0,k,H(p.clockwise,1),a+h*F,u+v*d];r.params={start:m,end:l,cx:a,cy:u};t.push(["M",a+h*w,u+v*E],r);C(g)&&(r=["A",g,g,0,k,C(p.clockwise)?1-p.clockwise:
+0,a+g*w,u+g*E],r.params={start:l,end:m,cx:a,cy:u},t.push(e?["M",a+g*F,u+g*d]:["L",a+g*F,u+g*d],r));e||t.push(["Z"])}return t}function I(a,u,v,l,p){return p&&p.r?L(a,u,v,l,p):[["M",a,u],["L",a+v,u],["L",a+v,u+l],["L",a,u+l],["Z"]]}function L(a,u,v,l,p){p=(null===p||void 0===p?void 0:p.r)||0;return[["M",a+p,u],["L",a+v-p,u],["A",p,p,0,0,1,a+v,u+p],["L",a+v,u+l-p],["A",p,p,0,0,1,a+v-p,u+l],["L",a+p,u+l],["A",p,p,0,0,1,a,u+l-p],["L",a,u+p],["A",p,p,0,0,1,a+p,u],["Z"]]}const {defined:C,isNumber:z,pick:H}=
+a;return{arc:x,callout:function(a,u,v,l,p){const t=Math.min(p&&p.r||0,v,l),m=t+6,h=p&&p.anchorX;p=p&&p.anchorY||0;const g=L(a,u,v,l,{r:t});if(!z(h))return g;a+h>=v?p>u+m&&p<u+l-m?g.splice(3,1,["L",a+v,p-6],["L",a+v+6,p],["L",a+v,p+6],["L",a+v,u+l-t]):g.splice(3,1,["L",a+v,l/2],["L",h,p],["L",a+v,l/2],["L",a+v,u+l-t]):0>=a+h?p>u+m&&p<u+l-m?g.splice(7,1,["L",a,p+6],["L",a-6,p],["L",a,p-6],["L",a,u+t]):g.splice(7,1,["L",a,l/2],["L",h,p],["L",a,l/2],["L",a,u+t]):p&&p>l&&h>a+m&&h<a+v-m?g.splice(5,1,["L",
+h+6,u+l],["L",h,u+l+6],["L",h-6,u+l],["L",a+t,u+l]):p&&0>p&&h>a+m&&h<a+v-m&&g.splice(1,1,["L",h-6,u],["L",h,u-6],["L",h+6,u],["L",v-t,u]);return g},circle:function(a,u,v,l){return x(a+v/2,u+l/2,v/2,l/2,{start:.5*Math.PI,end:2.5*Math.PI,open:!1})},diamond:function(a,u,v,l){return[["M",a+v/2,u],["L",a+v,u+l/2],["L",a+v/2,u+l],["L",a,u+l/2],["Z"]]},rect:I,roundedRect:L,square:I,triangle:function(a,u,v,l){return[["M",a+v/2,u],["L",a+v,u+l],["L",a,u+l],["Z"]]},"triangle-down":function(a,u,v,l){return[["M",
+a,u],["L",a+v,u],["L",a+v/2,u+l],["Z"]]}}});M(a,"Core/Renderer/SVG/TextBuilder.js",[a["Core/Renderer/HTML/AST.js"],a["Core/Globals.js"],a["Core/Utilities.js"]],function(a,y,I){const {doc:x,SVG_NS:C,win:z}=y,{attr:H,extend:B,fireEvent:u,isString:v,objectEach:l,pick:p}=I;class t{constructor(a){const h=a.styles;this.renderer=a.renderer;this.svgElement=a;this.width=a.textWidth;this.textLineHeight=h&&h.lineHeight;this.textOutline=h&&h.textOutline;this.ellipsis=!(!h||"ellipsis"!==h.textOverflow);this.noWrap=
+!(!h||"nowrap"!==h.whiteSpace)}buildSVG(){const m=this.svgElement,h=m.element;var g=m.renderer,e=p(m.textStr,"").toString();const w=-1!==e.indexOf("<"),l=h.childNodes;g=!m.added&&g.box;const t=/<br.*?>/g;var d=[e,this.ellipsis,this.noWrap,this.textLineHeight,this.textOutline,m.getStyle("font-size"),this.width].join();if(d!==m.textCache){m.textCache=d;delete m.actualWidth;for(d=l.length;d--;)h.removeChild(l[d]);w||this.ellipsis||this.width||m.textPath||-1!==e.indexOf(" ")&&(!this.noWrap||t.test(e))?
+""!==e&&(g&&g.appendChild(h),e=new a(e),this.modifyTree(e.nodes),e.addToDOM(h),this.modifyDOM(),this.ellipsis&&-1!==(h.textContent||"").indexOf("\u2026")&&m.attr("title",this.unescapeEntities(m.textStr||"",["&lt;","&gt;"])),g&&g.removeChild(h)):h.appendChild(x.createTextNode(this.unescapeEntities(e)));v(this.textOutline)&&m.applyTextOutline&&m.applyTextOutline(this.textOutline)}}modifyDOM(){const a=this.svgElement,h=H(a.element,"x");a.firstLineMetrics=void 0;let g;for(;g=a.element.firstChild;)if(/^[\s\u200B]*$/.test(g.textContent||
+" "))a.element.removeChild(g);else break;[].forEach.call(a.element.querySelectorAll("tspan.highcharts-br"),(e,d)=>{e.nextSibling&&e.previousSibling&&(0===d&&1===e.previousSibling.nodeType&&(a.firstLineMetrics=a.renderer.fontMetrics(e.previousSibling)),H(e,{dy:this.getLineHeight(e.nextSibling),x:h}))});const e=this.width||0;if(e){var w=(g,d)=>{var k=g.textContent||"";const r=k.replace(/([^\^])-/g,"$1- ").split(" ");var q=!this.noWrap&&(1<r.length||1<a.element.childNodes.length);const m=this.getLineHeight(d);
+let b=0,f=a.actualWidth;if(this.ellipsis)k&&this.truncate(g,k,void 0,0,Math.max(0,e-.8*m),(b,f)=>b.substring(0,f)+"\u2026");else if(q){k=[];for(q=[];d.firstChild&&d.firstChild!==g;)q.push(d.firstChild),d.removeChild(d.firstChild);for(;r.length;)r.length&&!this.noWrap&&0<b&&(k.push(g.textContent||""),g.textContent=r.join(" ").replace(/- /g,"-")),this.truncate(g,void 0,r,0===b?f||0:0,e,(b,f)=>r.slice(0,f).join(" ").replace(/- /g,"-")),f=a.actualWidth,b++;q.forEach(b=>{d.insertBefore(b,g)});k.forEach(b=>
+{d.insertBefore(x.createTextNode(b),g);b=x.createElementNS(C,"tspan");b.textContent="\u200b";H(b,{dy:m,x:h});d.insertBefore(b,g)})}},l=e=>{[].slice.call(e.childNodes).forEach(d=>{d.nodeType===z.Node.TEXT_NODE?w(d,e):(-1!==d.className.baseVal.indexOf("highcharts-br")&&(a.actualWidth=0),l(d))})};l(a.element)}}getLineHeight(a){a=a.nodeType===z.Node.TEXT_NODE?a.parentElement:a;return this.textLineHeight?parseInt(this.textLineHeight.toString(),10):this.renderer.fontMetrics(a||this.svgElement.element).h}modifyTree(a){const h=
+(g,e)=>{const {attributes:m={},children:l,style:p={},tagName:d}=g,k=this.renderer.styledMode;if("b"===d||"strong"===d)k?m["class"]="highcharts-strong":p.fontWeight="bold";else if("i"===d||"em"===d)k?m["class"]="highcharts-emphasized":p.fontStyle="italic";p&&p.color&&(p.fill=p.color);"br"===d?(m["class"]="highcharts-br",g.textContent="\u200b",(e=a[e+1])&&e.textContent&&(e.textContent=e.textContent.replace(/^ +/gm,""))):"a"===d&&l&&l.some(d=>"#text"===d.tagName)&&(g.children=[{children:l,tagName:"tspan"}]);
+"#text"!==d&&"a"!==d&&(g.tagName="tspan");B(g,{attributes:m,style:p});l&&l.filter(d=>"#text"!==d.tagName).forEach(h)};a.forEach(h);u(this.svgElement,"afterModifyTree",{nodes:a})}truncate(a,h,g,e,l,p){const m=this.svgElement,{rotation:d}=m,k=[];let r=g?1:0,q=(h||g||"").length,w=q,b,f;const c=function(b,c){b=c||b;if((c=a.parentNode)&&"undefined"===typeof k[b]&&c.getSubStringLength)try{k[b]=e+c.getSubStringLength(0,g?b+1:b)}catch(D){""}return k[b]};m.rotation=0;f=c(a.textContent.length);if(e+f>l){for(;r<=
+q;)w=Math.ceil((r+q)/2),g&&(b=p(g,w)),f=c(w,b&&b.length-1),r===q?r=q+1:f>l?q=w-1:r=w;0===q?a.textContent="":h&&q===h.length-1||(a.textContent=b||p(h||g,w))}g&&g.splice(0,w);m.actualWidth=f;m.rotation=d}unescapeEntities(a,h){l(this.renderer.escapes,function(g,e){h&&-1!==h.indexOf(g)||(a=a.toString().replace(new RegExp(g,"g"),e))});return a}}return t});M(a,"Core/Renderer/SVG/SVGRenderer.js",[a["Core/Renderer/HTML/AST.js"],a["Core/Color/Color.js"],a["Core/Globals.js"],a["Core/Renderer/RendererRegistry.js"],
+a["Core/Renderer/SVG/SVGElement.js"],a["Core/Renderer/SVG/SVGLabel.js"],a["Core/Renderer/SVG/Symbols.js"],a["Core/Renderer/SVG/TextBuilder.js"],a["Core/Utilities.js"]],function(a,y,I,L,C,z,H,B,u){const {charts:v,deg2rad:l,doc:p,isFirefox:t,isMS:m,isWebKit:h,noop:g,SVG_NS:e,symbolSizes:w,win:E}=I,{addEvent:F,attr:d,createElement:k,css:r,defined:q,destroyObjectProperties:G,extend:b,isArray:f,isNumber:c,isObject:n,isString:P,merge:D,pick:K,pInt:x,uniqueKey:T}=u;let Z;class V{constructor(b,c,f,d,a,k,
+n){this.width=this.url=this.style=this.imgCount=this.height=this.gradients=this.globalAnimation=this.defs=this.chartIndex=this.cacheKeys=this.cache=this.boxWrapper=this.box=this.alignedObjects=void 0;this.init(b,c,f,d,a,k,n)}init(b,c,f,a,k,n,J){const A=this.createElement("svg").attr({version:"1.1","class":"highcharts-root"}),e=A.element;J||A.css(this.getStyle(a));b.appendChild(e);d(b,"dir","ltr");-1===b.innerHTML.indexOf("xmlns")&&d(e,"xmlns",this.SVG_NS);this.box=e;this.boxWrapper=A;this.alignedObjects=
+[];this.url=this.getReferenceURL();this.createElement("desc").add().element.appendChild(p.createTextNode("Created with Highcharts 11.1.0"));this.defs=this.createElement("defs").add();this.allowHTML=n;this.forExport=k;this.styledMode=J;this.gradients={};this.cache={};this.cacheKeys=[];this.imgCount=0;this.rootFontSize=A.getStyle("font-size");this.setSize(c,f,!1);let q;t&&b.getBoundingClientRect&&(c=function(){r(b,{left:0,top:0});q=b.getBoundingClientRect();r(b,{left:Math.ceil(q.left)-q.left+"px",top:Math.ceil(q.top)-
+q.top+"px"})},c(),this.unSubPixelFix=F(E,"resize",c))}definition(b){return(new a([b])).addToDOM(this.defs.element)}getReferenceURL(){if((t||h)&&p.getElementsByTagName("base").length){if(!q(Z)){var b=T();b=(new a([{tagName:"svg",attributes:{width:8,height:8},children:[{tagName:"defs",children:[{tagName:"clipPath",attributes:{id:b},children:[{tagName:"rect",attributes:{width:4,height:4}}]}]},{tagName:"rect",attributes:{id:"hitme",width:8,height:8,"clip-path":`url(#${b})`,fill:"rgba(0,0,0,0.001)"}}]}])).addToDOM(p.body);
+r(b,{position:"fixed",top:0,left:0,zIndex:9E5});const c=p.elementFromPoint(6,6);Z="hitme"===(c&&c.id);p.body.removeChild(b)}if(Z)return E.location.href.split("#")[0].replace(/<[^>]*>/g,"").replace(/([\('\)])/g,"\\$1").replace(/ /g,"%20")}return""}getStyle(c){return this.style=b({fontFamily:"Helvetica, Arial, sans-serif",fontSize:"1rem"},c)}setStyle(b){this.boxWrapper.css(this.getStyle(b))}isHidden(){return!this.boxWrapper.getBBox().width}destroy(){const b=this.defs;this.box=null;this.boxWrapper=this.boxWrapper.destroy();
+G(this.gradients||{});this.gradients=null;this.defs=b.destroy();this.unSubPixelFix&&this.unSubPixelFix();return this.alignedObjects=null}createElement(b){const c=new this.Element;c.init(this,b);return c}getRadialAttr(b,c){return{cx:b[0]-b[2]/2+(c.cx||0)*b[2],cy:b[1]-b[2]/2+(c.cy||0)*b[2],r:(c.r||0)*b[2]}}shadowDefinition(b){const c=[`highcharts-drop-shadow-${this.chartIndex}`,...Object.keys(b).map(c=>b[c])].join("-").replace(/[^a-z0-9\-]/g,""),f=D({color:"#000000",offsetX:1,offsetY:1,opacity:.15,
+width:5},b);this.defs.element.querySelector(`#${c}`)||this.definition({tagName:"filter",attributes:{id:c},children:[{tagName:"feDropShadow",attributes:{dx:f.offsetX,dy:f.offsetY,"flood-color":f.color,"flood-opacity":Math.min(5*f.opacity,1),stdDeviation:f.width/2}}]});return c}buildText(b){(new B(b)).buildSVG()}getContrast(b){b=y.parse(b).rgba.map(b=>{b/=255;return.03928>=b?b/12.92:Math.pow((b+.055)/1.055,2.4)});b=.2126*b[0]+.7152*b[1]+.0722*b[2];return 1.05/(b+.05)>(b+.05)/.05?"#FFFFFF":"#000000"}button(c,
+f,d,k,e={},q,J,g,r,h){const A=this.label(c,f,d,r,void 0,void 0,h,void 0,"button"),O=this.styledMode;c=e.states||{};let N=0;e=D(e);delete e.states;const l=D({color:"#333333",cursor:"pointer",fontSize:"0.8em",fontWeight:"normal"},e.style);delete e.style;let w=a.filterUserAttributes(e);A.attr(D({padding:8,r:2},w));let p,G,R;O||(w=D({fill:"#f7f7f7",stroke:"#cccccc","stroke-width":1},w),q=D(w,{fill:"#e6e6e6"},a.filterUserAttributes(q||c.hover||{})),p=q.style,delete q.style,J=D(w,{fill:"#e6e9ff",style:{color:"#000000",
+fontWeight:"bold"}},a.filterUserAttributes(J||c.select||{})),G=J.style,delete J.style,g=D(w,{style:{color:"#cccccc"}},a.filterUserAttributes(g||c.disabled||{})),R=g.style,delete g.style);F(A.element,m?"mouseover":"mouseenter",function(){3!==N&&A.setState(1)});F(A.element,m?"mouseout":"mouseleave",function(){3!==N&&A.setState(N)});A.setState=function(b){1!==b&&(A.state=N=b);A.removeClass(/highcharts-button-(normal|hover|pressed|disabled)/).addClass("highcharts-button-"+["normal","hover","pressed",
+"disabled"][b||0]);O||(A.attr([w,q,J,g][b||0]),b=[l,p,G,R][b||0],n(b)&&A.css(b))};O||(A.attr(w).css(b({cursor:"default"},l)),h&&A.text.css({pointerEvents:"none"}));return A.on("touchstart",b=>b.stopPropagation()).on("click",function(b){3!==N&&k.call(A,b)})}crispLine(b,c,f="round"){const d=b[0],a=b[1];q(d[1])&&d[1]===a[1]&&(d[1]=a[1]=Math[f](d[1])-c%2/2);q(d[2])&&d[2]===a[2]&&(d[2]=a[2]=Math[f](d[2])+c%2/2);return b}path(c){const d=this.styledMode?{}:{fill:"none"};f(c)?d.d=c:n(c)&&b(d,c);return this.createElement("path").attr(d)}circle(b,
+c,f){b=n(b)?b:"undefined"===typeof b?{}:{x:b,y:c,r:f};c=this.createElement("circle");c.xSetter=c.ySetter=function(b,c,f){f.setAttribute("c"+c,b)};return c.attr(b)}arc(b,c,f,d,a,k){n(b)?(d=b,c=d.y,f=d.r,b=d.x):d={innerR:d,start:a,end:k};b=this.symbol("arc",b,c,f,f,d);b.r=f;return b}rect(c,f,a,k,e,q){c=n(c)?c:"undefined"===typeof c?{}:{x:c,y:f,r:e,width:Math.max(a||0,0),height:Math.max(k||0,0)};const A=this.createElement("rect");this.styledMode||("undefined"!==typeof q&&(c["stroke-width"]=q,b(c,A.crisp(c))),
+c.fill="none");A.rSetter=function(b,c,f){A.r=b;d(f,{rx:b,ry:b})};A.rGetter=function(){return A.r||0};return A.attr(c)}roundedRect(b){return this.symbol("roundedRect").attr(b)}setSize(b,c,f){this.width=b;this.height=c;this.boxWrapper.animate({width:b,height:c},{step:function(){this.attr({viewBox:"0 0 "+this.attr("width")+" "+this.attr("height")})},duration:K(f,!0)?void 0:0});this.alignElements()}g(b){const c=this.createElement("g");return b?c.attr({"class":"highcharts-"+b}):c}image(b,f,d,a,k,n){const A=
+{preserveAspectRatio:"none"};c(f)&&(A.x=f);c(d)&&(A.y=d);c(a)&&(A.width=a);c(k)&&(A.height=k);const e=this.createElement("image").attr(A);f=function(c){e.attr({href:b});n.call(e,c)};n?(e.attr({href:"data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="}),d=new E.Image,F(d,"load",f),d.src=b,d.complete&&f({})):e.attr({href:b});return e}symbol(c,f,a,n,e,g){const A=this,h=/^url\((.*?)\)$/,O=h.test(c),m=!O&&(this.symbols[c]?c:"circle"),l=m&&this.symbols[m];let D,G,P,t;if(l)"number"===
+typeof f&&(G=l.call(this.symbols,Math.round(f||0),Math.round(a||0),n||0,e||0,g)),D=this.path(G),A.styledMode||D.attr("fill","none"),b(D,{symbolName:m||void 0,x:f,y:a,width:n,height:e}),g&&b(D,g);else if(O){P=c.match(h)[1];const b=D=this.image(P);b.imgwidth=K(g&&g.width,w[P]&&w[P].width);b.imgheight=K(g&&g.height,w[P]&&w[P].height);t=b=>b.attr({width:b.width,height:b.height});["width","height"].forEach(function(c){b[c+"Setter"]=function(b,c){this[c]=b;const {alignByTranslate:f,element:a,width:k,height:A,
+imgwidth:n,imgheight:e}=this;b=this["img"+c];if(q(b)){let J=1;g&&"within"===g.backgroundSize&&k&&A?(J=Math.min(k/n,A/e),d(a,{width:Math.round(n*J),height:Math.round(e*J)})):a&&a.setAttribute(c,b);f||this.translate(((k||0)-n*J)/2,((A||0)-e*J)/2)}}});q(f)&&b.attr({x:f,y:a});b.isImg=!0;q(b.imgwidth)&&q(b.imgheight)?t(b):(b.attr({width:0,height:0}),k("img",{onload:function(){const c=v[A.chartIndex];0===this.width&&(r(this,{position:"absolute",top:"-999em"}),p.body.appendChild(this));w[P]={width:this.width,
+height:this.height};b.imgwidth=this.width;b.imgheight=this.height;b.element&&t(b);this.parentNode&&this.parentNode.removeChild(this);A.imgCount--;if(!A.imgCount&&c&&!c.hasLoaded)c.onload()},src:P}),this.imgCount++)}return D}clipRect(b,c,f,d){const a=T()+"-",k=this.createElement("clipPath").attr({id:a}).add(this.defs);b=this.rect(b,c,f,d,0).add(k);b.id=a;b.clipPath=k;b.count=0;return b}text(b,c,f,d){const a={};if(d&&(this.allowHTML||!this.forExport))return this.html(b,c,f);a.x=Math.round(c||0);f&&
+(a.y=Math.round(f));q(b)&&(a.text=b);b=this.createElement("text").attr(a);if(!d||this.forExport&&!this.allowHTML)b.xSetter=function(b,c,f){const d=f.getElementsByTagName("tspan"),a=f.getAttribute(c);for(let f=0,k;f<d.length;f++)k=d[f],k.getAttribute(c)===a&&k.setAttribute(c,b);f.setAttribute(c,b)};return b}fontMetrics(b){b=x(C.prototype.getStyle.call(b,"font-size")||0);const c=24>b?b+3:Math.round(1.2*b);return{h:c,b:Math.round(.8*c),f:b}}rotCorr(b,c,f){let d=b;c&&f&&(d=Math.max(d*Math.cos(c*l),4));
+return{x:-b/3*Math.sin(c*l),y:d}}pathToSegments(b){const f=[],d=[],a={A:8,C:7,H:2,L:3,M:3,Q:5,S:5,T:3,V:2};for(let k=0;k<b.length;k++)P(d[0])&&c(b[k])&&d.length===a[d[0].toUpperCase()]&&b.splice(k,0,d[0].replace("M","L").replace("m","l")),"string"===typeof b[k]&&(d.length&&f.push(d.slice(0)),d.length=0),d.push(b[k]);f.push(d.slice(0));return f}label(b,c,f,d,a,k,n,e,q){return new z(this,b,c,f,d,a,k,n,e,q)}alignElements(){this.alignedObjects.forEach(b=>b.align())}}b(V.prototype,{Element:C,SVG_NS:e,
+escapes:{"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"},symbols:H,draw:g});L.registerRendererType("svg",V,!0);"";return V});M(a,"Core/Renderer/HTML/HTMLElement.js",[a["Core/Globals.js"],a["Core/Renderer/SVG/SVGElement.js"],a["Core/Utilities.js"]],function(a,y,I){const {isFirefox:x,isMS:C,isWebKit:z,win:H}=a,{css:B,defined:u,extend:v,pick:l,pInt:p}=I,t=[];class m extends y{static compose(a){if(I.pushUnique(t,a)){const g=m.prototype,e=a.prototype;e.getSpanCorrection=g.getSpanCorrection;
+e.htmlCss=g.htmlCss;e.htmlGetBBox=g.htmlGetBBox;e.htmlUpdateTransform=g.htmlUpdateTransform;e.setSpanRotation=g.setSpanRotation}return a}getSpanCorrection(a,g,e){this.xCorr=-a*e;this.yCorr=-g}htmlCss(a){const g="SPAN"===this.element.tagName&&a&&"width"in a,e=l(g&&a.width,void 0);let h;g&&(delete a.width,this.textWidth=e,h=!0);a&&"ellipsis"===a.textOverflow&&(a.whiteSpace="nowrap",a.overflow="hidden");this.styles=v(this.styles,a);B(this.element,a);h&&this.htmlUpdateTransform();return this}htmlGetBBox(){const a=
+this.element;return{x:a.offsetLeft,y:a.offsetTop,width:a.offsetWidth,height:a.offsetHeight}}htmlUpdateTransform(){if(this.added){var a=this.renderer,g=this.element,e=this.x||0,m=this.y||0,l=this.textAlign||"left",t={left:0,center:.5,right:1}[l],d=this.styles,k=d&&d.whiteSpace;B(g,{marginLeft:this.translateX||0,marginTop:this.translateY||0});if("SPAN"===g.tagName){d=this.rotation;const q=this.textWidth&&p(this.textWidth),h=[d,l,g.innerHTML,this.textWidth,this.textAlign].join();let b=!1;if(q!==this.oldTextWidth){if(this.textPxLength)var r=
+this.textPxLength;else B(g,{width:"",whiteSpace:k||"nowrap"}),r=g.offsetWidth;(q>this.oldTextWidth||r>q)&&(/[ \-]/.test(g.textContent||g.innerText)||"ellipsis"===g.style.textOverflow)&&(B(g,{width:r>q||d?q+"px":"auto",display:"block",whiteSpace:k||"normal"}),this.oldTextWidth=q,b=!0)}this.hasBoxWidthChanged=b;h!==this.cTT&&(a=a.fontMetrics(g).b,!u(d)||d===(this.oldRotation||0)&&l===this.oldAlign||this.setSpanRotation(d,t,a),this.getSpanCorrection(!u(d)&&this.textPxLength||g.offsetWidth,a,t,d,l));
+B(g,{left:e+(this.xCorr||0)+"px",top:m+(this.yCorr||0)+"px"});this.cTT=h;this.oldRotation=d;this.oldAlign=l}}else this.alignOnAdd=!0}setSpanRotation(a,g,e){const h={},m=C&&!/Edge/.test(H.navigator.userAgent)?"-ms-transform":z?"-webkit-transform":x?"MozTransform":H.opera?"-o-transform":void 0;m&&(h[m]=h.transform="rotate("+a+"deg)",h[m+(x?"Origin":"-origin")]=h.transformOrigin=100*g+"% "+e+"px",B(this.element,h))}}return m});M(a,"Core/Renderer/HTML/HTMLRenderer.js",[a["Core/Renderer/HTML/AST.js"],
+a["Core/Renderer/SVG/SVGElement.js"],a["Core/Renderer/SVG/SVGRenderer.js"],a["Core/Utilities.js"]],function(a,y,I,L){const {attr:x,createElement:z,extend:H,pick:B}=L,u=[];class v extends I{static compose(a){L.pushUnique(u,a)&&(a.prototype.html=v.prototype.html);return a}html(l,p,t){const m=this.createElement("span"),h=m.element,g=m.renderer,e=function(a,e){["opacity","visibility"].forEach(function(g){a[g+"Setter"]=function(d,k,r){const q=a.div?a.div.style:e;y.prototype[g+"Setter"].call(this,d,k,r);
+q&&(q[k]=d)}});a.addedSetters=!0};m.textSetter=function(e){e!==this.textStr&&(delete this.bBox,delete this.oldTextWidth,a.setElementHTML(this.element,B(e,"")),this.textStr=e,m.doTransform=!0)};e(m,m.element.style);m.xSetter=m.ySetter=m.alignSetter=m.rotationSetter=function(a,e){"align"===e?m.alignValue=m.textAlign=a:m[e]=a;m.doTransform=!0};m.afterSetters=function(){this.doTransform&&(this.htmlUpdateTransform(),this.doTransform=!1)};m.attr({text:l,x:Math.round(p),y:Math.round(t)}).css({position:"absolute"});
+g.styledMode||m.css({fontFamily:this.style.fontFamily,fontSize:this.style.fontSize});h.style.whiteSpace="nowrap";m.css=m.htmlCss;m.add=function(a){const l=g.box.parentNode,w=[];let d;if(this.parentGroup=a){if(d=a.div,!d){for(;a;)w.push(a),a=a.parentGroup;w.reverse().forEach(function(a){function k(f,c){a[c]=f;"translateX"===c?b.left=f+"px":b.top=f+"px";a.doTransform=!0}const q=x(a.element,"class"),g=a.styles||{};d=a.div=a.div||z("div",q?{className:q}:void 0,{position:"absolute",left:(a.translateX||
+0)+"px",top:(a.translateY||0)+"px",display:a.display,opacity:a.opacity,visibility:a.visibility},d||l);const b=d.style;H(a,{classSetter:function(b){return function(c){this.element.setAttribute("class",c);b.className=c}}(d),css:function(f){m.css.call(a,f);["cursor","pointerEvents"].forEach(c=>{f[c]&&(b[c]=f[c])});return a},on:function(){w[0].div&&m.on.apply({element:w[0].div,onEvents:a.onEvents},arguments);return a},translateXSetter:k,translateYSetter:k});a.addedSetters||e(a);a.css(g)})}}else d=l;d.appendChild(h);
+m.added=!0;m.alignOnAdd&&m.htmlUpdateTransform();return m};return m}}return v});M(a,"Core/Axis/AxisDefaults.js",[],function(){var a;(function(a){a.defaultXAxisOptions={alignTicks:!0,allowDecimals:void 0,panningEnabled:!0,zIndex:2,zoomEnabled:!0,dateTimeLabelFormats:{millisecond:{main:"%H:%M:%S.%L",range:!1},second:{main:"%H:%M:%S",range:!1},minute:{main:"%H:%M",range:!1},hour:{main:"%H:%M",range:!1},day:{main:"%e %b"},week:{main:"%e %b"},month:{main:"%b '%y"},year:{main:"%Y"}},endOnTick:!1,gridLineDashStyle:"Solid",
+gridZIndex:1,labels:{autoRotation:void 0,autoRotationLimit:80,distance:15,enabled:!0,indentation:10,overflow:"justify",padding:5,reserveSpace:void 0,rotation:void 0,staggerLines:0,step:0,useHTML:!1,zIndex:7,style:{color:"#333333",cursor:"default",fontSize:"0.8em"}},maxPadding:.01,minorGridLineDashStyle:"Solid",minorTickLength:2,minorTickPosition:"outside",minorTicksPerMajor:5,minPadding:.01,offset:void 0,opposite:!1,reversed:void 0,reversedStacks:!1,showEmpty:!0,showFirstLabel:!0,showLastLabel:!0,
+startOfWeek:1,startOnTick:!1,tickLength:10,tickPixelInterval:100,tickmarkPlacement:"between",tickPosition:"outside",title:{align:"middle",rotation:0,useHTML:!1,x:0,y:0,style:{color:"#666666",fontSize:"0.8em"}},type:"linear",uniqueNames:!0,visible:!0,minorGridLineColor:"#f2f2f2",minorGridLineWidth:1,minorTickColor:"#999999",lineColor:"#333333",lineWidth:1,gridLineColor:"#e6e6e6",gridLineWidth:void 0,tickColor:"#333333"};a.defaultYAxisOptions={reversedStacks:!0,endOnTick:!0,maxPadding:.05,minPadding:.05,
+tickPixelInterval:72,showLastLabel:!0,labels:{x:void 0},startOnTick:!0,title:{rotation:270,text:"Values"},stackLabels:{animation:{},allowOverlap:!1,enabled:!1,crop:!0,overflow:"justify",formatter:function(){const {numberFormatter:a}=this.axis.chart;return a(this.total||0,-1)},style:{color:"#000000",fontSize:"0.7em",fontWeight:"bold",textOutline:"1px contrast"}},gridLineWidth:1,lineWidth:0};a.defaultLeftAxisOptions={title:{rotation:270}};a.defaultRightAxisOptions={title:{rotation:90}};a.defaultBottomAxisOptions=
+{labels:{autoRotation:[-45]},margin:15,title:{rotation:0}};a.defaultTopAxisOptions={labels:{autoRotation:[-45]},margin:15,title:{rotation:0}}})(a||(a={}));return a});M(a,"Core/Foundation.js",[a["Core/Utilities.js"]],function(a){const {addEvent:x,isFunction:I,objectEach:L,removeEvent:C}=a;var z;(function(a){a.registerEventOptions=function(a,u){a.eventOptions=a.eventOptions||{};L(u.events,function(v,l){a.eventOptions[l]!==v&&(a.eventOptions[l]&&(C(a,l,a.eventOptions[l]),delete a.eventOptions[l]),I(v)&&
+(a.eventOptions[l]=v,x(a,l,v,{order:0})))})}})(z||(z={}));return z});M(a,"Core/Axis/Tick.js",[a["Core/Templating.js"],a["Core/Globals.js"],a["Core/Utilities.js"]],function(a,y,I){const {deg2rad:x}=y,{clamp:C,correctFloat:z,defined:H,destroyObjectProperties:B,extend:u,fireEvent:v,isNumber:l,merge:p,objectEach:t,pick:m}=I;class h{constructor(a,e,h,m,l){this.isNewLabel=this.isNew=!0;this.axis=a;this.pos=e;this.type=h||"";this.parameters=l||{};this.tickmarkOffset=this.parameters.tickmarkOffset;this.options=
+this.parameters.options;v(this,"init");h||m||this.addLabel()}addLabel(){const g=this,e=g.axis;var h=e.options;const p=e.chart;var t=e.categories;const d=e.logarithmic,k=e.names,r=g.pos,q=m(g.options&&g.options.labels,h.labels);var G=e.tickPositions;const b=r===G[0],f=r===G[G.length-1],c=(!q.step||1===q.step)&&1===e.tickInterval;G=G.info;let n=g.label,P,D,K;t=this.parameters.category||(t?m(t[r],k[r],r):r);d&&l(t)&&(t=z(d.lin2log(t)));e.dateTime&&(G?(D=p.time.resolveDTLFormat(h.dateTimeLabelFormats[!h.grid&&
+G.higherRanks[r]||G.unitName]),P=D.main):l(t)&&(P=e.dateTime.getXDateFormat(t,h.dateTimeLabelFormats||{})));g.isFirst=b;g.isLast=f;const x={axis:e,chart:p,dateTimeLabelFormat:P,isFirst:b,isLast:f,pos:r,tick:g,tickPositionInfo:G,value:t};v(this,"labelFormat",x);const B=b=>q.formatter?q.formatter.call(b,b):q.format?(b.text=e.defaultLabelFormatter.call(b,b),a.format(q.format,b,p)):e.defaultLabelFormatter.call(b,b);h=B.call(x,x);const y=D&&D.list;g.shortenLabel=y?function(){for(K=0;K<y.length;K++)if(u(x,
+{dateTimeLabelFormat:y[K]}),n.attr({text:B.call(x,x)}),n.getBBox().width<e.getSlotWidth(g)-2*q.padding)return;n.attr({text:""})}:void 0;c&&e._addedPlotLB&&g.moveLabel(h,q);H(n)||g.movedLabel?n&&n.textStr!==h&&!c&&(!n.textWidth||q.style.width||n.styles.width||n.css({width:null}),n.attr({text:h}),n.textPxLength=n.getBBox().width):(g.label=n=g.createLabel({x:0,y:0},h,q),g.rotation=0)}createLabel(a,e,h){const g=this.axis,m=g.chart;if(a=H(e)&&h.enabled?m.renderer.text(e,a.x,a.y,h.useHTML).add(g.labelGroup):
+null)m.styledMode||a.css(p(h.style)),a.textPxLength=a.getBBox().width;return a}destroy(){B(this,this.axis)}getPosition(a,e,h,m){const g=this.axis,d=g.chart,k=m&&d.oldChartHeight||d.chartHeight;a={x:a?z(g.translate(e+h,void 0,void 0,m)+g.transB):g.left+g.offset+(g.opposite?(m&&d.oldChartWidth||d.chartWidth)-g.right-g.left:0),y:a?k-g.bottom+g.offset-(g.opposite?g.height:0):z(k-g.translate(e+h,void 0,void 0,m)-g.transB)};a.y=C(a.y,-1E5,1E5);v(this,"afterGetPosition",{pos:a});return a}getLabelPosition(a,
+e,h,l,p,d,k,r){const q=this.axis,g=q.transA,b=q.isLinked&&q.linkedParent?q.linkedParent.reversed:q.reversed,f=q.staggerLines,c=q.tickRotCorr||{x:0,y:0},n=l||q.reserveSpaceDefault?0:-q.labelOffset*("center"===q.labelAlign?.5:1),w=p.distance,D={};h=0===q.side?h.rotation?-w:-h.getBBox().height:2===q.side?c.y+w:Math.cos(h.rotation*x)*(c.y-h.getBBox(!1,0).height/2);H(p.y)&&(h=0===q.side&&q.horiz?p.y+h:p.y);a=a+m(p.x,[0,1,0,-1][q.side]*w)+n+c.x-(d&&l?d*g*(b?-1:1):0);e=e+h-(d&&!l?d*g*(b?1:-1):0);f&&(l=k/
+(r||1)%f,q.opposite&&(l=f-l-1),e+=q.labelOffset/f*l);D.x=a;D.y=Math.round(e);v(this,"afterGetLabelPosition",{pos:D,tickmarkOffset:d,index:k});return D}getLabelSize(){return this.label?this.label.getBBox()[this.axis.horiz?"height":"width"]:0}getMarkPath(a,e,h,m,l,d){return d.crispLine([["M",a,e],["L",a+(l?0:-h),e+(l?h:0)]],m)}handleOverflow(a){const e=this.axis,g=e.options.labels,h=a.x;var l=e.chart.chartWidth,d=e.chart.spacing;const k=m(e.labelLeft,Math.min(e.pos,d[3]));d=m(e.labelRight,Math.max(e.isRadial?
+0:e.pos+e.len,l-d[1]));const r=this.label,q=this.rotation,p={left:0,center:.5,right:1}[e.labelAlign||r.attr("align")],b=r.getBBox().width,f=e.getSlotWidth(this),c={};let n=f,t=1,D;if(q||"justify"!==g.overflow)0>q&&h-p*b<k?D=Math.round(h/Math.cos(q*x)-k):0<q&&h+p*b>d&&(D=Math.round((l-h)/Math.cos(q*x)));else if(l=h+(1-p)*b,h-p*b<k?n=a.x+n*(1-p)-k:l>d&&(n=d-a.x+n*p,t=-1),n=Math.min(f,n),n<f&&"center"===e.labelAlign&&(a.x+=t*(f-n-p*(f-Math.min(b,n)))),b>n||e.autoRotation&&(r.styles||{}).width)D=n;D&&
+(this.shortenLabel?this.shortenLabel():(c.width=Math.floor(D)+"px",(g.style||{}).textOverflow||(c.textOverflow="ellipsis"),r.css(c)))}moveLabel(a,e){const g=this;var h=g.label;const m=g.axis;let d=!1;h&&h.textStr===a?(g.movedLabel=h,d=!0,delete g.label):t(m.ticks,function(k){d||k.isNew||k===g||!k.label||k.label.textStr!==a||(g.movedLabel=k.label,d=!0,k.labelPos=g.movedLabel.xy,delete k.label)});d||!g.labelPos&&!h||(h=g.labelPos||h.xy,g.movedLabel=g.createLabel(h,a,e),g.movedLabel&&g.movedLabel.attr({opacity:0}))}render(a,
+e,h){var g=this.axis,l=g.horiz,d=this.pos,k=m(this.tickmarkOffset,g.tickmarkOffset);d=this.getPosition(l,d,k,e);k=d.x;const r=d.y;g=l&&k===g.pos+g.len||!l&&r===g.pos?-1:1;l=m(h,this.label&&this.label.newOpacity,1);h=m(h,1);this.isActive=!0;this.renderGridLine(e,h,g);this.renderMark(d,h,g);this.renderLabel(d,e,l,a);this.isNew=!1;v(this,"afterRender")}renderGridLine(a,e,h){const g=this.axis,l=g.options,d={},k=this.pos,r=this.type,q=m(this.tickmarkOffset,g.tickmarkOffset),p=g.chart.renderer;let b=this.gridLine,
+f=l.gridLineWidth,c=l.gridLineColor,n=l.gridLineDashStyle;"minor"===this.type&&(f=l.minorGridLineWidth,c=l.minorGridLineColor,n=l.minorGridLineDashStyle);b||(g.chart.styledMode||(d.stroke=c,d["stroke-width"]=f||0,d.dashstyle=n),r||(d.zIndex=1),a&&(e=0),this.gridLine=b=p.path().attr(d).addClass("highcharts-"+(r?r+"-":"")+"grid-line").add(g.gridGroup));if(b&&(h=g.getPlotLinePath({value:k+q,lineWidth:b.strokeWidth()*h,force:"pass",old:a,acrossPanes:!1})))b[a||this.isNew?"attr":"animate"]({d:h,opacity:e})}renderMark(a,
+e,h){const g=this.axis;var l=g.options;const d=g.chart.renderer,k=this.type,r=g.tickSize(k?k+"Tick":"tick"),q=a.x;a=a.y;const p=m(l["minor"!==k?"tickWidth":"minorTickWidth"],!k&&g.isXAxis?1:0);l=l["minor"!==k?"tickColor":"minorTickColor"];let b=this.mark;const f=!b;r&&(g.opposite&&(r[0]=-r[0]),b||(this.mark=b=d.path().addClass("highcharts-"+(k?k+"-":"")+"tick").add(g.axisGroup),g.chart.styledMode||b.attr({stroke:l,"stroke-width":p})),b[f?"attr":"animate"]({d:this.getMarkPath(q,a,r[0],b.strokeWidth()*
+h,g.horiz,d),opacity:e}))}renderLabel(a,e,h,p){var g=this.axis;const d=g.horiz,k=g.options,r=this.label,q=k.labels,t=q.step;g=m(this.tickmarkOffset,g.tickmarkOffset);const b=a.x;a=a.y;let f=!0;r&&l(b)&&(r.xy=a=this.getLabelPosition(b,a,r,d,q,g,p,t),this.isFirst&&!this.isLast&&!k.showFirstLabel||this.isLast&&!this.isFirst&&!k.showLastLabel?f=!1:!d||q.step||q.rotation||e||0===h||this.handleOverflow(a),t&&p%t&&(f=!1),f&&l(a.y)?(a.opacity=h,r[this.isNewLabel?"attr":"animate"](a).show(!0),this.isNewLabel=
+!1):(r.hide(),this.isNewLabel=!0))}replaceMovedLabel(){const a=this.label,e=this.axis;a&&!this.isNew&&(a.animate({opacity:0},void 0,a.destroy),delete this.label);e.isDirty=!0;this.label=this.movedLabel;delete this.movedLabel}}"";return h});M(a,"Core/Axis/Axis.js",[a["Core/Animation/AnimationUtilities.js"],a["Core/Axis/AxisDefaults.js"],a["Core/Color/Color.js"],a["Core/Defaults.js"],a["Core/Foundation.js"],a["Core/Globals.js"],a["Core/Axis/Tick.js"],a["Core/Utilities.js"]],function(a,y,I,L,C,z,H,B){const {animObject:u}=
+a,{defaultOptions:v}=L,{registerEventOptions:l}=C,{deg2rad:p}=z,{arrayMax:t,arrayMin:m,clamp:h,correctFloat:g,defined:e,destroyObjectProperties:w,erase:x,error:F,extend:d,fireEvent:k,getClosestDistance:r,insertItem:q,isArray:G,isNumber:b,isString:f,merge:c,normalizeTickInterval:n,objectEach:P,pick:D,relativeLength:K,removeEvent:X,splat:T,syncTimeout:Z}=B,V=(b,c)=>n(c,void 0,void 0,D(b.options.allowDecimals,.5>c||void 0!==b.tickAmount),!!b.tickAmount);class Y{constructor(b,c,f){this.zoomEnabled=this.width=
+this.visible=this.userOptions=this.translationSlope=this.transB=this.transA=this.top=this.ticks=this.tickRotCorr=this.tickPositions=this.tickmarkOffset=this.tickInterval=this.tickAmount=this.side=this.series=this.right=this.positiveValuesOnly=this.pos=this.pointRangePadding=this.pointRange=this.plotLinesAndBandsGroups=this.plotLinesAndBands=this.paddedTicks=this.overlap=this.options=this.offset=this.names=this.minPixelPadding=this.minorTicks=this.minorTickInterval=this.min=this.maxLabelLength=this.max=
+this.len=this.left=this.labelFormatter=this.labelEdge=this.isLinked=this.index=this.height=this.hasVisibleSeries=this.hasNames=this.eventOptions=this.coll=this.closestPointRange=this.chart=this.bottom=this.alternateBands=void 0;this.init(b,c,f)}init(c,f,a=this.coll){const d="xAxis"===a;this.chart=c;this.horiz=this.isZAxis||(c.inverted?!d:d);this.isXAxis=d;this.coll=a;k(this,"init",{userOptions:f});this.opposite=D(f.opposite,this.opposite);this.side=D(f.side,this.side,this.horiz?this.opposite?0:2:
+this.opposite?1:3);this.setOptions(f);a=this.options;const A=a.labels,n=a.type;this.userOptions=f;this.minPixelPadding=0;this.reversed=D(a.reversed,this.reversed);this.visible=a.visible;this.zoomEnabled=a.zoomEnabled;this.hasNames="category"===n||!0===a.categories;this.categories=a.categories||(this.hasNames?[]:void 0);this.names||(this.names=[],this.names.keys={});this.plotLinesAndBandsGroups={};this.positiveValuesOnly=!!this.logarithmic;this.isLinked=e(a.linkedTo);this.ticks={};this.labelEdge=[];
+this.minorTicks={};this.plotLinesAndBands=[];this.alternateBands={};this.len=0;this.minRange=this.userMinRange=a.minRange||a.maxZoom;this.range=a.range;this.offset=a.offset||0;this.min=this.max=null;f=D(a.crosshair,T(c.options.tooltip.crosshairs)[d?0:1]);this.crosshair=!0===f?{}:f;-1===c.axes.indexOf(this)&&(d?c.axes.splice(c.xAxis.length,0,this):c.axes.push(this),q(this,c[this.coll]));c.orderItems(this.coll);this.series=this.series||[];c.inverted&&!this.isZAxis&&d&&"undefined"===typeof this.reversed&&
+(this.reversed=!0);this.labelRotation=b(A.rotation)?A.rotation:void 0;l(this,a);k(this,"afterInit")}setOptions(b){this.options=c(y.defaultXAxisOptions,"yAxis"===this.coll&&y.defaultYAxisOptions,[y.defaultTopAxisOptions,y.defaultRightAxisOptions,y.defaultBottomAxisOptions,y.defaultLeftAxisOptions][this.side],c(v[this.coll],b));k(this,"afterSetOptions",{userOptions:b})}defaultLabelFormatter(c){var f=this.axis;({numberFormatter:c}=this.chart);const a=b(this.value)?this.value:NaN,d=f.chart.time,k=this.dateTimeLabelFormat;
+var n=v.lang;const A=n.numericSymbols;n=n.numericSymbolMagnitude||1E3;const e=f.logarithmic?Math.abs(a):f.tickInterval;let q=A&&A.length,g;if(f.categories)g=`${this.value}`;else if(k)g=d.dateFormat(k,a);else if(q&&1E3<=e)for(;q--&&"undefined"===typeof g;)f=Math.pow(n,q+1),e>=f&&0===10*a%f&&null!==A[q]&&0!==a&&(g=c(a/f,-1)+A[q]);"undefined"===typeof g&&(g=1E4<=Math.abs(a)?c(a,-1):c(a,-1,void 0,""));return g}getSeriesExtremes(){const c=this,f=c.chart;let a;k(this,"getSeriesExtremes",null,function(){c.hasVisibleSeries=
+!1;c.dataMin=c.dataMax=c.threshold=null;c.softThreshold=!c.isXAxis;c.series.forEach(function(d){if(d.visible||!f.options.chart.ignoreHiddenSeries){var k=d.options;let f=k.threshold,n,A;c.hasVisibleSeries=!0;c.positiveValuesOnly&&0>=f&&(f=null);if(c.isXAxis)(k=d.xData)&&k.length&&(k=c.logarithmic?k.filter(b=>0<b):k,a=d.getXExtremes(k),n=a.min,A=a.max,b(n)||n instanceof Date||(k=k.filter(b),a=d.getXExtremes(k),n=a.min,A=a.max),k.length&&(c.dataMin=Math.min(D(c.dataMin,n),n),c.dataMax=Math.max(D(c.dataMax,
+A),A)));else if(d=d.applyExtremes(),b(d.dataMin)&&(n=d.dataMin,c.dataMin=Math.min(D(c.dataMin,n),n)),b(d.dataMax)&&(A=d.dataMax,c.dataMax=Math.max(D(c.dataMax,A),A)),e(f)&&(c.threshold=f),!k.softThreshold||c.positiveValuesOnly)c.softThreshold=!1}})});k(this,"afterGetSeriesExtremes")}translate(c,f,a,d,k,n){const e=this.linkedParent||this,A=d&&e.old?e.old.min:e.min;if(!b(A))return NaN;const q=e.minPixelPadding;k=(e.isOrdinal||e.brokenAxis&&e.brokenAxis.hasBreaks||e.logarithmic&&k)&&e.lin2val;let J=
+1,h=0;d=d&&e.old?e.old.transA:e.transA;d||(d=e.transA);a&&(J*=-1,h=e.len);e.reversed&&(J*=-1,h-=J*(e.sector||e.len));f?(n=(c*J+h-q)/d+A,k&&(n=e.lin2val(n))):(k&&(c=e.val2lin(c)),c=J*(c-A)*d,n=(e.isRadial?c:g(c))+h+J*q+(b(n)?d*n:0));return n}toPixels(b,c){return this.translate(b,!1,!this.horiz,void 0,!0)+(c?0:this.pos)}toValue(b,c){return this.translate(b-(c?0:this.pos),!0,!this.horiz,void 0,!0)}getPlotLinePath(c){function f(b,c,f){"pass"!==t&&(b<c||b>f)&&(t?b=h(b,c,f):K=!0);return b}const a=this,
+d=a.chart,n=a.left,e=a.top,A=c.old,q=c.value,g=c.lineWidth,r=A&&d.oldChartHeight||d.chartHeight,m=A&&d.oldChartWidth||d.chartWidth,l=a.transB;let p=c.translatedValue,t=c.force,P,w,R,Q,K;c={value:q,lineWidth:g,old:A,force:t,acrossPanes:c.acrossPanes,translatedValue:p};k(this,"getPlotLinePath",c,function(c){p=D(p,a.translate(q,void 0,void 0,A));p=h(p,-1E5,1E5);P=R=Math.round(p+l);w=Q=Math.round(r-p-l);b(p)?a.horiz?(w=e,Q=r-a.bottom,P=R=f(P,n,n+a.width)):(P=n,R=m-a.right,w=Q=f(w,e,e+a.height)):(K=!0,
+t=!1);c.path=K&&!t?null:d.renderer.crispLine([["M",P,w],["L",R,Q]],g||1)});return c.path}getLinearTickPositions(b,c,f){const a=g(Math.floor(c/b)*b);f=g(Math.ceil(f/b)*b);const d=[];let k,n;g(a+b)===a&&(n=20);if(this.single)return[c];for(c=a;c<=f;){d.push(c);c=g(c+b,n);if(c===k)break;k=c}return d}getMinorTickInterval(){const b=this.options;return!0===b.minorTicks?D(b.minorTickInterval,"auto"):!1===b.minorTicks?null:b.minorTickInterval}getMinorTickPositions(){var b=this.options;const c=this.tickPositions,
+f=this.minorTickInterval;var a=this.pointRangePadding||0;const d=this.min-a;a=this.max+a;const k=a-d;let n=[];if(k&&k/f<this.len/3){const k=this.logarithmic;if(k)this.paddedTicks.forEach(function(b,c,a){c&&n.push.apply(n,k.getLogTickPositions(f,a[c-1],a[c],!0))});else if(this.dateTime&&"auto"===this.getMinorTickInterval())n=n.concat(this.getTimeTicks(this.dateTime.normalizeTimeTickInterval(f),d,a,b.startOfWeek));else for(b=d+(c[0]-d)%f;b<=a&&b!==n[0];b+=f)n.push(b)}0!==n.length&&this.trimTicks(n);
+return n}adjustForMinRange(){const b=this.options,c=this.logarithmic;let f=this.min;var a=this.max;let d,k;if(this.isXAxis&&"undefined"===typeof this.minRange&&!c)if(e(b.min)||e(b.max)||e(b.floor)||e(b.ceiling))this.minRange=null;else{var n=r(this.series.map(b=>{var c;return(b.xIncrement?null===(c=b.xData)||void 0===c?void 0:c.slice(0,2):b.xData)||[]}))||0;this.minRange=Math.min(5*n,this.dataMax-this.dataMin)}a-f<this.minRange&&(n=this.dataMax-this.dataMin>=this.minRange,k=this.minRange,a=(k-a+f)/
+2,d=[f-a,D(b.min,f-a)],n&&(d[2]=c?c.log2lin(this.dataMin):this.dataMin),f=t(d),a=[f+k,D(b.max,f+k)],n&&(a[2]=c?c.log2lin(this.dataMax):this.dataMax),a=m(a),a-f<k&&(d[0]=a-k,d[1]=D(b.min,a-k),f=t(d)));this.min=f;this.max=a}getClosest(){let b,c;if(this.categories)c=1;else{const f=[];this.series.forEach(function(b){var a;const d=b.closestPointRange,k=b.visible||!b.chart.options.chart.ignoreHiddenSeries;1===(null===(a=b.xData)||void 0===a?void 0:a.length)?f.push(b.xData[0]):!b.noSharedTooltip&&e(d)&&
+k&&(c=e(c)?Math.min(c,d):d)});f.length&&(f.sort((b,c)=>b-c),b=r([f]))}return b&&c?Math.min(b,c):b||c}nameToX(b){const c=G(this.options.categories),f=c?this.categories:this.names;let a=b.options.x,d;b.series.requireSorting=!1;e(a)||(a=this.options.uniqueNames&&f?c?f.indexOf(b.name):D(f.keys[b.name],-1):b.series.autoIncrement());-1===a?!c&&f&&(d=f.length):d=a;"undefined"!==typeof d?(this.names[d]=b.name,this.names.keys[b.name]=d):b.x&&(d=b.x);return d}updateNames(){const b=this,c=this.names;0<c.length&&
+(Object.keys(c.keys).forEach(function(b){delete c.keys[b]}),c.length=0,this.minRange=this.userMinRange,(this.series||[]).forEach(function(c){c.xIncrement=null;if(!c.points||c.isDirtyData)b.max=Math.max(b.max,c.xData.length-1),c.processData(),c.generatePoints();c.data.forEach(function(f,a){let d;f&&f.options&&"undefined"!==typeof f.name&&(d=b.nameToX(f),"undefined"!==typeof d&&d!==f.x&&(f.x=d,c.xData[a]=d))})}))}setAxisTranslation(){const b=this,c=b.max-b.min;var a=b.linkedParent;const d=!!b.categories,
+n=b.isXAxis;let e=b.axisPointRange||0,q,g=0,h=0,r=b.transA;if(n||d||e)q=b.getClosest(),a?(g=a.minPointOffset,h=a.pointRangePadding):b.series.forEach(function(c){const a=d?1:n?D(c.options.pointRange,q,0):b.axisPointRange||0,k=c.options.pointPlacement;e=Math.max(e,a);if(!b.single||d)c=c.is("xrange")?!n:n,g=Math.max(g,c&&f(k)?0:a/2),h=Math.max(h,c&&"on"===k?0:a)}),a=b.ordinal&&b.ordinal.slope&&q?b.ordinal.slope/q:1,b.minPointOffset=g*=a,b.pointRangePadding=h*=a,b.pointRange=Math.min(e,b.single&&d?1:
+c),n&&q&&(b.closestPointRange=q);b.translationSlope=b.transA=r=b.staticScale||b.len/(c+h||1);b.transB=b.horiz?b.left:b.bottom;b.minPixelPadding=r*g;k(this,"afterSetAxisTranslation")}minFromRange(){return this.max-this.range}setTickInterval(c){var f=this.chart;const a=this.logarithmic,d=this.options,n=this.isXAxis,q=this.isLinked,h=d.tickPixelInterval,A=this.categories,r=this.softThreshold;let m=d.maxPadding,l=d.minPadding;let p=b(d.tickInterval)&&0<=d.tickInterval?d.tickInterval:void 0,t=b(this.threshold)?
+this.threshold:null,P,w,K;this.dateTime||A||q||this.getTickAmount();w=D(this.userMin,d.min);K=D(this.userMax,d.max);if(q){this.linkedParent=f[this.coll][d.linkedTo];var R=this.linkedParent.getExtremes();this.min=D(R.min,R.dataMin);this.max=D(R.max,R.dataMax);d.type!==this.linkedParent.options.type&&F(11,1,f)}else r&&e(t)&&(this.dataMin>=t?(R=t,l=0):this.dataMax<=t&&(P=t,m=0)),this.min=D(w,R,this.dataMin),this.max=D(K,P,this.dataMax);a&&(this.positiveValuesOnly&&!c&&0>=Math.min(this.min,D(this.dataMin,
+this.min))&&F(10,1,f),this.min=g(a.log2lin(this.min),16),this.max=g(a.log2lin(this.max),16));this.range&&e(this.max)&&(this.userMin=this.min=w=Math.max(this.dataMin,this.minFromRange()),this.userMax=K=this.max,this.range=null);k(this,"foundExtremes");this.beforePadding&&this.beforePadding();this.adjustForMinRange();!b(this.userMin)&&b(d.softMin)&&d.softMin<this.min&&(this.min=w=d.softMin);!b(this.userMax)&&b(d.softMax)&&d.softMax>this.max&&(this.max=K=d.softMax);!(A||this.axisPointRange||this.stacking&&
+this.stacking.usePercentage||q)&&e(this.min)&&e(this.max)&&(f=this.max-this.min)&&(!e(w)&&l&&(this.min-=f*l),!e(K)&&m&&(this.max+=f*m));!b(this.userMin)&&b(d.floor)&&(this.min=Math.max(this.min,d.floor));!b(this.userMax)&&b(d.ceiling)&&(this.max=Math.min(this.max,d.ceiling));r&&e(this.dataMin)&&(t=t||0,!e(w)&&this.min<t&&this.dataMin>=t?this.min=this.options.minRange?Math.min(t,this.max-this.minRange):t:!e(K)&&this.max>t&&this.dataMax<=t&&(this.max=this.options.minRange?Math.max(t,this.min+this.minRange):
+t));b(this.min)&&b(this.max)&&!this.chart.polar&&this.min>this.max&&(e(this.options.min)?this.max=this.min:e(this.options.max)&&(this.min=this.max));this.tickInterval=this.min===this.max||"undefined"===typeof this.min||"undefined"===typeof this.max?1:q&&this.linkedParent&&!p&&h===this.linkedParent.options.tickPixelInterval?p=this.linkedParent.tickInterval:D(p,this.tickAmount?(this.max-this.min)/Math.max(this.tickAmount-1,1):void 0,A?1:(this.max-this.min)*h/Math.max(this.len,h));if(n&&!c){const b=
+this.min!==(this.old&&this.old.min)||this.max!==(this.old&&this.old.max);this.series.forEach(function(c){c.forceCrop=c.forceCropping&&c.forceCropping();c.processData(b)});k(this,"postProcessData",{hasExtremesChanged:b})}this.setAxisTranslation();k(this,"initialAxisTranslation");this.pointRange&&!p&&(this.tickInterval=Math.max(this.pointRange,this.tickInterval));c=D(d.minTickInterval,this.dateTime&&!this.series.some(b=>b.noSharedTooltip)?this.closestPointRange:0);!p&&this.tickInterval<c&&(this.tickInterval=
+c);this.dateTime||this.logarithmic||p||(this.tickInterval=V(this,this.tickInterval));this.tickAmount||(this.tickInterval=this.unsquish());this.setTickPositions()}setTickPositions(){var c=this.options;const f=c.tickPositions,a=c.tickPositioner;var d=this.getMinorTickInterval(),n=this.hasVerticalPanning(),q="colorAxis"===this.coll;const g=(q||!n)&&c.startOnTick;n=(q||!n)&&c.endOnTick;q=[];let h;this.tickmarkOffset=this.categories&&"between"===c.tickmarkPlacement&&1===this.tickInterval?.5:0;this.minorTickInterval=
+"auto"===d&&this.tickInterval?this.tickInterval/c.minorTicksPerMajor:d;this.single=this.min===this.max&&e(this.min)&&!this.tickAmount&&(parseInt(this.min,10)===this.min||!1!==c.allowDecimals);if(f)q=f.slice();else if(b(this.min)&&b(this.max)){if(this.ordinal&&this.ordinal.positions||!((this.max-this.min)/this.tickInterval>Math.max(2*this.len,200)))if(this.dateTime)q=this.getTimeTicks(this.dateTime.normalizeTimeTickInterval(this.tickInterval,c.units),this.min,this.max,c.startOfWeek,this.ordinal&&this.ordinal.positions,
+this.closestPointRange,!0);else if(this.logarithmic)q=this.logarithmic.getLogTickPositions(this.tickInterval,this.min,this.max);else for(d=c=this.tickInterval;d<=2*c;)if(q=this.getLinearTickPositions(this.tickInterval,this.min,this.max),this.tickAmount&&q.length>this.tickAmount)this.tickInterval=V(this,d*=1.1);else break;else q=[this.min,this.max],F(19,!1,this.chart);q.length>this.len&&(q=[q[0],q[q.length-1]],q[0]===q[1]&&(q.length=1));a&&(this.tickPositions=q,(h=a.apply(this,[this.min,this.max]))&&
+(q=h))}this.tickPositions=q;this.paddedTicks=q.slice(0);this.trimTicks(q,g,n);!this.isLinked&&b(this.min)&&b(this.max)&&(this.single&&2>q.length&&!this.categories&&!this.series.some(b=>b.is("heatmap")&&"between"===b.options.pointPlacement)&&(this.min-=.5,this.max+=.5),f||h||this.adjustTickAmount());k(this,"afterSetTickPositions")}trimTicks(b,c,f){const a=b[0],d=b[b.length-1],n=!this.isOrdinal&&this.minPointOffset||0;k(this,"trimTicks");if(!this.isLinked){if(c&&-Infinity!==a)this.min=a;else for(;this.min-
+n>b[0];)b.shift();if(f)this.max=d;else for(;this.max+n<b[b.length-1];)b.pop();0===b.length&&e(a)&&!this.options.tickPositions&&b.push((d+a)/2)}}alignToOthers(){const c=this,f=[this],a=c.options,d="yAxis"===this.coll&&this.chart.options.chart.alignThresholds,k=[];let n;c.thresholdAlignment=void 0;if((!1!==this.chart.options.chart.alignTicks&&a.alignTicks||d)&&!1!==a.startOnTick&&!1!==a.endOnTick&&!c.logarithmic){const b=b=>{const {horiz:c,options:f}=b;return[c?f.left:f.top,f.width,f.height,f.pane].join()},
+a=b(this);this.chart[this.coll].forEach(function(d){const {series:k}=d;k.length&&k.some(b=>b.visible)&&d!==c&&b(d)===a&&(n=!0,f.push(d))})}if(n&&d){f.forEach(f=>{f=f.getThresholdAlignment(c);b(f)&&k.push(f)});const a=1<k.length?k.reduce((b,c)=>b+c,0)/k.length:void 0;f.forEach(b=>{b.thresholdAlignment=a})}return n}getThresholdAlignment(c){(!b(this.dataMin)||this!==c&&this.series.some(b=>b.isDirty||b.isDirtyData))&&this.getSeriesExtremes();if(b(this.threshold))return c=h((this.threshold-(this.dataMin||
+0))/((this.dataMax||0)-(this.dataMin||0)),0,1),this.options.reversed&&(c=1-c),c}getTickAmount(){const b=this.options,c=b.tickPixelInterval;let f=b.tickAmount;!e(b.tickInterval)&&!f&&this.len<c&&!this.isRadial&&!this.logarithmic&&b.startOnTick&&b.endOnTick&&(f=2);!f&&this.alignToOthers()&&(f=Math.ceil(this.len/c)+1);4>f&&(this.finalTickAmt=f,f=5);this.tickAmount=f}adjustTickAmount(){const c=this,{finalTickAmt:f,max:a,min:d,options:k,tickPositions:n,tickAmount:q,thresholdAlignment:h}=c,r=n&&n.length;
+var m=D(c.threshold,c.softThreshold?0:null);var l=c.tickInterval;let p;b(h)&&(p=.5>h?Math.ceil(h*(q-1)):Math.floor(h*(q-1)),k.reversed&&(p=q-1-p));if(c.hasData()&&b(d)&&b(a)){const h=()=>{c.transA*=(r-1)/(q-1);c.min=k.startOnTick?n[0]:Math.min(d,n[0]);c.max=k.endOnTick?n[n.length-1]:Math.max(a,n[n.length-1])};if(b(p)&&b(c.threshold)){for(;n[p]!==m||n.length!==q||n[0]>d||n[n.length-1]<a;){n.length=0;for(n.push(c.threshold);n.length<q;)void 0===n[p]||n[p]>c.threshold?n.unshift(g(n[0]-l)):n.push(g(n[n.length-
+1]+l));if(l>8*c.tickInterval)break;l*=2}h()}else if(r<q){for(;n.length<q;)n.length%2||d===m?n.push(g(n[n.length-1]+l)):n.unshift(g(n[0]-l));h()}if(e(f)){for(l=m=n.length;l--;)(3===f&&1===l%2||2>=f&&0<l&&l<m-1)&&n.splice(l,1);c.finalTickAmt=void 0}}}setScale(){let b=!1,c=!1;this.series.forEach(function(f){b=b||f.isDirtyData||f.isDirty;c=c||f.xAxis&&f.xAxis.isDirty||!1});this.setAxisSize();const f=this.len!==(this.old&&this.old.len);f||b||c||this.isLinked||this.forceRedraw||this.userMin!==(this.old&&
+this.old.userMin)||this.userMax!==(this.old&&this.old.userMax)||this.alignToOthers()?(this.stacking&&(this.stacking.resetStacks(),this.stacking.buildStacks()),this.forceRedraw=!1,this.userMinRange||(this.minRange=void 0),this.getSeriesExtremes(),this.setTickInterval(),this.isDirty||(this.isDirty=f||this.min!==(this.old&&this.old.min)||this.max!==(this.old&&this.old.max))):this.stacking&&this.stacking.cleanStacks();b&&this.panningState&&(this.panningState.isDirty=!0);k(this,"afterSetScale")}setExtremes(b,
+c,f,a,n){const e=this,q=e.chart;f=D(f,!0);e.series.forEach(function(b){delete b.kdTree});n=d(n,{min:b,max:c});k(e,"setExtremes",n,function(){e.userMin=b;e.userMax=c;e.eventArgs=n;f&&q.redraw(a)})}zoom(b,c){const f=this,a=this.dataMin,d=this.dataMax,n=this.options,q=Math.min(a,D(n.min,a)),g=Math.max(d,D(n.max,d));b={newMin:b,newMax:c};k(this,"zoom",b,function(b){let c=b.newMin,n=b.newMax;if(c!==f.min||n!==f.max)f.allowZoomOutside||(e(a)&&(c<q&&(c=q),c>g&&(c=g)),e(d)&&(n<q&&(n=q),n>g&&(n=g))),f.displayBtn=
+"undefined"!==typeof c||"undefined"!==typeof n,f.setExtremes(c,n,!1,void 0,{trigger:"zoom"});b.zoomed=!0});return b.zoomed}setAxisSize(){const b=this.chart;var c=this.options;const f=c.offsets||[0,0,0,0],a=this.horiz,d=this.width=Math.round(K(D(c.width,b.plotWidth-f[3]+f[1]),b.plotWidth)),n=this.height=Math.round(K(D(c.height,b.plotHeight-f[0]+f[2]),b.plotHeight)),k=this.top=Math.round(K(D(c.top,b.plotTop+f[0]),b.plotHeight,b.plotTop));c=this.left=Math.round(K(D(c.left,b.plotLeft+f[3]),b.plotWidth,
+b.plotLeft));this.bottom=b.chartHeight-n-k;this.right=b.chartWidth-d-c;this.len=Math.max(a?d:n,0);this.pos=a?c:k}getExtremes(){const b=this.logarithmic;return{min:b?g(b.lin2log(this.min)):this.min,max:b?g(b.lin2log(this.max)):this.max,dataMin:this.dataMin,dataMax:this.dataMax,userMin:this.userMin,userMax:this.userMax}}getThreshold(b){var c=this.logarithmic;const f=c?c.lin2log(this.min):this.min;c=c?c.lin2log(this.max):this.max;null===b||-Infinity===b?b=f:Infinity===b?b=c:f>b?b=f:c<b&&(b=c);return this.translate(b,
+0,1,0,1)}autoLabelAlign(b){const c=(D(b,0)-90*this.side+720)%360;b={align:"center"};k(this,"autoLabelAlign",b,function(b){15<c&&165>c?b.align="right":195<c&&345>c&&(b.align="left")});return b.align}tickSize(b){const c=this.options,f=D(c["tick"===b?"tickWidth":"minorTickWidth"],"tick"===b&&this.isXAxis&&!this.categories?1:0);let a=c["tick"===b?"tickLength":"minorTickLength"],d;f&&a&&("inside"===c[b+"Position"]&&(a=-a),d=[a,f]);b={tickSize:d};k(this,"afterTickSize",b);return b.tickSize}labelMetrics(){const b=
+this.chart.renderer;var c=this.ticks;c=c[Object.keys(c)[0]]||{};return this.chart.renderer.fontMetrics(c.label||c.movedLabel||b.box)}unsquish(){const c=this.options.labels;var f=this.horiz;const a=this.tickInterval,d=this.len/(((this.categories?1:0)+this.max-this.min)/a),n=c.rotation,k=.75*this.labelMetrics().h,e=Math.max(this.max-this.min,0),q=function(b){let c=b/(d||1);c=1<c?Math.ceil(c):1;c*a>e&&Infinity!==b&&Infinity!==d&&e&&(c=Math.ceil(e/a));return g(c*a)};let h=a,r,l=Number.MAX_VALUE,m;if(f){if(c.staggerLines||
+(b(n)?m=[n]:d<c.autoRotationLimit&&(m=c.autoRotation)),m){let b;for(const c of m)if(c===n||c&&-90<=c&&90>=c)f=q(Math.abs(k/Math.sin(p*c))),b=f+Math.abs(c/360),b<l&&(l=b,r=c,h=f)}}else h=q(k);this.autoRotation=m;this.labelRotation=D(r,b(n)?n:0);return c.step?a:h}getSlotWidth(c){const f=this.chart,a=this.horiz,d=this.options.labels,n=Math.max(this.tickPositions.length-(this.categories?0:1),1),k=f.margin[3];if(c&&b(c.slotWidth))return c.slotWidth;if(a&&2>d.step)return d.rotation?0:(this.staggerLines||
+1)*this.len/n;if(!a){c=d.style.width;if(void 0!==c)return parseInt(String(c),10);if(k)return k-f.spacing[3]}return.33*f.chartWidth}renderUnsquish(){const b=this.chart,c=b.renderer,a=this.tickPositions,d=this.ticks,n=this.options.labels,k=n.style,e=this.horiz,q=this.getSlotWidth();var g=Math.max(1,Math.round(q-2*n.padding));const h={},r=this.labelMetrics(),m=k.textOverflow;let l,p,D=0;f(n.rotation)||(h.rotation=n.rotation||0);a.forEach(function(b){b=d[b];b.movedLabel&&b.replaceMovedLabel();b&&b.label&&
+b.label.textPxLength>D&&(D=b.label.textPxLength)});this.maxLabelLength=D;if(this.autoRotation)D>g&&D>r.h?h.rotation=this.labelRotation:this.labelRotation=0;else if(q&&(l=g,!m))for(p="clip",g=a.length;!e&&g--;){var t=a[g];if(t=d[t].label)t.styles&&"ellipsis"===t.styles.textOverflow?t.css({textOverflow:"clip"}):t.textPxLength>q&&t.css({width:q+"px"}),t.getBBox().height>this.len/a.length-(r.h-r.f)&&(t.specificTextOverflow="ellipsis")}h.rotation&&(l=D>.5*b.chartHeight?.33*b.chartHeight:D,m||(p="ellipsis"));
+if(this.labelAlign=n.align||this.autoLabelAlign(this.labelRotation))h.align=this.labelAlign;a.forEach(function(b){const c=(b=d[b])&&b.label,f=k.width,a={};c&&(c.attr(h),b.shortenLabel?b.shortenLabel():l&&!f&&"nowrap"!==k.whiteSpace&&(l<c.textPxLength||"SPAN"===c.element.tagName)?(a.width=l+"px",m||(a.textOverflow=c.specificTextOverflow||p),c.css(a)):c.styles&&c.styles.width&&!a.width&&!f&&c.css({width:null}),delete c.specificTextOverflow,b.rotation=h.rotation)},this);this.tickRotCorr=c.rotCorr(r.b,
+this.labelRotation||0,0!==this.side)}hasData(){return this.series.some(function(b){return b.hasData()})||this.options.showEmpty&&e(this.min)&&e(this.max)}addTitle(b){const f=this.chart.renderer,a=this.horiz,d=this.opposite,n=this.options.title,k=this.chart.styledMode;let e;this.axisTitle||((e=n.textAlign)||(e=(a?{low:"left",middle:"center",high:"right"}:{low:d?"right":"left",middle:"center",high:d?"left":"right"})[n.align]),this.axisTitle=f.text(n.text||"",0,0,n.useHTML).attr({zIndex:7,rotation:n.rotation,
+align:e}).addClass("highcharts-axis-title"),k||this.axisTitle.css(c(n.style)),this.axisTitle.add(this.axisGroup),this.axisTitle.isNew=!0);k||n.style.width||this.isRadial||this.axisTitle.css({width:this.len+"px"});this.axisTitle[b?"show":"hide"](b)}generateTick(b){const c=this.ticks;c[b]?c[b].addLabel():c[b]=new H(this,b)}getOffset(){const c=this,{chart:f,horiz:a,options:d,side:n,ticks:q,tickPositions:g,coll:h,axisParent:r}=c,m=f.renderer,l=f.inverted&&!c.isZAxis?[1,0,3,2][n]:n;var p=c.hasData();const t=
+d.title;var w=d.labels;const K=b(d.crossing);var G=f.axisOffset;const R=f.clipOffset,Q=[-1,1,1,-1][n],v=d.className;let ja,u=0,x;var E=0;let F=0;c.showAxis=ja=p||d.showEmpty;c.staggerLines=c.horiz&&w.staggerLines||void 0;if(!c.axisGroup){const b=(b,c,f)=>m.g(b).attr({zIndex:f}).addClass(`highcharts-${h.toLowerCase()}${c} `+(this.isRadial?`highcharts-radial-axis${c} `:"")+(v||"")).add(r);c.gridGroup=b("grid","-grid",d.gridZIndex);c.axisGroup=b("axis","",d.zIndex);c.labelGroup=b("axis-labels","-labels",
+w.zIndex)}p||c.isLinked?(g.forEach(function(b){c.generateTick(b)}),c.renderUnsquish(),c.reserveSpaceDefault=0===n||2===n||{1:"left",3:"right"}[n]===c.labelAlign,D(w.reserveSpace,K?!1:null,"center"===c.labelAlign?!0:null,c.reserveSpaceDefault)&&g.forEach(function(b){F=Math.max(q[b].getLabelSize(),F)}),c.staggerLines&&(F*=c.staggerLines),c.labelOffset=F*(c.opposite?-1:1)):P(q,function(b,c){b.destroy();delete q[c]});t&&t.text&&!1!==t.enabled&&(c.addTitle(ja),ja&&!K&&!1!==t.reserveSpace&&(c.titleOffset=
+u=c.axisTitle.getBBox()[a?"height":"width"],x=t.offset,E=e(x)?0:D(t.margin,a?5:10)));c.renderLine();c.offset=Q*D(d.offset,G[n]?G[n]+(d.margin||0):0);c.tickRotCorr=c.tickRotCorr||{x:0,y:0};p=0===n?-c.labelMetrics().h:2===n?c.tickRotCorr.y:0;E=Math.abs(F)+E;F&&(E=E-p+Q*(a?D(w.y,c.tickRotCorr.y+Q*w.distance):D(w.x,Q*w.distance)));c.axisTitleMargin=D(x,E);c.getMaxLabelDimensions&&(c.maxLabelDimensions=c.getMaxLabelDimensions(q,g));"colorAxis"!==h&&(w=this.tickSize("tick"),G[n]=Math.max(G[n],(c.axisTitleMargin||
+0)+u+Q*c.offset,E,g&&g.length&&w?w[0]+Q*c.offset:0),G=!c.axisLine||d.offset?0:2*Math.floor(c.axisLine.strokeWidth()/2),R[l]=Math.max(R[l],G));k(this,"afterGetOffset")}getLinePath(b){const c=this.chart,f=this.opposite;var a=this.offset;const d=this.horiz,n=this.left+(f?this.width:0)+a;a=c.chartHeight-this.bottom-(f?this.height:0)+a;f&&(b*=-1);return c.renderer.crispLine([["M",d?this.left:n,d?a:this.top],["L",d?c.chartWidth-this.right:n,d?a:c.chartHeight-this.bottom]],b)}renderLine(){this.axisLine||
+(this.axisLine=this.chart.renderer.path().addClass("highcharts-axis-line").add(this.axisGroup),this.chart.styledMode||this.axisLine.attr({stroke:this.options.lineColor,"stroke-width":this.options.lineWidth,zIndex:7}))}getTitlePosition(b){var c=this.horiz,f=this.left;const a=this.top;var d=this.len;const n=this.options.title,e=c?f:a,q=this.opposite,g=this.offset,h=n.x,r=n.y,l=this.chart.renderer.fontMetrics(b);b=b?Math.max(b.getBBox(!1,0).height-l.h-1,0):0;d={low:e+(c?0:d),middle:e+d/2,high:e+(c?d:
+0)}[n.align];f=(c?a+this.height:f)+(c?1:-1)*(q?-1:1)*(this.axisTitleMargin||0)+[-b,b,l.f,-b][this.side];c={x:c?d+h:f+(q?this.width:0)+g+h,y:c?f+r-(q?this.height:0)+g:d+r};k(this,"afterGetTitlePosition",{titlePosition:c});return c}renderMinorTick(b,c){const f=this.minorTicks;f[b]||(f[b]=new H(this,b,"minor"));c&&f[b].isNew&&f[b].render(null,!0);f[b].render(null,!1,1)}renderTick(b,c,f){const a=this.ticks;if(!this.isLinked||b>=this.min&&b<=this.max||this.grid&&this.grid.isColumn)a[b]||(a[b]=new H(this,
+b)),f&&a[b].isNew&&a[b].render(c,!0,-1),a[b].render(c)}render(){const c=this,f=c.chart,a=c.logarithmic,d=c.options,n=c.isLinked,e=c.tickPositions,q=c.axisTitle,g=c.ticks,h=c.minorTicks,r=c.alternateBands,l=d.stackLabels,m=d.alternateGridColor;var p=d.crossing;const D=c.tickmarkOffset,t=c.axisLine,w=c.showAxis,K=u(f.renderer.globalAnimation);let Q,G;c.labelEdge.length=0;c.overlap=!1;[g,h,r].forEach(function(b){P(b,function(b){b.isActive=!1})});if(b(p)){const b=this.isXAxis?f.yAxis[0]:f.xAxis[0],a=
+[1,-1,-1,1][this.side];b&&(p=b.toPixels(p,!0),c.horiz&&(p=b.len-p),c.offset=a*p)}if(c.hasData()||n){const n=c.chart.hasRendered&&c.old&&b(c.old.min);c.minorTickInterval&&!c.categories&&c.getMinorTickPositions().forEach(function(b){c.renderMinorTick(b,n)});e.length&&(e.forEach(function(b,f){c.renderTick(b,f,n)}),D&&(0===c.min||c.single)&&(g[-1]||(g[-1]=new H(c,-1,null,!0)),g[-1].render(-1)));m&&e.forEach(function(b,d){G="undefined"!==typeof e[d+1]?e[d+1]+D:c.max-D;0===d%2&&b<c.max&&G<=c.max+(f.polar?
+-D:D)&&(r[b]||(r[b]=new z.PlotLineOrBand(c)),Q=b+D,r[b].options={from:a?a.lin2log(Q):Q,to:a?a.lin2log(G):G,color:m,className:"highcharts-alternate-grid"},r[b].render(),r[b].isActive=!0)});c._addedPlotLB||(c._addedPlotLB=!0,(d.plotLines||[]).concat(d.plotBands||[]).forEach(function(b){c.addPlotBandOrLine(b)}))}[g,h,r].forEach(function(b){const c=[],a=K.duration;P(b,function(b,f){b.isActive||(b.render(f,!1,0),b.isActive=!1,c.push(f))});Z(function(){let f=c.length;for(;f--;)b[c[f]]&&!b[c[f]].isActive&&
+(b[c[f]].destroy(),delete b[c[f]])},b!==r&&f.hasRendered&&a?a:0)});t&&(t[t.isPlaced?"animate":"attr"]({d:this.getLinePath(t.strokeWidth())}),t.isPlaced=!0,t[w?"show":"hide"](w));q&&w&&(q[q.isNew?"attr":"animate"](c.getTitlePosition(q)),q.isNew=!1);l&&l.enabled&&c.stacking&&c.stacking.renderStackTotals();c.old={len:c.len,max:c.max,min:c.min,transA:c.transA,userMax:c.userMax,userMin:c.userMin};c.isDirty=!1;k(this,"afterRender")}redraw(){this.visible&&(this.render(),this.plotLinesAndBands.forEach(function(b){b.render()}));
+this.series.forEach(function(b){b.isDirty=!0})}getKeepProps(){return this.keepProps||Y.keepProps}destroy(b){const c=this,f=c.plotLinesAndBands,a=this.eventOptions;k(this,"destroy",{keepEvents:b});b||X(c);[c.ticks,c.minorTicks,c.alternateBands].forEach(function(b){w(b)});if(f)for(b=f.length;b--;)f[b].destroy();"axisLine axisTitle axisGroup gridGroup labelGroup cross scrollbar".split(" ").forEach(function(b){c[b]&&(c[b]=c[b].destroy())});for(const b in c.plotLinesAndBandsGroups)c.plotLinesAndBandsGroups[b]=
+c.plotLinesAndBandsGroups[b].destroy();P(c,function(b,f){-1===c.getKeepProps().indexOf(f)&&delete c[f]});this.eventOptions=a}drawCrosshair(b,c){const f=this.crosshair;var a=D(f&&f.snap,!0);const n=this.chart;let q,g=this.cross;k(this,"drawCrosshair",{e:b,point:c});b||(b=this.cross&&this.cross.e);if(f&&!1!==(e(c)||!a)){a?e(c)&&(q=D("colorAxis"!==this.coll?c.crosshairPos:null,this.isXAxis?c.plotX:this.len-c.plotY)):q=b&&(this.horiz?b.chartX-this.pos:this.len-b.chartY+this.pos);if(e(q)){var h={value:c&&
+(this.isXAxis?c.x:D(c.stackY,c.y)),translatedValue:q};n.polar&&d(h,{isCrosshair:!0,chartX:b&&b.chartX,chartY:b&&b.chartY,point:c});h=this.getPlotLinePath(h)||null}if(!e(h)){this.hideCrosshair();return}a=this.categories&&!this.isRadial;g||(this.cross=g=n.renderer.path().addClass("highcharts-crosshair highcharts-crosshair-"+(a?"category ":"thin ")+(f.className||"")).attr({zIndex:D(f.zIndex,2)}).add(),n.styledMode||(g.attr({stroke:f.color||(a?I.parse("#ccd3ff").setOpacity(.25).get():"#cccccc"),"stroke-width":D(f.width,
+1)}).css({"pointer-events":"none"}),f.dashStyle&&g.attr({dashstyle:f.dashStyle})));g.show().attr({d:h});a&&!f.width&&g.attr({"stroke-width":this.transA});this.cross.e=b}else this.hideCrosshair();k(this,"afterDrawCrosshair",{e:b,point:c})}hideCrosshair(){this.cross&&this.cross.hide();k(this,"afterHideCrosshair")}hasVerticalPanning(){const b=this.chart.options.chart.panning;return!!(b&&b.enabled&&/y/.test(b.type))}update(b,f){const a=this.chart;b=c(this.userOptions,b);this.destroy(!0);this.init(a,b);
+a.isDirtyBox=!0;D(f,!0)&&a.redraw()}remove(b){const c=this.chart,f=this.coll,a=this.series;let d=a.length;for(;d--;)a[d]&&a[d].remove(!1);x(c.axes,this);x(c[f]||[],this);c.orderItems(f);this.destroy();c.isDirtyBox=!0;D(b,!0)&&c.redraw()}setTitle(b,c){this.update({title:b},c)}setCategories(b,c){this.update({categories:b},c)}}Y.defaultOptions=y.defaultXAxisOptions;Y.keepProps="coll extKey hcEvents names series userMax userMin".split(" ");"";return Y});M(a,"Core/Axis/DateTimeAxis.js",[a["Core/Utilities.js"]],
+function(a){const {addEvent:x,getMagnitude:I,normalizeTickInterval:L,timeUnits:C}=a;var z;(function(y){function B(){return this.chart.time.getTimeTicks.apply(this.chart.time,arguments)}function u(a){"datetime"!==a.userOptions.type?this.dateTime=void 0:this.dateTime||(this.dateTime=new l(this))}const v=[];y.compose=function(l){a.pushUnique(v,l)&&(l.keepProps.push("dateTime"),l.prototype.getTimeTicks=B,x(l,"init",u));return l};class l{constructor(a){this.axis=a}normalizeTimeTickInterval(a,l){const m=
+l||[["millisecond",[1,2,5,10,20,25,50,100,200,500]],["second",[1,2,5,10,15,30]],["minute",[1,2,5,10,15,30]],["hour",[1,2,3,4,6,8,12]],["day",[1,2]],["week",[1,2]],["month",[1,2,3,4,6]],["year",null]];l=m[m.length-1];let h=C[l[0]],g=l[1],e;for(e=0;e<m.length&&!(l=m[e],h=C[l[0]],g=l[1],m[e+1]&&a<=(h*g[g.length-1]+C[m[e+1][0]])/2);e++);h===C.year&&a<5*h&&(g=[1,2,5]);a=L(a/h,g,"year"===l[0]?Math.max(I(a/h),1):1);return{unitRange:h,count:a,unitName:l[0]}}getXDateFormat(a,l){const {axis:m}=this,h=m.chart.time;
+return m.closestPointRange?h.getDateFormat(m.closestPointRange,a,m.options.startOfWeek,l)||h.resolveDTLFormat(l.year).main:h.resolveDTLFormat(l.day).main}}y.Additions=l})(z||(z={}));return z});M(a,"Core/Axis/LogarithmicAxis.js",[a["Core/Utilities.js"]],function(a){const {addEvent:x,normalizeTickInterval:I,pick:L}=a;var C;(function(y){function H(a){let l=this.logarithmic;"logarithmic"!==a.userOptions.type?this.logarithmic=void 0:l||(this.logarithmic=new v(this))}function B(){const a=this.logarithmic;
+a&&(this.lin2val=function(l){return a.lin2log(l)},this.val2lin=function(l){return a.log2lin(l)})}const u=[];y.compose=function(l){a.pushUnique(u,l)&&(l.keepProps.push("logarithmic"),x(l,"init",H),x(l,"afterInit",B));return l};class v{constructor(a){this.axis=a}getLogTickPositions(a,p,t,m){const h=this.axis;var g=h.len,e=h.options;let l=[];m||(this.minorAutoInterval=void 0);if(.5<=a)a=Math.round(a),l=h.getLinearTickPositions(a,p,t);else if(.08<=a){e=Math.floor(p);let h,w,d,k,r;for(g=.3<a?[1,2,4]:.15<
+a?[1,2,4,6,8]:[1,2,3,4,5,6,7,8,9];e<t+1&&!r;e++)for(w=g.length,h=0;h<w&&!r;h++)d=this.log2lin(this.lin2log(e)*g[h]),d>p&&(!m||k<=t)&&"undefined"!==typeof k&&l.push(k),k>t&&(r=!0),k=d}else p=this.lin2log(p),t=this.lin2log(t),a=m?h.getMinorTickInterval():e.tickInterval,a=L("auto"===a?null:a,this.minorAutoInterval,e.tickPixelInterval/(m?5:1)*(t-p)/((m?g/h.tickPositions.length:g)||1)),a=I(a),l=h.getLinearTickPositions(a,p,t).map(this.log2lin),m||(this.minorAutoInterval=a/5);m||(h.tickInterval=a);return l}lin2log(a){return Math.pow(10,
+a)}log2lin(a){return Math.log(a)/Math.LN10}}y.Additions=v})(C||(C={}));return C});M(a,"Core/Axis/PlotLineOrBand/PlotLineOrBandAxis.js",[a["Core/Utilities.js"]],function(a){const {erase:x,extend:I,isNumber:L}=a;var C;(function(y){function H(a){return this.addPlotBandOrLine(a,"plotBands")}function B(a,e){const g=this.userOptions;let l=new h(this,a);this.visible&&(l=l.render());if(l){this._addedPlotLB||(this._addedPlotLB=!0,(g.plotLines||[]).concat(g.plotBands||[]).forEach(a=>{this.addPlotBandOrLine(a)}));
+if(e){const h=g[e]||[];h.push(a);g[e]=h}this.plotLinesAndBands.push(l)}return l}function u(a){return this.addPlotBandOrLine(a,"plotLines")}function v(a,e,h=this.options){const g=this.getPlotLinePath({value:e,force:!0,acrossPanes:h.acrossPanes}),l=[],d=this.horiz;e=!L(this.min)||!L(this.max)||a<this.min&&e<this.min||a>this.max&&e>this.max;a=this.getPlotLinePath({value:a,force:!0,acrossPanes:h.acrossPanes});h=1;let k;if(a&&g)for(e&&(k=a.toString()===g.toString(),h=0),e=0;e<a.length;e+=2){const r=a[e],
+q=a[e+1],m=g[e],b=g[e+1];"M"!==r[0]&&"L"!==r[0]||"M"!==q[0]&&"L"!==q[0]||"M"!==m[0]&&"L"!==m[0]||"M"!==b[0]&&"L"!==b[0]||(d&&m[1]===r[1]?(m[1]+=h,b[1]+=h):d||m[2]!==r[2]||(m[2]+=h,b[2]+=h),l.push(["M",r[1],r[2]],["L",q[1],q[2]],["L",b[1],b[2]],["L",m[1],m[2]],["Z"]));l.isFlat=k}return l}function l(a){this.removePlotBandOrLine(a)}function p(a){const e=this.plotLinesAndBands,g=this.options,h=this.userOptions;if(e){let l=e.length;for(;l--;)e[l].id===a&&e[l].destroy();[g.plotLines||[],h.plotLines||[],
+g.plotBands||[],h.plotBands||[]].forEach(function(d){for(l=d.length;l--;)(d[l]||{}).id===a&&x(d,d[l])})}}function t(a){this.removePlotBandOrLine(a)}const m=[];let h;y.compose=function(g,e){h||(h=g);a.pushUnique(m,e)&&I(e.prototype,{addPlotBand:H,addPlotLine:u,addPlotBandOrLine:B,getPlotBandPath:v,removePlotBand:l,removePlotLine:t,removePlotBandOrLine:p});return e}})(C||(C={}));return C});M(a,"Core/Axis/PlotLineOrBand/PlotLineOrBand.js",[a["Core/Axis/PlotLineOrBand/PlotLineOrBandAxis.js"],a["Core/Utilities.js"]],
+function(a,y){const {arrayMax:x,arrayMin:L,defined:C,destroyObjectProperties:z,erase:H,fireEvent:B,merge:u,objectEach:v,pick:l}=y;class p{static compose(l){return a.compose(p,l)}constructor(a,l){this.axis=a;l&&(this.options=l,this.id=l.id)}render(){B(this,"render");const a=this,m=a.axis,h=m.horiz;var g=m.logarithmic;const e=a.options,p=e.color,x=l(e.zIndex,0),F=e.events,d={},k=m.chart.renderer;let r=e.label,q=a.label,G=e.to,b=e.from,f=e.value,c=a.svgElem;var n=[];const P=C(b)&&C(G);n=C(f);const D=
+!c,K={"class":"highcharts-plot-"+(P?"band ":"line ")+(e.className||"")};let X=P?"bands":"lines";g&&(b=g.log2lin(b),G=g.log2lin(G),f=g.log2lin(f));m.chart.styledMode||(n?(K.stroke=p||"#999999",K["stroke-width"]=l(e.width,1),e.dashStyle&&(K.dashstyle=e.dashStyle)):P&&(K.fill=p||"#e6e9ff",e.borderWidth&&(K.stroke=e.borderColor,K["stroke-width"]=e.borderWidth)));d.zIndex=x;X+="-"+x;(g=m.plotLinesAndBandsGroups[X])||(m.plotLinesAndBandsGroups[X]=g=k.g("plot-"+X).attr(d).add());D&&(a.svgElem=c=k.path().attr(K).add(g));
+if(n)n=m.getPlotLinePath({value:f,lineWidth:c.strokeWidth(),acrossPanes:e.acrossPanes});else if(P)n=m.getPlotBandPath(b,G,e);else return;!a.eventsAdded&&F&&(v(F,function(b,f){c.on(f,function(b){F[f].apply(a,[b])})}),a.eventsAdded=!0);(D||!c.d)&&n&&n.length?c.attr({d:n}):c&&(n?(c.show(),c.animate({d:n})):c.d&&(c.hide(),q&&(a.label=q=q.destroy())));r&&(C(r.text)||C(r.formatter))&&n&&n.length&&0<m.width&&0<m.height&&!n.isFlat?(r=u({align:h&&P&&"center",x:h?!P&&4:10,verticalAlign:!h&&P&&"middle",y:h?
+P?16:10:P?6:-4,rotation:h&&!P&&90},r),this.renderLabel(r,n,P,x)):q&&q.hide();return a}renderLabel(a,l,h,g){const e=this.axis;var m=e.chart.renderer;let p=this.label;p||(this.label=p=m.text(this.getLabelText(a),0,0,a.useHTML).attr({align:a.textAlign||a.align,rotation:a.rotation,"class":"highcharts-plot-"+(h?"band":"line")+"-label "+(a.className||""),zIndex:g}).add(),e.chart.styledMode||p.css(u({fontSize:"0.8em",textOverflow:"ellipsis"},a.style)));g=l.xBounds||[l[0][1],l[1][1],h?l[2][1]:l[0][1]];l=
+l.yBounds||[l[0][2],l[1][2],h?l[2][2]:l[0][2]];h=L(g);m=L(l);p.align(a,!1,{x:h,y:m,width:x(g)-h,height:x(l)-m});p.alignValue&&"left"!==p.alignValue||(a=a.clip?e.width:e.chart.chartWidth,p.css({width:(90===p.rotation?e.height-(p.alignAttr.y-e.top):a-(p.alignAttr.x-e.left))+"px"}));p.show(!0)}getLabelText(a){return C(a.formatter)?a.formatter.call(this):a.text}destroy(){H(this.axis.plotLinesAndBands,this);delete this.axis;z(this)}}"";"";return p});M(a,"Core/Tooltip.js",[a["Core/Templating.js"],a["Core/Globals.js"],
+a["Core/Renderer/RendererUtilities.js"],a["Core/Renderer/RendererRegistry.js"],a["Core/Utilities.js"]],function(a,y,I,L,C){const {format:x}=a,{doc:H,isSafari:B}=y,{distribute:u}=I,{addEvent:v,clamp:l,css:p,discardElement:t,extend:m,fireEvent:h,isArray:g,isNumber:e,isString:w,merge:E,pick:F,splat:d,syncTimeout:k}=C;class r{constructor(a,d){this.allowShared=!0;this.container=void 0;this.crosshairs=[];this.distance=0;this.isHidden=!0;this.isSticky=!1;this.now={};this.options={};this.outside=!1;this.chart=
+a;this.init(a,d)}bodyFormatter(a){return a.map(function(a){const b=a.series.tooltipOptions;return(b[(a.point.formatPrefix||"point")+"Formatter"]||a.point.tooltipFormatter).call(a.point,b[(a.point.formatPrefix||"point")+"Format"]||"")})}cleanSplit(a){this.chart.series.forEach(function(d){const b=d&&d.tt;b&&(!b.isActive||a?d.tt=b.destroy():b.isActive=!1)})}defaultFormatter(a){const k=this.points||d(this);let b;b=[a.tooltipFooterHeaderFormatter(k[0])];b=b.concat(a.bodyFormatter(k));b.push(a.tooltipFooterHeaderFormatter(k[0],
+!0));return b}destroy(){this.label&&(this.label=this.label.destroy());this.split&&(this.cleanSplit(!0),this.tt&&(this.tt=this.tt.destroy()));this.renderer&&(this.renderer=this.renderer.destroy(),t(this.container));C.clearTimeout(this.hideTimer);C.clearTimeout(this.tooltipTimeout)}getAnchor(a,k){var b=this.chart;const f=b.pointer,c=b.inverted,n=b.plotTop;b=b.plotLeft;a=d(a);a[0].series&&a[0].series.yAxis&&!a[0].series.yAxis.options.reversedStacks&&(a=a.slice().reverse());if(this.followPointer&&k)"undefined"===
+typeof k.chartX&&(k=f.normalize(k)),a=[k.chartX-b,k.chartY-n];else if(a[0].tooltipPos)a=a[0].tooltipPos;else{let f=0,d=0;a.forEach(function(b){if(b=b.pos(!0))f+=b[0],d+=b[1]});f/=a.length;d/=a.length;this.shared&&1<a.length&&k&&(c?f=k.chartX:d=k.chartY);a=[f-b,d-n]}return a.map(Math.round)}getClassName(a,d,b){const f=a.series,c=f.options;return[this.options.className,"highcharts-label",b&&"highcharts-tooltip-header",d?"highcharts-tooltip-box":"highcharts-tooltip",!b&&"highcharts-color-"+F(a.colorIndex,
+f.colorIndex),c&&c.className].filter(w).join(" ")}getLabel(){const a=this,d=this.chart.styledMode,b=this.options,f=this.split&&this.allowShared,c=b.style.pointerEvents||(this.shouldStickOnContact()?"auto":"none");let n,k=this.chart.renderer;if(this.label){var e=!this.label.hasClass("highcharts-label");(!f&&e||f&&!e)&&this.destroy()}if(!this.label){if(this.outside){e=this.chart.options.chart.style;const b=L.getRendererType();this.container=n=y.doc.createElement("div");n.className="highcharts-tooltip-container";
+p(n,{position:"absolute",top:"1px",pointerEvents:c,zIndex:Math.max(this.options.style.zIndex||0,(e&&e.zIndex||0)+3)});y.doc.body.appendChild(n);this.renderer=k=new b(n,0,0,e,void 0,void 0,k.styledMode)}f?this.label=k.g("tooltip"):(this.label=k.label("",0,0,b.shape,void 0,void 0,b.useHTML,void 0,"tooltip").attr({padding:b.padding,r:b.borderRadius}),d||this.label.attr({fill:b.backgroundColor,"stroke-width":b.borderWidth||0}).css(b.style).css({pointerEvents:c}));if(a.outside){const b=this.label,{xSetter:c,
+ySetter:f}=b;b.xSetter=function(f){c.call(b,a.distance);n.style.left=f+"px"};b.ySetter=function(c){f.call(b,a.distance);n.style.top=c+"px"}}this.label.attr({zIndex:8}).shadow(b.shadow).add()}return this.label}getPlayingField(){const {body:a,documentElement:d}=H,{chart:b,distance:f,outside:c}=this;return{width:c?Math.max(a.scrollWidth,d.scrollWidth,a.offsetWidth,d.offsetWidth,d.clientWidth)-2*f:b.chartWidth,height:c?Math.max(a.scrollHeight,d.scrollHeight,a.offsetHeight,d.offsetHeight,d.clientHeight):
+b.chartHeight}}getPosition(a,d,b){const f=this.chart,c=this.distance,n={},k=f.inverted&&b.h||0,e=this.outside;var q=this.getPlayingField();const g=q.width,h=q.height,r=f.pointer.getChartPosition();q=n=>{const k="x"===n;return[n,k?g:h,k?a:d].concat(e?[k?a*r.scaleX:d*r.scaleY,k?r.left-c+(b.plotX+f.plotLeft)*r.scaleX:r.top-c+(b.plotY+f.plotTop)*r.scaleY,0,k?g:h]:[k?a:d,k?b.plotX+f.plotLeft:b.plotY+f.plotTop,k?f.plotLeft:f.plotTop,k?f.plotLeft+f.plotWidth:f.plotTop+f.plotHeight])};let l=q("y"),m=q("x"),
+p;q=!!b.negative;!f.polar&&f.hoverSeries&&f.hoverSeries.yAxis&&f.hoverSeries.yAxis.reversed&&(q=!q);const t=!this.followPointer&&F(b.ttBelow,!f.inverted===q),w=function(b,a,f,d,q,g,h){const l=e?"y"===b?c*r.scaleY:c*r.scaleX:c,m=(f-d)/2,p=d<q-c,J=q+c+d<a,D=q-l-f+m;q=q+l-m;if(t&&J)n[b]=q;else if(!t&&p)n[b]=D;else if(p)n[b]=Math.min(h-d,0>D-k?D:D-k);else if(J)n[b]=Math.max(g,q+k+f>a?q:q+k);else return!1},G=function(b,a,f,d,k){let e;k<c||k>a-c?e=!1:n[b]=k<f/2?1:k>a-d/2?a-d-2:k-f/2;return e},v=function(b){const c=
+l;l=m;m=c;p=b},J=function(){!1!==w.apply(0,l)?!1!==G.apply(0,m)||p||(v(!0),J()):p?n.x=n.y=0:(v(!0),J())};(f.inverted||1<this.len)&&v();J();return n}hide(a){const d=this;C.clearTimeout(this.hideTimer);a=F(a,this.options.hideDelay);this.isHidden||(this.hideTimer=k(function(){d.getLabel().fadeOut(a?void 0:a);d.isHidden=!0},a))}init(a,d){this.chart=a;this.options=d;this.crosshairs=[];this.now={x:0,y:0};this.isHidden=!0;this.split=d.split&&!a.inverted&&!a.polar;this.shared=d.shared||this.split;this.outside=
+F(d.outside,!(!a.scrollablePixelsX&&!a.scrollablePixelsY))}shouldStickOnContact(a){return!(this.followPointer||!this.options.stickOnContact||a&&!this.chart.pointer.inClass(a.target,"highcharts-tooltip"))}move(a,d,b,f){const c=this,n=c.now,k=!1!==c.options.animation&&!c.isHidden&&(1<Math.abs(a-n.x)||1<Math.abs(d-n.y)),e=c.followPointer||1<c.len;m(n,{x:k?(2*n.x+a)/3:a,y:k?(n.y+d)/2:d,anchorX:e?void 0:k?(2*n.anchorX+b)/3:b,anchorY:e?void 0:k?(n.anchorY+f)/2:f});c.getLabel().attr(n);c.drawTracker();k&&
+(C.clearTimeout(this.tooltipTimeout),this.tooltipTimeout=setTimeout(function(){c&&c.move(a,d,b,f)},32))}refresh(a,k){const b=this.chart,f=this.options,c=b.pointer,n=d(a),e=n[0],q=[];var r=f.format,l=f.formatter||this.defaultFormatter;const m=this.shared,p=b.styledMode;let t={};if(f.enabled&&e.series){C.clearTimeout(this.hideTimer);this.allowShared=!(!g(a)&&a.series&&a.series.noSharedTooltip);this.followPointer=!this.split&&e.series.tooltipOptions.followPointer;a=this.getAnchor(a,k);var v=a[0],G=a[1];
+m&&this.allowShared?(c.applyInactiveState(n),n.forEach(function(b){b.setState("hover");q.push(b.getLabelConfig())}),t=e.getLabelConfig(),t.points=q):t=e.getLabelConfig();this.len=q.length;r=w(r)?x(r,t,b):l.call(t,this);l=e.series;this.distance=F(l.tooltipOptions.distance,16);if(!1===r)this.hide();else{if(this.split&&this.allowShared)this.renderSplit(r,n);else{let d=v,g=G;k&&c.isDirectTouch&&(d=k.chartX-b.plotLeft,g=k.chartY-b.plotTop);if(b.polar||!1===l.options.clip||n.some(b=>c.isDirectTouch||b.series.shouldShowTooltip(d,
+g)))k=this.getLabel(),f.style.width&&!p||k.css({width:(this.outside?this.getPlayingField():b.spacingBox).width+"px"}),k.attr({text:r&&r.join?r.join(""):r}),k.addClass(this.getClassName(e),!0),p||k.attr({stroke:f.borderColor||e.color||l.color||"#666666"}),this.updatePosition({plotX:v,plotY:G,negative:e.negative,ttBelow:e.ttBelow,h:a[2]||0});else{this.hide();return}}this.isHidden&&this.label&&this.label.attr({opacity:1}).show();this.isHidden=!1}h(this,"refresh")}}renderSplit(a,d){function b(b,c,a,d,
+n=!0){a?(c=S?0:z,b=l(b-d/2,J.left,J.right-d-(f.outside?W:0))):(c-=da,b=n?b-d-x:b+x,b=l(b,n?b:J.left,J.right));return{x:b,y:c}}const f=this,{chart:c,chart:{chartWidth:n,chartHeight:k,plotHeight:e,plotLeft:g,plotTop:h,pointer:q,scrollablePixelsY:r=0,scrollablePixelsX:p,scrollingContainer:{scrollLeft:t,scrollTop:v}={scrollLeft:0,scrollTop:0},styledMode:G},distance:x,options:E,options:{positioner:y}}=f,J=f.outside&&"number"!==typeof p?H.documentElement.getBoundingClientRect():{left:t,right:t+n,top:v,
+bottom:v+k},N=f.getLabel(),O=this.renderer||c.renderer,S=!(!c.xAxis[0]||!c.xAxis[0].opposite),{left:W,top:ha}=q.getChartPosition();let da=h+v,C=0,z=e-r;w(a)&&(a=[!1,a]);a=a.slice(0,d.length+1).reduce(function(c,a,n){if(!1!==a&&""!==a){n=d[n-1]||{isHeader:!0,plotX:d[0].plotX,plotY:e,series:{}};const D=n.isHeader;var k=D?f:n.series,q;{var r=n;a=a.toString();var m=k.tt;const {isHeader:b,series:c}=r;m||(m={padding:E.padding,r:E.borderRadius},G||(m.fill=E.backgroundColor,m["stroke-width"]=null!==(q=E.borderWidth)&&
+void 0!==q?q:1),m=O.label("",0,0,E[b?"headerShape":"shape"],void 0,void 0,E.useHTML).addClass(f.getClassName(r,!0,b)).attr(m).add(N));m.isActive=!0;m.attr({text:a});G||m.css(E.style).attr({stroke:E.borderColor||r.color||c.color||"#333333"});q=m}q=k.tt=q;r=q.getBBox();k=r.width+q.strokeWidth();D&&(C=r.height,z+=C,S&&(da-=C));{const {isHeader:b,plotX:c=0,plotY:f=0,series:d}=n;if(b){a=g+c;var p=h+e/2}else{const {xAxis:b,yAxis:n}=d;a=b.pos+l(c,-x,b.len+x);d.shouldShowTooltip(0,n.pos-h+f,{ignoreX:!0})&&
+(p=n.pos+f)}a=l(a,J.left-x,J.right+x);p={anchorX:a,anchorY:p}}const {anchorX:t,anchorY:Q}=p;"number"===typeof Q?(p=r.height+1,r=y?y.call(f,k,p,n):b(t,Q,D,k),c.push({align:y?0:void 0,anchorX:t,anchorY:Q,boxWidth:k,point:n,rank:F(r.rank,D?1:0),size:p,target:r.y,tt:q,x:r.x})):q.isActive=!1}return c},[]);!y&&a.some(b=>{var {outside:c}=f;c=(c?W:0)+b.anchorX;return c<J.left&&c+b.boxWidth<J.right?!0:c<W-J.left+b.boxWidth&&J.right-c>c})&&(a=a.map(c=>{const {x:a,y:f}=b(c.anchorX,c.anchorY,c.point.isHeader,
+c.boxWidth,!1);return m(c,{target:f,x:a})}));f.cleanSplit();u(a,z);var ca=W,L=W;a.forEach(function(b){const {x:c,boxWidth:a,isHeader:d}=b;d||(f.outside&&W+c<ca&&(ca=W+c),!d&&f.outside&&ca+a>L&&(L=W+c))});a.forEach(function(b){const {x:c,anchorX:a,anchorY:d,pos:n,point:{isHeader:k}}=b,e={visibility:"undefined"===typeof n?"hidden":"inherit",x:c,y:(n||0)+da,anchorX:a,anchorY:d};if(f.outside&&c<a){const b=W-ca;0<b&&(k||(e.x=c+b,e.anchorX=a+b),k&&(e.x=(L-ca)/2,e.anchorX=a+b))}b.tt.attr(e)});const {container:R,
+outside:Q,renderer:la}=f;if(Q&&R&&la){const {width:b,height:c,x:a,y:f}=N.getBBox();la.setSize(b+a,c+f,!1);R.style.left=ca+"px";R.style.top=ha+"px"}B&&N.attr({opacity:1===N.opacity?.999:1})}drawTracker(){if(this.shouldStickOnContact()){var a=this.chart,d=this.label,b=this.shared?a.hoverPoints:a.hoverPoint;if(d&&b){var f={x:0,y:0,width:0,height:0};b=this.getAnchor(b);var c=d.getBBox();b[0]+=a.plotLeft-d.translateX;b[1]+=a.plotTop-d.translateY;f.x=Math.min(0,b[0]);f.y=Math.min(0,b[1]);f.width=0>b[0]?
+Math.max(Math.abs(b[0]),c.width-b[0]):Math.max(Math.abs(b[0]),c.width);f.height=0>b[1]?Math.max(Math.abs(b[1]),c.height-Math.abs(b[1])):Math.max(Math.abs(b[1]),c.height);this.tracker?this.tracker.attr(f):(this.tracker=d.renderer.rect(f).addClass("highcharts-tracker").add(d),a.styledMode||this.tracker.attr({fill:"rgba(0,0,0,0)"}))}}else this.tracker&&(this.tracker=this.tracker.destroy())}styledModeFormat(a){return a.replace('style="font-size: 0.8em"','class="highcharts-header"').replace(/style="color:{(point|series)\.color}"/g,
+'class="highcharts-color-{$1.colorIndex} {series.options.className} {point.options.className}"')}tooltipFooterHeaderFormatter(a,d){const b=a.series,f=b.tooltipOptions;var c=b.xAxis;const n=c&&c.dateTime;c={isFooter:d,labelConfig:a};let k=f.xDateFormat,g=f[d?"footerFormat":"headerFormat"];h(this,"headerFormatter",c,function(c){n&&!k&&e(a.key)&&(k=n.getXDateFormat(a.key,f.dateTimeLabelFormats));n&&k&&(a.point&&a.point.tooltipDateKeys||["key"]).forEach(function(b){g=g.replace("{point."+b+"}","{point."+
+b+":"+k+"}")});b.chart.styledMode&&(g=this.styledModeFormat(g));c.text=x(g,{point:a,series:b},this.chart)});return c.text}update(a){this.destroy();this.init(this.chart,E(!0,this.options,a))}updatePosition(a){const {chart:d,distance:b,options:f}=this;var c=d.pointer;const n=this.getLabel(),{left:k,top:e,scaleX:g,scaleY:h}=c.getChartPosition();c=(f.positioner||this.getPosition).call(this,n.width,n.height,a);let q=(a.plotX||0)+d.plotLeft;a=(a.plotY||0)+d.plotTop;let r;if(this.outside){f.positioner&&
+(c.x+=k-b,c.y+=e-b);r=(f.borderWidth||0)+2*b;this.renderer.setSize(n.width+r,n.height+r,!1);if(1!==g||1!==h)p(this.container,{transform:`scale(${g}, ${h})`}),q*=g,a*=h;q+=k-c.x;a+=e-c.y}this.move(Math.round(c.x),Math.round(c.y||0),q,a)}}(function(a){const d=[];a.compose=function(b){C.pushUnique(d,b)&&v(b,"afterInit",function(){const b=this.chart;b.options.tooltip&&(b.tooltip=new a(b,b.options.tooltip))})}})(r||(r={}));"";return r});M(a,"Core/Series/Point.js",[a["Core/Renderer/HTML/AST.js"],a["Core/Animation/AnimationUtilities.js"],
+a["Core/Defaults.js"],a["Core/Templating.js"],a["Core/Utilities.js"]],function(a,y,I,L,C){const {animObject:x}=y,{defaultOptions:H}=I,{format:B}=L,{addEvent:u,defined:v,erase:l,extend:p,fireEvent:t,getNestedProperty:m,isArray:h,isFunction:g,isNumber:e,isObject:w,merge:E,objectEach:F,pick:d,syncTimeout:k,removeEvent:r,uniqueKey:q}=C;class G{constructor(){this.category=void 0;this.destroyed=!1;this.formatPrefix="point";this.id=void 0;this.isNull=!1;this.percentage=this.options=this.name=void 0;this.selected=
+!1;this.total=this.shapeArgs=this.series=void 0;this.visible=!0;this.x=void 0}animateBeforeDestroy(){const b=this,a={x:b.startXPos,opacity:0},c=b.getGraphicalProps();c.singular.forEach(function(c){b[c]=b[c].animate("dataLabel"===c?{x:b[c].startXPos,y:b[c].startYPos,opacity:0}:a)});c.plural.forEach(function(c){b[c].forEach(function(c){c.element&&c.animate(p({x:b.startXPos},c.startYPos?{x:c.startXPos,y:c.startYPos}:{}))})})}applyOptions(b,a){const c=this.series,f=c.options.pointValKey||c.pointValKey;
+b=G.prototype.optionsToObject.call(this,b);p(this,b);this.options=this.options?p(this.options,b):b;b.group&&delete this.group;b.dataLabels&&delete this.dataLabels;f&&(this.y=G.prototype.getNestedProperty.call(this,f));this.formatPrefix=(this.isNull=this.isValid&&!this.isValid())?"null":"point";this.selected&&(this.state="select");"name"in this&&"undefined"===typeof a&&c.xAxis&&c.xAxis.hasNames&&(this.x=c.xAxis.nameToX(this));"undefined"===typeof this.x&&c?this.x="undefined"===typeof a?c.autoIncrement():
+a:e(b.x)&&c.options.relativeXValue&&(this.x=c.autoIncrement(b.x));return this}destroy(){if(!this.destroyed){const a=this;var b=a.series;const c=b.chart;b=b.options.dataSorting;const d=c.hoverPoints,e=x(a.series.chart.renderer.globalAnimation),g=()=>{if(a.graphic||a.graphics||a.dataLabel||a.dataLabels)r(a),a.destroyElements();for(const b in a)delete a[b]};a.legendItem&&c.legend.destroyItem(a);d&&(a.setState(),l(d,a),d.length||(c.hoverPoints=null));if(a===c.hoverPoint)a.onMouseOut();b&&b.enabled?(this.animateBeforeDestroy(),
+k(g,e.duration)):g();c.pointCount--}this.destroyed=!0}destroyElements(b){const a=this;b=a.getGraphicalProps(b);b.singular.forEach(function(b){a[b]=a[b].destroy()});b.plural.forEach(function(b){a[b].forEach(function(b){b&&b.element&&b.destroy()});delete a[b]})}firePointEvent(b,a,c){const f=this,d=this.series.options;(d.point.events[b]||f.options&&f.options.events&&f.options.events[b])&&f.importEvents();"click"===b&&d.allowPointSelect&&(c=function(b){f.select&&f.select(null,b.ctrlKey||b.metaKey||b.shiftKey)});
+t(f,b,a,c)}getClassName(){return"highcharts-point"+(this.selected?" highcharts-point-select":"")+(this.negative?" highcharts-negative":"")+(this.isNull?" highcharts-null-point":"")+("undefined"!==typeof this.colorIndex?" highcharts-color-"+this.colorIndex:"")+(this.options.className?" "+this.options.className:"")+(this.zone&&this.zone.className?" "+this.zone.className.replace("highcharts-negative",""):"")}getGraphicalProps(b){const a=this,c=[],d={singular:[],plural:[]};let k,e;b=b||{graphic:1,dataLabel:1};
+b.graphic&&c.push("graphic");b.dataLabel&&c.push("dataLabel","dataLabelPath","dataLabelUpper","connector");for(e=c.length;e--;)k=c[e],a[k]&&d.singular.push(k);["graphic","dataLabel","connector"].forEach(function(c){const f=c+"s";b[c]&&a[f]&&d.plural.push(f)});return d}getLabelConfig(){return{x:this.category,y:this.y,color:this.color,colorIndex:this.colorIndex,key:this.name||this.category,series:this.series,point:this,percentage:this.percentage,total:this.total||this.stackTotal}}getNestedProperty(b){if(b)return 0===
+b.indexOf("custom.")?m(b,this.options):this[b]}getZone(){var b=this.series;const a=b.zones;b=b.zoneAxis||"y";let c,d=0;for(c=a[d];this[b]>=c.value;)c=a[++d];this.nonZonedColor||(this.nonZonedColor=this.color);this.color=c&&c.color&&!this.options.color?c.color:this.nonZonedColor;return c}hasNewShapeType(){return(this.graphic&&(this.graphic.symbolName||this.graphic.element.nodeName))!==this.shapeType}init(b,a,c){this.series=b;this.applyOptions(a,c);this.id=v(this.id)?this.id:q();this.resolveColor();
+b.chart.pointCount++;t(this,"afterInit");return this}isValid(){return null!==this.x&&e(this.y)}optionsToObject(b){var a=this.series;const c=a.options.keys,d=c||a.pointArrayMap||["y"],k=d.length;let g={},q=0,r=0;if(e(b)||null===b)g[d[0]]=b;else if(h(b))for(!c&&b.length>k&&(a=typeof b[0],"string"===a?g.name=b[0]:"number"===a&&(g.x=b[0]),q++);r<k;)c&&"undefined"===typeof b[q]||(0<d[r].indexOf(".")?G.prototype.setNestedProperty(g,b[q],d[r]):g[d[r]]=b[q]),q++,r++;else"object"===typeof b&&(g=b,b.dataLabels&&
+(a._hasPointLabels=!0),b.marker&&(a._hasPointMarkers=!0));return g}pos(b,a=this.plotY){if(!this.destroyed){const {plotX:c,series:f}=this,{chart:d,xAxis:k,yAxis:g}=f;let h=0,q=0;if(e(c)&&e(a))return b&&(h=k?k.pos:d.plotLeft,q=g?g.pos:d.plotTop),d.inverted&&k&&g?[g.len-a+q,k.len-c+h]:[c+h,a+q]}}resolveColor(){const b=this.series;var a=b.chart.styledMode;let c;var k=b.chart.options.chart.colorCount;delete this.nonZonedColor;b.options.colorByPoint?(a||(k=b.options.colors||b.chart.options.colors,c=k[b.colorCounter],
+k=k.length),a=b.colorCounter,b.colorCounter++,b.colorCounter===k&&(b.colorCounter=0)):(a||(c=b.color),a=b.colorIndex);this.colorIndex=d(this.options.colorIndex,a);this.color=d(this.options.color,c)}setNestedProperty(b,a,c){c.split(".").reduce(function(b,c,f,d){b[c]=d.length-1===f?a:w(b[c],!0)?b[c]:{};return b[c]},b);return b}shouldDraw(){return!this.isNull}tooltipFormatter(b){const a=this.series,c=a.tooltipOptions,k=d(c.valueDecimals,""),e=c.valuePrefix||"",g=c.valueSuffix||"";a.chart.styledMode&&
+(b=a.chart.tooltip.styledModeFormat(b));(a.pointArrayMap||["y"]).forEach(function(c){c="{point."+c;if(e||g)b=b.replace(RegExp(c+"}","g"),e+c+"}"+g);b=b.replace(RegExp(c+"}","g"),c+":,."+k+"f}")});return B(b,{point:this,series:this.series},a.chart)}update(b,a,c,k){function f(){n.applyOptions(b);var f=g&&n.hasMockGraphic;f=null===n.y?!f:f;g&&f&&(n.graphic=g.destroy(),delete n.hasMockGraphic);w(b,!0)&&(g&&g.element&&b&&b.marker&&"undefined"!==typeof b.marker.symbol&&(n.graphic=g.destroy()),b&&b.dataLabels&&
+n.dataLabel&&(n.dataLabel=n.dataLabel.destroy()),n.connector&&(n.connector=n.connector.destroy()));r=n.index;e.updateParallelArrays(n,r);q.data[r]=w(q.data[r],!0)||w(b,!0)?n.options:d(b,q.data[r]);e.isDirty=e.isDirtyData=!0;!e.fixedBox&&e.hasCartesianSeries&&(h.isDirtyBox=!0);"point"===q.legendType&&(h.isDirtyLegend=!0);a&&h.redraw(c)}const n=this,e=n.series,g=n.graphic,h=e.chart,q=e.options;let r;a=d(a,!0);!1===k?f():n.firePointEvent("update",{options:b},f)}remove(b,a){this.series.removePoint(this.series.data.indexOf(this),
+b,a)}select(b,a){const c=this,f=c.series,k=f.chart;this.selectedStaging=b=d(b,!c.selected);c.firePointEvent(b?"select":"unselect",{accumulate:a},function(){c.selected=c.options.selected=b;f.options.data[f.data.indexOf(c)]=c.options;c.setState(b&&"select");a||k.getSelectedPoints().forEach(function(b){const a=b.series;b.selected&&b!==c&&(b.selected=b.options.selected=!1,a.options.data[a.data.indexOf(b)]=b.options,b.setState(k.hoverPoints&&a.options.inactiveOtherPoints?"inactive":""),b.firePointEvent("unselect"))})});
+delete this.selectedStaging}onMouseOver(b){const a=this.series.chart,c=a.pointer;b=b?c.normalize(b):c.getChartCoordinatesFromPoint(this,a.inverted);c.runPointActions(b,this)}onMouseOut(){const b=this.series.chart;this.firePointEvent("mouseOut");this.series.options.inactiveOtherPoints||(b.hoverPoints||[]).forEach(function(b){b.setState()});b.hoverPoints=b.hoverPoint=null}importEvents(){if(!this.hasImportedEvents){const b=this,a=E(b.series.options.point,b.options).events;b.events=a;F(a,function(c,a){g(c)&&
+u(b,a,c)});this.hasImportedEvents=!0}}setState(b,f){const c=this.series;var k=this.state,g=c.options.states[b||"normal"]||{},h=H.plotOptions[c.type].marker&&c.options.marker;const q=h&&!1===h.enabled,r=h&&h.states&&h.states[b||"normal"]||{},l=!1===r.enabled,m=this.marker||{},w=c.chart,v=h&&c.markerAttribs;let G=c.halo;var u;let x;var E=c.stateMarkerGraphic;b=b||"";if(!(b===this.state&&!f||this.selected&&"select"!==b||!1===g.enabled||b&&(l||q&&!1===r.enabled)||b&&m.states&&m.states[b]&&!1===m.states[b].enabled)){this.state=
+b;v&&(u=c.markerAttribs(this,b));if(this.graphic&&!this.hasMockGraphic){k&&this.graphic.removeClass("highcharts-point-"+k);b&&this.graphic.addClass("highcharts-point-"+b);if(!w.styledMode){k=c.pointAttribs(this,b);x=d(w.options.chart.animation,g.animation);const a=k.opacity;c.options.inactiveOtherPoints&&e(a)&&((this.dataLabels||[]).forEach(function(b){b&&!b.hasClass("highcharts-data-label-hidden")&&b.animate({opacity:a},x)}),this.connector&&this.connector.animate({opacity:a},x));this.graphic.animate(k,
+x)}u&&this.graphic.animate(u,d(w.options.chart.animation,r.animation,h.animation));E&&E.hide()}else{if(b&&r){h=m.symbol||c.symbol;E&&E.currentSymbol!==h&&(E=E.destroy());if(u)if(E)E[f?"animate":"attr"]({x:u.x,y:u.y});else h&&(c.stateMarkerGraphic=E=w.renderer.symbol(h,u.x,u.y,u.width,u.height).add(c.markerGroup),E.currentSymbol=h);!w.styledMode&&E&&"inactive"!==this.state&&E.attr(c.pointAttribs(this,b))}E&&(E[b&&this.isInside?"show":"hide"](),E.element.point=this,E.addClass(this.getClassName(),!0))}g=
+g.halo;u=(E=this.graphic||E)&&E.visibility||"inherit";g&&g.size&&E&&"hidden"!==u&&!this.isCluster?(G||(c.halo=G=w.renderer.path().add(E.parentGroup)),G.show()[f?"animate":"attr"]({d:this.haloPath(g.size)}),G.attr({"class":"highcharts-halo highcharts-color-"+d(this.colorIndex,c.colorIndex)+(this.className?" "+this.className:""),visibility:u,zIndex:-1}),G.point=this,w.styledMode||G.attr(p({fill:this.color||c.color,"fill-opacity":g.opacity},a.filterUserAttributes(g.attributes||{})))):G&&G.point&&G.point.haloPath&&
+G.animate({d:G.point.haloPath(0)},null,G.hide);t(this,"afterSetState",{state:b})}}haloPath(b){const a=this.pos();return a?this.series.chart.renderer.symbols.circle(Math.floor(a[0])-b,a[1]-b,2*b,2*b):[]}}"";return G});M(a,"Core/Pointer.js",[a["Core/Color/Color.js"],a["Core/Globals.js"],a["Core/Utilities.js"]],function(a,y,I){const {parse:x}=a,{charts:C,noop:z}=y,{addEvent:H,attr:B,css:u,defined:v,extend:l,find:p,fireEvent:t,isNumber:m,isObject:h,objectEach:g,offset:e,pick:w,splat:E}=I;class F{constructor(a,
+k){this.lastValidTouch={};this.pinchDown=[];this.runChartClick=!1;this.eventsToUnbind=[];this.chart=a;this.hasDragged=!1;this.options=k;this.init(a,k)}applyInactiveState(a){let d=[],e;(a||[]).forEach(function(a){e=a.series;d.push(e);e.linkedParent&&d.push(e.linkedParent);e.linkedSeries&&(d=d.concat(e.linkedSeries));e.navigatorSeries&&d.push(e.navigatorSeries)});this.chart.series.forEach(function(a){-1===d.indexOf(a)?a.setState("inactive",!0):a.options.inactiveOtherPoints&&a.setAllPointsToState("inactive")})}destroy(){const a=
+this;this.eventsToUnbind.forEach(a=>a());this.eventsToUnbind=[];y.chartCount||(F.unbindDocumentMouseUp&&(F.unbindDocumentMouseUp=F.unbindDocumentMouseUp()),F.unbindDocumentTouchEnd&&(F.unbindDocumentTouchEnd=F.unbindDocumentTouchEnd()));clearInterval(a.tooltipTimeout);g(a,function(d,e){a[e]=void 0})}getSelectionMarkerAttrs(a,k){const d={args:{chartX:a,chartY:k},attrs:{},shapeType:"rect"};t(this,"getSelectionMarkerAttrs",d,d=>{const {chart:e,mouseDownX:b=0,mouseDownY:f=0,zoomHor:c,zoomVert:n}=this;
+d=d.attrs;let g;d.x=e.plotLeft;d.y=e.plotTop;d.width=c?1:e.plotWidth;d.height=n?1:e.plotHeight;c&&(g=a-b,d.width=Math.abs(g),d.x=(0<g?0:g)+b);n&&(g=k-f,d.height=Math.abs(g),d.y=(0<g?0:g)+f)});return d}drag(a){const d=this.chart,e=d.options.chart;var g=d.plotLeft;const l=d.plotTop,b=d.plotWidth,f=d.plotHeight,c=this.mouseDownX||0,n=this.mouseDownY||0,m=h(e.panning)?e.panning&&e.panning.enabled:e.panning,p=e.panKey&&a[e.panKey+"Key"];let t=a.chartX,w=a.chartY,v=this.selectionMarker;if(!v||!v.touch)if(t<
+g?t=g:t>g+b&&(t=g+b),w<l?w=l:w>l+f&&(w=l+f),this.hasDragged=Math.sqrt(Math.pow(c-t,2)+Math.pow(n-w,2)),10<this.hasDragged){g=d.isInsidePlot(c-g,n-l,{visiblePlotOnly:!0});const {shapeType:b,attrs:f}=this.getSelectionMarkerAttrs(t,w);!d.hasCartesianSeries&&!d.mapView||!this.zoomX&&!this.zoomY||!g||p||v||(this.selectionMarker=v=d.renderer[b](),v.attr({"class":"highcharts-selection-marker",zIndex:7}).add(),d.styledMode||v.attr({fill:e.selectionMarkerFill||x("#334eff").setOpacity(.25).get()}));v&&v.attr(f);
+g&&!v&&m&&d.pan(a,e.panning)}}dragStart(a){const d=this.chart;d.mouseIsDown=a.type;d.cancelClick=!1;d.mouseDownX=this.mouseDownX=a.chartX;d.mouseDownY=this.mouseDownY=a.chartY}getSelectionBox(a){const d={args:{marker:a},result:{}};t(this,"getSelectionBox",d,d=>{d.result={x:a.attr?+a.attr("x"):a.x,y:a.attr?+a.attr("y"):a.y,width:a.attr?a.attr("width"):a.width,height:a.attr?a.attr("height"):a.height}});return d.result}drop(a){const d=this,e=this.chart,g=this.hasPinched;if(this.selectionMarker){const {x:k,
+y:b,width:f,height:c}=this.getSelectionBox(this.selectionMarker),n={originalEvent:a,xAxis:[],yAxis:[],x:k,y:b,width:f,height:c};let h=!!e.mapView;if(this.hasDragged||g)e.axes.forEach(function(e){if(e.zoomEnabled&&v(e.min)&&(g||d[{xAxis:"zoomX",yAxis:"zoomY"}[e.coll]])&&m(k)&&m(b)&&m(f)&&m(c)){var q=e.horiz;const d="touchend"===a.type?e.minPixelPadding:0,g=e.toValue((q?k:b)+d);q=e.toValue((q?k+f:b+c)-d);n[e.coll].push({axis:e,min:Math.min(g,q),max:Math.max(g,q)});h=!0}}),h&&t(e,"selection",n,function(b){e.zoom(l(b,
+g?{animation:!1}:null))});m(e.index)&&(this.selectionMarker=this.selectionMarker.destroy());g&&this.scaleGroups()}e&&m(e.index)&&(u(e.container,{cursor:e._cursor}),e.cancelClick=10<this.hasDragged,e.mouseIsDown=this.hasDragged=this.hasPinched=!1,this.pinchDown=[])}findNearestKDPoint(a,k,e){let d;a.forEach(function(a){var b=!(a.noSharedTooltip&&k)&&0>a.options.findNearestPointBy.indexOf("y");a=a.searchPoint(e,b);if((b=h(a,!0)&&a.series)&&!(b=!h(d,!0))){{b=d.distX-a.distX;const f=d.dist-a.dist,c=(a.series.group&&
+a.series.group.zIndex)-(d.series.group&&d.series.group.zIndex);b=0!==b&&k?b:0!==f?f:0!==c?c:d.series.index>a.series.index?-1:1}b=0<b}b&&(d=a)});return d}getChartCoordinatesFromPoint(a,k){var d=a.series;const e=d.xAxis;d=d.yAxis;const g=a.shapeArgs;if(e&&d){let b=w(a.clientX,a.plotX),f=a.plotY||0;a.isNode&&g&&m(g.x)&&m(g.y)&&(b=g.x,f=g.y);return k?{chartX:d.len+d.pos-f,chartY:e.len+e.pos-b}:{chartX:b+e.pos,chartY:f+d.pos}}if(g&&g.x&&g.y)return{chartX:g.x,chartY:g.y}}getChartPosition(){if(this.chartPosition)return this.chartPosition;
+var {container:a}=this.chart;const k=e(a);this.chartPosition={left:k.left,top:k.top,scaleX:1,scaleY:1};const g=a.offsetWidth;a=a.offsetHeight;2<g&&2<a&&(this.chartPosition.scaleX=k.width/g,this.chartPosition.scaleY=k.height/a);return this.chartPosition}getCoordinates(a){const d={xAxis:[],yAxis:[]};this.chart.axes.forEach(function(k){d[k.isXAxis?"xAxis":"yAxis"].push({axis:k,value:k.toValue(a[k.horiz?"chartX":"chartY"])})});return d}getHoverData(a,k,e,g,l,b){const f=[];g=!(!g||!a);const c=function(b){return b.visible&&
+!(!l&&b.directTouch)&&w(b.options.enableMouseTracking,!0)};let d,q={chartX:b?b.chartX:void 0,chartY:b?b.chartY:void 0,shared:l};t(this,"beforeGetHoverData",q);d=k&&!k.stickyTracking?[k]:e.filter(b=>b.stickyTracking&&(q.filter||c)(b));const r=g||!b?a:this.findNearestKDPoint(d,l,b);k=r&&r.series;r&&(l&&!k.noSharedTooltip?(d=e.filter(function(b){return q.filter?q.filter(b):c(b)&&!b.noSharedTooltip}),d.forEach(function(b){let c=p(b.points,function(b){return b.x===r.x&&!b.isNull});h(c)&&(b.boosted&&b.boost&&
+(c=b.boost.getPoint(c)),f.push(c))})):f.push(r));q={hoverPoint:r};t(this,"afterGetHoverData",q);return{hoverPoint:q.hoverPoint,hoverSeries:k,hoverPoints:f}}getPointFromEvent(a){a=a.target;let d;for(;a&&!d;)d=a.point,a=a.parentNode;return d}onTrackerMouseOut(a){a=a.relatedTarget;const d=this.chart.hoverSeries;this.isDirectTouch=!1;if(!(!d||!a||d.stickyTracking||this.inClass(a,"highcharts-tooltip")||this.inClass(a,"highcharts-series-"+d.index)&&this.inClass(a,"highcharts-tracker")))d.onMouseOut()}inClass(a,
+k){let d;for(;a;){if(d=B(a,"class")){if(-1!==d.indexOf(k))return!0;if(-1!==d.indexOf("highcharts-container"))return!1}a=a.parentElement}}init(a,k){this.options=k;this.chart=a;this.runChartClick=!(!k.chart.events||!k.chart.events.click);this.pinchDown=[];this.lastValidTouch={};this.setDOMEvents();t(this,"afterInit")}normalize(a,k){var d=a.touches,e=d?d.length?d.item(0):w(d.changedTouches,a.changedTouches)[0]:a;k||(k=this.getChartPosition());d=e.pageX-k.left;e=e.pageY-k.top;d/=k.scaleX;e/=k.scaleY;
+return l(a,{chartX:Math.round(d),chartY:Math.round(e)})}onContainerClick(a){const d=this.chart,e=d.hoverPoint;a=this.normalize(a);const g=d.plotLeft,h=d.plotTop;d.cancelClick||(e&&this.inClass(a.target,"highcharts-tracker")?(t(e.series,"click",l(a,{point:e})),d.hoverPoint&&e.firePointEvent("click",a)):(l(a,this.getCoordinates(a)),d.isInsidePlot(a.chartX-g,a.chartY-h,{visiblePlotOnly:!0})&&t(d,"click",a)))}onContainerMouseDown(a){const d=1===((a.buttons||a.button)&1);a=this.normalize(a);if(y.isFirefox&&
+0!==a.button)this.onContainerMouseMove(a);if("undefined"===typeof a.button||d)this.zoomOption(a),d&&a.preventDefault&&a.preventDefault(),this.dragStart(a)}onContainerMouseLeave(a){const d=C[w(F.hoverChartIndex,-1)];a=this.normalize(a);d&&a.relatedTarget&&!this.inClass(a.relatedTarget,"highcharts-tooltip")&&(d.pointer.reset(),d.pointer.chartPosition=void 0)}onContainerMouseEnter(a){delete this.chartPosition}onContainerMouseMove(a){const d=this.chart,e=d.tooltip;a=this.normalize(a);this.setHoverChartIndex();
+("mousedown"===d.mouseIsDown||this.touchSelect(a))&&this.drag(a);d.openMenu||!this.inClass(a.target,"highcharts-tracker")&&!d.isInsidePlot(a.chartX-d.plotLeft,a.chartY-d.plotTop,{visiblePlotOnly:!0})||e&&e.shouldStickOnContact(a)||(this.inClass(a.target,"highcharts-no-tooltip")?this.reset(!1,0):this.runPointActions(a))}onDocumentTouchEnd(a){const d=C[w(F.hoverChartIndex,-1)];d&&d.pointer.drop(a)}onContainerTouchMove(a){if(this.touchSelect(a))this.onContainerMouseMove(a);else this.touch(a)}onContainerTouchStart(a){if(this.touchSelect(a))this.onContainerMouseDown(a);
+else this.zoomOption(a),this.touch(a,!0)}onDocumentMouseMove(a){const d=this.chart,e=d.tooltip,g=this.chartPosition;a=this.normalize(a,g);!g||d.isInsidePlot(a.chartX-d.plotLeft,a.chartY-d.plotTop,{visiblePlotOnly:!0})||e&&e.shouldStickOnContact(a)||this.inClass(a.target,"highcharts-tracker")||this.reset()}onDocumentMouseUp(a){const d=C[w(F.hoverChartIndex,-1)];d&&d.pointer.drop(a)}pinch(a){const d=this,e=d.chart,g=d.pinchDown,h=a.touches||[],b=h.length,f=d.lastValidTouch,c=d.hasZoom,n={},m=1===b&&
+(d.inClass(a.target,"highcharts-tracker")&&e.runTrackerClick||d.runChartClick),p={};var v=d.chart.tooltip;v=1===b&&w(v&&v.options.followTouchMove,!0);let u=d.selectionMarker;1<b?d.initiated=!0:v&&(d.initiated=!1);c&&d.initiated&&!m&&!1!==a.cancelable&&a.preventDefault();[].map.call(h,function(b){return d.normalize(b)});"touchstart"===a.type?([].forEach.call(h,function(b,a){g[a]={chartX:b.chartX,chartY:b.chartY}}),f.x=[g[0].chartX,g[1]&&g[1].chartX],f.y=[g[0].chartY,g[1]&&g[1].chartY],e.axes.forEach(function(b){if(b.zoomEnabled){const a=
+e.bounds[b.horiz?"h":"v"],c=b.minPixelPadding,f=b.toPixels(Math.min(w(b.options.min,b.dataMin),b.dataMin)),d=b.toPixels(Math.max(w(b.options.max,b.dataMax),b.dataMax)),n=Math.max(f,d);a.min=Math.min(b.pos,Math.min(f,d)-c);a.max=Math.max(b.pos+b.len,n+c)}}),d.res=!0):v?this.runPointActions(d.normalize(a)):g.length&&(t(e,"touchpan",{originalEvent:a},()=>{u||(d.selectionMarker=u=l({destroy:z,touch:!0},e.plotBox));d.pinchTranslate(g,h,n,u,p,f);d.hasPinched=c;d.scaleGroups(n,p)}),d.res&&(d.res=!1,this.reset(!1,
+0)))}pinchTranslate(a,e,g,h,l,b){this.zoomHor&&this.pinchTranslateDirection(!0,a,e,g,h,l,b);this.zoomVert&&this.pinchTranslateDirection(!1,a,e,g,h,l,b)}pinchTranslateDirection(a,e,g,h,l,b,f,c){const d=this.chart,k=a?"x":"y",q=a?"X":"Y",m="chart"+q,r=a?"width":"height",p=d["plot"+(a?"Left":"Top")],t=d.inverted,w=d.bounds[a?"h":"v"],v=1===e.length,u=e[0][m],x=!v&&e[1][m];e=function(){"number"===typeof N&&20<Math.abs(u-x)&&(F=c||Math.abs(J-N)/Math.abs(u-x));E=(p-J)/F+u;G=d["plot"+(a?"Width":"Height")]/
+F};let G,E,F=c||1,J=g[0][m],N=!v&&g[1][m],O;e();g=E;g<w.min?(g=w.min,O=!0):g+G>w.max&&(g=w.max-G,O=!0);O?(J-=.8*(J-f[k][0]),"number"===typeof N&&(N-=.8*(N-f[k][1])),e()):f[k]=[J,N];t||(b[k]=E-p,b[r]=G);b=t?1/F:F;l[r]=G;l[k]=g;h[t?a?"scaleY":"scaleX":"scale"+q]=F;h["translate"+q]=b*p+(J-b*u)}reset(a,e){const d=this.chart,k=d.hoverSeries,g=d.hoverPoint,b=d.hoverPoints,f=d.tooltip,c=f&&f.shared?b:g;a&&c&&E(c).forEach(function(b){b.series.isCartesian&&"undefined"===typeof b.plotX&&(a=!1)});if(a)f&&c&&
+E(c).length&&(f.refresh(c),f.shared&&b?b.forEach(function(b){b.setState(b.state,!0);b.series.isCartesian&&(b.series.xAxis.crosshair&&b.series.xAxis.drawCrosshair(null,b),b.series.yAxis.crosshair&&b.series.yAxis.drawCrosshair(null,b))}):g&&(g.setState(g.state,!0),d.axes.forEach(function(b){b.crosshair&&g.series[b.coll]===b&&b.drawCrosshair(null,g)})));else{if(g)g.onMouseOut();b&&b.forEach(function(b){b.setState()});if(k)k.onMouseOut();f&&f.hide(e);this.unDocMouseMove&&(this.unDocMouseMove=this.unDocMouseMove());
+d.axes.forEach(function(b){b.hideCrosshair()});this.hoverX=d.hoverPoints=d.hoverPoint=null}}runPointActions(a,e,g){const d=this.chart,k=d.tooltip&&d.tooltip.options.enabled?d.tooltip:void 0,b=k?k.shared:!1;let f=e||d.hoverPoint,c=f&&f.series||d.hoverSeries;e=this.getHoverData(f,c,d.series,(!a||"touchmove"!==a.type)&&(!!e||c&&c.directTouch&&this.isDirectTouch),b,a);f=e.hoverPoint;c=e.hoverSeries;const n=e.hoverPoints;e=c&&c.tooltipOptions.followPointer&&!c.tooltipOptions.split;const h=b&&c&&!c.noSharedTooltip;
+if(f&&(g||f!==d.hoverPoint||k&&k.isHidden)){(d.hoverPoints||[]).forEach(function(b){-1===n.indexOf(b)&&b.setState()});if(d.hoverSeries!==c)c.onMouseOver();this.applyInactiveState(n);(n||[]).forEach(function(b){b.setState("hover")});d.hoverPoint&&d.hoverPoint.firePointEvent("mouseOut");if(!f.series)return;d.hoverPoints=n;d.hoverPoint=f;f.firePointEvent("mouseOver",void 0,()=>{k&&f&&k.refresh(h?n:f,a)})}else e&&k&&!k.isHidden&&(g=k.getAnchor([{}],a),d.isInsidePlot(g[0],g[1],{visiblePlotOnly:!0})&&k.updatePosition({plotX:g[0],
+plotY:g[1]}));this.unDocMouseMove||(this.unDocMouseMove=H(d.container.ownerDocument,"mousemove",function(b){const a=C[F.hoverChartIndex];if(a)a.pointer.onDocumentMouseMove(b)}),this.eventsToUnbind.push(this.unDocMouseMove));d.axes.forEach(function(b){const c=w((b.crosshair||{}).snap,!0);let f;c&&((f=d.hoverPoint)&&f.series[b.coll]===b||(f=p(n,a=>a.series&&a.series[b.coll]===b)));f||!c?b.drawCrosshair(a,f):b.hideCrosshair()})}scaleGroups(a,e){const d=this.chart;d.series.forEach(function(k){const g=
+a||k.getPlotBox();k.group&&(k.xAxis&&k.xAxis.zoomEnabled||d.mapView)&&(k.group.attr(g),k.markerGroup&&(k.markerGroup.attr(g),k.markerGroup.clip(e?d.clipRect:null)),k.dataLabelsGroup&&k.dataLabelsGroup.attr(g))});d.clipRect.attr(e||d.clipBox)}setDOMEvents(){const a=this.chart.container,e=a.ownerDocument;a.onmousedown=this.onContainerMouseDown.bind(this);a.onmousemove=this.onContainerMouseMove.bind(this);a.onclick=this.onContainerClick.bind(this);this.eventsToUnbind.push(H(a,"mouseenter",this.onContainerMouseEnter.bind(this)));
+this.eventsToUnbind.push(H(a,"mouseleave",this.onContainerMouseLeave.bind(this)));F.unbindDocumentMouseUp||(F.unbindDocumentMouseUp=H(e,"mouseup",this.onDocumentMouseUp.bind(this)));let g=this.chart.renderTo.parentElement;for(;g&&"BODY"!==g.tagName;)this.eventsToUnbind.push(H(g,"scroll",()=>{delete this.chartPosition})),g=g.parentElement;y.hasTouch&&(this.eventsToUnbind.push(H(a,"touchstart",this.onContainerTouchStart.bind(this),{passive:!1})),this.eventsToUnbind.push(H(a,"touchmove",this.onContainerTouchMove.bind(this),
+{passive:!1})),F.unbindDocumentTouchEnd||(F.unbindDocumentTouchEnd=H(e,"touchend",this.onDocumentTouchEnd.bind(this),{passive:!1})))}setHoverChartIndex(){const a=this.chart,e=y.charts[w(F.hoverChartIndex,-1)];if(e&&e!==a)e.pointer.onContainerMouseLeave({relatedTarget:a.container});e&&e.mouseIsDown||(F.hoverChartIndex=a.index)}touch(a,e){const d=this.chart;let g,k;this.setHoverChartIndex();1===a.touches.length?(a=this.normalize(a),(k=d.isInsidePlot(a.chartX-d.plotLeft,a.chartY-d.plotTop,{visiblePlotOnly:!0}))&&
+!d.openMenu?(e&&this.runPointActions(a),"touchmove"===a.type&&(e=this.pinchDown,g=e[0]?4<=Math.sqrt(Math.pow(e[0].chartX-a.chartX,2)+Math.pow(e[0].chartY-a.chartY,2)):!1),w(g,!0)&&this.pinch(a)):e&&this.reset()):2===a.touches.length&&this.pinch(a)}touchSelect(a){return!(!this.chart.zooming.singleTouch||!a.touches||1!==a.touches.length)}zoomOption(a){const d=this.chart,e=d.inverted;var g=d.zooming.type||"";/touch/.test(a.type)&&(g=w(d.zooming.pinchType,g));this.zoomX=a=/x/.test(g);this.zoomY=g=/y/.test(g);
+this.zoomHor=a&&!e||g&&e;this.zoomVert=g&&!e||a&&e;this.hasZoom=a||g}}(function(a){const d=[],e=[];a.compose=function(d){I.pushUnique(e,d)&&H(d,"beforeRender",function(){this.pointer=new a(this,this.options)})};a.dissolve=function(){for(let a=0,e=d.length;a<e;++a)d[a]();d.length=0}})(F||(F={}));"";return F});M(a,"Core/Legend/Legend.js",[a["Core/Animation/AnimationUtilities.js"],a["Core/Templating.js"],a["Core/Globals.js"],a["Core/Series/Point.js"],a["Core/Renderer/RendererUtilities.js"],a["Core/Utilities.js"]],
+function(a,y,I,L,C,z){const {animObject:x,setAnimation:B}=a,{format:u}=y,{marginNames:v}=I,{distribute:l}=C,{addEvent:p,createElement:t,css:m,defined:h,discardElement:g,find:e,fireEvent:w,isNumber:E,merge:F,pick:d,relativeLength:k,stableSort:r,syncTimeout:q}=z;class G{constructor(b,a){this.allItems=[];this.contentGroup=this.box=void 0;this.display=!1;this.group=void 0;this.offsetWidth=this.maxLegendWidth=this.maxItemWidth=this.legendWidth=this.legendHeight=this.lastLineHeight=this.lastItemY=this.itemY=
+this.itemX=this.itemMarginTop=this.itemMarginBottom=this.itemHeight=this.initialItemY=0;this.options=void 0;this.padding=0;this.pages=[];this.proximate=!1;this.scrollGroup=void 0;this.widthOption=this.totalItemWidth=this.titleHeight=this.symbolWidth=this.symbolHeight=0;this.chart=b;this.init(b,a)}init(b,a){this.chart=b;this.setOptions(a);a.enabled&&(this.render(),p(this.chart,"endResize",function(){this.legend.positionCheckboxes()}),p(this.chart,"render",()=>{this.proximate&&(this.proximatePositions(),
+this.positionItems())}))}setOptions(b){const a=d(b.padding,8);this.options=b;this.chart.styledMode||(this.itemStyle=b.itemStyle,this.itemHiddenStyle=F(this.itemStyle,b.itemHiddenStyle));this.itemMarginTop=b.itemMarginTop;this.itemMarginBottom=b.itemMarginBottom;this.padding=a;this.initialItemY=a-5;this.symbolWidth=d(b.symbolWidth,16);this.pages=[];this.proximate="proximate"===b.layout&&!this.chart.inverted;this.baseline=void 0}update(b,a){const c=this.chart;this.setOptions(F(!0,this.options,b));this.destroy();
+c.isDirtyLegend=c.isDirtyBox=!0;d(a,!0)&&c.redraw();w(this,"afterUpdate")}colorizeItem(b,a){const {group:c,label:f,line:d,symbol:e}=b.legendItem||{};if(c)c[a?"removeClass":"addClass"]("highcharts-legend-item-hidden");if(!this.chart.styledMode){const {itemHiddenStyle:c}=this,g=c.color,k=a?b.color||g:g,n=b.options&&b.options.marker;let h={fill:k};null===f||void 0===f?void 0:f.css(F(a?this.itemStyle:c));null===d||void 0===d?void 0:d.attr({stroke:k});e&&(n&&e.isMarker&&(h=b.pointAttribs(),a||(h.stroke=
+h.fill=g)),e.attr(h))}w(this,"afterColorizeItem",{item:b,visible:a})}positionItems(){this.allItems.forEach(this.positionItem,this);this.chart.isResizing||this.positionCheckboxes()}positionItem(b){const {group:a,x:c=0,y:d=0}=b.legendItem||{};var e=this.options,g=e.symbolPadding;const k=!e.rtl;e=b.checkbox;a&&a.element&&(g={translateX:k?c:this.legendWidth-c-2*g-4,translateY:d},a[h(a.translateY)?"animate":"attr"](g,void 0,()=>{w(this,"afterPositionItem",{item:b})}));e&&(e.x=c,e.y=d)}destroyItem(b){const a=
+b.checkbox,c=b.legendItem||{};for(const b of["group","label","line","symbol"])c[b]&&(c[b]=c[b].destroy());a&&g(a);b.legendItem=void 0}destroy(){for(const b of this.getAllItems())this.destroyItem(b);for(const b of"clipRect up down pager nav box title group".split(" "))this[b]&&(this[b]=this[b].destroy());this.display=null}positionCheckboxes(){const b=this.group&&this.group.alignAttr,a=this.clipHeight||this.legendHeight,c=this.titleHeight;let d;b&&(d=b.translateY,this.allItems.forEach(function(f){const e=
+f.checkbox;let g;e&&(g=d+c+e.y+(this.scrollOffset||0)+3,m(e,{left:b.translateX+f.checkboxOffset+e.x-20+"px",top:g+"px",display:this.proximate||g>d-6&&g<d+a-6?"":"none"}))},this))}renderTitle(){var b=this.options;const a=this.padding,c=b.title;let d=0;c.text&&(this.title||(this.title=this.chart.renderer.label(c.text,a-3,a-4,void 0,void 0,void 0,b.useHTML,void 0,"legend-title").attr({zIndex:1}),this.chart.styledMode||this.title.css(c.style),this.title.add(this.group)),c.width||this.title.css({width:this.maxLegendWidth+
+"px"}),b=this.title.getBBox(),d=b.height,this.offsetWidth=b.width,this.contentGroup.attr({translateY:d}));this.titleHeight=d}setText(b){const a=this.options;b.legendItem.label.attr({text:a.labelFormat?u(a.labelFormat,b,this.chart):a.labelFormatter.call(b)})}renderItem(b){const a=b.legendItem=b.legendItem||{};var c=this.chart,e=c.renderer;const g=this.options,k=this.symbolWidth,h=g.symbolPadding||0,l=this.itemStyle,m=this.itemHiddenStyle,q="horizontal"===g.layout?d(g.itemDistance,20):0,r=!g.rtl,p=
+!b.series,t=!p&&b.series.drawLegendSymbol?b.series:b;var w=t.options;const v=this.createCheckboxForItem&&w&&w.showCheckbox,u=g.useHTML,x=b.options.className;let J=a.label;w=k+h+q+(v?20:0);J||(a.group=e.g("legend-item").addClass("highcharts-"+t.type+"-series highcharts-color-"+b.colorIndex+(x?" "+x:"")+(p?" highcharts-series-"+b.index:"")).attr({zIndex:1}).add(this.scrollGroup),a.label=J=e.text("",r?k+h:-h,this.baseline||0,u),c.styledMode||J.css(F(b.visible?l:m)),J.attr({align:r?"left":"right",zIndex:2}).add(a.group),
+this.baseline||(this.fontMetrics=e.fontMetrics(J),this.baseline=this.fontMetrics.f+3+this.itemMarginTop,J.attr("y",this.baseline),this.symbolHeight=d(g.symbolHeight,this.fontMetrics.f),g.squareSymbol&&(this.symbolWidth=d(g.symbolWidth,Math.max(this.symbolHeight,16)),w=this.symbolWidth+h+q+(v?20:0),r&&J.attr("x",this.symbolWidth+h))),t.drawLegendSymbol(this,b),this.setItemEvents&&this.setItemEvents(b,J,u));v&&!b.checkbox&&this.createCheckboxForItem&&this.createCheckboxForItem(b);this.colorizeItem(b,
+b.visible);!c.styledMode&&l.width||J.css({width:(g.itemWidth||this.widthOption||c.spacingBox.width)-w+"px"});this.setText(b);c=J.getBBox();e=this.fontMetrics&&this.fontMetrics.h||0;b.itemWidth=b.checkboxOffset=g.itemWidth||a.labelWidth||c.width+w;this.maxItemWidth=Math.max(this.maxItemWidth,b.itemWidth);this.totalItemWidth+=b.itemWidth;this.itemHeight=b.itemHeight=Math.round(a.labelHeight||(c.height>1.5*e?c.height:e))}layoutItem(b){var a=this.options;const c=this.padding,e="horizontal"===a.layout,
+g=b.itemHeight,k=this.itemMarginBottom,h=this.itemMarginTop,l=e?d(a.itemDistance,20):0,m=this.maxLegendWidth;a=a.alignColumns&&this.totalItemWidth>m?this.maxItemWidth:b.itemWidth;const q=b.legendItem||{};e&&this.itemX-c+a>m&&(this.itemX=c,this.lastLineHeight&&(this.itemY+=h+this.lastLineHeight+k),this.lastLineHeight=0);this.lastItemY=h+this.itemY+k;this.lastLineHeight=Math.max(g,this.lastLineHeight);q.x=this.itemX;q.y=this.itemY;e?this.itemX+=a:(this.itemY+=h+g+k,this.lastLineHeight=g);this.offsetWidth=
+this.widthOption||Math.max((e?this.itemX-c-(b.checkbox?0:l):a)+c,this.offsetWidth)}getAllItems(){let b=[];this.chart.series.forEach(function(a){const c=a&&a.options;a&&d(c.showInLegend,h(c.linkedTo)?!1:void 0,!0)&&(b=b.concat((a.legendItem||{}).labels||("point"===c.legendType?a.data:a)))});w(this,"afterGetAllItems",{allItems:b});return b}getAlignment(){const b=this.options;return this.proximate?b.align.charAt(0)+"tv":b.floating?"":b.align.charAt(0)+b.verticalAlign.charAt(0)+b.layout.charAt(0)}adjustMargins(b,
+a){const c=this.chart,f=this.options,e=this.getAlignment();e&&[/(lth|ct|rth)/,/(rtv|rm|rbv)/,/(rbh|cb|lbh)/,/(lbv|lm|ltv)/].forEach(function(g,k){g.test(e)&&!h(b[k])&&(c[v[k]]=Math.max(c[v[k]],c.legend[(k+1)%2?"legendHeight":"legendWidth"]+[1,-1,-1,1][k]*f[k%2?"x":"y"]+d(f.margin,12)+a[k]+(c.titleOffset[k]||0)))})}proximatePositions(){const b=this.chart,a=[],c="left"===this.options.align;this.allItems.forEach(function(d){var f;var g=c;let k;d.yAxis&&(d.xAxis.options.reversed&&(g=!g),d.points&&(f=
+e(g?d.points:d.points.slice(0).reverse(),function(b){return E(b.plotY)})),g=this.itemMarginTop+d.legendItem.label.getBBox().height+this.itemMarginBottom,k=d.yAxis.top-b.plotTop,d.visible?(f=f?f.plotY:d.yAxis.height,f+=k-.3*g):f=k+d.yAxis.height,a.push({target:f,size:g,item:d}))},this);let d;for(const c of l(a,b.plotHeight))d=c.item.legendItem||{},E(c.pos)&&(d.y=b.plotTop-b.spacing[0]+c.pos)}render(){const b=this.chart,a=b.renderer,c=this.options,d=this.padding;var e=this.getAllItems();let g,h=this.group,
+l=this.box;this.itemX=d;this.itemY=this.initialItemY;this.lastItemY=this.offsetWidth=0;this.widthOption=k(c.width,b.spacingBox.width-d);var m=b.spacingBox.width-2*d-c.x;-1<["rm","lm"].indexOf(this.getAlignment().substring(0,2))&&(m/=2);this.maxLegendWidth=this.widthOption||m;h||(this.group=h=a.g("legend").addClass(c.className||"").attr({zIndex:7}).add(),this.contentGroup=a.g().attr({zIndex:1}).add(h),this.scrollGroup=a.g().add(this.contentGroup));this.renderTitle();r(e,(b,a)=>(b.options&&b.options.legendIndex||
+0)-(a.options&&a.options.legendIndex||0));c.reversed&&e.reverse();this.allItems=e;this.display=m=!!e.length;this.itemHeight=this.totalItemWidth=this.maxItemWidth=this.lastLineHeight=0;e.forEach(this.renderItem,this);e.forEach(this.layoutItem,this);e=(this.widthOption||this.offsetWidth)+d;g=this.lastItemY+this.lastLineHeight+this.titleHeight;g=this.handleOverflow(g);g+=d;l||(this.box=l=a.rect().addClass("highcharts-legend-box").attr({r:c.borderRadius}).add(h));b.styledMode||l.attr({stroke:c.borderColor,
+"stroke-width":c.borderWidth||0,fill:c.backgroundColor||"none"}).shadow(c.shadow);if(0<e&&0<g)l[l.placed?"animate":"attr"](l.crisp.call({},{x:0,y:0,width:e,height:g},l.strokeWidth()));h[m?"show":"hide"]();b.styledMode&&"none"===h.getStyle("display")&&(e=g=0);this.legendWidth=e;this.legendHeight=g;m&&this.align();this.proximate||this.positionItems();w(this,"afterRender")}align(b=this.chart.spacingBox){const a=this.chart,c=this.options;let d=b.y;/(lth|ct|rth)/.test(this.getAlignment())&&0<a.titleOffset[0]?
+d+=a.titleOffset[0]:/(lbh|cb|rbh)/.test(this.getAlignment())&&0<a.titleOffset[2]&&(d-=a.titleOffset[2]);d!==b.y&&(b=F(b,{y:d}));a.hasRendered||(this.group.placed=!1);this.group.align(F(c,{width:this.legendWidth,height:this.legendHeight,verticalAlign:this.proximate?"top":c.verticalAlign}),!0,b)}handleOverflow(b){const a=this,c=this.chart,e=c.renderer,g=this.options;var k=g.y;const h="top"===g.verticalAlign,l=this.padding,m=g.maxHeight,q=g.navigation,r=d(q.animation,!0),p=q.arrowSize||12,t=this.pages,
+w=this.allItems,v=function(b){"number"===typeof b?E.attr({height:b}):E&&(a.clipRect=E.destroy(),a.contentGroup.clip());a.contentGroup.div&&(a.contentGroup.div.style.clip=b?"rect("+l+"px,9999px,"+(l+b)+"px,0)":"auto")},u=function(b){a[b]=e.circle(0,0,1.3*p).translate(p/2,p/2).add(O);c.styledMode||a[b].attr("fill","rgba(0,0,0,0.0001)");return a[b]};let x,J,N;k=c.spacingBox.height+(h?-k:k)-l;let O=this.nav,E=this.clipRect;"horizontal"!==g.layout||"middle"===g.verticalAlign||g.floating||(k/=2);m&&(k=
+Math.min(k,m));t.length=0;b&&0<k&&b>k&&!1!==q.enabled?(this.clipHeight=x=Math.max(k-20-this.titleHeight-l,0),this.currentPage=d(this.currentPage,1),this.fullHeight=b,w.forEach((b,a)=>{N=b.legendItem||{};b=N.y||0;const c=Math.round(N.label.getBBox().height);let d=t.length;if(!d||b-t[d-1]>x&&(J||b)!==t[d-1])t.push(J||b),d++;N.pageIx=d-1;J&&((w[a-1].legendItem||{}).pageIx=d-1);a===w.length-1&&b+c-t[d-1]>x&&b>t[d-1]&&(t.push(b),N.pageIx=d);b!==J&&(J=b)}),E||(E=a.clipRect=e.clipRect(0,l-2,9999,0),a.contentGroup.clip(E)),
+v(x),O||(this.nav=O=e.g().attr({zIndex:1}).add(this.group),this.up=e.symbol("triangle",0,0,p,p).add(O),u("upTracker").on("click",function(){a.scroll(-1,r)}),this.pager=e.text("",15,10).addClass("highcharts-legend-navigation"),!c.styledMode&&q.style&&this.pager.css(q.style),this.pager.add(O),this.down=e.symbol("triangle-down",0,0,p,p).add(O),u("downTracker").on("click",function(){a.scroll(1,r)})),a.scroll(0),b=k):O&&(v(),this.nav=O.destroy(),this.scrollGroup.attr({translateY:1}),this.clipHeight=0);
+return b}scroll(b,a){const c=this.chart,f=this.pages,e=f.length,g=this.clipHeight,k=this.options.navigation,h=this.pager,l=this.padding;let m=this.currentPage+b;m>e&&(m=e);0<m&&("undefined"!==typeof a&&B(a,c),this.nav.attr({translateX:l,translateY:g+this.padding+7+this.titleHeight,visibility:"inherit"}),[this.up,this.upTracker].forEach(function(b){b.attr({"class":1===m?"highcharts-legend-nav-inactive":"highcharts-legend-nav-active"})}),h.attr({text:m+"/"+e}),[this.down,this.downTracker].forEach(function(b){b.attr({x:18+
+this.pager.getBBox().width,"class":m===e?"highcharts-legend-nav-inactive":"highcharts-legend-nav-active"})},this),c.styledMode||(this.up.attr({fill:1===m?k.inactiveColor:k.activeColor}),this.upTracker.css({cursor:1===m?"default":"pointer"}),this.down.attr({fill:m===e?k.inactiveColor:k.activeColor}),this.downTracker.css({cursor:m===e?"default":"pointer"})),this.scrollOffset=-f[m-1]+this.initialItemY,this.scrollGroup.animate({translateY:this.scrollOffset}),this.currentPage=m,this.positionCheckboxes(),
+b=x(d(a,c.renderer.globalAnimation,!0)),q(()=>{w(this,"afterScroll",{currentPage:m})},b.duration))}setItemEvents(b,a,c){const d=this,f=b.legendItem||{},e=d.chart.renderer.boxWrapper,g=b instanceof L,k="highcharts-legend-"+(g?"point":"series")+"-active",h=d.chart.styledMode;c=c?[a,f.symbol]:[f.group];const l=a=>{d.allItems.forEach(c=>{b!==c&&[c].concat(c.linkedSeries||[]).forEach(b=>{b.setState(a,!g)})})};for(const f of c)if(f)f.on("mouseover",function(){b.visible&&l("inactive");b.setState("hover");
+b.visible&&e.addClass(k);h||a.css(d.options.itemHoverStyle)}).on("mouseout",function(){d.chart.styledMode||a.css(F(b.visible?d.itemStyle:d.itemHiddenStyle));l("");e.removeClass(k);b.setState()}).on("click",function(a){const c=function(){b.setVisible&&b.setVisible();l(b.visible?"inactive":"")};e.removeClass(k);a={browserEvent:a};b.firePointEvent?b.firePointEvent("legendItemClick",a,c):w(b,"legendItemClick",a,c)})}createCheckboxForItem(b){b.checkbox=t("input",{type:"checkbox",className:"highcharts-legend-checkbox",
+checked:b.selected,defaultChecked:b.selected},this.options.itemCheckboxStyle,this.chart.container);p(b.checkbox,"click",function(a){w(b.series||b,"checkboxClick",{checked:a.target.checked,item:b},function(){b.select()})})}}(function(b){const a=[];b.compose=function(c){z.pushUnique(a,c)&&p(c,"beforeMargins",function(){this.legend=new b(this,this.options.legend)})}})(G||(G={}));"";return G});M(a,"Core/Legend/LegendSymbol.js",[a["Core/Utilities.js"]],function(a){const {extend:x,merge:I,pick:L}=a;var C;
+(function(a){a.lineMarker=function(a,B){B=this.legendItem=this.legendItem||{};var u=this.options;const v=a.symbolWidth,l=a.symbolHeight,p=l/2,t=this.chart.renderer,m=B.group;a=a.baseline-Math.round(.3*a.fontMetrics.b);let h={},g=u.marker,e=0;this.chart.styledMode||(h={"stroke-width":Math.min(u.lineWidth||0,24)},u.dashStyle?h.dashstyle=u.dashStyle:"square"!==u.linecap&&(h["stroke-linecap"]="round"));B.line=t.path().addClass("highcharts-graph").attr(h).add(m);h["stroke-linecap"]&&(e=Math.min(B.line.strokeWidth(),
+v)/2);v&&B.line.attr({d:[["M",e,a],["L",v-e,a]]});g&&!1!==g.enabled&&v&&(u=Math.min(L(g.radius,p),p),0===this.symbol.indexOf("url")&&(g=I(g,{width:l,height:l}),u=0),B.symbol=B=t.symbol(this.symbol,v/2-u,a-u,2*u,2*u,x({context:"legend"},g)).addClass("highcharts-point").add(m),B.isMarker=!0)};a.rectangle=function(a,x){x=x.legendItem||{};const u=a.symbolHeight,v=a.options.squareSymbol;x.symbol=this.chart.renderer.rect(v?(a.symbolWidth-u)/2:0,a.baseline-u+1,v?u:a.symbolWidth,u,L(a.options.symbolRadius,
+u/2)).addClass("highcharts-point").attr({zIndex:3}).add(x.group)}})(C||(C={}));return C});M(a,"Core/Series/SeriesDefaults.js",[],function(){return{lineWidth:1,allowPointSelect:!1,crisp:!0,showCheckbox:!1,animation:{duration:1E3},enableMouseTracking:!0,events:{},marker:{enabledThreshold:2,lineColor:"#ffffff",lineWidth:0,radius:4,states:{normal:{animation:!0},hover:{animation:{duration:150},enabled:!0,radiusPlus:2,lineWidthPlus:1},select:{fillColor:"#cccccc",lineColor:"#000000",lineWidth:2}}},point:{events:{}},
+dataLabels:{animation:{},align:"center",borderWidth:0,defer:!0,formatter:function(){const {numberFormatter:a}=this.series.chart;return"number"!==typeof this.y?"":a(this.y,-1)},padding:5,style:{fontSize:"0.7em",fontWeight:"bold",color:"contrast",textOutline:"1px contrast"},verticalAlign:"bottom",x:0,y:0},cropThreshold:300,opacity:1,pointRange:0,softThreshold:!0,states:{normal:{animation:!0},hover:{animation:{duration:150},lineWidthPlus:1,marker:{},halo:{size:10,opacity:.25}},select:{animation:{duration:0}},
+inactive:{animation:{duration:150},opacity:.2}},stickyTracking:!0,turboThreshold:1E3,findNearestPointBy:"x"}});M(a,"Core/Series/SeriesRegistry.js",[a["Core/Globals.js"],a["Core/Defaults.js"],a["Core/Series/Point.js"],a["Core/Utilities.js"]],function(a,y,I,L){const {defaultOptions:x}=y,{extendClass:z,merge:H}=L;var B;(function(u){function v(a,p){const l=x.plotOptions||{},m=p.defaultOptions,h=p.prototype;h.type=a;h.pointClass||(h.pointClass=I);m&&(l[a]=m);u.seriesTypes[a]=p}u.seriesTypes=a.seriesTypes;
+u.registerSeriesType=v;u.seriesType=function(a,p,t,m,h){const g=x.plotOptions||{};p=p||"";g[a]=H(g[p],t);v(a,z(u.seriesTypes[p]||function(){},m));u.seriesTypes[a].prototype.type=a;h&&(u.seriesTypes[a].prototype.pointClass=z(I,h));return u.seriesTypes[a]}})(B||(B={}));return B});M(a,"Core/Series/Series.js",[a["Core/Animation/AnimationUtilities.js"],a["Core/Defaults.js"],a["Core/Foundation.js"],a["Core/Globals.js"],a["Core/Legend/LegendSymbol.js"],a["Core/Series/Point.js"],a["Core/Series/SeriesDefaults.js"],
+a["Core/Series/SeriesRegistry.js"],a["Core/Renderer/SVG/SVGElement.js"],a["Core/Utilities.js"]],function(a,y,I,L,C,z,H,B,u,v){const {animObject:l,setAnimation:p}=a,{defaultOptions:t}=y,{registerEventOptions:m}=I,{hasTouch:h,svg:g,win:e}=L,{seriesTypes:w}=B,{arrayMax:x,arrayMin:F,clamp:d,correctFloat:k,defined:r,diffObjects:q,erase:G,error:b,extend:f,find:c,fireEvent:n,getClosestDistance:P,getNestedProperty:D,insertItem:K,isArray:X,isNumber:T,isString:Z,merge:V,objectEach:Y,pick:A,removeEvent:M,splat:ia,
+syncTimeout:ba}=v;class aa{constructor(){this.zones=this.yAxis=this.xAxis=this.userOptions=this.tooltipOptions=this.processedYData=this.processedXData=this.points=this.options=this.linkedSeries=this.index=this.eventsToUnbind=this.eventOptions=this.data=this.chart=this._i=void 0}init(b,a){n(this,"init",{options:a});const c=this,d=b.series;this.eventsToUnbind=[];c.chart=b;c.options=c.setOptions(a);a=c.options;c.linkedSeries=[];c.bindAxes();f(c,{name:a.name,state:"",visible:!1!==a.visible,selected:!0===
+a.selected});m(this,a);const e=a.events;if(e&&e.click||a.point&&a.point.events&&a.point.events.click||a.allowPointSelect)b.runTrackerClick=!0;c.getColor();c.getSymbol();c.parallelArrays.forEach(function(b){c[b+"Data"]||(c[b+"Data"]=[])});c.isCartesian&&(b.hasCartesianSeries=!0);let g;d.length&&(g=d[d.length-1]);c._i=A(g&&g._i,-1)+1;c.opacity=c.options.opacity;b.orderItems("series",K(this,d));a.dataSorting&&a.dataSorting.enabled?c.setDataSortingOptions():c.points||c.data||c.setData(a.data,!1);n(this,
+"afterInit")}is(b){return w[b]&&this instanceof w[b]}bindAxes(){const a=this,c=a.options,d=a.chart;let f;n(this,"bindAxes",null,function(){(a.axisTypes||[]).forEach(function(e){d[e].forEach(function(b){f=b.options;if(A(c[e],0)===b.index||"undefined"!==typeof c[e]&&c[e]===f.id)K(a,b.series),a[e]=b,b.isDirty=!0});a[e]||a.optionalAxis===e||b(18,!0,d)})});n(this,"afterBindAxes")}updateParallelArrays(b,a,c){const d=b.series,f=T(a)?function(c){const f="y"===c&&d.toYData?d.toYData(b):b[c];d[c+"Data"][a]=
+f}:function(b){Array.prototype[a].apply(d[b+"Data"],c)};d.parallelArrays.forEach(f)}hasData(){return this.visible&&"undefined"!==typeof this.dataMax&&"undefined"!==typeof this.dataMin||this.visible&&this.yData&&0<this.yData.length}autoIncrement(b){var a=this.options;const c=a.pointIntervalUnit,d=a.relativeXValue,f=this.chart.time;let e=this.xIncrement,g;e=A(e,a.pointStart,0);this.pointInterval=g=A(this.pointInterval,a.pointInterval,1);d&&T(b)&&(g*=b);c&&(a=new f.Date(e),"day"===c?f.set("Date",a,f.get("Date",
+a)+g):"month"===c?f.set("Month",a,f.get("Month",a)+g):"year"===c&&f.set("FullYear",a,f.get("FullYear",a)+g),g=a.getTime()-e);if(d&&T(b))return e+g;this.xIncrement=e+g;return e}setDataSortingOptions(){const b=this.options;f(this,{requireSorting:!1,sorted:!1,enabledDataSorting:!0,allowDG:!1});r(b.pointRange)||(b.pointRange=1)}setOptions(b){var a,c;const d=this.chart;var f=d.options.plotOptions,e=d.userOptions||{};const g=V(b);b=d.styledMode;const k={plotOptions:f,userOptions:g};n(this,"setOptions",
+k);const h=k.plotOptions[this.type];e=e.plotOptions||{};const l=e.series||{},m=t.plotOptions[this.type]||{},q=e[this.type]||{};this.userOptions=k.userOptions;f=V(h,f.series,q,g);this.tooltipOptions=V(t.tooltip,null===(a=t.plotOptions.series)||void 0===a?void 0:a.tooltip,null===m||void 0===m?void 0:m.tooltip,d.userOptions.tooltip,null===(c=e.series)||void 0===c?void 0:c.tooltip,q.tooltip,g.tooltip);this.stickyTracking=A(g.stickyTracking,q.stickyTracking,l.stickyTracking,this.tooltipOptions.shared&&
+!this.noSharedTooltip?!0:f.stickyTracking);null===h.marker&&delete f.marker;this.zoneAxis=f.zoneAxis;c=this.zones=(f.zones||[]).slice();!f.negativeColor&&!f.negativeFillColor||f.zones||(a={value:f[this.zoneAxis+"Threshold"]||f.threshold||0,className:"highcharts-negative"},b||(a.color=f.negativeColor,a.fillColor=f.negativeFillColor),c.push(a));c.length&&r(c[c.length-1].value)&&c.push(b?{}:{color:this.color,fillColor:this.fillColor});n(this,"afterSetOptions",{options:f});return f}getName(){return A(this.options.name,
+"Series "+(this.index+1))}getCyclic(b,a,c){const d=this.chart,f=`${b}Index`,e=`${b}Counter`,g=(null===c||void 0===c?void 0:c.length)||d.options.chart.colorCount;if(!a){var k=A("color"===b?this.options.colorIndex:void 0,this[f]);r(k)||(d.series.length||(d[e]=0),k=d[e]%g,d[e]+=1);c&&(a=c[k])}"undefined"!==typeof k&&(this[f]=k);this[b]=a}getColor(){this.chart.styledMode?this.getCyclic("color"):this.options.colorByPoint?this.color="#cccccc":this.getCyclic("color",this.options.color||t.plotOptions[this.type].color,
+this.chart.options.colors)}getPointsCollection(){return(this.hasGroupedData?this.points:this.data)||[]}getSymbol(){this.getCyclic("symbol",this.options.marker.symbol,this.chart.options.symbols)}findPointIndex(b,a){const d=b.id,f=b.x,e=this.points;var g=this.options.dataSorting,k;let h,n;if(d)g=this.chart.get(d),g instanceof z&&(k=g);else if(this.linkedParent||this.enabledDataSorting||this.options.relativeXValue)if(k=a=>!a.touched&&a.index===b.index,g&&g.matchByName?k=a=>!a.touched&&a.name===b.name:
+this.options.relativeXValue&&(k=a=>!a.touched&&a.options.x===b.x),k=c(e,k),!k)return;k&&(n=k&&k.index,"undefined"!==typeof n&&(h=!0));"undefined"===typeof n&&T(f)&&(n=this.xData.indexOf(f,a));-1!==n&&"undefined"!==typeof n&&this.cropped&&(n=n>=this.cropStart?n-this.cropStart:n);!h&&T(n)&&e[n]&&e[n].touched&&(n=void 0);return n}updateData(b,a){const c=this.options,d=c.dataSorting,f=this.points,e=[],g=this.requireSorting,k=b.length===f.length;let n,h,l,m=!0;this.xIncrement=null;b.forEach(function(b,
+a){var h=r(b)&&this.pointClass.prototype.optionsToObject.call({series:this},b)||{};const m=h.x;if(h.id||T(m)){if(h=this.findPointIndex(h,l),-1===h||"undefined"===typeof h?e.push(b):f[h]&&b!==c.data[h]?(f[h].update(b,!1,null,!1),f[h].touched=!0,g&&(l=h+1)):f[h]&&(f[h].touched=!0),!k||a!==h||d&&d.enabled||this.hasDerivedData)n=!0}else e.push(b)},this);if(n)for(b=f.length;b--;)(h=f[b])&&!h.touched&&h.remove&&h.remove(!1,a);else!k||d&&d.enabled?m=!1:(b.forEach(function(b,a){b===f[a].y||f[a].destroyed||
+f[a].update(b,!1,null,!1)}),e.length=0);f.forEach(function(b){b&&(b.touched=!1)});if(!m)return!1;e.forEach(function(b){this.addPoint(b,!1,null,null,!1)},this);null===this.xIncrement&&this.xData&&this.xData.length&&(this.xIncrement=x(this.xData),this.autoIncrement());return!0}setData(a,c=!0,d,f){var e;const g=this,k=g.points,h=k&&k.length||0,n=g.options,l=g.chart,m=n.dataSorting,q=g.xAxis,p=n.turboThreshold,r=this.xData,t=this.yData;var w=g.pointArrayMap;w=w&&w.length;const J=n.keys;let v,u=0,O=1,
+x=null;if(!l.options.chart.allowMutatingData){n.data&&delete g.options.data;g.userOptions.data&&delete g.userOptions.data;var N=V(!0,a)}a=N||a||[];N=a.length;m&&m.enabled&&(a=this.sortData(a));l.options.chart.allowMutatingData&&!1!==f&&N&&h&&!g.cropped&&!g.hasGroupedData&&g.visible&&!g.boosted&&(v=this.updateData(a,d));if(!v){g.xIncrement=null;g.colorCounter=0;this.parallelArrays.forEach(function(b){g[b+"Data"].length=0});if(p&&N>p)if(x=g.getFirstValidPoint(a),T(x))for(d=0;d<N;d++)r[d]=this.autoIncrement(),
+t[d]=a[d];else if(X(x))if(w)if(x.length===w)for(d=0;d<N;d++)r[d]=this.autoIncrement(),t[d]=a[d];else for(d=0;d<N;d++)f=a[d],r[d]=f[0],t[d]=f.slice(1,w+1);else if(J&&(u=J.indexOf("x"),O=J.indexOf("y"),u=0<=u?u:0,O=0<=O?O:1),1===x.length&&(O=0),u===O)for(d=0;d<N;d++)r[d]=this.autoIncrement(),t[d]=a[d][O];else for(d=0;d<N;d++)f=a[d],r[d]=f[u],t[d]=f[O];else b(12,!1,l);else for(d=0;d<N;d++)f={series:g},g.pointClass.prototype.applyOptions.apply(f,[a[d]]),g.updateParallelArrays(f,d);t&&Z(t[0])&&b(14,!0,
+l);g.data=[];g.options.data=g.userOptions.data=a;for(d=h;d--;)null===(e=k[d])||void 0===e?void 0:e.destroy();q&&(q.minRange=q.userMinRange);g.isDirty=l.isDirtyBox=!0;g.isDirtyData=!!k;d=!1}"point"===n.legendType&&(this.processData(),this.generatePoints());c&&l.redraw(d)}sortData(b){const a=this,c=a.options.dataSorting.sortKey||"y",d=function(b,a){return r(a)&&b.pointClass.prototype.optionsToObject.call({series:b},a)||{}};b.forEach(function(c,f){b[f]=d(a,c);b[f].index=f},this);b.concat().sort((b,a)=>
+{b=D(c,b);a=D(c,a);return a<b?-1:a>b?1:0}).forEach(function(b,a){b.x=a},this);a.linkedSeries&&a.linkedSeries.forEach(function(a){const c=a.options,f=c.data;c.dataSorting&&c.dataSorting.enabled||!f||(f.forEach(function(c,e){f[e]=d(a,c);b[e]&&(f[e].x=b[e].x,f[e].index=e)}),a.setData(f,!1))});return b}getProcessedData(a){const c=this;var d=c.xAxis,f=c.options;const e=f.cropThreshold,g=a||c.getExtremesFromAll||f.getExtremesFromAll,k=null===d||void 0===d?void 0:d.logarithmic,h=c.isCartesian;let n=0;let l;
+a=c.xData;f=c.yData;let m=!1;const q=a.length;if(d){var r=d.getExtremes();l=r.min;r=r.max;m=!(!d.categories||d.names.length)}if(h&&c.sorted&&!g&&(!e||q>e||c.forceCrop))if(a[q-1]<l||a[0]>r)a=[],f=[];else if(c.yData&&(a[0]<l||a[q-1]>r)){var p=this.cropData(c.xData,c.yData,l,r);a=p.xData;f=p.yData;n=p.start;p=!0}d=P([k?a.map(k.log2lin):a],()=>c.requireSorting&&!m&&b(15,!1,c.chart));return{xData:a,yData:f,cropped:p,cropStart:n,closestPointRange:d}}processData(b){const a=this.xAxis;if(this.isCartesian&&
+!this.isDirty&&!a.isDirty&&!this.yAxis.isDirty&&!b)return!1;b=this.getProcessedData();this.cropped=b.cropped;this.cropStart=b.cropStart;this.processedXData=b.xData;this.processedYData=b.yData;this.closestPointRange=this.basePointRange=b.closestPointRange;n(this,"afterProcessData")}cropData(b,a,c,d,f){const e=b.length;let g,k=0,h=e;f=A(f,this.cropShoulder);for(g=0;g<e;g++)if(b[g]>=c){k=Math.max(0,g-f);break}for(c=g;c<e;c++)if(b[c]>d){h=c+f;break}return{xData:b.slice(k,h),yData:a.slice(k,h),start:k,
+end:h}}generatePoints(){var b=this.options;const a=this.processedData||b.data,c=this.processedXData,d=this.processedYData,e=this.pointClass,g=c.length,k=this.cropStart||0,h=this.hasGroupedData,l=b.keys,m=[];b=b.dataGrouping&&b.dataGrouping.groupAll?k:0;let q;let r,p,t=this.data;if(!t&&!h){var w=[];w.length=a.length;t=this.data=w}l&&h&&(this.options.keys=!1);for(p=0;p<g;p++)w=k+p,h?(r=(new e).init(this,[c[p]].concat(ia(d[p]))),r.dataGroup=this.groupMap[b+p],r.dataGroup.options&&(r.options=r.dataGroup.options,
+f(r,r.dataGroup.options),delete r.dataLabels)):(r=t[w])||"undefined"===typeof a[w]||(t[w]=r=(new e).init(this,a[w],c[p])),r&&(r.index=h?b+p:w,m[p]=r);this.options.keys=l;if(t&&(g!==(q=t.length)||h))for(p=0;p<q;p++)p!==k||h||(p+=g),t[p]&&(t[p].destroyElements(),t[p].plotX=void 0);this.data=t;this.points=m;n(this,"afterGeneratePoints")}getXExtremes(b){return{min:F(b),max:x(b)}}getExtremes(b,a){const c=this.xAxis;var d=this.yAxis;const f=this.processedXData||this.xData,e=[],g=this.requireSorting?this.cropShoulder:
+0;d=d?d.positiveValuesOnly:!1;let k,h=0,l=0,m=0;b=b||this.stackedYData||this.processedYData||[];const q=b.length;if(c){var p=c.getExtremes();h=p.min;l=p.max}for(k=0;k<q;k++){var r=f[k];p=b[k];var t=(T(p)||X(p))&&(p.length||0<p||!d);r=a||this.getExtremesFromAll||this.options.getExtremesFromAll||this.cropped||!c||(f[k+g]||r)>=h&&(f[k-g]||r)<=l;if(t&&r)if(t=p.length)for(;t--;)T(p[t])&&(e[m++]=p[t]);else e[m++]=p}b={activeYData:e,dataMin:F(e),dataMax:x(e)};n(this,"afterGetExtremes",{dataExtremes:b});
+return b}applyExtremes(){const b=this.getExtremes();this.dataMin=b.dataMin;this.dataMax=b.dataMax;return b}getFirstValidPoint(b){const a=b.length;let c=0,d=null;for(;null===d&&c<a;)d=b[c],c++;return d}translate(){var b;this.processedXData||this.processData();this.generatePoints();var a=this.options;const c=a.stacking,f=this.xAxis,e=f.categories,g=this.enabledDataSorting,h=this.yAxis,l=this.points,m=l.length,q=this.pointPlacementToXValue(),p=!!q,t=a.threshold;a=a.startFromThreshold?t:0;let w,v,u,x,
+D=Number.MAX_VALUE;for(w=0;w<m;w++){const n=l[w],m=n.x;let J,Q,R=n.y,O=n.low;const E=c&&(null===(b=h.stacking)||void 0===b?void 0:b.stacks[(this.negStacks&&R<(a?0:t)?"-":"")+this.stackKey]);v=f.translate(m,!1,!1,!1,!0,q);n.plotX=T(v)?k(d(v,-1E5,1E5)):void 0;c&&this.visible&&E&&E[m]&&(x=this.getStackIndicator(x,m,this.index),!n.isNull&&x.key&&(J=E[m],Q=J.points[x.key]),J&&X(Q)&&(O=Q[0],R=Q[1],O===a&&x.key===E[m].base&&(O=A(T(t)?t:h.min)),h.positiveValuesOnly&&r(O)&&0>=O&&(O=void 0),n.total=n.stackTotal=
+A(J.total),n.percentage=r(n.y)&&J.total?n.y/J.total*100:void 0,n.stackY=R,this.irregularWidths||J.setOffset(this.pointXOffset||0,this.barW||0,void 0,void 0,void 0,this.xAxis)));n.yBottom=r(O)?d(h.translate(O,!1,!0,!1,!0),-1E5,1E5):void 0;this.dataModify&&(R=this.dataModify.modifyValue(R,w));let N;T(R)&&void 0!==n.plotX&&(N=h.translate(R,!1,!0,!1,!0),N=T(N)?d(N,-1E5,1E5):void 0);n.plotY=N;n.isInside=this.isPointInside(n);n.clientX=p?k(f.translate(m,!1,!1,!1,!0,q)):v;n.negative=(n.y||0)<(t||0);n.category=
+A(e&&e[n.x],n.x);n.isNull||!1===n.visible||("undefined"!==typeof u&&(D=Math.min(D,Math.abs(v-u))),u=v);n.zone=this.zones.length?n.getZone():void 0;!n.graphic&&this.group&&g&&(n.isNew=!0)}this.closestPointRangePx=D;n(this,"afterTranslate")}getValidPoints(b,a,c){const d=this.chart;return(b||this.points||[]).filter(function(b){const {plotX:f,plotY:e}=b;return!c&&(b.isNull||!T(e))||a&&!d.isInsidePlot(f,e,{inverted:d.inverted})?!1:!1!==b.visible})}getClipBox(){const {chart:b,xAxis:a,yAxis:c}=this,d=V(b.clipBox);
+a&&a.len!==b.plotSizeX&&(d.width=a.len);c&&c.len!==b.plotSizeY&&(d.height=c.len);return d}getSharedClipKey(){return this.sharedClipKey=(this.options.xAxis||0)+","+(this.options.yAxis||0)}setClip(){const {chart:b,group:a,markerGroup:c}=this,d=b.sharedClips,f=b.renderer,e=this.getClipBox(),g=this.getSharedClipKey();let k=d[g];k?k.animate(e):d[g]=k=f.clipRect(e);a&&a.clip(!1===this.options.clip?void 0:k);c&&c.clip()}animate(b){const {chart:a,group:c,markerGroup:d}=this,f=a.inverted;var e=l(this.options.animation),
+g=[this.getSharedClipKey(),e.duration,e.easing,e.defer].join();let k=a.sharedClips[g],n=a.sharedClips[g+"m"];if(b&&c)e=this.getClipBox(),k?k.attr("height",e.height):(e.width=0,f&&(e.x=a.plotHeight),k=a.renderer.clipRect(e),a.sharedClips[g]=k,n=a.renderer.clipRect({x:-99,y:-99,width:f?a.plotWidth+199:99,height:f?99:a.plotHeight+199}),a.sharedClips[g+"m"]=n),c.clip(k),d&&d.clip(n);else if(k&&!k.hasClass("highcharts-animating")){g=this.getClipBox();const b=e.step;d&&d.element.childNodes.length&&(e.step=
+function(a,c){b&&b.apply(c,arguments);"width"===c.prop&&n&&n.element&&n.attr(f?"height":"width",a+99)});k.addClass("highcharts-animating").animate(g,e)}}afterAnimate(){this.setClip();Y(this.chart.sharedClips,(b,a,c)=>{b&&!this.chart.container.querySelector(`[clip-path="url(#${b.id})"]`)&&(b.destroy(),delete c[a])});this.finishedAnimating=!0;n(this,"afterAnimate")}drawPoints(b=this.points){const a=this.chart,c=a.styledMode,{colorAxis:d,options:f}=this,e=f.marker,g=this[this.specialGroup||"markerGroup"],
+k=this.xAxis,n=A(e.enabled,!k||k.isRadial?!0:null,this.closestPointRangePx>=e.enabledThreshold*e.radius);let h,l,m,q;let p,r;if(!1!==e.enabled||this._hasPointMarkers)for(h=0;h<b.length;h++){l=b[h];q=(m=l.graphic)?"animate":"attr";var t=l.marker||{};p=!!l.marker;if((n&&"undefined"===typeof t.enabled||t.enabled)&&!l.isNull&&!1!==l.visible){const b=A(t.symbol,this.symbol,"rect");r=this.markerAttribs(l,l.selected&&"select");this.enabledDataSorting&&(l.startXPos=k.reversed?-(r.width||0):k.width);const f=
+!1!==l.isInside;!m&&f&&(0<(r.width||0)||l.hasImage)&&(l.graphic=m=a.renderer.symbol(b,r.x,r.y,r.width,r.height,p?t:e).add(g),this.enabledDataSorting&&a.hasRendered&&(m.attr({x:l.startXPos}),q="animate"));m&&"animate"===q&&m[f?"show":"hide"](f).animate(r);if(m)if(t=this.pointAttribs(l,c||!l.selected?void 0:"select"),c)d&&m.css({fill:t.fill});else m[q](t);m&&m.addClass(l.getClassName(),!0)}else m&&(l.graphic=m.destroy())}}markerAttribs(b,a){const c=this.options;var d=c.marker;const f=b.marker||{},e=
+f.symbol||d.symbol,g={};let k=A(f.radius,d&&d.radius);a&&(d=d.states[a],a=f.states&&f.states[a],k=A(a&&a.radius,d&&d.radius,k&&k+(d&&d.radiusPlus||0)));b.hasImage=e&&0===e.indexOf("url");b.hasImage&&(k=0);b=b.pos();T(k)&&b&&(g.x=b[0]-k,g.y=b[1]-k,c.crisp&&(g.x=Math.floor(g.x)));k&&(g.width=g.height=2*k);return g}pointAttribs(b,a){var c=this.options.marker,d=b&&b.options;const f=d&&d.marker||{};var e=d&&d.color,g=b&&b.color;const k=b&&b.zone&&b.zone.color;let n=this.color;b=A(f.lineWidth,c.lineWidth);
+d=1;n=e||k||g||n;e=f.fillColor||c.fillColor||n;g=f.lineColor||c.lineColor||n;a=a||"normal";c=c.states[a]||{};a=f.states&&f.states[a]||{};b=A(a.lineWidth,c.lineWidth,b+A(a.lineWidthPlus,c.lineWidthPlus,0));e=a.fillColor||c.fillColor||e;g=a.lineColor||c.lineColor||g;d=A(a.opacity,c.opacity,d);return{stroke:g,"stroke-width":b,fill:e,opacity:d}}destroy(b){const a=this,c=a.chart,d=/AppleWebKit\/533/.test(e.navigator.userAgent),f=a.data||[];let g,k,h,l;n(a,"destroy",{keepEventsForUpdate:b});this.removeEvents(b);
+(a.axisTypes||[]).forEach(function(b){(l=a[b])&&l.series&&(G(l.series,a),l.isDirty=l.forceRedraw=!0)});a.legendItem&&a.chart.legend.destroyItem(a);for(k=f.length;k--;)(h=f[k])&&h.destroy&&h.destroy();a.clips&&a.clips.forEach(b=>b.destroy());v.clearTimeout(a.animationTimeout);Y(a,function(b,a){b instanceof u&&!b.survive&&(g=d&&"group"===a?"hide":"destroy",b[g]())});c.hoverSeries===a&&(c.hoverSeries=void 0);G(c.series,a);c.orderItems("series");Y(a,function(c,d){b&&"hcEvents"===d||delete a[d]})}applyZones(){const b=
+this,a=this.chart,c=a.renderer,f=this.zones,e=this.clips||[],g=this.graph,k=this.area,n=Math.max(a.plotWidth,a.plotHeight),h=this[(this.zoneAxis||"y")+"Axis"],l=a.inverted;let m,q,p,r,t,w,v,u,x,D,E,G=!1;f.length&&(g||k)&&h&&"undefined"!==typeof h.min?(t=h.reversed,w=h.horiz,g&&!this.showLine&&g.hide(),k&&k.hide(),r=h.getExtremes(),f.forEach(function(f,Q){m=t?w?a.plotWidth:0:w?0:h.toPixels(r.min)||0;m=d(A(q,m),0,n);q=d(Math.round(h.toPixels(A(f.value,r.max),!0)||0),0,n);G&&(m=q=h.toPixels(r.max));
+v=Math.abs(m-q);u=Math.min(m,q);x=Math.max(m,q);h.isXAxis?(p={x:l?x:u,y:0,width:v,height:n},w||(p.x=a.plotHeight-p.x)):(p={x:0,y:l?x:u,width:n,height:v},w&&(p.y=a.plotWidth-p.y));e[Q]?e[Q].animate(p):e[Q]=c.clipRect(p);D=b["zone-area-"+Q];E=b["zone-graph-"+Q];g&&E&&E.clip(e[Q]);k&&D&&D.clip(e[Q]);G=f.value>r.max;b.resetZones&&0===q&&(q=void 0)}),this.clips=e):b.visible&&(g&&g.show(),k&&k.show())}plotGroup(b,a,c,d,f){let e=this[b];const g=!e;c={visibility:c,zIndex:d||.1};"undefined"===typeof this.opacity||
+this.chart.styledMode||"inactive"===this.state||(c.opacity=this.opacity);g&&(this[b]=e=this.chart.renderer.g().add(f));e.addClass("highcharts-"+a+" highcharts-series-"+this.index+" highcharts-"+this.type+"-series "+(r(this.colorIndex)?"highcharts-color-"+this.colorIndex+" ":"")+(this.options.className||"")+(e.hasClass("highcharts-tracker")?" highcharts-tracker":""),!0);e.attr(c)[g?"attr":"animate"](this.getPlotBox(a));return e}getPlotBox(b){let a=this.xAxis,c=this.yAxis;const d=this.chart;b=d.inverted&&
+!d.polar&&a&&!1!==this.invertible&&"series"===b;d.inverted&&(a=c,c=this.xAxis);return{translateX:a?a.left:d.plotLeft,translateY:c?c.top:d.plotTop,rotation:b?90:0,rotationOriginX:b?(a.len-c.len)/2:0,rotationOriginY:b?(a.len+c.len)/2:0,scaleX:b?-1:1,scaleY:1}}removeEvents(b){b||M(this);this.eventsToUnbind.length&&(this.eventsToUnbind.forEach(function(b){b()}),this.eventsToUnbind.length=0)}render(){const b=this;var a=b.chart;const c=b.options,d=l(c.animation),f=b.visible?"inherit":"hidden",e=c.zIndex,
+g=b.hasRendered;a=a.seriesGroup;let k=b.finishedAnimating?0:d.duration;n(this,"render");b.plotGroup("group","series",f,e,a);b.markerGroup=b.plotGroup("markerGroup","markers",f,e,a);!1!==c.clip&&b.setClip();b.animate&&k&&b.animate(!0);b.drawGraph&&(b.drawGraph(),b.applyZones());b.visible&&b.drawPoints();b.drawDataLabels&&b.drawDataLabels();b.redrawPoints&&b.redrawPoints();b.drawTracker&&c.enableMouseTracking&&b.drawTracker();b.animate&&k&&b.animate();g||(k&&d.defer&&(k+=d.defer),b.animationTimeout=
+ba(function(){b.afterAnimate()},k||0));b.isDirty=!1;b.hasRendered=!0;n(b,"afterRender")}redraw(){const b=this.isDirty||this.isDirtyData;this.translate();this.render();b&&delete this.kdTree}searchPoint(b,a){const c=this.xAxis,d=this.yAxis,f=this.chart.inverted;return this.searchKDTree({clientX:f?c.len-b.chartY+c.pos:b.chartX-c.pos,plotY:f?d.len-b.chartX+d.pos:b.chartY-d.pos},a,b)}buildKDTree(b){function a(b,d,f){var e=b&&b.length;let g;if(e)return g=c.kdAxisArray[d%f],b.sort(function(b,a){return b[g]-
+a[g]}),e=Math.floor(e/2),{point:b[e],left:a(b.slice(0,e),d+1,f),right:a(b.slice(e+1),d+1,f)}}this.buildingKdTree=!0;const c=this,d=-1<c.options.findNearestPointBy.indexOf("y")?2:1;delete c.kdTree;ba(function(){c.kdTree=a(c.getValidPoints(null,!c.directTouch),d,d);c.buildingKdTree=!1},c.options.kdNow||b&&"touchstart"===b.type?0:1)}searchKDTree(b,a,c){function d(b,a,c,n){const h=a.point;var l=f.kdAxisArray[c%n];let m=h;var q=r(b[e])&&r(h[e])?Math.pow(b[e]-h[e],2):null;var p=r(b[g])&&r(h[g])?Math.pow(b[g]-
+h[g],2):null;p=(q||0)+(p||0);h.dist=r(p)?Math.sqrt(p):Number.MAX_VALUE;h.distX=r(q)?Math.sqrt(q):Number.MAX_VALUE;l=b[l]-h[l];p=0>l?"left":"right";q=0>l?"right":"left";a[p]&&(p=d(b,a[p],c+1,n),m=p[k]<m[k]?p:h);a[q]&&Math.sqrt(l*l)<m[k]&&(b=d(b,a[q],c+1,n),m=b[k]<m[k]?b:m);return m}const f=this,e=this.kdAxisArray[0],g=this.kdAxisArray[1],k=a?"distX":"dist";a=-1<f.options.findNearestPointBy.indexOf("y")?2:1;this.kdTree||this.buildingKdTree||this.buildKDTree(c);if(this.kdTree)return d(b,this.kdTree,
+a,a)}pointPlacementToXValue(){const {options:{pointPlacement:b,pointRange:a},xAxis:c}=this;let d=b;"between"===d&&(d=c.reversed?-.5:.5);return T(d)?d*(a||c.pointRange):0}isPointInside(b){const {chart:a,xAxis:c,yAxis:d}=this;return"undefined"!==typeof b.plotY&&"undefined"!==typeof b.plotX&&0<=b.plotY&&b.plotY<=(d?d.len:a.plotHeight)&&0<=b.plotX&&b.plotX<=(c?c.len:a.plotWidth)}drawTracker(){const b=this,a=b.options,c=a.trackByArea,d=[].concat(c?b.areaPath:b.graphPath),f=b.chart,e=f.pointer,k=f.renderer,
+l=f.options.tooltip.snap,m=b.tracker,q=function(c){if(a.enableMouseTracking&&f.hoverSeries!==b)b.onMouseOver()},p="rgba(192,192,192,"+(g?.0001:.002)+")";m?m.attr({d}):b.graph&&(b.tracker=k.path(d).attr({visibility:b.visible?"inherit":"hidden",zIndex:2}).addClass(c?"highcharts-tracker-area":"highcharts-tracker-line").add(b.group),f.styledMode||b.tracker.attr({"stroke-linecap":"round","stroke-linejoin":"round",stroke:p,fill:c?p:"none","stroke-width":b.graph.strokeWidth()+(c?0:2*l)}),[b.tracker,b.markerGroup,
+b.dataLabelsGroup].forEach(function(b){if(b&&(b.addClass("highcharts-tracker").on("mouseover",q).on("mouseout",function(b){e.onTrackerMouseOut(b)}),a.cursor&&!f.styledMode&&b.css({cursor:a.cursor}),h))b.on("touchstart",q)}));n(this,"afterDrawTracker")}addPoint(b,a,c,d,f){const e=this.options,g=this.data,k=this.chart;var h=this.xAxis;h=h&&h.hasNames&&h.names;const l=e.data,m=this.xData;let q,p;a=A(a,!0);const r={series:this};this.pointClass.prototype.applyOptions.apply(r,[b]);const t=r.x;p=m.length;
+if(this.requireSorting&&t<m[p-1])for(q=!0;p&&m[p-1]>t;)p--;this.updateParallelArrays(r,"splice",[p,0,0]);this.updateParallelArrays(r,p);h&&r.name&&(h[t]=r.name);l.splice(p,0,b);if(q||this.processedData)this.data.splice(p,0,null),this.processData();"point"===e.legendType&&this.generatePoints();c&&(g[0]&&g[0].remove?g[0].remove(!1):(g.shift(),this.updateParallelArrays(r,"shift"),l.shift()));!1!==f&&n(this,"addPoint",{point:r});this.isDirtyData=this.isDirty=!0;a&&k.redraw(d)}removePoint(b,a,c){const d=
+this,f=d.data,e=f[b],g=d.points,k=d.chart,h=function(){g&&g.length===f.length&&g.splice(b,1);f.splice(b,1);d.options.data.splice(b,1);d.updateParallelArrays(e||{series:d},"splice",[b,1]);e&&e.destroy();d.isDirty=!0;d.isDirtyData=!0;a&&k.redraw()};p(c,k);a=A(a,!0);e?e.firePointEvent("remove",null,h):h()}remove(b,a,c,d){function f(){e.destroy(d);g.isDirtyLegend=g.isDirtyBox=!0;g.linkSeries(d);A(b,!0)&&g.redraw(a)}const e=this,g=e.chart;!1!==c?n(e,"remove",null,f):f()}update(a,c){a=q(a,this.userOptions);
+n(this,"update",{options:a});const d=this,e=d.chart;var g=d.userOptions;const k=d.initialType||d.type;var h=e.options.plotOptions;const l=w[k].prototype;var m=d.finishedAnimating&&{animation:!1};const p={};let r,t=["colorIndex","eventOptions","navigatorSeries","symbolIndex","baseSeries"],v=a.type||g.type||e.options.chart.type;const u=!(this.hasDerivedData||v&&v!==this.type||"undefined"!==typeof a.pointStart||"undefined"!==typeof a.pointInterval||"undefined"!==typeof a.relativeXValue||a.joinBy||a.mapData||
+d.hasOptionChanged("dataGrouping")||d.hasOptionChanged("pointStart")||d.hasOptionChanged("pointInterval")||d.hasOptionChanged("pointIntervalUnit")||d.hasOptionChanged("keys"));v=v||k;u&&(t.push("data","isDirtyData","points","processedData","processedXData","processedYData","xIncrement","cropped","_hasPointMarkers","_hasPointLabels","clips","nodes","layout","level","mapMap","mapData","minY","maxY","minX","maxX"),!1!==a.visible&&t.push("area","graph"),d.parallelArrays.forEach(function(b){t.push(b+"Data")}),
+a.data&&(a.dataSorting&&f(d.options.dataSorting,a.dataSorting),this.setData(a.data,!1)));a=V(g,m,{index:"undefined"===typeof g.index?d.index:g.index,pointStart:A(h&&h.series&&h.series.pointStart,g.pointStart,d.xData[0])},!u&&{data:d.options.data},a);u&&a.data&&(a.data=d.options.data);t=["group","markerGroup","dataLabelsGroup","transformGroup"].concat(t);t.forEach(function(b){t[b]=d[b];delete d[b]});h=!1;if(w[v]){if(h=v!==d.type,d.remove(!1,!1,!1,!0),h)if(Object.setPrototypeOf)Object.setPrototypeOf(d,
+w[v].prototype);else{m=Object.hasOwnProperty.call(d,"hcEvents")&&d.hcEvents;for(r in l)d[r]=void 0;f(d,w[v].prototype);m?d.hcEvents=m:delete d.hcEvents}}else b(17,!0,e,{missingModuleFor:v});t.forEach(function(b){d[b]=t[b]});d.init(e,a);if(u&&this.points){a=d.options;if(!1===a.visible)p.graphic=1,p.dataLabel=1;else if(!d._hasPointLabels){const {marker:b,dataLabels:c}=a;g=g.marker||{};!b||!1!==b.enabled&&g.symbol===b.symbol&&g.height===b.height&&g.width===b.width||(p.graphic=1);c&&!1===c.enabled&&(p.dataLabel=
+1)}for(const b of this.points)b&&b.series&&(b.resolveColor(),Object.keys(p).length&&b.destroyElements(p),!1===a.showInLegend&&b.legendItem&&e.legend.destroyItem(b))}d.initialType=k;e.linkSeries();h&&d.linkedSeries.length&&(d.isDirtyData=!0);n(this,"afterUpdate");A(c,!0)&&e.redraw(u?void 0:!1)}setName(b){this.name=this.options.name=this.userOptions.name=b;this.chart.isDirtyLegend=!0}hasOptionChanged(b){const a=this.options[b],c=this.chart.options.plotOptions,d=this.userOptions[b];return d?a!==d:a!==
+A(c&&c[this.type]&&c[this.type][b],c&&c.series&&c.series[b],a)}onMouseOver(){const b=this.chart,a=b.hoverSeries;b.pointer.setHoverChartIndex();if(a&&a!==this)a.onMouseOut();this.options.events.mouseOver&&n(this,"mouseOver");this.setState("hover");b.hoverSeries=this}onMouseOut(){const b=this.options,a=this.chart,c=a.tooltip,d=a.hoverPoint;a.hoverSeries=null;if(d)d.onMouseOut();this&&b.events.mouseOut&&n(this,"mouseOut");!c||this.stickyTracking||c.shared&&!this.noSharedTooltip||c.hide();a.series.forEach(function(b){b.setState("",
+!0)})}setState(b,a){const c=this;var d=c.options;const f=c.graph,e=d.inactiveOtherPoints,g=d.states,k=A(g[b||"normal"]&&g[b||"normal"].animation,c.chart.options.chart.animation);let h=d.lineWidth,n=0,l=d.opacity;b=b||"";if(c.state!==b&&([c.group,c.markerGroup,c.dataLabelsGroup].forEach(function(a){a&&(c.state&&a.removeClass("highcharts-series-"+c.state),b&&a.addClass("highcharts-series-"+b))}),c.state=b,!c.chart.styledMode)){if(g[b]&&!1===g[b].enabled)return;b&&(h=g[b].lineWidth||h+(g[b].lineWidthPlus||
+0),l=A(g[b].opacity,l));if(f&&!f.dashstyle&&T(h))for(d={"stroke-width":h},f.animate(d,k);c["zone-graph-"+n];)c["zone-graph-"+n].animate(d,k),n+=1;e||[c.group,c.markerGroup,c.dataLabelsGroup,c.labelBySeries].forEach(function(b){b&&b.animate({opacity:l},k)})}a&&e&&c.points&&c.setAllPointsToState(b||void 0)}setAllPointsToState(b){this.points.forEach(function(a){a.setState&&a.setState(b)})}setVisible(b,a){const c=this,d=c.chart,f=d.options.chart.ignoreHiddenSeries,e=c.visible,g=(c.visible=b=c.options.visible=
+c.userOptions.visible="undefined"===typeof b?!e:b)?"show":"hide";["group","dataLabelsGroup","markerGroup","tracker","tt"].forEach(function(b){if(c[b])c[b][g]()});if(d.hoverSeries===c||(d.hoverPoint&&d.hoverPoint.series)===c)c.onMouseOut();c.legendItem&&d.legend.colorizeItem(c,b);c.isDirty=!0;c.options.stacking&&d.series.forEach(function(b){b.options.stacking&&b.visible&&(b.isDirty=!0)});c.linkedSeries.forEach(function(a){a.setVisible(b,!1)});f&&(d.isDirtyBox=!0);n(c,g);!1!==a&&d.redraw()}show(){this.setVisible(!0)}hide(){this.setVisible(!1)}select(b){this.selected=
+b=this.options.selected="undefined"===typeof b?!this.selected:b;this.checkbox&&(this.checkbox.checked=b);n(this,b?"select":"unselect")}shouldShowTooltip(b,a,c={}){c.series=this;c.visiblePlotOnly=!0;return this.chart.isInsidePlot(b,a,c)}drawLegendSymbol(b,a){var c;null===(c=C[this.options.legendSymbol||"rectangle"])||void 0===c?void 0:c.call(this,b,a)}}aa.defaultOptions=H;aa.types=B.seriesTypes;aa.registerType=B.registerSeriesType;f(aa.prototype,{axisTypes:["xAxis","yAxis"],coll:"series",colorCounter:0,
+cropShoulder:1,directTouch:!1,isCartesian:!0,kdAxisArray:["clientX","plotY"],parallelArrays:["x","y"],pointClass:z,requireSorting:!0,sorted:!0});B.series=aa;"";"";return aa});M(a,"Core/Chart/Chart.js",[a["Core/Animation/AnimationUtilities.js"],a["Core/Axis/Axis.js"],a["Core/Defaults.js"],a["Core/Templating.js"],a["Core/Foundation.js"],a["Core/Globals.js"],a["Core/Renderer/RendererRegistry.js"],a["Core/Series/Series.js"],a["Core/Series/SeriesRegistry.js"],a["Core/Renderer/SVG/SVGRenderer.js"],a["Core/Time.js"],
+a["Core/Utilities.js"],a["Core/Renderer/HTML/AST.js"]],function(a,y,I,L,C,z,H,B,u,v,l,p,t){const {animate:m,animObject:h,setAnimation:g}=a,{defaultOptions:e,defaultTime:w}=I,{numberFormat:x}=L,{registerEventOptions:F}=C,{charts:d,doc:k,marginNames:r,svg:q,win:G}=z,{seriesTypes:b}=u,{addEvent:f,attr:c,createElement:n,css:P,defined:D,diffObjects:K,discardElement:X,erase:T,error:Z,extend:V,find:Y,fireEvent:A,getStyle:M,isArray:ia,isNumber:ba,isObject:aa,isString:J,merge:N,objectEach:O,pick:S,pInt:W,
+relativeLength:ha,removeEvent:da,splat:fa,syncTimeout:ka,uniqueKey:ca}=p;class ea{static chart(b,a,c){return new ea(b,a,c)}constructor(b,a,c){this.series=this.renderTo=this.renderer=this.pointer=this.pointCount=this.plotWidth=this.plotTop=this.plotLeft=this.plotHeight=this.plotBox=this.options=this.numberFormatter=this.margin=this.labelCollectors=this.isResizing=this.index=this.eventOptions=this.container=this.colorCounter=this.clipBox=this.chartWidth=this.chartHeight=this.bounds=this.axisOffset=
+this.axes=void 0;this.sharedClips={};this.zooming=this.yAxis=this.xAxis=this.userOptions=this.titleOffset=this.time=this.symbolCounter=this.spacingBox=this.spacing=void 0;this.getArgs(b,a,c)}getArgs(b,a,c){J(b)||b.nodeName?(this.renderTo=b,this.init(a,c)):this.init(b,a)}setZoomOptions(){const b=this.options.chart,a=b.zooming;this.zooming=Object.assign(Object.assign({},a),{type:S(b.zoomType,a.type),key:S(b.zoomKey,a.key),pinchType:S(b.pinchType,a.pinchType),singleTouch:S(b.zoomBySingleTouch,a.singleTouch,
+!1),resetButton:N(a.resetButton,b.resetZoomButton)})}init(b,a){A(this,"init",{args:arguments},function(){const c=N(e,b),f=c.chart;this.userOptions=V({},b);this.margin=[];this.spacing=[];this.bounds={h:{},v:{}};this.labelCollectors=[];this.callback=a;this.isResizing=0;this.options=c;this.axes=[];this.series=[];this.time=b.time&&Object.keys(b.time).length?new l(b.time):z.time;this.numberFormatter=f.numberFormatter||x;this.styledMode=f.styledMode;this.hasCartesianSeries=f.showAxes;this.index=d.length;
+d.push(this);z.chartCount++;F(this,f);this.xAxis=[];this.yAxis=[];this.pointCount=this.colorCounter=this.symbolCounter=0;this.setZoomOptions();A(this,"afterInit");this.firstRender()})}initSeries(a){var c=this.options.chart;c=a.type||c.type;const d=b[c];d||Z(17,!0,this,{missingModuleFor:c});c=new d;"function"===typeof c.init&&c.init(this,a);return c}setSeriesData(){this.getSeriesOrderByLinks().forEach(function(b){b.points||b.data||!b.enabledDataSorting||b.setData(b.options.data,!1)})}getSeriesOrderByLinks(){return this.series.concat().sort(function(b,
+a){return b.linkedSeries.length||a.linkedSeries.length?a.linkedSeries.length-b.linkedSeries.length:0})}orderItems(b,a=0){const c=this[b],d=this.options[b]=fa(this.options[b]).slice();b=this.userOptions[b]=this.userOptions[b]?fa(this.userOptions[b]).slice():[];this.hasRendered&&(d.splice(a),b.splice(a));if(c)for(let f=a,e=c.length;f<e;++f)if(a=c[f])a.index=f,a instanceof B&&(a.name=a.getName()),a.options.isInternal||(d[f]=a.options,b[f]=a.userOptions)}isInsidePlot(b,a,c={}){const {inverted:d,plotBox:f,
+plotLeft:e,plotTop:g,scrollablePlotBox:k}=this;var h=0;let n=0;c.visiblePlotOnly&&this.scrollingContainer&&({scrollLeft:h,scrollTop:n}=this.scrollingContainer);const l=c.series,m=c.visiblePlotOnly&&k||f;var q=c.inverted?a:b;a=c.inverted?b:a;b={x:q,y:a,isInsidePlot:!0,options:c};if(!c.ignoreX){const a=l&&(d&&!this.polar?l.yAxis:l.xAxis)||{pos:e,len:Infinity};q=c.paneCoordinates?a.pos+q:e+q;q>=Math.max(h+e,a.pos)&&q<=Math.min(h+e+m.width,a.pos+a.len)||(b.isInsidePlot=!1)}!c.ignoreY&&b.isInsidePlot&&
+(h=!d&&c.axis&&!c.axis.isXAxis&&c.axis||l&&(d?l.xAxis:l.yAxis)||{pos:g,len:Infinity},c=c.paneCoordinates?h.pos+a:g+a,c>=Math.max(n+g,h.pos)&&c<=Math.min(n+g+m.height,h.pos+h.len)||(b.isInsidePlot=!1));A(this,"afterIsInsidePlot",b);return b.isInsidePlot}redraw(b){A(this,"beforeRedraw");const a=this.hasCartesianSeries?this.axes:this.colorAxis||[],c=this.series,d=this.pointer,f=this.legend,e=this.userOptions.legend,k=this.renderer,h=k.isHidden(),n=[];let l,m,q=this.isDirtyBox,p=this.isDirtyLegend,r;
+k.rootFontSize=k.boxWrapper.getStyle("font-size");this.setResponsive&&this.setResponsive(!1);g(this.hasRendered?b:!1,this);h&&this.temporaryDisplay();this.layOutTitles(!1);for(b=c.length;b--;)if(r=c[b],r.options.stacking||r.options.centerInCategory)if(m=!0,r.isDirty){l=!0;break}if(l)for(b=c.length;b--;)r=c[b],r.options.stacking&&(r.isDirty=!0);c.forEach(function(b){b.isDirty&&("point"===b.options.legendType?("function"===typeof b.updateTotals&&b.updateTotals(),p=!0):e&&(e.labelFormatter||e.labelFormat)&&
+(p=!0));b.isDirtyData&&A(b,"updatedData")});p&&f&&f.options.enabled&&(f.render(),this.isDirtyLegend=!1);m&&this.getStacks();a.forEach(function(b){b.updateNames();b.setScale()});this.getMargins();a.forEach(function(b){b.isDirty&&(q=!0)});a.forEach(function(b){const a=b.min+","+b.max;b.extKey!==a&&(b.extKey=a,n.push(function(){A(b,"afterSetExtremes",V(b.eventArgs,b.getExtremes()));delete b.eventArgs}));(q||m)&&b.redraw()});q&&this.drawChartBox();A(this,"predraw");c.forEach(function(b){(q||b.isDirty)&&
+b.visible&&b.redraw();b.isDirtyData=!1});d&&d.reset(!0);k.draw();A(this,"redraw");A(this,"render");h&&this.temporaryDisplay(!0);n.forEach(function(b){b.call()})}get(b){function a(a){return a.id===b||a.options&&a.options.id===b}const c=this.series;let d=Y(this.axes,a)||Y(this.series,a);for(let b=0;!d&&b<c.length;b++)d=Y(c[b].points||[],a);return d}getAxes(){const b=this.options;A(this,"getAxes");for(const a of["xAxis","yAxis"]){const c=b[a]=fa(b[a]||{});for(const b of c)new y(this,b,a)}A(this,"afterGetAxes")}getSelectedPoints(){return this.series.reduce((b,
+a)=>{a.getPointsCollection().forEach(a=>{S(a.selectedStaging,a.selected)&&b.push(a)});return b},[])}getSelectedSeries(){return this.series.filter(function(b){return b.selected})}setTitle(b,a,c){this.applyDescription("title",b);this.applyDescription("subtitle",a);this.applyDescription("caption",void 0);this.layOutTitles(c)}applyDescription(b,a){const c=this,d=this.options[b]=N(this.options[b],a);let f=this[b];f&&a&&(this[b]=f=f.destroy());d&&!f&&(f=this.renderer.text(d.text,0,0,d.useHTML).attr({align:d.align,
+"class":"highcharts-"+b,zIndex:d.zIndex||4}).add(),f.update=function(a,d){c.applyDescription(b,a);c.layOutTitles(d)},this.styledMode||f.css(V("title"===b?{fontSize:this.options.isStock?"1em":"1.2em"}:{},d.style)),this[b]=f)}layOutTitles(b=!0){const a=[0,0,0],c=this.renderer,d=this.spacingBox;["title","subtitle","caption"].forEach(function(b){const f=this[b],e=this.options[b],g=e.verticalAlign||"top";b="title"===b?"top"===g?-3:0:"top"===g?a[0]+2:0;if(f){f.css({width:(e.width||d.width+(e.widthAdjust||
+0))+"px"});const k=c.fontMetrics(f).b,h=Math.round(f.getBBox(e.useHTML).height);f.align(V({y:"bottom"===g?k:b+k,height:h},e),!1,"spacingBox");e.floating||("top"===g?a[0]=Math.ceil(a[0]+h):"bottom"===g&&(a[2]=Math.ceil(a[2]+h)))}},this);a[0]&&"top"===(this.options.title.verticalAlign||"top")&&(a[0]+=this.options.title.margin);a[2]&&"bottom"===this.options.caption.verticalAlign&&(a[2]+=this.options.caption.margin);const f=!this.titleOffset||this.titleOffset.join(",")!==a.join(",");this.titleOffset=
+a;A(this,"afterLayOutTitles");!this.isDirtyBox&&f&&(this.isDirtyBox=this.isDirtyLegend=f,this.hasRendered&&b&&this.isDirtyBox&&this.redraw())}getContainerBox(){return{width:M(this.renderTo,"width",!0)||0,height:M(this.renderTo,"height",!0)||0}}getChartSize(){var b=this.options.chart;const a=b.width;b=b.height;const c=this.getContainerBox();this.chartWidth=Math.max(0,a||c.width||600);this.chartHeight=Math.max(0,ha(b,this.chartWidth)||(1<c.height?c.height:400));this.containerBox=c}temporaryDisplay(b){let a=
+this.renderTo;if(b)for(;a&&a.style;)a.hcOrigStyle&&(P(a,a.hcOrigStyle),delete a.hcOrigStyle),a.hcOrigDetached&&(k.body.removeChild(a),a.hcOrigDetached=!1),a=a.parentNode;else for(;a&&a.style;){k.body.contains(a)||a.parentNode||(a.hcOrigDetached=!0,k.body.appendChild(a));if("none"===M(a,"display",!1)||a.hcOricDetached)a.hcOrigStyle={display:a.style.display,height:a.style.height,overflow:a.style.overflow},b={display:"block",overflow:"hidden"},a!==this.renderTo&&(b.height=0),P(a,b),a.offsetWidth||a.style.setProperty("display",
+"block","important");a=a.parentNode;if(a===k.body)break}}setClassName(b){this.container.className="highcharts-container "+(b||"")}getContainer(){const b=this.options,a=b.chart;var f=ca();let e,h=this.renderTo;h||(this.renderTo=h=a.renderTo);J(h)&&(this.renderTo=h=k.getElementById(h));h||Z(13,!0,this);var l=W(c(h,"data-highcharts-chart"));ba(l)&&d[l]&&d[l].hasRendered&&d[l].destroy();c(h,"data-highcharts-chart",this.index);h.innerHTML=t.emptyHTML;a.skipClone||h.offsetWidth||this.temporaryDisplay();
+this.getChartSize();l=this.chartWidth;const m=this.chartHeight;P(h,{overflow:"hidden"});this.styledMode||(e=V({position:"relative",overflow:"hidden",width:l+"px",height:m+"px",textAlign:"left",lineHeight:"normal",zIndex:0,"-webkit-tap-highlight-color":"rgba(0,0,0,0)",userSelect:"none","touch-action":"manipulation",outline:"none"},a.style||{}));this.container=f=n("div",{id:f},e,h);this._cursor=f.style.cursor;this.renderer=new (a.renderer||!q?H.getRendererType(a.renderer):v)(f,l,m,void 0,a.forExport,
+b.exporting&&b.exporting.allowHTML,this.styledMode);this.containerBox=this.getContainerBox();g(void 0,this);this.setClassName(a.className);if(this.styledMode)for(const a in b.defs)this.renderer.definition(b.defs[a]);else this.renderer.setStyle(a.style);this.renderer.chartIndex=this.index;A(this,"afterGetContainer")}getMargins(b){const {spacing:a,margin:c,titleOffset:d}=this;this.resetMargins();d[0]&&!D(c[0])&&(this.plotTop=Math.max(this.plotTop,d[0]+a[0]));d[2]&&!D(c[2])&&(this.marginBottom=Math.max(this.marginBottom,
+d[2]+a[2]));this.legend&&this.legend.display&&this.legend.adjustMargins(c,a);A(this,"getMargins");b||this.getAxisMargins()}getAxisMargins(){const b=this,a=b.axisOffset=[0,0,0,0],c=b.colorAxis,d=b.margin,f=function(b){b.forEach(function(b){b.visible&&b.getOffset()})};b.hasCartesianSeries?f(b.axes):c&&c.length&&f(c);r.forEach(function(c,f){D(d[f])||(b[c]+=a[f])});b.setChartSize()}getOptions(){return K(this.userOptions,e)}reflow(b){const a=this;var c=a.options.chart;c=D(c.width)&&D(c.height);const d=
+a.containerBox,f=a.getContainerBox();delete a.pointer.chartPosition;if(!c&&!a.isPrinting&&d&&f.width){if(f.width!==d.width||f.height!==d.height)p.clearTimeout(a.reflowTimeout),a.reflowTimeout=ka(function(){a.container&&a.setSize(void 0,void 0,!1)},b?100:0);a.containerBox=f}}setReflow(){const b=this;var a=a=>{var c;(null===(c=b.options)||void 0===c?0:c.chart.reflow)&&b.hasLoaded&&b.reflow(a)};"function"===typeof ResizeObserver?(new ResizeObserver(a)).observe(b.renderTo):(a=f(G,"resize",a),f(this,"destroy",
+a))}setSize(b,a,c){const d=this,f=d.renderer;d.isResizing+=1;g(c,d);c=f.globalAnimation;d.oldChartHeight=d.chartHeight;d.oldChartWidth=d.chartWidth;"undefined"!==typeof b&&(d.options.chart.width=b);"undefined"!==typeof a&&(d.options.chart.height=a);d.getChartSize();d.styledMode||(c?m:P)(d.container,{width:d.chartWidth+"px",height:d.chartHeight+"px"},c);d.setChartSize(!0);f.setSize(d.chartWidth,d.chartHeight,c);d.axes.forEach(function(b){b.isDirty=!0;b.setScale()});d.isDirtyLegend=!0;d.isDirtyBox=
+!0;d.layOutTitles();d.getMargins();d.redraw(c);d.oldChartHeight=null;A(d,"resize");ka(function(){d&&A(d,"endResize",null,function(){--d.isResizing})},h(c).duration)}setChartSize(b){var a=this.inverted;const c=this.renderer;var d=this.chartWidth,f=this.chartHeight;const e=this.options.chart,g=this.spacing,k=this.clipOffset;let h,n,l,m;this.plotLeft=h=Math.round(this.plotLeft);this.plotTop=n=Math.round(this.plotTop);this.plotWidth=l=Math.max(0,Math.round(d-h-this.marginRight));this.plotHeight=m=Math.max(0,
+Math.round(f-n-this.marginBottom));this.plotSizeX=a?m:l;this.plotSizeY=a?l:m;this.plotBorderWidth=e.plotBorderWidth||0;this.spacingBox=c.spacingBox={x:g[3],y:g[0],width:d-g[3]-g[1],height:f-g[0]-g[2]};this.plotBox=c.plotBox={x:h,y:n,width:l,height:m};a=2*Math.floor(this.plotBorderWidth/2);d=Math.ceil(Math.max(a,k[3])/2);f=Math.ceil(Math.max(a,k[0])/2);this.clipBox={x:d,y:f,width:Math.floor(this.plotSizeX-Math.max(a,k[1])/2-d),height:Math.max(0,Math.floor(this.plotSizeY-Math.max(a,k[2])/2-f))};b||
+(this.axes.forEach(function(b){b.setAxisSize();b.setAxisTranslation()}),c.alignElements());A(this,"afterSetChartSize",{skipAxes:b})}resetMargins(){A(this,"resetMargins");const b=this,a=b.options.chart;["margin","spacing"].forEach(function(c){const d=a[c],f=aa(d)?d:[d,d,d,d];["Top","Right","Bottom","Left"].forEach(function(d,e){b[c][e]=S(a[c+d],f[e])})});r.forEach(function(a,c){b[a]=S(b.margin[c],b.spacing[c])});b.axisOffset=[0,0,0,0];b.clipOffset=[0,0,0,0]}drawChartBox(){const b=this.options.chart,
+a=this.renderer,c=this.chartWidth,d=this.chartHeight,f=this.styledMode,e=this.plotBGImage;var g=b.backgroundColor;const k=b.plotBackgroundColor,h=b.plotBackgroundImage,n=this.plotLeft,l=this.plotTop,m=this.plotWidth,q=this.plotHeight,p=this.plotBox,r=this.clipRect,t=this.clipBox;let w=this.chartBackground,v=this.plotBackground,u=this.plotBorder,x,D,E="animate";w||(this.chartBackground=w=a.rect().addClass("highcharts-background").add(),E="attr");if(f)x=D=w.strokeWidth();else{x=b.borderWidth||0;D=x+
+(b.shadow?8:0);g={fill:g||"none"};if(x||w["stroke-width"])g.stroke=b.borderColor,g["stroke-width"]=x;w.attr(g).shadow(b.shadow)}w[E]({x:D/2,y:D/2,width:c-D-x%2,height:d-D-x%2,r:b.borderRadius});E="animate";v||(E="attr",this.plotBackground=v=a.rect().addClass("highcharts-plot-background").add());v[E](p);f||(v.attr({fill:k||"none"}).shadow(b.plotShadow),h&&(e?(h!==e.attr("href")&&e.attr("href",h),e.animate(p)):this.plotBGImage=a.image(h,n,l,m,q).add()));r?r.animate({width:t.width,height:t.height}):
+this.clipRect=a.clipRect(t);E="animate";u||(E="attr",this.plotBorder=u=a.rect().addClass("highcharts-plot-border").attr({zIndex:1}).add());f||u.attr({stroke:b.plotBorderColor,"stroke-width":b.plotBorderWidth||0,fill:"none"});u[E](u.crisp({x:n,y:l,width:m,height:q},-u.strokeWidth()));this.isDirtyBox=!1;A(this,"afterDrawChartBox")}propFromSeries(){const a=this,c=a.options.chart,d=a.options.series;let f,e,g;["inverted","angular","polar"].forEach(function(k){e=b[c.type];g=c[k]||e&&e.prototype[k];for(f=
+d&&d.length;!g&&f--;)(e=b[d[f].type])&&e.prototype[k]&&(g=!0);a[k]=g})}linkSeries(b){const a=this,c=a.series;c.forEach(function(b){b.linkedSeries.length=0});c.forEach(function(b){let c=b.options.linkedTo;J(c)&&(c=":previous"===c?a.series[b.index-1]:a.get(c))&&c.linkedParent!==b&&(c.linkedSeries.push(b),b.linkedParent=c,c.enabledDataSorting&&b.setDataSortingOptions(),b.visible=S(b.options.visible,c.options.visible,b.visible))});A(this,"afterLinkSeries",{isUpdating:b})}renderSeries(){this.series.forEach(function(b){b.translate();
+b.render()})}render(){const b=this.axes,a=this.colorAxis,c=this.renderer,d=function(b){b.forEach(function(b){b.visible&&b.render()})};let f=0;this.setTitle();A(this,"beforeMargins");this.getStacks&&this.getStacks();this.getMargins(!0);this.setChartSize();const e=this.plotWidth;b.some(function(b){if(b.horiz&&b.visible&&b.options.labels.enabled&&b.series.length)return f=21,!0});const g=this.plotHeight=Math.max(this.plotHeight-f,0);b.forEach(function(b){b.setScale()});this.getAxisMargins();const k=1.1<
+e/this.plotWidth,h=1.05<g/this.plotHeight;if(k||h)b.forEach(function(b){(b.horiz&&k||!b.horiz&&h)&&b.setTickInterval(!0)}),this.getMargins();this.drawChartBox();this.hasCartesianSeries?d(b):a&&a.length&&d(a);this.seriesGroup||(this.seriesGroup=c.g("series-group").attr({zIndex:3}).shadow(this.options.chart.seriesGroupShadow).add());this.renderSeries();this.addCredits();this.setResponsive&&this.setResponsive();this.hasRendered=!0}addCredits(b){const a=this,c=N(!0,this.options.credits,b);c.enabled&&
+!this.credits&&(this.credits=this.renderer.text(c.text+(this.mapCredits||""),0,0).addClass("highcharts-credits").on("click",function(){c.href&&(G.location.href=c.href)}).attr({align:c.position.align,zIndex:8}),a.styledMode||this.credits.css(c.style),this.credits.add().align(c.position),this.credits.update=function(b){a.credits=a.credits.destroy();a.addCredits(b)})}destroy(){const b=this,a=b.axes,c=b.series,f=b.container,e=f&&f.parentNode;let g;A(b,"destroy");b.renderer.forExport?T(d,b):d[b.index]=
+void 0;z.chartCount--;b.renderTo.removeAttribute("data-highcharts-chart");da(b);for(g=a.length;g--;)a[g]=a[g].destroy();this.scroller&&this.scroller.destroy&&this.scroller.destroy();for(g=c.length;g--;)c[g]=c[g].destroy();"title subtitle chartBackground plotBackground plotBGImage plotBorder seriesGroup clipRect credits pointer rangeSelector legend resetZoomButton tooltip renderer".split(" ").forEach(function(a){const c=b[a];c&&c.destroy&&(b[a]=c.destroy())});f&&(f.innerHTML=t.emptyHTML,da(f),e&&X(f));
+O(b,function(a,c){delete b[c]})}firstRender(){const b=this,a=b.options;b.getContainer();b.resetMargins();b.setChartSize();b.propFromSeries();b.getAxes();const c=ia(a.series)?a.series:[];a.series=[];c.forEach(function(a){b.initSeries(a)});b.linkSeries();b.setSeriesData();A(b,"beforeRender");b.render();b.pointer.getChartPosition();if(!b.renderer.imgCount&&!b.hasLoaded)b.onload();b.temporaryDisplay(!0)}onload(){this.callbacks.concat([this.callback]).forEach(function(b){b&&"undefined"!==typeof this.index&&
+b.apply(this,[this])},this);A(this,"load");A(this,"render");D(this.index)&&this.setReflow();this.warnIfA11yModuleNotLoaded();this.hasLoaded=!0}warnIfA11yModuleNotLoaded(){const {options:b,title:a}=this;b&&!this.accessibility&&(this.renderer.boxWrapper.attr({role:"img","aria-label":(a&&a.element.textContent||"").replace(/</g,"&lt;")}),b.accessibility&&!1===b.accessibility.enabled||Z('Highcharts warning: Consider including the "accessibility.js" module to make your chart more usable for people with disabilities. Set the "accessibility.enabled" option to false to remove this warning. See https://www.highcharts.com/docs/accessibility/accessibility-module.',
+!1,this))}addSeries(b,a,c){const d=this;let f;b&&(a=S(a,!0),A(d,"addSeries",{options:b},function(){f=d.initSeries(b);d.isDirtyLegend=!0;d.linkSeries();f.enabledDataSorting&&f.setData(b.data,!1);A(d,"afterAddSeries",{series:f});a&&d.redraw(c)}));return f}addAxis(b,a,c,d){return this.createAxis(a?"xAxis":"yAxis",{axis:b,redraw:c,animation:d})}addColorAxis(b,a,c){return this.createAxis("colorAxis",{axis:b,redraw:a,animation:c})}createAxis(b,a){b=new y(this,a.axis,b);S(a.redraw,!0)&&this.redraw(a.animation);
+return b}showLoading(b){const a=this,c=a.options,d=c.loading,e=function(){g&&P(g,{left:a.plotLeft+"px",top:a.plotTop+"px",width:a.plotWidth+"px",height:a.plotHeight+"px"})};let g=a.loadingDiv,k=a.loadingSpan;g||(a.loadingDiv=g=n("div",{className:"highcharts-loading highcharts-loading-hidden"},null,a.container));k||(a.loadingSpan=k=n("span",{className:"highcharts-loading-inner"},null,g),f(a,"redraw",e));g.className="highcharts-loading";t.setElementHTML(k,S(b,c.lang.loading,""));a.styledMode||(P(g,
+V(d.style,{zIndex:10})),P(k,d.labelStyle),a.loadingShown||(P(g,{opacity:0,display:""}),m(g,{opacity:d.style.opacity||.5},{duration:d.showDuration||0})));a.loadingShown=!0;e()}hideLoading(){const b=this.options,a=this.loadingDiv;a&&(a.className="highcharts-loading highcharts-loading-hidden",this.styledMode||m(a,{opacity:0},{duration:b.loading.hideDuration||100,complete:function(){P(a,{display:"none"})}}));this.loadingShown=!1}update(b,a,c,d){const f=this,e={credits:"addCredits",title:"setTitle",subtitle:"setSubtitle",
+caption:"setCaption"},g=b.isResponsiveOptions,k=[];let h,n;A(f,"update",{options:b});g||f.setResponsive(!1,!0);b=K(b,f.options);f.userOptions=N(f.userOptions,b);var m=b.chart;if(m){N(!0,f.options.chart,m);this.setZoomOptions();"className"in m&&f.setClassName(m.className);if("inverted"in m||"polar"in m||"type"in m){f.propFromSeries();var q=!0}"alignTicks"in m&&(q=!0);"events"in m&&F(this,m);O(m,function(b,a){-1!==f.propsRequireUpdateSeries.indexOf("chart."+a)&&(h=!0);-1!==f.propsRequireDirtyBox.indexOf(a)&&
+(f.isDirtyBox=!0);-1!==f.propsRequireReflow.indexOf(a)&&(g?f.isDirtyBox=!0:n=!0)});!f.styledMode&&m.style&&f.renderer.setStyle(f.options.chart.style||{})}!f.styledMode&&b.colors&&(this.options.colors=b.colors);b.time&&(this.time===w&&(this.time=new l(b.time)),N(!0,f.options.time,b.time));O(b,function(a,c){if(f[c]&&"function"===typeof f[c].update)f[c].update(a,!1);else if("function"===typeof f[e[c]])f[e[c]](a);else"colors"!==c&&-1===f.collectionsWithUpdate.indexOf(c)&&N(!0,f.options[c],b[c]);"chart"!==
+c&&-1!==f.propsRequireUpdateSeries.indexOf(c)&&(h=!0)});this.collectionsWithUpdate.forEach(function(a){b[a]&&(fa(b[a]).forEach(function(b,d){const e=D(b.id);let g;e&&(g=f.get(b.id));!g&&f[a]&&(g=f[a][S(b.index,d)])&&(e&&D(g.options.id)||g.options.isInternal)&&(g=void 0);g&&g.coll===a&&(g.update(b,!1),c&&(g.touched=!0));!g&&c&&f.collectionsWithInit[a]&&(f.collectionsWithInit[a][0].apply(f,[b].concat(f.collectionsWithInit[a][1]||[]).concat([!1])).touched=!0)}),c&&f[a].forEach(function(b){b.touched||
+b.options.isInternal?delete b.touched:k.push(b)}))});k.forEach(function(b){b.chart&&b.remove&&b.remove(!1)});q&&f.axes.forEach(function(b){b.update({},!1)});h&&f.getSeriesOrderByLinks().forEach(function(b){b.chart&&b.update({},!1)},this);q=m&&m.width;m=m&&(J(m.height)?ha(m.height,q||f.chartWidth):m.height);n||ba(q)&&q!==f.chartWidth||ba(m)&&m!==f.chartHeight?f.setSize(q,m,d):S(a,!0)&&f.redraw(d);A(f,"afterUpdate",{options:b,redraw:a,animation:d})}setSubtitle(b,a){this.applyDescription("subtitle",
+b);this.layOutTitles(a)}setCaption(b,a){this.applyDescription("caption",b);this.layOutTitles(a)}showResetZoom(){function b(){a.zoomOut()}const a=this,c=e.lang,d=a.zooming.resetButton,f=d.theme,g="chart"===d.relativeTo||"spacingBox"===d.relativeTo?null:"scrollablePlotBox";A(this,"beforeShowResetZoom",null,function(){a.resetZoomButton=a.renderer.button(c.resetZoom,null,null,b,f).attr({align:d.position.align,title:c.resetZoomTitle}).addClass("highcharts-reset-zoom").add().align(d.position,!1,g)});A(this,
+"afterShowResetZoom")}zoomOut(){A(this,"selection",{resetSelection:!0},this.zoom)}zoom(b){const a=this,c=a.pointer;let d=!1,f;!b||b.resetSelection?(a.axes.forEach(function(b){f=b.zoom()}),c.initiated=!1):b.xAxis.concat(b.yAxis).forEach(function(b){const e=b.axis;if(c[e.isXAxis?"zoomX":"zoomY"]&&D(c.mouseDownX)&&D(c.mouseDownY)&&a.isInsidePlot(c.mouseDownX-a.plotLeft,c.mouseDownY-a.plotTop,{axis:e})||!D(a.inverted?c.mouseDownX:c.mouseDownY))f=e.zoom(b.min,b.max),e.displayBtn&&(d=!0)});const e=a.resetZoomButton;
+d&&!e?a.showResetZoom():!d&&aa(e)&&(a.resetZoomButton=e.destroy());f&&a.redraw(S(a.options.chart.animation,b&&b.animation,100>a.pointCount))}pan(b,a){const c=this,d=c.hoverPoints;a="object"===typeof a?a:{enabled:a,type:"x"};const f=c.options.chart;f&&f.panning&&(f.panning=a);const e=a.type;let g;A(this,"pan",{originalEvent:b},function(){d&&d.forEach(function(b){b.setState()});let a=c.xAxis;"xy"===e?a=a.concat(c.yAxis):"y"===e&&(a=c.yAxis);const f={};a.forEach(function(a){if(a.options.panningEnabled&&
+!a.options.isInternal){var d=a.horiz,k=b[d?"chartX":"chartY"];d=d?"mouseDownX":"mouseDownY";var h=c[d],n=a.minPointOffset||0,l=a.reversed&&!c.inverted||!a.reversed&&c.inverted?-1:1,m=a.getExtremes(),q=a.toValue(h-k,!0)+n*l,p=a.toValue(h+a.len-k,!0)-(n*l||a.isXAxis&&a.pointRangePadding||0),r=p<q;l=a.hasVerticalPanning();h=r?p:q;q=r?q:p;var t=a.panningState;!l||a.isXAxis||t&&!t.isDirty||a.series.forEach(function(b){var a=b.getProcessedData(!0);a=b.getExtremes(a.yData,!0);t||(t={startMin:Number.MAX_VALUE,
+startMax:-Number.MAX_VALUE});ba(a.dataMin)&&ba(a.dataMax)&&(t.startMin=Math.min(S(b.options.threshold,Infinity),a.dataMin,t.startMin),t.startMax=Math.max(S(b.options.threshold,-Infinity),a.dataMax,t.startMax))});l=Math.min(S(t&&t.startMin,m.dataMin),n?m.min:a.toValue(a.toPixels(m.min)-a.minPixelPadding));p=Math.max(S(t&&t.startMax,m.dataMax),n?m.max:a.toValue(a.toPixels(m.max)+a.minPixelPadding));a.panningState=t;a.isOrdinal||(n=l-h,0<n&&(q+=n,h=l),n=q-p,0<n&&(q=p,h-=n),a.series.length&&h!==m.min&&
+q!==m.max&&h>=l&&q<=p&&(a.setExtremes(h,q,!1,!1,{trigger:"pan"}),!c.resetZoomButton&&h!==l&&q!==p&&e.match("y")&&(c.showResetZoom(),a.displayBtn=!1),g=!0),f[d]=k)}});O(f,(b,a)=>{c[a]=b});g&&c.redraw(!1);P(c.container,{cursor:"move"})})}}V(ea.prototype,{callbacks:[],collectionsWithInit:{xAxis:[ea.prototype.addAxis,[!0]],yAxis:[ea.prototype.addAxis,[!1]],series:[ea.prototype.addSeries]},collectionsWithUpdate:["xAxis","yAxis","series"],propsRequireDirtyBox:"backgroundColor borderColor borderWidth borderRadius plotBackgroundColor plotBackgroundImage plotBorderColor plotBorderWidth plotShadow shadow".split(" "),
+propsRequireReflow:"margin marginTop marginRight marginBottom marginLeft spacing spacingTop spacingRight spacingBottom spacingLeft".split(" "),propsRequireUpdateSeries:"chart.inverted chart.polar chart.ignoreHiddenSeries chart.type colors plotOptions time tooltip".split(" ")});"";return ea});M(a,"Extensions/ScrollablePlotArea.js",[a["Core/Animation/AnimationUtilities.js"],a["Core/Axis/Axis.js"],a["Core/Chart/Chart.js"],a["Core/Series/Series.js"],a["Core/Renderer/RendererRegistry.js"],a["Core/Utilities.js"]],
+function(a,y,I,L,C,z){const {stop:x}=a,{addEvent:B,createElement:u,defined:v,merge:l,pick:p}=z;B(I,"afterSetChartSize",function(a){var m=this.options.chart.scrollablePlotArea,h=m&&m.minWidth;m=m&&m.minHeight;let g;if(!this.renderer.forExport){if(h){if(this.scrollablePixelsX=h=Math.max(0,h-this.chartWidth))this.scrollablePlotBox=this.renderer.scrollablePlotBox=l(this.plotBox),this.plotBox.width=this.plotWidth+=h,this.inverted?this.clipBox.height+=h:this.clipBox.width+=h,g={1:{name:"right",value:h}}}else m&&
+(this.scrollablePixelsY=h=Math.max(0,m-this.chartHeight),v(h)&&(this.scrollablePlotBox=this.renderer.scrollablePlotBox=l(this.plotBox),this.plotBox.height=this.plotHeight+=h,this.inverted?this.clipBox.width+=h:this.clipBox.height+=h,g={2:{name:"bottom",value:h}}));g&&!a.skipAxes&&this.axes.forEach(function(a){g[a.side]?a.getPlotLinePath=function(){let e=g[a.side].name,h=this[e],l;this[e]=h-g[a.side].value;l=y.prototype.getPlotLinePath.apply(this,arguments);this[e]=h;return l}:(a.setAxisSize(),a.setAxisTranslation())})}});
+B(I,"render",function(){this.scrollablePixelsX||this.scrollablePixelsY?(this.setUpScrolling&&this.setUpScrolling(),this.applyFixed()):this.fixedDiv&&this.applyFixed()});I.prototype.setUpScrolling=function(){const a={WebkitOverflowScrolling:"touch",overflowX:"hidden",overflowY:"hidden"};this.scrollablePixelsX&&(a.overflowX="auto");this.scrollablePixelsY&&(a.overflowY="auto");this.scrollingParent=u("div",{className:"highcharts-scrolling-parent"},{position:"relative"},this.renderTo);this.scrollingContainer=
+u("div",{className:"highcharts-scrolling"},a,this.scrollingParent);let l;B(this.scrollingContainer,"scroll",()=>{this.pointer&&(delete this.pointer.chartPosition,this.hoverPoint&&(l=this.hoverPoint),this.pointer.runPointActions(void 0,l,!0))});this.innerContainer=u("div",{className:"highcharts-inner-container"},null,this.scrollingContainer);this.innerContainer.appendChild(this.container);this.setUpScrolling=null};I.prototype.moveFixedElements=function(){let a=this.container,l=this.fixedRenderer,h=
+".highcharts-breadcrumbs-group .highcharts-contextbutton .highcharts-credits .highcharts-legend .highcharts-legend-checkbox .highcharts-navigator-series .highcharts-navigator-xaxis .highcharts-navigator-yaxis .highcharts-navigator .highcharts-reset-zoom .highcharts-drillup-button .highcharts-scrollbar .highcharts-subtitle .highcharts-title".split(" "),g;this.scrollablePixelsX&&!this.inverted?g=".highcharts-yaxis":this.scrollablePixelsX&&this.inverted?g=".highcharts-xaxis":this.scrollablePixelsY&&
+!this.inverted?g=".highcharts-xaxis":this.scrollablePixelsY&&this.inverted&&(g=".highcharts-yaxis");g&&h.push(`${g}:not(.highcharts-radial-axis)`,`${g}-labels:not(.highcharts-radial-axis-labels)`);h.forEach(function(e){[].forEach.call(a.querySelectorAll(e),function(a){(a.namespaceURI===l.SVG_NS?l.box:l.box.parentNode).appendChild(a);a.style.pointerEvents="auto"})})};I.prototype.applyFixed=function(){var a=!this.fixedDiv,l=this.options.chart,h=l.scrollablePlotArea,g=C.getRendererType();a?(this.fixedDiv=
+u("div",{className:"highcharts-fixed"},{position:"absolute",overflow:"hidden",pointerEvents:"none",zIndex:(l.style&&l.style.zIndex||0)+2,top:0},null,!0),this.scrollingContainer&&this.scrollingContainer.parentNode.insertBefore(this.fixedDiv,this.scrollingContainer),this.renderTo.style.overflow="visible",this.fixedRenderer=l=new g(this.fixedDiv,this.chartWidth,this.chartHeight,this.options.chart.style),this.scrollableMask=l.path().attr({fill:this.options.chart.backgroundColor||"#fff","fill-opacity":p(h.opacity,
+.85),zIndex:-1}).addClass("highcharts-scrollable-mask").add(),B(this,"afterShowResetZoom",this.moveFixedElements),B(this,"afterApplyDrilldown",this.moveFixedElements),B(this,"afterLayOutTitles",this.moveFixedElements)):this.fixedRenderer.setSize(this.chartWidth,this.chartHeight);if(this.scrollableDirty||a)this.scrollableDirty=!1,this.moveFixedElements();l=this.chartWidth+(this.scrollablePixelsX||0);g=this.chartHeight+(this.scrollablePixelsY||0);x(this.container);this.container.style.width=l+"px";
+this.container.style.height=g+"px";this.renderer.boxWrapper.attr({width:l,height:g,viewBox:[0,0,l,g].join(" ")});this.chartBackground.attr({width:l,height:g});this.scrollingContainer.style.height=this.chartHeight+"px";a&&(h.scrollPositionX&&(this.scrollingContainer.scrollLeft=this.scrollablePixelsX*h.scrollPositionX),h.scrollPositionY&&(this.scrollingContainer.scrollTop=this.scrollablePixelsY*h.scrollPositionY));g=this.axisOffset;a=this.plotTop-g[0]-1;h=this.plotLeft-g[3]-1;l=this.plotTop+this.plotHeight+
+g[2]+1;g=this.plotLeft+this.plotWidth+g[1]+1;let e=this.plotLeft+this.plotWidth-(this.scrollablePixelsX||0),w=this.plotTop+this.plotHeight-(this.scrollablePixelsY||0);a=this.scrollablePixelsX?[["M",0,a],["L",this.plotLeft-1,a],["L",this.plotLeft-1,l],["L",0,l],["Z"],["M",e,a],["L",this.chartWidth,a],["L",this.chartWidth,l],["L",e,l],["Z"]]:this.scrollablePixelsY?[["M",h,0],["L",h,this.plotTop-1],["L",g,this.plotTop-1],["L",g,0],["Z"],["M",h,w],["L",h,this.chartHeight],["L",g,this.chartHeight],["L",
+g,w],["Z"]]:[["M",0,0]];"adjustHeight"!==this.redrawTrigger&&this.scrollableMask.attr({d:a})};B(y,"afterInit",function(){this.chart.scrollableDirty=!0});B(L,"show",function(){this.chart.scrollableDirty=!0});""});M(a,"Core/Axis/Stacking/StackItem.js",[a["Core/Templating.js"],a["Core/Series/SeriesRegistry.js"],a["Core/Utilities.js"]],function(a,y,I){const {format:x}=a,{series:C}=y,{destroyObjectProperties:z,fireEvent:H,isNumber:B,pick:u}=I;class v{constructor(a,p,t,m,h){const g=a.chart.inverted,e=a.reversed;
+this.axis=a;a=this.isNegative=!!t!==!!e;this.options=p=p||{};this.x=m;this.cumulative=this.total=null;this.points={};this.hasValidPoints=!1;this.stack=h;this.rightCliff=this.leftCliff=0;this.alignOptions={align:p.align||(g?a?"left":"right":"center"),verticalAlign:p.verticalAlign||(g?"middle":a?"bottom":"top"),y:p.y,x:p.x};this.textAlign=p.textAlign||(g?a?"right":"left":"center")}destroy(){z(this,this.axis)}render(a){const l=this.axis.chart,t=this.options;var m=t.format;m=m?x(m,this,l):t.formatter.call(this);
+this.label?this.label.attr({text:m,visibility:"hidden"}):(this.label=l.renderer.label(m,null,void 0,t.shape,void 0,void 0,t.useHTML,!1,"stack-labels"),m={r:t.borderRadius||0,text:m,padding:u(t.padding,5),visibility:"hidden"},l.styledMode||(m.fill=t.backgroundColor,m.stroke=t.borderColor,m["stroke-width"]=t.borderWidth,this.label.css(t.style||{})),this.label.attr(m),this.label.added||this.label.add(a));this.label.labelrank=l.plotSizeY;H(this,"afterRender")}setOffset(a,p,t,m,h,g){const {alignOptions:e,
+axis:l,label:v,options:x,textAlign:d}=this,k=l.chart;t=this.getStackBox({xOffset:a,width:p,boxBottom:t,boxTop:m,defaultX:h,xAxis:g});var {verticalAlign:r}=e;if(v&&t){m=v.getBBox();h=v.padding;g="justify"===u(x.overflow,"justify");e.x=x.x||0;e.y=x.y||0;const {x:a,y:p}=this.adjustStackPosition({labelBox:m,verticalAlign:r,textAlign:d});t.x-=a;t.y-=p;v.align(e,!1,t);(r=k.isInsidePlot(v.alignAttr.x+e.x+a,v.alignAttr.y+e.y+p))||(g=!1);g&&C.prototype.justifyDataLabel.call(l,v,e,v.alignAttr,m,t);v.attr({x:v.alignAttr.x,
+y:v.alignAttr.y,rotation:x.rotation,rotationOriginX:m.width/2,rotationOriginY:m.height/2});u(!g&&x.crop,!0)&&(r=B(v.x)&&B(v.y)&&k.isInsidePlot(v.x-h+v.width,v.y)&&k.isInsidePlot(v.x+h,v.y));v[r?"show":"hide"]()}H(this,"afterSetOffset",{xOffset:a,width:p})}adjustStackPosition({labelBox:a,verticalAlign:p,textAlign:t}){const l={bottom:0,middle:1,top:2,right:1,center:0,left:-1};return{x:a.width/2+a.width/2*l[t],y:a.height/2*l[p]}}getStackBox(a){var l=this.axis;const t=l.chart,{boxTop:m,defaultX:h,xOffset:g,
+width:e,boxBottom:w}=a;var v=l.stacking.usePercentage?100:u(m,this.total,0);v=l.toPixels(v);a=a.xAxis||t.xAxis[0];const x=u(h,a.translate(this.x))+g;l=l.toPixels(w||B(l.min)&&l.logarithmic&&l.logarithmic.lin2log(l.min)||0);l=Math.abs(v-l);const d=this.isNegative;return t.inverted?{x:(d?v:v-l)-t.plotLeft,y:a.height-x-e,width:l,height:e}:{x:x+a.transB-t.plotLeft,y:(d?v-l:v)-t.plotTop,width:e,height:l}}}"";return v});M(a,"Core/Axis/Stacking/StackingAxis.js",[a["Core/Animation/AnimationUtilities.js"],
+a["Core/Axis/Axis.js"],a["Core/Series/SeriesRegistry.js"],a["Core/Axis/Stacking/StackItem.js"],a["Core/Utilities.js"]],function(a,y,I,L,C){function x(){const b=this,a=b.inverted;b.yAxis.forEach(b=>{b.stacking&&b.stacking.stacks&&b.hasVisibleSeries&&(b.stacking.oldStacks=b.stacking.stacks)});b.series.forEach(c=>{const d=c.xAxis&&c.xAxis.options||{};!c.options.stacking||!0!==c.visible&&!1!==b.options.chart.ignoreHiddenSeries||(c.stackKey=[c.type,q(c.options.stack,""),a?d.top:d.left,a?d.height:d.width].join())})}
+function H(){const b=this.stacking;if(b){var a=b.stacks;r(a,function(b,c){E(b);a[c]=null});b&&b.stackTotalGroup&&b.stackTotalGroup.destroy()}}function B(){"yAxis"!==this.coll||this.stacking||(this.stacking=new G(this))}function u(b,a,d,e){!w(b)||b.x!==a||e&&b.stackKey!==e?b={x:a,index:0,key:e,stackKey:e}:b.index++;b.key=[d,a,b.index].join();return b}function v(){const b=this,a=b.stackKey,d=b.yAxis.stacking.stacks,e=b.processedXData,g=b[b.options.stacking+"Stacker"];let k;g&&[a,"-"+a].forEach(a=>{let c=
+e.length;let f;for(;c--;){var h=e[c];k=b.getStackIndicator(k,h,b.index,a);(f=(h=d[a]&&d[a][h])&&h.points[k.key])&&g.call(b,f,h,c)}})}function l(b,a,d){a=a.total?100/a.total:0;b[0]=e(b[0]*a);b[1]=e(b[1]*a);this.stackedYData[d]=b[1]}function p(){const b=this.yAxis.stacking;this.options.centerInCategory&&(this.is("column")||this.is("columnrange"))&&!this.options.stacking&&1<this.chart.series.length?h.setStackedPoints.call(this,"group"):b&&r(b.stacks,(a,d)=>{"group"===d.slice(-5)&&(r(a,b=>b.destroy()),
+delete b.stacks[d])})}function t(b){var a=this.chart;const f=b||this.options.stacking;if(f&&(!0===this.visible||!1===a.options.chart.ignoreHiddenSeries)){var g=this.processedXData,k=this.processedYData,h=[],l=k.length,m=this.options,p=m.threshold,r=q(m.startFromThreshold&&p,0);m=m.stack;b=b?`${this.type},${f}`:this.stackKey;var t="-"+b,v=this.negStacks;a="group"===f?a.yAxis[0]:this.yAxis;var u=a.stacking.stacks,x=a.stacking.oldStacks,E,G;a.stacking.stacksTouched+=1;for(G=0;G<l;G++){var F=g[G];var B=
+k[G];var y=this.getStackIndicator(y,F,this.index);var C=y.key;var z=(E=v&&B<(r?0:p))?t:b;u[z]||(u[z]={});u[z][F]||(x[z]&&x[z][F]?(u[z][F]=x[z][F],u[z][F].total=null):u[z][F]=new L(a,a.options.stackLabels,!!E,F,m));z=u[z][F];null!==B?(z.points[C]=z.points[this.index]=[q(z.cumulative,r)],w(z.cumulative)||(z.base=C),z.touched=a.stacking.stacksTouched,0<y.index&&!1===this.singleStacks&&(z.points[C][0]=z.points[this.index+","+F+",0"][0])):z.points[C]=z.points[this.index]=null;"percent"===f?(E=E?b:t,v&&
+u[E]&&u[E][F]?(E=u[E][F],z.total=E.total=Math.max(E.total,z.total)+Math.abs(B)||0):z.total=e(z.total+(Math.abs(B)||0))):"group"===f?(d(B)&&(B=B[0]),null!==B&&(z.total=(z.total||0)+1)):z.total=e(z.total+(B||0));z.cumulative="group"===f?(z.total||1)-1:e(q(z.cumulative,r)+(B||0));null!==B&&(z.points[C].push(z.cumulative),h[G]=z.cumulative,z.hasValidPoints=!0)}"percent"===f&&(a.stacking.usePercentage=!0);"group"!==f&&(this.stackedYData=h);a.stacking.oldStacks={}}}const {getDeferredAnimation:m}=a,{series:{prototype:h}}=
+I,{addEvent:g,correctFloat:e,defined:w,destroyObjectProperties:E,fireEvent:F,isArray:d,isNumber:k,objectEach:r,pick:q}=C;class G{constructor(b){this.oldStacks={};this.stacks={};this.stacksTouched=0;this.axis=b}buildStacks(){const b=this.axis,a=b.series,d=b.options.reversedStacks,e=a.length;let g,k;this.usePercentage=!1;for(k=e;k--;)g=a[d?k:e-k-1],g.setStackedPoints(),g.setGroupedPoints();for(k=0;k<e;k++)a[k].modifyStacks();F(b,"afterBuildStacks")}cleanStacks(){let b;this.oldStacks&&(b=this.stacks=
+this.oldStacks);r(b,function(b){r(b,function(b){b.cumulative=b.total})})}resetStacks(){r(this.stacks,b=>{r(b,(a,d)=>{k(a.touched)&&a.touched<this.stacksTouched?(a.destroy(),delete b[d]):(a.total=null,a.cumulative=null)})})}renderStackTotals(){var b=this.axis;const a=b.chart,d=a.renderer,e=this.stacks;b=m(a,b.options.stackLabels&&b.options.stackLabels.animation||!1);const g=this.stackTotalGroup=this.stackTotalGroup||d.g("stack-labels").attr({zIndex:6,opacity:0}).add();g.translate(a.plotLeft,a.plotTop);
+r(e,function(b){r(b,function(b){b.render(g)})});g.animate({opacity:1},b)}}var b;(function(b){const a=[];b.compose=function(b,c,d){C.pushUnique(a,b)&&(g(b,"init",B),g(b,"destroy",H));C.pushUnique(a,c)&&(c.prototype.getStacks=x);C.pushUnique(a,d)&&(b=d.prototype,b.getStackIndicator=u,b.modifyStacks=v,b.percentStacker=l,b.setGroupedPoints=p,b.setStackedPoints=t)}})(b||(b={}));return b});M(a,"Series/Line/LineSeries.js",[a["Core/Series/Series.js"],a["Core/Series/SeriesRegistry.js"],a["Core/Utilities.js"]],
+function(a,y,I){const {defined:x,merge:C}=I;class z extends a{constructor(){super(...arguments);this.points=this.options=this.data=void 0}drawGraph(){const a=this,x=this.options,u=(this.gappedPath||this.getGraphPath).call(this),v=this.chart.styledMode;let l=[["graph","highcharts-graph"]];v||l[0].push(x.lineColor||this.color||"#cccccc",x.dashStyle);l=a.getZonesGraphs(l);l.forEach(function(l,t){var m=l[0];let h=a[m];const g=h?"animate":"attr";h?(h.endX=a.preventGraphAnimation?null:u.xMap,h.animate({d:u})):
+u.length&&(a[m]=h=a.chart.renderer.path(u).addClass(l[1]).attr({zIndex:1}).add(a.group));h&&!v&&(m={stroke:l[2],"stroke-width":x.lineWidth||0,fill:a.fillGraph&&a.color||"none"},l[3]?m.dashstyle=l[3]:"square"!==x.linecap&&(m["stroke-linecap"]=m["stroke-linejoin"]="round"),h[g](m).shadow(2>t&&x.shadow));h&&(h.startX=u.xMap,h.isArea=u.isArea)})}getGraphPath(a,B,u){const v=this,l=v.options,p=[],t=[];let m,h=l.step;a=a||v.points;const g=a.reversed;g&&a.reverse();(h={right:1,center:2}[h]||h&&3)&&g&&(h=
+4-h);a=this.getValidPoints(a,!1,!(l.connectNulls&&!B&&!u));a.forEach(function(e,g){const w=e.plotX,F=e.plotY,d=a[g-1],k=e.isNull||"number"!==typeof F;(e.leftCliff||d&&d.rightCliff)&&!u&&(m=!0);k&&!x(B)&&0<g?m=!l.connectNulls:k&&!B?m=!0:(0===g||m?g=[["M",e.plotX,e.plotY]]:v.getPointSpline?g=[v.getPointSpline(a,e,g)]:h?(g=1===h?[["L",d.plotX,F]]:2===h?[["L",(d.plotX+w)/2,d.plotY],["L",(d.plotX+w)/2,F]]:[["L",w,d.plotY]],g.push(["L",w,F])):g=[["L",w,F]],t.push(e.x),h&&(t.push(e.x),2===h&&t.push(e.x)),
+p.push.apply(p,g),m=!1)});p.xMap=t;return v.graphPath=p}getZonesGraphs(a){this.zones.forEach(function(x,u){u=["zone-graph-"+u,"highcharts-graph highcharts-zone-graph-"+u+" "+(x.className||"")];this.chart.styledMode||u.push(x.color||this.color,x.dashStyle||this.options.dashStyle);a.push(u)},this);return a}}z.defaultOptions=C(a.defaultOptions,{legendSymbol:"lineMarker"});y.registerSeriesType("line",z);"";return z});M(a,"Series/Area/AreaSeries.js",[a["Core/Color/Color.js"],a["Core/Series/SeriesRegistry.js"],
+a["Core/Utilities.js"]],function(a,y,I){const {seriesTypes:{line:x}}=y,{extend:C,merge:z,objectEach:H,pick:B}=I;class u extends x{constructor(){super(...arguments);this.points=this.options=this.data=void 0}drawGraph(){this.areaPath=[];super.drawGraph.apply(this);const a=this,l=this.areaPath,p=this.options,t=[["area","highcharts-area",this.color,p.fillColor]];this.zones.forEach(function(l,h){t.push(["zone-area-"+h,"highcharts-area highcharts-zone-area-"+h+" "+l.className,l.color||a.color,l.fillColor||
+p.fillColor])});t.forEach(function(m){const h=m[0],g={};let e=a[h];const t=e?"animate":"attr";e?(e.endX=a.preventGraphAnimation?null:l.xMap,e.animate({d:l})):(g.zIndex=0,e=a[h]=a.chart.renderer.path(l).addClass(m[1]).add(a.group),e.isArea=!0);a.chart.styledMode||(m[3]?g.fill=m[3]:(g.fill=m[2],g["fill-opacity"]=B(p.fillOpacity,.75)));e[t](g);e.startX=l.xMap;e.shiftUnit=p.step?2:1})}getGraphPath(a){var l=x.prototype.getGraphPath,p=this.options;const t=p.stacking,m=this.yAxis,h=[],g=[],e=this.index,
+w=m.stacking.stacks[this.stackKey],v=p.threshold,u=Math.round(m.getThreshold(p.threshold));p=B(p.connectNulls,"percent"===t);var d=function(d,b,f){var c=a[d];d=t&&w[c.x].points[e];const n=c[f+"Null"]||0;f=c[f+"Cliff"]||0;let l,q;c=!0;f||n?(l=(n?d[0]:d[1])+f,q=d[0]+f,c=!!n):!t&&a[b]&&a[b].isNull&&(l=q=v);"undefined"!==typeof l&&(g.push({plotX:k,plotY:null===l?u:m.getThreshold(l),isNull:c,isCliff:!0}),h.push({plotX:k,plotY:null===q?u:m.getThreshold(q),doCurve:!1}))};let k;a=a||this.points;t&&(a=this.getStackPoints(a));
+for(let e=0,b=a.length;e<b;++e){t||(a[e].leftCliff=a[e].rightCliff=a[e].leftNull=a[e].rightNull=void 0);var r=a[e].isNull;k=B(a[e].rectPlotX,a[e].plotX);var q=t?B(a[e].yBottom,u):u;if(!r||p)p||d(e,e-1,"left"),r&&!t&&p||(g.push(a[e]),h.push({x:e,plotX:k,plotY:q})),p||d(e,e+1,"right")}d=l.call(this,g,!0,!0);h.reversed=!0;r=l.call(this,h,!0,!0);(q=r[0])&&"M"===q[0]&&(r[0]=["L",q[1],q[2]]);r=d.concat(r);r.length&&r.push(["Z"]);l=l.call(this,g,!1,p);r.xMap=d.xMap;this.areaPath=r;return l}getStackPoints(a){const l=
+this,p=[],t=[],m=this.xAxis,h=this.yAxis,g=h.stacking.stacks[this.stackKey],e={},w=h.series,v=w.length,u=h.options.reversedStacks?1:-1,d=w.indexOf(l);a=a||this.points;if(this.options.stacking){for(let d=0;d<a.length;d++)a[d].leftNull=a[d].rightNull=void 0,e[a[d].x]=a[d];H(g,function(a,d){null!==a.total&&t.push(d)});t.sort(function(a,d){return a-d});const k=w.map(a=>a.visible);t.forEach(function(a,q){let r=0,b,f;if(e[a]&&!e[a].isNull)p.push(e[a]),[-1,1].forEach(function(c){const h=1===c?"rightNull":
+"leftNull",m=g[t[q+c]];let p=0;if(m){let c=d;for(;0<=c&&c<v;){const d=w[c].index;b=m.points[d];b||(d===l.index?e[a][h]=!0:k[c]&&(f=g[a].points[d])&&(p-=f[1]-f[0]));c+=u}}e[a][1===c?"rightCliff":"leftCliff"]=p});else{let c=d;for(;0<=c&&c<v;){if(b=g[a].points[w[c].index]){r=b[1];break}c+=u}r=B(r,0);r=h.translate(r,0,1,0,1);p.push({isNull:!0,plotX:m.translate(a,0,0,0,1),x:a,plotY:r,yBottom:r})}})}return p}}u.defaultOptions=z(x.defaultOptions,{threshold:0,legendSymbol:"rectangle"});C(u.prototype,{singleStacks:!1});
+y.registerSeriesType("area",u);"";return u});M(a,"Series/Spline/SplineSeries.js",[a["Core/Series/SeriesRegistry.js"],a["Core/Utilities.js"]],function(a,y){const {line:x}=a.seriesTypes,{merge:L,pick:C}=y;class z extends x{constructor(){super(...arguments);this.points=this.options=this.data=void 0}getPointSpline(a,x,u){const v=x.plotX||0,l=x.plotY||0,p=a[u-1];u=a[u+1];let t,m;let h;if(p&&!p.isNull&&!1!==p.doCurve&&!x.isCliff&&u&&!u.isNull&&!1!==u.doCurve&&!x.isCliff){a=p.plotY||0;var g=u.plotX||0;u=
+u.plotY||0;let e=0;t=(1.5*v+(p.plotX||0))/2.5;m=(1.5*l+a)/2.5;g=(1.5*v+g)/2.5;h=(1.5*l+u)/2.5;g!==t&&(e=(h-m)*(g-v)/(g-t)+l-h);m+=e;h+=e;m>a&&m>l?(m=Math.max(a,l),h=2*l-m):m<a&&m<l&&(m=Math.min(a,l),h=2*l-m);h>u&&h>l?(h=Math.max(u,l),m=2*l-h):h<u&&h<l&&(h=Math.min(u,l),m=2*l-h);x.rightContX=g;x.rightContY=h}x=["C",C(p.rightContX,p.plotX,0),C(p.rightContY,p.plotY,0),C(t,v,0),C(m,l,0),v,l];p.rightContX=p.rightContY=void 0;return x}}z.defaultOptions=L(x.defaultOptions);a.registerSeriesType("spline",
+z);"";return z});M(a,"Series/AreaSpline/AreaSplineSeries.js",[a["Series/Spline/SplineSeries.js"],a["Core/Series/SeriesRegistry.js"],a["Core/Utilities.js"]],function(a,y,I){const {area:x,area:{prototype:C}}=y.seriesTypes,{extend:z,merge:H}=I;class B extends a{constructor(){super(...arguments);this.options=this.points=this.data=void 0}}B.defaultOptions=H(a.defaultOptions,x.defaultOptions);z(B.prototype,{getGraphPath:C.getGraphPath,getStackPoints:C.getStackPoints,drawGraph:C.drawGraph});y.registerSeriesType("areaspline",
+B);"";return B});M(a,"Series/Column/ColumnSeriesDefaults.js",[],function(){"";return{borderRadius:3,centerInCategory:!1,groupPadding:.2,marker:null,pointPadding:.1,minPointLength:0,cropThreshold:50,pointRange:null,states:{hover:{halo:!1,brightness:.1},select:{color:"#cccccc",borderColor:"#000000"}},dataLabels:{align:void 0,verticalAlign:void 0,y:void 0},startFromThreshold:!0,stickyTracking:!1,tooltip:{distance:6},threshold:0,borderColor:"#ffffff"}});M(a,"Series/Column/ColumnSeries.js",[a["Core/Animation/AnimationUtilities.js"],
+a["Core/Color/Color.js"],a["Series/Column/ColumnSeriesDefaults.js"],a["Core/Globals.js"],a["Core/Series/Series.js"],a["Core/Series/SeriesRegistry.js"],a["Core/Utilities.js"]],function(a,y,I,L,C,z,H){const {animObject:x}=a,{parse:u}=y,{hasTouch:v,noop:l}=L,{clamp:p,defined:t,extend:m,fireEvent:h,isArray:g,isNumber:e,merge:w,pick:E,objectEach:F}=H;class d extends C{constructor(){super(...arguments);this.points=this.options=this.group=this.data=this.borderWidth=void 0}animate(a){const d=this,e=this.yAxis,
+g=e.pos,b=d.options,f=this.chart.inverted,c={},k=f?"translateX":"translateY";let h;a?(c.scaleY=.001,a=p(e.toPixels(b.threshold),g,g+e.len),f?c.translateX=a-e.len:c.translateY=a,d.clipBox&&d.setClip(),d.group.attr(c)):(h=Number(d.group.attr(k)),d.group.animate({scaleY:1},m(x(d.options.animation),{step:function(b,a){d.group&&(c[k]=h+a.pos*(g-h),d.group.attr(c))}})))}init(a,d){super.init.apply(this,arguments);const e=this;a=e.chart;a.hasRendered&&a.series.forEach(function(a){a.type===e.type&&(a.isDirty=
+!0)})}getColumnMetrics(){const a=this;var d=a.options;const e=a.xAxis,g=a.yAxis;var b=e.options.reversedStacks;b=e.reversed&&!b||!e.reversed&&b;const f={};let c,h=0;!1===d.grouping?h=1:a.chart.series.forEach(function(b){const d=b.yAxis,e=b.options;let k;b.type!==a.type||!b.visible&&a.chart.options.chart.ignoreHiddenSeries||g.len!==d.len||g.pos!==d.pos||(e.stacking&&"group"!==e.stacking?(c=b.stackKey,"undefined"===typeof f[c]&&(f[c]=h++),k=f[c]):!1!==e.grouping&&(k=h++),b.columnIndex=k)});const l=
+Math.min(Math.abs(e.transA)*(e.ordinal&&e.ordinal.slope||d.pointRange||e.closestPointRange||e.tickInterval||1),e.len),m=l*d.groupPadding,p=(l-2*m)/(h||1);d=Math.min(d.maxPointWidth||e.len,E(d.pointWidth,p*(1-2*d.pointPadding)));a.columnMetrics={width:d,offset:(p-d)/2+(m+((a.columnIndex||0)+(b?1:0))*p-l/2)*(b?-1:1),paddedWidth:p,columnCount:h};return a.columnMetrics}crispCol(a,d,e,g){var b=this.borderWidth,f=-(b%2?.5:0);b=b%2?.5:1;this.options.crisp&&(e=Math.round(a+e)+f,a=Math.round(a)+f,e-=a);g=
+Math.round(d+g)+b;f=.5>=Math.abs(d)&&.5<g;d=Math.round(d)+b;g-=d;f&&g&&(--d,g+=1);return{x:a,y:d,width:e,height:g}}adjustForMissingColumns(a,d,e,h){const b=this.options.stacking;if(!e.isNull&&1<h.columnCount){const f=this.yAxis.options.reversedStacks;let c=0,k=f?0:-h.columnCount;F(this.yAxis.stacking&&this.yAxis.stacking.stacks,a=>{if("number"===typeof e.x){const d=a[e.x.toString()];d&&(a=d.points[this.index],b?(a&&(c=k),d.hasValidPoints&&(f?k++:k--)):g(a)&&(a=Object.keys(d.points).filter(b=>!b.match(",")&&
+d.points[b]&&1<d.points[b].length).map(parseFloat).sort((b,a)=>a-b),c=a.indexOf(this.index),k=a.length))}});a=(e.plotX||0)+((k-1)*h.paddedWidth+d)/2-d-c*h.paddedWidth}return a}translate(){const a=this,d=a.chart,g=a.options;var l=a.dense=2>a.closestPointRange*a.xAxis.transA;l=a.borderWidth=E(g.borderWidth,l?0:1);const b=a.xAxis,f=a.yAxis,c=g.threshold,n=E(g.minPointLength,5),m=a.getColumnMetrics(),w=m.width,v=a.pointXOffset=m.offset,u=a.dataMin,x=a.dataMax;let F=a.barW=Math.max(w,1+2*l),y=a.translatedThreshold=
+f.getThreshold(c);d.inverted&&(y-=.5);g.pointPadding&&(F=Math.ceil(F));C.prototype.translate.apply(a);a.points.forEach(function(k){const h=E(k.yBottom,y);var l=999+Math.abs(h),q=k.plotX||0;l=p(k.plotY,-l,f.len+l);let r=Math.min(l,h),D=Math.max(l,h)-r,z=w,B=q+v,G=F;n&&Math.abs(D)<n&&(D=n,q=!f.reversed&&!k.negative||f.reversed&&k.negative,e(c)&&e(x)&&k.y===c&&x<=c&&(f.min||0)<c&&(u!==x||(f.max||0)<=c)&&(q=!q,k.negative=!k.negative),r=Math.abs(r-y)>n?h-n:y-(q?n:0));t(k.options.pointWidth)&&(z=G=Math.ceil(k.options.pointWidth),
+B-=Math.round((z-w)/2));g.centerInCategory&&(B=a.adjustForMissingColumns(B,z,k,m));k.barX=B;k.pointWidth=z;k.tooltipPos=d.inverted?[p(f.len+f.pos-d.plotLeft-l,f.pos-d.plotLeft,f.len+f.pos-d.plotLeft),b.len+b.pos-d.plotTop-B-G/2,D]:[b.left-d.plotLeft+B+G/2,p(l+f.pos-d.plotTop,f.pos-d.plotTop,f.len+f.pos-d.plotTop),D];k.shapeType=a.pointClass.prototype.shapeType||"roundedRect";k.shapeArgs=a.crispCol(B,k.isNull?y:r,G,k.isNull?0:D)});h(this,"afterColumnTranslate")}drawGraph(){this.group[this.dense?"addClass":
+"removeClass"]("highcharts-dense-data")}pointAttribs(a,d){const e=this.options;var g=this.pointAttrToOptions||{},b=g.stroke||"borderColor";const f=g["stroke-width"]||"borderWidth";let c,k=a&&a.color||this.color,h=a&&a[b]||e[b]||k;g=a&&a.options.dashStyle||e.dashStyle;let l=a&&a[f]||e[f]||this[f]||0,m=E(a&&a.opacity,e.opacity,1);a&&this.zones.length&&(c=a.getZone(),k=a.options.color||c&&(c.color||a.nonZonedColor)||this.color,c&&(h=c.borderColor||h,g=c.dashStyle||g,l=c.borderWidth||l));d&&a&&(a=w(e.states[d],
+a.options.states&&a.options.states[d]||{}),d=a.brightness,k=a.color||"undefined"!==typeof d&&u(k).brighten(a.brightness).get()||k,h=a[b]||h,l=a[f]||l,g=a.dashStyle||g,m=E(a.opacity,m));b={fill:k,stroke:h,"stroke-width":l,opacity:m};g&&(b.dashstyle=g);return b}drawPoints(a=this.points){const d=this,g=this.chart,k=d.options,b=g.renderer,f=k.animationLimit||250;let c;a.forEach(function(a){let h=a.graphic,l=!!h,n=h&&g.pointCount<f?"animate":"attr";if(e(a.plotY)&&null!==a.y){c=a.shapeArgs;h&&a.hasNewShapeType()&&
+(h=h.destroy());d.enabledDataSorting&&(a.startXPos=d.xAxis.reversed?-(c?c.width||0:0):d.xAxis.width);h||(a.graphic=h=b[a.shapeType](c).add(a.group||d.group))&&d.enabledDataSorting&&g.hasRendered&&g.pointCount<f&&(h.attr({x:a.startXPos}),l=!0,n="animate");if(h&&l)h[n](w(c));g.styledMode||h[n](d.pointAttribs(a,a.selected&&"select")).shadow(!1!==a.allowShadow&&k.shadow);h&&(h.addClass(a.getClassName(),!0),h.attr({visibility:a.visible?"inherit":"hidden"}))}else h&&(a.graphic=h.destroy())})}drawTracker(a=
+this.points){const d=this,e=d.chart,k=e.pointer,b=function(a){const b=k.getPointFromEvent(a);"undefined"!==typeof b&&d.options.enableMouseTracking&&(k.isDirectTouch=!0,b.onMouseOver(a))};let f;a.forEach(function(a){f=g(a.dataLabels)?a.dataLabels:a.dataLabel?[a.dataLabel]:[];a.graphic&&(a.graphic.element.point=a);f.forEach(function(b){b.div?b.div.point=a:b.element.point=a})});d._hasTracking||(d.trackerGroups.forEach(function(a){if(d[a]){d[a].addClass("highcharts-tracker").on("mouseover",b).on("mouseout",
+function(a){k.onTrackerMouseOut(a)});if(v)d[a].on("touchstart",b);!e.styledMode&&d.options.cursor&&d[a].css({cursor:d.options.cursor})}}),d._hasTracking=!0);h(this,"afterDrawTracker")}remove(){const a=this,d=a.chart;d.hasRendered&&d.series.forEach(function(d){d.type===a.type&&(d.isDirty=!0)});C.prototype.remove.apply(a,arguments)}}d.defaultOptions=w(C.defaultOptions,I);m(d.prototype,{cropShoulder:0,directTouch:!0,getSymbol:l,negStacks:!0,trackerGroups:["group","dataLabelsGroup"]});z.registerSeriesType("column",
+d);"";return d});M(a,"Core/Series/DataLabel.js",[a["Core/Animation/AnimationUtilities.js"],a["Core/Templating.js"],a["Core/Utilities.js"]],function(a,y,I){const {getDeferredAnimation:x}=a,{format:C}=y,{defined:z,extend:H,fireEvent:B,isArray:u,isString:v,merge:l,objectEach:p,pick:t,splat:m}=I;var h;(function(a){function e(a,d,c,e,g){const b=this.chart;var f=this.isCartesian&&b.inverted;const k=this.enabledDataSorting;var h=a.plotX,l=a.plotY;const n=c.rotation;var m=c.align;l=z(h)&&z(l)&&b.isInsidePlot(h,
+Math.round(l),{inverted:f,paneCoordinates:!0,series:this});let p="justify"===t(c.overflow,k?"none":"justify");f=this.visible&&!1!==a.visible&&z(h)&&(a.series.forceDL||k&&!p||l||t(c.inside,!!this.options.stacking)&&e&&b.isInsidePlot(h,f?e.x+1:e.y+e.height-1,{inverted:f,paneCoordinates:!0,series:this}));h=a.pos();if(f&&h){n&&d.attr({align:m});m=d.getBBox(!0);var q=[0,0];var r=b.renderer.fontMetrics(d).b;e=H({x:h[0],y:Math.round(h[1]),width:0,height:0},e);H(c,{width:m.width,height:m.height});n?(p=!1,
+q=b.renderer.rotCorr(r,n),r={x:e.x+(c.x||0)+e.width/2+q.x,y:e.y+(c.y||0)+{top:0,middle:.5,bottom:1}[c.verticalAlign]*e.height},q=[m.x-Number(d.attr("x")),m.y-Number(d.attr("y"))],k&&this.xAxis&&!p&&this.setDataLabelStartPos(a,d,g,l,r),d[g?"attr":"animate"](r)):(k&&this.xAxis&&!p&&this.setDataLabelStartPos(a,d,g,l,e),d.align(c,void 0,e),r=d.alignAttr);if(p&&0<=e.height)this.justifyDataLabel(d,c,r,m,e,g);else if(t(c.crop,!0)){let {x:a,y:c}=r;a+=q[0];c+=q[1];f=b.isInsidePlot(a,c,{paneCoordinates:!0,
+series:this})&&b.isInsidePlot(a+m.width,c+m.height,{paneCoordinates:!0,series:this})}if(c.shape&&!n)d[g?"attr":"animate"]({anchorX:h[0],anchorY:h[1]})}g&&k&&(d.placed=!1);f||k&&!p?d.show():(d.hide(),d.placed=!1)}function g(a,d){var b=d.filter;return b?(d=b.operator,a=a[b.property],b=b.value,">"===d&&a>b||"<"===d&&a<b||">="===d&&a>=b||"<="===d&&a<=b||"=="===d&&a==b||"==="===d&&a===b?!0:!1):!0}function h(){return this.plotGroup("dataLabelsGroup","data-labels",this.hasRendered?"inherit":"hidden",this.options.dataLabels.zIndex||
+6)}function F(a){const b=this.hasRendered||0,c=this.initDataLabelsGroup().attr({opacity:+b});!b&&c&&(this.visible&&c.show(),this.options.animation?c.animate({opacity:1},a):c.attr({opacity:1}));return c}function d(a=this.points){var b,c;const d=this,e=d.chart,k=d.options,h=e.renderer,{backgroundColor:l,plotBackgroundColor:q}=e.options.chart,w=e.options.plotOptions,E=h.getContrast(v(q)&&q||v(l)&&l||"#000000");let F=k.dataLabels,A,y;var G=m(F)[0];const H=G.animation;G=G.defer?x(e,H,d):{defer:0,duration:0};
+F=r(r(null===(b=null===w||void 0===w?void 0:w.series)||void 0===b?void 0:b.dataLabels,null===(c=null===w||void 0===w?void 0:w[d.type])||void 0===c?void 0:c.dataLabels),F);B(this,"drawDataLabels");if(u(F)||F.enabled||d._hasPointLabels)y=this.initDataLabels(G),a.forEach(a=>{var b;const c=a.dataLabels||[];A=m(r(F,a.dlOptions||(null===(b=a.options)||void 0===b?void 0:b.dataLabels)));A.forEach((b,f)=>{var l,m=b.enabled&&(!a.isNull||a.dataLabelOnNull)&&g(a,b);const n=a.connectors?a.connectors[f]:a.connector,
+q=b.style||{};let r={},w=c[f],u=!w;const x=t(b.distance,a.labelDistance);if(m){var A=t(b[a.formatPrefix+"Format"],b.format);var F=a.getLabelConfig();F=z(A)?C(A,F,e):(b[a.formatPrefix+"Formatter"]||b.formatter).call(F,b);A=b.rotation;e.styledMode||(q.color=t(b.color,q.color,v(d.color)?d.color:void 0,"#000000"),"contrast"===q.color?(a.contrastColor=h.getContrast(a.color||d.color),q.color=!z(x)&&b.inside||0>(x||0)||k.stacking?a.contrastColor:E):delete a.contrastColor,k.cursor&&(q.cursor=k.cursor));r=
+{r:b.borderRadius||0,rotation:A,padding:b.padding,zIndex:1};if(!e.styledMode){const {backgroundColor:c,borderColor:d}=b;r.fill="auto"===c?a.color:c;r.stroke="auto"===d?a.color:d;r["stroke-width"]=b.borderWidth}p(r,(a,b)=>{"undefined"===typeof a&&delete r[b]})}!w||m&&z(F)&&!!w.div===!!b.useHTML&&(w.rotation&&b.rotation||w.rotation===b.rotation)||(w=void 0,u=!0,n&&a.connector&&(a.connector=a.connector.destroy(),a.connectors&&(1===a.connectors.length?delete a.connectors:delete a.connectors[f])));m&&
+z(F)&&(w?r.text=F:(w=A?h.text(F,0,0,b.useHTML).addClass("highcharts-data-label"):h.label(F,0,0,b.shape,void 0,void 0,b.useHTML,void 0,"data-label"))&&w.addClass(" highcharts-data-label-color-"+a.colorIndex+" "+(b.className||"")+(b.useHTML?" highcharts-tracker":"")),w&&(w.options=b,w.attr(r),e.styledMode||w.css(q).shadow(b.shadow),(m=b[a.formatPrefix+"TextPath"]||b.textPath)&&!b.useHTML&&(w.setTextPath((null===(l=a.getDataLabelPath)||void 0===l?void 0:l.call(a,w))||a.graphic,m),a.dataLabelPath&&!m.enabled&&
+(a.dataLabelPath=a.dataLabelPath.destroy())),w.added||w.add(y),d.alignDataLabel(a,w,b,void 0,u),w.isActive=!0,c[f]&&c[f]!==w&&c[f].destroy(),c[f]=w))});for(b=c.length;b--;)c[b].isActive?c[b].isActive=!1:(c[b].destroy(),c.splice(b,1));a.dataLabel=c[0];a.dataLabels=c});B(this,"afterDrawDataLabels")}function k(a,d,c,e,g,k){const b=this.chart,f=d.align,h=d.verticalAlign,l=a.box?0:a.padding||0;let {x:m=0,y:n=0}=d,p,q;p=(c.x||0)+l;0>p&&("right"===f&&0<=m?(d.align="left",d.inside=!0):m-=p,q=!0);p=(c.x||
+0)+e.width-l;p>b.plotWidth&&("left"===f&&0>=m?(d.align="right",d.inside=!0):m+=b.plotWidth-p,q=!0);p=c.y+l;0>p&&("bottom"===h&&0<=n?(d.verticalAlign="top",d.inside=!0):n-=p,q=!0);p=(c.y||0)+e.height-l;p>b.plotHeight&&("top"===h&&0>=n?(d.verticalAlign="bottom",d.inside=!0):n+=b.plotHeight-p,q=!0);q&&(d.x=m,d.y=n,a.placed=!k,a.align(d,void 0,g));return q}function r(a,d){let b=[],f;if(u(a)&&!u(d))b=a.map(function(a){return l(a,d)});else if(u(d)&&!u(a))b=d.map(function(b){return l(a,b)});else if(!u(a)&&
+!u(d))b=l(a,d);else if(u(a)&&u(d))for(f=Math.max(a.length,d.length);f--;)b[f]=l(a[f],d[f]);return b}function q(a,d,c,e,g){const b=this.chart,f=b.inverted,k=this.xAxis,h=k.reversed,l=f?d.height/2:d.width/2;a=(a=a.pointWidth)?a/2:0;d.startXPos=f?g.x:h?-l-a:k.width-l+a;d.startYPos=f?h?this.yAxis.height-l+a:-l-a:g.y;e?"hidden"===d.visibility&&(d.show(),d.attr({opacity:0}).animate({opacity:1})):d.attr({opacity:1}).animate({opacity:0},void 0,d.hide);b.hasRendered&&(c&&d.attr({x:d.startXPos,y:d.startYPos}),
+d.placed=!0)}const y=[];a.compose=function(a){I.pushUnique(y,a)&&(a=a.prototype,a.initDataLabelsGroup=h,a.initDataLabels=F,a.alignDataLabel=e,a.drawDataLabels=d,a.justifyDataLabel=k,a.setDataLabelStartPos=q)}})(h||(h={}));"";return h});M(a,"Series/Column/ColumnDataLabel.js",[a["Core/Series/DataLabel.js"],a["Core/Series/SeriesRegistry.js"],a["Core/Utilities.js"]],function(a,y,I){const {series:x}=y,{merge:C,pick:z}=I;var H;(function(y){function u(a,p,t,m,h){let g=this.chart.inverted;var e=a.series;
+let l=(e.xAxis?e.xAxis.len:this.chart.plotSizeX)||0;e=(e.yAxis?e.yAxis.len:this.chart.plotSizeY)||0;var v=a.dlBox||a.shapeArgs;let u=z(a.below,a.plotY>z(this.translatedThreshold,e)),d=z(t.inside,!!this.options.stacking);v&&(m=C(v),0>m.y&&(m.height+=m.y,m.y=0),v=m.y+m.height-e,0<v&&v<m.height&&(m.height-=v),g&&(m={x:e-m.y-m.height,y:l-m.x-m.width,width:m.height,height:m.width}),d||(g?(m.x+=u?0:m.width,m.width=0):(m.y+=u?m.height:0,m.height=0)));t.align=z(t.align,!g||d?"center":u?"right":"left");t.verticalAlign=
+z(t.verticalAlign,g||d?"middle":u?"top":"bottom");x.prototype.alignDataLabel.call(this,a,p,t,m,h);t.inside&&a.contrastColor&&p.css({color:a.contrastColor})}const v=[];y.compose=function(l){a.compose(x);I.pushUnique(v,l)&&(l.prototype.alignDataLabel=u)}})(H||(H={}));return H});M(a,"Series/Bar/BarSeries.js",[a["Series/Column/ColumnSeries.js"],a["Core/Series/SeriesRegistry.js"],a["Core/Utilities.js"]],function(a,y,I){const {extend:x,merge:C}=I;class z extends a{constructor(){super(...arguments);this.points=
+this.options=this.data=void 0}}z.defaultOptions=C(a.defaultOptions,{});x(z.prototype,{inverted:!0});y.registerSeriesType("bar",z);"";return z});M(a,"Series/Scatter/ScatterSeriesDefaults.js",[],function(){"";return{lineWidth:0,findNearestPointBy:"xy",jitter:{x:0,y:0},marker:{enabled:!0},tooltip:{headerFormat:'<span style="color:{point.color}">\u25cf</span> <span style="font-size: 0.8em"> {series.name}</span><br/>',pointFormat:"x: <b>{point.x}</b><br/>y: <b>{point.y}</b><br/>"}}});M(a,"Series/Scatter/ScatterSeries.js",
+[a["Series/Scatter/ScatterSeriesDefaults.js"],a["Core/Series/SeriesRegistry.js"],a["Core/Utilities.js"]],function(a,y,I){const {column:x,line:C}=y.seriesTypes,{addEvent:z,extend:H,merge:B}=I;class u extends C{constructor(){super(...arguments);this.points=this.options=this.data=void 0}applyJitter(){const a=this,l=this.options.jitter,p=this.points.length;l&&this.points.forEach(function(t,m){["x","y"].forEach(function(h,g){let e="plot"+h.toUpperCase(),w,v;if(l[h]&&!t.isNull){var u=a[h+"Axis"];v=l[h]*
+u.transA;u&&!u.isLog&&(w=Math.max(0,t[e]-v),u=Math.min(u.len,t[e]+v),g=1E4*Math.sin(m+g*p),g-=Math.floor(g),t[e]=w+(u-w)*g,"x"===h&&(t.clientX=t.plotX))}})})}drawGraph(){this.options.lineWidth?super.drawGraph():this.graph&&(this.graph=this.graph.destroy())}}u.defaultOptions=B(C.defaultOptions,a);H(u.prototype,{drawTracker:x.prototype.drawTracker,sorted:!1,requireSorting:!1,noSharedTooltip:!0,trackerGroups:["group","markerGroup","dataLabelsGroup"],takeOrdinalPosition:!1});z(u,"afterTranslate",function(){this.applyJitter()});
+y.registerSeriesType("scatter",u);return u});M(a,"Series/CenteredUtilities.js",[a["Core/Globals.js"],a["Core/Series/Series.js"],a["Core/Utilities.js"]],function(a,y,I){const {deg2rad:x}=a,{fireEvent:C,isNumber:z,pick:H,relativeLength:B}=I;var u;(function(a){a.getCenter=function(){var a=this.options,p=this.chart;const t=2*(a.slicedOffset||0),m=p.plotWidth-2*t,h=p.plotHeight-2*t;var g=a.center;const e=Math.min(m,h),w=a.thickness;var v=a.size;let u=a.innerSize||0;"string"===typeof v&&(v=parseFloat(v));
+"string"===typeof u&&(u=parseFloat(u));a=[H(g[0],"50%"),H(g[1],"50%"),H(v&&0>v?void 0:a.size,"100%"),H(u&&0>u?void 0:a.innerSize||0,"0%")];!p.angular||this instanceof y||(a[3]=0);for(g=0;4>g;++g)v=a[g],p=2>g||2===g&&/%$/.test(v),a[g]=B(v,[m,h,e,a[2]][g])+(p?t:0);a[3]>a[2]&&(a[3]=a[2]);z(w)&&2*w<a[2]&&0<w&&(a[3]=a[2]-2*w);C(this,"afterGetCenter",{positions:a});return a};a.getStartAndEndRadians=function(a,p){a=z(a)?a:0;p=z(p)&&p>a&&360>p-a?p:a+360;return{start:x*(a+-90),end:x*(p+-90)}}})(u||(u={}));
+"";return u});M(a,"Series/Pie/PiePoint.js",[a["Core/Animation/AnimationUtilities.js"],a["Core/Series/Point.js"],a["Core/Utilities.js"]],function(a,y,I){const {setAnimation:x}=a,{addEvent:C,defined:z,extend:H,isNumber:B,pick:u,relativeLength:v}=I;class l extends y{constructor(){super(...arguments);this.series=this.options=this.labelDistance=void 0}getConnectorPath(){const a=this.labelPosition,l=this.series.options.dataLabels,m=this.connectorShapes;let h=l.connectorShape;m[h]&&(h=m[h]);return h.call(this,
+{x:a.computed.x,y:a.computed.y,alignment:a.alignment},a.connectorPosition,l)}getTranslate(){return this.sliced?this.slicedTranslation:{translateX:0,translateY:0}}haloPath(a){const l=this.shapeArgs;return this.sliced||!this.visible?[]:this.series.chart.renderer.symbols.arc(l.x,l.y,l.r+a,l.r+a,{innerR:l.r-1,start:l.start,end:l.end,borderRadius:l.borderRadius})}init(){super.init.apply(this,arguments);this.name=u(this.name,"Slice");const a=a=>{this.slice("select"===a.type)};C(this,"select",a);C(this,
+"unselect",a);return this}isValid(){return B(this.y)&&0<=this.y}setVisible(a,l){const m=this.series,h=m.chart,g=m.options.ignoreHiddenPoint;l=u(l,g);a!==this.visible&&(this.visible=this.options.visible=a="undefined"===typeof a?!this.visible:a,m.options.data[m.data.indexOf(this)]=this.options,["graphic","dataLabel","connector"].forEach(e=>{if(this[e])this[e][a?"show":"hide"](a)}),this.legendItem&&h.legend.colorizeItem(this,a),a||"hover"!==this.state||this.setState(""),g&&(m.isDirty=!0),l&&h.redraw())}slice(a,
+l,m){const h=this.series;x(m,h.chart);u(l,!0);this.sliced=this.options.sliced=z(a)?a:!this.sliced;h.options.data[h.data.indexOf(this)]=this.options;this.graphic&&this.graphic.animate(this.getTranslate())}}H(l.prototype,{connectorShapes:{fixedOffset:function(a,l,m){const h=l.breakAt;l=l.touchingSliceAt;return[["M",a.x,a.y],m.softConnector?["C",a.x+("left"===a.alignment?-5:5),a.y,2*h.x-l.x,2*h.y-l.y,h.x,h.y]:["L",h.x,h.y],["L",l.x,l.y]]},straight:function(a,l){l=l.touchingSliceAt;return[["M",a.x,a.y],
+["L",l.x,l.y]]},crookedLine:function(a,l,m){const {breakAt:h,touchingSliceAt:g}=l;({series:l}=this);const [e,p,t]=l.center,u=t/2,d=l.chart.plotWidth,k=l.chart.plotLeft;l="left"===a.alignment;const {x:r,y:q}=a;m.crookDistance?(a=v(m.crookDistance,1),a=l?e+u+(d+k-e-u)*(1-a):k+(e-u)*a):a=e+(p-q)*Math.tan((this.angle||0)-Math.PI/2);m=[["M",r,q]];(l?a<=r&&a>=h.x:a>=r&&a<=h.x)&&m.push(["L",a,q]);m.push(["L",h.x,h.y],["L",g.x,g.y]);return m}}});return l});M(a,"Series/Pie/PieSeriesDefaults.js",[],function(){"";
+return{borderRadius:3,center:[null,null],clip:!1,colorByPoint:!0,dataLabels:{allowOverlap:!0,connectorPadding:5,connectorShape:"crookedLine",crookDistance:void 0,distance:30,enabled:!0,formatter:function(){return this.point.isNull?void 0:this.point.name},softConnector:!0,x:0},fillColor:void 0,ignoreHiddenPoint:!0,inactiveOtherPoints:!0,legendType:"point",marker:null,size:null,showInLegend:!1,slicedOffset:10,stickyTracking:!1,tooltip:{followPointer:!0},borderColor:"#ffffff",borderWidth:1,lineWidth:void 0,
+states:{hover:{brightness:.1}}}});M(a,"Series/Pie/PieSeries.js",[a["Series/CenteredUtilities.js"],a["Series/Column/ColumnSeries.js"],a["Core/Globals.js"],a["Series/Pie/PiePoint.js"],a["Series/Pie/PieSeriesDefaults.js"],a["Core/Series/Series.js"],a["Core/Series/SeriesRegistry.js"],a["Core/Renderer/SVG/Symbols.js"],a["Core/Utilities.js"]],function(a,y,I,L,C,z,H,B,u){const {getStartAndEndRadians:v}=a;({noop:I}=I);const {clamp:l,extend:p,fireEvent:t,merge:m,pick:h,relativeLength:g}=u;class e extends z{constructor(){super(...arguments);
+this.points=this.options=this.maxLabelDistance=this.data=this.center=void 0}animate(a){const e=this,g=e.points,d=e.startAngleRad;a||g.forEach(function(a){const g=a.graphic,k=a.shapeArgs;g&&k&&(g.attr({r:h(a.startR,e.center&&e.center[3]/2),start:d,end:d}),g.animate({r:k.r,start:k.start,end:k.end},e.options.animation))})}drawEmpty(){const a=this.startAngleRad,e=this.endAngleRad,g=this.options;let d,k;0===this.total&&this.center?(d=this.center[0],k=this.center[1],this.graph||(this.graph=this.chart.renderer.arc(d,
+k,this.center[1]/2,0,a,e).addClass("highcharts-empty-series").add(this.group)),this.graph.attr({d:B.arc(d,k,this.center[2]/2,0,{start:a,end:e,innerR:this.center[3]/2})}),this.chart.styledMode||this.graph.attr({"stroke-width":g.borderWidth,fill:g.fillColor||"none",stroke:g.color||"#cccccc"})):this.graph&&(this.graph=this.graph.destroy())}drawPoints(){const a=this.chart.renderer;this.points.forEach(function(e){e.graphic&&e.hasNewShapeType()&&(e.graphic=e.graphic.destroy());e.graphic||(e.graphic=a[e.shapeType](e.shapeArgs).add(e.series.group),
+e.delayedRendering=!0)})}generatePoints(){super.generatePoints();this.updateTotals()}getX(a,e,g){const d=this.center,k=this.radii?this.radii[g.index]||0:d[2]/2;a=Math.asin(l((a-d[1])/(k+g.labelDistance),-1,1));return d[0]+(e?-1:1)*Math.cos(a)*(k+g.labelDistance)+(0<g.labelDistance?(e?-1:1)*this.options.dataLabels.padding:0)}hasData(){return!!this.processedXData.length}redrawPoints(){const a=this,e=a.chart;let g,d,k,h;this.drawEmpty();a.group&&!e.styledMode&&a.group.shadow(a.options.shadow);a.points.forEach(function(l){const q=
+{};d=l.graphic;!l.isNull&&d?(h=l.shapeArgs,g=l.getTranslate(),e.styledMode||(k=a.pointAttribs(l,l.selected&&"select")),l.delayedRendering?(d.setRadialReference(a.center).attr(h).attr(g),e.styledMode||d.attr(k).attr({"stroke-linejoin":"round"}),l.delayedRendering=!1):(d.setRadialReference(a.center),e.styledMode||m(!0,q,k),m(!0,q,h,g),d.animate(q)),d.attr({visibility:l.visible?"inherit":"hidden"}),d.addClass(l.getClassName(),!0)):d&&(l.graphic=d.destroy())})}sortByAngle(a,e){a.sort(function(a,d){return"undefined"!==
+typeof a.angle&&(d.angle-a.angle)*e})}translate(a){t(this,"translate");this.generatePoints();var e=this.options;const l=e.slicedOffset,d=l+(e.borderWidth||0);var k=v(e.startAngle,e.endAngle);const m=this.startAngleRad=k.start;k=(this.endAngleRad=k.end)-m;const q=this.points,p=e.dataLabels.distance;e=e.ignoreHiddenPoint;const b=q.length;let f,c,n,w=0;a||(this.center=a=this.getCenter());for(c=0;c<b;c++){n=q[c];var u=m+w*k;!n.isValid()||e&&!n.visible||(w+=n.percentage/100);var x=m+w*k;var y={x:a[0],
+y:a[1],r:a[2]/2,innerR:a[3]/2,start:Math.round(1E3*u)/1E3,end:Math.round(1E3*x)/1E3};n.shapeType="arc";n.shapeArgs=y;n.labelDistance=h(n.options.dataLabels&&n.options.dataLabels.distance,p);n.labelDistance=g(n.labelDistance,y.r);this.maxLabelDistance=Math.max(this.maxLabelDistance||0,n.labelDistance);x=(x+u)/2;x>1.5*Math.PI?x-=2*Math.PI:x<-Math.PI/2&&(x+=2*Math.PI);n.slicedTranslation={translateX:Math.round(Math.cos(x)*l),translateY:Math.round(Math.sin(x)*l)};y=Math.cos(x)*a[2]/2;f=Math.sin(x)*a[2]/
+2;n.tooltipPos=[a[0]+.7*y,a[1]+.7*f];n.half=x<-Math.PI/2||x>Math.PI/2?1:0;n.angle=x;u=Math.min(d,n.labelDistance/5);n.labelPosition={natural:{x:a[0]+y+Math.cos(x)*n.labelDistance,y:a[1]+f+Math.sin(x)*n.labelDistance},computed:{},alignment:0>n.labelDistance?"center":n.half?"right":"left",connectorPosition:{breakAt:{x:a[0]+y+Math.cos(x)*u,y:a[1]+f+Math.sin(x)*u},touchingSliceAt:{x:a[0]+y,y:a[1]+f}}}}t(this,"afterTranslate")}updateTotals(){const a=this.points,e=a.length,g=this.options.ignoreHiddenPoint;
+let d,k,h=0;for(d=0;d<e;d++)k=a[d],!k.isValid()||g&&!k.visible||(h+=k.y);this.total=h;for(d=0;d<e;d++)k=a[d],k.percentage=0<h&&(k.visible||!g)?k.y/h*100:0,k.total=h}}e.defaultOptions=m(z.defaultOptions,C);p(e.prototype,{axisTypes:[],directTouch:!0,drawGraph:void 0,drawTracker:y.prototype.drawTracker,getCenter:a.getCenter,getSymbol:I,isCartesian:!1,noSharedTooltip:!0,pointAttribs:y.prototype.pointAttribs,pointClass:L,requireSorting:!1,searchPoint:I,trackerGroups:["group","dataLabelsGroup"]});H.registerSeriesType("pie",
+e);return e});M(a,"Series/Pie/PieDataLabel.js",[a["Core/Series/DataLabel.js"],a["Core/Globals.js"],a["Core/Renderer/RendererUtilities.js"],a["Core/Series/SeriesRegistry.js"],a["Core/Utilities.js"]],function(a,y,I,L,C){const {noop:x}=y,{distribute:H}=I,{series:B}=L,{arrayMax:u,clamp:v,defined:l,merge:p,pick:t,relativeLength:m}=C;var h;(function(g){function e(){const a=this,d=a.data,e=a.chart,g=a.options.dataLabels||{},b=g.connectorPadding,f=e.plotWidth,c=e.plotHeight,h=e.plotLeft,m=Math.round(e.chartWidth/
+3),w=a.center,v=w[2]/2,x=w[1],y=[[],[]],z=[0,0,0,0],F=a.dataLabelPositioners;let C,A,E,I,L,M,J,N,O,S,W,U;a.visible&&(g.enabled||a._hasPointLabels)&&(d.forEach(function(a){a.dataLabel&&a.visible&&a.dataLabel.shortened&&(a.dataLabel.attr({width:"auto"}).css({width:"auto",textOverflow:"clip"}),a.dataLabel.shortened=!1)}),B.prototype.drawDataLabels.apply(a),d.forEach(function(a){a.dataLabel&&(a.visible?(y[a.half].push(a),a.dataLabel._pos=null,!l(g.style.width)&&!l(a.options.dataLabels&&a.options.dataLabels.style&&
+a.options.dataLabels.style.width)&&a.dataLabel.getBBox().width>m&&(a.dataLabel.css({width:Math.round(.7*m)+"px"}),a.dataLabel.shortened=!0)):(a.dataLabel=a.dataLabel.destroy(),a.dataLabels&&1===a.dataLabels.length&&delete a.dataLabels))}),y.forEach((d,k)=>{const m=d.length,n=[];let q,p=0;if(m){a.sortByAngle(d,k-.5);if(0<a.maxLabelDistance){var r=Math.max(0,x-v-a.maxLabelDistance);q=Math.min(x+v+a.maxLabelDistance,e.plotHeight);d.forEach(function(a){0<a.labelDistance&&a.dataLabel&&(a.top=Math.max(0,
+x-v-a.labelDistance),a.bottom=Math.min(x+v+a.labelDistance,e.plotHeight),p=a.dataLabel.getBBox().height||21,a.distributeBox={target:a.labelPosition.natural.y-a.top+p/2,size:p,rank:a.y},n.push(a.distributeBox))});r=q+p-r;H(n,r,r/5)}for(W=0;W<m;W++){C=d[W];M=C.labelPosition;I=C.dataLabel;S=!1===C.visible?"hidden":"inherit";O=r=M.natural.y;n&&l(C.distributeBox)&&("undefined"===typeof C.distributeBox.pos?S="hidden":(J=C.distributeBox.size,O=F.radialDistributionY(C)));delete C.positionIndex;if(g.justify)N=
+F.justify(C,v,w);else switch(g.alignTo){case "connectors":N=F.alignToConnectors(d,k,f,h);break;case "plotEdges":N=F.alignToPlotEdges(I,k,f,h);break;default:N=F.radialDistributionX(a,C,O,r)}I._attr={visibility:S,align:M.alignment};U=C.options.dataLabels||{};I._pos={x:N+t(U.x,g.x)+({left:b,right:-b}[M.alignment]||0),y:O+t(U.y,g.y)-I.getBBox().height/2};M&&(M.computed.x=N,M.computed.y=O);t(g.crop,!0)&&(L=I.getBBox().width,r=null,N-L<b&&1===k?(r=Math.round(L-N+b),z[3]=Math.max(r,z[3])):N+L>f-b&&0===k&&
+(r=Math.round(N+L-f+b),z[1]=Math.max(r,z[1])),0>O-J/2?z[0]=Math.max(Math.round(-O+J/2),z[0]):O+J/2>c&&(z[2]=Math.max(Math.round(O+J/2-c),z[2])),I.sideOverflow=r)}}}),0===u(z)||this.verifyDataLabelOverflow(z))&&(this.placeDataLabels(),this.points.forEach(function(b){U=p(g,b.options.dataLabels);if(A=t(U.connectorWidth,1)){let c;E=b.connector;if((I=b.dataLabel)&&I._pos&&b.visible&&0<b.labelDistance){S=I._attr.visibility;if(c=!E)b.connector=E=e.renderer.path().addClass("highcharts-data-label-connector  highcharts-color-"+
+b.colorIndex+(b.className?" "+b.className:"")).add(a.dataLabelsGroup),e.styledMode||E.attr({"stroke-width":A,stroke:U.connectorColor||b.color||"#666666"});E[c?"attr":"animate"]({d:b.getConnectorPath()});E.attr("visibility",S)}else E&&(b.connector=E.destroy())}}))}function h(){this.points.forEach(function(a){let d=a.dataLabel,e;d&&a.visible&&((e=d._pos)?(d.sideOverflow&&(d._attr.width=Math.max(d.getBBox().width-d.sideOverflow,0),d.css({width:d._attr.width+"px",textOverflow:(this.options.dataLabels.style||
+{}).textOverflow||"ellipsis"}),d.shortened=!0),d.attr(d._attr),d[d.moved?"animate":"attr"](e),d.moved=!0):d&&d.attr({y:-9999}));delete a.distributeBox},this)}function y(a){let d=this.center,e=this.options,g=e.center,b=e.minSize||80,f,c=null!==e.size;c||(null!==g[0]?f=Math.max(d[2]-Math.max(a[1],a[3]),b):(f=Math.max(d[2]-a[1]-a[3],b),d[0]+=(a[3]-a[1])/2),null!==g[1]?f=v(f,b,d[2]-Math.max(a[0],a[2])):(f=v(f,b,d[2]-a[0]-a[2]),d[1]+=(a[0]-a[2])/2),f<d[2]?(d[2]=f,d[3]=Math.min(e.thickness?Math.max(0,f-
+2*e.thickness):Math.max(0,m(e.innerSize||0,f)),f),this.translate(d),this.drawDataLabels&&this.drawDataLabels()):c=!0);return c}const z=[],d={radialDistributionY:function(a){return a.top+a.distributeBox.pos},radialDistributionX:function(a,d,e,g){return a.getX(e<d.top+2||e>d.bottom-2?g:e,d.half,d)},justify:function(a,d,e){return e[0]+(a.half?-1:1)*(d+a.labelDistance)},alignToPlotEdges:function(a,d,e,g){a=a.getBBox().width;return d?a+g:e-a-g},alignToConnectors:function(a,d,e,g){let b=0,f;a.forEach(function(a){f=
+a.dataLabel.getBBox().width;f>b&&(b=f)});return d?b+g:e-b-g}};g.compose=function(g){a.compose(B);C.pushUnique(z,g)&&(g=g.prototype,g.dataLabelPositioners=d,g.alignDataLabel=x,g.drawDataLabels=e,g.placeDataLabels=h,g.verifyDataLabelOverflow=y)}})(h||(h={}));return h});M(a,"Extensions/OverlappingDataLabels.js",[a["Core/Chart/Chart.js"],a["Core/Utilities.js"]],function(a,y){function x(a,l){let p,t=!1;a&&(p=a.newOpacity,a.oldOpacity!==p&&(a.alignAttr&&a.placed?(a[p?"removeClass":"addClass"]("highcharts-data-label-hidden"),
+t=!0,a.alignAttr.opacity=p,a[a.isOld?"animate":"attr"](a.alignAttr,null,function(){l.styledMode||a.css({pointerEvents:p?"auto":"none"})}),C(l,"afterHideOverlappingLabel")):a.attr({opacity:p})),a.isOld=!0);return t}const {addEvent:L,fireEvent:C,isArray:z,isNumber:H,objectEach:B,pick:u}=y;L(a,"render",function(){let a=this,l=[];(this.labelCollectors||[]).forEach(function(a){l=l.concat(a())});(this.yAxis||[]).forEach(function(a){a.stacking&&a.options.stackLabels&&!a.options.stackLabels.allowOverlap&&
+B(a.stacking.stacks,function(a){B(a,function(a){a.label&&l.push(a.label)})})});(this.series||[]).forEach(function(p){var t=p.options.dataLabels;p.visible&&(!1!==t.enabled||p._hasPointLabels)&&(t=m=>m.forEach(h=>{h.visible&&(z(h.dataLabels)?h.dataLabels:h.dataLabel?[h.dataLabel]:[]).forEach(function(g){const e=g.options;g.labelrank=u(e.labelrank,h.labelrank,h.shapeArgs&&h.shapeArgs.height);e.allowOverlap?(g.oldOpacity=g.opacity,g.newOpacity=1,x(g,a)):l.push(g)})}),t(p.nodes||[]),t(p.points))});this.hideOverlappingLabels(l)});
+a.prototype.hideOverlappingLabels=function(a){let l=this,p=a.length,t=l.renderer;var m;let h;let g,e,w,u=!1;var v=function(a){let d,e;var g;let h=a.box?0:a.padding||0,b=g=0,f,c;if(a&&(!a.alignAttr||a.placed))return d=a.alignAttr||{x:a.attr("x"),y:a.attr("y")},e=a.parentGroup,a.width||(g=a.getBBox(),a.width=g.width,a.height=g.height,g=t.fontMetrics(a.element).h),f=a.width-2*h,(c={left:"0",center:"0.5",right:"1"}[a.alignValue])?b=+c*f:H(a.x)&&Math.round(a.x)!==a.translateX&&(b=a.x-a.translateX),{x:d.x+
+(e.translateX||0)+h-(b||0),y:d.y+(e.translateY||0)+h-g,width:a.width-2*h,height:a.height-2*h}};for(h=0;h<p;h++)if(m=a[h])m.oldOpacity=m.opacity,m.newOpacity=1,m.absoluteBox=v(m);a.sort(function(a,e){return(e.labelrank||0)-(a.labelrank||0)});for(h=0;h<p;h++)for(e=(v=a[h])&&v.absoluteBox,m=h+1;m<p;++m)w=(g=a[m])&&g.absoluteBox,!e||!w||v===g||0===v.newOpacity||0===g.newOpacity||"hidden"===v.visibility||"hidden"===g.visibility||w.x>=e.x+e.width||w.x+w.width<=e.x||w.y>=e.y+e.height||w.y+w.height<=e.y||
+((v.labelrank<g.labelrank?v:g).newOpacity=0);a.forEach(function(a){x(a,l)&&(u=!0)});u&&C(l,"afterHideAllOverlappingLabels")}});M(a,"Extensions/BorderRadius.js",[a["Core/Defaults.js"],a["Core/Series/Series.js"],a["Core/Series/SeriesRegistry.js"],a["Core/Renderer/SVG/SVGElement.js"],a["Core/Renderer/SVG/SVGRenderer.js"],a["Core/Utilities.js"]],function(a,y,I,L,C,z){const {defaultOptions:x}=a;({seriesTypes:a}=I);const {addEvent:B,extend:u,isObject:v,merge:l,relativeLength:p}=z,t={radius:0,scope:"stack",
+where:void 0},m=(a,g)=>{v(a)||(a={radius:a||0});return l(t,g,a)};if(-1===L.symbolCustomAttribs.indexOf("borderRadius")){L.symbolCustomAttribs.push("borderRadius","brBoxHeight","brBoxY");const h=C.prototype.symbols.arc;C.prototype.symbols.arc=function(a,g,l,m,d={}){a=h(a,g,l,m,d);const {innerR:e=0,r=l,start:q=0,end:t=0}=d;if(d.open||!d.borderRadius)return a;l=t-q;g=Math.sin(l/2);d=Math.max(Math.min(p(d.borderRadius||0,r-e),(r-e)/2,r*g/(1+g)),0);l=Math.min(d,l/Math.PI*2*e);for(g=a.length-1;g--;){{let e=
+void 0,h=void 0,k=void 0;m=a;var b=g,f=1<g?l:d,c=m[b],n=m[b+1];"Z"===n[0]&&(n=m[0]);"M"!==c[0]&&"L"!==c[0]||"A"!==n[0]?"A"!==c[0]||"M"!==n[0]&&"L"!==n[0]||(k=n,h=c):(k=c,h=n,e=!0);if(k&&h&&h.params){c=h[1];var w=h[5];n=h.params;const {start:a,end:d,cx:g,cy:l}=n;var u=w?c-f:c+f;const p=u?Math.asin(f/u):0;w=w?p:-p;u*=Math.cos(p);e?(n.start=a+w,k[1]=g+u*Math.cos(a),k[2]=l+u*Math.sin(a),m.splice(b+1,0,["A",f,f,0,0,1,g+c*Math.cos(n.start),l+c*Math.sin(n.start)])):(n.end=d-w,h[6]=g+c*Math.cos(n.end),h[7]=
+l+c*Math.sin(n.end),m.splice(b+1,0,["A",f,f,0,0,1,g+u*Math.cos(d),l+u*Math.sin(d)]));h[4]=Math.abs(n.end-n.start)<Math.PI?0:1}}}return a};const g=C.prototype.symbols.roundedRect;C.prototype.symbols.roundedRect=function(a,h,l,m,d={}){const e=g(a,h,l,m,d),{r:p=0,brBoxHeight:q=m,brBoxY:t=h}=d;var b=h-t,f=t+q-(h+m);d=-.1<b-p?0:p;const c=-.1<f-p?0:p;var n=Math.max(d&&b,0);const u=Math.max(c&&f,0);f=[a+d,h];b=[a+l-d,h];const w=[a+l,h+d],v=[a+l,h+m-c],x=[a+l-c,h+m],y=[a+c,h+m],z=[a,h+m-c],B=[a,h+d];if(n){const a=
+Math.sqrt(Math.pow(d,2)-Math.pow(d-n,2));f[0]-=a;b[0]+=a;w[1]=B[1]=h+d-n}m<d-n&&(n=Math.sqrt(Math.pow(d,2)-Math.pow(d-n-m,2)),w[0]=v[0]=a+l-d+n,x[0]=Math.min(w[0],x[0]),y[0]=Math.max(v[0],y[0]),z[0]=B[0]=a+d-n,w[1]=B[1]=h+m);u&&(n=Math.sqrt(Math.pow(c,2)-Math.pow(c-u,2)),x[0]+=n,y[0]-=n,v[1]=z[1]=h+m-c+u);m<c-u&&(m=Math.sqrt(Math.pow(c,2)-Math.pow(c-u-m,2)),w[0]=v[0]=a+l-c+m,b[0]=Math.min(w[0],b[0]),f[0]=Math.max(v[0],f[0]),z[0]=B[0]=a+c-m,v[1]=z[1]=h);e.length=0;e.push(["M",...f],["L",...b],["A",
+d,d,0,0,1,...w],["L",...v],["A",c,c,0,0,1,...x],["L",...y],["A",c,c,0,0,1,...z],["L",...B],["A",d,d,0,0,1,...f],["Z"]);return e};B(a.pie,"afterTranslate",function(){const a=m(this.options.borderRadius);for(const e of this.points){const g=e.shapeArgs;g&&(g.borderRadius=p(a.radius,(g.r||0)-(g.innerR||0)))}});B(y,"afterColumnTranslate",function(){var a,g;if(this.options.borderRadius&&(!this.chart.is3d||!this.chart.is3d())){const {options:e,yAxis:r}=this,q="percent"===e.stacking;var h=null===(g=null===
+(a=x.plotOptions)||void 0===a?void 0:a[this.type])||void 0===g?void 0:g.borderRadius;a=m(e.borderRadius,v(h)?h:{});g=r.options.reversed;for(const k of this.points)if({shapeArgs:h}=k,"roundedRect"===k.shapeType&&h){const {width:b=0,height:f=0,y:c=0}=h;var l=c,d=f;"stack"===a.scope&&k.stackTotal&&(l=r.translate(q?100:k.stackTotal,!1,!0,!1,!0),d=r.translate(e.threshold||0,!1,!0,!1,!0),d=this.crispCol(0,Math.min(l,d),0,Math.abs(l-d)),l=d.y,d=d.height);const m=-1===(k.negative?-1:1)*(g?-1:1);let t=a.where;
+!t&&this.is("waterfall")&&Math.abs((k.yBottom||0)-(this.translatedThreshold||0))>this.borderWidth&&(t="all");t||(t="end");const v=Math.min(p(a.radius,b),b/2,"all"===t?f/2:Infinity)||0;"end"===t&&(m&&(l-=v),d+=v);u(h,{brBoxHeight:d,brBoxY:l,r:v})}}},{order:9})}y={optionsToObject:m};"";return y});M(a,"Core/Responsive.js",[a["Core/Utilities.js"]],function(a){const {diffObjects:x,extend:I,find:L,merge:C,pick:z,uniqueKey:H}=a;var B;(function(u){function v(a,l){const h=a.condition;(h.callback||function(){return this.chartWidth<=
+z(h.maxWidth,Number.MAX_VALUE)&&this.chartHeight<=z(h.maxHeight,Number.MAX_VALUE)&&this.chartWidth>=z(h.minWidth,0)&&this.chartHeight>=z(h.minHeight,0)}).call(this)&&l.push(a._id)}function l(a,l){const h=this.options.responsive;var g=this.currentResponsive;let e=[];!l&&h&&h.rules&&h.rules.forEach(a=>{"undefined"===typeof a._id&&(a._id=H());this.matchResponsiveRule(a,e)},this);l=C(...e.map(a=>L((h||{}).rules||[],e=>e._id===a)).map(a=>a&&a.chartOptions));l.isResponsiveOptions=!0;e=e.toString()||void 0;
+e!==(g&&g.ruleIds)&&(g&&this.update(g.undoOptions,a,!0),e?(g=x(l,this.options,!0,this.collectionsWithUpdate),g.isResponsiveOptions=!0,this.currentResponsive={ruleIds:e,mergedOptions:l,undoOptions:g},this.update(l,a,!0)):this.currentResponsive=void 0)}const p=[];u.compose=function(t){a.pushUnique(p,t)&&I(t.prototype,{matchResponsiveRule:v,setResponsive:l});return t}})(B||(B={}));"";"";return B});M(a,"masters/highcharts.src.js",[a["Core/Globals.js"],a["Core/Utilities.js"],a["Core/Defaults.js"],a["Core/Animation/Fx.js"],
+a["Core/Animation/AnimationUtilities.js"],a["Core/Renderer/HTML/AST.js"],a["Core/Templating.js"],a["Core/Renderer/RendererUtilities.js"],a["Core/Renderer/SVG/SVGElement.js"],a["Core/Renderer/SVG/SVGRenderer.js"],a["Core/Renderer/HTML/HTMLElement.js"],a["Core/Renderer/HTML/HTMLRenderer.js"],a["Core/Axis/Axis.js"],a["Core/Axis/DateTimeAxis.js"],a["Core/Axis/LogarithmicAxis.js"],a["Core/Axis/PlotLineOrBand/PlotLineOrBand.js"],a["Core/Axis/Tick.js"],a["Core/Tooltip.js"],a["Core/Series/Point.js"],a["Core/Pointer.js"],
+a["Core/Legend/Legend.js"],a["Core/Chart/Chart.js"],a["Core/Axis/Stacking/StackingAxis.js"],a["Core/Axis/Stacking/StackItem.js"],a["Core/Series/Series.js"],a["Core/Series/SeriesRegistry.js"],a["Series/Column/ColumnSeries.js"],a["Series/Column/ColumnDataLabel.js"],a["Series/Pie/PieSeries.js"],a["Series/Pie/PieDataLabel.js"],a["Core/Series/DataLabel.js"],a["Core/Responsive.js"],a["Core/Color/Color.js"],a["Core/Time.js"]],function(a,y,I,L,C,z,H,B,u,v,l,p,t,m,h,g,e,w,E,F,d,k,r,q,G,b,f,c,n,M,D,K,U,T){a.animate=
+C.animate;a.animObject=C.animObject;a.getDeferredAnimation=C.getDeferredAnimation;a.setAnimation=C.setAnimation;a.stop=C.stop;a.timers=L.timers;a.AST=z;a.Axis=t;a.Chart=k;a.chart=k.chart;a.Fx=L;a.Legend=d;a.PlotLineOrBand=g;a.Point=E;a.Pointer=F;a.Series=G;a.StackItem=q;a.SVGElement=u;a.SVGRenderer=v;a.Templating=H;a.Tick=e;a.Time=T;a.Tooltip=w;a.Color=U;a.color=U.parse;p.compose(v);l.compose(u);F.compose(k);d.compose(k);a.defaultOptions=I.defaultOptions;a.getOptions=I.getOptions;a.time=I.defaultTime;
+a.setOptions=I.setOptions;a.dateFormat=H.dateFormat;a.format=H.format;a.numberFormat=H.numberFormat;a.addEvent=y.addEvent;a.arrayMax=y.arrayMax;a.arrayMin=y.arrayMin;a.attr=y.attr;a.clearTimeout=y.clearTimeout;a.correctFloat=y.correctFloat;a.createElement=y.createElement;a.css=y.css;a.defined=y.defined;a.destroyObjectProperties=y.destroyObjectProperties;a.discardElement=y.discardElement;a.distribute=B.distribute;a.erase=y.erase;a.error=y.error;a.extend=y.extend;a.extendClass=y.extendClass;a.find=
+y.find;a.fireEvent=y.fireEvent;a.getMagnitude=y.getMagnitude;a.getStyle=y.getStyle;a.inArray=y.inArray;a.isArray=y.isArray;a.isClass=y.isClass;a.isDOMElement=y.isDOMElement;a.isFunction=y.isFunction;a.isNumber=y.isNumber;a.isObject=y.isObject;a.isString=y.isString;a.keys=y.keys;a.merge=y.merge;a.normalizeTickInterval=y.normalizeTickInterval;a.objectEach=y.objectEach;a.offset=y.offset;a.pad=y.pad;a.pick=y.pick;a.pInt=y.pInt;a.relativeLength=y.relativeLength;a.removeEvent=y.removeEvent;a.seriesType=
+b.seriesType;a.splat=y.splat;a.stableSort=y.stableSort;a.syncTimeout=y.syncTimeout;a.timeUnits=y.timeUnits;a.uniqueKey=y.uniqueKey;a.useSerialIds=y.useSerialIds;a.wrap=y.wrap;c.compose(f);D.compose(G);m.compose(t);h.compose(t);M.compose(n);g.compose(t);K.compose(k);r.compose(t,k,G);w.compose(F);return a});a["masters/highcharts.src.js"]._modules=a;return a["masters/highcharts.src.js"]});
+
+},{}],"5QAn":[function(require,module,exports) {
+'use strict'
+
+exports.byteLength = byteLength
+exports.toByteArray = toByteArray
+exports.fromByteArray = fromByteArray
+
+var lookup = []
+var revLookup = []
+var Arr = typeof Uint8Array !== 'undefined' ? Uint8Array : Array
+
+var code = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+for (var i = 0, len = code.length; i < len; ++i) {
+  lookup[i] = code[i]
+  revLookup[code.charCodeAt(i)] = i
+}
+
+// Support decoding URL-safe base64 strings, as Node.js does.
+// See: https://en.wikipedia.org/wiki/Base64#URL_applications
+revLookup['-'.charCodeAt(0)] = 62
+revLookup['_'.charCodeAt(0)] = 63
+
+function getLens (b64) {
+  var len = b64.length
+
+  if (len % 4 > 0) {
+    throw new Error('Invalid string. Length must be a multiple of 4')
+  }
+
+  // Trim off extra bytes after placeholder bytes are found
+  // See: https://github.com/beatgammit/base64-js/issues/42
+  var validLen = b64.indexOf('=')
+  if (validLen === -1) validLen = len
+
+  var placeHoldersLen = validLen === len
+    ? 0
+    : 4 - (validLen % 4)
+
+  return [validLen, placeHoldersLen]
+}
+
+// base64 is 4/3 + up to two characters of the original data
+function byteLength (b64) {
+  var lens = getLens(b64)
+  var validLen = lens[0]
+  var placeHoldersLen = lens[1]
+  return ((validLen + placeHoldersLen) * 3 / 4) - placeHoldersLen
+}
+
+function _byteLength (b64, validLen, placeHoldersLen) {
+  return ((validLen + placeHoldersLen) * 3 / 4) - placeHoldersLen
+}
+
+function toByteArray (b64) {
+  var tmp
+  var lens = getLens(b64)
+  var validLen = lens[0]
+  var placeHoldersLen = lens[1]
+
+  var arr = new Arr(_byteLength(b64, validLen, placeHoldersLen))
+
+  var curByte = 0
+
+  // if there are placeholders, only get up to the last complete 4 chars
+  var len = placeHoldersLen > 0
+    ? validLen - 4
+    : validLen
+
+  var i
+  for (i = 0; i < len; i += 4) {
+    tmp =
+      (revLookup[b64.charCodeAt(i)] << 18) |
+      (revLookup[b64.charCodeAt(i + 1)] << 12) |
+      (revLookup[b64.charCodeAt(i + 2)] << 6) |
+      revLookup[b64.charCodeAt(i + 3)]
+    arr[curByte++] = (tmp >> 16) & 0xFF
+    arr[curByte++] = (tmp >> 8) & 0xFF
+    arr[curByte++] = tmp & 0xFF
+  }
+
+  if (placeHoldersLen === 2) {
+    tmp =
+      (revLookup[b64.charCodeAt(i)] << 2) |
+      (revLookup[b64.charCodeAt(i + 1)] >> 4)
+    arr[curByte++] = tmp & 0xFF
+  }
+
+  if (placeHoldersLen === 1) {
+    tmp =
+      (revLookup[b64.charCodeAt(i)] << 10) |
+      (revLookup[b64.charCodeAt(i + 1)] << 4) |
+      (revLookup[b64.charCodeAt(i + 2)] >> 2)
+    arr[curByte++] = (tmp >> 8) & 0xFF
+    arr[curByte++] = tmp & 0xFF
+  }
+
+  return arr
+}
+
+function tripletToBase64 (num) {
+  return lookup[num >> 18 & 0x3F] +
+    lookup[num >> 12 & 0x3F] +
+    lookup[num >> 6 & 0x3F] +
+    lookup[num & 0x3F]
+}
+
+function encodeChunk (uint8, start, end) {
+  var tmp
+  var output = []
+  for (var i = start; i < end; i += 3) {
+    tmp =
+      ((uint8[i] << 16) & 0xFF0000) +
+      ((uint8[i + 1] << 8) & 0xFF00) +
+      (uint8[i + 2] & 0xFF)
+    output.push(tripletToBase64(tmp))
+  }
+  return output.join('')
+}
+
+function fromByteArray (uint8) {
+  var tmp
+  var len = uint8.length
+  var extraBytes = len % 3 // if we have 1 byte left, pad 2 bytes
+  var parts = []
+  var maxChunkLength = 16383 // must be multiple of 3
+
+  // go through the array every three bytes, we'll deal with trailing stuff later
+  for (var i = 0, len2 = len - extraBytes; i < len2; i += maxChunkLength) {
+    parts.push(encodeChunk(uint8, i, (i + maxChunkLength) > len2 ? len2 : (i + maxChunkLength)))
+  }
+
+  // pad the end with zeros, but make sure to not forget the extra bytes
+  if (extraBytes === 1) {
+    tmp = uint8[len - 1]
+    parts.push(
+      lookup[tmp >> 2] +
+      lookup[(tmp << 4) & 0x3F] +
+      '=='
+    )
+  } else if (extraBytes === 2) {
+    tmp = (uint8[len - 2] << 8) + uint8[len - 1]
+    parts.push(
+      lookup[tmp >> 10] +
+      lookup[(tmp >> 4) & 0x3F] +
+      lookup[(tmp << 2) & 0x3F] +
+      '='
+    )
+  }
+
+  return parts.join('')
+}
+
+},{}],"O1Qa":[function(require,module,exports) {
+/*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
+exports.read = function (buffer, offset, isLE, mLen, nBytes) {
+  var e, m
+  var eLen = (nBytes * 8) - mLen - 1
+  var eMax = (1 << eLen) - 1
+  var eBias = eMax >> 1
+  var nBits = -7
+  var i = isLE ? (nBytes - 1) : 0
+  var d = isLE ? -1 : 1
+  var s = buffer[offset + i]
+
+  i += d
+
+  e = s & ((1 << (-nBits)) - 1)
+  s >>= (-nBits)
+  nBits += eLen
+  for (; nBits > 0; e = (e * 256) + buffer[offset + i], i += d, nBits -= 8) {}
+
+  m = e & ((1 << (-nBits)) - 1)
+  e >>= (-nBits)
+  nBits += mLen
+  for (; nBits > 0; m = (m * 256) + buffer[offset + i], i += d, nBits -= 8) {}
+
+  if (e === 0) {
+    e = 1 - eBias
+  } else if (e === eMax) {
+    return m ? NaN : ((s ? -1 : 1) * Infinity)
+  } else {
+    m = m + Math.pow(2, mLen)
+    e = e - eBias
+  }
+  return (s ? -1 : 1) * m * Math.pow(2, e - mLen)
+}
+
+exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
+  var e, m, c
+  var eLen = (nBytes * 8) - mLen - 1
+  var eMax = (1 << eLen) - 1
+  var eBias = eMax >> 1
+  var rt = (mLen === 23 ? Math.pow(2, -24) - Math.pow(2, -77) : 0)
+  var i = isLE ? 0 : (nBytes - 1)
+  var d = isLE ? 1 : -1
+  var s = value < 0 || (value === 0 && 1 / value < 0) ? 1 : 0
+
+  value = Math.abs(value)
+
+  if (isNaN(value) || value === Infinity) {
+    m = isNaN(value) ? 1 : 0
+    e = eMax
+  } else {
+    e = Math.floor(Math.log(value) / Math.LN2)
+    if (value * (c = Math.pow(2, -e)) < 1) {
+      e--
+      c *= 2
+    }
+    if (e + eBias >= 1) {
+      value += rt / c
+    } else {
+      value += rt * Math.pow(2, 1 - eBias)
+    }
+    if (value * c >= 2) {
+      e++
+      c /= 2
+    }
+
+    if (e + eBias >= eMax) {
+      m = 0
+      e = eMax
+    } else if (e + eBias >= 1) {
+      m = ((value * c) - 1) * Math.pow(2, mLen)
+      e = e + eBias
+    } else {
+      m = value * Math.pow(2, eBias - 1) * Math.pow(2, mLen)
+      e = 0
+    }
+  }
+
+  for (; mLen >= 8; buffer[offset + i] = m & 0xff, i += d, m /= 256, mLen -= 8) {}
+
+  e = (e << mLen) | m
+  eLen += mLen
+  for (; eLen > 0; buffer[offset + i] = e & 0xff, i += d, e /= 256, eLen -= 8) {}
+
+  buffer[offset + i - d] |= s * 128
+}
+
+},{}],"fIt4":[function(require,module,exports) {
+var toString = {}.toString;
+
+module.exports = Array.isArray || function (arr) {
+  return toString.call(arr) == '[object Array]';
+};
+
+},{}],"8fe9":[function(require,module,exports) {
+
+var global = arguments[3];
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <http://feross.org>
+ * @license  MIT
+ */
+/* eslint-disable no-proto */
+
+'use strict'
+
+var base64 = require('base64-js')
+var ieee754 = require('ieee754')
+var isArray = require('isarray')
+
+exports.Buffer = Buffer
+exports.SlowBuffer = SlowBuffer
+exports.INSPECT_MAX_BYTES = 50
+
+/**
+ * If `Buffer.TYPED_ARRAY_SUPPORT`:
+ *   === true    Use Uint8Array implementation (fastest)
+ *   === false   Use Object implementation (most compatible, even IE6)
+ *
+ * Browsers that support typed arrays are IE 10+, Firefox 4+, Chrome 7+, Safari 5.1+,
+ * Opera 11.6+, iOS 4.2+.
+ *
+ * Due to various browser bugs, sometimes the Object implementation will be used even
+ * when the browser supports typed arrays.
+ *
+ * Note:
+ *
+ *   - Firefox 4-29 lacks support for adding new properties to `Uint8Array` instances,
+ *     See: https://bugzilla.mozilla.org/show_bug.cgi?id=695438.
+ *
+ *   - Chrome 9-10 is missing the `TypedArray.prototype.subarray` function.
+ *
+ *   - IE10 has a broken `TypedArray.prototype.subarray` function which returns arrays of
+ *     incorrect length in some situations.
+
+ * We detect these buggy browsers and set `Buffer.TYPED_ARRAY_SUPPORT` to `false` so they
+ * get the Object implementation, which is slower but behaves correctly.
+ */
+Buffer.TYPED_ARRAY_SUPPORT = global.TYPED_ARRAY_SUPPORT !== undefined
+  ? global.TYPED_ARRAY_SUPPORT
+  : typedArraySupport()
+
+/*
+ * Export kMaxLength after typed array support is determined.
+ */
+exports.kMaxLength = kMaxLength()
+
+function typedArraySupport () {
+  try {
+    var arr = new Uint8Array(1)
+    arr.__proto__ = {__proto__: Uint8Array.prototype, foo: function () { return 42 }}
+    return arr.foo() === 42 && // typed array instances can be augmented
+        typeof arr.subarray === 'function' && // chrome 9-10 lack `subarray`
+        arr.subarray(1, 1).byteLength === 0 // ie10 has broken `subarray`
+  } catch (e) {
+    return false
+  }
+}
+
+function kMaxLength () {
+  return Buffer.TYPED_ARRAY_SUPPORT
+    ? 0x7fffffff
+    : 0x3fffffff
+}
+
+function createBuffer (that, length) {
+  if (kMaxLength() < length) {
+    throw new RangeError('Invalid typed array length')
+  }
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    // Return an augmented `Uint8Array` instance, for best performance
+    that = new Uint8Array(length)
+    that.__proto__ = Buffer.prototype
+  } else {
+    // Fallback: Return an object instance of the Buffer class
+    if (that === null) {
+      that = new Buffer(length)
+    }
+    that.length = length
+  }
+
+  return that
+}
+
+/**
+ * The Buffer constructor returns instances of `Uint8Array` that have their
+ * prototype changed to `Buffer.prototype`. Furthermore, `Buffer` is a subclass of
+ * `Uint8Array`, so the returned instances will have all the node `Buffer` methods
+ * and the `Uint8Array` methods. Square bracket notation works as expected -- it
+ * returns a single octet.
+ *
+ * The `Uint8Array` prototype remains unmodified.
+ */
+
+function Buffer (arg, encodingOrOffset, length) {
+  if (!Buffer.TYPED_ARRAY_SUPPORT && !(this instanceof Buffer)) {
+    return new Buffer(arg, encodingOrOffset, length)
+  }
+
+  // Common case.
+  if (typeof arg === 'number') {
+    if (typeof encodingOrOffset === 'string') {
+      throw new Error(
+        'If encoding is specified then the first argument must be a string'
+      )
+    }
+    return allocUnsafe(this, arg)
+  }
+  return from(this, arg, encodingOrOffset, length)
+}
+
+Buffer.poolSize = 8192 // not used by this implementation
+
+// TODO: Legacy, not needed anymore. Remove in next major version.
+Buffer._augment = function (arr) {
+  arr.__proto__ = Buffer.prototype
+  return arr
+}
+
+function from (that, value, encodingOrOffset, length) {
+  if (typeof value === 'number') {
+    throw new TypeError('"value" argument must not be a number')
+  }
+
+  if (typeof ArrayBuffer !== 'undefined' && value instanceof ArrayBuffer) {
+    return fromArrayBuffer(that, value, encodingOrOffset, length)
+  }
+
+  if (typeof value === 'string') {
+    return fromString(that, value, encodingOrOffset)
+  }
+
+  return fromObject(that, value)
+}
+
+/**
+ * Functionally equivalent to Buffer(arg, encoding) but throws a TypeError
+ * if value is a number.
+ * Buffer.from(str[, encoding])
+ * Buffer.from(array)
+ * Buffer.from(buffer)
+ * Buffer.from(arrayBuffer[, byteOffset[, length]])
+ **/
+Buffer.from = function (value, encodingOrOffset, length) {
+  return from(null, value, encodingOrOffset, length)
+}
+
+if (Buffer.TYPED_ARRAY_SUPPORT) {
+  Buffer.prototype.__proto__ = Uint8Array.prototype
+  Buffer.__proto__ = Uint8Array
+  if (typeof Symbol !== 'undefined' && Symbol.species &&
+      Buffer[Symbol.species] === Buffer) {
+    // Fix subarray() in ES2016. See: https://github.com/feross/buffer/pull/97
+    Object.defineProperty(Buffer, Symbol.species, {
+      value: null,
+      configurable: true
+    })
+  }
+}
+
+function assertSize (size) {
+  if (typeof size !== 'number') {
+    throw new TypeError('"size" argument must be a number')
+  } else if (size < 0) {
+    throw new RangeError('"size" argument must not be negative')
+  }
+}
+
+function alloc (that, size, fill, encoding) {
+  assertSize(size)
+  if (size <= 0) {
+    return createBuffer(that, size)
+  }
+  if (fill !== undefined) {
+    // Only pay attention to encoding if it's a string. This
+    // prevents accidentally sending in a number that would
+    // be interpretted as a start offset.
+    return typeof encoding === 'string'
+      ? createBuffer(that, size).fill(fill, encoding)
+      : createBuffer(that, size).fill(fill)
+  }
+  return createBuffer(that, size)
+}
+
+/**
+ * Creates a new filled Buffer instance.
+ * alloc(size[, fill[, encoding]])
+ **/
+Buffer.alloc = function (size, fill, encoding) {
+  return alloc(null, size, fill, encoding)
+}
+
+function allocUnsafe (that, size) {
+  assertSize(size)
+  that = createBuffer(that, size < 0 ? 0 : checked(size) | 0)
+  if (!Buffer.TYPED_ARRAY_SUPPORT) {
+    for (var i = 0; i < size; ++i) {
+      that[i] = 0
+    }
+  }
+  return that
+}
+
+/**
+ * Equivalent to Buffer(num), by default creates a non-zero-filled Buffer instance.
+ * */
+Buffer.allocUnsafe = function (size) {
+  return allocUnsafe(null, size)
+}
+/**
+ * Equivalent to SlowBuffer(num), by default creates a non-zero-filled Buffer instance.
+ */
+Buffer.allocUnsafeSlow = function (size) {
+  return allocUnsafe(null, size)
+}
+
+function fromString (that, string, encoding) {
+  if (typeof encoding !== 'string' || encoding === '') {
+    encoding = 'utf8'
+  }
+
+  if (!Buffer.isEncoding(encoding)) {
+    throw new TypeError('"encoding" must be a valid string encoding')
+  }
+
+  var length = byteLength(string, encoding) | 0
+  that = createBuffer(that, length)
+
+  var actual = that.write(string, encoding)
+
+  if (actual !== length) {
+    // Writing a hex string, for example, that contains invalid characters will
+    // cause everything after the first invalid character to be ignored. (e.g.
+    // 'abxxcd' will be treated as 'ab')
+    that = that.slice(0, actual)
+  }
+
+  return that
+}
+
+function fromArrayLike (that, array) {
+  var length = array.length < 0 ? 0 : checked(array.length) | 0
+  that = createBuffer(that, length)
+  for (var i = 0; i < length; i += 1) {
+    that[i] = array[i] & 255
+  }
+  return that
+}
+
+function fromArrayBuffer (that, array, byteOffset, length) {
+  array.byteLength // this throws if `array` is not a valid ArrayBuffer
+
+  if (byteOffset < 0 || array.byteLength < byteOffset) {
+    throw new RangeError('\'offset\' is out of bounds')
+  }
+
+  if (array.byteLength < byteOffset + (length || 0)) {
+    throw new RangeError('\'length\' is out of bounds')
+  }
+
+  if (byteOffset === undefined && length === undefined) {
+    array = new Uint8Array(array)
+  } else if (length === undefined) {
+    array = new Uint8Array(array, byteOffset)
+  } else {
+    array = new Uint8Array(array, byteOffset, length)
+  }
+
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    // Return an augmented `Uint8Array` instance, for best performance
+    that = array
+    that.__proto__ = Buffer.prototype
+  } else {
+    // Fallback: Return an object instance of the Buffer class
+    that = fromArrayLike(that, array)
+  }
+  return that
+}
+
+function fromObject (that, obj) {
+  if (Buffer.isBuffer(obj)) {
+    var len = checked(obj.length) | 0
+    that = createBuffer(that, len)
+
+    if (that.length === 0) {
+      return that
+    }
+
+    obj.copy(that, 0, 0, len)
+    return that
+  }
+
+  if (obj) {
+    if ((typeof ArrayBuffer !== 'undefined' &&
+        obj.buffer instanceof ArrayBuffer) || 'length' in obj) {
+      if (typeof obj.length !== 'number' || isnan(obj.length)) {
+        return createBuffer(that, 0)
+      }
+      return fromArrayLike(that, obj)
+    }
+
+    if (obj.type === 'Buffer' && isArray(obj.data)) {
+      return fromArrayLike(that, obj.data)
+    }
+  }
+
+  throw new TypeError('First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.')
+}
+
+function checked (length) {
+  // Note: cannot use `length < kMaxLength()` here because that fails when
+  // length is NaN (which is otherwise coerced to zero.)
+  if (length >= kMaxLength()) {
+    throw new RangeError('Attempt to allocate Buffer larger than maximum ' +
+                         'size: 0x' + kMaxLength().toString(16) + ' bytes')
+  }
+  return length | 0
+}
+
+function SlowBuffer (length) {
+  if (+length != length) { // eslint-disable-line eqeqeq
+    length = 0
+  }
+  return Buffer.alloc(+length)
+}
+
+Buffer.isBuffer = function isBuffer (b) {
+  return !!(b != null && b._isBuffer)
+}
+
+Buffer.compare = function compare (a, b) {
+  if (!Buffer.isBuffer(a) || !Buffer.isBuffer(b)) {
+    throw new TypeError('Arguments must be Buffers')
+  }
+
+  if (a === b) return 0
+
+  var x = a.length
+  var y = b.length
+
+  for (var i = 0, len = Math.min(x, y); i < len; ++i) {
+    if (a[i] !== b[i]) {
+      x = a[i]
+      y = b[i]
+      break
+    }
+  }
+
+  if (x < y) return -1
+  if (y < x) return 1
+  return 0
+}
+
+Buffer.isEncoding = function isEncoding (encoding) {
+  switch (String(encoding).toLowerCase()) {
+    case 'hex':
+    case 'utf8':
+    case 'utf-8':
+    case 'ascii':
+    case 'latin1':
+    case 'binary':
+    case 'base64':
+    case 'ucs2':
+    case 'ucs-2':
+    case 'utf16le':
+    case 'utf-16le':
+      return true
+    default:
+      return false
+  }
+}
+
+Buffer.concat = function concat (list, length) {
+  if (!isArray(list)) {
+    throw new TypeError('"list" argument must be an Array of Buffers')
+  }
+
+  if (list.length === 0) {
+    return Buffer.alloc(0)
+  }
+
+  var i
+  if (length === undefined) {
+    length = 0
+    for (i = 0; i < list.length; ++i) {
+      length += list[i].length
+    }
+  }
+
+  var buffer = Buffer.allocUnsafe(length)
+  var pos = 0
+  for (i = 0; i < list.length; ++i) {
+    var buf = list[i]
+    if (!Buffer.isBuffer(buf)) {
+      throw new TypeError('"list" argument must be an Array of Buffers')
+    }
+    buf.copy(buffer, pos)
+    pos += buf.length
+  }
+  return buffer
+}
+
+function byteLength (string, encoding) {
+  if (Buffer.isBuffer(string)) {
+    return string.length
+  }
+  if (typeof ArrayBuffer !== 'undefined' && typeof ArrayBuffer.isView === 'function' &&
+      (ArrayBuffer.isView(string) || string instanceof ArrayBuffer)) {
+    return string.byteLength
+  }
+  if (typeof string !== 'string') {
+    string = '' + string
+  }
+
+  var len = string.length
+  if (len === 0) return 0
+
+  // Use a for loop to avoid recursion
+  var loweredCase = false
+  for (;;) {
+    switch (encoding) {
+      case 'ascii':
+      case 'latin1':
+      case 'binary':
+        return len
+      case 'utf8':
+      case 'utf-8':
+      case undefined:
+        return utf8ToBytes(string).length
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return len * 2
+      case 'hex':
+        return len >>> 1
+      case 'base64':
+        return base64ToBytes(string).length
+      default:
+        if (loweredCase) return utf8ToBytes(string).length // assume utf8
+        encoding = ('' + encoding).toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+Buffer.byteLength = byteLength
+
+function slowToString (encoding, start, end) {
+  var loweredCase = false
+
+  // No need to verify that "this.length <= MAX_UINT32" since it's a read-only
+  // property of a typed array.
+
+  // This behaves neither like String nor Uint8Array in that we set start/end
+  // to their upper/lower bounds if the value passed is out of range.
+  // undefined is handled specially as per ECMA-262 6th Edition,
+  // Section 13.3.3.7 Runtime Semantics: KeyedBindingInitialization.
+  if (start === undefined || start < 0) {
+    start = 0
+  }
+  // Return early if start > this.length. Done here to prevent potential uint32
+  // coercion fail below.
+  if (start > this.length) {
+    return ''
+  }
+
+  if (end === undefined || end > this.length) {
+    end = this.length
+  }
+
+  if (end <= 0) {
+    return ''
+  }
+
+  // Force coersion to uint32. This will also coerce falsey/NaN values to 0.
+  end >>>= 0
+  start >>>= 0
+
+  if (end <= start) {
+    return ''
+  }
+
+  if (!encoding) encoding = 'utf8'
+
+  while (true) {
+    switch (encoding) {
+      case 'hex':
+        return hexSlice(this, start, end)
+
+      case 'utf8':
+      case 'utf-8':
+        return utf8Slice(this, start, end)
+
+      case 'ascii':
+        return asciiSlice(this, start, end)
+
+      case 'latin1':
+      case 'binary':
+        return latin1Slice(this, start, end)
+
+      case 'base64':
+        return base64Slice(this, start, end)
+
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return utf16leSlice(this, start, end)
+
+      default:
+        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
+        encoding = (encoding + '').toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+
+// The property is used by `Buffer.isBuffer` and `is-buffer` (in Safari 5-7) to detect
+// Buffer instances.
+Buffer.prototype._isBuffer = true
+
+function swap (b, n, m) {
+  var i = b[n]
+  b[n] = b[m]
+  b[m] = i
+}
+
+Buffer.prototype.swap16 = function swap16 () {
+  var len = this.length
+  if (len % 2 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 16-bits')
+  }
+  for (var i = 0; i < len; i += 2) {
+    swap(this, i, i + 1)
+  }
+  return this
+}
+
+Buffer.prototype.swap32 = function swap32 () {
+  var len = this.length
+  if (len % 4 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 32-bits')
+  }
+  for (var i = 0; i < len; i += 4) {
+    swap(this, i, i + 3)
+    swap(this, i + 1, i + 2)
+  }
+  return this
+}
+
+Buffer.prototype.swap64 = function swap64 () {
+  var len = this.length
+  if (len % 8 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 64-bits')
+  }
+  for (var i = 0; i < len; i += 8) {
+    swap(this, i, i + 7)
+    swap(this, i + 1, i + 6)
+    swap(this, i + 2, i + 5)
+    swap(this, i + 3, i + 4)
+  }
+  return this
+}
+
+Buffer.prototype.toString = function toString () {
+  var length = this.length | 0
+  if (length === 0) return ''
+  if (arguments.length === 0) return utf8Slice(this, 0, length)
+  return slowToString.apply(this, arguments)
+}
+
+Buffer.prototype.equals = function equals (b) {
+  if (!Buffer.isBuffer(b)) throw new TypeError('Argument must be a Buffer')
+  if (this === b) return true
+  return Buffer.compare(this, b) === 0
+}
+
+Buffer.prototype.inspect = function inspect () {
+  var str = ''
+  var max = exports.INSPECT_MAX_BYTES
+  if (this.length > 0) {
+    str = this.toString('hex', 0, max).match(/.{2}/g).join(' ')
+    if (this.length > max) str += ' ... '
+  }
+  return '<Buffer ' + str + '>'
+}
+
+Buffer.prototype.compare = function compare (target, start, end, thisStart, thisEnd) {
+  if (!Buffer.isBuffer(target)) {
+    throw new TypeError('Argument must be a Buffer')
+  }
+
+  if (start === undefined) {
+    start = 0
+  }
+  if (end === undefined) {
+    end = target ? target.length : 0
+  }
+  if (thisStart === undefined) {
+    thisStart = 0
+  }
+  if (thisEnd === undefined) {
+    thisEnd = this.length
+  }
+
+  if (start < 0 || end > target.length || thisStart < 0 || thisEnd > this.length) {
+    throw new RangeError('out of range index')
+  }
+
+  if (thisStart >= thisEnd && start >= end) {
+    return 0
+  }
+  if (thisStart >= thisEnd) {
+    return -1
+  }
+  if (start >= end) {
+    return 1
+  }
+
+  start >>>= 0
+  end >>>= 0
+  thisStart >>>= 0
+  thisEnd >>>= 0
+
+  if (this === target) return 0
+
+  var x = thisEnd - thisStart
+  var y = end - start
+  var len = Math.min(x, y)
+
+  var thisCopy = this.slice(thisStart, thisEnd)
+  var targetCopy = target.slice(start, end)
+
+  for (var i = 0; i < len; ++i) {
+    if (thisCopy[i] !== targetCopy[i]) {
+      x = thisCopy[i]
+      y = targetCopy[i]
+      break
+    }
+  }
+
+  if (x < y) return -1
+  if (y < x) return 1
+  return 0
+}
+
+// Finds either the first index of `val` in `buffer` at offset >= `byteOffset`,
+// OR the last index of `val` in `buffer` at offset <= `byteOffset`.
+//
+// Arguments:
+// - buffer - a Buffer to search
+// - val - a string, Buffer, or number
+// - byteOffset - an index into `buffer`; will be clamped to an int32
+// - encoding - an optional encoding, relevant is val is a string
+// - dir - true for indexOf, false for lastIndexOf
+function bidirectionalIndexOf (buffer, val, byteOffset, encoding, dir) {
+  // Empty buffer means no match
+  if (buffer.length === 0) return -1
+
+  // Normalize byteOffset
+  if (typeof byteOffset === 'string') {
+    encoding = byteOffset
+    byteOffset = 0
+  } else if (byteOffset > 0x7fffffff) {
+    byteOffset = 0x7fffffff
+  } else if (byteOffset < -0x80000000) {
+    byteOffset = -0x80000000
+  }
+  byteOffset = +byteOffset  // Coerce to Number.
+  if (isNaN(byteOffset)) {
+    // byteOffset: it it's undefined, null, NaN, "foo", etc, search whole buffer
+    byteOffset = dir ? 0 : (buffer.length - 1)
+  }
+
+  // Normalize byteOffset: negative offsets start from the end of the buffer
+  if (byteOffset < 0) byteOffset = buffer.length + byteOffset
+  if (byteOffset >= buffer.length) {
+    if (dir) return -1
+    else byteOffset = buffer.length - 1
+  } else if (byteOffset < 0) {
+    if (dir) byteOffset = 0
+    else return -1
+  }
+
+  // Normalize val
+  if (typeof val === 'string') {
+    val = Buffer.from(val, encoding)
+  }
+
+  // Finally, search either indexOf (if dir is true) or lastIndexOf
+  if (Buffer.isBuffer(val)) {
+    // Special case: looking for empty string/buffer always fails
+    if (val.length === 0) {
+      return -1
+    }
+    return arrayIndexOf(buffer, val, byteOffset, encoding, dir)
+  } else if (typeof val === 'number') {
+    val = val & 0xFF // Search for a byte value [0-255]
+    if (Buffer.TYPED_ARRAY_SUPPORT &&
+        typeof Uint8Array.prototype.indexOf === 'function') {
+      if (dir) {
+        return Uint8Array.prototype.indexOf.call(buffer, val, byteOffset)
+      } else {
+        return Uint8Array.prototype.lastIndexOf.call(buffer, val, byteOffset)
+      }
+    }
+    return arrayIndexOf(buffer, [ val ], byteOffset, encoding, dir)
+  }
+
+  throw new TypeError('val must be string, number or Buffer')
+}
+
+function arrayIndexOf (arr, val, byteOffset, encoding, dir) {
+  var indexSize = 1
+  var arrLength = arr.length
+  var valLength = val.length
+
+  if (encoding !== undefined) {
+    encoding = String(encoding).toLowerCase()
+    if (encoding === 'ucs2' || encoding === 'ucs-2' ||
+        encoding === 'utf16le' || encoding === 'utf-16le') {
+      if (arr.length < 2 || val.length < 2) {
+        return -1
+      }
+      indexSize = 2
+      arrLength /= 2
+      valLength /= 2
+      byteOffset /= 2
+    }
+  }
+
+  function read (buf, i) {
+    if (indexSize === 1) {
+      return buf[i]
+    } else {
+      return buf.readUInt16BE(i * indexSize)
+    }
+  }
+
+  var i
+  if (dir) {
+    var foundIndex = -1
+    for (i = byteOffset; i < arrLength; i++) {
+      if (read(arr, i) === read(val, foundIndex === -1 ? 0 : i - foundIndex)) {
+        if (foundIndex === -1) foundIndex = i
+        if (i - foundIndex + 1 === valLength) return foundIndex * indexSize
+      } else {
+        if (foundIndex !== -1) i -= i - foundIndex
+        foundIndex = -1
+      }
+    }
+  } else {
+    if (byteOffset + valLength > arrLength) byteOffset = arrLength - valLength
+    for (i = byteOffset; i >= 0; i--) {
+      var found = true
+      for (var j = 0; j < valLength; j++) {
+        if (read(arr, i + j) !== read(val, j)) {
+          found = false
+          break
+        }
+      }
+      if (found) return i
+    }
+  }
+
+  return -1
+}
+
+Buffer.prototype.includes = function includes (val, byteOffset, encoding) {
+  return this.indexOf(val, byteOffset, encoding) !== -1
+}
+
+Buffer.prototype.indexOf = function indexOf (val, byteOffset, encoding) {
+  return bidirectionalIndexOf(this, val, byteOffset, encoding, true)
+}
+
+Buffer.prototype.lastIndexOf = function lastIndexOf (val, byteOffset, encoding) {
+  return bidirectionalIndexOf(this, val, byteOffset, encoding, false)
+}
+
+function hexWrite (buf, string, offset, length) {
+  offset = Number(offset) || 0
+  var remaining = buf.length - offset
+  if (!length) {
+    length = remaining
+  } else {
+    length = Number(length)
+    if (length > remaining) {
+      length = remaining
+    }
+  }
+
+  // must be an even number of digits
+  var strLen = string.length
+  if (strLen % 2 !== 0) throw new TypeError('Invalid hex string')
+
+  if (length > strLen / 2) {
+    length = strLen / 2
+  }
+  for (var i = 0; i < length; ++i) {
+    var parsed = parseInt(string.substr(i * 2, 2), 16)
+    if (isNaN(parsed)) return i
+    buf[offset + i] = parsed
+  }
+  return i
+}
+
+function utf8Write (buf, string, offset, length) {
+  return blitBuffer(utf8ToBytes(string, buf.length - offset), buf, offset, length)
+}
+
+function asciiWrite (buf, string, offset, length) {
+  return blitBuffer(asciiToBytes(string), buf, offset, length)
+}
+
+function latin1Write (buf, string, offset, length) {
+  return asciiWrite(buf, string, offset, length)
+}
+
+function base64Write (buf, string, offset, length) {
+  return blitBuffer(base64ToBytes(string), buf, offset, length)
+}
+
+function ucs2Write (buf, string, offset, length) {
+  return blitBuffer(utf16leToBytes(string, buf.length - offset), buf, offset, length)
+}
+
+Buffer.prototype.write = function write (string, offset, length, encoding) {
+  // Buffer#write(string)
+  if (offset === undefined) {
+    encoding = 'utf8'
+    length = this.length
+    offset = 0
+  // Buffer#write(string, encoding)
+  } else if (length === undefined && typeof offset === 'string') {
+    encoding = offset
+    length = this.length
+    offset = 0
+  // Buffer#write(string, offset[, length][, encoding])
+  } else if (isFinite(offset)) {
+    offset = offset | 0
+    if (isFinite(length)) {
+      length = length | 0
+      if (encoding === undefined) encoding = 'utf8'
+    } else {
+      encoding = length
+      length = undefined
+    }
+  // legacy write(string, encoding, offset, length) - remove in v0.13
+  } else {
+    throw new Error(
+      'Buffer.write(string, encoding, offset[, length]) is no longer supported'
+    )
+  }
+
+  var remaining = this.length - offset
+  if (length === undefined || length > remaining) length = remaining
+
+  if ((string.length > 0 && (length < 0 || offset < 0)) || offset > this.length) {
+    throw new RangeError('Attempt to write outside buffer bounds')
+  }
+
+  if (!encoding) encoding = 'utf8'
+
+  var loweredCase = false
+  for (;;) {
+    switch (encoding) {
+      case 'hex':
+        return hexWrite(this, string, offset, length)
+
+      case 'utf8':
+      case 'utf-8':
+        return utf8Write(this, string, offset, length)
+
+      case 'ascii':
+        return asciiWrite(this, string, offset, length)
+
+      case 'latin1':
+      case 'binary':
+        return latin1Write(this, string, offset, length)
+
+      case 'base64':
+        // Warning: maxLength not taken into account in base64Write
+        return base64Write(this, string, offset, length)
+
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return ucs2Write(this, string, offset, length)
+
+      default:
+        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
+        encoding = ('' + encoding).toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+
+Buffer.prototype.toJSON = function toJSON () {
+  return {
+    type: 'Buffer',
+    data: Array.prototype.slice.call(this._arr || this, 0)
+  }
+}
+
+function base64Slice (buf, start, end) {
+  if (start === 0 && end === buf.length) {
+    return base64.fromByteArray(buf)
+  } else {
+    return base64.fromByteArray(buf.slice(start, end))
+  }
+}
+
+function utf8Slice (buf, start, end) {
+  end = Math.min(buf.length, end)
+  var res = []
+
+  var i = start
+  while (i < end) {
+    var firstByte = buf[i]
+    var codePoint = null
+    var bytesPerSequence = (firstByte > 0xEF) ? 4
+      : (firstByte > 0xDF) ? 3
+      : (firstByte > 0xBF) ? 2
+      : 1
+
+    if (i + bytesPerSequence <= end) {
+      var secondByte, thirdByte, fourthByte, tempCodePoint
+
+      switch (bytesPerSequence) {
+        case 1:
+          if (firstByte < 0x80) {
+            codePoint = firstByte
+          }
+          break
+        case 2:
+          secondByte = buf[i + 1]
+          if ((secondByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0x1F) << 0x6 | (secondByte & 0x3F)
+            if (tempCodePoint > 0x7F) {
+              codePoint = tempCodePoint
+            }
+          }
+          break
+        case 3:
+          secondByte = buf[i + 1]
+          thirdByte = buf[i + 2]
+          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0xF) << 0xC | (secondByte & 0x3F) << 0x6 | (thirdByte & 0x3F)
+            if (tempCodePoint > 0x7FF && (tempCodePoint < 0xD800 || tempCodePoint > 0xDFFF)) {
+              codePoint = tempCodePoint
+            }
+          }
+          break
+        case 4:
+          secondByte = buf[i + 1]
+          thirdByte = buf[i + 2]
+          fourthByte = buf[i + 3]
+          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80 && (fourthByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0xF) << 0x12 | (secondByte & 0x3F) << 0xC | (thirdByte & 0x3F) << 0x6 | (fourthByte & 0x3F)
+            if (tempCodePoint > 0xFFFF && tempCodePoint < 0x110000) {
+              codePoint = tempCodePoint
+            }
+          }
+      }
+    }
+
+    if (codePoint === null) {
+      // we did not generate a valid codePoint so insert a
+      // replacement char (U+FFFD) and advance only 1 byte
+      codePoint = 0xFFFD
+      bytesPerSequence = 1
+    } else if (codePoint > 0xFFFF) {
+      // encode to utf16 (surrogate pair dance)
+      codePoint -= 0x10000
+      res.push(codePoint >>> 10 & 0x3FF | 0xD800)
+      codePoint = 0xDC00 | codePoint & 0x3FF
+    }
+
+    res.push(codePoint)
+    i += bytesPerSequence
+  }
+
+  return decodeCodePointsArray(res)
+}
+
+// Based on http://stackoverflow.com/a/22747272/680742, the browser with
+// the lowest limit is Chrome, with 0x10000 args.
+// We go 1 magnitude less, for safety
+var MAX_ARGUMENTS_LENGTH = 0x1000
+
+function decodeCodePointsArray (codePoints) {
+  var len = codePoints.length
+  if (len <= MAX_ARGUMENTS_LENGTH) {
+    return String.fromCharCode.apply(String, codePoints) // avoid extra slice()
+  }
+
+  // Decode in chunks to avoid "call stack size exceeded".
+  var res = ''
+  var i = 0
+  while (i < len) {
+    res += String.fromCharCode.apply(
+      String,
+      codePoints.slice(i, i += MAX_ARGUMENTS_LENGTH)
+    )
+  }
+  return res
+}
+
+function asciiSlice (buf, start, end) {
+  var ret = ''
+  end = Math.min(buf.length, end)
+
+  for (var i = start; i < end; ++i) {
+    ret += String.fromCharCode(buf[i] & 0x7F)
+  }
+  return ret
+}
+
+function latin1Slice (buf, start, end) {
+  var ret = ''
+  end = Math.min(buf.length, end)
+
+  for (var i = start; i < end; ++i) {
+    ret += String.fromCharCode(buf[i])
+  }
+  return ret
+}
+
+function hexSlice (buf, start, end) {
+  var len = buf.length
+
+  if (!start || start < 0) start = 0
+  if (!end || end < 0 || end > len) end = len
+
+  var out = ''
+  for (var i = start; i < end; ++i) {
+    out += toHex(buf[i])
+  }
+  return out
+}
+
+function utf16leSlice (buf, start, end) {
+  var bytes = buf.slice(start, end)
+  var res = ''
+  for (var i = 0; i < bytes.length; i += 2) {
+    res += String.fromCharCode(bytes[i] + bytes[i + 1] * 256)
+  }
+  return res
+}
+
+Buffer.prototype.slice = function slice (start, end) {
+  var len = this.length
+  start = ~~start
+  end = end === undefined ? len : ~~end
+
+  if (start < 0) {
+    start += len
+    if (start < 0) start = 0
+  } else if (start > len) {
+    start = len
+  }
+
+  if (end < 0) {
+    end += len
+    if (end < 0) end = 0
+  } else if (end > len) {
+    end = len
+  }
+
+  if (end < start) end = start
+
+  var newBuf
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    newBuf = this.subarray(start, end)
+    newBuf.__proto__ = Buffer.prototype
+  } else {
+    var sliceLen = end - start
+    newBuf = new Buffer(sliceLen, undefined)
+    for (var i = 0; i < sliceLen; ++i) {
+      newBuf[i] = this[i + start]
+    }
+  }
+
+  return newBuf
+}
+
+/*
+ * Need to make sure that buffer isn't trying to write out of bounds.
+ */
+function checkOffset (offset, ext, length) {
+  if ((offset % 1) !== 0 || offset < 0) throw new RangeError('offset is not uint')
+  if (offset + ext > length) throw new RangeError('Trying to access beyond buffer length')
+}
+
+Buffer.prototype.readUIntLE = function readUIntLE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var val = this[offset]
+  var mul = 1
+  var i = 0
+  while (++i < byteLength && (mul *= 0x100)) {
+    val += this[offset + i] * mul
+  }
+
+  return val
+}
+
+Buffer.prototype.readUIntBE = function readUIntBE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) {
+    checkOffset(offset, byteLength, this.length)
+  }
+
+  var val = this[offset + --byteLength]
+  var mul = 1
+  while (byteLength > 0 && (mul *= 0x100)) {
+    val += this[offset + --byteLength] * mul
+  }
+
+  return val
+}
+
+Buffer.prototype.readUInt8 = function readUInt8 (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 1, this.length)
+  return this[offset]
+}
+
+Buffer.prototype.readUInt16LE = function readUInt16LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  return this[offset] | (this[offset + 1] << 8)
+}
+
+Buffer.prototype.readUInt16BE = function readUInt16BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  return (this[offset] << 8) | this[offset + 1]
+}
+
+Buffer.prototype.readUInt32LE = function readUInt32LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return ((this[offset]) |
+      (this[offset + 1] << 8) |
+      (this[offset + 2] << 16)) +
+      (this[offset + 3] * 0x1000000)
+}
+
+Buffer.prototype.readUInt32BE = function readUInt32BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset] * 0x1000000) +
+    ((this[offset + 1] << 16) |
+    (this[offset + 2] << 8) |
+    this[offset + 3])
+}
+
+Buffer.prototype.readIntLE = function readIntLE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var val = this[offset]
+  var mul = 1
+  var i = 0
+  while (++i < byteLength && (mul *= 0x100)) {
+    val += this[offset + i] * mul
+  }
+  mul *= 0x80
+
+  if (val >= mul) val -= Math.pow(2, 8 * byteLength)
+
+  return val
+}
+
+Buffer.prototype.readIntBE = function readIntBE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var i = byteLength
+  var mul = 1
+  var val = this[offset + --i]
+  while (i > 0 && (mul *= 0x100)) {
+    val += this[offset + --i] * mul
+  }
+  mul *= 0x80
+
+  if (val >= mul) val -= Math.pow(2, 8 * byteLength)
+
+  return val
+}
+
+Buffer.prototype.readInt8 = function readInt8 (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 1, this.length)
+  if (!(this[offset] & 0x80)) return (this[offset])
+  return ((0xff - this[offset] + 1) * -1)
+}
+
+Buffer.prototype.readInt16LE = function readInt16LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  var val = this[offset] | (this[offset + 1] << 8)
+  return (val & 0x8000) ? val | 0xFFFF0000 : val
+}
+
+Buffer.prototype.readInt16BE = function readInt16BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  var val = this[offset + 1] | (this[offset] << 8)
+  return (val & 0x8000) ? val | 0xFFFF0000 : val
+}
+
+Buffer.prototype.readInt32LE = function readInt32LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset]) |
+    (this[offset + 1] << 8) |
+    (this[offset + 2] << 16) |
+    (this[offset + 3] << 24)
+}
+
+Buffer.prototype.readInt32BE = function readInt32BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset] << 24) |
+    (this[offset + 1] << 16) |
+    (this[offset + 2] << 8) |
+    (this[offset + 3])
+}
+
+Buffer.prototype.readFloatLE = function readFloatLE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+  return ieee754.read(this, offset, true, 23, 4)
+}
+
+Buffer.prototype.readFloatBE = function readFloatBE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+  return ieee754.read(this, offset, false, 23, 4)
+}
+
+Buffer.prototype.readDoubleLE = function readDoubleLE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 8, this.length)
+  return ieee754.read(this, offset, true, 52, 8)
+}
+
+Buffer.prototype.readDoubleBE = function readDoubleBE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 8, this.length)
+  return ieee754.read(this, offset, false, 52, 8)
+}
+
+function checkInt (buf, value, offset, ext, max, min) {
+  if (!Buffer.isBuffer(buf)) throw new TypeError('"buffer" argument must be a Buffer instance')
+  if (value > max || value < min) throw new RangeError('"value" argument is out of bounds')
+  if (offset + ext > buf.length) throw new RangeError('Index out of range')
+}
+
+Buffer.prototype.writeUIntLE = function writeUIntLE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) {
+    var maxBytes = Math.pow(2, 8 * byteLength) - 1
+    checkInt(this, value, offset, byteLength, maxBytes, 0)
+  }
+
+  var mul = 1
+  var i = 0
+  this[offset] = value & 0xFF
+  while (++i < byteLength && (mul *= 0x100)) {
+    this[offset + i] = (value / mul) & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeUIntBE = function writeUIntBE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) {
+    var maxBytes = Math.pow(2, 8 * byteLength) - 1
+    checkInt(this, value, offset, byteLength, maxBytes, 0)
+  }
+
+  var i = byteLength - 1
+  var mul = 1
+  this[offset + i] = value & 0xFF
+  while (--i >= 0 && (mul *= 0x100)) {
+    this[offset + i] = (value / mul) & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeUInt8 = function writeUInt8 (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 1, 0xff, 0)
+  if (!Buffer.TYPED_ARRAY_SUPPORT) value = Math.floor(value)
+  this[offset] = (value & 0xff)
+  return offset + 1
+}
+
+function objectWriteUInt16 (buf, value, offset, littleEndian) {
+  if (value < 0) value = 0xffff + value + 1
+  for (var i = 0, j = Math.min(buf.length - offset, 2); i < j; ++i) {
+    buf[offset + i] = (value & (0xff << (8 * (littleEndian ? i : 1 - i)))) >>>
+      (littleEndian ? i : 1 - i) * 8
+  }
+}
+
+Buffer.prototype.writeUInt16LE = function writeUInt16LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value & 0xff)
+    this[offset + 1] = (value >>> 8)
+  } else {
+    objectWriteUInt16(this, value, offset, true)
+  }
+  return offset + 2
+}
+
+Buffer.prototype.writeUInt16BE = function writeUInt16BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value >>> 8)
+    this[offset + 1] = (value & 0xff)
+  } else {
+    objectWriteUInt16(this, value, offset, false)
+  }
+  return offset + 2
+}
+
+function objectWriteUInt32 (buf, value, offset, littleEndian) {
+  if (value < 0) value = 0xffffffff + value + 1
+  for (var i = 0, j = Math.min(buf.length - offset, 4); i < j; ++i) {
+    buf[offset + i] = (value >>> (littleEndian ? i : 3 - i) * 8) & 0xff
+  }
+}
+
+Buffer.prototype.writeUInt32LE = function writeUInt32LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset + 3] = (value >>> 24)
+    this[offset + 2] = (value >>> 16)
+    this[offset + 1] = (value >>> 8)
+    this[offset] = (value & 0xff)
+  } else {
+    objectWriteUInt32(this, value, offset, true)
+  }
+  return offset + 4
+}
+
+Buffer.prototype.writeUInt32BE = function writeUInt32BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value >>> 24)
+    this[offset + 1] = (value >>> 16)
+    this[offset + 2] = (value >>> 8)
+    this[offset + 3] = (value & 0xff)
+  } else {
+    objectWriteUInt32(this, value, offset, false)
+  }
+  return offset + 4
+}
+
+Buffer.prototype.writeIntLE = function writeIntLE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) {
+    var limit = Math.pow(2, 8 * byteLength - 1)
+
+    checkInt(this, value, offset, byteLength, limit - 1, -limit)
+  }
+
+  var i = 0
+  var mul = 1
+  var sub = 0
+  this[offset] = value & 0xFF
+  while (++i < byteLength && (mul *= 0x100)) {
+    if (value < 0 && sub === 0 && this[offset + i - 1] !== 0) {
+      sub = 1
+    }
+    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeIntBE = function writeIntBE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) {
+    var limit = Math.pow(2, 8 * byteLength - 1)
+
+    checkInt(this, value, offset, byteLength, limit - 1, -limit)
+  }
+
+  var i = byteLength - 1
+  var mul = 1
+  var sub = 0
+  this[offset + i] = value & 0xFF
+  while (--i >= 0 && (mul *= 0x100)) {
+    if (value < 0 && sub === 0 && this[offset + i + 1] !== 0) {
+      sub = 1
+    }
+    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeInt8 = function writeInt8 (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 1, 0x7f, -0x80)
+  if (!Buffer.TYPED_ARRAY_SUPPORT) value = Math.floor(value)
+  if (value < 0) value = 0xff + value + 1
+  this[offset] = (value & 0xff)
+  return offset + 1
+}
+
+Buffer.prototype.writeInt16LE = function writeInt16LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value & 0xff)
+    this[offset + 1] = (value >>> 8)
+  } else {
+    objectWriteUInt16(this, value, offset, true)
+  }
+  return offset + 2
+}
+
+Buffer.prototype.writeInt16BE = function writeInt16BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value >>> 8)
+    this[offset + 1] = (value & 0xff)
+  } else {
+    objectWriteUInt16(this, value, offset, false)
+  }
+  return offset + 2
+}
+
+Buffer.prototype.writeInt32LE = function writeInt32LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value & 0xff)
+    this[offset + 1] = (value >>> 8)
+    this[offset + 2] = (value >>> 16)
+    this[offset + 3] = (value >>> 24)
+  } else {
+    objectWriteUInt32(this, value, offset, true)
+  }
+  return offset + 4
+}
+
+Buffer.prototype.writeInt32BE = function writeInt32BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
+  if (value < 0) value = 0xffffffff + value + 1
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value >>> 24)
+    this[offset + 1] = (value >>> 16)
+    this[offset + 2] = (value >>> 8)
+    this[offset + 3] = (value & 0xff)
+  } else {
+    objectWriteUInt32(this, value, offset, false)
+  }
+  return offset + 4
+}
+
+function checkIEEE754 (buf, value, offset, ext, max, min) {
+  if (offset + ext > buf.length) throw new RangeError('Index out of range')
+  if (offset < 0) throw new RangeError('Index out of range')
+}
+
+function writeFloat (buf, value, offset, littleEndian, noAssert) {
+  if (!noAssert) {
+    checkIEEE754(buf, value, offset, 4, 3.4028234663852886e+38, -3.4028234663852886e+38)
+  }
+  ieee754.write(buf, value, offset, littleEndian, 23, 4)
+  return offset + 4
+}
+
+Buffer.prototype.writeFloatLE = function writeFloatLE (value, offset, noAssert) {
+  return writeFloat(this, value, offset, true, noAssert)
+}
+
+Buffer.prototype.writeFloatBE = function writeFloatBE (value, offset, noAssert) {
+  return writeFloat(this, value, offset, false, noAssert)
+}
+
+function writeDouble (buf, value, offset, littleEndian, noAssert) {
+  if (!noAssert) {
+    checkIEEE754(buf, value, offset, 8, 1.7976931348623157E+308, -1.7976931348623157E+308)
+  }
+  ieee754.write(buf, value, offset, littleEndian, 52, 8)
+  return offset + 8
+}
+
+Buffer.prototype.writeDoubleLE = function writeDoubleLE (value, offset, noAssert) {
+  return writeDouble(this, value, offset, true, noAssert)
+}
+
+Buffer.prototype.writeDoubleBE = function writeDoubleBE (value, offset, noAssert) {
+  return writeDouble(this, value, offset, false, noAssert)
+}
+
+// copy(targetBuffer, targetStart=0, sourceStart=0, sourceEnd=buffer.length)
+Buffer.prototype.copy = function copy (target, targetStart, start, end) {
+  if (!start) start = 0
+  if (!end && end !== 0) end = this.length
+  if (targetStart >= target.length) targetStart = target.length
+  if (!targetStart) targetStart = 0
+  if (end > 0 && end < start) end = start
+
+  // Copy 0 bytes; we're done
+  if (end === start) return 0
+  if (target.length === 0 || this.length === 0) return 0
+
+  // Fatal error conditions
+  if (targetStart < 0) {
+    throw new RangeError('targetStart out of bounds')
+  }
+  if (start < 0 || start >= this.length) throw new RangeError('sourceStart out of bounds')
+  if (end < 0) throw new RangeError('sourceEnd out of bounds')
+
+  // Are we oob?
+  if (end > this.length) end = this.length
+  if (target.length - targetStart < end - start) {
+    end = target.length - targetStart + start
+  }
+
+  var len = end - start
+  var i
+
+  if (this === target && start < targetStart && targetStart < end) {
+    // descending copy from end
+    for (i = len - 1; i >= 0; --i) {
+      target[i + targetStart] = this[i + start]
+    }
+  } else if (len < 1000 || !Buffer.TYPED_ARRAY_SUPPORT) {
+    // ascending copy from start
+    for (i = 0; i < len; ++i) {
+      target[i + targetStart] = this[i + start]
+    }
+  } else {
+    Uint8Array.prototype.set.call(
+      target,
+      this.subarray(start, start + len),
+      targetStart
+    )
+  }
+
+  return len
+}
+
+// Usage:
+//    buffer.fill(number[, offset[, end]])
+//    buffer.fill(buffer[, offset[, end]])
+//    buffer.fill(string[, offset[, end]][, encoding])
+Buffer.prototype.fill = function fill (val, start, end, encoding) {
+  // Handle string cases:
+  if (typeof val === 'string') {
+    if (typeof start === 'string') {
+      encoding = start
+      start = 0
+      end = this.length
+    } else if (typeof end === 'string') {
+      encoding = end
+      end = this.length
+    }
+    if (val.length === 1) {
+      var code = val.charCodeAt(0)
+      if (code < 256) {
+        val = code
+      }
+    }
+    if (encoding !== undefined && typeof encoding !== 'string') {
+      throw new TypeError('encoding must be a string')
+    }
+    if (typeof encoding === 'string' && !Buffer.isEncoding(encoding)) {
+      throw new TypeError('Unknown encoding: ' + encoding)
+    }
+  } else if (typeof val === 'number') {
+    val = val & 255
+  }
+
+  // Invalid ranges are not set to a default, so can range check early.
+  if (start < 0 || this.length < start || this.length < end) {
+    throw new RangeError('Out of range index')
+  }
+
+  if (end <= start) {
+    return this
+  }
+
+  start = start >>> 0
+  end = end === undefined ? this.length : end >>> 0
+
+  if (!val) val = 0
+
+  var i
+  if (typeof val === 'number') {
+    for (i = start; i < end; ++i) {
+      this[i] = val
+    }
+  } else {
+    var bytes = Buffer.isBuffer(val)
+      ? val
+      : utf8ToBytes(new Buffer(val, encoding).toString())
+    var len = bytes.length
+    for (i = 0; i < end - start; ++i) {
+      this[i + start] = bytes[i % len]
+    }
+  }
+
+  return this
+}
+
+// HELPER FUNCTIONS
+// ================
+
+var INVALID_BASE64_RE = /[^+\/0-9A-Za-z-_]/g
+
+function base64clean (str) {
+  // Node strips out invalid characters like \n and \t from the string, base64-js does not
+  str = stringtrim(str).replace(INVALID_BASE64_RE, '')
+  // Node converts strings with length < 2 to ''
+  if (str.length < 2) return ''
+  // Node allows for non-padded base64 strings (missing trailing ===), base64-js does not
+  while (str.length % 4 !== 0) {
+    str = str + '='
+  }
+  return str
+}
+
+function stringtrim (str) {
+  if (str.trim) return str.trim()
+  return str.replace(/^\s+|\s+$/g, '')
+}
+
+function toHex (n) {
+  if (n < 16) return '0' + n.toString(16)
+  return n.toString(16)
+}
+
+function utf8ToBytes (string, units) {
+  units = units || Infinity
+  var codePoint
+  var length = string.length
+  var leadSurrogate = null
+  var bytes = []
+
+  for (var i = 0; i < length; ++i) {
+    codePoint = string.charCodeAt(i)
+
+    // is surrogate component
+    if (codePoint > 0xD7FF && codePoint < 0xE000) {
+      // last char was a lead
+      if (!leadSurrogate) {
+        // no lead yet
+        if (codePoint > 0xDBFF) {
+          // unexpected trail
+          if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+          continue
+        } else if (i + 1 === length) {
+          // unpaired lead
+          if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+          continue
+        }
+
+        // valid lead
+        leadSurrogate = codePoint
+
+        continue
+      }
+
+      // 2 leads in a row
+      if (codePoint < 0xDC00) {
+        if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+        leadSurrogate = codePoint
+        continue
+      }
+
+      // valid surrogate pair
+      codePoint = (leadSurrogate - 0xD800 << 10 | codePoint - 0xDC00) + 0x10000
+    } else if (leadSurrogate) {
+      // valid bmp char, but last char was a lead
+      if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+    }
+
+    leadSurrogate = null
+
+    // encode utf8
+    if (codePoint < 0x80) {
+      if ((units -= 1) < 0) break
+      bytes.push(codePoint)
+    } else if (codePoint < 0x800) {
+      if ((units -= 2) < 0) break
+      bytes.push(
+        codePoint >> 0x6 | 0xC0,
+        codePoint & 0x3F | 0x80
+      )
+    } else if (codePoint < 0x10000) {
+      if ((units -= 3) < 0) break
+      bytes.push(
+        codePoint >> 0xC | 0xE0,
+        codePoint >> 0x6 & 0x3F | 0x80,
+        codePoint & 0x3F | 0x80
+      )
+    } else if (codePoint < 0x110000) {
+      if ((units -= 4) < 0) break
+      bytes.push(
+        codePoint >> 0x12 | 0xF0,
+        codePoint >> 0xC & 0x3F | 0x80,
+        codePoint >> 0x6 & 0x3F | 0x80,
+        codePoint & 0x3F | 0x80
+      )
+    } else {
+      throw new Error('Invalid code point')
+    }
+  }
+
+  return bytes
+}
+
+function asciiToBytes (str) {
+  var byteArray = []
+  for (var i = 0; i < str.length; ++i) {
+    // Node's code seems to be doing this and not & 0x7F..
+    byteArray.push(str.charCodeAt(i) & 0xFF)
+  }
+  return byteArray
+}
+
+function utf16leToBytes (str, units) {
+  var c, hi, lo
+  var byteArray = []
+  for (var i = 0; i < str.length; ++i) {
+    if ((units -= 2) < 0) break
+
+    c = str.charCodeAt(i)
+    hi = c >> 8
+    lo = c % 256
+    byteArray.push(lo)
+    byteArray.push(hi)
+  }
+
+  return byteArray
+}
+
+function base64ToBytes (str) {
+  return base64.toByteArray(base64clean(str))
+}
+
+function blitBuffer (src, dst, offset, length) {
+  for (var i = 0; i < length; ++i) {
+    if ((i + offset >= dst.length) || (i >= src.length)) break
+    dst[i + offset] = src[i]
+  }
+  return i
+}
+
+function isnan (val) {
+  return val !== val // eslint-disable-line no-self-compare
+}
+
+},{"base64-js":"5QAn","ieee754":"O1Qa","isarray":"fIt4","buffer":"8fe9"}],"hKJs":[function(require,module,exports) {
+var global = arguments[3];
+var Buffer = require("buffer").Buffer;
+var define;
+/**
+ * @license
+ * Lodash <https://lodash.com/>
+ * Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
+ * Released under MIT license <https://lodash.com/license>
+ * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+ * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+ */
+;(function() {
+
+  /** Used as a safe reference for `undefined` in pre-ES5 environments. */
+  var undefined;
+
+  /** Used as the semantic version number. */
+  var VERSION = '4.17.21';
+
+  /** Used as the size to enable large array optimizations. */
+  var LARGE_ARRAY_SIZE = 200;
+
+  /** Error message constants. */
+  var CORE_ERROR_TEXT = 'Unsupported core-js use. Try https://npms.io/search?q=ponyfill.',
+      FUNC_ERROR_TEXT = 'Expected a function',
+      INVALID_TEMPL_VAR_ERROR_TEXT = 'Invalid `variable` option passed into `_.template`';
+
+  /** Used to stand-in for `undefined` hash values. */
+  var HASH_UNDEFINED = '__lodash_hash_undefined__';
+
+  /** Used as the maximum memoize cache size. */
+  var MAX_MEMOIZE_SIZE = 500;
+
+  /** Used as the internal argument placeholder. */
+  var PLACEHOLDER = '__lodash_placeholder__';
+
+  /** Used to compose bitmasks for cloning. */
+  var CLONE_DEEP_FLAG = 1,
+      CLONE_FLAT_FLAG = 2,
+      CLONE_SYMBOLS_FLAG = 4;
+
+  /** Used to compose bitmasks for value comparisons. */
+  var COMPARE_PARTIAL_FLAG = 1,
+      COMPARE_UNORDERED_FLAG = 2;
+
+  /** Used to compose bitmasks for function metadata. */
+  var WRAP_BIND_FLAG = 1,
+      WRAP_BIND_KEY_FLAG = 2,
+      WRAP_CURRY_BOUND_FLAG = 4,
+      WRAP_CURRY_FLAG = 8,
+      WRAP_CURRY_RIGHT_FLAG = 16,
+      WRAP_PARTIAL_FLAG = 32,
+      WRAP_PARTIAL_RIGHT_FLAG = 64,
+      WRAP_ARY_FLAG = 128,
+      WRAP_REARG_FLAG = 256,
+      WRAP_FLIP_FLAG = 512;
+
+  /** Used as default options for `_.truncate`. */
+  var DEFAULT_TRUNC_LENGTH = 30,
+      DEFAULT_TRUNC_OMISSION = '...';
+
+  /** Used to detect hot functions by number of calls within a span of milliseconds. */
+  var HOT_COUNT = 800,
+      HOT_SPAN = 16;
+
+  /** Used to indicate the type of lazy iteratees. */
+  var LAZY_FILTER_FLAG = 1,
+      LAZY_MAP_FLAG = 2,
+      LAZY_WHILE_FLAG = 3;
+
+  /** Used as references for various `Number` constants. */
+  var INFINITY = 1 / 0,
+      MAX_SAFE_INTEGER = 9007199254740991,
+      MAX_INTEGER = 1.7976931348623157e+308,
+      NAN = 0 / 0;
+
+  /** Used as references for the maximum length and index of an array. */
+  var MAX_ARRAY_LENGTH = 4294967295,
+      MAX_ARRAY_INDEX = MAX_ARRAY_LENGTH - 1,
+      HALF_MAX_ARRAY_LENGTH = MAX_ARRAY_LENGTH >>> 1;
+
+  /** Used to associate wrap methods with their bit flags. */
+  var wrapFlags = [
+    ['ary', WRAP_ARY_FLAG],
+    ['bind', WRAP_BIND_FLAG],
+    ['bindKey', WRAP_BIND_KEY_FLAG],
+    ['curry', WRAP_CURRY_FLAG],
+    ['curryRight', WRAP_CURRY_RIGHT_FLAG],
+    ['flip', WRAP_FLIP_FLAG],
+    ['partial', WRAP_PARTIAL_FLAG],
+    ['partialRight', WRAP_PARTIAL_RIGHT_FLAG],
+    ['rearg', WRAP_REARG_FLAG]
+  ];
+
+  /** `Object#toString` result references. */
+  var argsTag = '[object Arguments]',
+      arrayTag = '[object Array]',
+      asyncTag = '[object AsyncFunction]',
+      boolTag = '[object Boolean]',
+      dateTag = '[object Date]',
+      domExcTag = '[object DOMException]',
+      errorTag = '[object Error]',
+      funcTag = '[object Function]',
+      genTag = '[object GeneratorFunction]',
+      mapTag = '[object Map]',
+      numberTag = '[object Number]',
+      nullTag = '[object Null]',
+      objectTag = '[object Object]',
+      promiseTag = '[object Promise]',
+      proxyTag = '[object Proxy]',
+      regexpTag = '[object RegExp]',
+      setTag = '[object Set]',
+      stringTag = '[object String]',
+      symbolTag = '[object Symbol]',
+      undefinedTag = '[object Undefined]',
+      weakMapTag = '[object WeakMap]',
+      weakSetTag = '[object WeakSet]';
+
+  var arrayBufferTag = '[object ArrayBuffer]',
+      dataViewTag = '[object DataView]',
+      float32Tag = '[object Float32Array]',
+      float64Tag = '[object Float64Array]',
+      int8Tag = '[object Int8Array]',
+      int16Tag = '[object Int16Array]',
+      int32Tag = '[object Int32Array]',
+      uint8Tag = '[object Uint8Array]',
+      uint8ClampedTag = '[object Uint8ClampedArray]',
+      uint16Tag = '[object Uint16Array]',
+      uint32Tag = '[object Uint32Array]';
+
+  /** Used to match empty string literals in compiled template source. */
+  var reEmptyStringLeading = /\b__p \+= '';/g,
+      reEmptyStringMiddle = /\b(__p \+=) '' \+/g,
+      reEmptyStringTrailing = /(__e\(.*?\)|\b__t\)) \+\n'';/g;
+
+  /** Used to match HTML entities and HTML characters. */
+  var reEscapedHtml = /&(?:amp|lt|gt|quot|#39);/g,
+      reUnescapedHtml = /[&<>"']/g,
+      reHasEscapedHtml = RegExp(reEscapedHtml.source),
+      reHasUnescapedHtml = RegExp(reUnescapedHtml.source);
+
+  /** Used to match template delimiters. */
+  var reEscape = /<%-([\s\S]+?)%>/g,
+      reEvaluate = /<%([\s\S]+?)%>/g,
+      reInterpolate = /<%=([\s\S]+?)%>/g;
+
+  /** Used to match property names within property paths. */
+  var reIsDeepProp = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/,
+      reIsPlainProp = /^\w*$/,
+      rePropName = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g;
+
+  /**
+   * Used to match `RegExp`
+   * [syntax characters](http://ecma-international.org/ecma-262/7.0/#sec-patterns).
+   */
+  var reRegExpChar = /[\\^$.*+?()[\]{}|]/g,
+      reHasRegExpChar = RegExp(reRegExpChar.source);
+
+  /** Used to match leading whitespace. */
+  var reTrimStart = /^\s+/;
+
+  /** Used to match a single whitespace character. */
+  var reWhitespace = /\s/;
+
+  /** Used to match wrap detail comments. */
+  var reWrapComment = /\{(?:\n\/\* \[wrapped with .+\] \*\/)?\n?/,
+      reWrapDetails = /\{\n\/\* \[wrapped with (.+)\] \*/,
+      reSplitDetails = /,? & /;
+
+  /** Used to match words composed of alphanumeric characters. */
+  var reAsciiWord = /[^\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\x7f]+/g;
+
+  /**
+   * Used to validate the `validate` option in `_.template` variable.
+   *
+   * Forbids characters which could potentially change the meaning of the function argument definition:
+   * - "()," (modification of function parameters)
+   * - "=" (default value)
+   * - "[]{}" (destructuring of function parameters)
+   * - "/" (beginning of a comment)
+   * - whitespace
+   */
+  var reForbiddenIdentifierChars = /[()=,{}\[\]\/\s]/;
+
+  /** Used to match backslashes in property paths. */
+  var reEscapeChar = /\\(\\)?/g;
+
+  /**
+   * Used to match
+   * [ES template delimiters](http://ecma-international.org/ecma-262/7.0/#sec-template-literal-lexical-components).
+   */
+  var reEsTemplate = /\$\{([^\\}]*(?:\\.[^\\}]*)*)\}/g;
+
+  /** Used to match `RegExp` flags from their coerced string values. */
+  var reFlags = /\w*$/;
+
+  /** Used to detect bad signed hexadecimal string values. */
+  var reIsBadHex = /^[-+]0x[0-9a-f]+$/i;
+
+  /** Used to detect binary string values. */
+  var reIsBinary = /^0b[01]+$/i;
+
+  /** Used to detect host constructors (Safari). */
+  var reIsHostCtor = /^\[object .+?Constructor\]$/;
+
+  /** Used to detect octal string values. */
+  var reIsOctal = /^0o[0-7]+$/i;
+
+  /** Used to detect unsigned integer values. */
+  var reIsUint = /^(?:0|[1-9]\d*)$/;
+
+  /** Used to match Latin Unicode letters (excluding mathematical operators). */
+  var reLatin = /[\xc0-\xd6\xd8-\xf6\xf8-\xff\u0100-\u017f]/g;
+
+  /** Used to ensure capturing order of template delimiters. */
+  var reNoMatch = /($^)/;
+
+  /** Used to match unescaped characters in compiled string literals. */
+  var reUnescapedString = /['\n\r\u2028\u2029\\]/g;
+
+  /** Used to compose unicode character classes. */
+  var rsAstralRange = '\\ud800-\\udfff',
+      rsComboMarksRange = '\\u0300-\\u036f',
+      reComboHalfMarksRange = '\\ufe20-\\ufe2f',
+      rsComboSymbolsRange = '\\u20d0-\\u20ff',
+      rsComboRange = rsComboMarksRange + reComboHalfMarksRange + rsComboSymbolsRange,
+      rsDingbatRange = '\\u2700-\\u27bf',
+      rsLowerRange = 'a-z\\xdf-\\xf6\\xf8-\\xff',
+      rsMathOpRange = '\\xac\\xb1\\xd7\\xf7',
+      rsNonCharRange = '\\x00-\\x2f\\x3a-\\x40\\x5b-\\x60\\x7b-\\xbf',
+      rsPunctuationRange = '\\u2000-\\u206f',
+      rsSpaceRange = ' \\t\\x0b\\f\\xa0\\ufeff\\n\\r\\u2028\\u2029\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u202f\\u205f\\u3000',
+      rsUpperRange = 'A-Z\\xc0-\\xd6\\xd8-\\xde',
+      rsVarRange = '\\ufe0e\\ufe0f',
+      rsBreakRange = rsMathOpRange + rsNonCharRange + rsPunctuationRange + rsSpaceRange;
+
+  /** Used to compose unicode capture groups. */
+  var rsApos = "['\u2019]",
+      rsAstral = '[' + rsAstralRange + ']',
+      rsBreak = '[' + rsBreakRange + ']',
+      rsCombo = '[' + rsComboRange + ']',
+      rsDigits = '\\d+',
+      rsDingbat = '[' + rsDingbatRange + ']',
+      rsLower = '[' + rsLowerRange + ']',
+      rsMisc = '[^' + rsAstralRange + rsBreakRange + rsDigits + rsDingbatRange + rsLowerRange + rsUpperRange + ']',
+      rsFitz = '\\ud83c[\\udffb-\\udfff]',
+      rsModifier = '(?:' + rsCombo + '|' + rsFitz + ')',
+      rsNonAstral = '[^' + rsAstralRange + ']',
+      rsRegional = '(?:\\ud83c[\\udde6-\\uddff]){2}',
+      rsSurrPair = '[\\ud800-\\udbff][\\udc00-\\udfff]',
+      rsUpper = '[' + rsUpperRange + ']',
+      rsZWJ = '\\u200d';
+
+  /** Used to compose unicode regexes. */
+  var rsMiscLower = '(?:' + rsLower + '|' + rsMisc + ')',
+      rsMiscUpper = '(?:' + rsUpper + '|' + rsMisc + ')',
+      rsOptContrLower = '(?:' + rsApos + '(?:d|ll|m|re|s|t|ve))?',
+      rsOptContrUpper = '(?:' + rsApos + '(?:D|LL|M|RE|S|T|VE))?',
+      reOptMod = rsModifier + '?',
+      rsOptVar = '[' + rsVarRange + ']?',
+      rsOptJoin = '(?:' + rsZWJ + '(?:' + [rsNonAstral, rsRegional, rsSurrPair].join('|') + ')' + rsOptVar + reOptMod + ')*',
+      rsOrdLower = '\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z_])',
+      rsOrdUpper = '\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z_])',
+      rsSeq = rsOptVar + reOptMod + rsOptJoin,
+      rsEmoji = '(?:' + [rsDingbat, rsRegional, rsSurrPair].join('|') + ')' + rsSeq,
+      rsSymbol = '(?:' + [rsNonAstral + rsCombo + '?', rsCombo, rsRegional, rsSurrPair, rsAstral].join('|') + ')';
+
+  /** Used to match apostrophes. */
+  var reApos = RegExp(rsApos, 'g');
+
+  /**
+   * Used to match [combining diacritical marks](https://en.wikipedia.org/wiki/Combining_Diacritical_Marks) and
+   * [combining diacritical marks for symbols](https://en.wikipedia.org/wiki/Combining_Diacritical_Marks_for_Symbols).
+   */
+  var reComboMark = RegExp(rsCombo, 'g');
+
+  /** Used to match [string symbols](https://mathiasbynens.be/notes/javascript-unicode). */
+  var reUnicode = RegExp(rsFitz + '(?=' + rsFitz + ')|' + rsSymbol + rsSeq, 'g');
+
+  /** Used to match complex or compound words. */
+  var reUnicodeWord = RegExp([
+    rsUpper + '?' + rsLower + '+' + rsOptContrLower + '(?=' + [rsBreak, rsUpper, '$'].join('|') + ')',
+    rsMiscUpper + '+' + rsOptContrUpper + '(?=' + [rsBreak, rsUpper + rsMiscLower, '$'].join('|') + ')',
+    rsUpper + '?' + rsMiscLower + '+' + rsOptContrLower,
+    rsUpper + '+' + rsOptContrUpper,
+    rsOrdUpper,
+    rsOrdLower,
+    rsDigits,
+    rsEmoji
+  ].join('|'), 'g');
+
+  /** Used to detect strings with [zero-width joiners or code points from the astral planes](http://eev.ee/blog/2015/09/12/dark-corners-of-unicode/). */
+  var reHasUnicode = RegExp('[' + rsZWJ + rsAstralRange  + rsComboRange + rsVarRange + ']');
+
+  /** Used to detect strings that need a more robust regexp to match words. */
+  var reHasUnicodeWord = /[a-z][A-Z]|[A-Z]{2}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/;
+
+  /** Used to assign default `context` object properties. */
+  var contextProps = [
+    'Array', 'Buffer', 'DataView', 'Date', 'Error', 'Float32Array', 'Float64Array',
+    'Function', 'Int8Array', 'Int16Array', 'Int32Array', 'Map', 'Math', 'Object',
+    'Promise', 'RegExp', 'Set', 'String', 'Symbol', 'TypeError', 'Uint8Array',
+    'Uint8ClampedArray', 'Uint16Array', 'Uint32Array', 'WeakMap',
+    '_', 'clearTimeout', 'isFinite', 'parseInt', 'setTimeout'
+  ];
+
+  /** Used to make template sourceURLs easier to identify. */
+  var templateCounter = -1;
+
+  /** Used to identify `toStringTag` values of typed arrays. */
+  var typedArrayTags = {};
+  typedArrayTags[float32Tag] = typedArrayTags[float64Tag] =
+  typedArrayTags[int8Tag] = typedArrayTags[int16Tag] =
+  typedArrayTags[int32Tag] = typedArrayTags[uint8Tag] =
+  typedArrayTags[uint8ClampedTag] = typedArrayTags[uint16Tag] =
+  typedArrayTags[uint32Tag] = true;
+  typedArrayTags[argsTag] = typedArrayTags[arrayTag] =
+  typedArrayTags[arrayBufferTag] = typedArrayTags[boolTag] =
+  typedArrayTags[dataViewTag] = typedArrayTags[dateTag] =
+  typedArrayTags[errorTag] = typedArrayTags[funcTag] =
+  typedArrayTags[mapTag] = typedArrayTags[numberTag] =
+  typedArrayTags[objectTag] = typedArrayTags[regexpTag] =
+  typedArrayTags[setTag] = typedArrayTags[stringTag] =
+  typedArrayTags[weakMapTag] = false;
+
+  /** Used to identify `toStringTag` values supported by `_.clone`. */
+  var cloneableTags = {};
+  cloneableTags[argsTag] = cloneableTags[arrayTag] =
+  cloneableTags[arrayBufferTag] = cloneableTags[dataViewTag] =
+  cloneableTags[boolTag] = cloneableTags[dateTag] =
+  cloneableTags[float32Tag] = cloneableTags[float64Tag] =
+  cloneableTags[int8Tag] = cloneableTags[int16Tag] =
+  cloneableTags[int32Tag] = cloneableTags[mapTag] =
+  cloneableTags[numberTag] = cloneableTags[objectTag] =
+  cloneableTags[regexpTag] = cloneableTags[setTag] =
+  cloneableTags[stringTag] = cloneableTags[symbolTag] =
+  cloneableTags[uint8Tag] = cloneableTags[uint8ClampedTag] =
+  cloneableTags[uint16Tag] = cloneableTags[uint32Tag] = true;
+  cloneableTags[errorTag] = cloneableTags[funcTag] =
+  cloneableTags[weakMapTag] = false;
+
+  /** Used to map Latin Unicode letters to basic Latin letters. */
+  var deburredLetters = {
+    // Latin-1 Supplement block.
+    '\xc0': 'A',  '\xc1': 'A', '\xc2': 'A', '\xc3': 'A', '\xc4': 'A', '\xc5': 'A',
+    '\xe0': 'a',  '\xe1': 'a', '\xe2': 'a', '\xe3': 'a', '\xe4': 'a', '\xe5': 'a',
+    '\xc7': 'C',  '\xe7': 'c',
+    '\xd0': 'D',  '\xf0': 'd',
+    '\xc8': 'E',  '\xc9': 'E', '\xca': 'E', '\xcb': 'E',
+    '\xe8': 'e',  '\xe9': 'e', '\xea': 'e', '\xeb': 'e',
+    '\xcc': 'I',  '\xcd': 'I', '\xce': 'I', '\xcf': 'I',
+    '\xec': 'i',  '\xed': 'i', '\xee': 'i', '\xef': 'i',
+    '\xd1': 'N',  '\xf1': 'n',
+    '\xd2': 'O',  '\xd3': 'O', '\xd4': 'O', '\xd5': 'O', '\xd6': 'O', '\xd8': 'O',
+    '\xf2': 'o',  '\xf3': 'o', '\xf4': 'o', '\xf5': 'o', '\xf6': 'o', '\xf8': 'o',
+    '\xd9': 'U',  '\xda': 'U', '\xdb': 'U', '\xdc': 'U',
+    '\xf9': 'u',  '\xfa': 'u', '\xfb': 'u', '\xfc': 'u',
+    '\xdd': 'Y',  '\xfd': 'y', '\xff': 'y',
+    '\xc6': 'Ae', '\xe6': 'ae',
+    '\xde': 'Th', '\xfe': 'th',
+    '\xdf': 'ss',
+    // Latin Extended-A block.
+    '\u0100': 'A',  '\u0102': 'A', '\u0104': 'A',
+    '\u0101': 'a',  '\u0103': 'a', '\u0105': 'a',
+    '\u0106': 'C',  '\u0108': 'C', '\u010a': 'C', '\u010c': 'C',
+    '\u0107': 'c',  '\u0109': 'c', '\u010b': 'c', '\u010d': 'c',
+    '\u010e': 'D',  '\u0110': 'D', '\u010f': 'd', '\u0111': 'd',
+    '\u0112': 'E',  '\u0114': 'E', '\u0116': 'E', '\u0118': 'E', '\u011a': 'E',
+    '\u0113': 'e',  '\u0115': 'e', '\u0117': 'e', '\u0119': 'e', '\u011b': 'e',
+    '\u011c': 'G',  '\u011e': 'G', '\u0120': 'G', '\u0122': 'G',
+    '\u011d': 'g',  '\u011f': 'g', '\u0121': 'g', '\u0123': 'g',
+    '\u0124': 'H',  '\u0126': 'H', '\u0125': 'h', '\u0127': 'h',
+    '\u0128': 'I',  '\u012a': 'I', '\u012c': 'I', '\u012e': 'I', '\u0130': 'I',
+    '\u0129': 'i',  '\u012b': 'i', '\u012d': 'i', '\u012f': 'i', '\u0131': 'i',
+    '\u0134': 'J',  '\u0135': 'j',
+    '\u0136': 'K',  '\u0137': 'k', '\u0138': 'k',
+    '\u0139': 'L',  '\u013b': 'L', '\u013d': 'L', '\u013f': 'L', '\u0141': 'L',
+    '\u013a': 'l',  '\u013c': 'l', '\u013e': 'l', '\u0140': 'l', '\u0142': 'l',
+    '\u0143': 'N',  '\u0145': 'N', '\u0147': 'N', '\u014a': 'N',
+    '\u0144': 'n',  '\u0146': 'n', '\u0148': 'n', '\u014b': 'n',
+    '\u014c': 'O',  '\u014e': 'O', '\u0150': 'O',
+    '\u014d': 'o',  '\u014f': 'o', '\u0151': 'o',
+    '\u0154': 'R',  '\u0156': 'R', '\u0158': 'R',
+    '\u0155': 'r',  '\u0157': 'r', '\u0159': 'r',
+    '\u015a': 'S',  '\u015c': 'S', '\u015e': 'S', '\u0160': 'S',
+    '\u015b': 's',  '\u015d': 's', '\u015f': 's', '\u0161': 's',
+    '\u0162': 'T',  '\u0164': 'T', '\u0166': 'T',
+    '\u0163': 't',  '\u0165': 't', '\u0167': 't',
+    '\u0168': 'U',  '\u016a': 'U', '\u016c': 'U', '\u016e': 'U', '\u0170': 'U', '\u0172': 'U',
+    '\u0169': 'u',  '\u016b': 'u', '\u016d': 'u', '\u016f': 'u', '\u0171': 'u', '\u0173': 'u',
+    '\u0174': 'W',  '\u0175': 'w',
+    '\u0176': 'Y',  '\u0177': 'y', '\u0178': 'Y',
+    '\u0179': 'Z',  '\u017b': 'Z', '\u017d': 'Z',
+    '\u017a': 'z',  '\u017c': 'z', '\u017e': 'z',
+    '\u0132': 'IJ', '\u0133': 'ij',
+    '\u0152': 'Oe', '\u0153': 'oe',
+    '\u0149': "'n", '\u017f': 's'
+  };
+
+  /** Used to map characters to HTML entities. */
+  var htmlEscapes = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+  };
+
+  /** Used to map HTML entities to characters. */
+  var htmlUnescapes = {
+    '&amp;': '&',
+    '&lt;': '<',
+    '&gt;': '>',
+    '&quot;': '"',
+    '&#39;': "'"
+  };
+
+  /** Used to escape characters for inclusion in compiled string literals. */
+  var stringEscapes = {
+    '\\': '\\',
+    "'": "'",
+    '\n': 'n',
+    '\r': 'r',
+    '\u2028': 'u2028',
+    '\u2029': 'u2029'
+  };
+
+  /** Built-in method references without a dependency on `root`. */
+  var freeParseFloat = parseFloat,
+      freeParseInt = parseInt;
+
+  /** Detect free variable `global` from Node.js. */
+  var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
+
+  /** Detect free variable `self`. */
+  var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+
+  /** Used as a reference to the global object. */
+  var root = freeGlobal || freeSelf || Function('return this')();
+
+  /** Detect free variable `exports`. */
+  var freeExports = typeof exports == 'object' && exports && !exports.nodeType && exports;
+
+  /** Detect free variable `module`. */
+  var freeModule = freeExports && typeof module == 'object' && module && !module.nodeType && module;
+
+  /** Detect the popular CommonJS extension `module.exports`. */
+  var moduleExports = freeModule && freeModule.exports === freeExports;
+
+  /** Detect free variable `process` from Node.js. */
+  var freeProcess = moduleExports && freeGlobal.process;
+
+  /** Used to access faster Node.js helpers. */
+  var nodeUtil = (function() {
+    try {
+      // Use `util.types` for Node.js 10+.
+      var types = freeModule && freeModule.require && freeModule.require('util').types;
+
+      if (types) {
+        return types;
+      }
+
+      // Legacy `process.binding('util')` for Node.js < 10.
+      return freeProcess && freeProcess.binding && freeProcess.binding('util');
+    } catch (e) {}
+  }());
+
+  /* Node.js helper references. */
+  var nodeIsArrayBuffer = nodeUtil && nodeUtil.isArrayBuffer,
+      nodeIsDate = nodeUtil && nodeUtil.isDate,
+      nodeIsMap = nodeUtil && nodeUtil.isMap,
+      nodeIsRegExp = nodeUtil && nodeUtil.isRegExp,
+      nodeIsSet = nodeUtil && nodeUtil.isSet,
+      nodeIsTypedArray = nodeUtil && nodeUtil.isTypedArray;
+
+  /*--------------------------------------------------------------------------*/
+
+  /**
+   * A faster alternative to `Function#apply`, this function invokes `func`
+   * with the `this` binding of `thisArg` and the arguments of `args`.
+   *
+   * @private
+   * @param {Function} func The function to invoke.
+   * @param {*} thisArg The `this` binding of `func`.
+   * @param {Array} args The arguments to invoke `func` with.
+   * @returns {*} Returns the result of `func`.
+   */
+  function apply(func, thisArg, args) {
+    switch (args.length) {
+      case 0: return func.call(thisArg);
+      case 1: return func.call(thisArg, args[0]);
+      case 2: return func.call(thisArg, args[0], args[1]);
+      case 3: return func.call(thisArg, args[0], args[1], args[2]);
+    }
+    return func.apply(thisArg, args);
+  }
+
+  /**
+   * A specialized version of `baseAggregator` for arrays.
+   *
+   * @private
+   * @param {Array} [array] The array to iterate over.
+   * @param {Function} setter The function to set `accumulator` values.
+   * @param {Function} iteratee The iteratee to transform keys.
+   * @param {Object} accumulator The initial aggregated object.
+   * @returns {Function} Returns `accumulator`.
+   */
+  function arrayAggregator(array, setter, iteratee, accumulator) {
+    var index = -1,
+        length = array == null ? 0 : array.length;
+
+    while (++index < length) {
+      var value = array[index];
+      setter(accumulator, value, iteratee(value), array);
+    }
+    return accumulator;
+  }
+
+  /**
+   * A specialized version of `_.forEach` for arrays without support for
+   * iteratee shorthands.
+   *
+   * @private
+   * @param {Array} [array] The array to iterate over.
+   * @param {Function} iteratee The function invoked per iteration.
+   * @returns {Array} Returns `array`.
+   */
+  function arrayEach(array, iteratee) {
+    var index = -1,
+        length = array == null ? 0 : array.length;
+
+    while (++index < length) {
+      if (iteratee(array[index], index, array) === false) {
+        break;
+      }
+    }
+    return array;
+  }
+
+  /**
+   * A specialized version of `_.forEachRight` for arrays without support for
+   * iteratee shorthands.
+   *
+   * @private
+   * @param {Array} [array] The array to iterate over.
+   * @param {Function} iteratee The function invoked per iteration.
+   * @returns {Array} Returns `array`.
+   */
+  function arrayEachRight(array, iteratee) {
+    var length = array == null ? 0 : array.length;
+
+    while (length--) {
+      if (iteratee(array[length], length, array) === false) {
+        break;
+      }
+    }
+    return array;
+  }
+
+  /**
+   * A specialized version of `_.every` for arrays without support for
+   * iteratee shorthands.
+   *
+   * @private
+   * @param {Array} [array] The array to iterate over.
+   * @param {Function} predicate The function invoked per iteration.
+   * @returns {boolean} Returns `true` if all elements pass the predicate check,
+   *  else `false`.
+   */
+  function arrayEvery(array, predicate) {
+    var index = -1,
+        length = array == null ? 0 : array.length;
+
+    while (++index < length) {
+      if (!predicate(array[index], index, array)) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  /**
+   * A specialized version of `_.filter` for arrays without support for
+   * iteratee shorthands.
+   *
+   * @private
+   * @param {Array} [array] The array to iterate over.
+   * @param {Function} predicate The function invoked per iteration.
+   * @returns {Array} Returns the new filtered array.
+   */
+  function arrayFilter(array, predicate) {
+    var index = -1,
+        length = array == null ? 0 : array.length,
+        resIndex = 0,
+        result = [];
+
+    while (++index < length) {
+      var value = array[index];
+      if (predicate(value, index, array)) {
+        result[resIndex++] = value;
+      }
+    }
+    return result;
+  }
+
+  /**
+   * A specialized version of `_.includes` for arrays without support for
+   * specifying an index to search from.
+   *
+   * @private
+   * @param {Array} [array] The array to inspect.
+   * @param {*} target The value to search for.
+   * @returns {boolean} Returns `true` if `target` is found, else `false`.
+   */
+  function arrayIncludes(array, value) {
+    var length = array == null ? 0 : array.length;
+    return !!length && baseIndexOf(array, value, 0) > -1;
+  }
+
+  /**
+   * This function is like `arrayIncludes` except that it accepts a comparator.
+   *
+   * @private
+   * @param {Array} [array] The array to inspect.
+   * @param {*} target The value to search for.
+   * @param {Function} comparator The comparator invoked per element.
+   * @returns {boolean} Returns `true` if `target` is found, else `false`.
+   */
+  function arrayIncludesWith(array, value, comparator) {
+    var index = -1,
+        length = array == null ? 0 : array.length;
+
+    while (++index < length) {
+      if (comparator(value, array[index])) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  /**
+   * A specialized version of `_.map` for arrays without support for iteratee
+   * shorthands.
+   *
+   * @private
+   * @param {Array} [array] The array to iterate over.
+   * @param {Function} iteratee The function invoked per iteration.
+   * @returns {Array} Returns the new mapped array.
+   */
+  function arrayMap(array, iteratee) {
+    var index = -1,
+        length = array == null ? 0 : array.length,
+        result = Array(length);
+
+    while (++index < length) {
+      result[index] = iteratee(array[index], index, array);
+    }
+    return result;
+  }
+
+  /**
+   * Appends the elements of `values` to `array`.
+   *
+   * @private
+   * @param {Array} array The array to modify.
+   * @param {Array} values The values to append.
+   * @returns {Array} Returns `array`.
+   */
+  function arrayPush(array, values) {
+    var index = -1,
+        length = values.length,
+        offset = array.length;
+
+    while (++index < length) {
+      array[offset + index] = values[index];
+    }
+    return array;
+  }
+
+  /**
+   * A specialized version of `_.reduce` for arrays without support for
+   * iteratee shorthands.
+   *
+   * @private
+   * @param {Array} [array] The array to iterate over.
+   * @param {Function} iteratee The function invoked per iteration.
+   * @param {*} [accumulator] The initial value.
+   * @param {boolean} [initAccum] Specify using the first element of `array` as
+   *  the initial value.
+   * @returns {*} Returns the accumulated value.
+   */
+  function arrayReduce(array, iteratee, accumulator, initAccum) {
+    var index = -1,
+        length = array == null ? 0 : array.length;
+
+    if (initAccum && length) {
+      accumulator = array[++index];
+    }
+    while (++index < length) {
+      accumulator = iteratee(accumulator, array[index], index, array);
+    }
+    return accumulator;
+  }
+
+  /**
+   * A specialized version of `_.reduceRight` for arrays without support for
+   * iteratee shorthands.
+   *
+   * @private
+   * @param {Array} [array] The array to iterate over.
+   * @param {Function} iteratee The function invoked per iteration.
+   * @param {*} [accumulator] The initial value.
+   * @param {boolean} [initAccum] Specify using the last element of `array` as
+   *  the initial value.
+   * @returns {*} Returns the accumulated value.
+   */
+  function arrayReduceRight(array, iteratee, accumulator, initAccum) {
+    var length = array == null ? 0 : array.length;
+    if (initAccum && length) {
+      accumulator = array[--length];
+    }
+    while (length--) {
+      accumulator = iteratee(accumulator, array[length], length, array);
+    }
+    return accumulator;
+  }
+
+  /**
+   * A specialized version of `_.some` for arrays without support for iteratee
+   * shorthands.
+   *
+   * @private
+   * @param {Array} [array] The array to iterate over.
+   * @param {Function} predicate The function invoked per iteration.
+   * @returns {boolean} Returns `true` if any element passes the predicate check,
+   *  else `false`.
+   */
+  function arraySome(array, predicate) {
+    var index = -1,
+        length = array == null ? 0 : array.length;
+
+    while (++index < length) {
+      if (predicate(array[index], index, array)) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  /**
+   * Gets the size of an ASCII `string`.
+   *
+   * @private
+   * @param {string} string The string inspect.
+   * @returns {number} Returns the string size.
+   */
+  var asciiSize = baseProperty('length');
+
+  /**
+   * Converts an ASCII `string` to an array.
+   *
+   * @private
+   * @param {string} string The string to convert.
+   * @returns {Array} Returns the converted array.
+   */
+  function asciiToArray(string) {
+    return string.split('');
+  }
+
+  /**
+   * Splits an ASCII `string` into an array of its words.
+   *
+   * @private
+   * @param {string} The string to inspect.
+   * @returns {Array} Returns the words of `string`.
+   */
+  function asciiWords(string) {
+    return string.match(reAsciiWord) || [];
+  }
+
+  /**
+   * The base implementation of methods like `_.findKey` and `_.findLastKey`,
+   * without support for iteratee shorthands, which iterates over `collection`
+   * using `eachFunc`.
+   *
+   * @private
+   * @param {Array|Object} collection The collection to inspect.
+   * @param {Function} predicate The function invoked per iteration.
+   * @param {Function} eachFunc The function to iterate over `collection`.
+   * @returns {*} Returns the found element or its key, else `undefined`.
+   */
+  function baseFindKey(collection, predicate, eachFunc) {
+    var result;
+    eachFunc(collection, function(value, key, collection) {
+      if (predicate(value, key, collection)) {
+        result = key;
+        return false;
+      }
+    });
+    return result;
+  }
+
+  /**
+   * The base implementation of `_.findIndex` and `_.findLastIndex` without
+   * support for iteratee shorthands.
+   *
+   * @private
+   * @param {Array} array The array to inspect.
+   * @param {Function} predicate The function invoked per iteration.
+   * @param {number} fromIndex The index to search from.
+   * @param {boolean} [fromRight] Specify iterating from right to left.
+   * @returns {number} Returns the index of the matched value, else `-1`.
+   */
+  function baseFindIndex(array, predicate, fromIndex, fromRight) {
+    var length = array.length,
+        index = fromIndex + (fromRight ? 1 : -1);
+
+    while ((fromRight ? index-- : ++index < length)) {
+      if (predicate(array[index], index, array)) {
+        return index;
+      }
+    }
+    return -1;
+  }
+
+  /**
+   * The base implementation of `_.indexOf` without `fromIndex` bounds checks.
+   *
+   * @private
+   * @param {Array} array The array to inspect.
+   * @param {*} value The value to search for.
+   * @param {number} fromIndex The index to search from.
+   * @returns {number} Returns the index of the matched value, else `-1`.
+   */
+  function baseIndexOf(array, value, fromIndex) {
+    return value === value
+      ? strictIndexOf(array, value, fromIndex)
+      : baseFindIndex(array, baseIsNaN, fromIndex);
+  }
+
+  /**
+   * This function is like `baseIndexOf` except that it accepts a comparator.
+   *
+   * @private
+   * @param {Array} array The array to inspect.
+   * @param {*} value The value to search for.
+   * @param {number} fromIndex The index to search from.
+   * @param {Function} comparator The comparator invoked per element.
+   * @returns {number} Returns the index of the matched value, else `-1`.
+   */
+  function baseIndexOfWith(array, value, fromIndex, comparator) {
+    var index = fromIndex - 1,
+        length = array.length;
+
+    while (++index < length) {
+      if (comparator(array[index], value)) {
+        return index;
+      }
+    }
+    return -1;
+  }
+
+  /**
+   * The base implementation of `_.isNaN` without support for number objects.
+   *
+   * @private
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is `NaN`, else `false`.
+   */
+  function baseIsNaN(value) {
+    return value !== value;
+  }
+
+  /**
+   * The base implementation of `_.mean` and `_.meanBy` without support for
+   * iteratee shorthands.
+   *
+   * @private
+   * @param {Array} array The array to iterate over.
+   * @param {Function} iteratee The function invoked per iteration.
+   * @returns {number} Returns the mean.
+   */
+  function baseMean(array, iteratee) {
+    var length = array == null ? 0 : array.length;
+    return length ? (baseSum(array, iteratee) / length) : NAN;
+  }
+
+  /**
+   * The base implementation of `_.property` without support for deep paths.
+   *
+   * @private
+   * @param {string} key The key of the property to get.
+   * @returns {Function} Returns the new accessor function.
+   */
+  function baseProperty(key) {
+    return function(object) {
+      return object == null ? undefined : object[key];
+    };
+  }
+
+  /**
+   * The base implementation of `_.propertyOf` without support for deep paths.
+   *
+   * @private
+   * @param {Object} object The object to query.
+   * @returns {Function} Returns the new accessor function.
+   */
+  function basePropertyOf(object) {
+    return function(key) {
+      return object == null ? undefined : object[key];
+    };
+  }
+
+  /**
+   * The base implementation of `_.reduce` and `_.reduceRight`, without support
+   * for iteratee shorthands, which iterates over `collection` using `eachFunc`.
+   *
+   * @private
+   * @param {Array|Object} collection The collection to iterate over.
+   * @param {Function} iteratee The function invoked per iteration.
+   * @param {*} accumulator The initial value.
+   * @param {boolean} initAccum Specify using the first or last element of
+   *  `collection` as the initial value.
+   * @param {Function} eachFunc The function to iterate over `collection`.
+   * @returns {*} Returns the accumulated value.
+   */
+  function baseReduce(collection, iteratee, accumulator, initAccum, eachFunc) {
+    eachFunc(collection, function(value, index, collection) {
+      accumulator = initAccum
+        ? (initAccum = false, value)
+        : iteratee(accumulator, value, index, collection);
+    });
+    return accumulator;
+  }
+
+  /**
+   * The base implementation of `_.sortBy` which uses `comparer` to define the
+   * sort order of `array` and replaces criteria objects with their corresponding
+   * values.
+   *
+   * @private
+   * @param {Array} array The array to sort.
+   * @param {Function} comparer The function to define sort order.
+   * @returns {Array} Returns `array`.
+   */
+  function baseSortBy(array, comparer) {
+    var length = array.length;
+
+    array.sort(comparer);
+    while (length--) {
+      array[length] = array[length].value;
+    }
+    return array;
+  }
+
+  /**
+   * The base implementation of `_.sum` and `_.sumBy` without support for
+   * iteratee shorthands.
+   *
+   * @private
+   * @param {Array} array The array to iterate over.
+   * @param {Function} iteratee The function invoked per iteration.
+   * @returns {number} Returns the sum.
+   */
+  function baseSum(array, iteratee) {
+    var result,
+        index = -1,
+        length = array.length;
+
+    while (++index < length) {
+      var current = iteratee(array[index]);
+      if (current !== undefined) {
+        result = result === undefined ? current : (result + current);
+      }
+    }
+    return result;
+  }
+
+  /**
+   * The base implementation of `_.times` without support for iteratee shorthands
+   * or max array length checks.
+   *
+   * @private
+   * @param {number} n The number of times to invoke `iteratee`.
+   * @param {Function} iteratee The function invoked per iteration.
+   * @returns {Array} Returns the array of results.
+   */
+  function baseTimes(n, iteratee) {
+    var index = -1,
+        result = Array(n);
+
+    while (++index < n) {
+      result[index] = iteratee(index);
+    }
+    return result;
+  }
+
+  /**
+   * The base implementation of `_.toPairs` and `_.toPairsIn` which creates an array
+   * of key-value pairs for `object` corresponding to the property names of `props`.
+   *
+   * @private
+   * @param {Object} object The object to query.
+   * @param {Array} props The property names to get values for.
+   * @returns {Object} Returns the key-value pairs.
+   */
+  function baseToPairs(object, props) {
+    return arrayMap(props, function(key) {
+      return [key, object[key]];
+    });
+  }
+
+  /**
+   * The base implementation of `_.trim`.
+   *
+   * @private
+   * @param {string} string The string to trim.
+   * @returns {string} Returns the trimmed string.
+   */
+  function baseTrim(string) {
+    return string
+      ? string.slice(0, trimmedEndIndex(string) + 1).replace(reTrimStart, '')
+      : string;
+  }
+
+  /**
+   * The base implementation of `_.unary` without support for storing metadata.
+   *
+   * @private
+   * @param {Function} func The function to cap arguments for.
+   * @returns {Function} Returns the new capped function.
+   */
+  function baseUnary(func) {
+    return function(value) {
+      return func(value);
+    };
+  }
+
+  /**
+   * The base implementation of `_.values` and `_.valuesIn` which creates an
+   * array of `object` property values corresponding to the property names
+   * of `props`.
+   *
+   * @private
+   * @param {Object} object The object to query.
+   * @param {Array} props The property names to get values for.
+   * @returns {Object} Returns the array of property values.
+   */
+  function baseValues(object, props) {
+    return arrayMap(props, function(key) {
+      return object[key];
+    });
+  }
+
+  /**
+   * Checks if a `cache` value for `key` exists.
+   *
+   * @private
+   * @param {Object} cache The cache to query.
+   * @param {string} key The key of the entry to check.
+   * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+   */
+  function cacheHas(cache, key) {
+    return cache.has(key);
+  }
+
+  /**
+   * Used by `_.trim` and `_.trimStart` to get the index of the first string symbol
+   * that is not found in the character symbols.
+   *
+   * @private
+   * @param {Array} strSymbols The string symbols to inspect.
+   * @param {Array} chrSymbols The character symbols to find.
+   * @returns {number} Returns the index of the first unmatched string symbol.
+   */
+  function charsStartIndex(strSymbols, chrSymbols) {
+    var index = -1,
+        length = strSymbols.length;
+
+    while (++index < length && baseIndexOf(chrSymbols, strSymbols[index], 0) > -1) {}
+    return index;
+  }
+
+  /**
+   * Used by `_.trim` and `_.trimEnd` to get the index of the last string symbol
+   * that is not found in the character symbols.
+   *
+   * @private
+   * @param {Array} strSymbols The string symbols to inspect.
+   * @param {Array} chrSymbols The character symbols to find.
+   * @returns {number} Returns the index of the last unmatched string symbol.
+   */
+  function charsEndIndex(strSymbols, chrSymbols) {
+    var index = strSymbols.length;
+
+    while (index-- && baseIndexOf(chrSymbols, strSymbols[index], 0) > -1) {}
+    return index;
+  }
+
+  /**
+   * Gets the number of `placeholder` occurrences in `array`.
+   *
+   * @private
+   * @param {Array} array The array to inspect.
+   * @param {*} placeholder The placeholder to search for.
+   * @returns {number} Returns the placeholder count.
+   */
+  function countHolders(array, placeholder) {
+    var length = array.length,
+        result = 0;
+
+    while (length--) {
+      if (array[length] === placeholder) {
+        ++result;
+      }
+    }
+    return result;
+  }
+
+  /**
+   * Used by `_.deburr` to convert Latin-1 Supplement and Latin Extended-A
+   * letters to basic Latin letters.
+   *
+   * @private
+   * @param {string} letter The matched letter to deburr.
+   * @returns {string} Returns the deburred letter.
+   */
+  var deburrLetter = basePropertyOf(deburredLetters);
+
+  /**
+   * Used by `_.escape` to convert characters to HTML entities.
+   *
+   * @private
+   * @param {string} chr The matched character to escape.
+   * @returns {string} Returns the escaped character.
+   */
+  var escapeHtmlChar = basePropertyOf(htmlEscapes);
+
+  /**
+   * Used by `_.template` to escape characters for inclusion in compiled string literals.
+   *
+   * @private
+   * @param {string} chr The matched character to escape.
+   * @returns {string} Returns the escaped character.
+   */
+  function escapeStringChar(chr) {
+    return '\\' + stringEscapes[chr];
+  }
+
+  /**
+   * Gets the value at `key` of `object`.
+   *
+   * @private
+   * @param {Object} [object] The object to query.
+   * @param {string} key The key of the property to get.
+   * @returns {*} Returns the property value.
+   */
+  function getValue(object, key) {
+    return object == null ? undefined : object[key];
+  }
+
+  /**
+   * Checks if `string` contains Unicode symbols.
+   *
+   * @private
+   * @param {string} string The string to inspect.
+   * @returns {boolean} Returns `true` if a symbol is found, else `false`.
+   */
+  function hasUnicode(string) {
+    return reHasUnicode.test(string);
+  }
+
+  /**
+   * Checks if `string` contains a word composed of Unicode symbols.
+   *
+   * @private
+   * @param {string} string The string to inspect.
+   * @returns {boolean} Returns `true` if a word is found, else `false`.
+   */
+  function hasUnicodeWord(string) {
+    return reHasUnicodeWord.test(string);
+  }
+
+  /**
+   * Converts `iterator` to an array.
+   *
+   * @private
+   * @param {Object} iterator The iterator to convert.
+   * @returns {Array} Returns the converted array.
+   */
+  function iteratorToArray(iterator) {
+    var data,
+        result = [];
+
+    while (!(data = iterator.next()).done) {
+      result.push(data.value);
+    }
+    return result;
+  }
+
+  /**
+   * Converts `map` to its key-value pairs.
+   *
+   * @private
+   * @param {Object} map The map to convert.
+   * @returns {Array} Returns the key-value pairs.
+   */
+  function mapToArray(map) {
+    var index = -1,
+        result = Array(map.size);
+
+    map.forEach(function(value, key) {
+      result[++index] = [key, value];
+    });
+    return result;
+  }
+
+  /**
+   * Creates a unary function that invokes `func` with its argument transformed.
+   *
+   * @private
+   * @param {Function} func The function to wrap.
+   * @param {Function} transform The argument transform.
+   * @returns {Function} Returns the new function.
+   */
+  function overArg(func, transform) {
+    return function(arg) {
+      return func(transform(arg));
+    };
+  }
+
+  /**
+   * Replaces all `placeholder` elements in `array` with an internal placeholder
+   * and returns an array of their indexes.
+   *
+   * @private
+   * @param {Array} array The array to modify.
+   * @param {*} placeholder The placeholder to replace.
+   * @returns {Array} Returns the new array of placeholder indexes.
+   */
+  function replaceHolders(array, placeholder) {
+    var index = -1,
+        length = array.length,
+        resIndex = 0,
+        result = [];
+
+    while (++index < length) {
+      var value = array[index];
+      if (value === placeholder || value === PLACEHOLDER) {
+        array[index] = PLACEHOLDER;
+        result[resIndex++] = index;
+      }
+    }
+    return result;
+  }
+
+  /**
+   * Converts `set` to an array of its values.
+   *
+   * @private
+   * @param {Object} set The set to convert.
+   * @returns {Array} Returns the values.
+   */
+  function setToArray(set) {
+    var index = -1,
+        result = Array(set.size);
+
+    set.forEach(function(value) {
+      result[++index] = value;
+    });
+    return result;
+  }
+
+  /**
+   * Converts `set` to its value-value pairs.
+   *
+   * @private
+   * @param {Object} set The set to convert.
+   * @returns {Array} Returns the value-value pairs.
+   */
+  function setToPairs(set) {
+    var index = -1,
+        result = Array(set.size);
+
+    set.forEach(function(value) {
+      result[++index] = [value, value];
+    });
+    return result;
+  }
+
+  /**
+   * A specialized version of `_.indexOf` which performs strict equality
+   * comparisons of values, i.e. `===`.
+   *
+   * @private
+   * @param {Array} array The array to inspect.
+   * @param {*} value The value to search for.
+   * @param {number} fromIndex The index to search from.
+   * @returns {number} Returns the index of the matched value, else `-1`.
+   */
+  function strictIndexOf(array, value, fromIndex) {
+    var index = fromIndex - 1,
+        length = array.length;
+
+    while (++index < length) {
+      if (array[index] === value) {
+        return index;
+      }
+    }
+    return -1;
+  }
+
+  /**
+   * A specialized version of `_.lastIndexOf` which performs strict equality
+   * comparisons of values, i.e. `===`.
+   *
+   * @private
+   * @param {Array} array The array to inspect.
+   * @param {*} value The value to search for.
+   * @param {number} fromIndex The index to search from.
+   * @returns {number} Returns the index of the matched value, else `-1`.
+   */
+  function strictLastIndexOf(array, value, fromIndex) {
+    var index = fromIndex + 1;
+    while (index--) {
+      if (array[index] === value) {
+        return index;
+      }
+    }
+    return index;
+  }
+
+  /**
+   * Gets the number of symbols in `string`.
+   *
+   * @private
+   * @param {string} string The string to inspect.
+   * @returns {number} Returns the string size.
+   */
+  function stringSize(string) {
+    return hasUnicode(string)
+      ? unicodeSize(string)
+      : asciiSize(string);
+  }
+
+  /**
+   * Converts `string` to an array.
+   *
+   * @private
+   * @param {string} string The string to convert.
+   * @returns {Array} Returns the converted array.
+   */
+  function stringToArray(string) {
+    return hasUnicode(string)
+      ? unicodeToArray(string)
+      : asciiToArray(string);
+  }
+
+  /**
+   * Used by `_.trim` and `_.trimEnd` to get the index of the last non-whitespace
+   * character of `string`.
+   *
+   * @private
+   * @param {string} string The string to inspect.
+   * @returns {number} Returns the index of the last non-whitespace character.
+   */
+  function trimmedEndIndex(string) {
+    var index = string.length;
+
+    while (index-- && reWhitespace.test(string.charAt(index))) {}
+    return index;
+  }
+
+  /**
+   * Used by `_.unescape` to convert HTML entities to characters.
+   *
+   * @private
+   * @param {string} chr The matched character to unescape.
+   * @returns {string} Returns the unescaped character.
+   */
+  var unescapeHtmlChar = basePropertyOf(htmlUnescapes);
+
+  /**
+   * Gets the size of a Unicode `string`.
+   *
+   * @private
+   * @param {string} string The string inspect.
+   * @returns {number} Returns the string size.
+   */
+  function unicodeSize(string) {
+    var result = reUnicode.lastIndex = 0;
+    while (reUnicode.test(string)) {
+      ++result;
+    }
+    return result;
+  }
+
+  /**
+   * Converts a Unicode `string` to an array.
+   *
+   * @private
+   * @param {string} string The string to convert.
+   * @returns {Array} Returns the converted array.
+   */
+  function unicodeToArray(string) {
+    return string.match(reUnicode) || [];
+  }
+
+  /**
+   * Splits a Unicode `string` into an array of its words.
+   *
+   * @private
+   * @param {string} The string to inspect.
+   * @returns {Array} Returns the words of `string`.
+   */
+  function unicodeWords(string) {
+    return string.match(reUnicodeWord) || [];
+  }
+
+  /*--------------------------------------------------------------------------*/
+
+  /**
+   * Create a new pristine `lodash` function using the `context` object.
+   *
+   * @static
+   * @memberOf _
+   * @since 1.1.0
+   * @category Util
+   * @param {Object} [context=root] The context object.
+   * @returns {Function} Returns a new `lodash` function.
+   * @example
+   *
+   * _.mixin({ 'foo': _.constant('foo') });
+   *
+   * var lodash = _.runInContext();
+   * lodash.mixin({ 'bar': lodash.constant('bar') });
+   *
+   * _.isFunction(_.foo);
+   * // => true
+   * _.isFunction(_.bar);
+   * // => false
+   *
+   * lodash.isFunction(lodash.foo);
+   * // => false
+   * lodash.isFunction(lodash.bar);
+   * // => true
+   *
+   * // Create a suped-up `defer` in Node.js.
+   * var defer = _.runInContext({ 'setTimeout': setImmediate }).defer;
+   */
+  var runInContext = (function runInContext(context) {
+    context = context == null ? root : _.defaults(root.Object(), context, _.pick(root, contextProps));
+
+    /** Built-in constructor references. */
+    var Array = context.Array,
+        Date = context.Date,
+        Error = context.Error,
+        Function = context.Function,
+        Math = context.Math,
+        Object = context.Object,
+        RegExp = context.RegExp,
+        String = context.String,
+        TypeError = context.TypeError;
+
+    /** Used for built-in method references. */
+    var arrayProto = Array.prototype,
+        funcProto = Function.prototype,
+        objectProto = Object.prototype;
+
+    /** Used to detect overreaching core-js shims. */
+    var coreJsData = context['__core-js_shared__'];
+
+    /** Used to resolve the decompiled source of functions. */
+    var funcToString = funcProto.toString;
+
+    /** Used to check objects for own properties. */
+    var hasOwnProperty = objectProto.hasOwnProperty;
+
+    /** Used to generate unique IDs. */
+    var idCounter = 0;
+
+    /** Used to detect methods masquerading as native. */
+    var maskSrcKey = (function() {
+      var uid = /[^.]+$/.exec(coreJsData && coreJsData.keys && coreJsData.keys.IE_PROTO || '');
+      return uid ? ('Symbol(src)_1.' + uid) : '';
+    }());
+
+    /**
+     * Used to resolve the
+     * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+     * of values.
+     */
+    var nativeObjectToString = objectProto.toString;
+
+    /** Used to infer the `Object` constructor. */
+    var objectCtorString = funcToString.call(Object);
+
+    /** Used to restore the original `_` reference in `_.noConflict`. */
+    var oldDash = root._;
+
+    /** Used to detect if a method is native. */
+    var reIsNative = RegExp('^' +
+      funcToString.call(hasOwnProperty).replace(reRegExpChar, '\\$&')
+      .replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$'
+    );
+
+    /** Built-in value references. */
+    var Buffer = moduleExports ? context.Buffer : undefined,
+        Symbol = context.Symbol,
+        Uint8Array = context.Uint8Array,
+        allocUnsafe = Buffer ? Buffer.allocUnsafe : undefined,
+        getPrototype = overArg(Object.getPrototypeOf, Object),
+        objectCreate = Object.create,
+        propertyIsEnumerable = objectProto.propertyIsEnumerable,
+        splice = arrayProto.splice,
+        spreadableSymbol = Symbol ? Symbol.isConcatSpreadable : undefined,
+        symIterator = Symbol ? Symbol.iterator : undefined,
+        symToStringTag = Symbol ? Symbol.toStringTag : undefined;
+
+    var defineProperty = (function() {
+      try {
+        var func = getNative(Object, 'defineProperty');
+        func({}, '', {});
+        return func;
+      } catch (e) {}
+    }());
+
+    /** Mocked built-ins. */
+    var ctxClearTimeout = context.clearTimeout !== root.clearTimeout && context.clearTimeout,
+        ctxNow = Date && Date.now !== root.Date.now && Date.now,
+        ctxSetTimeout = context.setTimeout !== root.setTimeout && context.setTimeout;
+
+    /* Built-in method references for those with the same name as other `lodash` methods. */
+    var nativeCeil = Math.ceil,
+        nativeFloor = Math.floor,
+        nativeGetSymbols = Object.getOwnPropertySymbols,
+        nativeIsBuffer = Buffer ? Buffer.isBuffer : undefined,
+        nativeIsFinite = context.isFinite,
+        nativeJoin = arrayProto.join,
+        nativeKeys = overArg(Object.keys, Object),
+        nativeMax = Math.max,
+        nativeMin = Math.min,
+        nativeNow = Date.now,
+        nativeParseInt = context.parseInt,
+        nativeRandom = Math.random,
+        nativeReverse = arrayProto.reverse;
+
+    /* Built-in method references that are verified to be native. */
+    var DataView = getNative(context, 'DataView'),
+        Map = getNative(context, 'Map'),
+        Promise = getNative(context, 'Promise'),
+        Set = getNative(context, 'Set'),
+        WeakMap = getNative(context, 'WeakMap'),
+        nativeCreate = getNative(Object, 'create');
+
+    /** Used to store function metadata. */
+    var metaMap = WeakMap && new WeakMap;
+
+    /** Used to lookup unminified function names. */
+    var realNames = {};
+
+    /** Used to detect maps, sets, and weakmaps. */
+    var dataViewCtorString = toSource(DataView),
+        mapCtorString = toSource(Map),
+        promiseCtorString = toSource(Promise),
+        setCtorString = toSource(Set),
+        weakMapCtorString = toSource(WeakMap);
+
+    /** Used to convert symbols to primitives and strings. */
+    var symbolProto = Symbol ? Symbol.prototype : undefined,
+        symbolValueOf = symbolProto ? symbolProto.valueOf : undefined,
+        symbolToString = symbolProto ? symbolProto.toString : undefined;
+
+    /*------------------------------------------------------------------------*/
+
+    /**
+     * Creates a `lodash` object which wraps `value` to enable implicit method
+     * chain sequences. Methods that operate on and return arrays, collections,
+     * and functions can be chained together. Methods that retrieve a single value
+     * or may return a primitive value will automatically end the chain sequence
+     * and return the unwrapped value. Otherwise, the value must be unwrapped
+     * with `_#value`.
+     *
+     * Explicit chain sequences, which must be unwrapped with `_#value`, may be
+     * enabled using `_.chain`.
+     *
+     * The execution of chained methods is lazy, that is, it's deferred until
+     * `_#value` is implicitly or explicitly called.
+     *
+     * Lazy evaluation allows several methods to support shortcut fusion.
+     * Shortcut fusion is an optimization to merge iteratee calls; this avoids
+     * the creation of intermediate arrays and can greatly reduce the number of
+     * iteratee executions. Sections of a chain sequence qualify for shortcut
+     * fusion if the section is applied to an array and iteratees accept only
+     * one argument. The heuristic for whether a section qualifies for shortcut
+     * fusion is subject to change.
+     *
+     * Chaining is supported in custom builds as long as the `_#value` method is
+     * directly or indirectly included in the build.
+     *
+     * In addition to lodash methods, wrappers have `Array` and `String` methods.
+     *
+     * The wrapper `Array` methods are:
+     * `concat`, `join`, `pop`, `push`, `shift`, `sort`, `splice`, and `unshift`
+     *
+     * The wrapper `String` methods are:
+     * `replace` and `split`
+     *
+     * The wrapper methods that support shortcut fusion are:
+     * `at`, `compact`, `drop`, `dropRight`, `dropWhile`, `filter`, `find`,
+     * `findLast`, `head`, `initial`, `last`, `map`, `reject`, `reverse`, `slice`,
+     * `tail`, `take`, `takeRight`, `takeRightWhile`, `takeWhile`, and `toArray`
+     *
+     * The chainable wrapper methods are:
+     * `after`, `ary`, `assign`, `assignIn`, `assignInWith`, `assignWith`, `at`,
+     * `before`, `bind`, `bindAll`, `bindKey`, `castArray`, `chain`, `chunk`,
+     * `commit`, `compact`, `concat`, `conforms`, `constant`, `countBy`, `create`,
+     * `curry`, `debounce`, `defaults`, `defaultsDeep`, `defer`, `delay`,
+     * `difference`, `differenceBy`, `differenceWith`, `drop`, `dropRight`,
+     * `dropRightWhile`, `dropWhile`, `extend`, `extendWith`, `fill`, `filter`,
+     * `flatMap`, `flatMapDeep`, `flatMapDepth`, `flatten`, `flattenDeep`,
+     * `flattenDepth`, `flip`, `flow`, `flowRight`, `fromPairs`, `functions`,
+     * `functionsIn`, `groupBy`, `initial`, `intersection`, `intersectionBy`,
+     * `intersectionWith`, `invert`, `invertBy`, `invokeMap`, `iteratee`, `keyBy`,
+     * `keys`, `keysIn`, `map`, `mapKeys`, `mapValues`, `matches`, `matchesProperty`,
+     * `memoize`, `merge`, `mergeWith`, `method`, `methodOf`, `mixin`, `negate`,
+     * `nthArg`, `omit`, `omitBy`, `once`, `orderBy`, `over`, `overArgs`,
+     * `overEvery`, `overSome`, `partial`, `partialRight`, `partition`, `pick`,
+     * `pickBy`, `plant`, `property`, `propertyOf`, `pull`, `pullAll`, `pullAllBy`,
+     * `pullAllWith`, `pullAt`, `push`, `range`, `rangeRight`, `rearg`, `reject`,
+     * `remove`, `rest`, `reverse`, `sampleSize`, `set`, `setWith`, `shuffle`,
+     * `slice`, `sort`, `sortBy`, `splice`, `spread`, `tail`, `take`, `takeRight`,
+     * `takeRightWhile`, `takeWhile`, `tap`, `throttle`, `thru`, `toArray`,
+     * `toPairs`, `toPairsIn`, `toPath`, `toPlainObject`, `transform`, `unary`,
+     * `union`, `unionBy`, `unionWith`, `uniq`, `uniqBy`, `uniqWith`, `unset`,
+     * `unshift`, `unzip`, `unzipWith`, `update`, `updateWith`, `values`,
+     * `valuesIn`, `without`, `wrap`, `xor`, `xorBy`, `xorWith`, `zip`,
+     * `zipObject`, `zipObjectDeep`, and `zipWith`
+     *
+     * The wrapper methods that are **not** chainable by default are:
+     * `add`, `attempt`, `camelCase`, `capitalize`, `ceil`, `clamp`, `clone`,
+     * `cloneDeep`, `cloneDeepWith`, `cloneWith`, `conformsTo`, `deburr`,
+     * `defaultTo`, `divide`, `each`, `eachRight`, `endsWith`, `eq`, `escape`,
+     * `escapeRegExp`, `every`, `find`, `findIndex`, `findKey`, `findLast`,
+     * `findLastIndex`, `findLastKey`, `first`, `floor`, `forEach`, `forEachRight`,
+     * `forIn`, `forInRight`, `forOwn`, `forOwnRight`, `get`, `gt`, `gte`, `has`,
+     * `hasIn`, `head`, `identity`, `includes`, `indexOf`, `inRange`, `invoke`,
+     * `isArguments`, `isArray`, `isArrayBuffer`, `isArrayLike`, `isArrayLikeObject`,
+     * `isBoolean`, `isBuffer`, `isDate`, `isElement`, `isEmpty`, `isEqual`,
+     * `isEqualWith`, `isError`, `isFinite`, `isFunction`, `isInteger`, `isLength`,
+     * `isMap`, `isMatch`, `isMatchWith`, `isNaN`, `isNative`, `isNil`, `isNull`,
+     * `isNumber`, `isObject`, `isObjectLike`, `isPlainObject`, `isRegExp`,
+     * `isSafeInteger`, `isSet`, `isString`, `isUndefined`, `isTypedArray`,
+     * `isWeakMap`, `isWeakSet`, `join`, `kebabCase`, `last`, `lastIndexOf`,
+     * `lowerCase`, `lowerFirst`, `lt`, `lte`, `max`, `maxBy`, `mean`, `meanBy`,
+     * `min`, `minBy`, `multiply`, `noConflict`, `noop`, `now`, `nth`, `pad`,
+     * `padEnd`, `padStart`, `parseInt`, `pop`, `random`, `reduce`, `reduceRight`,
+     * `repeat`, `result`, `round`, `runInContext`, `sample`, `shift`, `size`,
+     * `snakeCase`, `some`, `sortedIndex`, `sortedIndexBy`, `sortedLastIndex`,
+     * `sortedLastIndexBy`, `startCase`, `startsWith`, `stubArray`, `stubFalse`,
+     * `stubObject`, `stubString`, `stubTrue`, `subtract`, `sum`, `sumBy`,
+     * `template`, `times`, `toFinite`, `toInteger`, `toJSON`, `toLength`,
+     * `toLower`, `toNumber`, `toSafeInteger`, `toString`, `toUpper`, `trim`,
+     * `trimEnd`, `trimStart`, `truncate`, `unescape`, `uniqueId`, `upperCase`,
+     * `upperFirst`, `value`, and `words`
+     *
+     * @name _
+     * @constructor
+     * @category Seq
+     * @param {*} value The value to wrap in a `lodash` instance.
+     * @returns {Object} Returns the new `lodash` wrapper instance.
+     * @example
+     *
+     * function square(n) {
+     *   return n * n;
+     * }
+     *
+     * var wrapped = _([1, 2, 3]);
+     *
+     * // Returns an unwrapped value.
+     * wrapped.reduce(_.add);
+     * // => 6
+     *
+     * // Returns a wrapped value.
+     * var squares = wrapped.map(square);
+     *
+     * _.isArray(squares);
+     * // => false
+     *
+     * _.isArray(squares.value());
+     * // => true
+     */
+    function lodash(value) {
+      if (isObjectLike(value) && !isArray(value) && !(value instanceof LazyWrapper)) {
+        if (value instanceof LodashWrapper) {
+          return value;
+        }
+        if (hasOwnProperty.call(value, '__wrapped__')) {
+          return wrapperClone(value);
+        }
+      }
+      return new LodashWrapper(value);
+    }
+
+    /**
+     * The base implementation of `_.create` without support for assigning
+     * properties to the created object.
+     *
+     * @private
+     * @param {Object} proto The object to inherit from.
+     * @returns {Object} Returns the new object.
+     */
+    var baseCreate = (function() {
+      function object() {}
+      return function(proto) {
+        if (!isObject(proto)) {
+          return {};
+        }
+        if (objectCreate) {
+          return objectCreate(proto);
+        }
+        object.prototype = proto;
+        var result = new object;
+        object.prototype = undefined;
+        return result;
+      };
+    }());
+
+    /**
+     * The function whose prototype chain sequence wrappers inherit from.
+     *
+     * @private
+     */
+    function baseLodash() {
+      // No operation performed.
+    }
+
+    /**
+     * The base constructor for creating `lodash` wrapper objects.
+     *
+     * @private
+     * @param {*} value The value to wrap.
+     * @param {boolean} [chainAll] Enable explicit method chain sequences.
+     */
+    function LodashWrapper(value, chainAll) {
+      this.__wrapped__ = value;
+      this.__actions__ = [];
+      this.__chain__ = !!chainAll;
+      this.__index__ = 0;
+      this.__values__ = undefined;
+    }
+
+    /**
+     * By default, the template delimiters used by lodash are like those in
+     * embedded Ruby (ERB) as well as ES2015 template strings. Change the
+     * following template settings to use alternative delimiters.
+     *
+     * @static
+     * @memberOf _
+     * @type {Object}
+     */
+    lodash.templateSettings = {
+
+      /**
+       * Used to detect `data` property values to be HTML-escaped.
+       *
+       * @memberOf _.templateSettings
+       * @type {RegExp}
+       */
+      'escape': reEscape,
+
+      /**
+       * Used to detect code to be evaluated.
+       *
+       * @memberOf _.templateSettings
+       * @type {RegExp}
+       */
+      'evaluate': reEvaluate,
+
+      /**
+       * Used to detect `data` property values to inject.
+       *
+       * @memberOf _.templateSettings
+       * @type {RegExp}
+       */
+      'interpolate': reInterpolate,
+
+      /**
+       * Used to reference the data object in the template text.
+       *
+       * @memberOf _.templateSettings
+       * @type {string}
+       */
+      'variable': '',
+
+      /**
+       * Used to import variables into the compiled template.
+       *
+       * @memberOf _.templateSettings
+       * @type {Object}
+       */
+      'imports': {
+
+        /**
+         * A reference to the `lodash` function.
+         *
+         * @memberOf _.templateSettings.imports
+         * @type {Function}
+         */
+        '_': lodash
+      }
+    };
+
+    // Ensure wrappers are instances of `baseLodash`.
+    lodash.prototype = baseLodash.prototype;
+    lodash.prototype.constructor = lodash;
+
+    LodashWrapper.prototype = baseCreate(baseLodash.prototype);
+    LodashWrapper.prototype.constructor = LodashWrapper;
+
+    /*------------------------------------------------------------------------*/
+
+    /**
+     * Creates a lazy wrapper object which wraps `value` to enable lazy evaluation.
+     *
+     * @private
+     * @constructor
+     * @param {*} value The value to wrap.
+     */
+    function LazyWrapper(value) {
+      this.__wrapped__ = value;
+      this.__actions__ = [];
+      this.__dir__ = 1;
+      this.__filtered__ = false;
+      this.__iteratees__ = [];
+      this.__takeCount__ = MAX_ARRAY_LENGTH;
+      this.__views__ = [];
+    }
+
+    /**
+     * Creates a clone of the lazy wrapper object.
+     *
+     * @private
+     * @name clone
+     * @memberOf LazyWrapper
+     * @returns {Object} Returns the cloned `LazyWrapper` object.
+     */
+    function lazyClone() {
+      var result = new LazyWrapper(this.__wrapped__);
+      result.__actions__ = copyArray(this.__actions__);
+      result.__dir__ = this.__dir__;
+      result.__filtered__ = this.__filtered__;
+      result.__iteratees__ = copyArray(this.__iteratees__);
+      result.__takeCount__ = this.__takeCount__;
+      result.__views__ = copyArray(this.__views__);
+      return result;
+    }
+
+    /**
+     * Reverses the direction of lazy iteration.
+     *
+     * @private
+     * @name reverse
+     * @memberOf LazyWrapper
+     * @returns {Object} Returns the new reversed `LazyWrapper` object.
+     */
+    function lazyReverse() {
+      if (this.__filtered__) {
+        var result = new LazyWrapper(this);
+        result.__dir__ = -1;
+        result.__filtered__ = true;
+      } else {
+        result = this.clone();
+        result.__dir__ *= -1;
+      }
+      return result;
+    }
+
+    /**
+     * Extracts the unwrapped value from its lazy wrapper.
+     *
+     * @private
+     * @name value
+     * @memberOf LazyWrapper
+     * @returns {*} Returns the unwrapped value.
+     */
+    function lazyValue() {
+      var array = this.__wrapped__.value(),
+          dir = this.__dir__,
+          isArr = isArray(array),
+          isRight = dir < 0,
+          arrLength = isArr ? array.length : 0,
+          view = getView(0, arrLength, this.__views__),
+          start = view.start,
+          end = view.end,
+          length = end - start,
+          index = isRight ? end : (start - 1),
+          iteratees = this.__iteratees__,
+          iterLength = iteratees.length,
+          resIndex = 0,
+          takeCount = nativeMin(length, this.__takeCount__);
+
+      if (!isArr || (!isRight && arrLength == length && takeCount == length)) {
+        return baseWrapperValue(array, this.__actions__);
+      }
+      var result = [];
+
+      outer:
+      while (length-- && resIndex < takeCount) {
+        index += dir;
+
+        var iterIndex = -1,
+            value = array[index];
+
+        while (++iterIndex < iterLength) {
+          var data = iteratees[iterIndex],
+              iteratee = data.iteratee,
+              type = data.type,
+              computed = iteratee(value);
+
+          if (type == LAZY_MAP_FLAG) {
+            value = computed;
+          } else if (!computed) {
+            if (type == LAZY_FILTER_FLAG) {
+              continue outer;
+            } else {
+              break outer;
+            }
+          }
+        }
+        result[resIndex++] = value;
+      }
+      return result;
+    }
+
+    // Ensure `LazyWrapper` is an instance of `baseLodash`.
+    LazyWrapper.prototype = baseCreate(baseLodash.prototype);
+    LazyWrapper.prototype.constructor = LazyWrapper;
+
+    /*------------------------------------------------------------------------*/
+
+    /**
+     * Creates a hash object.
+     *
+     * @private
+     * @constructor
+     * @param {Array} [entries] The key-value pairs to cache.
+     */
+    function Hash(entries) {
+      var index = -1,
+          length = entries == null ? 0 : entries.length;
+
+      this.clear();
+      while (++index < length) {
+        var entry = entries[index];
+        this.set(entry[0], entry[1]);
+      }
+    }
+
+    /**
+     * Removes all key-value entries from the hash.
+     *
+     * @private
+     * @name clear
+     * @memberOf Hash
+     */
+    function hashClear() {
+      this.__data__ = nativeCreate ? nativeCreate(null) : {};
+      this.size = 0;
+    }
+
+    /**
+     * Removes `key` and its value from the hash.
+     *
+     * @private
+     * @name delete
+     * @memberOf Hash
+     * @param {Object} hash The hash to modify.
+     * @param {string} key The key of the value to remove.
+     * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+     */
+    function hashDelete(key) {
+      var result = this.has(key) && delete this.__data__[key];
+      this.size -= result ? 1 : 0;
+      return result;
+    }
+
+    /**
+     * Gets the hash value for `key`.
+     *
+     * @private
+     * @name get
+     * @memberOf Hash
+     * @param {string} key The key of the value to get.
+     * @returns {*} Returns the entry value.
+     */
+    function hashGet(key) {
+      var data = this.__data__;
+      if (nativeCreate) {
+        var result = data[key];
+        return result === HASH_UNDEFINED ? undefined : result;
+      }
+      return hasOwnProperty.call(data, key) ? data[key] : undefined;
+    }
+
+    /**
+     * Checks if a hash value for `key` exists.
+     *
+     * @private
+     * @name has
+     * @memberOf Hash
+     * @param {string} key The key of the entry to check.
+     * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+     */
+    function hashHas(key) {
+      var data = this.__data__;
+      return nativeCreate ? (data[key] !== undefined) : hasOwnProperty.call(data, key);
+    }
+
+    /**
+     * Sets the hash `key` to `value`.
+     *
+     * @private
+     * @name set
+     * @memberOf Hash
+     * @param {string} key The key of the value to set.
+     * @param {*} value The value to set.
+     * @returns {Object} Returns the hash instance.
+     */
+    function hashSet(key, value) {
+      var data = this.__data__;
+      this.size += this.has(key) ? 0 : 1;
+      data[key] = (nativeCreate && value === undefined) ? HASH_UNDEFINED : value;
+      return this;
+    }
+
+    // Add methods to `Hash`.
+    Hash.prototype.clear = hashClear;
+    Hash.prototype['delete'] = hashDelete;
+    Hash.prototype.get = hashGet;
+    Hash.prototype.has = hashHas;
+    Hash.prototype.set = hashSet;
+
+    /*------------------------------------------------------------------------*/
+
+    /**
+     * Creates an list cache object.
+     *
+     * @private
+     * @constructor
+     * @param {Array} [entries] The key-value pairs to cache.
+     */
+    function ListCache(entries) {
+      var index = -1,
+          length = entries == null ? 0 : entries.length;
+
+      this.clear();
+      while (++index < length) {
+        var entry = entries[index];
+        this.set(entry[0], entry[1]);
+      }
+    }
+
+    /**
+     * Removes all key-value entries from the list cache.
+     *
+     * @private
+     * @name clear
+     * @memberOf ListCache
+     */
+    function listCacheClear() {
+      this.__data__ = [];
+      this.size = 0;
+    }
+
+    /**
+     * Removes `key` and its value from the list cache.
+     *
+     * @private
+     * @name delete
+     * @memberOf ListCache
+     * @param {string} key The key of the value to remove.
+     * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+     */
+    function listCacheDelete(key) {
+      var data = this.__data__,
+          index = assocIndexOf(data, key);
+
+      if (index < 0) {
+        return false;
+      }
+      var lastIndex = data.length - 1;
+      if (index == lastIndex) {
+        data.pop();
+      } else {
+        splice.call(data, index, 1);
+      }
+      --this.size;
+      return true;
+    }
+
+    /**
+     * Gets the list cache value for `key`.
+     *
+     * @private
+     * @name get
+     * @memberOf ListCache
+     * @param {string} key The key of the value to get.
+     * @returns {*} Returns the entry value.
+     */
+    function listCacheGet(key) {
+      var data = this.__data__,
+          index = assocIndexOf(data, key);
+
+      return index < 0 ? undefined : data[index][1];
+    }
+
+    /**
+     * Checks if a list cache value for `key` exists.
+     *
+     * @private
+     * @name has
+     * @memberOf ListCache
+     * @param {string} key The key of the entry to check.
+     * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+     */
+    function listCacheHas(key) {
+      return assocIndexOf(this.__data__, key) > -1;
+    }
+
+    /**
+     * Sets the list cache `key` to `value`.
+     *
+     * @private
+     * @name set
+     * @memberOf ListCache
+     * @param {string} key The key of the value to set.
+     * @param {*} value The value to set.
+     * @returns {Object} Returns the list cache instance.
+     */
+    function listCacheSet(key, value) {
+      var data = this.__data__,
+          index = assocIndexOf(data, key);
+
+      if (index < 0) {
+        ++this.size;
+        data.push([key, value]);
+      } else {
+        data[index][1] = value;
+      }
+      return this;
+    }
+
+    // Add methods to `ListCache`.
+    ListCache.prototype.clear = listCacheClear;
+    ListCache.prototype['delete'] = listCacheDelete;
+    ListCache.prototype.get = listCacheGet;
+    ListCache.prototype.has = listCacheHas;
+    ListCache.prototype.set = listCacheSet;
+
+    /*------------------------------------------------------------------------*/
+
+    /**
+     * Creates a map cache object to store key-value pairs.
+     *
+     * @private
+     * @constructor
+     * @param {Array} [entries] The key-value pairs to cache.
+     */
+    function MapCache(entries) {
+      var index = -1,
+          length = entries == null ? 0 : entries.length;
+
+      this.clear();
+      while (++index < length) {
+        var entry = entries[index];
+        this.set(entry[0], entry[1]);
+      }
+    }
+
+    /**
+     * Removes all key-value entries from the map.
+     *
+     * @private
+     * @name clear
+     * @memberOf MapCache
+     */
+    function mapCacheClear() {
+      this.size = 0;
+      this.__data__ = {
+        'hash': new Hash,
+        'map': new (Map || ListCache),
+        'string': new Hash
+      };
+    }
+
+    /**
+     * Removes `key` and its value from the map.
+     *
+     * @private
+     * @name delete
+     * @memberOf MapCache
+     * @param {string} key The key of the value to remove.
+     * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+     */
+    function mapCacheDelete(key) {
+      var result = getMapData(this, key)['delete'](key);
+      this.size -= result ? 1 : 0;
+      return result;
+    }
+
+    /**
+     * Gets the map value for `key`.
+     *
+     * @private
+     * @name get
+     * @memberOf MapCache
+     * @param {string} key The key of the value to get.
+     * @returns {*} Returns the entry value.
+     */
+    function mapCacheGet(key) {
+      return getMapData(this, key).get(key);
+    }
+
+    /**
+     * Checks if a map value for `key` exists.
+     *
+     * @private
+     * @name has
+     * @memberOf MapCache
+     * @param {string} key The key of the entry to check.
+     * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+     */
+    function mapCacheHas(key) {
+      return getMapData(this, key).has(key);
+    }
+
+    /**
+     * Sets the map `key` to `value`.
+     *
+     * @private
+     * @name set
+     * @memberOf MapCache
+     * @param {string} key The key of the value to set.
+     * @param {*} value The value to set.
+     * @returns {Object} Returns the map cache instance.
+     */
+    function mapCacheSet(key, value) {
+      var data = getMapData(this, key),
+          size = data.size;
+
+      data.set(key, value);
+      this.size += data.size == size ? 0 : 1;
+      return this;
+    }
+
+    // Add methods to `MapCache`.
+    MapCache.prototype.clear = mapCacheClear;
+    MapCache.prototype['delete'] = mapCacheDelete;
+    MapCache.prototype.get = mapCacheGet;
+    MapCache.prototype.has = mapCacheHas;
+    MapCache.prototype.set = mapCacheSet;
+
+    /*------------------------------------------------------------------------*/
+
+    /**
+     *
+     * Creates an array cache object to store unique values.
+     *
+     * @private
+     * @constructor
+     * @param {Array} [values] The values to cache.
+     */
+    function SetCache(values) {
+      var index = -1,
+          length = values == null ? 0 : values.length;
+
+      this.__data__ = new MapCache;
+      while (++index < length) {
+        this.add(values[index]);
+      }
+    }
+
+    /**
+     * Adds `value` to the array cache.
+     *
+     * @private
+     * @name add
+     * @memberOf SetCache
+     * @alias push
+     * @param {*} value The value to cache.
+     * @returns {Object} Returns the cache instance.
+     */
+    function setCacheAdd(value) {
+      this.__data__.set(value, HASH_UNDEFINED);
+      return this;
+    }
+
+    /**
+     * Checks if `value` is in the array cache.
+     *
+     * @private
+     * @name has
+     * @memberOf SetCache
+     * @param {*} value The value to search for.
+     * @returns {number} Returns `true` if `value` is found, else `false`.
+     */
+    function setCacheHas(value) {
+      return this.__data__.has(value);
+    }
+
+    // Add methods to `SetCache`.
+    SetCache.prototype.add = SetCache.prototype.push = setCacheAdd;
+    SetCache.prototype.has = setCacheHas;
+
+    /*------------------------------------------------------------------------*/
+
+    /**
+     * Creates a stack cache object to store key-value pairs.
+     *
+     * @private
+     * @constructor
+     * @param {Array} [entries] The key-value pairs to cache.
+     */
+    function Stack(entries) {
+      var data = this.__data__ = new ListCache(entries);
+      this.size = data.size;
+    }
+
+    /**
+     * Removes all key-value entries from the stack.
+     *
+     * @private
+     * @name clear
+     * @memberOf Stack
+     */
+    function stackClear() {
+      this.__data__ = new ListCache;
+      this.size = 0;
+    }
+
+    /**
+     * Removes `key` and its value from the stack.
+     *
+     * @private
+     * @name delete
+     * @memberOf Stack
+     * @param {string} key The key of the value to remove.
+     * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+     */
+    function stackDelete(key) {
+      var data = this.__data__,
+          result = data['delete'](key);
+
+      this.size = data.size;
+      return result;
+    }
+
+    /**
+     * Gets the stack value for `key`.
+     *
+     * @private
+     * @name get
+     * @memberOf Stack
+     * @param {string} key The key of the value to get.
+     * @returns {*} Returns the entry value.
+     */
+    function stackGet(key) {
+      return this.__data__.get(key);
+    }
+
+    /**
+     * Checks if a stack value for `key` exists.
+     *
+     * @private
+     * @name has
+     * @memberOf Stack
+     * @param {string} key The key of the entry to check.
+     * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+     */
+    function stackHas(key) {
+      return this.__data__.has(key);
+    }
+
+    /**
+     * Sets the stack `key` to `value`.
+     *
+     * @private
+     * @name set
+     * @memberOf Stack
+     * @param {string} key The key of the value to set.
+     * @param {*} value The value to set.
+     * @returns {Object} Returns the stack cache instance.
+     */
+    function stackSet(key, value) {
+      var data = this.__data__;
+      if (data instanceof ListCache) {
+        var pairs = data.__data__;
+        if (!Map || (pairs.length < LARGE_ARRAY_SIZE - 1)) {
+          pairs.push([key, value]);
+          this.size = ++data.size;
+          return this;
+        }
+        data = this.__data__ = new MapCache(pairs);
+      }
+      data.set(key, value);
+      this.size = data.size;
+      return this;
+    }
+
+    // Add methods to `Stack`.
+    Stack.prototype.clear = stackClear;
+    Stack.prototype['delete'] = stackDelete;
+    Stack.prototype.get = stackGet;
+    Stack.prototype.has = stackHas;
+    Stack.prototype.set = stackSet;
+
+    /*------------------------------------------------------------------------*/
+
+    /**
+     * Creates an array of the enumerable property names of the array-like `value`.
+     *
+     * @private
+     * @param {*} value The value to query.
+     * @param {boolean} inherited Specify returning inherited property names.
+     * @returns {Array} Returns the array of property names.
+     */
+    function arrayLikeKeys(value, inherited) {
+      var isArr = isArray(value),
+          isArg = !isArr && isArguments(value),
+          isBuff = !isArr && !isArg && isBuffer(value),
+          isType = !isArr && !isArg && !isBuff && isTypedArray(value),
+          skipIndexes = isArr || isArg || isBuff || isType,
+          result = skipIndexes ? baseTimes(value.length, String) : [],
+          length = result.length;
+
+      for (var key in value) {
+        if ((inherited || hasOwnProperty.call(value, key)) &&
+            !(skipIndexes && (
+               // Safari 9 has enumerable `arguments.length` in strict mode.
+               key == 'length' ||
+               // Node.js 0.10 has enumerable non-index properties on buffers.
+               (isBuff && (key == 'offset' || key == 'parent')) ||
+               // PhantomJS 2 has enumerable non-index properties on typed arrays.
+               (isType && (key == 'buffer' || key == 'byteLength' || key == 'byteOffset')) ||
+               // Skip index properties.
+               isIndex(key, length)
+            ))) {
+          result.push(key);
+        }
+      }
+      return result;
+    }
+
+    /**
+     * A specialized version of `_.sample` for arrays.
+     *
+     * @private
+     * @param {Array} array The array to sample.
+     * @returns {*} Returns the random element.
+     */
+    function arraySample(array) {
+      var length = array.length;
+      return length ? array[baseRandom(0, length - 1)] : undefined;
+    }
+
+    /**
+     * A specialized version of `_.sampleSize` for arrays.
+     *
+     * @private
+     * @param {Array} array The array to sample.
+     * @param {number} n The number of elements to sample.
+     * @returns {Array} Returns the random elements.
+     */
+    function arraySampleSize(array, n) {
+      return shuffleSelf(copyArray(array), baseClamp(n, 0, array.length));
+    }
+
+    /**
+     * A specialized version of `_.shuffle` for arrays.
+     *
+     * @private
+     * @param {Array} array The array to shuffle.
+     * @returns {Array} Returns the new shuffled array.
+     */
+    function arrayShuffle(array) {
+      return shuffleSelf(copyArray(array));
+    }
+
+    /**
+     * This function is like `assignValue` except that it doesn't assign
+     * `undefined` values.
+     *
+     * @private
+     * @param {Object} object The object to modify.
+     * @param {string} key The key of the property to assign.
+     * @param {*} value The value to assign.
+     */
+    function assignMergeValue(object, key, value) {
+      if ((value !== undefined && !eq(object[key], value)) ||
+          (value === undefined && !(key in object))) {
+        baseAssignValue(object, key, value);
+      }
+    }
+
+    /**
+     * Assigns `value` to `key` of `object` if the existing value is not equivalent
+     * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * for equality comparisons.
+     *
+     * @private
+     * @param {Object} object The object to modify.
+     * @param {string} key The key of the property to assign.
+     * @param {*} value The value to assign.
+     */
+    function assignValue(object, key, value) {
+      var objValue = object[key];
+      if (!(hasOwnProperty.call(object, key) && eq(objValue, value)) ||
+          (value === undefined && !(key in object))) {
+        baseAssignValue(object, key, value);
+      }
+    }
+
+    /**
+     * Gets the index at which the `key` is found in `array` of key-value pairs.
+     *
+     * @private
+     * @param {Array} array The array to inspect.
+     * @param {*} key The key to search for.
+     * @returns {number} Returns the index of the matched value, else `-1`.
+     */
+    function assocIndexOf(array, key) {
+      var length = array.length;
+      while (length--) {
+        if (eq(array[length][0], key)) {
+          return length;
+        }
+      }
+      return -1;
+    }
+
+    /**
+     * Aggregates elements of `collection` on `accumulator` with keys transformed
+     * by `iteratee` and values set by `setter`.
+     *
+     * @private
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Function} setter The function to set `accumulator` values.
+     * @param {Function} iteratee The iteratee to transform keys.
+     * @param {Object} accumulator The initial aggregated object.
+     * @returns {Function} Returns `accumulator`.
+     */
+    function baseAggregator(collection, setter, iteratee, accumulator) {
+      baseEach(collection, function(value, key, collection) {
+        setter(accumulator, value, iteratee(value), collection);
+      });
+      return accumulator;
+    }
+
+    /**
+     * The base implementation of `_.assign` without support for multiple sources
+     * or `customizer` functions.
+     *
+     * @private
+     * @param {Object} object The destination object.
+     * @param {Object} source The source object.
+     * @returns {Object} Returns `object`.
+     */
+    function baseAssign(object, source) {
+      return object && copyObject(source, keys(source), object);
+    }
+
+    /**
+     * The base implementation of `_.assignIn` without support for multiple sources
+     * or `customizer` functions.
+     *
+     * @private
+     * @param {Object} object The destination object.
+     * @param {Object} source The source object.
+     * @returns {Object} Returns `object`.
+     */
+    function baseAssignIn(object, source) {
+      return object && copyObject(source, keysIn(source), object);
+    }
+
+    /**
+     * The base implementation of `assignValue` and `assignMergeValue` without
+     * value checks.
+     *
+     * @private
+     * @param {Object} object The object to modify.
+     * @param {string} key The key of the property to assign.
+     * @param {*} value The value to assign.
+     */
+    function baseAssignValue(object, key, value) {
+      if (key == '__proto__' && defineProperty) {
+        defineProperty(object, key, {
+          'configurable': true,
+          'enumerable': true,
+          'value': value,
+          'writable': true
+        });
+      } else {
+        object[key] = value;
+      }
+    }
+
+    /**
+     * The base implementation of `_.at` without support for individual paths.
+     *
+     * @private
+     * @param {Object} object The object to iterate over.
+     * @param {string[]} paths The property paths to pick.
+     * @returns {Array} Returns the picked elements.
+     */
+    function baseAt(object, paths) {
+      var index = -1,
+          length = paths.length,
+          result = Array(length),
+          skip = object == null;
+
+      while (++index < length) {
+        result[index] = skip ? undefined : get(object, paths[index]);
+      }
+      return result;
+    }
+
+    /**
+     * The base implementation of `_.clamp` which doesn't coerce arguments.
+     *
+     * @private
+     * @param {number} number The number to clamp.
+     * @param {number} [lower] The lower bound.
+     * @param {number} upper The upper bound.
+     * @returns {number} Returns the clamped number.
+     */
+    function baseClamp(number, lower, upper) {
+      if (number === number) {
+        if (upper !== undefined) {
+          number = number <= upper ? number : upper;
+        }
+        if (lower !== undefined) {
+          number = number >= lower ? number : lower;
+        }
+      }
+      return number;
+    }
+
+    /**
+     * The base implementation of `_.clone` and `_.cloneDeep` which tracks
+     * traversed objects.
+     *
+     * @private
+     * @param {*} value The value to clone.
+     * @param {boolean} bitmask The bitmask flags.
+     *  1 - Deep clone
+     *  2 - Flatten inherited properties
+     *  4 - Clone symbols
+     * @param {Function} [customizer] The function to customize cloning.
+     * @param {string} [key] The key of `value`.
+     * @param {Object} [object] The parent object of `value`.
+     * @param {Object} [stack] Tracks traversed objects and their clone counterparts.
+     * @returns {*} Returns the cloned value.
+     */
+    function baseClone(value, bitmask, customizer, key, object, stack) {
+      var result,
+          isDeep = bitmask & CLONE_DEEP_FLAG,
+          isFlat = bitmask & CLONE_FLAT_FLAG,
+          isFull = bitmask & CLONE_SYMBOLS_FLAG;
+
+      if (customizer) {
+        result = object ? customizer(value, key, object, stack) : customizer(value);
+      }
+      if (result !== undefined) {
+        return result;
+      }
+      if (!isObject(value)) {
+        return value;
+      }
+      var isArr = isArray(value);
+      if (isArr) {
+        result = initCloneArray(value);
+        if (!isDeep) {
+          return copyArray(value, result);
+        }
+      } else {
+        var tag = getTag(value),
+            isFunc = tag == funcTag || tag == genTag;
+
+        if (isBuffer(value)) {
+          return cloneBuffer(value, isDeep);
+        }
+        if (tag == objectTag || tag == argsTag || (isFunc && !object)) {
+          result = (isFlat || isFunc) ? {} : initCloneObject(value);
+          if (!isDeep) {
+            return isFlat
+              ? copySymbolsIn(value, baseAssignIn(result, value))
+              : copySymbols(value, baseAssign(result, value));
+          }
+        } else {
+          if (!cloneableTags[tag]) {
+            return object ? value : {};
+          }
+          result = initCloneByTag(value, tag, isDeep);
+        }
+      }
+      // Check for circular references and return its corresponding clone.
+      stack || (stack = new Stack);
+      var stacked = stack.get(value);
+      if (stacked) {
+        return stacked;
+      }
+      stack.set(value, result);
+
+      if (isSet(value)) {
+        value.forEach(function(subValue) {
+          result.add(baseClone(subValue, bitmask, customizer, subValue, value, stack));
+        });
+      } else if (isMap(value)) {
+        value.forEach(function(subValue, key) {
+          result.set(key, baseClone(subValue, bitmask, customizer, key, value, stack));
+        });
+      }
+
+      var keysFunc = isFull
+        ? (isFlat ? getAllKeysIn : getAllKeys)
+        : (isFlat ? keysIn : keys);
+
+      var props = isArr ? undefined : keysFunc(value);
+      arrayEach(props || value, function(subValue, key) {
+        if (props) {
+          key = subValue;
+          subValue = value[key];
+        }
+        // Recursively populate clone (susceptible to call stack limits).
+        assignValue(result, key, baseClone(subValue, bitmask, customizer, key, value, stack));
+      });
+      return result;
+    }
+
+    /**
+     * The base implementation of `_.conforms` which doesn't clone `source`.
+     *
+     * @private
+     * @param {Object} source The object of property predicates to conform to.
+     * @returns {Function} Returns the new spec function.
+     */
+    function baseConforms(source) {
+      var props = keys(source);
+      return function(object) {
+        return baseConformsTo(object, source, props);
+      };
+    }
+
+    /**
+     * The base implementation of `_.conformsTo` which accepts `props` to check.
+     *
+     * @private
+     * @param {Object} object The object to inspect.
+     * @param {Object} source The object of property predicates to conform to.
+     * @returns {boolean} Returns `true` if `object` conforms, else `false`.
+     */
+    function baseConformsTo(object, source, props) {
+      var length = props.length;
+      if (object == null) {
+        return !length;
+      }
+      object = Object(object);
+      while (length--) {
+        var key = props[length],
+            predicate = source[key],
+            value = object[key];
+
+        if ((value === undefined && !(key in object)) || !predicate(value)) {
+          return false;
+        }
+      }
+      return true;
+    }
+
+    /**
+     * The base implementation of `_.delay` and `_.defer` which accepts `args`
+     * to provide to `func`.
+     *
+     * @private
+     * @param {Function} func The function to delay.
+     * @param {number} wait The number of milliseconds to delay invocation.
+     * @param {Array} args The arguments to provide to `func`.
+     * @returns {number|Object} Returns the timer id or timeout object.
+     */
+    function baseDelay(func, wait, args) {
+      if (typeof func != 'function') {
+        throw new TypeError(FUNC_ERROR_TEXT);
+      }
+      return setTimeout(function() { func.apply(undefined, args); }, wait);
+    }
+
+    /**
+     * The base implementation of methods like `_.difference` without support
+     * for excluding multiple arrays or iteratee shorthands.
+     *
+     * @private
+     * @param {Array} array The array to inspect.
+     * @param {Array} values The values to exclude.
+     * @param {Function} [iteratee] The iteratee invoked per element.
+     * @param {Function} [comparator] The comparator invoked per element.
+     * @returns {Array} Returns the new array of filtered values.
+     */
+    function baseDifference(array, values, iteratee, comparator) {
+      var index = -1,
+          includes = arrayIncludes,
+          isCommon = true,
+          length = array.length,
+          result = [],
+          valuesLength = values.length;
+
+      if (!length) {
+        return result;
+      }
+      if (iteratee) {
+        values = arrayMap(values, baseUnary(iteratee));
+      }
+      if (comparator) {
+        includes = arrayIncludesWith;
+        isCommon = false;
+      }
+      else if (values.length >= LARGE_ARRAY_SIZE) {
+        includes = cacheHas;
+        isCommon = false;
+        values = new SetCache(values);
+      }
+      outer:
+      while (++index < length) {
+        var value = array[index],
+            computed = iteratee == null ? value : iteratee(value);
+
+        value = (comparator || value !== 0) ? value : 0;
+        if (isCommon && computed === computed) {
+          var valuesIndex = valuesLength;
+          while (valuesIndex--) {
+            if (values[valuesIndex] === computed) {
+              continue outer;
+            }
+          }
+          result.push(value);
+        }
+        else if (!includes(values, computed, comparator)) {
+          result.push(value);
+        }
+      }
+      return result;
+    }
+
+    /**
+     * The base implementation of `_.forEach` without support for iteratee shorthands.
+     *
+     * @private
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Function} iteratee The function invoked per iteration.
+     * @returns {Array|Object} Returns `collection`.
+     */
+    var baseEach = createBaseEach(baseForOwn);
+
+    /**
+     * The base implementation of `_.forEachRight` without support for iteratee shorthands.
+     *
+     * @private
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Function} iteratee The function invoked per iteration.
+     * @returns {Array|Object} Returns `collection`.
+     */
+    var baseEachRight = createBaseEach(baseForOwnRight, true);
+
+    /**
+     * The base implementation of `_.every` without support for iteratee shorthands.
+     *
+     * @private
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Function} predicate The function invoked per iteration.
+     * @returns {boolean} Returns `true` if all elements pass the predicate check,
+     *  else `false`
+     */
+    function baseEvery(collection, predicate) {
+      var result = true;
+      baseEach(collection, function(value, index, collection) {
+        result = !!predicate(value, index, collection);
+        return result;
+      });
+      return result;
+    }
+
+    /**
+     * The base implementation of methods like `_.max` and `_.min` which accepts a
+     * `comparator` to determine the extremum value.
+     *
+     * @private
+     * @param {Array} array The array to iterate over.
+     * @param {Function} iteratee The iteratee invoked per iteration.
+     * @param {Function} comparator The comparator used to compare values.
+     * @returns {*} Returns the extremum value.
+     */
+    function baseExtremum(array, iteratee, comparator) {
+      var index = -1,
+          length = array.length;
+
+      while (++index < length) {
+        var value = array[index],
+            current = iteratee(value);
+
+        if (current != null && (computed === undefined
+              ? (current === current && !isSymbol(current))
+              : comparator(current, computed)
+            )) {
+          var computed = current,
+              result = value;
+        }
+      }
+      return result;
+    }
+
+    /**
+     * The base implementation of `_.fill` without an iteratee call guard.
+     *
+     * @private
+     * @param {Array} array The array to fill.
+     * @param {*} value The value to fill `array` with.
+     * @param {number} [start=0] The start position.
+     * @param {number} [end=array.length] The end position.
+     * @returns {Array} Returns `array`.
+     */
+    function baseFill(array, value, start, end) {
+      var length = array.length;
+
+      start = toInteger(start);
+      if (start < 0) {
+        start = -start > length ? 0 : (length + start);
+      }
+      end = (end === undefined || end > length) ? length : toInteger(end);
+      if (end < 0) {
+        end += length;
+      }
+      end = start > end ? 0 : toLength(end);
+      while (start < end) {
+        array[start++] = value;
+      }
+      return array;
+    }
+
+    /**
+     * The base implementation of `_.filter` without support for iteratee shorthands.
+     *
+     * @private
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Function} predicate The function invoked per iteration.
+     * @returns {Array} Returns the new filtered array.
+     */
+    function baseFilter(collection, predicate) {
+      var result = [];
+      baseEach(collection, function(value, index, collection) {
+        if (predicate(value, index, collection)) {
+          result.push(value);
+        }
+      });
+      return result;
+    }
+
+    /**
+     * The base implementation of `_.flatten` with support for restricting flattening.
+     *
+     * @private
+     * @param {Array} array The array to flatten.
+     * @param {number} depth The maximum recursion depth.
+     * @param {boolean} [predicate=isFlattenable] The function invoked per iteration.
+     * @param {boolean} [isStrict] Restrict to values that pass `predicate` checks.
+     * @param {Array} [result=[]] The initial result value.
+     * @returns {Array} Returns the new flattened array.
+     */
+    function baseFlatten(array, depth, predicate, isStrict, result) {
+      var index = -1,
+          length = array.length;
+
+      predicate || (predicate = isFlattenable);
+      result || (result = []);
+
+      while (++index < length) {
+        var value = array[index];
+        if (depth > 0 && predicate(value)) {
+          if (depth > 1) {
+            // Recursively flatten arrays (susceptible to call stack limits).
+            baseFlatten(value, depth - 1, predicate, isStrict, result);
+          } else {
+            arrayPush(result, value);
+          }
+        } else if (!isStrict) {
+          result[result.length] = value;
+        }
+      }
+      return result;
+    }
+
+    /**
+     * The base implementation of `baseForOwn` which iterates over `object`
+     * properties returned by `keysFunc` and invokes `iteratee` for each property.
+     * Iteratee functions may exit iteration early by explicitly returning `false`.
+     *
+     * @private
+     * @param {Object} object The object to iterate over.
+     * @param {Function} iteratee The function invoked per iteration.
+     * @param {Function} keysFunc The function to get the keys of `object`.
+     * @returns {Object} Returns `object`.
+     */
+    var baseFor = createBaseFor();
+
+    /**
+     * This function is like `baseFor` except that it iterates over properties
+     * in the opposite order.
+     *
+     * @private
+     * @param {Object} object The object to iterate over.
+     * @param {Function} iteratee The function invoked per iteration.
+     * @param {Function} keysFunc The function to get the keys of `object`.
+     * @returns {Object} Returns `object`.
+     */
+    var baseForRight = createBaseFor(true);
+
+    /**
+     * The base implementation of `_.forOwn` without support for iteratee shorthands.
+     *
+     * @private
+     * @param {Object} object The object to iterate over.
+     * @param {Function} iteratee The function invoked per iteration.
+     * @returns {Object} Returns `object`.
+     */
+    function baseForOwn(object, iteratee) {
+      return object && baseFor(object, iteratee, keys);
+    }
+
+    /**
+     * The base implementation of `_.forOwnRight` without support for iteratee shorthands.
+     *
+     * @private
+     * @param {Object} object The object to iterate over.
+     * @param {Function} iteratee The function invoked per iteration.
+     * @returns {Object} Returns `object`.
+     */
+    function baseForOwnRight(object, iteratee) {
+      return object && baseForRight(object, iteratee, keys);
+    }
+
+    /**
+     * The base implementation of `_.functions` which creates an array of
+     * `object` function property names filtered from `props`.
+     *
+     * @private
+     * @param {Object} object The object to inspect.
+     * @param {Array} props The property names to filter.
+     * @returns {Array} Returns the function names.
+     */
+    function baseFunctions(object, props) {
+      return arrayFilter(props, function(key) {
+        return isFunction(object[key]);
+      });
+    }
+
+    /**
+     * The base implementation of `_.get` without support for default values.
+     *
+     * @private
+     * @param {Object} object The object to query.
+     * @param {Array|string} path The path of the property to get.
+     * @returns {*} Returns the resolved value.
+     */
+    function baseGet(object, path) {
+      path = castPath(path, object);
+
+      var index = 0,
+          length = path.length;
+
+      while (object != null && index < length) {
+        object = object[toKey(path[index++])];
+      }
+      return (index && index == length) ? object : undefined;
+    }
+
+    /**
+     * The base implementation of `getAllKeys` and `getAllKeysIn` which uses
+     * `keysFunc` and `symbolsFunc` to get the enumerable property names and
+     * symbols of `object`.
+     *
+     * @private
+     * @param {Object} object The object to query.
+     * @param {Function} keysFunc The function to get the keys of `object`.
+     * @param {Function} symbolsFunc The function to get the symbols of `object`.
+     * @returns {Array} Returns the array of property names and symbols.
+     */
+    function baseGetAllKeys(object, keysFunc, symbolsFunc) {
+      var result = keysFunc(object);
+      return isArray(object) ? result : arrayPush(result, symbolsFunc(object));
+    }
+
+    /**
+     * The base implementation of `getTag` without fallbacks for buggy environments.
+     *
+     * @private
+     * @param {*} value The value to query.
+     * @returns {string} Returns the `toStringTag`.
+     */
+    function baseGetTag(value) {
+      if (value == null) {
+        return value === undefined ? undefinedTag : nullTag;
+      }
+      return (symToStringTag && symToStringTag in Object(value))
+        ? getRawTag(value)
+        : objectToString(value);
+    }
+
+    /**
+     * The base implementation of `_.gt` which doesn't coerce arguments.
+     *
+     * @private
+     * @param {*} value The value to compare.
+     * @param {*} other The other value to compare.
+     * @returns {boolean} Returns `true` if `value` is greater than `other`,
+     *  else `false`.
+     */
+    function baseGt(value, other) {
+      return value > other;
+    }
+
+    /**
+     * The base implementation of `_.has` without support for deep paths.
+     *
+     * @private
+     * @param {Object} [object] The object to query.
+     * @param {Array|string} key The key to check.
+     * @returns {boolean} Returns `true` if `key` exists, else `false`.
+     */
+    function baseHas(object, key) {
+      return object != null && hasOwnProperty.call(object, key);
+    }
+
+    /**
+     * The base implementation of `_.hasIn` without support for deep paths.
+     *
+     * @private
+     * @param {Object} [object] The object to query.
+     * @param {Array|string} key The key to check.
+     * @returns {boolean} Returns `true` if `key` exists, else `false`.
+     */
+    function baseHasIn(object, key) {
+      return object != null && key in Object(object);
+    }
+
+    /**
+     * The base implementation of `_.inRange` which doesn't coerce arguments.
+     *
+     * @private
+     * @param {number} number The number to check.
+     * @param {number} start The start of the range.
+     * @param {number} end The end of the range.
+     * @returns {boolean} Returns `true` if `number` is in the range, else `false`.
+     */
+    function baseInRange(number, start, end) {
+      return number >= nativeMin(start, end) && number < nativeMax(start, end);
+    }
+
+    /**
+     * The base implementation of methods like `_.intersection`, without support
+     * for iteratee shorthands, that accepts an array of arrays to inspect.
+     *
+     * @private
+     * @param {Array} arrays The arrays to inspect.
+     * @param {Function} [iteratee] The iteratee invoked per element.
+     * @param {Function} [comparator] The comparator invoked per element.
+     * @returns {Array} Returns the new array of shared values.
+     */
+    function baseIntersection(arrays, iteratee, comparator) {
+      var includes = comparator ? arrayIncludesWith : arrayIncludes,
+          length = arrays[0].length,
+          othLength = arrays.length,
+          othIndex = othLength,
+          caches = Array(othLength),
+          maxLength = Infinity,
+          result = [];
+
+      while (othIndex--) {
+        var array = arrays[othIndex];
+        if (othIndex && iteratee) {
+          array = arrayMap(array, baseUnary(iteratee));
+        }
+        maxLength = nativeMin(array.length, maxLength);
+        caches[othIndex] = !comparator && (iteratee || (length >= 120 && array.length >= 120))
+          ? new SetCache(othIndex && array)
+          : undefined;
+      }
+      array = arrays[0];
+
+      var index = -1,
+          seen = caches[0];
+
+      outer:
+      while (++index < length && result.length < maxLength) {
+        var value = array[index],
+            computed = iteratee ? iteratee(value) : value;
+
+        value = (comparator || value !== 0) ? value : 0;
+        if (!(seen
+              ? cacheHas(seen, computed)
+              : includes(result, computed, comparator)
+            )) {
+          othIndex = othLength;
+          while (--othIndex) {
+            var cache = caches[othIndex];
+            if (!(cache
+                  ? cacheHas(cache, computed)
+                  : includes(arrays[othIndex], computed, comparator))
+                ) {
+              continue outer;
+            }
+          }
+          if (seen) {
+            seen.push(computed);
+          }
+          result.push(value);
+        }
+      }
+      return result;
+    }
+
+    /**
+     * The base implementation of `_.invert` and `_.invertBy` which inverts
+     * `object` with values transformed by `iteratee` and set by `setter`.
+     *
+     * @private
+     * @param {Object} object The object to iterate over.
+     * @param {Function} setter The function to set `accumulator` values.
+     * @param {Function} iteratee The iteratee to transform values.
+     * @param {Object} accumulator The initial inverted object.
+     * @returns {Function} Returns `accumulator`.
+     */
+    function baseInverter(object, setter, iteratee, accumulator) {
+      baseForOwn(object, function(value, key, object) {
+        setter(accumulator, iteratee(value), key, object);
+      });
+      return accumulator;
+    }
+
+    /**
+     * The base implementation of `_.invoke` without support for individual
+     * method arguments.
+     *
+     * @private
+     * @param {Object} object The object to query.
+     * @param {Array|string} path The path of the method to invoke.
+     * @param {Array} args The arguments to invoke the method with.
+     * @returns {*} Returns the result of the invoked method.
+     */
+    function baseInvoke(object, path, args) {
+      path = castPath(path, object);
+      object = parent(object, path);
+      var func = object == null ? object : object[toKey(last(path))];
+      return func == null ? undefined : apply(func, object, args);
+    }
+
+    /**
+     * The base implementation of `_.isArguments`.
+     *
+     * @private
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is an `arguments` object,
+     */
+    function baseIsArguments(value) {
+      return isObjectLike(value) && baseGetTag(value) == argsTag;
+    }
+
+    /**
+     * The base implementation of `_.isArrayBuffer` without Node.js optimizations.
+     *
+     * @private
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is an array buffer, else `false`.
+     */
+    function baseIsArrayBuffer(value) {
+      return isObjectLike(value) && baseGetTag(value) == arrayBufferTag;
+    }
+
+    /**
+     * The base implementation of `_.isDate` without Node.js optimizations.
+     *
+     * @private
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a date object, else `false`.
+     */
+    function baseIsDate(value) {
+      return isObjectLike(value) && baseGetTag(value) == dateTag;
+    }
+
+    /**
+     * The base implementation of `_.isEqual` which supports partial comparisons
+     * and tracks traversed objects.
+     *
+     * @private
+     * @param {*} value The value to compare.
+     * @param {*} other The other value to compare.
+     * @param {boolean} bitmask The bitmask flags.
+     *  1 - Unordered comparison
+     *  2 - Partial comparison
+     * @param {Function} [customizer] The function to customize comparisons.
+     * @param {Object} [stack] Tracks traversed `value` and `other` objects.
+     * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+     */
+    function baseIsEqual(value, other, bitmask, customizer, stack) {
+      if (value === other) {
+        return true;
+      }
+      if (value == null || other == null || (!isObjectLike(value) && !isObjectLike(other))) {
+        return value !== value && other !== other;
+      }
+      return baseIsEqualDeep(value, other, bitmask, customizer, baseIsEqual, stack);
+    }
+
+    /**
+     * A specialized version of `baseIsEqual` for arrays and objects which performs
+     * deep comparisons and tracks traversed objects enabling objects with circular
+     * references to be compared.
+     *
+     * @private
+     * @param {Object} object The object to compare.
+     * @param {Object} other The other object to compare.
+     * @param {number} bitmask The bitmask flags. See `baseIsEqual` for more details.
+     * @param {Function} customizer The function to customize comparisons.
+     * @param {Function} equalFunc The function to determine equivalents of values.
+     * @param {Object} [stack] Tracks traversed `object` and `other` objects.
+     * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
+     */
+    function baseIsEqualDeep(object, other, bitmask, customizer, equalFunc, stack) {
+      var objIsArr = isArray(object),
+          othIsArr = isArray(other),
+          objTag = objIsArr ? arrayTag : getTag(object),
+          othTag = othIsArr ? arrayTag : getTag(other);
+
+      objTag = objTag == argsTag ? objectTag : objTag;
+      othTag = othTag == argsTag ? objectTag : othTag;
+
+      var objIsObj = objTag == objectTag,
+          othIsObj = othTag == objectTag,
+          isSameTag = objTag == othTag;
+
+      if (isSameTag && isBuffer(object)) {
+        if (!isBuffer(other)) {
+          return false;
+        }
+        objIsArr = true;
+        objIsObj = false;
+      }
+      if (isSameTag && !objIsObj) {
+        stack || (stack = new Stack);
+        return (objIsArr || isTypedArray(object))
+          ? equalArrays(object, other, bitmask, customizer, equalFunc, stack)
+          : equalByTag(object, other, objTag, bitmask, customizer, equalFunc, stack);
+      }
+      if (!(bitmask & COMPARE_PARTIAL_FLAG)) {
+        var objIsWrapped = objIsObj && hasOwnProperty.call(object, '__wrapped__'),
+            othIsWrapped = othIsObj && hasOwnProperty.call(other, '__wrapped__');
+
+        if (objIsWrapped || othIsWrapped) {
+          var objUnwrapped = objIsWrapped ? object.value() : object,
+              othUnwrapped = othIsWrapped ? other.value() : other;
+
+          stack || (stack = new Stack);
+          return equalFunc(objUnwrapped, othUnwrapped, bitmask, customizer, stack);
+        }
+      }
+      if (!isSameTag) {
+        return false;
+      }
+      stack || (stack = new Stack);
+      return equalObjects(object, other, bitmask, customizer, equalFunc, stack);
+    }
+
+    /**
+     * The base implementation of `_.isMap` without Node.js optimizations.
+     *
+     * @private
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a map, else `false`.
+     */
+    function baseIsMap(value) {
+      return isObjectLike(value) && getTag(value) == mapTag;
+    }
+
+    /**
+     * The base implementation of `_.isMatch` without support for iteratee shorthands.
+     *
+     * @private
+     * @param {Object} object The object to inspect.
+     * @param {Object} source The object of property values to match.
+     * @param {Array} matchData The property names, values, and compare flags to match.
+     * @param {Function} [customizer] The function to customize comparisons.
+     * @returns {boolean} Returns `true` if `object` is a match, else `false`.
+     */
+    function baseIsMatch(object, source, matchData, customizer) {
+      var index = matchData.length,
+          length = index,
+          noCustomizer = !customizer;
+
+      if (object == null) {
+        return !length;
+      }
+      object = Object(object);
+      while (index--) {
+        var data = matchData[index];
+        if ((noCustomizer && data[2])
+              ? data[1] !== object[data[0]]
+              : !(data[0] in object)
+            ) {
+          return false;
+        }
+      }
+      while (++index < length) {
+        data = matchData[index];
+        var key = data[0],
+            objValue = object[key],
+            srcValue = data[1];
+
+        if (noCustomizer && data[2]) {
+          if (objValue === undefined && !(key in object)) {
+            return false;
+          }
+        } else {
+          var stack = new Stack;
+          if (customizer) {
+            var result = customizer(objValue, srcValue, key, object, source, stack);
+          }
+          if (!(result === undefined
+                ? baseIsEqual(srcValue, objValue, COMPARE_PARTIAL_FLAG | COMPARE_UNORDERED_FLAG, customizer, stack)
+                : result
+              )) {
+            return false;
+          }
+        }
+      }
+      return true;
+    }
+
+    /**
+     * The base implementation of `_.isNative` without bad shim checks.
+     *
+     * @private
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a native function,
+     *  else `false`.
+     */
+    function baseIsNative(value) {
+      if (!isObject(value) || isMasked(value)) {
+        return false;
+      }
+      var pattern = isFunction(value) ? reIsNative : reIsHostCtor;
+      return pattern.test(toSource(value));
+    }
+
+    /**
+     * The base implementation of `_.isRegExp` without Node.js optimizations.
+     *
+     * @private
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a regexp, else `false`.
+     */
+    function baseIsRegExp(value) {
+      return isObjectLike(value) && baseGetTag(value) == regexpTag;
+    }
+
+    /**
+     * The base implementation of `_.isSet` without Node.js optimizations.
+     *
+     * @private
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a set, else `false`.
+     */
+    function baseIsSet(value) {
+      return isObjectLike(value) && getTag(value) == setTag;
+    }
+
+    /**
+     * The base implementation of `_.isTypedArray` without Node.js optimizations.
+     *
+     * @private
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a typed array, else `false`.
+     */
+    function baseIsTypedArray(value) {
+      return isObjectLike(value) &&
+        isLength(value.length) && !!typedArrayTags[baseGetTag(value)];
+    }
+
+    /**
+     * The base implementation of `_.iteratee`.
+     *
+     * @private
+     * @param {*} [value=_.identity] The value to convert to an iteratee.
+     * @returns {Function} Returns the iteratee.
+     */
+    function baseIteratee(value) {
+      // Don't store the `typeof` result in a variable to avoid a JIT bug in Safari 9.
+      // See https://bugs.webkit.org/show_bug.cgi?id=156034 for more details.
+      if (typeof value == 'function') {
+        return value;
+      }
+      if (value == null) {
+        return identity;
+      }
+      if (typeof value == 'object') {
+        return isArray(value)
+          ? baseMatchesProperty(value[0], value[1])
+          : baseMatches(value);
+      }
+      return property(value);
+    }
+
+    /**
+     * The base implementation of `_.keys` which doesn't treat sparse arrays as dense.
+     *
+     * @private
+     * @param {Object} object The object to query.
+     * @returns {Array} Returns the array of property names.
+     */
+    function baseKeys(object) {
+      if (!isPrototype(object)) {
+        return nativeKeys(object);
+      }
+      var result = [];
+      for (var key in Object(object)) {
+        if (hasOwnProperty.call(object, key) && key != 'constructor') {
+          result.push(key);
+        }
+      }
+      return result;
+    }
+
+    /**
+     * The base implementation of `_.keysIn` which doesn't treat sparse arrays as dense.
+     *
+     * @private
+     * @param {Object} object The object to query.
+     * @returns {Array} Returns the array of property names.
+     */
+    function baseKeysIn(object) {
+      if (!isObject(object)) {
+        return nativeKeysIn(object);
+      }
+      var isProto = isPrototype(object),
+          result = [];
+
+      for (var key in object) {
+        if (!(key == 'constructor' && (isProto || !hasOwnProperty.call(object, key)))) {
+          result.push(key);
+        }
+      }
+      return result;
+    }
+
+    /**
+     * The base implementation of `_.lt` which doesn't coerce arguments.
+     *
+     * @private
+     * @param {*} value The value to compare.
+     * @param {*} other The other value to compare.
+     * @returns {boolean} Returns `true` if `value` is less than `other`,
+     *  else `false`.
+     */
+    function baseLt(value, other) {
+      return value < other;
+    }
+
+    /**
+     * The base implementation of `_.map` without support for iteratee shorthands.
+     *
+     * @private
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Function} iteratee The function invoked per iteration.
+     * @returns {Array} Returns the new mapped array.
+     */
+    function baseMap(collection, iteratee) {
+      var index = -1,
+          result = isArrayLike(collection) ? Array(collection.length) : [];
+
+      baseEach(collection, function(value, key, collection) {
+        result[++index] = iteratee(value, key, collection);
+      });
+      return result;
+    }
+
+    /**
+     * The base implementation of `_.matches` which doesn't clone `source`.
+     *
+     * @private
+     * @param {Object} source The object of property values to match.
+     * @returns {Function} Returns the new spec function.
+     */
+    function baseMatches(source) {
+      var matchData = getMatchData(source);
+      if (matchData.length == 1 && matchData[0][2]) {
+        return matchesStrictComparable(matchData[0][0], matchData[0][1]);
+      }
+      return function(object) {
+        return object === source || baseIsMatch(object, source, matchData);
+      };
+    }
+
+    /**
+     * The base implementation of `_.matchesProperty` which doesn't clone `srcValue`.
+     *
+     * @private
+     * @param {string} path The path of the property to get.
+     * @param {*} srcValue The value to match.
+     * @returns {Function} Returns the new spec function.
+     */
+    function baseMatchesProperty(path, srcValue) {
+      if (isKey(path) && isStrictComparable(srcValue)) {
+        return matchesStrictComparable(toKey(path), srcValue);
+      }
+      return function(object) {
+        var objValue = get(object, path);
+        return (objValue === undefined && objValue === srcValue)
+          ? hasIn(object, path)
+          : baseIsEqual(srcValue, objValue, COMPARE_PARTIAL_FLAG | COMPARE_UNORDERED_FLAG);
+      };
+    }
+
+    /**
+     * The base implementation of `_.merge` without support for multiple sources.
+     *
+     * @private
+     * @param {Object} object The destination object.
+     * @param {Object} source The source object.
+     * @param {number} srcIndex The index of `source`.
+     * @param {Function} [customizer] The function to customize merged values.
+     * @param {Object} [stack] Tracks traversed source values and their merged
+     *  counterparts.
+     */
+    function baseMerge(object, source, srcIndex, customizer, stack) {
+      if (object === source) {
+        return;
+      }
+      baseFor(source, function(srcValue, key) {
+        stack || (stack = new Stack);
+        if (isObject(srcValue)) {
+          baseMergeDeep(object, source, key, srcIndex, baseMerge, customizer, stack);
+        }
+        else {
+          var newValue = customizer
+            ? customizer(safeGet(object, key), srcValue, (key + ''), object, source, stack)
+            : undefined;
+
+          if (newValue === undefined) {
+            newValue = srcValue;
+          }
+          assignMergeValue(object, key, newValue);
+        }
+      }, keysIn);
+    }
+
+    /**
+     * A specialized version of `baseMerge` for arrays and objects which performs
+     * deep merges and tracks traversed objects enabling objects with circular
+     * references to be merged.
+     *
+     * @private
+     * @param {Object} object The destination object.
+     * @param {Object} source The source object.
+     * @param {string} key The key of the value to merge.
+     * @param {number} srcIndex The index of `source`.
+     * @param {Function} mergeFunc The function to merge values.
+     * @param {Function} [customizer] The function to customize assigned values.
+     * @param {Object} [stack] Tracks traversed source values and their merged
+     *  counterparts.
+     */
+    function baseMergeDeep(object, source, key, srcIndex, mergeFunc, customizer, stack) {
+      var objValue = safeGet(object, key),
+          srcValue = safeGet(source, key),
+          stacked = stack.get(srcValue);
+
+      if (stacked) {
+        assignMergeValue(object, key, stacked);
+        return;
+      }
+      var newValue = customizer
+        ? customizer(objValue, srcValue, (key + ''), object, source, stack)
+        : undefined;
+
+      var isCommon = newValue === undefined;
+
+      if (isCommon) {
+        var isArr = isArray(srcValue),
+            isBuff = !isArr && isBuffer(srcValue),
+            isTyped = !isArr && !isBuff && isTypedArray(srcValue);
+
+        newValue = srcValue;
+        if (isArr || isBuff || isTyped) {
+          if (isArray(objValue)) {
+            newValue = objValue;
+          }
+          else if (isArrayLikeObject(objValue)) {
+            newValue = copyArray(objValue);
+          }
+          else if (isBuff) {
+            isCommon = false;
+            newValue = cloneBuffer(srcValue, true);
+          }
+          else if (isTyped) {
+            isCommon = false;
+            newValue = cloneTypedArray(srcValue, true);
+          }
+          else {
+            newValue = [];
+          }
+        }
+        else if (isPlainObject(srcValue) || isArguments(srcValue)) {
+          newValue = objValue;
+          if (isArguments(objValue)) {
+            newValue = toPlainObject(objValue);
+          }
+          else if (!isObject(objValue) || isFunction(objValue)) {
+            newValue = initCloneObject(srcValue);
+          }
+        }
+        else {
+          isCommon = false;
+        }
+      }
+      if (isCommon) {
+        // Recursively merge objects and arrays (susceptible to call stack limits).
+        stack.set(srcValue, newValue);
+        mergeFunc(newValue, srcValue, srcIndex, customizer, stack);
+        stack['delete'](srcValue);
+      }
+      assignMergeValue(object, key, newValue);
+    }
+
+    /**
+     * The base implementation of `_.nth` which doesn't coerce arguments.
+     *
+     * @private
+     * @param {Array} array The array to query.
+     * @param {number} n The index of the element to return.
+     * @returns {*} Returns the nth element of `array`.
+     */
+    function baseNth(array, n) {
+      var length = array.length;
+      if (!length) {
+        return;
+      }
+      n += n < 0 ? length : 0;
+      return isIndex(n, length) ? array[n] : undefined;
+    }
+
+    /**
+     * The base implementation of `_.orderBy` without param guards.
+     *
+     * @private
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Function[]|Object[]|string[]} iteratees The iteratees to sort by.
+     * @param {string[]} orders The sort orders of `iteratees`.
+     * @returns {Array} Returns the new sorted array.
+     */
+    function baseOrderBy(collection, iteratees, orders) {
+      if (iteratees.length) {
+        iteratees = arrayMap(iteratees, function(iteratee) {
+          if (isArray(iteratee)) {
+            return function(value) {
+              return baseGet(value, iteratee.length === 1 ? iteratee[0] : iteratee);
+            }
+          }
+          return iteratee;
+        });
+      } else {
+        iteratees = [identity];
+      }
+
+      var index = -1;
+      iteratees = arrayMap(iteratees, baseUnary(getIteratee()));
+
+      var result = baseMap(collection, function(value, key, collection) {
+        var criteria = arrayMap(iteratees, function(iteratee) {
+          return iteratee(value);
+        });
+        return { 'criteria': criteria, 'index': ++index, 'value': value };
+      });
+
+      return baseSortBy(result, function(object, other) {
+        return compareMultiple(object, other, orders);
+      });
+    }
+
+    /**
+     * The base implementation of `_.pick` without support for individual
+     * property identifiers.
+     *
+     * @private
+     * @param {Object} object The source object.
+     * @param {string[]} paths The property paths to pick.
+     * @returns {Object} Returns the new object.
+     */
+    function basePick(object, paths) {
+      return basePickBy(object, paths, function(value, path) {
+        return hasIn(object, path);
+      });
+    }
+
+    /**
+     * The base implementation of  `_.pickBy` without support for iteratee shorthands.
+     *
+     * @private
+     * @param {Object} object The source object.
+     * @param {string[]} paths The property paths to pick.
+     * @param {Function} predicate The function invoked per property.
+     * @returns {Object} Returns the new object.
+     */
+    function basePickBy(object, paths, predicate) {
+      var index = -1,
+          length = paths.length,
+          result = {};
+
+      while (++index < length) {
+        var path = paths[index],
+            value = baseGet(object, path);
+
+        if (predicate(value, path)) {
+          baseSet(result, castPath(path, object), value);
+        }
+      }
+      return result;
+    }
+
+    /**
+     * A specialized version of `baseProperty` which supports deep paths.
+     *
+     * @private
+     * @param {Array|string} path The path of the property to get.
+     * @returns {Function} Returns the new accessor function.
+     */
+    function basePropertyDeep(path) {
+      return function(object) {
+        return baseGet(object, path);
+      };
+    }
+
+    /**
+     * The base implementation of `_.pullAllBy` without support for iteratee
+     * shorthands.
+     *
+     * @private
+     * @param {Array} array The array to modify.
+     * @param {Array} values The values to remove.
+     * @param {Function} [iteratee] The iteratee invoked per element.
+     * @param {Function} [comparator] The comparator invoked per element.
+     * @returns {Array} Returns `array`.
+     */
+    function basePullAll(array, values, iteratee, comparator) {
+      var indexOf = comparator ? baseIndexOfWith : baseIndexOf,
+          index = -1,
+          length = values.length,
+          seen = array;
+
+      if (array === values) {
+        values = copyArray(values);
+      }
+      if (iteratee) {
+        seen = arrayMap(array, baseUnary(iteratee));
+      }
+      while (++index < length) {
+        var fromIndex = 0,
+            value = values[index],
+            computed = iteratee ? iteratee(value) : value;
+
+        while ((fromIndex = indexOf(seen, computed, fromIndex, comparator)) > -1) {
+          if (seen !== array) {
+            splice.call(seen, fromIndex, 1);
+          }
+          splice.call(array, fromIndex, 1);
+        }
+      }
+      return array;
+    }
+
+    /**
+     * The base implementation of `_.pullAt` without support for individual
+     * indexes or capturing the removed elements.
+     *
+     * @private
+     * @param {Array} array The array to modify.
+     * @param {number[]} indexes The indexes of elements to remove.
+     * @returns {Array} Returns `array`.
+     */
+    function basePullAt(array, indexes) {
+      var length = array ? indexes.length : 0,
+          lastIndex = length - 1;
+
+      while (length--) {
+        var index = indexes[length];
+        if (length == lastIndex || index !== previous) {
+          var previous = index;
+          if (isIndex(index)) {
+            splice.call(array, index, 1);
+          } else {
+            baseUnset(array, index);
+          }
+        }
+      }
+      return array;
+    }
+
+    /**
+     * The base implementation of `_.random` without support for returning
+     * floating-point numbers.
+     *
+     * @private
+     * @param {number} lower The lower bound.
+     * @param {number} upper The upper bound.
+     * @returns {number} Returns the random number.
+     */
+    function baseRandom(lower, upper) {
+      return lower + nativeFloor(nativeRandom() * (upper - lower + 1));
+    }
+
+    /**
+     * The base implementation of `_.range` and `_.rangeRight` which doesn't
+     * coerce arguments.
+     *
+     * @private
+     * @param {number} start The start of the range.
+     * @param {number} end The end of the range.
+     * @param {number} step The value to increment or decrement by.
+     * @param {boolean} [fromRight] Specify iterating from right to left.
+     * @returns {Array} Returns the range of numbers.
+     */
+    function baseRange(start, end, step, fromRight) {
+      var index = -1,
+          length = nativeMax(nativeCeil((end - start) / (step || 1)), 0),
+          result = Array(length);
+
+      while (length--) {
+        result[fromRight ? length : ++index] = start;
+        start += step;
+      }
+      return result;
+    }
+
+    /**
+     * The base implementation of `_.repeat` which doesn't coerce arguments.
+     *
+     * @private
+     * @param {string} string The string to repeat.
+     * @param {number} n The number of times to repeat the string.
+     * @returns {string} Returns the repeated string.
+     */
+    function baseRepeat(string, n) {
+      var result = '';
+      if (!string || n < 1 || n > MAX_SAFE_INTEGER) {
+        return result;
+      }
+      // Leverage the exponentiation by squaring algorithm for a faster repeat.
+      // See https://en.wikipedia.org/wiki/Exponentiation_by_squaring for more details.
+      do {
+        if (n % 2) {
+          result += string;
+        }
+        n = nativeFloor(n / 2);
+        if (n) {
+          string += string;
+        }
+      } while (n);
+
+      return result;
+    }
+
+    /**
+     * The base implementation of `_.rest` which doesn't validate or coerce arguments.
+     *
+     * @private
+     * @param {Function} func The function to apply a rest parameter to.
+     * @param {number} [start=func.length-1] The start position of the rest parameter.
+     * @returns {Function} Returns the new function.
+     */
+    function baseRest(func, start) {
+      return setToString(overRest(func, start, identity), func + '');
+    }
+
+    /**
+     * The base implementation of `_.sample`.
+     *
+     * @private
+     * @param {Array|Object} collection The collection to sample.
+     * @returns {*} Returns the random element.
+     */
+    function baseSample(collection) {
+      return arraySample(values(collection));
+    }
+
+    /**
+     * The base implementation of `_.sampleSize` without param guards.
+     *
+     * @private
+     * @param {Array|Object} collection The collection to sample.
+     * @param {number} n The number of elements to sample.
+     * @returns {Array} Returns the random elements.
+     */
+    function baseSampleSize(collection, n) {
+      var array = values(collection);
+      return shuffleSelf(array, baseClamp(n, 0, array.length));
+    }
+
+    /**
+     * The base implementation of `_.set`.
+     *
+     * @private
+     * @param {Object} object The object to modify.
+     * @param {Array|string} path The path of the property to set.
+     * @param {*} value The value to set.
+     * @param {Function} [customizer] The function to customize path creation.
+     * @returns {Object} Returns `object`.
+     */
+    function baseSet(object, path, value, customizer) {
+      if (!isObject(object)) {
+        return object;
+      }
+      path = castPath(path, object);
+
+      var index = -1,
+          length = path.length,
+          lastIndex = length - 1,
+          nested = object;
+
+      while (nested != null && ++index < length) {
+        var key = toKey(path[index]),
+            newValue = value;
+
+        if (key === '__proto__' || key === 'constructor' || key === 'prototype') {
+          return object;
+        }
+
+        if (index != lastIndex) {
+          var objValue = nested[key];
+          newValue = customizer ? customizer(objValue, key, nested) : undefined;
+          if (newValue === undefined) {
+            newValue = isObject(objValue)
+              ? objValue
+              : (isIndex(path[index + 1]) ? [] : {});
+          }
+        }
+        assignValue(nested, key, newValue);
+        nested = nested[key];
+      }
+      return object;
+    }
+
+    /**
+     * The base implementation of `setData` without support for hot loop shorting.
+     *
+     * @private
+     * @param {Function} func The function to associate metadata with.
+     * @param {*} data The metadata.
+     * @returns {Function} Returns `func`.
+     */
+    var baseSetData = !metaMap ? identity : function(func, data) {
+      metaMap.set(func, data);
+      return func;
+    };
+
+    /**
+     * The base implementation of `setToString` without support for hot loop shorting.
+     *
+     * @private
+     * @param {Function} func The function to modify.
+     * @param {Function} string The `toString` result.
+     * @returns {Function} Returns `func`.
+     */
+    var baseSetToString = !defineProperty ? identity : function(func, string) {
+      return defineProperty(func, 'toString', {
+        'configurable': true,
+        'enumerable': false,
+        'value': constant(string),
+        'writable': true
+      });
+    };
+
+    /**
+     * The base implementation of `_.shuffle`.
+     *
+     * @private
+     * @param {Array|Object} collection The collection to shuffle.
+     * @returns {Array} Returns the new shuffled array.
+     */
+    function baseShuffle(collection) {
+      return shuffleSelf(values(collection));
+    }
+
+    /**
+     * The base implementation of `_.slice` without an iteratee call guard.
+     *
+     * @private
+     * @param {Array} array The array to slice.
+     * @param {number} [start=0] The start position.
+     * @param {number} [end=array.length] The end position.
+     * @returns {Array} Returns the slice of `array`.
+     */
+    function baseSlice(array, start, end) {
+      var index = -1,
+          length = array.length;
+
+      if (start < 0) {
+        start = -start > length ? 0 : (length + start);
+      }
+      end = end > length ? length : end;
+      if (end < 0) {
+        end += length;
+      }
+      length = start > end ? 0 : ((end - start) >>> 0);
+      start >>>= 0;
+
+      var result = Array(length);
+      while (++index < length) {
+        result[index] = array[index + start];
+      }
+      return result;
+    }
+
+    /**
+     * The base implementation of `_.some` without support for iteratee shorthands.
+     *
+     * @private
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Function} predicate The function invoked per iteration.
+     * @returns {boolean} Returns `true` if any element passes the predicate check,
+     *  else `false`.
+     */
+    function baseSome(collection, predicate) {
+      var result;
+
+      baseEach(collection, function(value, index, collection) {
+        result = predicate(value, index, collection);
+        return !result;
+      });
+      return !!result;
+    }
+
+    /**
+     * The base implementation of `_.sortedIndex` and `_.sortedLastIndex` which
+     * performs a binary search of `array` to determine the index at which `value`
+     * should be inserted into `array` in order to maintain its sort order.
+     *
+     * @private
+     * @param {Array} array The sorted array to inspect.
+     * @param {*} value The value to evaluate.
+     * @param {boolean} [retHighest] Specify returning the highest qualified index.
+     * @returns {number} Returns the index at which `value` should be inserted
+     *  into `array`.
+     */
+    function baseSortedIndex(array, value, retHighest) {
+      var low = 0,
+          high = array == null ? low : array.length;
+
+      if (typeof value == 'number' && value === value && high <= HALF_MAX_ARRAY_LENGTH) {
+        while (low < high) {
+          var mid = (low + high) >>> 1,
+              computed = array[mid];
+
+          if (computed !== null && !isSymbol(computed) &&
+              (retHighest ? (computed <= value) : (computed < value))) {
+            low = mid + 1;
+          } else {
+            high = mid;
+          }
+        }
+        return high;
+      }
+      return baseSortedIndexBy(array, value, identity, retHighest);
+    }
+
+    /**
+     * The base implementation of `_.sortedIndexBy` and `_.sortedLastIndexBy`
+     * which invokes `iteratee` for `value` and each element of `array` to compute
+     * their sort ranking. The iteratee is invoked with one argument; (value).
+     *
+     * @private
+     * @param {Array} array The sorted array to inspect.
+     * @param {*} value The value to evaluate.
+     * @param {Function} iteratee The iteratee invoked per element.
+     * @param {boolean} [retHighest] Specify returning the highest qualified index.
+     * @returns {number} Returns the index at which `value` should be inserted
+     *  into `array`.
+     */
+    function baseSortedIndexBy(array, value, iteratee, retHighest) {
+      var low = 0,
+          high = array == null ? 0 : array.length;
+      if (high === 0) {
+        return 0;
+      }
+
+      value = iteratee(value);
+      var valIsNaN = value !== value,
+          valIsNull = value === null,
+          valIsSymbol = isSymbol(value),
+          valIsUndefined = value === undefined;
+
+      while (low < high) {
+        var mid = nativeFloor((low + high) / 2),
+            computed = iteratee(array[mid]),
+            othIsDefined = computed !== undefined,
+            othIsNull = computed === null,
+            othIsReflexive = computed === computed,
+            othIsSymbol = isSymbol(computed);
+
+        if (valIsNaN) {
+          var setLow = retHighest || othIsReflexive;
+        } else if (valIsUndefined) {
+          setLow = othIsReflexive && (retHighest || othIsDefined);
+        } else if (valIsNull) {
+          setLow = othIsReflexive && othIsDefined && (retHighest || !othIsNull);
+        } else if (valIsSymbol) {
+          setLow = othIsReflexive && othIsDefined && !othIsNull && (retHighest || !othIsSymbol);
+        } else if (othIsNull || othIsSymbol) {
+          setLow = false;
+        } else {
+          setLow = retHighest ? (computed <= value) : (computed < value);
+        }
+        if (setLow) {
+          low = mid + 1;
+        } else {
+          high = mid;
+        }
+      }
+      return nativeMin(high, MAX_ARRAY_INDEX);
+    }
+
+    /**
+     * The base implementation of `_.sortedUniq` and `_.sortedUniqBy` without
+     * support for iteratee shorthands.
+     *
+     * @private
+     * @param {Array} array The array to inspect.
+     * @param {Function} [iteratee] The iteratee invoked per element.
+     * @returns {Array} Returns the new duplicate free array.
+     */
+    function baseSortedUniq(array, iteratee) {
+      var index = -1,
+          length = array.length,
+          resIndex = 0,
+          result = [];
+
+      while (++index < length) {
+        var value = array[index],
+            computed = iteratee ? iteratee(value) : value;
+
+        if (!index || !eq(computed, seen)) {
+          var seen = computed;
+          result[resIndex++] = value === 0 ? 0 : value;
+        }
+      }
+      return result;
+    }
+
+    /**
+     * The base implementation of `_.toNumber` which doesn't ensure correct
+     * conversions of binary, hexadecimal, or octal string values.
+     *
+     * @private
+     * @param {*} value The value to process.
+     * @returns {number} Returns the number.
+     */
+    function baseToNumber(value) {
+      if (typeof value == 'number') {
+        return value;
+      }
+      if (isSymbol(value)) {
+        return NAN;
+      }
+      return +value;
+    }
+
+    /**
+     * The base implementation of `_.toString` which doesn't convert nullish
+     * values to empty strings.
+     *
+     * @private
+     * @param {*} value The value to process.
+     * @returns {string} Returns the string.
+     */
+    function baseToString(value) {
+      // Exit early for strings to avoid a performance hit in some environments.
+      if (typeof value == 'string') {
+        return value;
+      }
+      if (isArray(value)) {
+        // Recursively convert values (susceptible to call stack limits).
+        return arrayMap(value, baseToString) + '';
+      }
+      if (isSymbol(value)) {
+        return symbolToString ? symbolToString.call(value) : '';
+      }
+      var result = (value + '');
+      return (result == '0' && (1 / value) == -INFINITY) ? '-0' : result;
+    }
+
+    /**
+     * The base implementation of `_.uniqBy` without support for iteratee shorthands.
+     *
+     * @private
+     * @param {Array} array The array to inspect.
+     * @param {Function} [iteratee] The iteratee invoked per element.
+     * @param {Function} [comparator] The comparator invoked per element.
+     * @returns {Array} Returns the new duplicate free array.
+     */
+    function baseUniq(array, iteratee, comparator) {
+      var index = -1,
+          includes = arrayIncludes,
+          length = array.length,
+          isCommon = true,
+          result = [],
+          seen = result;
+
+      if (comparator) {
+        isCommon = false;
+        includes = arrayIncludesWith;
+      }
+      else if (length >= LARGE_ARRAY_SIZE) {
+        var set = iteratee ? null : createSet(array);
+        if (set) {
+          return setToArray(set);
+        }
+        isCommon = false;
+        includes = cacheHas;
+        seen = new SetCache;
+      }
+      else {
+        seen = iteratee ? [] : result;
+      }
+      outer:
+      while (++index < length) {
+        var value = array[index],
+            computed = iteratee ? iteratee(value) : value;
+
+        value = (comparator || value !== 0) ? value : 0;
+        if (isCommon && computed === computed) {
+          var seenIndex = seen.length;
+          while (seenIndex--) {
+            if (seen[seenIndex] === computed) {
+              continue outer;
+            }
+          }
+          if (iteratee) {
+            seen.push(computed);
+          }
+          result.push(value);
+        }
+        else if (!includes(seen, computed, comparator)) {
+          if (seen !== result) {
+            seen.push(computed);
+          }
+          result.push(value);
+        }
+      }
+      return result;
+    }
+
+    /**
+     * The base implementation of `_.unset`.
+     *
+     * @private
+     * @param {Object} object The object to modify.
+     * @param {Array|string} path The property path to unset.
+     * @returns {boolean} Returns `true` if the property is deleted, else `false`.
+     */
+    function baseUnset(object, path) {
+      path = castPath(path, object);
+      object = parent(object, path);
+      return object == null || delete object[toKey(last(path))];
+    }
+
+    /**
+     * The base implementation of `_.update`.
+     *
+     * @private
+     * @param {Object} object The object to modify.
+     * @param {Array|string} path The path of the property to update.
+     * @param {Function} updater The function to produce the updated value.
+     * @param {Function} [customizer] The function to customize path creation.
+     * @returns {Object} Returns `object`.
+     */
+    function baseUpdate(object, path, updater, customizer) {
+      return baseSet(object, path, updater(baseGet(object, path)), customizer);
+    }
+
+    /**
+     * The base implementation of methods like `_.dropWhile` and `_.takeWhile`
+     * without support for iteratee shorthands.
+     *
+     * @private
+     * @param {Array} array The array to query.
+     * @param {Function} predicate The function invoked per iteration.
+     * @param {boolean} [isDrop] Specify dropping elements instead of taking them.
+     * @param {boolean} [fromRight] Specify iterating from right to left.
+     * @returns {Array} Returns the slice of `array`.
+     */
+    function baseWhile(array, predicate, isDrop, fromRight) {
+      var length = array.length,
+          index = fromRight ? length : -1;
+
+      while ((fromRight ? index-- : ++index < length) &&
+        predicate(array[index], index, array)) {}
+
+      return isDrop
+        ? baseSlice(array, (fromRight ? 0 : index), (fromRight ? index + 1 : length))
+        : baseSlice(array, (fromRight ? index + 1 : 0), (fromRight ? length : index));
+    }
+
+    /**
+     * The base implementation of `wrapperValue` which returns the result of
+     * performing a sequence of actions on the unwrapped `value`, where each
+     * successive action is supplied the return value of the previous.
+     *
+     * @private
+     * @param {*} value The unwrapped value.
+     * @param {Array} actions Actions to perform to resolve the unwrapped value.
+     * @returns {*} Returns the resolved value.
+     */
+    function baseWrapperValue(value, actions) {
+      var result = value;
+      if (result instanceof LazyWrapper) {
+        result = result.value();
+      }
+      return arrayReduce(actions, function(result, action) {
+        return action.func.apply(action.thisArg, arrayPush([result], action.args));
+      }, result);
+    }
+
+    /**
+     * The base implementation of methods like `_.xor`, without support for
+     * iteratee shorthands, that accepts an array of arrays to inspect.
+     *
+     * @private
+     * @param {Array} arrays The arrays to inspect.
+     * @param {Function} [iteratee] The iteratee invoked per element.
+     * @param {Function} [comparator] The comparator invoked per element.
+     * @returns {Array} Returns the new array of values.
+     */
+    function baseXor(arrays, iteratee, comparator) {
+      var length = arrays.length;
+      if (length < 2) {
+        return length ? baseUniq(arrays[0]) : [];
+      }
+      var index = -1,
+          result = Array(length);
+
+      while (++index < length) {
+        var array = arrays[index],
+            othIndex = -1;
+
+        while (++othIndex < length) {
+          if (othIndex != index) {
+            result[index] = baseDifference(result[index] || array, arrays[othIndex], iteratee, comparator);
+          }
+        }
+      }
+      return baseUniq(baseFlatten(result, 1), iteratee, comparator);
+    }
+
+    /**
+     * This base implementation of `_.zipObject` which assigns values using `assignFunc`.
+     *
+     * @private
+     * @param {Array} props The property identifiers.
+     * @param {Array} values The property values.
+     * @param {Function} assignFunc The function to assign values.
+     * @returns {Object} Returns the new object.
+     */
+    function baseZipObject(props, values, assignFunc) {
+      var index = -1,
+          length = props.length,
+          valsLength = values.length,
+          result = {};
+
+      while (++index < length) {
+        var value = index < valsLength ? values[index] : undefined;
+        assignFunc(result, props[index], value);
+      }
+      return result;
+    }
+
+    /**
+     * Casts `value` to an empty array if it's not an array like object.
+     *
+     * @private
+     * @param {*} value The value to inspect.
+     * @returns {Array|Object} Returns the cast array-like object.
+     */
+    function castArrayLikeObject(value) {
+      return isArrayLikeObject(value) ? value : [];
+    }
+
+    /**
+     * Casts `value` to `identity` if it's not a function.
+     *
+     * @private
+     * @param {*} value The value to inspect.
+     * @returns {Function} Returns cast function.
+     */
+    function castFunction(value) {
+      return typeof value == 'function' ? value : identity;
+    }
+
+    /**
+     * Casts `value` to a path array if it's not one.
+     *
+     * @private
+     * @param {*} value The value to inspect.
+     * @param {Object} [object] The object to query keys on.
+     * @returns {Array} Returns the cast property path array.
+     */
+    function castPath(value, object) {
+      if (isArray(value)) {
+        return value;
+      }
+      return isKey(value, object) ? [value] : stringToPath(toString(value));
+    }
+
+    /**
+     * A `baseRest` alias which can be replaced with `identity` by module
+     * replacement plugins.
+     *
+     * @private
+     * @type {Function}
+     * @param {Function} func The function to apply a rest parameter to.
+     * @returns {Function} Returns the new function.
+     */
+    var castRest = baseRest;
+
+    /**
+     * Casts `array` to a slice if it's needed.
+     *
+     * @private
+     * @param {Array} array The array to inspect.
+     * @param {number} start The start position.
+     * @param {number} [end=array.length] The end position.
+     * @returns {Array} Returns the cast slice.
+     */
+    function castSlice(array, start, end) {
+      var length = array.length;
+      end = end === undefined ? length : end;
+      return (!start && end >= length) ? array : baseSlice(array, start, end);
+    }
+
+    /**
+     * A simple wrapper around the global [`clearTimeout`](https://mdn.io/clearTimeout).
+     *
+     * @private
+     * @param {number|Object} id The timer id or timeout object of the timer to clear.
+     */
+    var clearTimeout = ctxClearTimeout || function(id) {
+      return root.clearTimeout(id);
+    };
+
+    /**
+     * Creates a clone of  `buffer`.
+     *
+     * @private
+     * @param {Buffer} buffer The buffer to clone.
+     * @param {boolean} [isDeep] Specify a deep clone.
+     * @returns {Buffer} Returns the cloned buffer.
+     */
+    function cloneBuffer(buffer, isDeep) {
+      if (isDeep) {
+        return buffer.slice();
+      }
+      var length = buffer.length,
+          result = allocUnsafe ? allocUnsafe(length) : new buffer.constructor(length);
+
+      buffer.copy(result);
+      return result;
+    }
+
+    /**
+     * Creates a clone of `arrayBuffer`.
+     *
+     * @private
+     * @param {ArrayBuffer} arrayBuffer The array buffer to clone.
+     * @returns {ArrayBuffer} Returns the cloned array buffer.
+     */
+    function cloneArrayBuffer(arrayBuffer) {
+      var result = new arrayBuffer.constructor(arrayBuffer.byteLength);
+      new Uint8Array(result).set(new Uint8Array(arrayBuffer));
+      return result;
+    }
+
+    /**
+     * Creates a clone of `dataView`.
+     *
+     * @private
+     * @param {Object} dataView The data view to clone.
+     * @param {boolean} [isDeep] Specify a deep clone.
+     * @returns {Object} Returns the cloned data view.
+     */
+    function cloneDataView(dataView, isDeep) {
+      var buffer = isDeep ? cloneArrayBuffer(dataView.buffer) : dataView.buffer;
+      return new dataView.constructor(buffer, dataView.byteOffset, dataView.byteLength);
+    }
+
+    /**
+     * Creates a clone of `regexp`.
+     *
+     * @private
+     * @param {Object} regexp The regexp to clone.
+     * @returns {Object} Returns the cloned regexp.
+     */
+    function cloneRegExp(regexp) {
+      var result = new regexp.constructor(regexp.source, reFlags.exec(regexp));
+      result.lastIndex = regexp.lastIndex;
+      return result;
+    }
+
+    /**
+     * Creates a clone of the `symbol` object.
+     *
+     * @private
+     * @param {Object} symbol The symbol object to clone.
+     * @returns {Object} Returns the cloned symbol object.
+     */
+    function cloneSymbol(symbol) {
+      return symbolValueOf ? Object(symbolValueOf.call(symbol)) : {};
+    }
+
+    /**
+     * Creates a clone of `typedArray`.
+     *
+     * @private
+     * @param {Object} typedArray The typed array to clone.
+     * @param {boolean} [isDeep] Specify a deep clone.
+     * @returns {Object} Returns the cloned typed array.
+     */
+    function cloneTypedArray(typedArray, isDeep) {
+      var buffer = isDeep ? cloneArrayBuffer(typedArray.buffer) : typedArray.buffer;
+      return new typedArray.constructor(buffer, typedArray.byteOffset, typedArray.length);
+    }
+
+    /**
+     * Compares values to sort them in ascending order.
+     *
+     * @private
+     * @param {*} value The value to compare.
+     * @param {*} other The other value to compare.
+     * @returns {number} Returns the sort order indicator for `value`.
+     */
+    function compareAscending(value, other) {
+      if (value !== other) {
+        var valIsDefined = value !== undefined,
+            valIsNull = value === null,
+            valIsReflexive = value === value,
+            valIsSymbol = isSymbol(value);
+
+        var othIsDefined = other !== undefined,
+            othIsNull = other === null,
+            othIsReflexive = other === other,
+            othIsSymbol = isSymbol(other);
+
+        if ((!othIsNull && !othIsSymbol && !valIsSymbol && value > other) ||
+            (valIsSymbol && othIsDefined && othIsReflexive && !othIsNull && !othIsSymbol) ||
+            (valIsNull && othIsDefined && othIsReflexive) ||
+            (!valIsDefined && othIsReflexive) ||
+            !valIsReflexive) {
+          return 1;
+        }
+        if ((!valIsNull && !valIsSymbol && !othIsSymbol && value < other) ||
+            (othIsSymbol && valIsDefined && valIsReflexive && !valIsNull && !valIsSymbol) ||
+            (othIsNull && valIsDefined && valIsReflexive) ||
+            (!othIsDefined && valIsReflexive) ||
+            !othIsReflexive) {
+          return -1;
+        }
+      }
+      return 0;
+    }
+
+    /**
+     * Used by `_.orderBy` to compare multiple properties of a value to another
+     * and stable sort them.
+     *
+     * If `orders` is unspecified, all values are sorted in ascending order. Otherwise,
+     * specify an order of "desc" for descending or "asc" for ascending sort order
+     * of corresponding values.
+     *
+     * @private
+     * @param {Object} object The object to compare.
+     * @param {Object} other The other object to compare.
+     * @param {boolean[]|string[]} orders The order to sort by for each property.
+     * @returns {number} Returns the sort order indicator for `object`.
+     */
+    function compareMultiple(object, other, orders) {
+      var index = -1,
+          objCriteria = object.criteria,
+          othCriteria = other.criteria,
+          length = objCriteria.length,
+          ordersLength = orders.length;
+
+      while (++index < length) {
+        var result = compareAscending(objCriteria[index], othCriteria[index]);
+        if (result) {
+          if (index >= ordersLength) {
+            return result;
+          }
+          var order = orders[index];
+          return result * (order == 'desc' ? -1 : 1);
+        }
+      }
+      // Fixes an `Array#sort` bug in the JS engine embedded in Adobe applications
+      // that causes it, under certain circumstances, to provide the same value for
+      // `object` and `other`. See https://github.com/jashkenas/underscore/pull/1247
+      // for more details.
+      //
+      // This also ensures a stable sort in V8 and other engines.
+      // See https://bugs.chromium.org/p/v8/issues/detail?id=90 for more details.
+      return object.index - other.index;
+    }
+
+    /**
+     * Creates an array that is the composition of partially applied arguments,
+     * placeholders, and provided arguments into a single array of arguments.
+     *
+     * @private
+     * @param {Array} args The provided arguments.
+     * @param {Array} partials The arguments to prepend to those provided.
+     * @param {Array} holders The `partials` placeholder indexes.
+     * @params {boolean} [isCurried] Specify composing for a curried function.
+     * @returns {Array} Returns the new array of composed arguments.
+     */
+    function composeArgs(args, partials, holders, isCurried) {
+      var argsIndex = -1,
+          argsLength = args.length,
+          holdersLength = holders.length,
+          leftIndex = -1,
+          leftLength = partials.length,
+          rangeLength = nativeMax(argsLength - holdersLength, 0),
+          result = Array(leftLength + rangeLength),
+          isUncurried = !isCurried;
+
+      while (++leftIndex < leftLength) {
+        result[leftIndex] = partials[leftIndex];
+      }
+      while (++argsIndex < holdersLength) {
+        if (isUncurried || argsIndex < argsLength) {
+          result[holders[argsIndex]] = args[argsIndex];
+        }
+      }
+      while (rangeLength--) {
+        result[leftIndex++] = args[argsIndex++];
+      }
+      return result;
+    }
+
+    /**
+     * This function is like `composeArgs` except that the arguments composition
+     * is tailored for `_.partialRight`.
+     *
+     * @private
+     * @param {Array} args The provided arguments.
+     * @param {Array} partials The arguments to append to those provided.
+     * @param {Array} holders The `partials` placeholder indexes.
+     * @params {boolean} [isCurried] Specify composing for a curried function.
+     * @returns {Array} Returns the new array of composed arguments.
+     */
+    function composeArgsRight(args, partials, holders, isCurried) {
+      var argsIndex = -1,
+          argsLength = args.length,
+          holdersIndex = -1,
+          holdersLength = holders.length,
+          rightIndex = -1,
+          rightLength = partials.length,
+          rangeLength = nativeMax(argsLength - holdersLength, 0),
+          result = Array(rangeLength + rightLength),
+          isUncurried = !isCurried;
+
+      while (++argsIndex < rangeLength) {
+        result[argsIndex] = args[argsIndex];
+      }
+      var offset = argsIndex;
+      while (++rightIndex < rightLength) {
+        result[offset + rightIndex] = partials[rightIndex];
+      }
+      while (++holdersIndex < holdersLength) {
+        if (isUncurried || argsIndex < argsLength) {
+          result[offset + holders[holdersIndex]] = args[argsIndex++];
+        }
+      }
+      return result;
+    }
+
+    /**
+     * Copies the values of `source` to `array`.
+     *
+     * @private
+     * @param {Array} source The array to copy values from.
+     * @param {Array} [array=[]] The array to copy values to.
+     * @returns {Array} Returns `array`.
+     */
+    function copyArray(source, array) {
+      var index = -1,
+          length = source.length;
+
+      array || (array = Array(length));
+      while (++index < length) {
+        array[index] = source[index];
+      }
+      return array;
+    }
+
+    /**
+     * Copies properties of `source` to `object`.
+     *
+     * @private
+     * @param {Object} source The object to copy properties from.
+     * @param {Array} props The property identifiers to copy.
+     * @param {Object} [object={}] The object to copy properties to.
+     * @param {Function} [customizer] The function to customize copied values.
+     * @returns {Object} Returns `object`.
+     */
+    function copyObject(source, props, object, customizer) {
+      var isNew = !object;
+      object || (object = {});
+
+      var index = -1,
+          length = props.length;
+
+      while (++index < length) {
+        var key = props[index];
+
+        var newValue = customizer
+          ? customizer(object[key], source[key], key, object, source)
+          : undefined;
+
+        if (newValue === undefined) {
+          newValue = source[key];
+        }
+        if (isNew) {
+          baseAssignValue(object, key, newValue);
+        } else {
+          assignValue(object, key, newValue);
+        }
+      }
+      return object;
+    }
+
+    /**
+     * Copies own symbols of `source` to `object`.
+     *
+     * @private
+     * @param {Object} source The object to copy symbols from.
+     * @param {Object} [object={}] The object to copy symbols to.
+     * @returns {Object} Returns `object`.
+     */
+    function copySymbols(source, object) {
+      return copyObject(source, getSymbols(source), object);
+    }
+
+    /**
+     * Copies own and inherited symbols of `source` to `object`.
+     *
+     * @private
+     * @param {Object} source The object to copy symbols from.
+     * @param {Object} [object={}] The object to copy symbols to.
+     * @returns {Object} Returns `object`.
+     */
+    function copySymbolsIn(source, object) {
+      return copyObject(source, getSymbolsIn(source), object);
+    }
+
+    /**
+     * Creates a function like `_.groupBy`.
+     *
+     * @private
+     * @param {Function} setter The function to set accumulator values.
+     * @param {Function} [initializer] The accumulator object initializer.
+     * @returns {Function} Returns the new aggregator function.
+     */
+    function createAggregator(setter, initializer) {
+      return function(collection, iteratee) {
+        var func = isArray(collection) ? arrayAggregator : baseAggregator,
+            accumulator = initializer ? initializer() : {};
+
+        return func(collection, setter, getIteratee(iteratee, 2), accumulator);
+      };
+    }
+
+    /**
+     * Creates a function like `_.assign`.
+     *
+     * @private
+     * @param {Function} assigner The function to assign values.
+     * @returns {Function} Returns the new assigner function.
+     */
+    function createAssigner(assigner) {
+      return baseRest(function(object, sources) {
+        var index = -1,
+            length = sources.length,
+            customizer = length > 1 ? sources[length - 1] : undefined,
+            guard = length > 2 ? sources[2] : undefined;
+
+        customizer = (assigner.length > 3 && typeof customizer == 'function')
+          ? (length--, customizer)
+          : undefined;
+
+        if (guard && isIterateeCall(sources[0], sources[1], guard)) {
+          customizer = length < 3 ? undefined : customizer;
+          length = 1;
+        }
+        object = Object(object);
+        while (++index < length) {
+          var source = sources[index];
+          if (source) {
+            assigner(object, source, index, customizer);
+          }
+        }
+        return object;
+      });
+    }
+
+    /**
+     * Creates a `baseEach` or `baseEachRight` function.
+     *
+     * @private
+     * @param {Function} eachFunc The function to iterate over a collection.
+     * @param {boolean} [fromRight] Specify iterating from right to left.
+     * @returns {Function} Returns the new base function.
+     */
+    function createBaseEach(eachFunc, fromRight) {
+      return function(collection, iteratee) {
+        if (collection == null) {
+          return collection;
+        }
+        if (!isArrayLike(collection)) {
+          return eachFunc(collection, iteratee);
+        }
+        var length = collection.length,
+            index = fromRight ? length : -1,
+            iterable = Object(collection);
+
+        while ((fromRight ? index-- : ++index < length)) {
+          if (iteratee(iterable[index], index, iterable) === false) {
+            break;
+          }
+        }
+        return collection;
+      };
+    }
+
+    /**
+     * Creates a base function for methods like `_.forIn` and `_.forOwn`.
+     *
+     * @private
+     * @param {boolean} [fromRight] Specify iterating from right to left.
+     * @returns {Function} Returns the new base function.
+     */
+    function createBaseFor(fromRight) {
+      return function(object, iteratee, keysFunc) {
+        var index = -1,
+            iterable = Object(object),
+            props = keysFunc(object),
+            length = props.length;
+
+        while (length--) {
+          var key = props[fromRight ? length : ++index];
+          if (iteratee(iterable[key], key, iterable) === false) {
+            break;
+          }
+        }
+        return object;
+      };
+    }
+
+    /**
+     * Creates a function that wraps `func` to invoke it with the optional `this`
+     * binding of `thisArg`.
+     *
+     * @private
+     * @param {Function} func The function to wrap.
+     * @param {number} bitmask The bitmask flags. See `createWrap` for more details.
+     * @param {*} [thisArg] The `this` binding of `func`.
+     * @returns {Function} Returns the new wrapped function.
+     */
+    function createBind(func, bitmask, thisArg) {
+      var isBind = bitmask & WRAP_BIND_FLAG,
+          Ctor = createCtor(func);
+
+      function wrapper() {
+        var fn = (this && this !== root && this instanceof wrapper) ? Ctor : func;
+        return fn.apply(isBind ? thisArg : this, arguments);
+      }
+      return wrapper;
+    }
+
+    /**
+     * Creates a function like `_.lowerFirst`.
+     *
+     * @private
+     * @param {string} methodName The name of the `String` case method to use.
+     * @returns {Function} Returns the new case function.
+     */
+    function createCaseFirst(methodName) {
+      return function(string) {
+        string = toString(string);
+
+        var strSymbols = hasUnicode(string)
+          ? stringToArray(string)
+          : undefined;
+
+        var chr = strSymbols
+          ? strSymbols[0]
+          : string.charAt(0);
+
+        var trailing = strSymbols
+          ? castSlice(strSymbols, 1).join('')
+          : string.slice(1);
+
+        return chr[methodName]() + trailing;
+      };
+    }
+
+    /**
+     * Creates a function like `_.camelCase`.
+     *
+     * @private
+     * @param {Function} callback The function to combine each word.
+     * @returns {Function} Returns the new compounder function.
+     */
+    function createCompounder(callback) {
+      return function(string) {
+        return arrayReduce(words(deburr(string).replace(reApos, '')), callback, '');
+      };
+    }
+
+    /**
+     * Creates a function that produces an instance of `Ctor` regardless of
+     * whether it was invoked as part of a `new` expression or by `call` or `apply`.
+     *
+     * @private
+     * @param {Function} Ctor The constructor to wrap.
+     * @returns {Function} Returns the new wrapped function.
+     */
+    function createCtor(Ctor) {
+      return function() {
+        // Use a `switch` statement to work with class constructors. See
+        // http://ecma-international.org/ecma-262/7.0/#sec-ecmascript-function-objects-call-thisargument-argumentslist
+        // for more details.
+        var args = arguments;
+        switch (args.length) {
+          case 0: return new Ctor;
+          case 1: return new Ctor(args[0]);
+          case 2: return new Ctor(args[0], args[1]);
+          case 3: return new Ctor(args[0], args[1], args[2]);
+          case 4: return new Ctor(args[0], args[1], args[2], args[3]);
+          case 5: return new Ctor(args[0], args[1], args[2], args[3], args[4]);
+          case 6: return new Ctor(args[0], args[1], args[2], args[3], args[4], args[5]);
+          case 7: return new Ctor(args[0], args[1], args[2], args[3], args[4], args[5], args[6]);
+        }
+        var thisBinding = baseCreate(Ctor.prototype),
+            result = Ctor.apply(thisBinding, args);
+
+        // Mimic the constructor's `return` behavior.
+        // See https://es5.github.io/#x13.2.2 for more details.
+        return isObject(result) ? result : thisBinding;
+      };
+    }
+
+    /**
+     * Creates a function that wraps `func` to enable currying.
+     *
+     * @private
+     * @param {Function} func The function to wrap.
+     * @param {number} bitmask The bitmask flags. See `createWrap` for more details.
+     * @param {number} arity The arity of `func`.
+     * @returns {Function} Returns the new wrapped function.
+     */
+    function createCurry(func, bitmask, arity) {
+      var Ctor = createCtor(func);
+
+      function wrapper() {
+        var length = arguments.length,
+            args = Array(length),
+            index = length,
+            placeholder = getHolder(wrapper);
+
+        while (index--) {
+          args[index] = arguments[index];
+        }
+        var holders = (length < 3 && args[0] !== placeholder && args[length - 1] !== placeholder)
+          ? []
+          : replaceHolders(args, placeholder);
+
+        length -= holders.length;
+        if (length < arity) {
+          return createRecurry(
+            func, bitmask, createHybrid, wrapper.placeholder, undefined,
+            args, holders, undefined, undefined, arity - length);
+        }
+        var fn = (this && this !== root && this instanceof wrapper) ? Ctor : func;
+        return apply(fn, this, args);
+      }
+      return wrapper;
+    }
+
+    /**
+     * Creates a `_.find` or `_.findLast` function.
+     *
+     * @private
+     * @param {Function} findIndexFunc The function to find the collection index.
+     * @returns {Function} Returns the new find function.
+     */
+    function createFind(findIndexFunc) {
+      return function(collection, predicate, fromIndex) {
+        var iterable = Object(collection);
+        if (!isArrayLike(collection)) {
+          var iteratee = getIteratee(predicate, 3);
+          collection = keys(collection);
+          predicate = function(key) { return iteratee(iterable[key], key, iterable); };
+        }
+        var index = findIndexFunc(collection, predicate, fromIndex);
+        return index > -1 ? iterable[iteratee ? collection[index] : index] : undefined;
+      };
+    }
+
+    /**
+     * Creates a `_.flow` or `_.flowRight` function.
+     *
+     * @private
+     * @param {boolean} [fromRight] Specify iterating from right to left.
+     * @returns {Function} Returns the new flow function.
+     */
+    function createFlow(fromRight) {
+      return flatRest(function(funcs) {
+        var length = funcs.length,
+            index = length,
+            prereq = LodashWrapper.prototype.thru;
+
+        if (fromRight) {
+          funcs.reverse();
+        }
+        while (index--) {
+          var func = funcs[index];
+          if (typeof func != 'function') {
+            throw new TypeError(FUNC_ERROR_TEXT);
+          }
+          if (prereq && !wrapper && getFuncName(func) == 'wrapper') {
+            var wrapper = new LodashWrapper([], true);
+          }
+        }
+        index = wrapper ? index : length;
+        while (++index < length) {
+          func = funcs[index];
+
+          var funcName = getFuncName(func),
+              data = funcName == 'wrapper' ? getData(func) : undefined;
+
+          if (data && isLaziable(data[0]) &&
+                data[1] == (WRAP_ARY_FLAG | WRAP_CURRY_FLAG | WRAP_PARTIAL_FLAG | WRAP_REARG_FLAG) &&
+                !data[4].length && data[9] == 1
+              ) {
+            wrapper = wrapper[getFuncName(data[0])].apply(wrapper, data[3]);
+          } else {
+            wrapper = (func.length == 1 && isLaziable(func))
+              ? wrapper[funcName]()
+              : wrapper.thru(func);
+          }
+        }
+        return function() {
+          var args = arguments,
+              value = args[0];
+
+          if (wrapper && args.length == 1 && isArray(value)) {
+            return wrapper.plant(value).value();
+          }
+          var index = 0,
+              result = length ? funcs[index].apply(this, args) : value;
+
+          while (++index < length) {
+            result = funcs[index].call(this, result);
+          }
+          return result;
+        };
+      });
+    }
+
+    /**
+     * Creates a function that wraps `func` to invoke it with optional `this`
+     * binding of `thisArg`, partial application, and currying.
+     *
+     * @private
+     * @param {Function|string} func The function or method name to wrap.
+     * @param {number} bitmask The bitmask flags. See `createWrap` for more details.
+     * @param {*} [thisArg] The `this` binding of `func`.
+     * @param {Array} [partials] The arguments to prepend to those provided to
+     *  the new function.
+     * @param {Array} [holders] The `partials` placeholder indexes.
+     * @param {Array} [partialsRight] The arguments to append to those provided
+     *  to the new function.
+     * @param {Array} [holdersRight] The `partialsRight` placeholder indexes.
+     * @param {Array} [argPos] The argument positions of the new function.
+     * @param {number} [ary] The arity cap of `func`.
+     * @param {number} [arity] The arity of `func`.
+     * @returns {Function} Returns the new wrapped function.
+     */
+    function createHybrid(func, bitmask, thisArg, partials, holders, partialsRight, holdersRight, argPos, ary, arity) {
+      var isAry = bitmask & WRAP_ARY_FLAG,
+          isBind = bitmask & WRAP_BIND_FLAG,
+          isBindKey = bitmask & WRAP_BIND_KEY_FLAG,
+          isCurried = bitmask & (WRAP_CURRY_FLAG | WRAP_CURRY_RIGHT_FLAG),
+          isFlip = bitmask & WRAP_FLIP_FLAG,
+          Ctor = isBindKey ? undefined : createCtor(func);
+
+      function wrapper() {
+        var length = arguments.length,
+            args = Array(length),
+            index = length;
+
+        while (index--) {
+          args[index] = arguments[index];
+        }
+        if (isCurried) {
+          var placeholder = getHolder(wrapper),
+              holdersCount = countHolders(args, placeholder);
+        }
+        if (partials) {
+          args = composeArgs(args, partials, holders, isCurried);
+        }
+        if (partialsRight) {
+          args = composeArgsRight(args, partialsRight, holdersRight, isCurried);
+        }
+        length -= holdersCount;
+        if (isCurried && length < arity) {
+          var newHolders = replaceHolders(args, placeholder);
+          return createRecurry(
+            func, bitmask, createHybrid, wrapper.placeholder, thisArg,
+            args, newHolders, argPos, ary, arity - length
+          );
+        }
+        var thisBinding = isBind ? thisArg : this,
+            fn = isBindKey ? thisBinding[func] : func;
+
+        length = args.length;
+        if (argPos) {
+          args = reorder(args, argPos);
+        } else if (isFlip && length > 1) {
+          args.reverse();
+        }
+        if (isAry && ary < length) {
+          args.length = ary;
+        }
+        if (this && this !== root && this instanceof wrapper) {
+          fn = Ctor || createCtor(fn);
+        }
+        return fn.apply(thisBinding, args);
+      }
+      return wrapper;
+    }
+
+    /**
+     * Creates a function like `_.invertBy`.
+     *
+     * @private
+     * @param {Function} setter The function to set accumulator values.
+     * @param {Function} toIteratee The function to resolve iteratees.
+     * @returns {Function} Returns the new inverter function.
+     */
+    function createInverter(setter, toIteratee) {
+      return function(object, iteratee) {
+        return baseInverter(object, setter, toIteratee(iteratee), {});
+      };
+    }
+
+    /**
+     * Creates a function that performs a mathematical operation on two values.
+     *
+     * @private
+     * @param {Function} operator The function to perform the operation.
+     * @param {number} [defaultValue] The value used for `undefined` arguments.
+     * @returns {Function} Returns the new mathematical operation function.
+     */
+    function createMathOperation(operator, defaultValue) {
+      return function(value, other) {
+        var result;
+        if (value === undefined && other === undefined) {
+          return defaultValue;
+        }
+        if (value !== undefined) {
+          result = value;
+        }
+        if (other !== undefined) {
+          if (result === undefined) {
+            return other;
+          }
+          if (typeof value == 'string' || typeof other == 'string') {
+            value = baseToString(value);
+            other = baseToString(other);
+          } else {
+            value = baseToNumber(value);
+            other = baseToNumber(other);
+          }
+          result = operator(value, other);
+        }
+        return result;
+      };
+    }
+
+    /**
+     * Creates a function like `_.over`.
+     *
+     * @private
+     * @param {Function} arrayFunc The function to iterate over iteratees.
+     * @returns {Function} Returns the new over function.
+     */
+    function createOver(arrayFunc) {
+      return flatRest(function(iteratees) {
+        iteratees = arrayMap(iteratees, baseUnary(getIteratee()));
+        return baseRest(function(args) {
+          var thisArg = this;
+          return arrayFunc(iteratees, function(iteratee) {
+            return apply(iteratee, thisArg, args);
+          });
+        });
+      });
+    }
+
+    /**
+     * Creates the padding for `string` based on `length`. The `chars` string
+     * is truncated if the number of characters exceeds `length`.
+     *
+     * @private
+     * @param {number} length The padding length.
+     * @param {string} [chars=' '] The string used as padding.
+     * @returns {string} Returns the padding for `string`.
+     */
+    function createPadding(length, chars) {
+      chars = chars === undefined ? ' ' : baseToString(chars);
+
+      var charsLength = chars.length;
+      if (charsLength < 2) {
+        return charsLength ? baseRepeat(chars, length) : chars;
+      }
+      var result = baseRepeat(chars, nativeCeil(length / stringSize(chars)));
+      return hasUnicode(chars)
+        ? castSlice(stringToArray(result), 0, length).join('')
+        : result.slice(0, length);
+    }
+
+    /**
+     * Creates a function that wraps `func` to invoke it with the `this` binding
+     * of `thisArg` and `partials` prepended to the arguments it receives.
+     *
+     * @private
+     * @param {Function} func The function to wrap.
+     * @param {number} bitmask The bitmask flags. See `createWrap` for more details.
+     * @param {*} thisArg The `this` binding of `func`.
+     * @param {Array} partials The arguments to prepend to those provided to
+     *  the new function.
+     * @returns {Function} Returns the new wrapped function.
+     */
+    function createPartial(func, bitmask, thisArg, partials) {
+      var isBind = bitmask & WRAP_BIND_FLAG,
+          Ctor = createCtor(func);
+
+      function wrapper() {
+        var argsIndex = -1,
+            argsLength = arguments.length,
+            leftIndex = -1,
+            leftLength = partials.length,
+            args = Array(leftLength + argsLength),
+            fn = (this && this !== root && this instanceof wrapper) ? Ctor : func;
+
+        while (++leftIndex < leftLength) {
+          args[leftIndex] = partials[leftIndex];
+        }
+        while (argsLength--) {
+          args[leftIndex++] = arguments[++argsIndex];
+        }
+        return apply(fn, isBind ? thisArg : this, args);
+      }
+      return wrapper;
+    }
+
+    /**
+     * Creates a `_.range` or `_.rangeRight` function.
+     *
+     * @private
+     * @param {boolean} [fromRight] Specify iterating from right to left.
+     * @returns {Function} Returns the new range function.
+     */
+    function createRange(fromRight) {
+      return function(start, end, step) {
+        if (step && typeof step != 'number' && isIterateeCall(start, end, step)) {
+          end = step = undefined;
+        }
+        // Ensure the sign of `-0` is preserved.
+        start = toFinite(start);
+        if (end === undefined) {
+          end = start;
+          start = 0;
+        } else {
+          end = toFinite(end);
+        }
+        step = step === undefined ? (start < end ? 1 : -1) : toFinite(step);
+        return baseRange(start, end, step, fromRight);
+      };
+    }
+
+    /**
+     * Creates a function that performs a relational operation on two values.
+     *
+     * @private
+     * @param {Function} operator The function to perform the operation.
+     * @returns {Function} Returns the new relational operation function.
+     */
+    function createRelationalOperation(operator) {
+      return function(value, other) {
+        if (!(typeof value == 'string' && typeof other == 'string')) {
+          value = toNumber(value);
+          other = toNumber(other);
+        }
+        return operator(value, other);
+      };
+    }
+
+    /**
+     * Creates a function that wraps `func` to continue currying.
+     *
+     * @private
+     * @param {Function} func The function to wrap.
+     * @param {number} bitmask The bitmask flags. See `createWrap` for more details.
+     * @param {Function} wrapFunc The function to create the `func` wrapper.
+     * @param {*} placeholder The placeholder value.
+     * @param {*} [thisArg] The `this` binding of `func`.
+     * @param {Array} [partials] The arguments to prepend to those provided to
+     *  the new function.
+     * @param {Array} [holders] The `partials` placeholder indexes.
+     * @param {Array} [argPos] The argument positions of the new function.
+     * @param {number} [ary] The arity cap of `func`.
+     * @param {number} [arity] The arity of `func`.
+     * @returns {Function} Returns the new wrapped function.
+     */
+    function createRecurry(func, bitmask, wrapFunc, placeholder, thisArg, partials, holders, argPos, ary, arity) {
+      var isCurry = bitmask & WRAP_CURRY_FLAG,
+          newHolders = isCurry ? holders : undefined,
+          newHoldersRight = isCurry ? undefined : holders,
+          newPartials = isCurry ? partials : undefined,
+          newPartialsRight = isCurry ? undefined : partials;
+
+      bitmask |= (isCurry ? WRAP_PARTIAL_FLAG : WRAP_PARTIAL_RIGHT_FLAG);
+      bitmask &= ~(isCurry ? WRAP_PARTIAL_RIGHT_FLAG : WRAP_PARTIAL_FLAG);
+
+      if (!(bitmask & WRAP_CURRY_BOUND_FLAG)) {
+        bitmask &= ~(WRAP_BIND_FLAG | WRAP_BIND_KEY_FLAG);
+      }
+      var newData = [
+        func, bitmask, thisArg, newPartials, newHolders, newPartialsRight,
+        newHoldersRight, argPos, ary, arity
+      ];
+
+      var result = wrapFunc.apply(undefined, newData);
+      if (isLaziable(func)) {
+        setData(result, newData);
+      }
+      result.placeholder = placeholder;
+      return setWrapToString(result, func, bitmask);
+    }
+
+    /**
+     * Creates a function like `_.round`.
+     *
+     * @private
+     * @param {string} methodName The name of the `Math` method to use when rounding.
+     * @returns {Function} Returns the new round function.
+     */
+    function createRound(methodName) {
+      var func = Math[methodName];
+      return function(number, precision) {
+        number = toNumber(number);
+        precision = precision == null ? 0 : nativeMin(toInteger(precision), 292);
+        if (precision && nativeIsFinite(number)) {
+          // Shift with exponential notation to avoid floating-point issues.
+          // See [MDN](https://mdn.io/round#Examples) for more details.
+          var pair = (toString(number) + 'e').split('e'),
+              value = func(pair[0] + 'e' + (+pair[1] + precision));
+
+          pair = (toString(value) + 'e').split('e');
+          return +(pair[0] + 'e' + (+pair[1] - precision));
+        }
+        return func(number);
+      };
+    }
+
+    /**
+     * Creates a set object of `values`.
+     *
+     * @private
+     * @param {Array} values The values to add to the set.
+     * @returns {Object} Returns the new set.
+     */
+    var createSet = !(Set && (1 / setToArray(new Set([,-0]))[1]) == INFINITY) ? noop : function(values) {
+      return new Set(values);
+    };
+
+    /**
+     * Creates a `_.toPairs` or `_.toPairsIn` function.
+     *
+     * @private
+     * @param {Function} keysFunc The function to get the keys of a given object.
+     * @returns {Function} Returns the new pairs function.
+     */
+    function createToPairs(keysFunc) {
+      return function(object) {
+        var tag = getTag(object);
+        if (tag == mapTag) {
+          return mapToArray(object);
+        }
+        if (tag == setTag) {
+          return setToPairs(object);
+        }
+        return baseToPairs(object, keysFunc(object));
+      };
+    }
+
+    /**
+     * Creates a function that either curries or invokes `func` with optional
+     * `this` binding and partially applied arguments.
+     *
+     * @private
+     * @param {Function|string} func The function or method name to wrap.
+     * @param {number} bitmask The bitmask flags.
+     *    1 - `_.bind`
+     *    2 - `_.bindKey`
+     *    4 - `_.curry` or `_.curryRight` of a bound function
+     *    8 - `_.curry`
+     *   16 - `_.curryRight`
+     *   32 - `_.partial`
+     *   64 - `_.partialRight`
+     *  128 - `_.rearg`
+     *  256 - `_.ary`
+     *  512 - `_.flip`
+     * @param {*} [thisArg] The `this` binding of `func`.
+     * @param {Array} [partials] The arguments to be partially applied.
+     * @param {Array} [holders] The `partials` placeholder indexes.
+     * @param {Array} [argPos] The argument positions of the new function.
+     * @param {number} [ary] The arity cap of `func`.
+     * @param {number} [arity] The arity of `func`.
+     * @returns {Function} Returns the new wrapped function.
+     */
+    function createWrap(func, bitmask, thisArg, partials, holders, argPos, ary, arity) {
+      var isBindKey = bitmask & WRAP_BIND_KEY_FLAG;
+      if (!isBindKey && typeof func != 'function') {
+        throw new TypeError(FUNC_ERROR_TEXT);
+      }
+      var length = partials ? partials.length : 0;
+      if (!length) {
+        bitmask &= ~(WRAP_PARTIAL_FLAG | WRAP_PARTIAL_RIGHT_FLAG);
+        partials = holders = undefined;
+      }
+      ary = ary === undefined ? ary : nativeMax(toInteger(ary), 0);
+      arity = arity === undefined ? arity : toInteger(arity);
+      length -= holders ? holders.length : 0;
+
+      if (bitmask & WRAP_PARTIAL_RIGHT_FLAG) {
+        var partialsRight = partials,
+            holdersRight = holders;
+
+        partials = holders = undefined;
+      }
+      var data = isBindKey ? undefined : getData(func);
+
+      var newData = [
+        func, bitmask, thisArg, partials, holders, partialsRight, holdersRight,
+        argPos, ary, arity
+      ];
+
+      if (data) {
+        mergeData(newData, data);
+      }
+      func = newData[0];
+      bitmask = newData[1];
+      thisArg = newData[2];
+      partials = newData[3];
+      holders = newData[4];
+      arity = newData[9] = newData[9] === undefined
+        ? (isBindKey ? 0 : func.length)
+        : nativeMax(newData[9] - length, 0);
+
+      if (!arity && bitmask & (WRAP_CURRY_FLAG | WRAP_CURRY_RIGHT_FLAG)) {
+        bitmask &= ~(WRAP_CURRY_FLAG | WRAP_CURRY_RIGHT_FLAG);
+      }
+      if (!bitmask || bitmask == WRAP_BIND_FLAG) {
+        var result = createBind(func, bitmask, thisArg);
+      } else if (bitmask == WRAP_CURRY_FLAG || bitmask == WRAP_CURRY_RIGHT_FLAG) {
+        result = createCurry(func, bitmask, arity);
+      } else if ((bitmask == WRAP_PARTIAL_FLAG || bitmask == (WRAP_BIND_FLAG | WRAP_PARTIAL_FLAG)) && !holders.length) {
+        result = createPartial(func, bitmask, thisArg, partials);
+      } else {
+        result = createHybrid.apply(undefined, newData);
+      }
+      var setter = data ? baseSetData : setData;
+      return setWrapToString(setter(result, newData), func, bitmask);
+    }
+
+    /**
+     * Used by `_.defaults` to customize its `_.assignIn` use to assign properties
+     * of source objects to the destination object for all destination properties
+     * that resolve to `undefined`.
+     *
+     * @private
+     * @param {*} objValue The destination value.
+     * @param {*} srcValue The source value.
+     * @param {string} key The key of the property to assign.
+     * @param {Object} object The parent object of `objValue`.
+     * @returns {*} Returns the value to assign.
+     */
+    function customDefaultsAssignIn(objValue, srcValue, key, object) {
+      if (objValue === undefined ||
+          (eq(objValue, objectProto[key]) && !hasOwnProperty.call(object, key))) {
+        return srcValue;
+      }
+      return objValue;
+    }
+
+    /**
+     * Used by `_.defaultsDeep` to customize its `_.merge` use to merge source
+     * objects into destination objects that are passed thru.
+     *
+     * @private
+     * @param {*} objValue The destination value.
+     * @param {*} srcValue The source value.
+     * @param {string} key The key of the property to merge.
+     * @param {Object} object The parent object of `objValue`.
+     * @param {Object} source The parent object of `srcValue`.
+     * @param {Object} [stack] Tracks traversed source values and their merged
+     *  counterparts.
+     * @returns {*} Returns the value to assign.
+     */
+    function customDefaultsMerge(objValue, srcValue, key, object, source, stack) {
+      if (isObject(objValue) && isObject(srcValue)) {
+        // Recursively merge objects and arrays (susceptible to call stack limits).
+        stack.set(srcValue, objValue);
+        baseMerge(objValue, srcValue, undefined, customDefaultsMerge, stack);
+        stack['delete'](srcValue);
+      }
+      return objValue;
+    }
+
+    /**
+     * Used by `_.omit` to customize its `_.cloneDeep` use to only clone plain
+     * objects.
+     *
+     * @private
+     * @param {*} value The value to inspect.
+     * @param {string} key The key of the property to inspect.
+     * @returns {*} Returns the uncloned value or `undefined` to defer cloning to `_.cloneDeep`.
+     */
+    function customOmitClone(value) {
+      return isPlainObject(value) ? undefined : value;
+    }
+
+    /**
+     * A specialized version of `baseIsEqualDeep` for arrays with support for
+     * partial deep comparisons.
+     *
+     * @private
+     * @param {Array} array The array to compare.
+     * @param {Array} other The other array to compare.
+     * @param {number} bitmask The bitmask flags. See `baseIsEqual` for more details.
+     * @param {Function} customizer The function to customize comparisons.
+     * @param {Function} equalFunc The function to determine equivalents of values.
+     * @param {Object} stack Tracks traversed `array` and `other` objects.
+     * @returns {boolean} Returns `true` if the arrays are equivalent, else `false`.
+     */
+    function equalArrays(array, other, bitmask, customizer, equalFunc, stack) {
+      var isPartial = bitmask & COMPARE_PARTIAL_FLAG,
+          arrLength = array.length,
+          othLength = other.length;
+
+      if (arrLength != othLength && !(isPartial && othLength > arrLength)) {
+        return false;
+      }
+      // Check that cyclic values are equal.
+      var arrStacked = stack.get(array);
+      var othStacked = stack.get(other);
+      if (arrStacked && othStacked) {
+        return arrStacked == other && othStacked == array;
+      }
+      var index = -1,
+          result = true,
+          seen = (bitmask & COMPARE_UNORDERED_FLAG) ? new SetCache : undefined;
+
+      stack.set(array, other);
+      stack.set(other, array);
+
+      // Ignore non-index properties.
+      while (++index < arrLength) {
+        var arrValue = array[index],
+            othValue = other[index];
+
+        if (customizer) {
+          var compared = isPartial
+            ? customizer(othValue, arrValue, index, other, array, stack)
+            : customizer(arrValue, othValue, index, array, other, stack);
+        }
+        if (compared !== undefined) {
+          if (compared) {
+            continue;
+          }
+          result = false;
+          break;
+        }
+        // Recursively compare arrays (susceptible to call stack limits).
+        if (seen) {
+          if (!arraySome(other, function(othValue, othIndex) {
+                if (!cacheHas(seen, othIndex) &&
+                    (arrValue === othValue || equalFunc(arrValue, othValue, bitmask, customizer, stack))) {
+                  return seen.push(othIndex);
+                }
+              })) {
+            result = false;
+            break;
+          }
+        } else if (!(
+              arrValue === othValue ||
+                equalFunc(arrValue, othValue, bitmask, customizer, stack)
+            )) {
+          result = false;
+          break;
+        }
+      }
+      stack['delete'](array);
+      stack['delete'](other);
+      return result;
+    }
+
+    /**
+     * A specialized version of `baseIsEqualDeep` for comparing objects of
+     * the same `toStringTag`.
+     *
+     * **Note:** This function only supports comparing values with tags of
+     * `Boolean`, `Date`, `Error`, `Number`, `RegExp`, or `String`.
+     *
+     * @private
+     * @param {Object} object The object to compare.
+     * @param {Object} other The other object to compare.
+     * @param {string} tag The `toStringTag` of the objects to compare.
+     * @param {number} bitmask The bitmask flags. See `baseIsEqual` for more details.
+     * @param {Function} customizer The function to customize comparisons.
+     * @param {Function} equalFunc The function to determine equivalents of values.
+     * @param {Object} stack Tracks traversed `object` and `other` objects.
+     * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
+     */
+    function equalByTag(object, other, tag, bitmask, customizer, equalFunc, stack) {
+      switch (tag) {
+        case dataViewTag:
+          if ((object.byteLength != other.byteLength) ||
+              (object.byteOffset != other.byteOffset)) {
+            return false;
+          }
+          object = object.buffer;
+          other = other.buffer;
+
+        case arrayBufferTag:
+          if ((object.byteLength != other.byteLength) ||
+              !equalFunc(new Uint8Array(object), new Uint8Array(other))) {
+            return false;
+          }
+          return true;
+
+        case boolTag:
+        case dateTag:
+        case numberTag:
+          // Coerce booleans to `1` or `0` and dates to milliseconds.
+          // Invalid dates are coerced to `NaN`.
+          return eq(+object, +other);
+
+        case errorTag:
+          return object.name == other.name && object.message == other.message;
+
+        case regexpTag:
+        case stringTag:
+          // Coerce regexes to strings and treat strings, primitives and objects,
+          // as equal. See http://www.ecma-international.org/ecma-262/7.0/#sec-regexp.prototype.tostring
+          // for more details.
+          return object == (other + '');
+
+        case mapTag:
+          var convert = mapToArray;
+
+        case setTag:
+          var isPartial = bitmask & COMPARE_PARTIAL_FLAG;
+          convert || (convert = setToArray);
+
+          if (object.size != other.size && !isPartial) {
+            return false;
+          }
+          // Assume cyclic values are equal.
+          var stacked = stack.get(object);
+          if (stacked) {
+            return stacked == other;
+          }
+          bitmask |= COMPARE_UNORDERED_FLAG;
+
+          // Recursively compare objects (susceptible to call stack limits).
+          stack.set(object, other);
+          var result = equalArrays(convert(object), convert(other), bitmask, customizer, equalFunc, stack);
+          stack['delete'](object);
+          return result;
+
+        case symbolTag:
+          if (symbolValueOf) {
+            return symbolValueOf.call(object) == symbolValueOf.call(other);
+          }
+      }
+      return false;
+    }
+
+    /**
+     * A specialized version of `baseIsEqualDeep` for objects with support for
+     * partial deep comparisons.
+     *
+     * @private
+     * @param {Object} object The object to compare.
+     * @param {Object} other The other object to compare.
+     * @param {number} bitmask The bitmask flags. See `baseIsEqual` for more details.
+     * @param {Function} customizer The function to customize comparisons.
+     * @param {Function} equalFunc The function to determine equivalents of values.
+     * @param {Object} stack Tracks traversed `object` and `other` objects.
+     * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
+     */
+    function equalObjects(object, other, bitmask, customizer, equalFunc, stack) {
+      var isPartial = bitmask & COMPARE_PARTIAL_FLAG,
+          objProps = getAllKeys(object),
+          objLength = objProps.length,
+          othProps = getAllKeys(other),
+          othLength = othProps.length;
+
+      if (objLength != othLength && !isPartial) {
+        return false;
+      }
+      var index = objLength;
+      while (index--) {
+        var key = objProps[index];
+        if (!(isPartial ? key in other : hasOwnProperty.call(other, key))) {
+          return false;
+        }
+      }
+      // Check that cyclic values are equal.
+      var objStacked = stack.get(object);
+      var othStacked = stack.get(other);
+      if (objStacked && othStacked) {
+        return objStacked == other && othStacked == object;
+      }
+      var result = true;
+      stack.set(object, other);
+      stack.set(other, object);
+
+      var skipCtor = isPartial;
+      while (++index < objLength) {
+        key = objProps[index];
+        var objValue = object[key],
+            othValue = other[key];
+
+        if (customizer) {
+          var compared = isPartial
+            ? customizer(othValue, objValue, key, other, object, stack)
+            : customizer(objValue, othValue, key, object, other, stack);
+        }
+        // Recursively compare objects (susceptible to call stack limits).
+        if (!(compared === undefined
+              ? (objValue === othValue || equalFunc(objValue, othValue, bitmask, customizer, stack))
+              : compared
+            )) {
+          result = false;
+          break;
+        }
+        skipCtor || (skipCtor = key == 'constructor');
+      }
+      if (result && !skipCtor) {
+        var objCtor = object.constructor,
+            othCtor = other.constructor;
+
+        // Non `Object` object instances with different constructors are not equal.
+        if (objCtor != othCtor &&
+            ('constructor' in object && 'constructor' in other) &&
+            !(typeof objCtor == 'function' && objCtor instanceof objCtor &&
+              typeof othCtor == 'function' && othCtor instanceof othCtor)) {
+          result = false;
+        }
+      }
+      stack['delete'](object);
+      stack['delete'](other);
+      return result;
+    }
+
+    /**
+     * A specialized version of `baseRest` which flattens the rest array.
+     *
+     * @private
+     * @param {Function} func The function to apply a rest parameter to.
+     * @returns {Function} Returns the new function.
+     */
+    function flatRest(func) {
+      return setToString(overRest(func, undefined, flatten), func + '');
+    }
+
+    /**
+     * Creates an array of own enumerable property names and symbols of `object`.
+     *
+     * @private
+     * @param {Object} object The object to query.
+     * @returns {Array} Returns the array of property names and symbols.
+     */
+    function getAllKeys(object) {
+      return baseGetAllKeys(object, keys, getSymbols);
+    }
+
+    /**
+     * Creates an array of own and inherited enumerable property names and
+     * symbols of `object`.
+     *
+     * @private
+     * @param {Object} object The object to query.
+     * @returns {Array} Returns the array of property names and symbols.
+     */
+    function getAllKeysIn(object) {
+      return baseGetAllKeys(object, keysIn, getSymbolsIn);
+    }
+
+    /**
+     * Gets metadata for `func`.
+     *
+     * @private
+     * @param {Function} func The function to query.
+     * @returns {*} Returns the metadata for `func`.
+     */
+    var getData = !metaMap ? noop : function(func) {
+      return metaMap.get(func);
+    };
+
+    /**
+     * Gets the name of `func`.
+     *
+     * @private
+     * @param {Function} func The function to query.
+     * @returns {string} Returns the function name.
+     */
+    function getFuncName(func) {
+      var result = (func.name + ''),
+          array = realNames[result],
+          length = hasOwnProperty.call(realNames, result) ? array.length : 0;
+
+      while (length--) {
+        var data = array[length],
+            otherFunc = data.func;
+        if (otherFunc == null || otherFunc == func) {
+          return data.name;
+        }
+      }
+      return result;
+    }
+
+    /**
+     * Gets the argument placeholder value for `func`.
+     *
+     * @private
+     * @param {Function} func The function to inspect.
+     * @returns {*} Returns the placeholder value.
+     */
+    function getHolder(func) {
+      var object = hasOwnProperty.call(lodash, 'placeholder') ? lodash : func;
+      return object.placeholder;
+    }
+
+    /**
+     * Gets the appropriate "iteratee" function. If `_.iteratee` is customized,
+     * this function returns the custom method, otherwise it returns `baseIteratee`.
+     * If arguments are provided, the chosen function is invoked with them and
+     * its result is returned.
+     *
+     * @private
+     * @param {*} [value] The value to convert to an iteratee.
+     * @param {number} [arity] The arity of the created iteratee.
+     * @returns {Function} Returns the chosen function or its result.
+     */
+    function getIteratee() {
+      var result = lodash.iteratee || iteratee;
+      result = result === iteratee ? baseIteratee : result;
+      return arguments.length ? result(arguments[0], arguments[1]) : result;
+    }
+
+    /**
+     * Gets the data for `map`.
+     *
+     * @private
+     * @param {Object} map The map to query.
+     * @param {string} key The reference key.
+     * @returns {*} Returns the map data.
+     */
+    function getMapData(map, key) {
+      var data = map.__data__;
+      return isKeyable(key)
+        ? data[typeof key == 'string' ? 'string' : 'hash']
+        : data.map;
+    }
+
+    /**
+     * Gets the property names, values, and compare flags of `object`.
+     *
+     * @private
+     * @param {Object} object The object to query.
+     * @returns {Array} Returns the match data of `object`.
+     */
+    function getMatchData(object) {
+      var result = keys(object),
+          length = result.length;
+
+      while (length--) {
+        var key = result[length],
+            value = object[key];
+
+        result[length] = [key, value, isStrictComparable(value)];
+      }
+      return result;
+    }
+
+    /**
+     * Gets the native function at `key` of `object`.
+     *
+     * @private
+     * @param {Object} object The object to query.
+     * @param {string} key The key of the method to get.
+     * @returns {*} Returns the function if it's native, else `undefined`.
+     */
+    function getNative(object, key) {
+      var value = getValue(object, key);
+      return baseIsNative(value) ? value : undefined;
+    }
+
+    /**
+     * A specialized version of `baseGetTag` which ignores `Symbol.toStringTag` values.
+     *
+     * @private
+     * @param {*} value The value to query.
+     * @returns {string} Returns the raw `toStringTag`.
+     */
+    function getRawTag(value) {
+      var isOwn = hasOwnProperty.call(value, symToStringTag),
+          tag = value[symToStringTag];
+
+      try {
+        value[symToStringTag] = undefined;
+        var unmasked = true;
+      } catch (e) {}
+
+      var result = nativeObjectToString.call(value);
+      if (unmasked) {
+        if (isOwn) {
+          value[symToStringTag] = tag;
+        } else {
+          delete value[symToStringTag];
+        }
+      }
+      return result;
+    }
+
+    /**
+     * Creates an array of the own enumerable symbols of `object`.
+     *
+     * @private
+     * @param {Object} object The object to query.
+     * @returns {Array} Returns the array of symbols.
+     */
+    var getSymbols = !nativeGetSymbols ? stubArray : function(object) {
+      if (object == null) {
+        return [];
+      }
+      object = Object(object);
+      return arrayFilter(nativeGetSymbols(object), function(symbol) {
+        return propertyIsEnumerable.call(object, symbol);
+      });
+    };
+
+    /**
+     * Creates an array of the own and inherited enumerable symbols of `object`.
+     *
+     * @private
+     * @param {Object} object The object to query.
+     * @returns {Array} Returns the array of symbols.
+     */
+    var getSymbolsIn = !nativeGetSymbols ? stubArray : function(object) {
+      var result = [];
+      while (object) {
+        arrayPush(result, getSymbols(object));
+        object = getPrototype(object);
+      }
+      return result;
+    };
+
+    /**
+     * Gets the `toStringTag` of `value`.
+     *
+     * @private
+     * @param {*} value The value to query.
+     * @returns {string} Returns the `toStringTag`.
+     */
+    var getTag = baseGetTag;
+
+    // Fallback for data views, maps, sets, and weak maps in IE 11 and promises in Node.js < 6.
+    if ((DataView && getTag(new DataView(new ArrayBuffer(1))) != dataViewTag) ||
+        (Map && getTag(new Map) != mapTag) ||
+        (Promise && getTag(Promise.resolve()) != promiseTag) ||
+        (Set && getTag(new Set) != setTag) ||
+        (WeakMap && getTag(new WeakMap) != weakMapTag)) {
+      getTag = function(value) {
+        var result = baseGetTag(value),
+            Ctor = result == objectTag ? value.constructor : undefined,
+            ctorString = Ctor ? toSource(Ctor) : '';
+
+        if (ctorString) {
+          switch (ctorString) {
+            case dataViewCtorString: return dataViewTag;
+            case mapCtorString: return mapTag;
+            case promiseCtorString: return promiseTag;
+            case setCtorString: return setTag;
+            case weakMapCtorString: return weakMapTag;
+          }
+        }
+        return result;
+      };
+    }
+
+    /**
+     * Gets the view, applying any `transforms` to the `start` and `end` positions.
+     *
+     * @private
+     * @param {number} start The start of the view.
+     * @param {number} end The end of the view.
+     * @param {Array} transforms The transformations to apply to the view.
+     * @returns {Object} Returns an object containing the `start` and `end`
+     *  positions of the view.
+     */
+    function getView(start, end, transforms) {
+      var index = -1,
+          length = transforms.length;
+
+      while (++index < length) {
+        var data = transforms[index],
+            size = data.size;
+
+        switch (data.type) {
+          case 'drop':      start += size; break;
+          case 'dropRight': end -= size; break;
+          case 'take':      end = nativeMin(end, start + size); break;
+          case 'takeRight': start = nativeMax(start, end - size); break;
+        }
+      }
+      return { 'start': start, 'end': end };
+    }
+
+    /**
+     * Extracts wrapper details from the `source` body comment.
+     *
+     * @private
+     * @param {string} source The source to inspect.
+     * @returns {Array} Returns the wrapper details.
+     */
+    function getWrapDetails(source) {
+      var match = source.match(reWrapDetails);
+      return match ? match[1].split(reSplitDetails) : [];
+    }
+
+    /**
+     * Checks if `path` exists on `object`.
+     *
+     * @private
+     * @param {Object} object The object to query.
+     * @param {Array|string} path The path to check.
+     * @param {Function} hasFunc The function to check properties.
+     * @returns {boolean} Returns `true` if `path` exists, else `false`.
+     */
+    function hasPath(object, path, hasFunc) {
+      path = castPath(path, object);
+
+      var index = -1,
+          length = path.length,
+          result = false;
+
+      while (++index < length) {
+        var key = toKey(path[index]);
+        if (!(result = object != null && hasFunc(object, key))) {
+          break;
+        }
+        object = object[key];
+      }
+      if (result || ++index != length) {
+        return result;
+      }
+      length = object == null ? 0 : object.length;
+      return !!length && isLength(length) && isIndex(key, length) &&
+        (isArray(object) || isArguments(object));
+    }
+
+    /**
+     * Initializes an array clone.
+     *
+     * @private
+     * @param {Array} array The array to clone.
+     * @returns {Array} Returns the initialized clone.
+     */
+    function initCloneArray(array) {
+      var length = array.length,
+          result = new array.constructor(length);
+
+      // Add properties assigned by `RegExp#exec`.
+      if (length && typeof array[0] == 'string' && hasOwnProperty.call(array, 'index')) {
+        result.index = array.index;
+        result.input = array.input;
+      }
+      return result;
+    }
+
+    /**
+     * Initializes an object clone.
+     *
+     * @private
+     * @param {Object} object The object to clone.
+     * @returns {Object} Returns the initialized clone.
+     */
+    function initCloneObject(object) {
+      return (typeof object.constructor == 'function' && !isPrototype(object))
+        ? baseCreate(getPrototype(object))
+        : {};
+    }
+
+    /**
+     * Initializes an object clone based on its `toStringTag`.
+     *
+     * **Note:** This function only supports cloning values with tags of
+     * `Boolean`, `Date`, `Error`, `Map`, `Number`, `RegExp`, `Set`, or `String`.
+     *
+     * @private
+     * @param {Object} object The object to clone.
+     * @param {string} tag The `toStringTag` of the object to clone.
+     * @param {boolean} [isDeep] Specify a deep clone.
+     * @returns {Object} Returns the initialized clone.
+     */
+    function initCloneByTag(object, tag, isDeep) {
+      var Ctor = object.constructor;
+      switch (tag) {
+        case arrayBufferTag:
+          return cloneArrayBuffer(object);
+
+        case boolTag:
+        case dateTag:
+          return new Ctor(+object);
+
+        case dataViewTag:
+          return cloneDataView(object, isDeep);
+
+        case float32Tag: case float64Tag:
+        case int8Tag: case int16Tag: case int32Tag:
+        case uint8Tag: case uint8ClampedTag: case uint16Tag: case uint32Tag:
+          return cloneTypedArray(object, isDeep);
+
+        case mapTag:
+          return new Ctor;
+
+        case numberTag:
+        case stringTag:
+          return new Ctor(object);
+
+        case regexpTag:
+          return cloneRegExp(object);
+
+        case setTag:
+          return new Ctor;
+
+        case symbolTag:
+          return cloneSymbol(object);
+      }
+    }
+
+    /**
+     * Inserts wrapper `details` in a comment at the top of the `source` body.
+     *
+     * @private
+     * @param {string} source The source to modify.
+     * @returns {Array} details The details to insert.
+     * @returns {string} Returns the modified source.
+     */
+    function insertWrapDetails(source, details) {
+      var length = details.length;
+      if (!length) {
+        return source;
+      }
+      var lastIndex = length - 1;
+      details[lastIndex] = (length > 1 ? '& ' : '') + details[lastIndex];
+      details = details.join(length > 2 ? ', ' : ' ');
+      return source.replace(reWrapComment, '{\n/* [wrapped with ' + details + '] */\n');
+    }
+
+    /**
+     * Checks if `value` is a flattenable `arguments` object or array.
+     *
+     * @private
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is flattenable, else `false`.
+     */
+    function isFlattenable(value) {
+      return isArray(value) || isArguments(value) ||
+        !!(spreadableSymbol && value && value[spreadableSymbol]);
+    }
+
+    /**
+     * Checks if `value` is a valid array-like index.
+     *
+     * @private
+     * @param {*} value The value to check.
+     * @param {number} [length=MAX_SAFE_INTEGER] The upper bounds of a valid index.
+     * @returns {boolean} Returns `true` if `value` is a valid index, else `false`.
+     */
+    function isIndex(value, length) {
+      var type = typeof value;
+      length = length == null ? MAX_SAFE_INTEGER : length;
+
+      return !!length &&
+        (type == 'number' ||
+          (type != 'symbol' && reIsUint.test(value))) &&
+            (value > -1 && value % 1 == 0 && value < length);
+    }
+
+    /**
+     * Checks if the given arguments are from an iteratee call.
+     *
+     * @private
+     * @param {*} value The potential iteratee value argument.
+     * @param {*} index The potential iteratee index or key argument.
+     * @param {*} object The potential iteratee object argument.
+     * @returns {boolean} Returns `true` if the arguments are from an iteratee call,
+     *  else `false`.
+     */
+    function isIterateeCall(value, index, object) {
+      if (!isObject(object)) {
+        return false;
+      }
+      var type = typeof index;
+      if (type == 'number'
+            ? (isArrayLike(object) && isIndex(index, object.length))
+            : (type == 'string' && index in object)
+          ) {
+        return eq(object[index], value);
+      }
+      return false;
+    }
+
+    /**
+     * Checks if `value` is a property name and not a property path.
+     *
+     * @private
+     * @param {*} value The value to check.
+     * @param {Object} [object] The object to query keys on.
+     * @returns {boolean} Returns `true` if `value` is a property name, else `false`.
+     */
+    function isKey(value, object) {
+      if (isArray(value)) {
+        return false;
+      }
+      var type = typeof value;
+      if (type == 'number' || type == 'symbol' || type == 'boolean' ||
+          value == null || isSymbol(value)) {
+        return true;
+      }
+      return reIsPlainProp.test(value) || !reIsDeepProp.test(value) ||
+        (object != null && value in Object(object));
+    }
+
+    /**
+     * Checks if `value` is suitable for use as unique object key.
+     *
+     * @private
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is suitable, else `false`.
+     */
+    function isKeyable(value) {
+      var type = typeof value;
+      return (type == 'string' || type == 'number' || type == 'symbol' || type == 'boolean')
+        ? (value !== '__proto__')
+        : (value === null);
+    }
+
+    /**
+     * Checks if `func` has a lazy counterpart.
+     *
+     * @private
+     * @param {Function} func The function to check.
+     * @returns {boolean} Returns `true` if `func` has a lazy counterpart,
+     *  else `false`.
+     */
+    function isLaziable(func) {
+      var funcName = getFuncName(func),
+          other = lodash[funcName];
+
+      if (typeof other != 'function' || !(funcName in LazyWrapper.prototype)) {
+        return false;
+      }
+      if (func === other) {
+        return true;
+      }
+      var data = getData(other);
+      return !!data && func === data[0];
+    }
+
+    /**
+     * Checks if `func` has its source masked.
+     *
+     * @private
+     * @param {Function} func The function to check.
+     * @returns {boolean} Returns `true` if `func` is masked, else `false`.
+     */
+    function isMasked(func) {
+      return !!maskSrcKey && (maskSrcKey in func);
+    }
+
+    /**
+     * Checks if `func` is capable of being masked.
+     *
+     * @private
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `func` is maskable, else `false`.
+     */
+    var isMaskable = coreJsData ? isFunction : stubFalse;
+
+    /**
+     * Checks if `value` is likely a prototype object.
+     *
+     * @private
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a prototype, else `false`.
+     */
+    function isPrototype(value) {
+      var Ctor = value && value.constructor,
+          proto = (typeof Ctor == 'function' && Ctor.prototype) || objectProto;
+
+      return value === proto;
+    }
+
+    /**
+     * Checks if `value` is suitable for strict equality comparisons, i.e. `===`.
+     *
+     * @private
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` if suitable for strict
+     *  equality comparisons, else `false`.
+     */
+    function isStrictComparable(value) {
+      return value === value && !isObject(value);
+    }
+
+    /**
+     * A specialized version of `matchesProperty` for source values suitable
+     * for strict equality comparisons, i.e. `===`.
+     *
+     * @private
+     * @param {string} key The key of the property to get.
+     * @param {*} srcValue The value to match.
+     * @returns {Function} Returns the new spec function.
+     */
+    function matchesStrictComparable(key, srcValue) {
+      return function(object) {
+        if (object == null) {
+          return false;
+        }
+        return object[key] === srcValue &&
+          (srcValue !== undefined || (key in Object(object)));
+      };
+    }
+
+    /**
+     * A specialized version of `_.memoize` which clears the memoized function's
+     * cache when it exceeds `MAX_MEMOIZE_SIZE`.
+     *
+     * @private
+     * @param {Function} func The function to have its output memoized.
+     * @returns {Function} Returns the new memoized function.
+     */
+    function memoizeCapped(func) {
+      var result = memoize(func, function(key) {
+        if (cache.size === MAX_MEMOIZE_SIZE) {
+          cache.clear();
+        }
+        return key;
+      });
+
+      var cache = result.cache;
+      return result;
+    }
+
+    /**
+     * Merges the function metadata of `source` into `data`.
+     *
+     * Merging metadata reduces the number of wrappers used to invoke a function.
+     * This is possible because methods like `_.bind`, `_.curry`, and `_.partial`
+     * may be applied regardless of execution order. Methods like `_.ary` and
+     * `_.rearg` modify function arguments, making the order in which they are
+     * executed important, preventing the merging of metadata. However, we make
+     * an exception for a safe combined case where curried functions have `_.ary`
+     * and or `_.rearg` applied.
+     *
+     * @private
+     * @param {Array} data The destination metadata.
+     * @param {Array} source The source metadata.
+     * @returns {Array} Returns `data`.
+     */
+    function mergeData(data, source) {
+      var bitmask = data[1],
+          srcBitmask = source[1],
+          newBitmask = bitmask | srcBitmask,
+          isCommon = newBitmask < (WRAP_BIND_FLAG | WRAP_BIND_KEY_FLAG | WRAP_ARY_FLAG);
+
+      var isCombo =
+        ((srcBitmask == WRAP_ARY_FLAG) && (bitmask == WRAP_CURRY_FLAG)) ||
+        ((srcBitmask == WRAP_ARY_FLAG) && (bitmask == WRAP_REARG_FLAG) && (data[7].length <= source[8])) ||
+        ((srcBitmask == (WRAP_ARY_FLAG | WRAP_REARG_FLAG)) && (source[7].length <= source[8]) && (bitmask == WRAP_CURRY_FLAG));
+
+      // Exit early if metadata can't be merged.
+      if (!(isCommon || isCombo)) {
+        return data;
+      }
+      // Use source `thisArg` if available.
+      if (srcBitmask & WRAP_BIND_FLAG) {
+        data[2] = source[2];
+        // Set when currying a bound function.
+        newBitmask |= bitmask & WRAP_BIND_FLAG ? 0 : WRAP_CURRY_BOUND_FLAG;
+      }
+      // Compose partial arguments.
+      var value = source[3];
+      if (value) {
+        var partials = data[3];
+        data[3] = partials ? composeArgs(partials, value, source[4]) : value;
+        data[4] = partials ? replaceHolders(data[3], PLACEHOLDER) : source[4];
+      }
+      // Compose partial right arguments.
+      value = source[5];
+      if (value) {
+        partials = data[5];
+        data[5] = partials ? composeArgsRight(partials, value, source[6]) : value;
+        data[6] = partials ? replaceHolders(data[5], PLACEHOLDER) : source[6];
+      }
+      // Use source `argPos` if available.
+      value = source[7];
+      if (value) {
+        data[7] = value;
+      }
+      // Use source `ary` if it's smaller.
+      if (srcBitmask & WRAP_ARY_FLAG) {
+        data[8] = data[8] == null ? source[8] : nativeMin(data[8], source[8]);
+      }
+      // Use source `arity` if one is not provided.
+      if (data[9] == null) {
+        data[9] = source[9];
+      }
+      // Use source `func` and merge bitmasks.
+      data[0] = source[0];
+      data[1] = newBitmask;
+
+      return data;
+    }
+
+    /**
+     * This function is like
+     * [`Object.keys`](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
+     * except that it includes inherited enumerable properties.
+     *
+     * @private
+     * @param {Object} object The object to query.
+     * @returns {Array} Returns the array of property names.
+     */
+    function nativeKeysIn(object) {
+      var result = [];
+      if (object != null) {
+        for (var key in Object(object)) {
+          result.push(key);
+        }
+      }
+      return result;
+    }
+
+    /**
+     * Converts `value` to a string using `Object.prototype.toString`.
+     *
+     * @private
+     * @param {*} value The value to convert.
+     * @returns {string} Returns the converted string.
+     */
+    function objectToString(value) {
+      return nativeObjectToString.call(value);
+    }
+
+    /**
+     * A specialized version of `baseRest` which transforms the rest array.
+     *
+     * @private
+     * @param {Function} func The function to apply a rest parameter to.
+     * @param {number} [start=func.length-1] The start position of the rest parameter.
+     * @param {Function} transform The rest array transform.
+     * @returns {Function} Returns the new function.
+     */
+    function overRest(func, start, transform) {
+      start = nativeMax(start === undefined ? (func.length - 1) : start, 0);
+      return function() {
+        var args = arguments,
+            index = -1,
+            length = nativeMax(args.length - start, 0),
+            array = Array(length);
+
+        while (++index < length) {
+          array[index] = args[start + index];
+        }
+        index = -1;
+        var otherArgs = Array(start + 1);
+        while (++index < start) {
+          otherArgs[index] = args[index];
+        }
+        otherArgs[start] = transform(array);
+        return apply(func, this, otherArgs);
+      };
+    }
+
+    /**
+     * Gets the parent value at `path` of `object`.
+     *
+     * @private
+     * @param {Object} object The object to query.
+     * @param {Array} path The path to get the parent value of.
+     * @returns {*} Returns the parent value.
+     */
+    function parent(object, path) {
+      return path.length < 2 ? object : baseGet(object, baseSlice(path, 0, -1));
+    }
+
+    /**
+     * Reorder `array` according to the specified indexes where the element at
+     * the first index is assigned as the first element, the element at
+     * the second index is assigned as the second element, and so on.
+     *
+     * @private
+     * @param {Array} array The array to reorder.
+     * @param {Array} indexes The arranged array indexes.
+     * @returns {Array} Returns `array`.
+     */
+    function reorder(array, indexes) {
+      var arrLength = array.length,
+          length = nativeMin(indexes.length, arrLength),
+          oldArray = copyArray(array);
+
+      while (length--) {
+        var index = indexes[length];
+        array[length] = isIndex(index, arrLength) ? oldArray[index] : undefined;
+      }
+      return array;
+    }
+
+    /**
+     * Gets the value at `key`, unless `key` is "__proto__" or "constructor".
+     *
+     * @private
+     * @param {Object} object The object to query.
+     * @param {string} key The key of the property to get.
+     * @returns {*} Returns the property value.
+     */
+    function safeGet(object, key) {
+      if (key === 'constructor' && typeof object[key] === 'function') {
+        return;
+      }
+
+      if (key == '__proto__') {
+        return;
+      }
+
+      return object[key];
+    }
+
+    /**
+     * Sets metadata for `func`.
+     *
+     * **Note:** If this function becomes hot, i.e. is invoked a lot in a short
+     * period of time, it will trip its breaker and transition to an identity
+     * function to avoid garbage collection pauses in V8. See
+     * [V8 issue 2070](https://bugs.chromium.org/p/v8/issues/detail?id=2070)
+     * for more details.
+     *
+     * @private
+     * @param {Function} func The function to associate metadata with.
+     * @param {*} data The metadata.
+     * @returns {Function} Returns `func`.
+     */
+    var setData = shortOut(baseSetData);
+
+    /**
+     * A simple wrapper around the global [`setTimeout`](https://mdn.io/setTimeout).
+     *
+     * @private
+     * @param {Function} func The function to delay.
+     * @param {number} wait The number of milliseconds to delay invocation.
+     * @returns {number|Object} Returns the timer id or timeout object.
+     */
+    var setTimeout = ctxSetTimeout || function(func, wait) {
+      return root.setTimeout(func, wait);
+    };
+
+    /**
+     * Sets the `toString` method of `func` to return `string`.
+     *
+     * @private
+     * @param {Function} func The function to modify.
+     * @param {Function} string The `toString` result.
+     * @returns {Function} Returns `func`.
+     */
+    var setToString = shortOut(baseSetToString);
+
+    /**
+     * Sets the `toString` method of `wrapper` to mimic the source of `reference`
+     * with wrapper details in a comment at the top of the source body.
+     *
+     * @private
+     * @param {Function} wrapper The function to modify.
+     * @param {Function} reference The reference function.
+     * @param {number} bitmask The bitmask flags. See `createWrap` for more details.
+     * @returns {Function} Returns `wrapper`.
+     */
+    function setWrapToString(wrapper, reference, bitmask) {
+      var source = (reference + '');
+      return setToString(wrapper, insertWrapDetails(source, updateWrapDetails(getWrapDetails(source), bitmask)));
+    }
+
+    /**
+     * Creates a function that'll short out and invoke `identity` instead
+     * of `func` when it's called `HOT_COUNT` or more times in `HOT_SPAN`
+     * milliseconds.
+     *
+     * @private
+     * @param {Function} func The function to restrict.
+     * @returns {Function} Returns the new shortable function.
+     */
+    function shortOut(func) {
+      var count = 0,
+          lastCalled = 0;
+
+      return function() {
+        var stamp = nativeNow(),
+            remaining = HOT_SPAN - (stamp - lastCalled);
+
+        lastCalled = stamp;
+        if (remaining > 0) {
+          if (++count >= HOT_COUNT) {
+            return arguments[0];
+          }
+        } else {
+          count = 0;
+        }
+        return func.apply(undefined, arguments);
+      };
+    }
+
+    /**
+     * A specialized version of `_.shuffle` which mutates and sets the size of `array`.
+     *
+     * @private
+     * @param {Array} array The array to shuffle.
+     * @param {number} [size=array.length] The size of `array`.
+     * @returns {Array} Returns `array`.
+     */
+    function shuffleSelf(array, size) {
+      var index = -1,
+          length = array.length,
+          lastIndex = length - 1;
+
+      size = size === undefined ? length : size;
+      while (++index < size) {
+        var rand = baseRandom(index, lastIndex),
+            value = array[rand];
+
+        array[rand] = array[index];
+        array[index] = value;
+      }
+      array.length = size;
+      return array;
+    }
+
+    /**
+     * Converts `string` to a property path array.
+     *
+     * @private
+     * @param {string} string The string to convert.
+     * @returns {Array} Returns the property path array.
+     */
+    var stringToPath = memoizeCapped(function(string) {
+      var result = [];
+      if (string.charCodeAt(0) === 46 /* . */) {
+        result.push('');
+      }
+      string.replace(rePropName, function(match, number, quote, subString) {
+        result.push(quote ? subString.replace(reEscapeChar, '$1') : (number || match));
+      });
+      return result;
+    });
+
+    /**
+     * Converts `value` to a string key if it's not a string or symbol.
+     *
+     * @private
+     * @param {*} value The value to inspect.
+     * @returns {string|symbol} Returns the key.
+     */
+    function toKey(value) {
+      if (typeof value == 'string' || isSymbol(value)) {
+        return value;
+      }
+      var result = (value + '');
+      return (result == '0' && (1 / value) == -INFINITY) ? '-0' : result;
+    }
+
+    /**
+     * Converts `func` to its source code.
+     *
+     * @private
+     * @param {Function} func The function to convert.
+     * @returns {string} Returns the source code.
+     */
+    function toSource(func) {
+      if (func != null) {
+        try {
+          return funcToString.call(func);
+        } catch (e) {}
+        try {
+          return (func + '');
+        } catch (e) {}
+      }
+      return '';
+    }
+
+    /**
+     * Updates wrapper `details` based on `bitmask` flags.
+     *
+     * @private
+     * @returns {Array} details The details to modify.
+     * @param {number} bitmask The bitmask flags. See `createWrap` for more details.
+     * @returns {Array} Returns `details`.
+     */
+    function updateWrapDetails(details, bitmask) {
+      arrayEach(wrapFlags, function(pair) {
+        var value = '_.' + pair[0];
+        if ((bitmask & pair[1]) && !arrayIncludes(details, value)) {
+          details.push(value);
+        }
+      });
+      return details.sort();
+    }
+
+    /**
+     * Creates a clone of `wrapper`.
+     *
+     * @private
+     * @param {Object} wrapper The wrapper to clone.
+     * @returns {Object} Returns the cloned wrapper.
+     */
+    function wrapperClone(wrapper) {
+      if (wrapper instanceof LazyWrapper) {
+        return wrapper.clone();
+      }
+      var result = new LodashWrapper(wrapper.__wrapped__, wrapper.__chain__);
+      result.__actions__ = copyArray(wrapper.__actions__);
+      result.__index__  = wrapper.__index__;
+      result.__values__ = wrapper.__values__;
+      return result;
+    }
+
+    /*------------------------------------------------------------------------*/
+
+    /**
+     * Creates an array of elements split into groups the length of `size`.
+     * If `array` can't be split evenly, the final chunk will be the remaining
+     * elements.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Array
+     * @param {Array} array The array to process.
+     * @param {number} [size=1] The length of each chunk
+     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+     * @returns {Array} Returns the new array of chunks.
+     * @example
+     *
+     * _.chunk(['a', 'b', 'c', 'd'], 2);
+     * // => [['a', 'b'], ['c', 'd']]
+     *
+     * _.chunk(['a', 'b', 'c', 'd'], 3);
+     * // => [['a', 'b', 'c'], ['d']]
+     */
+    function chunk(array, size, guard) {
+      if ((guard ? isIterateeCall(array, size, guard) : size === undefined)) {
+        size = 1;
+      } else {
+        size = nativeMax(toInteger(size), 0);
+      }
+      var length = array == null ? 0 : array.length;
+      if (!length || size < 1) {
+        return [];
+      }
+      var index = 0,
+          resIndex = 0,
+          result = Array(nativeCeil(length / size));
+
+      while (index < length) {
+        result[resIndex++] = baseSlice(array, index, (index += size));
+      }
+      return result;
+    }
+
+    /**
+     * Creates an array with all falsey values removed. The values `false`, `null`,
+     * `0`, `""`, `undefined`, and `NaN` are falsey.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Array
+     * @param {Array} array The array to compact.
+     * @returns {Array} Returns the new array of filtered values.
+     * @example
+     *
+     * _.compact([0, 1, false, 2, '', 3]);
+     * // => [1, 2, 3]
+     */
+    function compact(array) {
+      var index = -1,
+          length = array == null ? 0 : array.length,
+          resIndex = 0,
+          result = [];
+
+      while (++index < length) {
+        var value = array[index];
+        if (value) {
+          result[resIndex++] = value;
+        }
+      }
+      return result;
+    }
+
+    /**
+     * Creates a new array concatenating `array` with any additional arrays
+     * and/or values.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Array
+     * @param {Array} array The array to concatenate.
+     * @param {...*} [values] The values to concatenate.
+     * @returns {Array} Returns the new concatenated array.
+     * @example
+     *
+     * var array = [1];
+     * var other = _.concat(array, 2, [3], [[4]]);
+     *
+     * console.log(other);
+     * // => [1, 2, 3, [4]]
+     *
+     * console.log(array);
+     * // => [1]
+     */
+    function concat() {
+      var length = arguments.length;
+      if (!length) {
+        return [];
+      }
+      var args = Array(length - 1),
+          array = arguments[0],
+          index = length;
+
+      while (index--) {
+        args[index - 1] = arguments[index];
+      }
+      return arrayPush(isArray(array) ? copyArray(array) : [array], baseFlatten(args, 1));
+    }
+
+    /**
+     * Creates an array of `array` values not included in the other given arrays
+     * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * for equality comparisons. The order and references of result values are
+     * determined by the first array.
+     *
+     * **Note:** Unlike `_.pullAll`, this method returns a new array.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Array
+     * @param {Array} array The array to inspect.
+     * @param {...Array} [values] The values to exclude.
+     * @returns {Array} Returns the new array of filtered values.
+     * @see _.without, _.xor
+     * @example
+     *
+     * _.difference([2, 1], [2, 3]);
+     * // => [1]
+     */
+    var difference = baseRest(function(array, values) {
+      return isArrayLikeObject(array)
+        ? baseDifference(array, baseFlatten(values, 1, isArrayLikeObject, true))
+        : [];
+    });
+
+    /**
+     * This method is like `_.difference` except that it accepts `iteratee` which
+     * is invoked for each element of `array` and `values` to generate the criterion
+     * by which they're compared. The order and references of result values are
+     * determined by the first array. The iteratee is invoked with one argument:
+     * (value).
+     *
+     * **Note:** Unlike `_.pullAllBy`, this method returns a new array.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Array
+     * @param {Array} array The array to inspect.
+     * @param {...Array} [values] The values to exclude.
+     * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
+     * @returns {Array} Returns the new array of filtered values.
+     * @example
+     *
+     * _.differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor);
+     * // => [1.2]
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.differenceBy([{ 'x': 2 }, { 'x': 1 }], [{ 'x': 1 }], 'x');
+     * // => [{ 'x': 2 }]
+     */
+    var differenceBy = baseRest(function(array, values) {
+      var iteratee = last(values);
+      if (isArrayLikeObject(iteratee)) {
+        iteratee = undefined;
+      }
+      return isArrayLikeObject(array)
+        ? baseDifference(array, baseFlatten(values, 1, isArrayLikeObject, true), getIteratee(iteratee, 2))
+        : [];
+    });
+
+    /**
+     * This method is like `_.difference` except that it accepts `comparator`
+     * which is invoked to compare elements of `array` to `values`. The order and
+     * references of result values are determined by the first array. The comparator
+     * is invoked with two arguments: (arrVal, othVal).
+     *
+     * **Note:** Unlike `_.pullAllWith`, this method returns a new array.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Array
+     * @param {Array} array The array to inspect.
+     * @param {...Array} [values] The values to exclude.
+     * @param {Function} [comparator] The comparator invoked per element.
+     * @returns {Array} Returns the new array of filtered values.
+     * @example
+     *
+     * var objects = [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }];
+     *
+     * _.differenceWith(objects, [{ 'x': 1, 'y': 2 }], _.isEqual);
+     * // => [{ 'x': 2, 'y': 1 }]
+     */
+    var differenceWith = baseRest(function(array, values) {
+      var comparator = last(values);
+      if (isArrayLikeObject(comparator)) {
+        comparator = undefined;
+      }
+      return isArrayLikeObject(array)
+        ? baseDifference(array, baseFlatten(values, 1, isArrayLikeObject, true), undefined, comparator)
+        : [];
+    });
+
+    /**
+     * Creates a slice of `array` with `n` elements dropped from the beginning.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.5.0
+     * @category Array
+     * @param {Array} array The array to query.
+     * @param {number} [n=1] The number of elements to drop.
+     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+     * @returns {Array} Returns the slice of `array`.
+     * @example
+     *
+     * _.drop([1, 2, 3]);
+     * // => [2, 3]
+     *
+     * _.drop([1, 2, 3], 2);
+     * // => [3]
+     *
+     * _.drop([1, 2, 3], 5);
+     * // => []
+     *
+     * _.drop([1, 2, 3], 0);
+     * // => [1, 2, 3]
+     */
+    function drop(array, n, guard) {
+      var length = array == null ? 0 : array.length;
+      if (!length) {
+        return [];
+      }
+      n = (guard || n === undefined) ? 1 : toInteger(n);
+      return baseSlice(array, n < 0 ? 0 : n, length);
+    }
+
+    /**
+     * Creates a slice of `array` with `n` elements dropped from the end.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Array
+     * @param {Array} array The array to query.
+     * @param {number} [n=1] The number of elements to drop.
+     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+     * @returns {Array} Returns the slice of `array`.
+     * @example
+     *
+     * _.dropRight([1, 2, 3]);
+     * // => [1, 2]
+     *
+     * _.dropRight([1, 2, 3], 2);
+     * // => [1]
+     *
+     * _.dropRight([1, 2, 3], 5);
+     * // => []
+     *
+     * _.dropRight([1, 2, 3], 0);
+     * // => [1, 2, 3]
+     */
+    function dropRight(array, n, guard) {
+      var length = array == null ? 0 : array.length;
+      if (!length) {
+        return [];
+      }
+      n = (guard || n === undefined) ? 1 : toInteger(n);
+      n = length - n;
+      return baseSlice(array, 0, n < 0 ? 0 : n);
+    }
+
+    /**
+     * Creates a slice of `array` excluding elements dropped from the end.
+     * Elements are dropped until `predicate` returns falsey. The predicate is
+     * invoked with three arguments: (value, index, array).
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Array
+     * @param {Array} array The array to query.
+     * @param {Function} [predicate=_.identity] The function invoked per iteration.
+     * @returns {Array} Returns the slice of `array`.
+     * @example
+     *
+     * var users = [
+     *   { 'user': 'barney',  'active': true },
+     *   { 'user': 'fred',    'active': false },
+     *   { 'user': 'pebbles', 'active': false }
+     * ];
+     *
+     * _.dropRightWhile(users, function(o) { return !o.active; });
+     * // => objects for ['barney']
+     *
+     * // The `_.matches` iteratee shorthand.
+     * _.dropRightWhile(users, { 'user': 'pebbles', 'active': false });
+     * // => objects for ['barney', 'fred']
+     *
+     * // The `_.matchesProperty` iteratee shorthand.
+     * _.dropRightWhile(users, ['active', false]);
+     * // => objects for ['barney']
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.dropRightWhile(users, 'active');
+     * // => objects for ['barney', 'fred', 'pebbles']
+     */
+    function dropRightWhile(array, predicate) {
+      return (array && array.length)
+        ? baseWhile(array, getIteratee(predicate, 3), true, true)
+        : [];
+    }
+
+    /**
+     * Creates a slice of `array` excluding elements dropped from the beginning.
+     * Elements are dropped until `predicate` returns falsey. The predicate is
+     * invoked with three arguments: (value, index, array).
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Array
+     * @param {Array} array The array to query.
+     * @param {Function} [predicate=_.identity] The function invoked per iteration.
+     * @returns {Array} Returns the slice of `array`.
+     * @example
+     *
+     * var users = [
+     *   { 'user': 'barney',  'active': false },
+     *   { 'user': 'fred',    'active': false },
+     *   { 'user': 'pebbles', 'active': true }
+     * ];
+     *
+     * _.dropWhile(users, function(o) { return !o.active; });
+     * // => objects for ['pebbles']
+     *
+     * // The `_.matches` iteratee shorthand.
+     * _.dropWhile(users, { 'user': 'barney', 'active': false });
+     * // => objects for ['fred', 'pebbles']
+     *
+     * // The `_.matchesProperty` iteratee shorthand.
+     * _.dropWhile(users, ['active', false]);
+     * // => objects for ['pebbles']
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.dropWhile(users, 'active');
+     * // => objects for ['barney', 'fred', 'pebbles']
+     */
+    function dropWhile(array, predicate) {
+      return (array && array.length)
+        ? baseWhile(array, getIteratee(predicate, 3), true)
+        : [];
+    }
+
+    /**
+     * Fills elements of `array` with `value` from `start` up to, but not
+     * including, `end`.
+     *
+     * **Note:** This method mutates `array`.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.2.0
+     * @category Array
+     * @param {Array} array The array to fill.
+     * @param {*} value The value to fill `array` with.
+     * @param {number} [start=0] The start position.
+     * @param {number} [end=array.length] The end position.
+     * @returns {Array} Returns `array`.
+     * @example
+     *
+     * var array = [1, 2, 3];
+     *
+     * _.fill(array, 'a');
+     * console.log(array);
+     * // => ['a', 'a', 'a']
+     *
+     * _.fill(Array(3), 2);
+     * // => [2, 2, 2]
+     *
+     * _.fill([4, 6, 8, 10], '*', 1, 3);
+     * // => [4, '*', '*', 10]
+     */
+    function fill(array, value, start, end) {
+      var length = array == null ? 0 : array.length;
+      if (!length) {
+        return [];
+      }
+      if (start && typeof start != 'number' && isIterateeCall(array, value, start)) {
+        start = 0;
+        end = length;
+      }
+      return baseFill(array, value, start, end);
+    }
+
+    /**
+     * This method is like `_.find` except that it returns the index of the first
+     * element `predicate` returns truthy for instead of the element itself.
+     *
+     * @static
+     * @memberOf _
+     * @since 1.1.0
+     * @category Array
+     * @param {Array} array The array to inspect.
+     * @param {Function} [predicate=_.identity] The function invoked per iteration.
+     * @param {number} [fromIndex=0] The index to search from.
+     * @returns {number} Returns the index of the found element, else `-1`.
+     * @example
+     *
+     * var users = [
+     *   { 'user': 'barney',  'active': false },
+     *   { 'user': 'fred',    'active': false },
+     *   { 'user': 'pebbles', 'active': true }
+     * ];
+     *
+     * _.findIndex(users, function(o) { return o.user == 'barney'; });
+     * // => 0
+     *
+     * // The `_.matches` iteratee shorthand.
+     * _.findIndex(users, { 'user': 'fred', 'active': false });
+     * // => 1
+     *
+     * // The `_.matchesProperty` iteratee shorthand.
+     * _.findIndex(users, ['active', false]);
+     * // => 0
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.findIndex(users, 'active');
+     * // => 2
+     */
+    function findIndex(array, predicate, fromIndex) {
+      var length = array == null ? 0 : array.length;
+      if (!length) {
+        return -1;
+      }
+      var index = fromIndex == null ? 0 : toInteger(fromIndex);
+      if (index < 0) {
+        index = nativeMax(length + index, 0);
+      }
+      return baseFindIndex(array, getIteratee(predicate, 3), index);
+    }
+
+    /**
+     * This method is like `_.findIndex` except that it iterates over elements
+     * of `collection` from right to left.
+     *
+     * @static
+     * @memberOf _
+     * @since 2.0.0
+     * @category Array
+     * @param {Array} array The array to inspect.
+     * @param {Function} [predicate=_.identity] The function invoked per iteration.
+     * @param {number} [fromIndex=array.length-1] The index to search from.
+     * @returns {number} Returns the index of the found element, else `-1`.
+     * @example
+     *
+     * var users = [
+     *   { 'user': 'barney',  'active': true },
+     *   { 'user': 'fred',    'active': false },
+     *   { 'user': 'pebbles', 'active': false }
+     * ];
+     *
+     * _.findLastIndex(users, function(o) { return o.user == 'pebbles'; });
+     * // => 2
+     *
+     * // The `_.matches` iteratee shorthand.
+     * _.findLastIndex(users, { 'user': 'barney', 'active': true });
+     * // => 0
+     *
+     * // The `_.matchesProperty` iteratee shorthand.
+     * _.findLastIndex(users, ['active', false]);
+     * // => 2
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.findLastIndex(users, 'active');
+     * // => 0
+     */
+    function findLastIndex(array, predicate, fromIndex) {
+      var length = array == null ? 0 : array.length;
+      if (!length) {
+        return -1;
+      }
+      var index = length - 1;
+      if (fromIndex !== undefined) {
+        index = toInteger(fromIndex);
+        index = fromIndex < 0
+          ? nativeMax(length + index, 0)
+          : nativeMin(index, length - 1);
+      }
+      return baseFindIndex(array, getIteratee(predicate, 3), index, true);
+    }
+
+    /**
+     * Flattens `array` a single level deep.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Array
+     * @param {Array} array The array to flatten.
+     * @returns {Array} Returns the new flattened array.
+     * @example
+     *
+     * _.flatten([1, [2, [3, [4]], 5]]);
+     * // => [1, 2, [3, [4]], 5]
+     */
+    function flatten(array) {
+      var length = array == null ? 0 : array.length;
+      return length ? baseFlatten(array, 1) : [];
+    }
+
+    /**
+     * Recursively flattens `array`.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Array
+     * @param {Array} array The array to flatten.
+     * @returns {Array} Returns the new flattened array.
+     * @example
+     *
+     * _.flattenDeep([1, [2, [3, [4]], 5]]);
+     * // => [1, 2, 3, 4, 5]
+     */
+    function flattenDeep(array) {
+      var length = array == null ? 0 : array.length;
+      return length ? baseFlatten(array, INFINITY) : [];
+    }
+
+    /**
+     * Recursively flatten `array` up to `depth` times.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.4.0
+     * @category Array
+     * @param {Array} array The array to flatten.
+     * @param {number} [depth=1] The maximum recursion depth.
+     * @returns {Array} Returns the new flattened array.
+     * @example
+     *
+     * var array = [1, [2, [3, [4]], 5]];
+     *
+     * _.flattenDepth(array, 1);
+     * // => [1, 2, [3, [4]], 5]
+     *
+     * _.flattenDepth(array, 2);
+     * // => [1, 2, 3, [4], 5]
+     */
+    function flattenDepth(array, depth) {
+      var length = array == null ? 0 : array.length;
+      if (!length) {
+        return [];
+      }
+      depth = depth === undefined ? 1 : toInteger(depth);
+      return baseFlatten(array, depth);
+    }
+
+    /**
+     * The inverse of `_.toPairs`; this method returns an object composed
+     * from key-value `pairs`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Array
+     * @param {Array} pairs The key-value pairs.
+     * @returns {Object} Returns the new object.
+     * @example
+     *
+     * _.fromPairs([['a', 1], ['b', 2]]);
+     * // => { 'a': 1, 'b': 2 }
+     */
+    function fromPairs(pairs) {
+      var index = -1,
+          length = pairs == null ? 0 : pairs.length,
+          result = {};
+
+      while (++index < length) {
+        var pair = pairs[index];
+        result[pair[0]] = pair[1];
+      }
+      return result;
+    }
+
+    /**
+     * Gets the first element of `array`.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @alias first
+     * @category Array
+     * @param {Array} array The array to query.
+     * @returns {*} Returns the first element of `array`.
+     * @example
+     *
+     * _.head([1, 2, 3]);
+     * // => 1
+     *
+     * _.head([]);
+     * // => undefined
+     */
+    function head(array) {
+      return (array && array.length) ? array[0] : undefined;
+    }
+
+    /**
+     * Gets the index at which the first occurrence of `value` is found in `array`
+     * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * for equality comparisons. If `fromIndex` is negative, it's used as the
+     * offset from the end of `array`.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Array
+     * @param {Array} array The array to inspect.
+     * @param {*} value The value to search for.
+     * @param {number} [fromIndex=0] The index to search from.
+     * @returns {number} Returns the index of the matched value, else `-1`.
+     * @example
+     *
+     * _.indexOf([1, 2, 1, 2], 2);
+     * // => 1
+     *
+     * // Search from the `fromIndex`.
+     * _.indexOf([1, 2, 1, 2], 2, 2);
+     * // => 3
+     */
+    function indexOf(array, value, fromIndex) {
+      var length = array == null ? 0 : array.length;
+      if (!length) {
+        return -1;
+      }
+      var index = fromIndex == null ? 0 : toInteger(fromIndex);
+      if (index < 0) {
+        index = nativeMax(length + index, 0);
+      }
+      return baseIndexOf(array, value, index);
+    }
+
+    /**
+     * Gets all but the last element of `array`.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Array
+     * @param {Array} array The array to query.
+     * @returns {Array} Returns the slice of `array`.
+     * @example
+     *
+     * _.initial([1, 2, 3]);
+     * // => [1, 2]
+     */
+    function initial(array) {
+      var length = array == null ? 0 : array.length;
+      return length ? baseSlice(array, 0, -1) : [];
+    }
+
+    /**
+     * Creates an array of unique values that are included in all given arrays
+     * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * for equality comparisons. The order and references of result values are
+     * determined by the first array.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Array
+     * @param {...Array} [arrays] The arrays to inspect.
+     * @returns {Array} Returns the new array of intersecting values.
+     * @example
+     *
+     * _.intersection([2, 1], [2, 3]);
+     * // => [2]
+     */
+    var intersection = baseRest(function(arrays) {
+      var mapped = arrayMap(arrays, castArrayLikeObject);
+      return (mapped.length && mapped[0] === arrays[0])
+        ? baseIntersection(mapped)
+        : [];
+    });
+
+    /**
+     * This method is like `_.intersection` except that it accepts `iteratee`
+     * which is invoked for each element of each `arrays` to generate the criterion
+     * by which they're compared. The order and references of result values are
+     * determined by the first array. The iteratee is invoked with one argument:
+     * (value).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Array
+     * @param {...Array} [arrays] The arrays to inspect.
+     * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
+     * @returns {Array} Returns the new array of intersecting values.
+     * @example
+     *
+     * _.intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor);
+     * // => [2.1]
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.intersectionBy([{ 'x': 1 }], [{ 'x': 2 }, { 'x': 1 }], 'x');
+     * // => [{ 'x': 1 }]
+     */
+    var intersectionBy = baseRest(function(arrays) {
+      var iteratee = last(arrays),
+          mapped = arrayMap(arrays, castArrayLikeObject);
+
+      if (iteratee === last(mapped)) {
+        iteratee = undefined;
+      } else {
+        mapped.pop();
+      }
+      return (mapped.length && mapped[0] === arrays[0])
+        ? baseIntersection(mapped, getIteratee(iteratee, 2))
+        : [];
+    });
+
+    /**
+     * This method is like `_.intersection` except that it accepts `comparator`
+     * which is invoked to compare elements of `arrays`. The order and references
+     * of result values are determined by the first array. The comparator is
+     * invoked with two arguments: (arrVal, othVal).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Array
+     * @param {...Array} [arrays] The arrays to inspect.
+     * @param {Function} [comparator] The comparator invoked per element.
+     * @returns {Array} Returns the new array of intersecting values.
+     * @example
+     *
+     * var objects = [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }];
+     * var others = [{ 'x': 1, 'y': 1 }, { 'x': 1, 'y': 2 }];
+     *
+     * _.intersectionWith(objects, others, _.isEqual);
+     * // => [{ 'x': 1, 'y': 2 }]
+     */
+    var intersectionWith = baseRest(function(arrays) {
+      var comparator = last(arrays),
+          mapped = arrayMap(arrays, castArrayLikeObject);
+
+      comparator = typeof comparator == 'function' ? comparator : undefined;
+      if (comparator) {
+        mapped.pop();
+      }
+      return (mapped.length && mapped[0] === arrays[0])
+        ? baseIntersection(mapped, undefined, comparator)
+        : [];
+    });
+
+    /**
+     * Converts all elements in `array` into a string separated by `separator`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Array
+     * @param {Array} array The array to convert.
+     * @param {string} [separator=','] The element separator.
+     * @returns {string} Returns the joined string.
+     * @example
+     *
+     * _.join(['a', 'b', 'c'], '~');
+     * // => 'a~b~c'
+     */
+    function join(array, separator) {
+      return array == null ? '' : nativeJoin.call(array, separator);
+    }
+
+    /**
+     * Gets the last element of `array`.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Array
+     * @param {Array} array The array to query.
+     * @returns {*} Returns the last element of `array`.
+     * @example
+     *
+     * _.last([1, 2, 3]);
+     * // => 3
+     */
+    function last(array) {
+      var length = array == null ? 0 : array.length;
+      return length ? array[length - 1] : undefined;
+    }
+
+    /**
+     * This method is like `_.indexOf` except that it iterates over elements of
+     * `array` from right to left.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Array
+     * @param {Array} array The array to inspect.
+     * @param {*} value The value to search for.
+     * @param {number} [fromIndex=array.length-1] The index to search from.
+     * @returns {number} Returns the index of the matched value, else `-1`.
+     * @example
+     *
+     * _.lastIndexOf([1, 2, 1, 2], 2);
+     * // => 3
+     *
+     * // Search from the `fromIndex`.
+     * _.lastIndexOf([1, 2, 1, 2], 2, 2);
+     * // => 1
+     */
+    function lastIndexOf(array, value, fromIndex) {
+      var length = array == null ? 0 : array.length;
+      if (!length) {
+        return -1;
+      }
+      var index = length;
+      if (fromIndex !== undefined) {
+        index = toInteger(fromIndex);
+        index = index < 0 ? nativeMax(length + index, 0) : nativeMin(index, length - 1);
+      }
+      return value === value
+        ? strictLastIndexOf(array, value, index)
+        : baseFindIndex(array, baseIsNaN, index, true);
+    }
+
+    /**
+     * Gets the element at index `n` of `array`. If `n` is negative, the nth
+     * element from the end is returned.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.11.0
+     * @category Array
+     * @param {Array} array The array to query.
+     * @param {number} [n=0] The index of the element to return.
+     * @returns {*} Returns the nth element of `array`.
+     * @example
+     *
+     * var array = ['a', 'b', 'c', 'd'];
+     *
+     * _.nth(array, 1);
+     * // => 'b'
+     *
+     * _.nth(array, -2);
+     * // => 'c';
+     */
+    function nth(array, n) {
+      return (array && array.length) ? baseNth(array, toInteger(n)) : undefined;
+    }
+
+    /**
+     * Removes all given values from `array` using
+     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * for equality comparisons.
+     *
+     * **Note:** Unlike `_.without`, this method mutates `array`. Use `_.remove`
+     * to remove elements from an array by predicate.
+     *
+     * @static
+     * @memberOf _
+     * @since 2.0.0
+     * @category Array
+     * @param {Array} array The array to modify.
+     * @param {...*} [values] The values to remove.
+     * @returns {Array} Returns `array`.
+     * @example
+     *
+     * var array = ['a', 'b', 'c', 'a', 'b', 'c'];
+     *
+     * _.pull(array, 'a', 'c');
+     * console.log(array);
+     * // => ['b', 'b']
+     */
+    var pull = baseRest(pullAll);
+
+    /**
+     * This method is like `_.pull` except that it accepts an array of values to remove.
+     *
+     * **Note:** Unlike `_.difference`, this method mutates `array`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Array
+     * @param {Array} array The array to modify.
+     * @param {Array} values The values to remove.
+     * @returns {Array} Returns `array`.
+     * @example
+     *
+     * var array = ['a', 'b', 'c', 'a', 'b', 'c'];
+     *
+     * _.pullAll(array, ['a', 'c']);
+     * console.log(array);
+     * // => ['b', 'b']
+     */
+    function pullAll(array, values) {
+      return (array && array.length && values && values.length)
+        ? basePullAll(array, values)
+        : array;
+    }
+
+    /**
+     * This method is like `_.pullAll` except that it accepts `iteratee` which is
+     * invoked for each element of `array` and `values` to generate the criterion
+     * by which they're compared. The iteratee is invoked with one argument: (value).
+     *
+     * **Note:** Unlike `_.differenceBy`, this method mutates `array`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Array
+     * @param {Array} array The array to modify.
+     * @param {Array} values The values to remove.
+     * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
+     * @returns {Array} Returns `array`.
+     * @example
+     *
+     * var array = [{ 'x': 1 }, { 'x': 2 }, { 'x': 3 }, { 'x': 1 }];
+     *
+     * _.pullAllBy(array, [{ 'x': 1 }, { 'x': 3 }], 'x');
+     * console.log(array);
+     * // => [{ 'x': 2 }]
+     */
+    function pullAllBy(array, values, iteratee) {
+      return (array && array.length && values && values.length)
+        ? basePullAll(array, values, getIteratee(iteratee, 2))
+        : array;
+    }
+
+    /**
+     * This method is like `_.pullAll` except that it accepts `comparator` which
+     * is invoked to compare elements of `array` to `values`. The comparator is
+     * invoked with two arguments: (arrVal, othVal).
+     *
+     * **Note:** Unlike `_.differenceWith`, this method mutates `array`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.6.0
+     * @category Array
+     * @param {Array} array The array to modify.
+     * @param {Array} values The values to remove.
+     * @param {Function} [comparator] The comparator invoked per element.
+     * @returns {Array} Returns `array`.
+     * @example
+     *
+     * var array = [{ 'x': 1, 'y': 2 }, { 'x': 3, 'y': 4 }, { 'x': 5, 'y': 6 }];
+     *
+     * _.pullAllWith(array, [{ 'x': 3, 'y': 4 }], _.isEqual);
+     * console.log(array);
+     * // => [{ 'x': 1, 'y': 2 }, { 'x': 5, 'y': 6 }]
+     */
+    function pullAllWith(array, values, comparator) {
+      return (array && array.length && values && values.length)
+        ? basePullAll(array, values, undefined, comparator)
+        : array;
+    }
+
+    /**
+     * Removes elements from `array` corresponding to `indexes` and returns an
+     * array of removed elements.
+     *
+     * **Note:** Unlike `_.at`, this method mutates `array`.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Array
+     * @param {Array} array The array to modify.
+     * @param {...(number|number[])} [indexes] The indexes of elements to remove.
+     * @returns {Array} Returns the new array of removed elements.
+     * @example
+     *
+     * var array = ['a', 'b', 'c', 'd'];
+     * var pulled = _.pullAt(array, [1, 3]);
+     *
+     * console.log(array);
+     * // => ['a', 'c']
+     *
+     * console.log(pulled);
+     * // => ['b', 'd']
+     */
+    var pullAt = flatRest(function(array, indexes) {
+      var length = array == null ? 0 : array.length,
+          result = baseAt(array, indexes);
+
+      basePullAt(array, arrayMap(indexes, function(index) {
+        return isIndex(index, length) ? +index : index;
+      }).sort(compareAscending));
+
+      return result;
+    });
+
+    /**
+     * Removes all elements from `array` that `predicate` returns truthy for
+     * and returns an array of the removed elements. The predicate is invoked
+     * with three arguments: (value, index, array).
+     *
+     * **Note:** Unlike `_.filter`, this method mutates `array`. Use `_.pull`
+     * to pull elements from an array by value.
+     *
+     * @static
+     * @memberOf _
+     * @since 2.0.0
+     * @category Array
+     * @param {Array} array The array to modify.
+     * @param {Function} [predicate=_.identity] The function invoked per iteration.
+     * @returns {Array} Returns the new array of removed elements.
+     * @example
+     *
+     * var array = [1, 2, 3, 4];
+     * var evens = _.remove(array, function(n) {
+     *   return n % 2 == 0;
+     * });
+     *
+     * console.log(array);
+     * // => [1, 3]
+     *
+     * console.log(evens);
+     * // => [2, 4]
+     */
+    function remove(array, predicate) {
+      var result = [];
+      if (!(array && array.length)) {
+        return result;
+      }
+      var index = -1,
+          indexes = [],
+          length = array.length;
+
+      predicate = getIteratee(predicate, 3);
+      while (++index < length) {
+        var value = array[index];
+        if (predicate(value, index, array)) {
+          result.push(value);
+          indexes.push(index);
+        }
+      }
+      basePullAt(array, indexes);
+      return result;
+    }
+
+    /**
+     * Reverses `array` so that the first element becomes the last, the second
+     * element becomes the second to last, and so on.
+     *
+     * **Note:** This method mutates `array` and is based on
+     * [`Array#reverse`](https://mdn.io/Array/reverse).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Array
+     * @param {Array} array The array to modify.
+     * @returns {Array} Returns `array`.
+     * @example
+     *
+     * var array = [1, 2, 3];
+     *
+     * _.reverse(array);
+     * // => [3, 2, 1]
+     *
+     * console.log(array);
+     * // => [3, 2, 1]
+     */
+    function reverse(array) {
+      return array == null ? array : nativeReverse.call(array);
+    }
+
+    /**
+     * Creates a slice of `array` from `start` up to, but not including, `end`.
+     *
+     * **Note:** This method is used instead of
+     * [`Array#slice`](https://mdn.io/Array/slice) to ensure dense arrays are
+     * returned.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Array
+     * @param {Array} array The array to slice.
+     * @param {number} [start=0] The start position.
+     * @param {number} [end=array.length] The end position.
+     * @returns {Array} Returns the slice of `array`.
+     */
+    function slice(array, start, end) {
+      var length = array == null ? 0 : array.length;
+      if (!length) {
+        return [];
+      }
+      if (end && typeof end != 'number' && isIterateeCall(array, start, end)) {
+        start = 0;
+        end = length;
+      }
+      else {
+        start = start == null ? 0 : toInteger(start);
+        end = end === undefined ? length : toInteger(end);
+      }
+      return baseSlice(array, start, end);
+    }
+
+    /**
+     * Uses a binary search to determine the lowest index at which `value`
+     * should be inserted into `array` in order to maintain its sort order.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Array
+     * @param {Array} array The sorted array to inspect.
+     * @param {*} value The value to evaluate.
+     * @returns {number} Returns the index at which `value` should be inserted
+     *  into `array`.
+     * @example
+     *
+     * _.sortedIndex([30, 50], 40);
+     * // => 1
+     */
+    function sortedIndex(array, value) {
+      return baseSortedIndex(array, value);
+    }
+
+    /**
+     * This method is like `_.sortedIndex` except that it accepts `iteratee`
+     * which is invoked for `value` and each element of `array` to compute their
+     * sort ranking. The iteratee is invoked with one argument: (value).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Array
+     * @param {Array} array The sorted array to inspect.
+     * @param {*} value The value to evaluate.
+     * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
+     * @returns {number} Returns the index at which `value` should be inserted
+     *  into `array`.
+     * @example
+     *
+     * var objects = [{ 'x': 4 }, { 'x': 5 }];
+     *
+     * _.sortedIndexBy(objects, { 'x': 4 }, function(o) { return o.x; });
+     * // => 0
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.sortedIndexBy(objects, { 'x': 4 }, 'x');
+     * // => 0
+     */
+    function sortedIndexBy(array, value, iteratee) {
+      return baseSortedIndexBy(array, value, getIteratee(iteratee, 2));
+    }
+
+    /**
+     * This method is like `_.indexOf` except that it performs a binary
+     * search on a sorted `array`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Array
+     * @param {Array} array The array to inspect.
+     * @param {*} value The value to search for.
+     * @returns {number} Returns the index of the matched value, else `-1`.
+     * @example
+     *
+     * _.sortedIndexOf([4, 5, 5, 5, 6], 5);
+     * // => 1
+     */
+    function sortedIndexOf(array, value) {
+      var length = array == null ? 0 : array.length;
+      if (length) {
+        var index = baseSortedIndex(array, value);
+        if (index < length && eq(array[index], value)) {
+          return index;
+        }
+      }
+      return -1;
+    }
+
+    /**
+     * This method is like `_.sortedIndex` except that it returns the highest
+     * index at which `value` should be inserted into `array` in order to
+     * maintain its sort order.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Array
+     * @param {Array} array The sorted array to inspect.
+     * @param {*} value The value to evaluate.
+     * @returns {number} Returns the index at which `value` should be inserted
+     *  into `array`.
+     * @example
+     *
+     * _.sortedLastIndex([4, 5, 5, 5, 6], 5);
+     * // => 4
+     */
+    function sortedLastIndex(array, value) {
+      return baseSortedIndex(array, value, true);
+    }
+
+    /**
+     * This method is like `_.sortedLastIndex` except that it accepts `iteratee`
+     * which is invoked for `value` and each element of `array` to compute their
+     * sort ranking. The iteratee is invoked with one argument: (value).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Array
+     * @param {Array} array The sorted array to inspect.
+     * @param {*} value The value to evaluate.
+     * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
+     * @returns {number} Returns the index at which `value` should be inserted
+     *  into `array`.
+     * @example
+     *
+     * var objects = [{ 'x': 4 }, { 'x': 5 }];
+     *
+     * _.sortedLastIndexBy(objects, { 'x': 4 }, function(o) { return o.x; });
+     * // => 1
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.sortedLastIndexBy(objects, { 'x': 4 }, 'x');
+     * // => 1
+     */
+    function sortedLastIndexBy(array, value, iteratee) {
+      return baseSortedIndexBy(array, value, getIteratee(iteratee, 2), true);
+    }
+
+    /**
+     * This method is like `_.lastIndexOf` except that it performs a binary
+     * search on a sorted `array`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Array
+     * @param {Array} array The array to inspect.
+     * @param {*} value The value to search for.
+     * @returns {number} Returns the index of the matched value, else `-1`.
+     * @example
+     *
+     * _.sortedLastIndexOf([4, 5, 5, 5, 6], 5);
+     * // => 3
+     */
+    function sortedLastIndexOf(array, value) {
+      var length = array == null ? 0 : array.length;
+      if (length) {
+        var index = baseSortedIndex(array, value, true) - 1;
+        if (eq(array[index], value)) {
+          return index;
+        }
+      }
+      return -1;
+    }
+
+    /**
+     * This method is like `_.uniq` except that it's designed and optimized
+     * for sorted arrays.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Array
+     * @param {Array} array The array to inspect.
+     * @returns {Array} Returns the new duplicate free array.
+     * @example
+     *
+     * _.sortedUniq([1, 1, 2]);
+     * // => [1, 2]
+     */
+    function sortedUniq(array) {
+      return (array && array.length)
+        ? baseSortedUniq(array)
+        : [];
+    }
+
+    /**
+     * This method is like `_.uniqBy` except that it's designed and optimized
+     * for sorted arrays.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Array
+     * @param {Array} array The array to inspect.
+     * @param {Function} [iteratee] The iteratee invoked per element.
+     * @returns {Array} Returns the new duplicate free array.
+     * @example
+     *
+     * _.sortedUniqBy([1.1, 1.2, 2.3, 2.4], Math.floor);
+     * // => [1.1, 2.3]
+     */
+    function sortedUniqBy(array, iteratee) {
+      return (array && array.length)
+        ? baseSortedUniq(array, getIteratee(iteratee, 2))
+        : [];
+    }
+
+    /**
+     * Gets all but the first element of `array`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Array
+     * @param {Array} array The array to query.
+     * @returns {Array} Returns the slice of `array`.
+     * @example
+     *
+     * _.tail([1, 2, 3]);
+     * // => [2, 3]
+     */
+    function tail(array) {
+      var length = array == null ? 0 : array.length;
+      return length ? baseSlice(array, 1, length) : [];
+    }
+
+    /**
+     * Creates a slice of `array` with `n` elements taken from the beginning.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Array
+     * @param {Array} array The array to query.
+     * @param {number} [n=1] The number of elements to take.
+     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+     * @returns {Array} Returns the slice of `array`.
+     * @example
+     *
+     * _.take([1, 2, 3]);
+     * // => [1]
+     *
+     * _.take([1, 2, 3], 2);
+     * // => [1, 2]
+     *
+     * _.take([1, 2, 3], 5);
+     * // => [1, 2, 3]
+     *
+     * _.take([1, 2, 3], 0);
+     * // => []
+     */
+    function take(array, n, guard) {
+      if (!(array && array.length)) {
+        return [];
+      }
+      n = (guard || n === undefined) ? 1 : toInteger(n);
+      return baseSlice(array, 0, n < 0 ? 0 : n);
+    }
+
+    /**
+     * Creates a slice of `array` with `n` elements taken from the end.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Array
+     * @param {Array} array The array to query.
+     * @param {number} [n=1] The number of elements to take.
+     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+     * @returns {Array} Returns the slice of `array`.
+     * @example
+     *
+     * _.takeRight([1, 2, 3]);
+     * // => [3]
+     *
+     * _.takeRight([1, 2, 3], 2);
+     * // => [2, 3]
+     *
+     * _.takeRight([1, 2, 3], 5);
+     * // => [1, 2, 3]
+     *
+     * _.takeRight([1, 2, 3], 0);
+     * // => []
+     */
+    function takeRight(array, n, guard) {
+      var length = array == null ? 0 : array.length;
+      if (!length) {
+        return [];
+      }
+      n = (guard || n === undefined) ? 1 : toInteger(n);
+      n = length - n;
+      return baseSlice(array, n < 0 ? 0 : n, length);
+    }
+
+    /**
+     * Creates a slice of `array` with elements taken from the end. Elements are
+     * taken until `predicate` returns falsey. The predicate is invoked with
+     * three arguments: (value, index, array).
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Array
+     * @param {Array} array The array to query.
+     * @param {Function} [predicate=_.identity] The function invoked per iteration.
+     * @returns {Array} Returns the slice of `array`.
+     * @example
+     *
+     * var users = [
+     *   { 'user': 'barney',  'active': true },
+     *   { 'user': 'fred',    'active': false },
+     *   { 'user': 'pebbles', 'active': false }
+     * ];
+     *
+     * _.takeRightWhile(users, function(o) { return !o.active; });
+     * // => objects for ['fred', 'pebbles']
+     *
+     * // The `_.matches` iteratee shorthand.
+     * _.takeRightWhile(users, { 'user': 'pebbles', 'active': false });
+     * // => objects for ['pebbles']
+     *
+     * // The `_.matchesProperty` iteratee shorthand.
+     * _.takeRightWhile(users, ['active', false]);
+     * // => objects for ['fred', 'pebbles']
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.takeRightWhile(users, 'active');
+     * // => []
+     */
+    function takeRightWhile(array, predicate) {
+      return (array && array.length)
+        ? baseWhile(array, getIteratee(predicate, 3), false, true)
+        : [];
+    }
+
+    /**
+     * Creates a slice of `array` with elements taken from the beginning. Elements
+     * are taken until `predicate` returns falsey. The predicate is invoked with
+     * three arguments: (value, index, array).
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Array
+     * @param {Array} array The array to query.
+     * @param {Function} [predicate=_.identity] The function invoked per iteration.
+     * @returns {Array} Returns the slice of `array`.
+     * @example
+     *
+     * var users = [
+     *   { 'user': 'barney',  'active': false },
+     *   { 'user': 'fred',    'active': false },
+     *   { 'user': 'pebbles', 'active': true }
+     * ];
+     *
+     * _.takeWhile(users, function(o) { return !o.active; });
+     * // => objects for ['barney', 'fred']
+     *
+     * // The `_.matches` iteratee shorthand.
+     * _.takeWhile(users, { 'user': 'barney', 'active': false });
+     * // => objects for ['barney']
+     *
+     * // The `_.matchesProperty` iteratee shorthand.
+     * _.takeWhile(users, ['active', false]);
+     * // => objects for ['barney', 'fred']
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.takeWhile(users, 'active');
+     * // => []
+     */
+    function takeWhile(array, predicate) {
+      return (array && array.length)
+        ? baseWhile(array, getIteratee(predicate, 3))
+        : [];
+    }
+
+    /**
+     * Creates an array of unique values, in order, from all given arrays using
+     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * for equality comparisons.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Array
+     * @param {...Array} [arrays] The arrays to inspect.
+     * @returns {Array} Returns the new array of combined values.
+     * @example
+     *
+     * _.union([2], [1, 2]);
+     * // => [2, 1]
+     */
+    var union = baseRest(function(arrays) {
+      return baseUniq(baseFlatten(arrays, 1, isArrayLikeObject, true));
+    });
+
+    /**
+     * This method is like `_.union` except that it accepts `iteratee` which is
+     * invoked for each element of each `arrays` to generate the criterion by
+     * which uniqueness is computed. Result values are chosen from the first
+     * array in which the value occurs. The iteratee is invoked with one argument:
+     * (value).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Array
+     * @param {...Array} [arrays] The arrays to inspect.
+     * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
+     * @returns {Array} Returns the new array of combined values.
+     * @example
+     *
+     * _.unionBy([2.1], [1.2, 2.3], Math.floor);
+     * // => [2.1, 1.2]
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.unionBy([{ 'x': 1 }], [{ 'x': 2 }, { 'x': 1 }], 'x');
+     * // => [{ 'x': 1 }, { 'x': 2 }]
+     */
+    var unionBy = baseRest(function(arrays) {
+      var iteratee = last(arrays);
+      if (isArrayLikeObject(iteratee)) {
+        iteratee = undefined;
+      }
+      return baseUniq(baseFlatten(arrays, 1, isArrayLikeObject, true), getIteratee(iteratee, 2));
+    });
+
+    /**
+     * This method is like `_.union` except that it accepts `comparator` which
+     * is invoked to compare elements of `arrays`. Result values are chosen from
+     * the first array in which the value occurs. The comparator is invoked
+     * with two arguments: (arrVal, othVal).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Array
+     * @param {...Array} [arrays] The arrays to inspect.
+     * @param {Function} [comparator] The comparator invoked per element.
+     * @returns {Array} Returns the new array of combined values.
+     * @example
+     *
+     * var objects = [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }];
+     * var others = [{ 'x': 1, 'y': 1 }, { 'x': 1, 'y': 2 }];
+     *
+     * _.unionWith(objects, others, _.isEqual);
+     * // => [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }, { 'x': 1, 'y': 1 }]
+     */
+    var unionWith = baseRest(function(arrays) {
+      var comparator = last(arrays);
+      comparator = typeof comparator == 'function' ? comparator : undefined;
+      return baseUniq(baseFlatten(arrays, 1, isArrayLikeObject, true), undefined, comparator);
+    });
+
+    /**
+     * Creates a duplicate-free version of an array, using
+     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * for equality comparisons, in which only the first occurrence of each element
+     * is kept. The order of result values is determined by the order they occur
+     * in the array.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Array
+     * @param {Array} array The array to inspect.
+     * @returns {Array} Returns the new duplicate free array.
+     * @example
+     *
+     * _.uniq([2, 1, 2]);
+     * // => [2, 1]
+     */
+    function uniq(array) {
+      return (array && array.length) ? baseUniq(array) : [];
+    }
+
+    /**
+     * This method is like `_.uniq` except that it accepts `iteratee` which is
+     * invoked for each element in `array` to generate the criterion by which
+     * uniqueness is computed. The order of result values is determined by the
+     * order they occur in the array. The iteratee is invoked with one argument:
+     * (value).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Array
+     * @param {Array} array The array to inspect.
+     * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
+     * @returns {Array} Returns the new duplicate free array.
+     * @example
+     *
+     * _.uniqBy([2.1, 1.2, 2.3], Math.floor);
+     * // => [2.1, 1.2]
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.uniqBy([{ 'x': 1 }, { 'x': 2 }, { 'x': 1 }], 'x');
+     * // => [{ 'x': 1 }, { 'x': 2 }]
+     */
+    function uniqBy(array, iteratee) {
+      return (array && array.length) ? baseUniq(array, getIteratee(iteratee, 2)) : [];
+    }
+
+    /**
+     * This method is like `_.uniq` except that it accepts `comparator` which
+     * is invoked to compare elements of `array`. The order of result values is
+     * determined by the order they occur in the array.The comparator is invoked
+     * with two arguments: (arrVal, othVal).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Array
+     * @param {Array} array The array to inspect.
+     * @param {Function} [comparator] The comparator invoked per element.
+     * @returns {Array} Returns the new duplicate free array.
+     * @example
+     *
+     * var objects = [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }, { 'x': 1, 'y': 2 }];
+     *
+     * _.uniqWith(objects, _.isEqual);
+     * // => [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }]
+     */
+    function uniqWith(array, comparator) {
+      comparator = typeof comparator == 'function' ? comparator : undefined;
+      return (array && array.length) ? baseUniq(array, undefined, comparator) : [];
+    }
+
+    /**
+     * This method is like `_.zip` except that it accepts an array of grouped
+     * elements and creates an array regrouping the elements to their pre-zip
+     * configuration.
+     *
+     * @static
+     * @memberOf _
+     * @since 1.2.0
+     * @category Array
+     * @param {Array} array The array of grouped elements to process.
+     * @returns {Array} Returns the new array of regrouped elements.
+     * @example
+     *
+     * var zipped = _.zip(['a', 'b'], [1, 2], [true, false]);
+     * // => [['a', 1, true], ['b', 2, false]]
+     *
+     * _.unzip(zipped);
+     * // => [['a', 'b'], [1, 2], [true, false]]
+     */
+    function unzip(array) {
+      if (!(array && array.length)) {
+        return [];
+      }
+      var length = 0;
+      array = arrayFilter(array, function(group) {
+        if (isArrayLikeObject(group)) {
+          length = nativeMax(group.length, length);
+          return true;
+        }
+      });
+      return baseTimes(length, function(index) {
+        return arrayMap(array, baseProperty(index));
+      });
+    }
+
+    /**
+     * This method is like `_.unzip` except that it accepts `iteratee` to specify
+     * how regrouped values should be combined. The iteratee is invoked with the
+     * elements of each group: (...group).
+     *
+     * @static
+     * @memberOf _
+     * @since 3.8.0
+     * @category Array
+     * @param {Array} array The array of grouped elements to process.
+     * @param {Function} [iteratee=_.identity] The function to combine
+     *  regrouped values.
+     * @returns {Array} Returns the new array of regrouped elements.
+     * @example
+     *
+     * var zipped = _.zip([1, 2], [10, 20], [100, 200]);
+     * // => [[1, 10, 100], [2, 20, 200]]
+     *
+     * _.unzipWith(zipped, _.add);
+     * // => [3, 30, 300]
+     */
+    function unzipWith(array, iteratee) {
+      if (!(array && array.length)) {
+        return [];
+      }
+      var result = unzip(array);
+      if (iteratee == null) {
+        return result;
+      }
+      return arrayMap(result, function(group) {
+        return apply(iteratee, undefined, group);
+      });
+    }
+
+    /**
+     * Creates an array excluding all given values using
+     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * for equality comparisons.
+     *
+     * **Note:** Unlike `_.pull`, this method returns a new array.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Array
+     * @param {Array} array The array to inspect.
+     * @param {...*} [values] The values to exclude.
+     * @returns {Array} Returns the new array of filtered values.
+     * @see _.difference, _.xor
+     * @example
+     *
+     * _.without([2, 1, 2, 3], 1, 2);
+     * // => [3]
+     */
+    var without = baseRest(function(array, values) {
+      return isArrayLikeObject(array)
+        ? baseDifference(array, values)
+        : [];
+    });
+
+    /**
+     * Creates an array of unique values that is the
+     * [symmetric difference](https://en.wikipedia.org/wiki/Symmetric_difference)
+     * of the given arrays. The order of result values is determined by the order
+     * they occur in the arrays.
+     *
+     * @static
+     * @memberOf _
+     * @since 2.4.0
+     * @category Array
+     * @param {...Array} [arrays] The arrays to inspect.
+     * @returns {Array} Returns the new array of filtered values.
+     * @see _.difference, _.without
+     * @example
+     *
+     * _.xor([2, 1], [2, 3]);
+     * // => [1, 3]
+     */
+    var xor = baseRest(function(arrays) {
+      return baseXor(arrayFilter(arrays, isArrayLikeObject));
+    });
+
+    /**
+     * This method is like `_.xor` except that it accepts `iteratee` which is
+     * invoked for each element of each `arrays` to generate the criterion by
+     * which by which they're compared. The order of result values is determined
+     * by the order they occur in the arrays. The iteratee is invoked with one
+     * argument: (value).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Array
+     * @param {...Array} [arrays] The arrays to inspect.
+     * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
+     * @returns {Array} Returns the new array of filtered values.
+     * @example
+     *
+     * _.xorBy([2.1, 1.2], [2.3, 3.4], Math.floor);
+     * // => [1.2, 3.4]
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.xorBy([{ 'x': 1 }], [{ 'x': 2 }, { 'x': 1 }], 'x');
+     * // => [{ 'x': 2 }]
+     */
+    var xorBy = baseRest(function(arrays) {
+      var iteratee = last(arrays);
+      if (isArrayLikeObject(iteratee)) {
+        iteratee = undefined;
+      }
+      return baseXor(arrayFilter(arrays, isArrayLikeObject), getIteratee(iteratee, 2));
+    });
+
+    /**
+     * This method is like `_.xor` except that it accepts `comparator` which is
+     * invoked to compare elements of `arrays`. The order of result values is
+     * determined by the order they occur in the arrays. The comparator is invoked
+     * with two arguments: (arrVal, othVal).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Array
+     * @param {...Array} [arrays] The arrays to inspect.
+     * @param {Function} [comparator] The comparator invoked per element.
+     * @returns {Array} Returns the new array of filtered values.
+     * @example
+     *
+     * var objects = [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }];
+     * var others = [{ 'x': 1, 'y': 1 }, { 'x': 1, 'y': 2 }];
+     *
+     * _.xorWith(objects, others, _.isEqual);
+     * // => [{ 'x': 2, 'y': 1 }, { 'x': 1, 'y': 1 }]
+     */
+    var xorWith = baseRest(function(arrays) {
+      var comparator = last(arrays);
+      comparator = typeof comparator == 'function' ? comparator : undefined;
+      return baseXor(arrayFilter(arrays, isArrayLikeObject), undefined, comparator);
+    });
+
+    /**
+     * Creates an array of grouped elements, the first of which contains the
+     * first elements of the given arrays, the second of which contains the
+     * second elements of the given arrays, and so on.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Array
+     * @param {...Array} [arrays] The arrays to process.
+     * @returns {Array} Returns the new array of grouped elements.
+     * @example
+     *
+     * _.zip(['a', 'b'], [1, 2], [true, false]);
+     * // => [['a', 1, true], ['b', 2, false]]
+     */
+    var zip = baseRest(unzip);
+
+    /**
+     * This method is like `_.fromPairs` except that it accepts two arrays,
+     * one of property identifiers and one of corresponding values.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.4.0
+     * @category Array
+     * @param {Array} [props=[]] The property identifiers.
+     * @param {Array} [values=[]] The property values.
+     * @returns {Object} Returns the new object.
+     * @example
+     *
+     * _.zipObject(['a', 'b'], [1, 2]);
+     * // => { 'a': 1, 'b': 2 }
+     */
+    function zipObject(props, values) {
+      return baseZipObject(props || [], values || [], assignValue);
+    }
+
+    /**
+     * This method is like `_.zipObject` except that it supports property paths.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.1.0
+     * @category Array
+     * @param {Array} [props=[]] The property identifiers.
+     * @param {Array} [values=[]] The property values.
+     * @returns {Object} Returns the new object.
+     * @example
+     *
+     * _.zipObjectDeep(['a.b[0].c', 'a.b[1].d'], [1, 2]);
+     * // => { 'a': { 'b': [{ 'c': 1 }, { 'd': 2 }] } }
+     */
+    function zipObjectDeep(props, values) {
+      return baseZipObject(props || [], values || [], baseSet);
+    }
+
+    /**
+     * This method is like `_.zip` except that it accepts `iteratee` to specify
+     * how grouped values should be combined. The iteratee is invoked with the
+     * elements of each group: (...group).
+     *
+     * @static
+     * @memberOf _
+     * @since 3.8.0
+     * @category Array
+     * @param {...Array} [arrays] The arrays to process.
+     * @param {Function} [iteratee=_.identity] The function to combine
+     *  grouped values.
+     * @returns {Array} Returns the new array of grouped elements.
+     * @example
+     *
+     * _.zipWith([1, 2], [10, 20], [100, 200], function(a, b, c) {
+     *   return a + b + c;
+     * });
+     * // => [111, 222]
+     */
+    var zipWith = baseRest(function(arrays) {
+      var length = arrays.length,
+          iteratee = length > 1 ? arrays[length - 1] : undefined;
+
+      iteratee = typeof iteratee == 'function' ? (arrays.pop(), iteratee) : undefined;
+      return unzipWith(arrays, iteratee);
+    });
+
+    /*------------------------------------------------------------------------*/
+
+    /**
+     * Creates a `lodash` wrapper instance that wraps `value` with explicit method
+     * chain sequences enabled. The result of such sequences must be unwrapped
+     * with `_#value`.
+     *
+     * @static
+     * @memberOf _
+     * @since 1.3.0
+     * @category Seq
+     * @param {*} value The value to wrap.
+     * @returns {Object} Returns the new `lodash` wrapper instance.
+     * @example
+     *
+     * var users = [
+     *   { 'user': 'barney',  'age': 36 },
+     *   { 'user': 'fred',    'age': 40 },
+     *   { 'user': 'pebbles', 'age': 1 }
+     * ];
+     *
+     * var youngest = _
+     *   .chain(users)
+     *   .sortBy('age')
+     *   .map(function(o) {
+     *     return o.user + ' is ' + o.age;
+     *   })
+     *   .head()
+     *   .value();
+     * // => 'pebbles is 1'
+     */
+    function chain(value) {
+      var result = lodash(value);
+      result.__chain__ = true;
+      return result;
+    }
+
+    /**
+     * This method invokes `interceptor` and returns `value`. The interceptor
+     * is invoked with one argument; (value). The purpose of this method is to
+     * "tap into" a method chain sequence in order to modify intermediate results.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Seq
+     * @param {*} value The value to provide to `interceptor`.
+     * @param {Function} interceptor The function to invoke.
+     * @returns {*} Returns `value`.
+     * @example
+     *
+     * _([1, 2, 3])
+     *  .tap(function(array) {
+     *    // Mutate input array.
+     *    array.pop();
+     *  })
+     *  .reverse()
+     *  .value();
+     * // => [2, 1]
+     */
+    function tap(value, interceptor) {
+      interceptor(value);
+      return value;
+    }
+
+    /**
+     * This method is like `_.tap` except that it returns the result of `interceptor`.
+     * The purpose of this method is to "pass thru" values replacing intermediate
+     * results in a method chain sequence.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Seq
+     * @param {*} value The value to provide to `interceptor`.
+     * @param {Function} interceptor The function to invoke.
+     * @returns {*} Returns the result of `interceptor`.
+     * @example
+     *
+     * _('  abc  ')
+     *  .chain()
+     *  .trim()
+     *  .thru(function(value) {
+     *    return [value];
+     *  })
+     *  .value();
+     * // => ['abc']
+     */
+    function thru(value, interceptor) {
+      return interceptor(value);
+    }
+
+    /**
+     * This method is the wrapper version of `_.at`.
+     *
+     * @name at
+     * @memberOf _
+     * @since 1.0.0
+     * @category Seq
+     * @param {...(string|string[])} [paths] The property paths to pick.
+     * @returns {Object} Returns the new `lodash` wrapper instance.
+     * @example
+     *
+     * var object = { 'a': [{ 'b': { 'c': 3 } }, 4] };
+     *
+     * _(object).at(['a[0].b.c', 'a[1]']).value();
+     * // => [3, 4]
+     */
+    var wrapperAt = flatRest(function(paths) {
+      var length = paths.length,
+          start = length ? paths[0] : 0,
+          value = this.__wrapped__,
+          interceptor = function(object) { return baseAt(object, paths); };
+
+      if (length > 1 || this.__actions__.length ||
+          !(value instanceof LazyWrapper) || !isIndex(start)) {
+        return this.thru(interceptor);
+      }
+      value = value.slice(start, +start + (length ? 1 : 0));
+      value.__actions__.push({
+        'func': thru,
+        'args': [interceptor],
+        'thisArg': undefined
+      });
+      return new LodashWrapper(value, this.__chain__).thru(function(array) {
+        if (length && !array.length) {
+          array.push(undefined);
+        }
+        return array;
+      });
+    });
+
+    /**
+     * Creates a `lodash` wrapper instance with explicit method chain sequences enabled.
+     *
+     * @name chain
+     * @memberOf _
+     * @since 0.1.0
+     * @category Seq
+     * @returns {Object} Returns the new `lodash` wrapper instance.
+     * @example
+     *
+     * var users = [
+     *   { 'user': 'barney', 'age': 36 },
+     *   { 'user': 'fred',   'age': 40 }
+     * ];
+     *
+     * // A sequence without explicit chaining.
+     * _(users).head();
+     * // => { 'user': 'barney', 'age': 36 }
+     *
+     * // A sequence with explicit chaining.
+     * _(users)
+     *   .chain()
+     *   .head()
+     *   .pick('user')
+     *   .value();
+     * // => { 'user': 'barney' }
+     */
+    function wrapperChain() {
+      return chain(this);
+    }
+
+    /**
+     * Executes the chain sequence and returns the wrapped result.
+     *
+     * @name commit
+     * @memberOf _
+     * @since 3.2.0
+     * @category Seq
+     * @returns {Object} Returns the new `lodash` wrapper instance.
+     * @example
+     *
+     * var array = [1, 2];
+     * var wrapped = _(array).push(3);
+     *
+     * console.log(array);
+     * // => [1, 2]
+     *
+     * wrapped = wrapped.commit();
+     * console.log(array);
+     * // => [1, 2, 3]
+     *
+     * wrapped.last();
+     * // => 3
+     *
+     * console.log(array);
+     * // => [1, 2, 3]
+     */
+    function wrapperCommit() {
+      return new LodashWrapper(this.value(), this.__chain__);
+    }
+
+    /**
+     * Gets the next value on a wrapped object following the
+     * [iterator protocol](https://mdn.io/iteration_protocols#iterator).
+     *
+     * @name next
+     * @memberOf _
+     * @since 4.0.0
+     * @category Seq
+     * @returns {Object} Returns the next iterator value.
+     * @example
+     *
+     * var wrapped = _([1, 2]);
+     *
+     * wrapped.next();
+     * // => { 'done': false, 'value': 1 }
+     *
+     * wrapped.next();
+     * // => { 'done': false, 'value': 2 }
+     *
+     * wrapped.next();
+     * // => { 'done': true, 'value': undefined }
+     */
+    function wrapperNext() {
+      if (this.__values__ === undefined) {
+        this.__values__ = toArray(this.value());
+      }
+      var done = this.__index__ >= this.__values__.length,
+          value = done ? undefined : this.__values__[this.__index__++];
+
+      return { 'done': done, 'value': value };
+    }
+
+    /**
+     * Enables the wrapper to be iterable.
+     *
+     * @name Symbol.iterator
+     * @memberOf _
+     * @since 4.0.0
+     * @category Seq
+     * @returns {Object} Returns the wrapper object.
+     * @example
+     *
+     * var wrapped = _([1, 2]);
+     *
+     * wrapped[Symbol.iterator]() === wrapped;
+     * // => true
+     *
+     * Array.from(wrapped);
+     * // => [1, 2]
+     */
+    function wrapperToIterator() {
+      return this;
+    }
+
+    /**
+     * Creates a clone of the chain sequence planting `value` as the wrapped value.
+     *
+     * @name plant
+     * @memberOf _
+     * @since 3.2.0
+     * @category Seq
+     * @param {*} value The value to plant.
+     * @returns {Object} Returns the new `lodash` wrapper instance.
+     * @example
+     *
+     * function square(n) {
+     *   return n * n;
+     * }
+     *
+     * var wrapped = _([1, 2]).map(square);
+     * var other = wrapped.plant([3, 4]);
+     *
+     * other.value();
+     * // => [9, 16]
+     *
+     * wrapped.value();
+     * // => [1, 4]
+     */
+    function wrapperPlant(value) {
+      var result,
+          parent = this;
+
+      while (parent instanceof baseLodash) {
+        var clone = wrapperClone(parent);
+        clone.__index__ = 0;
+        clone.__values__ = undefined;
+        if (result) {
+          previous.__wrapped__ = clone;
+        } else {
+          result = clone;
+        }
+        var previous = clone;
+        parent = parent.__wrapped__;
+      }
+      previous.__wrapped__ = value;
+      return result;
+    }
+
+    /**
+     * This method is the wrapper version of `_.reverse`.
+     *
+     * **Note:** This method mutates the wrapped array.
+     *
+     * @name reverse
+     * @memberOf _
+     * @since 0.1.0
+     * @category Seq
+     * @returns {Object} Returns the new `lodash` wrapper instance.
+     * @example
+     *
+     * var array = [1, 2, 3];
+     *
+     * _(array).reverse().value()
+     * // => [3, 2, 1]
+     *
+     * console.log(array);
+     * // => [3, 2, 1]
+     */
+    function wrapperReverse() {
+      var value = this.__wrapped__;
+      if (value instanceof LazyWrapper) {
+        var wrapped = value;
+        if (this.__actions__.length) {
+          wrapped = new LazyWrapper(this);
+        }
+        wrapped = wrapped.reverse();
+        wrapped.__actions__.push({
+          'func': thru,
+          'args': [reverse],
+          'thisArg': undefined
+        });
+        return new LodashWrapper(wrapped, this.__chain__);
+      }
+      return this.thru(reverse);
+    }
+
+    /**
+     * Executes the chain sequence to resolve the unwrapped value.
+     *
+     * @name value
+     * @memberOf _
+     * @since 0.1.0
+     * @alias toJSON, valueOf
+     * @category Seq
+     * @returns {*} Returns the resolved unwrapped value.
+     * @example
+     *
+     * _([1, 2, 3]).value();
+     * // => [1, 2, 3]
+     */
+    function wrapperValue() {
+      return baseWrapperValue(this.__wrapped__, this.__actions__);
+    }
+
+    /*------------------------------------------------------------------------*/
+
+    /**
+     * Creates an object composed of keys generated from the results of running
+     * each element of `collection` thru `iteratee`. The corresponding value of
+     * each key is the number of times the key was returned by `iteratee`. The
+     * iteratee is invoked with one argument: (value).
+     *
+     * @static
+     * @memberOf _
+     * @since 0.5.0
+     * @category Collection
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Function} [iteratee=_.identity] The iteratee to transform keys.
+     * @returns {Object} Returns the composed aggregate object.
+     * @example
+     *
+     * _.countBy([6.1, 4.2, 6.3], Math.floor);
+     * // => { '4': 1, '6': 2 }
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.countBy(['one', 'two', 'three'], 'length');
+     * // => { '3': 2, '5': 1 }
+     */
+    var countBy = createAggregator(function(result, value, key) {
+      if (hasOwnProperty.call(result, key)) {
+        ++result[key];
+      } else {
+        baseAssignValue(result, key, 1);
+      }
+    });
+
+    /**
+     * Checks if `predicate` returns truthy for **all** elements of `collection`.
+     * Iteration is stopped once `predicate` returns falsey. The predicate is
+     * invoked with three arguments: (value, index|key, collection).
+     *
+     * **Note:** This method returns `true` for
+     * [empty collections](https://en.wikipedia.org/wiki/Empty_set) because
+     * [everything is true](https://en.wikipedia.org/wiki/Vacuous_truth) of
+     * elements of empty collections.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Collection
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Function} [predicate=_.identity] The function invoked per iteration.
+     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+     * @returns {boolean} Returns `true` if all elements pass the predicate check,
+     *  else `false`.
+     * @example
+     *
+     * _.every([true, 1, null, 'yes'], Boolean);
+     * // => false
+     *
+     * var users = [
+     *   { 'user': 'barney', 'age': 36, 'active': false },
+     *   { 'user': 'fred',   'age': 40, 'active': false }
+     * ];
+     *
+     * // The `_.matches` iteratee shorthand.
+     * _.every(users, { 'user': 'barney', 'active': false });
+     * // => false
+     *
+     * // The `_.matchesProperty` iteratee shorthand.
+     * _.every(users, ['active', false]);
+     * // => true
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.every(users, 'active');
+     * // => false
+     */
+    function every(collection, predicate, guard) {
+      var func = isArray(collection) ? arrayEvery : baseEvery;
+      if (guard && isIterateeCall(collection, predicate, guard)) {
+        predicate = undefined;
+      }
+      return func(collection, getIteratee(predicate, 3));
+    }
+
+    /**
+     * Iterates over elements of `collection`, returning an array of all elements
+     * `predicate` returns truthy for. The predicate is invoked with three
+     * arguments: (value, index|key, collection).
+     *
+     * **Note:** Unlike `_.remove`, this method returns a new array.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Collection
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Function} [predicate=_.identity] The function invoked per iteration.
+     * @returns {Array} Returns the new filtered array.
+     * @see _.reject
+     * @example
+     *
+     * var users = [
+     *   { 'user': 'barney', 'age': 36, 'active': true },
+     *   { 'user': 'fred',   'age': 40, 'active': false }
+     * ];
+     *
+     * _.filter(users, function(o) { return !o.active; });
+     * // => objects for ['fred']
+     *
+     * // The `_.matches` iteratee shorthand.
+     * _.filter(users, { 'age': 36, 'active': true });
+     * // => objects for ['barney']
+     *
+     * // The `_.matchesProperty` iteratee shorthand.
+     * _.filter(users, ['active', false]);
+     * // => objects for ['fred']
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.filter(users, 'active');
+     * // => objects for ['barney']
+     *
+     * // Combining several predicates using `_.overEvery` or `_.overSome`.
+     * _.filter(users, _.overSome([{ 'age': 36 }, ['age', 40]]));
+     * // => objects for ['fred', 'barney']
+     */
+    function filter(collection, predicate) {
+      var func = isArray(collection) ? arrayFilter : baseFilter;
+      return func(collection, getIteratee(predicate, 3));
+    }
+
+    /**
+     * Iterates over elements of `collection`, returning the first element
+     * `predicate` returns truthy for. The predicate is invoked with three
+     * arguments: (value, index|key, collection).
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Collection
+     * @param {Array|Object} collection The collection to inspect.
+     * @param {Function} [predicate=_.identity] The function invoked per iteration.
+     * @param {number} [fromIndex=0] The index to search from.
+     * @returns {*} Returns the matched element, else `undefined`.
+     * @example
+     *
+     * var users = [
+     *   { 'user': 'barney',  'age': 36, 'active': true },
+     *   { 'user': 'fred',    'age': 40, 'active': false },
+     *   { 'user': 'pebbles', 'age': 1,  'active': true }
+     * ];
+     *
+     * _.find(users, function(o) { return o.age < 40; });
+     * // => object for 'barney'
+     *
+     * // The `_.matches` iteratee shorthand.
+     * _.find(users, { 'age': 1, 'active': true });
+     * // => object for 'pebbles'
+     *
+     * // The `_.matchesProperty` iteratee shorthand.
+     * _.find(users, ['active', false]);
+     * // => object for 'fred'
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.find(users, 'active');
+     * // => object for 'barney'
+     */
+    var find = createFind(findIndex);
+
+    /**
+     * This method is like `_.find` except that it iterates over elements of
+     * `collection` from right to left.
+     *
+     * @static
+     * @memberOf _
+     * @since 2.0.0
+     * @category Collection
+     * @param {Array|Object} collection The collection to inspect.
+     * @param {Function} [predicate=_.identity] The function invoked per iteration.
+     * @param {number} [fromIndex=collection.length-1] The index to search from.
+     * @returns {*} Returns the matched element, else `undefined`.
+     * @example
+     *
+     * _.findLast([1, 2, 3, 4], function(n) {
+     *   return n % 2 == 1;
+     * });
+     * // => 3
+     */
+    var findLast = createFind(findLastIndex);
+
+    /**
+     * Creates a flattened array of values by running each element in `collection`
+     * thru `iteratee` and flattening the mapped results. The iteratee is invoked
+     * with three arguments: (value, index|key, collection).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Collection
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+     * @returns {Array} Returns the new flattened array.
+     * @example
+     *
+     * function duplicate(n) {
+     *   return [n, n];
+     * }
+     *
+     * _.flatMap([1, 2], duplicate);
+     * // => [1, 1, 2, 2]
+     */
+    function flatMap(collection, iteratee) {
+      return baseFlatten(map(collection, iteratee), 1);
+    }
+
+    /**
+     * This method is like `_.flatMap` except that it recursively flattens the
+     * mapped results.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.7.0
+     * @category Collection
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+     * @returns {Array} Returns the new flattened array.
+     * @example
+     *
+     * function duplicate(n) {
+     *   return [[[n, n]]];
+     * }
+     *
+     * _.flatMapDeep([1, 2], duplicate);
+     * // => [1, 1, 2, 2]
+     */
+    function flatMapDeep(collection, iteratee) {
+      return baseFlatten(map(collection, iteratee), INFINITY);
+    }
+
+    /**
+     * This method is like `_.flatMap` except that it recursively flattens the
+     * mapped results up to `depth` times.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.7.0
+     * @category Collection
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+     * @param {number} [depth=1] The maximum recursion depth.
+     * @returns {Array} Returns the new flattened array.
+     * @example
+     *
+     * function duplicate(n) {
+     *   return [[[n, n]]];
+     * }
+     *
+     * _.flatMapDepth([1, 2], duplicate, 2);
+     * // => [[1, 1], [2, 2]]
+     */
+    function flatMapDepth(collection, iteratee, depth) {
+      depth = depth === undefined ? 1 : toInteger(depth);
+      return baseFlatten(map(collection, iteratee), depth);
+    }
+
+    /**
+     * Iterates over elements of `collection` and invokes `iteratee` for each element.
+     * The iteratee is invoked with three arguments: (value, index|key, collection).
+     * Iteratee functions may exit iteration early by explicitly returning `false`.
+     *
+     * **Note:** As with other "Collections" methods, objects with a "length"
+     * property are iterated like arrays. To avoid this behavior use `_.forIn`
+     * or `_.forOwn` for object iteration.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @alias each
+     * @category Collection
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+     * @returns {Array|Object} Returns `collection`.
+     * @see _.forEachRight
+     * @example
+     *
+     * _.forEach([1, 2], function(value) {
+     *   console.log(value);
+     * });
+     * // => Logs `1` then `2`.
+     *
+     * _.forEach({ 'a': 1, 'b': 2 }, function(value, key) {
+     *   console.log(key);
+     * });
+     * // => Logs 'a' then 'b' (iteration order is not guaranteed).
+     */
+    function forEach(collection, iteratee) {
+      var func = isArray(collection) ? arrayEach : baseEach;
+      return func(collection, getIteratee(iteratee, 3));
+    }
+
+    /**
+     * This method is like `_.forEach` except that it iterates over elements of
+     * `collection` from right to left.
+     *
+     * @static
+     * @memberOf _
+     * @since 2.0.0
+     * @alias eachRight
+     * @category Collection
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+     * @returns {Array|Object} Returns `collection`.
+     * @see _.forEach
+     * @example
+     *
+     * _.forEachRight([1, 2], function(value) {
+     *   console.log(value);
+     * });
+     * // => Logs `2` then `1`.
+     */
+    function forEachRight(collection, iteratee) {
+      var func = isArray(collection) ? arrayEachRight : baseEachRight;
+      return func(collection, getIteratee(iteratee, 3));
+    }
+
+    /**
+     * Creates an object composed of keys generated from the results of running
+     * each element of `collection` thru `iteratee`. The order of grouped values
+     * is determined by the order they occur in `collection`. The corresponding
+     * value of each key is an array of elements responsible for generating the
+     * key. The iteratee is invoked with one argument: (value).
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Collection
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Function} [iteratee=_.identity] The iteratee to transform keys.
+     * @returns {Object} Returns the composed aggregate object.
+     * @example
+     *
+     * _.groupBy([6.1, 4.2, 6.3], Math.floor);
+     * // => { '4': [4.2], '6': [6.1, 6.3] }
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.groupBy(['one', 'two', 'three'], 'length');
+     * // => { '3': ['one', 'two'], '5': ['three'] }
+     */
+    var groupBy = createAggregator(function(result, value, key) {
+      if (hasOwnProperty.call(result, key)) {
+        result[key].push(value);
+      } else {
+        baseAssignValue(result, key, [value]);
+      }
+    });
+
+    /**
+     * Checks if `value` is in `collection`. If `collection` is a string, it's
+     * checked for a substring of `value`, otherwise
+     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * is used for equality comparisons. If `fromIndex` is negative, it's used as
+     * the offset from the end of `collection`.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Collection
+     * @param {Array|Object|string} collection The collection to inspect.
+     * @param {*} value The value to search for.
+     * @param {number} [fromIndex=0] The index to search from.
+     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.reduce`.
+     * @returns {boolean} Returns `true` if `value` is found, else `false`.
+     * @example
+     *
+     * _.includes([1, 2, 3], 1);
+     * // => true
+     *
+     * _.includes([1, 2, 3], 1, 2);
+     * // => false
+     *
+     * _.includes({ 'a': 1, 'b': 2 }, 1);
+     * // => true
+     *
+     * _.includes('abcd', 'bc');
+     * // => true
+     */
+    function includes(collection, value, fromIndex, guard) {
+      collection = isArrayLike(collection) ? collection : values(collection);
+      fromIndex = (fromIndex && !guard) ? toInteger(fromIndex) : 0;
+
+      var length = collection.length;
+      if (fromIndex < 0) {
+        fromIndex = nativeMax(length + fromIndex, 0);
+      }
+      return isString(collection)
+        ? (fromIndex <= length && collection.indexOf(value, fromIndex) > -1)
+        : (!!length && baseIndexOf(collection, value, fromIndex) > -1);
+    }
+
+    /**
+     * Invokes the method at `path` of each element in `collection`, returning
+     * an array of the results of each invoked method. Any additional arguments
+     * are provided to each invoked method. If `path` is a function, it's invoked
+     * for, and `this` bound to, each element in `collection`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Collection
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Array|Function|string} path The path of the method to invoke or
+     *  the function invoked per iteration.
+     * @param {...*} [args] The arguments to invoke each method with.
+     * @returns {Array} Returns the array of results.
+     * @example
+     *
+     * _.invokeMap([[5, 1, 7], [3, 2, 1]], 'sort');
+     * // => [[1, 5, 7], [1, 2, 3]]
+     *
+     * _.invokeMap([123, 456], String.prototype.split, '');
+     * // => [['1', '2', '3'], ['4', '5', '6']]
+     */
+    var invokeMap = baseRest(function(collection, path, args) {
+      var index = -1,
+          isFunc = typeof path == 'function',
+          result = isArrayLike(collection) ? Array(collection.length) : [];
+
+      baseEach(collection, function(value) {
+        result[++index] = isFunc ? apply(path, value, args) : baseInvoke(value, path, args);
+      });
+      return result;
+    });
+
+    /**
+     * Creates an object composed of keys generated from the results of running
+     * each element of `collection` thru `iteratee`. The corresponding value of
+     * each key is the last element responsible for generating the key. The
+     * iteratee is invoked with one argument: (value).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Collection
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Function} [iteratee=_.identity] The iteratee to transform keys.
+     * @returns {Object} Returns the composed aggregate object.
+     * @example
+     *
+     * var array = [
+     *   { 'dir': 'left', 'code': 97 },
+     *   { 'dir': 'right', 'code': 100 }
+     * ];
+     *
+     * _.keyBy(array, function(o) {
+     *   return String.fromCharCode(o.code);
+     * });
+     * // => { 'a': { 'dir': 'left', 'code': 97 }, 'd': { 'dir': 'right', 'code': 100 } }
+     *
+     * _.keyBy(array, 'dir');
+     * // => { 'left': { 'dir': 'left', 'code': 97 }, 'right': { 'dir': 'right', 'code': 100 } }
+     */
+    var keyBy = createAggregator(function(result, value, key) {
+      baseAssignValue(result, key, value);
+    });
+
+    /**
+     * Creates an array of values by running each element in `collection` thru
+     * `iteratee`. The iteratee is invoked with three arguments:
+     * (value, index|key, collection).
+     *
+     * Many lodash methods are guarded to work as iteratees for methods like
+     * `_.every`, `_.filter`, `_.map`, `_.mapValues`, `_.reject`, and `_.some`.
+     *
+     * The guarded methods are:
+     * `ary`, `chunk`, `curry`, `curryRight`, `drop`, `dropRight`, `every`,
+     * `fill`, `invert`, `parseInt`, `random`, `range`, `rangeRight`, `repeat`,
+     * `sampleSize`, `slice`, `some`, `sortBy`, `split`, `take`, `takeRight`,
+     * `template`, `trim`, `trimEnd`, `trimStart`, and `words`
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Collection
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+     * @returns {Array} Returns the new mapped array.
+     * @example
+     *
+     * function square(n) {
+     *   return n * n;
+     * }
+     *
+     * _.map([4, 8], square);
+     * // => [16, 64]
+     *
+     * _.map({ 'a': 4, 'b': 8 }, square);
+     * // => [16, 64] (iteration order is not guaranteed)
+     *
+     * var users = [
+     *   { 'user': 'barney' },
+     *   { 'user': 'fred' }
+     * ];
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.map(users, 'user');
+     * // => ['barney', 'fred']
+     */
+    function map(collection, iteratee) {
+      var func = isArray(collection) ? arrayMap : baseMap;
+      return func(collection, getIteratee(iteratee, 3));
+    }
+
+    /**
+     * This method is like `_.sortBy` except that it allows specifying the sort
+     * orders of the iteratees to sort by. If `orders` is unspecified, all values
+     * are sorted in ascending order. Otherwise, specify an order of "desc" for
+     * descending or "asc" for ascending sort order of corresponding values.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Collection
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Array[]|Function[]|Object[]|string[]} [iteratees=[_.identity]]
+     *  The iteratees to sort by.
+     * @param {string[]} [orders] The sort orders of `iteratees`.
+     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.reduce`.
+     * @returns {Array} Returns the new sorted array.
+     * @example
+     *
+     * var users = [
+     *   { 'user': 'fred',   'age': 48 },
+     *   { 'user': 'barney', 'age': 34 },
+     *   { 'user': 'fred',   'age': 40 },
+     *   { 'user': 'barney', 'age': 36 }
+     * ];
+     *
+     * // Sort by `user` in ascending order and by `age` in descending order.
+     * _.orderBy(users, ['user', 'age'], ['asc', 'desc']);
+     * // => objects for [['barney', 36], ['barney', 34], ['fred', 48], ['fred', 40]]
+     */
+    function orderBy(collection, iteratees, orders, guard) {
+      if (collection == null) {
+        return [];
+      }
+      if (!isArray(iteratees)) {
+        iteratees = iteratees == null ? [] : [iteratees];
+      }
+      orders = guard ? undefined : orders;
+      if (!isArray(orders)) {
+        orders = orders == null ? [] : [orders];
+      }
+      return baseOrderBy(collection, iteratees, orders);
+    }
+
+    /**
+     * Creates an array of elements split into two groups, the first of which
+     * contains elements `predicate` returns truthy for, the second of which
+     * contains elements `predicate` returns falsey for. The predicate is
+     * invoked with one argument: (value).
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Collection
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Function} [predicate=_.identity] The function invoked per iteration.
+     * @returns {Array} Returns the array of grouped elements.
+     * @example
+     *
+     * var users = [
+     *   { 'user': 'barney',  'age': 36, 'active': false },
+     *   { 'user': 'fred',    'age': 40, 'active': true },
+     *   { 'user': 'pebbles', 'age': 1,  'active': false }
+     * ];
+     *
+     * _.partition(users, function(o) { return o.active; });
+     * // => objects for [['fred'], ['barney', 'pebbles']]
+     *
+     * // The `_.matches` iteratee shorthand.
+     * _.partition(users, { 'age': 1, 'active': false });
+     * // => objects for [['pebbles'], ['barney', 'fred']]
+     *
+     * // The `_.matchesProperty` iteratee shorthand.
+     * _.partition(users, ['active', false]);
+     * // => objects for [['barney', 'pebbles'], ['fred']]
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.partition(users, 'active');
+     * // => objects for [['fred'], ['barney', 'pebbles']]
+     */
+    var partition = createAggregator(function(result, value, key) {
+      result[key ? 0 : 1].push(value);
+    }, function() { return [[], []]; });
+
+    /**
+     * Reduces `collection` to a value which is the accumulated result of running
+     * each element in `collection` thru `iteratee`, where each successive
+     * invocation is supplied the return value of the previous. If `accumulator`
+     * is not given, the first element of `collection` is used as the initial
+     * value. The iteratee is invoked with four arguments:
+     * (accumulator, value, index|key, collection).
+     *
+     * Many lodash methods are guarded to work as iteratees for methods like
+     * `_.reduce`, `_.reduceRight`, and `_.transform`.
+     *
+     * The guarded methods are:
+     * `assign`, `defaults`, `defaultsDeep`, `includes`, `merge`, `orderBy`,
+     * and `sortBy`
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Collection
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+     * @param {*} [accumulator] The initial value.
+     * @returns {*} Returns the accumulated value.
+     * @see _.reduceRight
+     * @example
+     *
+     * _.reduce([1, 2], function(sum, n) {
+     *   return sum + n;
+     * }, 0);
+     * // => 3
+     *
+     * _.reduce({ 'a': 1, 'b': 2, 'c': 1 }, function(result, value, key) {
+     *   (result[value] || (result[value] = [])).push(key);
+     *   return result;
+     * }, {});
+     * // => { '1': ['a', 'c'], '2': ['b'] } (iteration order is not guaranteed)
+     */
+    function reduce(collection, iteratee, accumulator) {
+      var func = isArray(collection) ? arrayReduce : baseReduce,
+          initAccum = arguments.length < 3;
+
+      return func(collection, getIteratee(iteratee, 4), accumulator, initAccum, baseEach);
+    }
+
+    /**
+     * This method is like `_.reduce` except that it iterates over elements of
+     * `collection` from right to left.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Collection
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+     * @param {*} [accumulator] The initial value.
+     * @returns {*} Returns the accumulated value.
+     * @see _.reduce
+     * @example
+     *
+     * var array = [[0, 1], [2, 3], [4, 5]];
+     *
+     * _.reduceRight(array, function(flattened, other) {
+     *   return flattened.concat(other);
+     * }, []);
+     * // => [4, 5, 2, 3, 0, 1]
+     */
+    function reduceRight(collection, iteratee, accumulator) {
+      var func = isArray(collection) ? arrayReduceRight : baseReduce,
+          initAccum = arguments.length < 3;
+
+      return func(collection, getIteratee(iteratee, 4), accumulator, initAccum, baseEachRight);
+    }
+
+    /**
+     * The opposite of `_.filter`; this method returns the elements of `collection`
+     * that `predicate` does **not** return truthy for.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Collection
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Function} [predicate=_.identity] The function invoked per iteration.
+     * @returns {Array} Returns the new filtered array.
+     * @see _.filter
+     * @example
+     *
+     * var users = [
+     *   { 'user': 'barney', 'age': 36, 'active': false },
+     *   { 'user': 'fred',   'age': 40, 'active': true }
+     * ];
+     *
+     * _.reject(users, function(o) { return !o.active; });
+     * // => objects for ['fred']
+     *
+     * // The `_.matches` iteratee shorthand.
+     * _.reject(users, { 'age': 40, 'active': true });
+     * // => objects for ['barney']
+     *
+     * // The `_.matchesProperty` iteratee shorthand.
+     * _.reject(users, ['active', false]);
+     * // => objects for ['fred']
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.reject(users, 'active');
+     * // => objects for ['barney']
+     */
+    function reject(collection, predicate) {
+      var func = isArray(collection) ? arrayFilter : baseFilter;
+      return func(collection, negate(getIteratee(predicate, 3)));
+    }
+
+    /**
+     * Gets a random element from `collection`.
+     *
+     * @static
+     * @memberOf _
+     * @since 2.0.0
+     * @category Collection
+     * @param {Array|Object} collection The collection to sample.
+     * @returns {*} Returns the random element.
+     * @example
+     *
+     * _.sample([1, 2, 3, 4]);
+     * // => 2
+     */
+    function sample(collection) {
+      var func = isArray(collection) ? arraySample : baseSample;
+      return func(collection);
+    }
+
+    /**
+     * Gets `n` random elements at unique keys from `collection` up to the
+     * size of `collection`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Collection
+     * @param {Array|Object} collection The collection to sample.
+     * @param {number} [n=1] The number of elements to sample.
+     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+     * @returns {Array} Returns the random elements.
+     * @example
+     *
+     * _.sampleSize([1, 2, 3], 2);
+     * // => [3, 1]
+     *
+     * _.sampleSize([1, 2, 3], 4);
+     * // => [2, 3, 1]
+     */
+    function sampleSize(collection, n, guard) {
+      if ((guard ? isIterateeCall(collection, n, guard) : n === undefined)) {
+        n = 1;
+      } else {
+        n = toInteger(n);
+      }
+      var func = isArray(collection) ? arraySampleSize : baseSampleSize;
+      return func(collection, n);
+    }
+
+    /**
+     * Creates an array of shuffled values, using a version of the
+     * [Fisher-Yates shuffle](https://en.wikipedia.org/wiki/Fisher-Yates_shuffle).
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Collection
+     * @param {Array|Object} collection The collection to shuffle.
+     * @returns {Array} Returns the new shuffled array.
+     * @example
+     *
+     * _.shuffle([1, 2, 3, 4]);
+     * // => [4, 1, 3, 2]
+     */
+    function shuffle(collection) {
+      var func = isArray(collection) ? arrayShuffle : baseShuffle;
+      return func(collection);
+    }
+
+    /**
+     * Gets the size of `collection` by returning its length for array-like
+     * values or the number of own enumerable string keyed properties for objects.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Collection
+     * @param {Array|Object|string} collection The collection to inspect.
+     * @returns {number} Returns the collection size.
+     * @example
+     *
+     * _.size([1, 2, 3]);
+     * // => 3
+     *
+     * _.size({ 'a': 1, 'b': 2 });
+     * // => 2
+     *
+     * _.size('pebbles');
+     * // => 7
+     */
+    function size(collection) {
+      if (collection == null) {
+        return 0;
+      }
+      if (isArrayLike(collection)) {
+        return isString(collection) ? stringSize(collection) : collection.length;
+      }
+      var tag = getTag(collection);
+      if (tag == mapTag || tag == setTag) {
+        return collection.size;
+      }
+      return baseKeys(collection).length;
+    }
+
+    /**
+     * Checks if `predicate` returns truthy for **any** element of `collection`.
+     * Iteration is stopped once `predicate` returns truthy. The predicate is
+     * invoked with three arguments: (value, index|key, collection).
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Collection
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {Function} [predicate=_.identity] The function invoked per iteration.
+     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+     * @returns {boolean} Returns `true` if any element passes the predicate check,
+     *  else `false`.
+     * @example
+     *
+     * _.some([null, 0, 'yes', false], Boolean);
+     * // => true
+     *
+     * var users = [
+     *   { 'user': 'barney', 'active': true },
+     *   { 'user': 'fred',   'active': false }
+     * ];
+     *
+     * // The `_.matches` iteratee shorthand.
+     * _.some(users, { 'user': 'barney', 'active': false });
+     * // => false
+     *
+     * // The `_.matchesProperty` iteratee shorthand.
+     * _.some(users, ['active', false]);
+     * // => true
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.some(users, 'active');
+     * // => true
+     */
+    function some(collection, predicate, guard) {
+      var func = isArray(collection) ? arraySome : baseSome;
+      if (guard && isIterateeCall(collection, predicate, guard)) {
+        predicate = undefined;
+      }
+      return func(collection, getIteratee(predicate, 3));
+    }
+
+    /**
+     * Creates an array of elements, sorted in ascending order by the results of
+     * running each element in a collection thru each iteratee. This method
+     * performs a stable sort, that is, it preserves the original sort order of
+     * equal elements. The iteratees are invoked with one argument: (value).
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Collection
+     * @param {Array|Object} collection The collection to iterate over.
+     * @param {...(Function|Function[])} [iteratees=[_.identity]]
+     *  The iteratees to sort by.
+     * @returns {Array} Returns the new sorted array.
+     * @example
+     *
+     * var users = [
+     *   { 'user': 'fred',   'age': 48 },
+     *   { 'user': 'barney', 'age': 36 },
+     *   { 'user': 'fred',   'age': 30 },
+     *   { 'user': 'barney', 'age': 34 }
+     * ];
+     *
+     * _.sortBy(users, [function(o) { return o.user; }]);
+     * // => objects for [['barney', 36], ['barney', 34], ['fred', 48], ['fred', 30]]
+     *
+     * _.sortBy(users, ['user', 'age']);
+     * // => objects for [['barney', 34], ['barney', 36], ['fred', 30], ['fred', 48]]
+     */
+    var sortBy = baseRest(function(collection, iteratees) {
+      if (collection == null) {
+        return [];
+      }
+      var length = iteratees.length;
+      if (length > 1 && isIterateeCall(collection, iteratees[0], iteratees[1])) {
+        iteratees = [];
+      } else if (length > 2 && isIterateeCall(iteratees[0], iteratees[1], iteratees[2])) {
+        iteratees = [iteratees[0]];
+      }
+      return baseOrderBy(collection, baseFlatten(iteratees, 1), []);
+    });
+
+    /*------------------------------------------------------------------------*/
+
+    /**
+     * Gets the timestamp of the number of milliseconds that have elapsed since
+     * the Unix epoch (1 January 1970 00:00:00 UTC).
+     *
+     * @static
+     * @memberOf _
+     * @since 2.4.0
+     * @category Date
+     * @returns {number} Returns the timestamp.
+     * @example
+     *
+     * _.defer(function(stamp) {
+     *   console.log(_.now() - stamp);
+     * }, _.now());
+     * // => Logs the number of milliseconds it took for the deferred invocation.
+     */
+    var now = ctxNow || function() {
+      return root.Date.now();
+    };
+
+    /*------------------------------------------------------------------------*/
+
+    /**
+     * The opposite of `_.before`; this method creates a function that invokes
+     * `func` once it's called `n` or more times.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Function
+     * @param {number} n The number of calls before `func` is invoked.
+     * @param {Function} func The function to restrict.
+     * @returns {Function} Returns the new restricted function.
+     * @example
+     *
+     * var saves = ['profile', 'settings'];
+     *
+     * var done = _.after(saves.length, function() {
+     *   console.log('done saving!');
+     * });
+     *
+     * _.forEach(saves, function(type) {
+     *   asyncSave({ 'type': type, 'complete': done });
+     * });
+     * // => Logs 'done saving!' after the two async saves have completed.
+     */
+    function after(n, func) {
+      if (typeof func != 'function') {
+        throw new TypeError(FUNC_ERROR_TEXT);
+      }
+      n = toInteger(n);
+      return function() {
+        if (--n < 1) {
+          return func.apply(this, arguments);
+        }
+      };
+    }
+
+    /**
+     * Creates a function that invokes `func`, with up to `n` arguments,
+     * ignoring any additional arguments.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Function
+     * @param {Function} func The function to cap arguments for.
+     * @param {number} [n=func.length] The arity cap.
+     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+     * @returns {Function} Returns the new capped function.
+     * @example
+     *
+     * _.map(['6', '8', '10'], _.ary(parseInt, 1));
+     * // => [6, 8, 10]
+     */
+    function ary(func, n, guard) {
+      n = guard ? undefined : n;
+      n = (func && n == null) ? func.length : n;
+      return createWrap(func, WRAP_ARY_FLAG, undefined, undefined, undefined, undefined, n);
+    }
+
+    /**
+     * Creates a function that invokes `func`, with the `this` binding and arguments
+     * of the created function, while it's called less than `n` times. Subsequent
+     * calls to the created function return the result of the last `func` invocation.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Function
+     * @param {number} n The number of calls at which `func` is no longer invoked.
+     * @param {Function} func The function to restrict.
+     * @returns {Function} Returns the new restricted function.
+     * @example
+     *
+     * jQuery(element).on('click', _.before(5, addContactToList));
+     * // => Allows adding up to 4 contacts to the list.
+     */
+    function before(n, func) {
+      var result;
+      if (typeof func != 'function') {
+        throw new TypeError(FUNC_ERROR_TEXT);
+      }
+      n = toInteger(n);
+      return function() {
+        if (--n > 0) {
+          result = func.apply(this, arguments);
+        }
+        if (n <= 1) {
+          func = undefined;
+        }
+        return result;
+      };
+    }
+
+    /**
+     * Creates a function that invokes `func` with the `this` binding of `thisArg`
+     * and `partials` prepended to the arguments it receives.
+     *
+     * The `_.bind.placeholder` value, which defaults to `_` in monolithic builds,
+     * may be used as a placeholder for partially applied arguments.
+     *
+     * **Note:** Unlike native `Function#bind`, this method doesn't set the "length"
+     * property of bound functions.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Function
+     * @param {Function} func The function to bind.
+     * @param {*} thisArg The `this` binding of `func`.
+     * @param {...*} [partials] The arguments to be partially applied.
+     * @returns {Function} Returns the new bound function.
+     * @example
+     *
+     * function greet(greeting, punctuation) {
+     *   return greeting + ' ' + this.user + punctuation;
+     * }
+     *
+     * var object = { 'user': 'fred' };
+     *
+     * var bound = _.bind(greet, object, 'hi');
+     * bound('!');
+     * // => 'hi fred!'
+     *
+     * // Bound with placeholders.
+     * var bound = _.bind(greet, object, _, '!');
+     * bound('hi');
+     * // => 'hi fred!'
+     */
+    var bind = baseRest(function(func, thisArg, partials) {
+      var bitmask = WRAP_BIND_FLAG;
+      if (partials.length) {
+        var holders = replaceHolders(partials, getHolder(bind));
+        bitmask |= WRAP_PARTIAL_FLAG;
+      }
+      return createWrap(func, bitmask, thisArg, partials, holders);
+    });
+
+    /**
+     * Creates a function that invokes the method at `object[key]` with `partials`
+     * prepended to the arguments it receives.
+     *
+     * This method differs from `_.bind` by allowing bound functions to reference
+     * methods that may be redefined or don't yet exist. See
+     * [Peter Michaux's article](http://peter.michaux.ca/articles/lazy-function-definition-pattern)
+     * for more details.
+     *
+     * The `_.bindKey.placeholder` value, which defaults to `_` in monolithic
+     * builds, may be used as a placeholder for partially applied arguments.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.10.0
+     * @category Function
+     * @param {Object} object The object to invoke the method on.
+     * @param {string} key The key of the method.
+     * @param {...*} [partials] The arguments to be partially applied.
+     * @returns {Function} Returns the new bound function.
+     * @example
+     *
+     * var object = {
+     *   'user': 'fred',
+     *   'greet': function(greeting, punctuation) {
+     *     return greeting + ' ' + this.user + punctuation;
+     *   }
+     * };
+     *
+     * var bound = _.bindKey(object, 'greet', 'hi');
+     * bound('!');
+     * // => 'hi fred!'
+     *
+     * object.greet = function(greeting, punctuation) {
+     *   return greeting + 'ya ' + this.user + punctuation;
+     * };
+     *
+     * bound('!');
+     * // => 'hiya fred!'
+     *
+     * // Bound with placeholders.
+     * var bound = _.bindKey(object, 'greet', _, '!');
+     * bound('hi');
+     * // => 'hiya fred!'
+     */
+    var bindKey = baseRest(function(object, key, partials) {
+      var bitmask = WRAP_BIND_FLAG | WRAP_BIND_KEY_FLAG;
+      if (partials.length) {
+        var holders = replaceHolders(partials, getHolder(bindKey));
+        bitmask |= WRAP_PARTIAL_FLAG;
+      }
+      return createWrap(key, bitmask, object, partials, holders);
+    });
+
+    /**
+     * Creates a function that accepts arguments of `func` and either invokes
+     * `func` returning its result, if at least `arity` number of arguments have
+     * been provided, or returns a function that accepts the remaining `func`
+     * arguments, and so on. The arity of `func` may be specified if `func.length`
+     * is not sufficient.
+     *
+     * The `_.curry.placeholder` value, which defaults to `_` in monolithic builds,
+     * may be used as a placeholder for provided arguments.
+     *
+     * **Note:** This method doesn't set the "length" property of curried functions.
+     *
+     * @static
+     * @memberOf _
+     * @since 2.0.0
+     * @category Function
+     * @param {Function} func The function to curry.
+     * @param {number} [arity=func.length] The arity of `func`.
+     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+     * @returns {Function} Returns the new curried function.
+     * @example
+     *
+     * var abc = function(a, b, c) {
+     *   return [a, b, c];
+     * };
+     *
+     * var curried = _.curry(abc);
+     *
+     * curried(1)(2)(3);
+     * // => [1, 2, 3]
+     *
+     * curried(1, 2)(3);
+     * // => [1, 2, 3]
+     *
+     * curried(1, 2, 3);
+     * // => [1, 2, 3]
+     *
+     * // Curried with placeholders.
+     * curried(1)(_, 3)(2);
+     * // => [1, 2, 3]
+     */
+    function curry(func, arity, guard) {
+      arity = guard ? undefined : arity;
+      var result = createWrap(func, WRAP_CURRY_FLAG, undefined, undefined, undefined, undefined, undefined, arity);
+      result.placeholder = curry.placeholder;
+      return result;
+    }
+
+    /**
+     * This method is like `_.curry` except that arguments are applied to `func`
+     * in the manner of `_.partialRight` instead of `_.partial`.
+     *
+     * The `_.curryRight.placeholder` value, which defaults to `_` in monolithic
+     * builds, may be used as a placeholder for provided arguments.
+     *
+     * **Note:** This method doesn't set the "length" property of curried functions.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Function
+     * @param {Function} func The function to curry.
+     * @param {number} [arity=func.length] The arity of `func`.
+     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+     * @returns {Function} Returns the new curried function.
+     * @example
+     *
+     * var abc = function(a, b, c) {
+     *   return [a, b, c];
+     * };
+     *
+     * var curried = _.curryRight(abc);
+     *
+     * curried(3)(2)(1);
+     * // => [1, 2, 3]
+     *
+     * curried(2, 3)(1);
+     * // => [1, 2, 3]
+     *
+     * curried(1, 2, 3);
+     * // => [1, 2, 3]
+     *
+     * // Curried with placeholders.
+     * curried(3)(1, _)(2);
+     * // => [1, 2, 3]
+     */
+    function curryRight(func, arity, guard) {
+      arity = guard ? undefined : arity;
+      var result = createWrap(func, WRAP_CURRY_RIGHT_FLAG, undefined, undefined, undefined, undefined, undefined, arity);
+      result.placeholder = curryRight.placeholder;
+      return result;
+    }
+
+    /**
+     * Creates a debounced function that delays invoking `func` until after `wait`
+     * milliseconds have elapsed since the last time the debounced function was
+     * invoked. The debounced function comes with a `cancel` method to cancel
+     * delayed `func` invocations and a `flush` method to immediately invoke them.
+     * Provide `options` to indicate whether `func` should be invoked on the
+     * leading and/or trailing edge of the `wait` timeout. The `func` is invoked
+     * with the last arguments provided to the debounced function. Subsequent
+     * calls to the debounced function return the result of the last `func`
+     * invocation.
+     *
+     * **Note:** If `leading` and `trailing` options are `true`, `func` is
+     * invoked on the trailing edge of the timeout only if the debounced function
+     * is invoked more than once during the `wait` timeout.
+     *
+     * If `wait` is `0` and `leading` is `false`, `func` invocation is deferred
+     * until to the next tick, similar to `setTimeout` with a timeout of `0`.
+     *
+     * See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
+     * for details over the differences between `_.debounce` and `_.throttle`.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Function
+     * @param {Function} func The function to debounce.
+     * @param {number} [wait=0] The number of milliseconds to delay.
+     * @param {Object} [options={}] The options object.
+     * @param {boolean} [options.leading=false]
+     *  Specify invoking on the leading edge of the timeout.
+     * @param {number} [options.maxWait]
+     *  The maximum time `func` is allowed to be delayed before it's invoked.
+     * @param {boolean} [options.trailing=true]
+     *  Specify invoking on the trailing edge of the timeout.
+     * @returns {Function} Returns the new debounced function.
+     * @example
+     *
+     * // Avoid costly calculations while the window size is in flux.
+     * jQuery(window).on('resize', _.debounce(calculateLayout, 150));
+     *
+     * // Invoke `sendMail` when clicked, debouncing subsequent calls.
+     * jQuery(element).on('click', _.debounce(sendMail, 300, {
+     *   'leading': true,
+     *   'trailing': false
+     * }));
+     *
+     * // Ensure `batchLog` is invoked once after 1 second of debounced calls.
+     * var debounced = _.debounce(batchLog, 250, { 'maxWait': 1000 });
+     * var source = new EventSource('/stream');
+     * jQuery(source).on('message', debounced);
+     *
+     * // Cancel the trailing debounced invocation.
+     * jQuery(window).on('popstate', debounced.cancel);
+     */
+    function debounce(func, wait, options) {
+      var lastArgs,
+          lastThis,
+          maxWait,
+          result,
+          timerId,
+          lastCallTime,
+          lastInvokeTime = 0,
+          leading = false,
+          maxing = false,
+          trailing = true;
+
+      if (typeof func != 'function') {
+        throw new TypeError(FUNC_ERROR_TEXT);
+      }
+      wait = toNumber(wait) || 0;
+      if (isObject(options)) {
+        leading = !!options.leading;
+        maxing = 'maxWait' in options;
+        maxWait = maxing ? nativeMax(toNumber(options.maxWait) || 0, wait) : maxWait;
+        trailing = 'trailing' in options ? !!options.trailing : trailing;
+      }
+
+      function invokeFunc(time) {
+        var args = lastArgs,
+            thisArg = lastThis;
+
+        lastArgs = lastThis = undefined;
+        lastInvokeTime = time;
+        result = func.apply(thisArg, args);
+        return result;
+      }
+
+      function leadingEdge(time) {
+        // Reset any `maxWait` timer.
+        lastInvokeTime = time;
+        // Start the timer for the trailing edge.
+        timerId = setTimeout(timerExpired, wait);
+        // Invoke the leading edge.
+        return leading ? invokeFunc(time) : result;
+      }
+
+      function remainingWait(time) {
+        var timeSinceLastCall = time - lastCallTime,
+            timeSinceLastInvoke = time - lastInvokeTime,
+            timeWaiting = wait - timeSinceLastCall;
+
+        return maxing
+          ? nativeMin(timeWaiting, maxWait - timeSinceLastInvoke)
+          : timeWaiting;
+      }
+
+      function shouldInvoke(time) {
+        var timeSinceLastCall = time - lastCallTime,
+            timeSinceLastInvoke = time - lastInvokeTime;
+
+        // Either this is the first call, activity has stopped and we're at the
+        // trailing edge, the system time has gone backwards and we're treating
+        // it as the trailing edge, or we've hit the `maxWait` limit.
+        return (lastCallTime === undefined || (timeSinceLastCall >= wait) ||
+          (timeSinceLastCall < 0) || (maxing && timeSinceLastInvoke >= maxWait));
+      }
+
+      function timerExpired() {
+        var time = now();
+        if (shouldInvoke(time)) {
+          return trailingEdge(time);
+        }
+        // Restart the timer.
+        timerId = setTimeout(timerExpired, remainingWait(time));
+      }
+
+      function trailingEdge(time) {
+        timerId = undefined;
+
+        // Only invoke if we have `lastArgs` which means `func` has been
+        // debounced at least once.
+        if (trailing && lastArgs) {
+          return invokeFunc(time);
+        }
+        lastArgs = lastThis = undefined;
+        return result;
+      }
+
+      function cancel() {
+        if (timerId !== undefined) {
+          clearTimeout(timerId);
+        }
+        lastInvokeTime = 0;
+        lastArgs = lastCallTime = lastThis = timerId = undefined;
+      }
+
+      function flush() {
+        return timerId === undefined ? result : trailingEdge(now());
+      }
+
+      function debounced() {
+        var time = now(),
+            isInvoking = shouldInvoke(time);
+
+        lastArgs = arguments;
+        lastThis = this;
+        lastCallTime = time;
+
+        if (isInvoking) {
+          if (timerId === undefined) {
+            return leadingEdge(lastCallTime);
+          }
+          if (maxing) {
+            // Handle invocations in a tight loop.
+            clearTimeout(timerId);
+            timerId = setTimeout(timerExpired, wait);
+            return invokeFunc(lastCallTime);
+          }
+        }
+        if (timerId === undefined) {
+          timerId = setTimeout(timerExpired, wait);
+        }
+        return result;
+      }
+      debounced.cancel = cancel;
+      debounced.flush = flush;
+      return debounced;
+    }
+
+    /**
+     * Defers invoking the `func` until the current call stack has cleared. Any
+     * additional arguments are provided to `func` when it's invoked.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Function
+     * @param {Function} func The function to defer.
+     * @param {...*} [args] The arguments to invoke `func` with.
+     * @returns {number} Returns the timer id.
+     * @example
+     *
+     * _.defer(function(text) {
+     *   console.log(text);
+     * }, 'deferred');
+     * // => Logs 'deferred' after one millisecond.
+     */
+    var defer = baseRest(function(func, args) {
+      return baseDelay(func, 1, args);
+    });
+
+    /**
+     * Invokes `func` after `wait` milliseconds. Any additional arguments are
+     * provided to `func` when it's invoked.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Function
+     * @param {Function} func The function to delay.
+     * @param {number} wait The number of milliseconds to delay invocation.
+     * @param {...*} [args] The arguments to invoke `func` with.
+     * @returns {number} Returns the timer id.
+     * @example
+     *
+     * _.delay(function(text) {
+     *   console.log(text);
+     * }, 1000, 'later');
+     * // => Logs 'later' after one second.
+     */
+    var delay = baseRest(function(func, wait, args) {
+      return baseDelay(func, toNumber(wait) || 0, args);
+    });
+
+    /**
+     * Creates a function that invokes `func` with arguments reversed.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Function
+     * @param {Function} func The function to flip arguments for.
+     * @returns {Function} Returns the new flipped function.
+     * @example
+     *
+     * var flipped = _.flip(function() {
+     *   return _.toArray(arguments);
+     * });
+     *
+     * flipped('a', 'b', 'c', 'd');
+     * // => ['d', 'c', 'b', 'a']
+     */
+    function flip(func) {
+      return createWrap(func, WRAP_FLIP_FLAG);
+    }
+
+    /**
+     * Creates a function that memoizes the result of `func`. If `resolver` is
+     * provided, it determines the cache key for storing the result based on the
+     * arguments provided to the memoized function. By default, the first argument
+     * provided to the memoized function is used as the map cache key. The `func`
+     * is invoked with the `this` binding of the memoized function.
+     *
+     * **Note:** The cache is exposed as the `cache` property on the memoized
+     * function. Its creation may be customized by replacing the `_.memoize.Cache`
+     * constructor with one whose instances implement the
+     * [`Map`](http://ecma-international.org/ecma-262/7.0/#sec-properties-of-the-map-prototype-object)
+     * method interface of `clear`, `delete`, `get`, `has`, and `set`.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Function
+     * @param {Function} func The function to have its output memoized.
+     * @param {Function} [resolver] The function to resolve the cache key.
+     * @returns {Function} Returns the new memoized function.
+     * @example
+     *
+     * var object = { 'a': 1, 'b': 2 };
+     * var other = { 'c': 3, 'd': 4 };
+     *
+     * var values = _.memoize(_.values);
+     * values(object);
+     * // => [1, 2]
+     *
+     * values(other);
+     * // => [3, 4]
+     *
+     * object.a = 2;
+     * values(object);
+     * // => [1, 2]
+     *
+     * // Modify the result cache.
+     * values.cache.set(object, ['a', 'b']);
+     * values(object);
+     * // => ['a', 'b']
+     *
+     * // Replace `_.memoize.Cache`.
+     * _.memoize.Cache = WeakMap;
+     */
+    function memoize(func, resolver) {
+      if (typeof func != 'function' || (resolver != null && typeof resolver != 'function')) {
+        throw new TypeError(FUNC_ERROR_TEXT);
+      }
+      var memoized = function() {
+        var args = arguments,
+            key = resolver ? resolver.apply(this, args) : args[0],
+            cache = memoized.cache;
+
+        if (cache.has(key)) {
+          return cache.get(key);
+        }
+        var result = func.apply(this, args);
+        memoized.cache = cache.set(key, result) || cache;
+        return result;
+      };
+      memoized.cache = new (memoize.Cache || MapCache);
+      return memoized;
+    }
+
+    // Expose `MapCache`.
+    memoize.Cache = MapCache;
+
+    /**
+     * Creates a function that negates the result of the predicate `func`. The
+     * `func` predicate is invoked with the `this` binding and arguments of the
+     * created function.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Function
+     * @param {Function} predicate The predicate to negate.
+     * @returns {Function} Returns the new negated function.
+     * @example
+     *
+     * function isEven(n) {
+     *   return n % 2 == 0;
+     * }
+     *
+     * _.filter([1, 2, 3, 4, 5, 6], _.negate(isEven));
+     * // => [1, 3, 5]
+     */
+    function negate(predicate) {
+      if (typeof predicate != 'function') {
+        throw new TypeError(FUNC_ERROR_TEXT);
+      }
+      return function() {
+        var args = arguments;
+        switch (args.length) {
+          case 0: return !predicate.call(this);
+          case 1: return !predicate.call(this, args[0]);
+          case 2: return !predicate.call(this, args[0], args[1]);
+          case 3: return !predicate.call(this, args[0], args[1], args[2]);
+        }
+        return !predicate.apply(this, args);
+      };
+    }
+
+    /**
+     * Creates a function that is restricted to invoking `func` once. Repeat calls
+     * to the function return the value of the first invocation. The `func` is
+     * invoked with the `this` binding and arguments of the created function.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Function
+     * @param {Function} func The function to restrict.
+     * @returns {Function} Returns the new restricted function.
+     * @example
+     *
+     * var initialize = _.once(createApplication);
+     * initialize();
+     * initialize();
+     * // => `createApplication` is invoked once
+     */
+    function once(func) {
+      return before(2, func);
+    }
+
+    /**
+     * Creates a function that invokes `func` with its arguments transformed.
+     *
+     * @static
+     * @since 4.0.0
+     * @memberOf _
+     * @category Function
+     * @param {Function} func The function to wrap.
+     * @param {...(Function|Function[])} [transforms=[_.identity]]
+     *  The argument transforms.
+     * @returns {Function} Returns the new function.
+     * @example
+     *
+     * function doubled(n) {
+     *   return n * 2;
+     * }
+     *
+     * function square(n) {
+     *   return n * n;
+     * }
+     *
+     * var func = _.overArgs(function(x, y) {
+     *   return [x, y];
+     * }, [square, doubled]);
+     *
+     * func(9, 3);
+     * // => [81, 6]
+     *
+     * func(10, 5);
+     * // => [100, 10]
+     */
+    var overArgs = castRest(function(func, transforms) {
+      transforms = (transforms.length == 1 && isArray(transforms[0]))
+        ? arrayMap(transforms[0], baseUnary(getIteratee()))
+        : arrayMap(baseFlatten(transforms, 1), baseUnary(getIteratee()));
+
+      var funcsLength = transforms.length;
+      return baseRest(function(args) {
+        var index = -1,
+            length = nativeMin(args.length, funcsLength);
+
+        while (++index < length) {
+          args[index] = transforms[index].call(this, args[index]);
+        }
+        return apply(func, this, args);
+      });
+    });
+
+    /**
+     * Creates a function that invokes `func` with `partials` prepended to the
+     * arguments it receives. This method is like `_.bind` except it does **not**
+     * alter the `this` binding.
+     *
+     * The `_.partial.placeholder` value, which defaults to `_` in monolithic
+     * builds, may be used as a placeholder for partially applied arguments.
+     *
+     * **Note:** This method doesn't set the "length" property of partially
+     * applied functions.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.2.0
+     * @category Function
+     * @param {Function} func The function to partially apply arguments to.
+     * @param {...*} [partials] The arguments to be partially applied.
+     * @returns {Function} Returns the new partially applied function.
+     * @example
+     *
+     * function greet(greeting, name) {
+     *   return greeting + ' ' + name;
+     * }
+     *
+     * var sayHelloTo = _.partial(greet, 'hello');
+     * sayHelloTo('fred');
+     * // => 'hello fred'
+     *
+     * // Partially applied with placeholders.
+     * var greetFred = _.partial(greet, _, 'fred');
+     * greetFred('hi');
+     * // => 'hi fred'
+     */
+    var partial = baseRest(function(func, partials) {
+      var holders = replaceHolders(partials, getHolder(partial));
+      return createWrap(func, WRAP_PARTIAL_FLAG, undefined, partials, holders);
+    });
+
+    /**
+     * This method is like `_.partial` except that partially applied arguments
+     * are appended to the arguments it receives.
+     *
+     * The `_.partialRight.placeholder` value, which defaults to `_` in monolithic
+     * builds, may be used as a placeholder for partially applied arguments.
+     *
+     * **Note:** This method doesn't set the "length" property of partially
+     * applied functions.
+     *
+     * @static
+     * @memberOf _
+     * @since 1.0.0
+     * @category Function
+     * @param {Function} func The function to partially apply arguments to.
+     * @param {...*} [partials] The arguments to be partially applied.
+     * @returns {Function} Returns the new partially applied function.
+     * @example
+     *
+     * function greet(greeting, name) {
+     *   return greeting + ' ' + name;
+     * }
+     *
+     * var greetFred = _.partialRight(greet, 'fred');
+     * greetFred('hi');
+     * // => 'hi fred'
+     *
+     * // Partially applied with placeholders.
+     * var sayHelloTo = _.partialRight(greet, 'hello', _);
+     * sayHelloTo('fred');
+     * // => 'hello fred'
+     */
+    var partialRight = baseRest(function(func, partials) {
+      var holders = replaceHolders(partials, getHolder(partialRight));
+      return createWrap(func, WRAP_PARTIAL_RIGHT_FLAG, undefined, partials, holders);
+    });
+
+    /**
+     * Creates a function that invokes `func` with arguments arranged according
+     * to the specified `indexes` where the argument value at the first index is
+     * provided as the first argument, the argument value at the second index is
+     * provided as the second argument, and so on.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Function
+     * @param {Function} func The function to rearrange arguments for.
+     * @param {...(number|number[])} indexes The arranged argument indexes.
+     * @returns {Function} Returns the new function.
+     * @example
+     *
+     * var rearged = _.rearg(function(a, b, c) {
+     *   return [a, b, c];
+     * }, [2, 0, 1]);
+     *
+     * rearged('b', 'c', 'a')
+     * // => ['a', 'b', 'c']
+     */
+    var rearg = flatRest(function(func, indexes) {
+      return createWrap(func, WRAP_REARG_FLAG, undefined, undefined, undefined, indexes);
+    });
+
+    /**
+     * Creates a function that invokes `func` with the `this` binding of the
+     * created function and arguments from `start` and beyond provided as
+     * an array.
+     *
+     * **Note:** This method is based on the
+     * [rest parameter](https://mdn.io/rest_parameters).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Function
+     * @param {Function} func The function to apply a rest parameter to.
+     * @param {number} [start=func.length-1] The start position of the rest parameter.
+     * @returns {Function} Returns the new function.
+     * @example
+     *
+     * var say = _.rest(function(what, names) {
+     *   return what + ' ' + _.initial(names).join(', ') +
+     *     (_.size(names) > 1 ? ', & ' : '') + _.last(names);
+     * });
+     *
+     * say('hello', 'fred', 'barney', 'pebbles');
+     * // => 'hello fred, barney, & pebbles'
+     */
+    function rest(func, start) {
+      if (typeof func != 'function') {
+        throw new TypeError(FUNC_ERROR_TEXT);
+      }
+      start = start === undefined ? start : toInteger(start);
+      return baseRest(func, start);
+    }
+
+    /**
+     * Creates a function that invokes `func` with the `this` binding of the
+     * create function and an array of arguments much like
+     * [`Function#apply`](http://www.ecma-international.org/ecma-262/7.0/#sec-function.prototype.apply).
+     *
+     * **Note:** This method is based on the
+     * [spread operator](https://mdn.io/spread_operator).
+     *
+     * @static
+     * @memberOf _
+     * @since 3.2.0
+     * @category Function
+     * @param {Function} func The function to spread arguments over.
+     * @param {number} [start=0] The start position of the spread.
+     * @returns {Function} Returns the new function.
+     * @example
+     *
+     * var say = _.spread(function(who, what) {
+     *   return who + ' says ' + what;
+     * });
+     *
+     * say(['fred', 'hello']);
+     * // => 'fred says hello'
+     *
+     * var numbers = Promise.all([
+     *   Promise.resolve(40),
+     *   Promise.resolve(36)
+     * ]);
+     *
+     * numbers.then(_.spread(function(x, y) {
+     *   return x + y;
+     * }));
+     * // => a Promise of 76
+     */
+    function spread(func, start) {
+      if (typeof func != 'function') {
+        throw new TypeError(FUNC_ERROR_TEXT);
+      }
+      start = start == null ? 0 : nativeMax(toInteger(start), 0);
+      return baseRest(function(args) {
+        var array = args[start],
+            otherArgs = castSlice(args, 0, start);
+
+        if (array) {
+          arrayPush(otherArgs, array);
+        }
+        return apply(func, this, otherArgs);
+      });
+    }
+
+    /**
+     * Creates a throttled function that only invokes `func` at most once per
+     * every `wait` milliseconds. The throttled function comes with a `cancel`
+     * method to cancel delayed `func` invocations and a `flush` method to
+     * immediately invoke them. Provide `options` to indicate whether `func`
+     * should be invoked on the leading and/or trailing edge of the `wait`
+     * timeout. The `func` is invoked with the last arguments provided to the
+     * throttled function. Subsequent calls to the throttled function return the
+     * result of the last `func` invocation.
+     *
+     * **Note:** If `leading` and `trailing` options are `true`, `func` is
+     * invoked on the trailing edge of the timeout only if the throttled function
+     * is invoked more than once during the `wait` timeout.
+     *
+     * If `wait` is `0` and `leading` is `false`, `func` invocation is deferred
+     * until to the next tick, similar to `setTimeout` with a timeout of `0`.
+     *
+     * See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
+     * for details over the differences between `_.throttle` and `_.debounce`.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Function
+     * @param {Function} func The function to throttle.
+     * @param {number} [wait=0] The number of milliseconds to throttle invocations to.
+     * @param {Object} [options={}] The options object.
+     * @param {boolean} [options.leading=true]
+     *  Specify invoking on the leading edge of the timeout.
+     * @param {boolean} [options.trailing=true]
+     *  Specify invoking on the trailing edge of the timeout.
+     * @returns {Function} Returns the new throttled function.
+     * @example
+     *
+     * // Avoid excessively updating the position while scrolling.
+     * jQuery(window).on('scroll', _.throttle(updatePosition, 100));
+     *
+     * // Invoke `renewToken` when the click event is fired, but not more than once every 5 minutes.
+     * var throttled = _.throttle(renewToken, 300000, { 'trailing': false });
+     * jQuery(element).on('click', throttled);
+     *
+     * // Cancel the trailing throttled invocation.
+     * jQuery(window).on('popstate', throttled.cancel);
+     */
+    function throttle(func, wait, options) {
+      var leading = true,
+          trailing = true;
+
+      if (typeof func != 'function') {
+        throw new TypeError(FUNC_ERROR_TEXT);
+      }
+      if (isObject(options)) {
+        leading = 'leading' in options ? !!options.leading : leading;
+        trailing = 'trailing' in options ? !!options.trailing : trailing;
+      }
+      return debounce(func, wait, {
+        'leading': leading,
+        'maxWait': wait,
+        'trailing': trailing
+      });
+    }
+
+    /**
+     * Creates a function that accepts up to one argument, ignoring any
+     * additional arguments.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Function
+     * @param {Function} func The function to cap arguments for.
+     * @returns {Function} Returns the new capped function.
+     * @example
+     *
+     * _.map(['6', '8', '10'], _.unary(parseInt));
+     * // => [6, 8, 10]
+     */
+    function unary(func) {
+      return ary(func, 1);
+    }
+
+    /**
+     * Creates a function that provides `value` to `wrapper` as its first
+     * argument. Any additional arguments provided to the function are appended
+     * to those provided to the `wrapper`. The wrapper is invoked with the `this`
+     * binding of the created function.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Function
+     * @param {*} value The value to wrap.
+     * @param {Function} [wrapper=identity] The wrapper function.
+     * @returns {Function} Returns the new function.
+     * @example
+     *
+     * var p = _.wrap(_.escape, function(func, text) {
+     *   return '<p>' + func(text) + '</p>';
+     * });
+     *
+     * p('fred, barney, & pebbles');
+     * // => '<p>fred, barney, &amp; pebbles</p>'
+     */
+    function wrap(value, wrapper) {
+      return partial(castFunction(wrapper), value);
+    }
+
+    /*------------------------------------------------------------------------*/
+
+    /**
+     * Casts `value` as an array if it's not one.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.4.0
+     * @category Lang
+     * @param {*} value The value to inspect.
+     * @returns {Array} Returns the cast array.
+     * @example
+     *
+     * _.castArray(1);
+     * // => [1]
+     *
+     * _.castArray({ 'a': 1 });
+     * // => [{ 'a': 1 }]
+     *
+     * _.castArray('abc');
+     * // => ['abc']
+     *
+     * _.castArray(null);
+     * // => [null]
+     *
+     * _.castArray(undefined);
+     * // => [undefined]
+     *
+     * _.castArray();
+     * // => []
+     *
+     * var array = [1, 2, 3];
+     * console.log(_.castArray(array) === array);
+     * // => true
+     */
+    function castArray() {
+      if (!arguments.length) {
+        return [];
+      }
+      var value = arguments[0];
+      return isArray(value) ? value : [value];
+    }
+
+    /**
+     * Creates a shallow clone of `value`.
+     *
+     * **Note:** This method is loosely based on the
+     * [structured clone algorithm](https://mdn.io/Structured_clone_algorithm)
+     * and supports cloning arrays, array buffers, booleans, date objects, maps,
+     * numbers, `Object` objects, regexes, sets, strings, symbols, and typed
+     * arrays. The own enumerable properties of `arguments` objects are cloned
+     * as plain objects. An empty object is returned for uncloneable values such
+     * as error objects, functions, DOM nodes, and WeakMaps.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Lang
+     * @param {*} value The value to clone.
+     * @returns {*} Returns the cloned value.
+     * @see _.cloneDeep
+     * @example
+     *
+     * var objects = [{ 'a': 1 }, { 'b': 2 }];
+     *
+     * var shallow = _.clone(objects);
+     * console.log(shallow[0] === objects[0]);
+     * // => true
+     */
+    function clone(value) {
+      return baseClone(value, CLONE_SYMBOLS_FLAG);
+    }
+
+    /**
+     * This method is like `_.clone` except that it accepts `customizer` which
+     * is invoked to produce the cloned value. If `customizer` returns `undefined`,
+     * cloning is handled by the method instead. The `customizer` is invoked with
+     * up to four arguments; (value [, index|key, object, stack]).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Lang
+     * @param {*} value The value to clone.
+     * @param {Function} [customizer] The function to customize cloning.
+     * @returns {*} Returns the cloned value.
+     * @see _.cloneDeepWith
+     * @example
+     *
+     * function customizer(value) {
+     *   if (_.isElement(value)) {
+     *     return value.cloneNode(false);
+     *   }
+     * }
+     *
+     * var el = _.cloneWith(document.body, customizer);
+     *
+     * console.log(el === document.body);
+     * // => false
+     * console.log(el.nodeName);
+     * // => 'BODY'
+     * console.log(el.childNodes.length);
+     * // => 0
+     */
+    function cloneWith(value, customizer) {
+      customizer = typeof customizer == 'function' ? customizer : undefined;
+      return baseClone(value, CLONE_SYMBOLS_FLAG, customizer);
+    }
+
+    /**
+     * This method is like `_.clone` except that it recursively clones `value`.
+     *
+     * @static
+     * @memberOf _
+     * @since 1.0.0
+     * @category Lang
+     * @param {*} value The value to recursively clone.
+     * @returns {*} Returns the deep cloned value.
+     * @see _.clone
+     * @example
+     *
+     * var objects = [{ 'a': 1 }, { 'b': 2 }];
+     *
+     * var deep = _.cloneDeep(objects);
+     * console.log(deep[0] === objects[0]);
+     * // => false
+     */
+    function cloneDeep(value) {
+      return baseClone(value, CLONE_DEEP_FLAG | CLONE_SYMBOLS_FLAG);
+    }
+
+    /**
+     * This method is like `_.cloneWith` except that it recursively clones `value`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Lang
+     * @param {*} value The value to recursively clone.
+     * @param {Function} [customizer] The function to customize cloning.
+     * @returns {*} Returns the deep cloned value.
+     * @see _.cloneWith
+     * @example
+     *
+     * function customizer(value) {
+     *   if (_.isElement(value)) {
+     *     return value.cloneNode(true);
+     *   }
+     * }
+     *
+     * var el = _.cloneDeepWith(document.body, customizer);
+     *
+     * console.log(el === document.body);
+     * // => false
+     * console.log(el.nodeName);
+     * // => 'BODY'
+     * console.log(el.childNodes.length);
+     * // => 20
+     */
+    function cloneDeepWith(value, customizer) {
+      customizer = typeof customizer == 'function' ? customizer : undefined;
+      return baseClone(value, CLONE_DEEP_FLAG | CLONE_SYMBOLS_FLAG, customizer);
+    }
+
+    /**
+     * Checks if `object` conforms to `source` by invoking the predicate
+     * properties of `source` with the corresponding property values of `object`.
+     *
+     * **Note:** This method is equivalent to `_.conforms` when `source` is
+     * partially applied.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.14.0
+     * @category Lang
+     * @param {Object} object The object to inspect.
+     * @param {Object} source The object of property predicates to conform to.
+     * @returns {boolean} Returns `true` if `object` conforms, else `false`.
+     * @example
+     *
+     * var object = { 'a': 1, 'b': 2 };
+     *
+     * _.conformsTo(object, { 'b': function(n) { return n > 1; } });
+     * // => true
+     *
+     * _.conformsTo(object, { 'b': function(n) { return n > 2; } });
+     * // => false
+     */
+    function conformsTo(object, source) {
+      return source == null || baseConformsTo(object, source, keys(source));
+    }
+
+    /**
+     * Performs a
+     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * comparison between two values to determine if they are equivalent.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Lang
+     * @param {*} value The value to compare.
+     * @param {*} other The other value to compare.
+     * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+     * @example
+     *
+     * var object = { 'a': 1 };
+     * var other = { 'a': 1 };
+     *
+     * _.eq(object, object);
+     * // => true
+     *
+     * _.eq(object, other);
+     * // => false
+     *
+     * _.eq('a', 'a');
+     * // => true
+     *
+     * _.eq('a', Object('a'));
+     * // => false
+     *
+     * _.eq(NaN, NaN);
+     * // => true
+     */
+    function eq(value, other) {
+      return value === other || (value !== value && other !== other);
+    }
+
+    /**
+     * Checks if `value` is greater than `other`.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.9.0
+     * @category Lang
+     * @param {*} value The value to compare.
+     * @param {*} other The other value to compare.
+     * @returns {boolean} Returns `true` if `value` is greater than `other`,
+     *  else `false`.
+     * @see _.lt
+     * @example
+     *
+     * _.gt(3, 1);
+     * // => true
+     *
+     * _.gt(3, 3);
+     * // => false
+     *
+     * _.gt(1, 3);
+     * // => false
+     */
+    var gt = createRelationalOperation(baseGt);
+
+    /**
+     * Checks if `value` is greater than or equal to `other`.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.9.0
+     * @category Lang
+     * @param {*} value The value to compare.
+     * @param {*} other The other value to compare.
+     * @returns {boolean} Returns `true` if `value` is greater than or equal to
+     *  `other`, else `false`.
+     * @see _.lte
+     * @example
+     *
+     * _.gte(3, 1);
+     * // => true
+     *
+     * _.gte(3, 3);
+     * // => true
+     *
+     * _.gte(1, 3);
+     * // => false
+     */
+    var gte = createRelationalOperation(function(value, other) {
+      return value >= other;
+    });
+
+    /**
+     * Checks if `value` is likely an `arguments` object.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is an `arguments` object,
+     *  else `false`.
+     * @example
+     *
+     * _.isArguments(function() { return arguments; }());
+     * // => true
+     *
+     * _.isArguments([1, 2, 3]);
+     * // => false
+     */
+    var isArguments = baseIsArguments(function() { return arguments; }()) ? baseIsArguments : function(value) {
+      return isObjectLike(value) && hasOwnProperty.call(value, 'callee') &&
+        !propertyIsEnumerable.call(value, 'callee');
+    };
+
+    /**
+     * Checks if `value` is classified as an `Array` object.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is an array, else `false`.
+     * @example
+     *
+     * _.isArray([1, 2, 3]);
+     * // => true
+     *
+     * _.isArray(document.body.children);
+     * // => false
+     *
+     * _.isArray('abc');
+     * // => false
+     *
+     * _.isArray(_.noop);
+     * // => false
+     */
+    var isArray = Array.isArray;
+
+    /**
+     * Checks if `value` is classified as an `ArrayBuffer` object.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.3.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is an array buffer, else `false`.
+     * @example
+     *
+     * _.isArrayBuffer(new ArrayBuffer(2));
+     * // => true
+     *
+     * _.isArrayBuffer(new Array(2));
+     * // => false
+     */
+    var isArrayBuffer = nodeIsArrayBuffer ? baseUnary(nodeIsArrayBuffer) : baseIsArrayBuffer;
+
+    /**
+     * Checks if `value` is array-like. A value is considered array-like if it's
+     * not a function and has a `value.length` that's an integer greater than or
+     * equal to `0` and less than or equal to `Number.MAX_SAFE_INTEGER`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is array-like, else `false`.
+     * @example
+     *
+     * _.isArrayLike([1, 2, 3]);
+     * // => true
+     *
+     * _.isArrayLike(document.body.children);
+     * // => true
+     *
+     * _.isArrayLike('abc');
+     * // => true
+     *
+     * _.isArrayLike(_.noop);
+     * // => false
+     */
+    function isArrayLike(value) {
+      return value != null && isLength(value.length) && !isFunction(value);
+    }
+
+    /**
+     * This method is like `_.isArrayLike` except that it also checks if `value`
+     * is an object.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is an array-like object,
+     *  else `false`.
+     * @example
+     *
+     * _.isArrayLikeObject([1, 2, 3]);
+     * // => true
+     *
+     * _.isArrayLikeObject(document.body.children);
+     * // => true
+     *
+     * _.isArrayLikeObject('abc');
+     * // => false
+     *
+     * _.isArrayLikeObject(_.noop);
+     * // => false
+     */
+    function isArrayLikeObject(value) {
+      return isObjectLike(value) && isArrayLike(value);
+    }
+
+    /**
+     * Checks if `value` is classified as a boolean primitive or object.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a boolean, else `false`.
+     * @example
+     *
+     * _.isBoolean(false);
+     * // => true
+     *
+     * _.isBoolean(null);
+     * // => false
+     */
+    function isBoolean(value) {
+      return value === true || value === false ||
+        (isObjectLike(value) && baseGetTag(value) == boolTag);
+    }
+
+    /**
+     * Checks if `value` is a buffer.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.3.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a buffer, else `false`.
+     * @example
+     *
+     * _.isBuffer(new Buffer(2));
+     * // => true
+     *
+     * _.isBuffer(new Uint8Array(2));
+     * // => false
+     */
+    var isBuffer = nativeIsBuffer || stubFalse;
+
+    /**
+     * Checks if `value` is classified as a `Date` object.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a date object, else `false`.
+     * @example
+     *
+     * _.isDate(new Date);
+     * // => true
+     *
+     * _.isDate('Mon April 23 2012');
+     * // => false
+     */
+    var isDate = nodeIsDate ? baseUnary(nodeIsDate) : baseIsDate;
+
+    /**
+     * Checks if `value` is likely a DOM element.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a DOM element, else `false`.
+     * @example
+     *
+     * _.isElement(document.body);
+     * // => true
+     *
+     * _.isElement('<body>');
+     * // => false
+     */
+    function isElement(value) {
+      return isObjectLike(value) && value.nodeType === 1 && !isPlainObject(value);
+    }
+
+    /**
+     * Checks if `value` is an empty object, collection, map, or set.
+     *
+     * Objects are considered empty if they have no own enumerable string keyed
+     * properties.
+     *
+     * Array-like values such as `arguments` objects, arrays, buffers, strings, or
+     * jQuery-like collections are considered empty if they have a `length` of `0`.
+     * Similarly, maps and sets are considered empty if they have a `size` of `0`.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is empty, else `false`.
+     * @example
+     *
+     * _.isEmpty(null);
+     * // => true
+     *
+     * _.isEmpty(true);
+     * // => true
+     *
+     * _.isEmpty(1);
+     * // => true
+     *
+     * _.isEmpty([1, 2, 3]);
+     * // => false
+     *
+     * _.isEmpty({ 'a': 1 });
+     * // => false
+     */
+    function isEmpty(value) {
+      if (value == null) {
+        return true;
+      }
+      if (isArrayLike(value) &&
+          (isArray(value) || typeof value == 'string' || typeof value.splice == 'function' ||
+            isBuffer(value) || isTypedArray(value) || isArguments(value))) {
+        return !value.length;
+      }
+      var tag = getTag(value);
+      if (tag == mapTag || tag == setTag) {
+        return !value.size;
+      }
+      if (isPrototype(value)) {
+        return !baseKeys(value).length;
+      }
+      for (var key in value) {
+        if (hasOwnProperty.call(value, key)) {
+          return false;
+        }
+      }
+      return true;
+    }
+
+    /**
+     * Performs a deep comparison between two values to determine if they are
+     * equivalent.
+     *
+     * **Note:** This method supports comparing arrays, array buffers, booleans,
+     * date objects, error objects, maps, numbers, `Object` objects, regexes,
+     * sets, strings, symbols, and typed arrays. `Object` objects are compared
+     * by their own, not inherited, enumerable properties. Functions and DOM
+     * nodes are compared by strict equality, i.e. `===`.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Lang
+     * @param {*} value The value to compare.
+     * @param {*} other The other value to compare.
+     * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+     * @example
+     *
+     * var object = { 'a': 1 };
+     * var other = { 'a': 1 };
+     *
+     * _.isEqual(object, other);
+     * // => true
+     *
+     * object === other;
+     * // => false
+     */
+    function isEqual(value, other) {
+      return baseIsEqual(value, other);
+    }
+
+    /**
+     * This method is like `_.isEqual` except that it accepts `customizer` which
+     * is invoked to compare values. If `customizer` returns `undefined`, comparisons
+     * are handled by the method instead. The `customizer` is invoked with up to
+     * six arguments: (objValue, othValue [, index|key, object, other, stack]).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Lang
+     * @param {*} value The value to compare.
+     * @param {*} other The other value to compare.
+     * @param {Function} [customizer] The function to customize comparisons.
+     * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+     * @example
+     *
+     * function isGreeting(value) {
+     *   return /^h(?:i|ello)$/.test(value);
+     * }
+     *
+     * function customizer(objValue, othValue) {
+     *   if (isGreeting(objValue) && isGreeting(othValue)) {
+     *     return true;
+     *   }
+     * }
+     *
+     * var array = ['hello', 'goodbye'];
+     * var other = ['hi', 'goodbye'];
+     *
+     * _.isEqualWith(array, other, customizer);
+     * // => true
+     */
+    function isEqualWith(value, other, customizer) {
+      customizer = typeof customizer == 'function' ? customizer : undefined;
+      var result = customizer ? customizer(value, other) : undefined;
+      return result === undefined ? baseIsEqual(value, other, undefined, customizer) : !!result;
+    }
+
+    /**
+     * Checks if `value` is an `Error`, `EvalError`, `RangeError`, `ReferenceError`,
+     * `SyntaxError`, `TypeError`, or `URIError` object.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is an error object, else `false`.
+     * @example
+     *
+     * _.isError(new Error);
+     * // => true
+     *
+     * _.isError(Error);
+     * // => false
+     */
+    function isError(value) {
+      if (!isObjectLike(value)) {
+        return false;
+      }
+      var tag = baseGetTag(value);
+      return tag == errorTag || tag == domExcTag ||
+        (typeof value.message == 'string' && typeof value.name == 'string' && !isPlainObject(value));
+    }
+
+    /**
+     * Checks if `value` is a finite primitive number.
+     *
+     * **Note:** This method is based on
+     * [`Number.isFinite`](https://mdn.io/Number/isFinite).
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a finite number, else `false`.
+     * @example
+     *
+     * _.isFinite(3);
+     * // => true
+     *
+     * _.isFinite(Number.MIN_VALUE);
+     * // => true
+     *
+     * _.isFinite(Infinity);
+     * // => false
+     *
+     * _.isFinite('3');
+     * // => false
+     */
+    function isFinite(value) {
+      return typeof value == 'number' && nativeIsFinite(value);
+    }
+
+    /**
+     * Checks if `value` is classified as a `Function` object.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a function, else `false`.
+     * @example
+     *
+     * _.isFunction(_);
+     * // => true
+     *
+     * _.isFunction(/abc/);
+     * // => false
+     */
+    function isFunction(value) {
+      if (!isObject(value)) {
+        return false;
+      }
+      // The use of `Object#toString` avoids issues with the `typeof` operator
+      // in Safari 9 which returns 'object' for typed arrays and other constructors.
+      var tag = baseGetTag(value);
+      return tag == funcTag || tag == genTag || tag == asyncTag || tag == proxyTag;
+    }
+
+    /**
+     * Checks if `value` is an integer.
+     *
+     * **Note:** This method is based on
+     * [`Number.isInteger`](https://mdn.io/Number/isInteger).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is an integer, else `false`.
+     * @example
+     *
+     * _.isInteger(3);
+     * // => true
+     *
+     * _.isInteger(Number.MIN_VALUE);
+     * // => false
+     *
+     * _.isInteger(Infinity);
+     * // => false
+     *
+     * _.isInteger('3');
+     * // => false
+     */
+    function isInteger(value) {
+      return typeof value == 'number' && value == toInteger(value);
+    }
+
+    /**
+     * Checks if `value` is a valid array-like length.
+     *
+     * **Note:** This method is loosely based on
+     * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a valid length, else `false`.
+     * @example
+     *
+     * _.isLength(3);
+     * // => true
+     *
+     * _.isLength(Number.MIN_VALUE);
+     * // => false
+     *
+     * _.isLength(Infinity);
+     * // => false
+     *
+     * _.isLength('3');
+     * // => false
+     */
+    function isLength(value) {
+      return typeof value == 'number' &&
+        value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+    }
+
+    /**
+     * Checks if `value` is the
+     * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+     * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+     * @example
+     *
+     * _.isObject({});
+     * // => true
+     *
+     * _.isObject([1, 2, 3]);
+     * // => true
+     *
+     * _.isObject(_.noop);
+     * // => true
+     *
+     * _.isObject(null);
+     * // => false
+     */
+    function isObject(value) {
+      var type = typeof value;
+      return value != null && (type == 'object' || type == 'function');
+    }
+
+    /**
+     * Checks if `value` is object-like. A value is object-like if it's not `null`
+     * and has a `typeof` result of "object".
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+     * @example
+     *
+     * _.isObjectLike({});
+     * // => true
+     *
+     * _.isObjectLike([1, 2, 3]);
+     * // => true
+     *
+     * _.isObjectLike(_.noop);
+     * // => false
+     *
+     * _.isObjectLike(null);
+     * // => false
+     */
+    function isObjectLike(value) {
+      return value != null && typeof value == 'object';
+    }
+
+    /**
+     * Checks if `value` is classified as a `Map` object.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.3.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a map, else `false`.
+     * @example
+     *
+     * _.isMap(new Map);
+     * // => true
+     *
+     * _.isMap(new WeakMap);
+     * // => false
+     */
+    var isMap = nodeIsMap ? baseUnary(nodeIsMap) : baseIsMap;
+
+    /**
+     * Performs a partial deep comparison between `object` and `source` to
+     * determine if `object` contains equivalent property values.
+     *
+     * **Note:** This method is equivalent to `_.matches` when `source` is
+     * partially applied.
+     *
+     * Partial comparisons will match empty array and empty object `source`
+     * values against any array or object value, respectively. See `_.isEqual`
+     * for a list of supported value comparisons.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Lang
+     * @param {Object} object The object to inspect.
+     * @param {Object} source The object of property values to match.
+     * @returns {boolean} Returns `true` if `object` is a match, else `false`.
+     * @example
+     *
+     * var object = { 'a': 1, 'b': 2 };
+     *
+     * _.isMatch(object, { 'b': 2 });
+     * // => true
+     *
+     * _.isMatch(object, { 'b': 1 });
+     * // => false
+     */
+    function isMatch(object, source) {
+      return object === source || baseIsMatch(object, source, getMatchData(source));
+    }
+
+    /**
+     * This method is like `_.isMatch` except that it accepts `customizer` which
+     * is invoked to compare values. If `customizer` returns `undefined`, comparisons
+     * are handled by the method instead. The `customizer` is invoked with five
+     * arguments: (objValue, srcValue, index|key, object, source).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Lang
+     * @param {Object} object The object to inspect.
+     * @param {Object} source The object of property values to match.
+     * @param {Function} [customizer] The function to customize comparisons.
+     * @returns {boolean} Returns `true` if `object` is a match, else `false`.
+     * @example
+     *
+     * function isGreeting(value) {
+     *   return /^h(?:i|ello)$/.test(value);
+     * }
+     *
+     * function customizer(objValue, srcValue) {
+     *   if (isGreeting(objValue) && isGreeting(srcValue)) {
+     *     return true;
+     *   }
+     * }
+     *
+     * var object = { 'greeting': 'hello' };
+     * var source = { 'greeting': 'hi' };
+     *
+     * _.isMatchWith(object, source, customizer);
+     * // => true
+     */
+    function isMatchWith(object, source, customizer) {
+      customizer = typeof customizer == 'function' ? customizer : undefined;
+      return baseIsMatch(object, source, getMatchData(source), customizer);
+    }
+
+    /**
+     * Checks if `value` is `NaN`.
+     *
+     * **Note:** This method is based on
+     * [`Number.isNaN`](https://mdn.io/Number/isNaN) and is not the same as
+     * global [`isNaN`](https://mdn.io/isNaN) which returns `true` for
+     * `undefined` and other non-number values.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is `NaN`, else `false`.
+     * @example
+     *
+     * _.isNaN(NaN);
+     * // => true
+     *
+     * _.isNaN(new Number(NaN));
+     * // => true
+     *
+     * isNaN(undefined);
+     * // => true
+     *
+     * _.isNaN(undefined);
+     * // => false
+     */
+    function isNaN(value) {
+      // An `NaN` primitive is the only value that is not equal to itself.
+      // Perform the `toStringTag` check first to avoid errors with some
+      // ActiveX objects in IE.
+      return isNumber(value) && value != +value;
+    }
+
+    /**
+     * Checks if `value` is a pristine native function.
+     *
+     * **Note:** This method can't reliably detect native functions in the presence
+     * of the core-js package because core-js circumvents this kind of detection.
+     * Despite multiple requests, the core-js maintainer has made it clear: any
+     * attempt to fix the detection will be obstructed. As a result, we're left
+     * with little choice but to throw an error. Unfortunately, this also affects
+     * packages, like [babel-polyfill](https://www.npmjs.com/package/babel-polyfill),
+     * which rely on core-js.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a native function,
+     *  else `false`.
+     * @example
+     *
+     * _.isNative(Array.prototype.push);
+     * // => true
+     *
+     * _.isNative(_);
+     * // => false
+     */
+    function isNative(value) {
+      if (isMaskable(value)) {
+        throw new Error(CORE_ERROR_TEXT);
+      }
+      return baseIsNative(value);
+    }
+
+    /**
+     * Checks if `value` is `null`.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is `null`, else `false`.
+     * @example
+     *
+     * _.isNull(null);
+     * // => true
+     *
+     * _.isNull(void 0);
+     * // => false
+     */
+    function isNull(value) {
+      return value === null;
+    }
+
+    /**
+     * Checks if `value` is `null` or `undefined`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is nullish, else `false`.
+     * @example
+     *
+     * _.isNil(null);
+     * // => true
+     *
+     * _.isNil(void 0);
+     * // => true
+     *
+     * _.isNil(NaN);
+     * // => false
+     */
+    function isNil(value) {
+      return value == null;
+    }
+
+    /**
+     * Checks if `value` is classified as a `Number` primitive or object.
+     *
+     * **Note:** To exclude `Infinity`, `-Infinity`, and `NaN`, which are
+     * classified as numbers, use the `_.isFinite` method.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a number, else `false`.
+     * @example
+     *
+     * _.isNumber(3);
+     * // => true
+     *
+     * _.isNumber(Number.MIN_VALUE);
+     * // => true
+     *
+     * _.isNumber(Infinity);
+     * // => true
+     *
+     * _.isNumber('3');
+     * // => false
+     */
+    function isNumber(value) {
+      return typeof value == 'number' ||
+        (isObjectLike(value) && baseGetTag(value) == numberTag);
+    }
+
+    /**
+     * Checks if `value` is a plain object, that is, an object created by the
+     * `Object` constructor or one with a `[[Prototype]]` of `null`.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.8.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a plain object, else `false`.
+     * @example
+     *
+     * function Foo() {
+     *   this.a = 1;
+     * }
+     *
+     * _.isPlainObject(new Foo);
+     * // => false
+     *
+     * _.isPlainObject([1, 2, 3]);
+     * // => false
+     *
+     * _.isPlainObject({ 'x': 0, 'y': 0 });
+     * // => true
+     *
+     * _.isPlainObject(Object.create(null));
+     * // => true
+     */
+    function isPlainObject(value) {
+      if (!isObjectLike(value) || baseGetTag(value) != objectTag) {
+        return false;
+      }
+      var proto = getPrototype(value);
+      if (proto === null) {
+        return true;
+      }
+      var Ctor = hasOwnProperty.call(proto, 'constructor') && proto.constructor;
+      return typeof Ctor == 'function' && Ctor instanceof Ctor &&
+        funcToString.call(Ctor) == objectCtorString;
+    }
+
+    /**
+     * Checks if `value` is classified as a `RegExp` object.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.1.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a regexp, else `false`.
+     * @example
+     *
+     * _.isRegExp(/abc/);
+     * // => true
+     *
+     * _.isRegExp('/abc/');
+     * // => false
+     */
+    var isRegExp = nodeIsRegExp ? baseUnary(nodeIsRegExp) : baseIsRegExp;
+
+    /**
+     * Checks if `value` is a safe integer. An integer is safe if it's an IEEE-754
+     * double precision number which isn't the result of a rounded unsafe integer.
+     *
+     * **Note:** This method is based on
+     * [`Number.isSafeInteger`](https://mdn.io/Number/isSafeInteger).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a safe integer, else `false`.
+     * @example
+     *
+     * _.isSafeInteger(3);
+     * // => true
+     *
+     * _.isSafeInteger(Number.MIN_VALUE);
+     * // => false
+     *
+     * _.isSafeInteger(Infinity);
+     * // => false
+     *
+     * _.isSafeInteger('3');
+     * // => false
+     */
+    function isSafeInteger(value) {
+      return isInteger(value) && value >= -MAX_SAFE_INTEGER && value <= MAX_SAFE_INTEGER;
+    }
+
+    /**
+     * Checks if `value` is classified as a `Set` object.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.3.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a set, else `false`.
+     * @example
+     *
+     * _.isSet(new Set);
+     * // => true
+     *
+     * _.isSet(new WeakSet);
+     * // => false
+     */
+    var isSet = nodeIsSet ? baseUnary(nodeIsSet) : baseIsSet;
+
+    /**
+     * Checks if `value` is classified as a `String` primitive or object.
+     *
+     * @static
+     * @since 0.1.0
+     * @memberOf _
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a string, else `false`.
+     * @example
+     *
+     * _.isString('abc');
+     * // => true
+     *
+     * _.isString(1);
+     * // => false
+     */
+    function isString(value) {
+      return typeof value == 'string' ||
+        (!isArray(value) && isObjectLike(value) && baseGetTag(value) == stringTag);
+    }
+
+    /**
+     * Checks if `value` is classified as a `Symbol` primitive or object.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a symbol, else `false`.
+     * @example
+     *
+     * _.isSymbol(Symbol.iterator);
+     * // => true
+     *
+     * _.isSymbol('abc');
+     * // => false
+     */
+    function isSymbol(value) {
+      return typeof value == 'symbol' ||
+        (isObjectLike(value) && baseGetTag(value) == symbolTag);
+    }
+
+    /**
+     * Checks if `value` is classified as a typed array.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a typed array, else `false`.
+     * @example
+     *
+     * _.isTypedArray(new Uint8Array);
+     * // => true
+     *
+     * _.isTypedArray([]);
+     * // => false
+     */
+    var isTypedArray = nodeIsTypedArray ? baseUnary(nodeIsTypedArray) : baseIsTypedArray;
+
+    /**
+     * Checks if `value` is `undefined`.
+     *
+     * @static
+     * @since 0.1.0
+     * @memberOf _
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is `undefined`, else `false`.
+     * @example
+     *
+     * _.isUndefined(void 0);
+     * // => true
+     *
+     * _.isUndefined(null);
+     * // => false
+     */
+    function isUndefined(value) {
+      return value === undefined;
+    }
+
+    /**
+     * Checks if `value` is classified as a `WeakMap` object.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.3.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a weak map, else `false`.
+     * @example
+     *
+     * _.isWeakMap(new WeakMap);
+     * // => true
+     *
+     * _.isWeakMap(new Map);
+     * // => false
+     */
+    function isWeakMap(value) {
+      return isObjectLike(value) && getTag(value) == weakMapTag;
+    }
+
+    /**
+     * Checks if `value` is classified as a `WeakSet` object.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.3.0
+     * @category Lang
+     * @param {*} value The value to check.
+     * @returns {boolean} Returns `true` if `value` is a weak set, else `false`.
+     * @example
+     *
+     * _.isWeakSet(new WeakSet);
+     * // => true
+     *
+     * _.isWeakSet(new Set);
+     * // => false
+     */
+    function isWeakSet(value) {
+      return isObjectLike(value) && baseGetTag(value) == weakSetTag;
+    }
+
+    /**
+     * Checks if `value` is less than `other`.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.9.0
+     * @category Lang
+     * @param {*} value The value to compare.
+     * @param {*} other The other value to compare.
+     * @returns {boolean} Returns `true` if `value` is less than `other`,
+     *  else `false`.
+     * @see _.gt
+     * @example
+     *
+     * _.lt(1, 3);
+     * // => true
+     *
+     * _.lt(3, 3);
+     * // => false
+     *
+     * _.lt(3, 1);
+     * // => false
+     */
+    var lt = createRelationalOperation(baseLt);
+
+    /**
+     * Checks if `value` is less than or equal to `other`.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.9.0
+     * @category Lang
+     * @param {*} value The value to compare.
+     * @param {*} other The other value to compare.
+     * @returns {boolean} Returns `true` if `value` is less than or equal to
+     *  `other`, else `false`.
+     * @see _.gte
+     * @example
+     *
+     * _.lte(1, 3);
+     * // => true
+     *
+     * _.lte(3, 3);
+     * // => true
+     *
+     * _.lte(3, 1);
+     * // => false
+     */
+    var lte = createRelationalOperation(function(value, other) {
+      return value <= other;
+    });
+
+    /**
+     * Converts `value` to an array.
+     *
+     * @static
+     * @since 0.1.0
+     * @memberOf _
+     * @category Lang
+     * @param {*} value The value to convert.
+     * @returns {Array} Returns the converted array.
+     * @example
+     *
+     * _.toArray({ 'a': 1, 'b': 2 });
+     * // => [1, 2]
+     *
+     * _.toArray('abc');
+     * // => ['a', 'b', 'c']
+     *
+     * _.toArray(1);
+     * // => []
+     *
+     * _.toArray(null);
+     * // => []
+     */
+    function toArray(value) {
+      if (!value) {
+        return [];
+      }
+      if (isArrayLike(value)) {
+        return isString(value) ? stringToArray(value) : copyArray(value);
+      }
+      if (symIterator && value[symIterator]) {
+        return iteratorToArray(value[symIterator]());
+      }
+      var tag = getTag(value),
+          func = tag == mapTag ? mapToArray : (tag == setTag ? setToArray : values);
+
+      return func(value);
+    }
+
+    /**
+     * Converts `value` to a finite number.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.12.0
+     * @category Lang
+     * @param {*} value The value to convert.
+     * @returns {number} Returns the converted number.
+     * @example
+     *
+     * _.toFinite(3.2);
+     * // => 3.2
+     *
+     * _.toFinite(Number.MIN_VALUE);
+     * // => 5e-324
+     *
+     * _.toFinite(Infinity);
+     * // => 1.7976931348623157e+308
+     *
+     * _.toFinite('3.2');
+     * // => 3.2
+     */
+    function toFinite(value) {
+      if (!value) {
+        return value === 0 ? value : 0;
+      }
+      value = toNumber(value);
+      if (value === INFINITY || value === -INFINITY) {
+        var sign = (value < 0 ? -1 : 1);
+        return sign * MAX_INTEGER;
+      }
+      return value === value ? value : 0;
+    }
+
+    /**
+     * Converts `value` to an integer.
+     *
+     * **Note:** This method is loosely based on
+     * [`ToInteger`](http://www.ecma-international.org/ecma-262/7.0/#sec-tointeger).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Lang
+     * @param {*} value The value to convert.
+     * @returns {number} Returns the converted integer.
+     * @example
+     *
+     * _.toInteger(3.2);
+     * // => 3
+     *
+     * _.toInteger(Number.MIN_VALUE);
+     * // => 0
+     *
+     * _.toInteger(Infinity);
+     * // => 1.7976931348623157e+308
+     *
+     * _.toInteger('3.2');
+     * // => 3
+     */
+    function toInteger(value) {
+      var result = toFinite(value),
+          remainder = result % 1;
+
+      return result === result ? (remainder ? result - remainder : result) : 0;
+    }
+
+    /**
+     * Converts `value` to an integer suitable for use as the length of an
+     * array-like object.
+     *
+     * **Note:** This method is based on
+     * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Lang
+     * @param {*} value The value to convert.
+     * @returns {number} Returns the converted integer.
+     * @example
+     *
+     * _.toLength(3.2);
+     * // => 3
+     *
+     * _.toLength(Number.MIN_VALUE);
+     * // => 0
+     *
+     * _.toLength(Infinity);
+     * // => 4294967295
+     *
+     * _.toLength('3.2');
+     * // => 3
+     */
+    function toLength(value) {
+      return value ? baseClamp(toInteger(value), 0, MAX_ARRAY_LENGTH) : 0;
+    }
+
+    /**
+     * Converts `value` to a number.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Lang
+     * @param {*} value The value to process.
+     * @returns {number} Returns the number.
+     * @example
+     *
+     * _.toNumber(3.2);
+     * // => 3.2
+     *
+     * _.toNumber(Number.MIN_VALUE);
+     * // => 5e-324
+     *
+     * _.toNumber(Infinity);
+     * // => Infinity
+     *
+     * _.toNumber('3.2');
+     * // => 3.2
+     */
+    function toNumber(value) {
+      if (typeof value == 'number') {
+        return value;
+      }
+      if (isSymbol(value)) {
+        return NAN;
+      }
+      if (isObject(value)) {
+        var other = typeof value.valueOf == 'function' ? value.valueOf() : value;
+        value = isObject(other) ? (other + '') : other;
+      }
+      if (typeof value != 'string') {
+        return value === 0 ? value : +value;
+      }
+      value = baseTrim(value);
+      var isBinary = reIsBinary.test(value);
+      return (isBinary || reIsOctal.test(value))
+        ? freeParseInt(value.slice(2), isBinary ? 2 : 8)
+        : (reIsBadHex.test(value) ? NAN : +value);
+    }
+
+    /**
+     * Converts `value` to a plain object flattening inherited enumerable string
+     * keyed properties of `value` to own properties of the plain object.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Lang
+     * @param {*} value The value to convert.
+     * @returns {Object} Returns the converted plain object.
+     * @example
+     *
+     * function Foo() {
+     *   this.b = 2;
+     * }
+     *
+     * Foo.prototype.c = 3;
+     *
+     * _.assign({ 'a': 1 }, new Foo);
+     * // => { 'a': 1, 'b': 2 }
+     *
+     * _.assign({ 'a': 1 }, _.toPlainObject(new Foo));
+     * // => { 'a': 1, 'b': 2, 'c': 3 }
+     */
+    function toPlainObject(value) {
+      return copyObject(value, keysIn(value));
+    }
+
+    /**
+     * Converts `value` to a safe integer. A safe integer can be compared and
+     * represented correctly.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Lang
+     * @param {*} value The value to convert.
+     * @returns {number} Returns the converted integer.
+     * @example
+     *
+     * _.toSafeInteger(3.2);
+     * // => 3
+     *
+     * _.toSafeInteger(Number.MIN_VALUE);
+     * // => 0
+     *
+     * _.toSafeInteger(Infinity);
+     * // => 9007199254740991
+     *
+     * _.toSafeInteger('3.2');
+     * // => 3
+     */
+    function toSafeInteger(value) {
+      return value
+        ? baseClamp(toInteger(value), -MAX_SAFE_INTEGER, MAX_SAFE_INTEGER)
+        : (value === 0 ? value : 0);
+    }
+
+    /**
+     * Converts `value` to a string. An empty string is returned for `null`
+     * and `undefined` values. The sign of `-0` is preserved.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Lang
+     * @param {*} value The value to convert.
+     * @returns {string} Returns the converted string.
+     * @example
+     *
+     * _.toString(null);
+     * // => ''
+     *
+     * _.toString(-0);
+     * // => '-0'
+     *
+     * _.toString([1, 2, 3]);
+     * // => '1,2,3'
+     */
+    function toString(value) {
+      return value == null ? '' : baseToString(value);
+    }
+
+    /*------------------------------------------------------------------------*/
+
+    /**
+     * Assigns own enumerable string keyed properties of source objects to the
+     * destination object. Source objects are applied from left to right.
+     * Subsequent sources overwrite property assignments of previous sources.
+     *
+     * **Note:** This method mutates `object` and is loosely based on
+     * [`Object.assign`](https://mdn.io/Object/assign).
+     *
+     * @static
+     * @memberOf _
+     * @since 0.10.0
+     * @category Object
+     * @param {Object} object The destination object.
+     * @param {...Object} [sources] The source objects.
+     * @returns {Object} Returns `object`.
+     * @see _.assignIn
+     * @example
+     *
+     * function Foo() {
+     *   this.a = 1;
+     * }
+     *
+     * function Bar() {
+     *   this.c = 3;
+     * }
+     *
+     * Foo.prototype.b = 2;
+     * Bar.prototype.d = 4;
+     *
+     * _.assign({ 'a': 0 }, new Foo, new Bar);
+     * // => { 'a': 1, 'c': 3 }
+     */
+    var assign = createAssigner(function(object, source) {
+      if (isPrototype(source) || isArrayLike(source)) {
+        copyObject(source, keys(source), object);
+        return;
+      }
+      for (var key in source) {
+        if (hasOwnProperty.call(source, key)) {
+          assignValue(object, key, source[key]);
+        }
+      }
+    });
+
+    /**
+     * This method is like `_.assign` except that it iterates over own and
+     * inherited source properties.
+     *
+     * **Note:** This method mutates `object`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @alias extend
+     * @category Object
+     * @param {Object} object The destination object.
+     * @param {...Object} [sources] The source objects.
+     * @returns {Object} Returns `object`.
+     * @see _.assign
+     * @example
+     *
+     * function Foo() {
+     *   this.a = 1;
+     * }
+     *
+     * function Bar() {
+     *   this.c = 3;
+     * }
+     *
+     * Foo.prototype.b = 2;
+     * Bar.prototype.d = 4;
+     *
+     * _.assignIn({ 'a': 0 }, new Foo, new Bar);
+     * // => { 'a': 1, 'b': 2, 'c': 3, 'd': 4 }
+     */
+    var assignIn = createAssigner(function(object, source) {
+      copyObject(source, keysIn(source), object);
+    });
+
+    /**
+     * This method is like `_.assignIn` except that it accepts `customizer`
+     * which is invoked to produce the assigned values. If `customizer` returns
+     * `undefined`, assignment is handled by the method instead. The `customizer`
+     * is invoked with five arguments: (objValue, srcValue, key, object, source).
+     *
+     * **Note:** This method mutates `object`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @alias extendWith
+     * @category Object
+     * @param {Object} object The destination object.
+     * @param {...Object} sources The source objects.
+     * @param {Function} [customizer] The function to customize assigned values.
+     * @returns {Object} Returns `object`.
+     * @see _.assignWith
+     * @example
+     *
+     * function customizer(objValue, srcValue) {
+     *   return _.isUndefined(objValue) ? srcValue : objValue;
+     * }
+     *
+     * var defaults = _.partialRight(_.assignInWith, customizer);
+     *
+     * defaults({ 'a': 1 }, { 'b': 2 }, { 'a': 3 });
+     * // => { 'a': 1, 'b': 2 }
+     */
+    var assignInWith = createAssigner(function(object, source, srcIndex, customizer) {
+      copyObject(source, keysIn(source), object, customizer);
+    });
+
+    /**
+     * This method is like `_.assign` except that it accepts `customizer`
+     * which is invoked to produce the assigned values. If `customizer` returns
+     * `undefined`, assignment is handled by the method instead. The `customizer`
+     * is invoked with five arguments: (objValue, srcValue, key, object, source).
+     *
+     * **Note:** This method mutates `object`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Object
+     * @param {Object} object The destination object.
+     * @param {...Object} sources The source objects.
+     * @param {Function} [customizer] The function to customize assigned values.
+     * @returns {Object} Returns `object`.
+     * @see _.assignInWith
+     * @example
+     *
+     * function customizer(objValue, srcValue) {
+     *   return _.isUndefined(objValue) ? srcValue : objValue;
+     * }
+     *
+     * var defaults = _.partialRight(_.assignWith, customizer);
+     *
+     * defaults({ 'a': 1 }, { 'b': 2 }, { 'a': 3 });
+     * // => { 'a': 1, 'b': 2 }
+     */
+    var assignWith = createAssigner(function(object, source, srcIndex, customizer) {
+      copyObject(source, keys(source), object, customizer);
+    });
+
+    /**
+     * Creates an array of values corresponding to `paths` of `object`.
+     *
+     * @static
+     * @memberOf _
+     * @since 1.0.0
+     * @category Object
+     * @param {Object} object The object to iterate over.
+     * @param {...(string|string[])} [paths] The property paths to pick.
+     * @returns {Array} Returns the picked values.
+     * @example
+     *
+     * var object = { 'a': [{ 'b': { 'c': 3 } }, 4] };
+     *
+     * _.at(object, ['a[0].b.c', 'a[1]']);
+     * // => [3, 4]
+     */
+    var at = flatRest(baseAt);
+
+    /**
+     * Creates an object that inherits from the `prototype` object. If a
+     * `properties` object is given, its own enumerable string keyed properties
+     * are assigned to the created object.
+     *
+     * @static
+     * @memberOf _
+     * @since 2.3.0
+     * @category Object
+     * @param {Object} prototype The object to inherit from.
+     * @param {Object} [properties] The properties to assign to the object.
+     * @returns {Object} Returns the new object.
+     * @example
+     *
+     * function Shape() {
+     *   this.x = 0;
+     *   this.y = 0;
+     * }
+     *
+     * function Circle() {
+     *   Shape.call(this);
+     * }
+     *
+     * Circle.prototype = _.create(Shape.prototype, {
+     *   'constructor': Circle
+     * });
+     *
+     * var circle = new Circle;
+     * circle instanceof Circle;
+     * // => true
+     *
+     * circle instanceof Shape;
+     * // => true
+     */
+    function create(prototype, properties) {
+      var result = baseCreate(prototype);
+      return properties == null ? result : baseAssign(result, properties);
+    }
+
+    /**
+     * Assigns own and inherited enumerable string keyed properties of source
+     * objects to the destination object for all destination properties that
+     * resolve to `undefined`. Source objects are applied from left to right.
+     * Once a property is set, additional values of the same property are ignored.
+     *
+     * **Note:** This method mutates `object`.
+     *
+     * @static
+     * @since 0.1.0
+     * @memberOf _
+     * @category Object
+     * @param {Object} object The destination object.
+     * @param {...Object} [sources] The source objects.
+     * @returns {Object} Returns `object`.
+     * @see _.defaultsDeep
+     * @example
+     *
+     * _.defaults({ 'a': 1 }, { 'b': 2 }, { 'a': 3 });
+     * // => { 'a': 1, 'b': 2 }
+     */
+    var defaults = baseRest(function(object, sources) {
+      object = Object(object);
+
+      var index = -1;
+      var length = sources.length;
+      var guard = length > 2 ? sources[2] : undefined;
+
+      if (guard && isIterateeCall(sources[0], sources[1], guard)) {
+        length = 1;
+      }
+
+      while (++index < length) {
+        var source = sources[index];
+        var props = keysIn(source);
+        var propsIndex = -1;
+        var propsLength = props.length;
+
+        while (++propsIndex < propsLength) {
+          var key = props[propsIndex];
+          var value = object[key];
+
+          if (value === undefined ||
+              (eq(value, objectProto[key]) && !hasOwnProperty.call(object, key))) {
+            object[key] = source[key];
+          }
+        }
+      }
+
+      return object;
+    });
+
+    /**
+     * This method is like `_.defaults` except that it recursively assigns
+     * default properties.
+     *
+     * **Note:** This method mutates `object`.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.10.0
+     * @category Object
+     * @param {Object} object The destination object.
+     * @param {...Object} [sources] The source objects.
+     * @returns {Object} Returns `object`.
+     * @see _.defaults
+     * @example
+     *
+     * _.defaultsDeep({ 'a': { 'b': 2 } }, { 'a': { 'b': 1, 'c': 3 } });
+     * // => { 'a': { 'b': 2, 'c': 3 } }
+     */
+    var defaultsDeep = baseRest(function(args) {
+      args.push(undefined, customDefaultsMerge);
+      return apply(mergeWith, undefined, args);
+    });
+
+    /**
+     * This method is like `_.find` except that it returns the key of the first
+     * element `predicate` returns truthy for instead of the element itself.
+     *
+     * @static
+     * @memberOf _
+     * @since 1.1.0
+     * @category Object
+     * @param {Object} object The object to inspect.
+     * @param {Function} [predicate=_.identity] The function invoked per iteration.
+     * @returns {string|undefined} Returns the key of the matched element,
+     *  else `undefined`.
+     * @example
+     *
+     * var users = {
+     *   'barney':  { 'age': 36, 'active': true },
+     *   'fred':    { 'age': 40, 'active': false },
+     *   'pebbles': { 'age': 1,  'active': true }
+     * };
+     *
+     * _.findKey(users, function(o) { return o.age < 40; });
+     * // => 'barney' (iteration order is not guaranteed)
+     *
+     * // The `_.matches` iteratee shorthand.
+     * _.findKey(users, { 'age': 1, 'active': true });
+     * // => 'pebbles'
+     *
+     * // The `_.matchesProperty` iteratee shorthand.
+     * _.findKey(users, ['active', false]);
+     * // => 'fred'
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.findKey(users, 'active');
+     * // => 'barney'
+     */
+    function findKey(object, predicate) {
+      return baseFindKey(object, getIteratee(predicate, 3), baseForOwn);
+    }
+
+    /**
+     * This method is like `_.findKey` except that it iterates over elements of
+     * a collection in the opposite order.
+     *
+     * @static
+     * @memberOf _
+     * @since 2.0.0
+     * @category Object
+     * @param {Object} object The object to inspect.
+     * @param {Function} [predicate=_.identity] The function invoked per iteration.
+     * @returns {string|undefined} Returns the key of the matched element,
+     *  else `undefined`.
+     * @example
+     *
+     * var users = {
+     *   'barney':  { 'age': 36, 'active': true },
+     *   'fred':    { 'age': 40, 'active': false },
+     *   'pebbles': { 'age': 1,  'active': true }
+     * };
+     *
+     * _.findLastKey(users, function(o) { return o.age < 40; });
+     * // => returns 'pebbles' assuming `_.findKey` returns 'barney'
+     *
+     * // The `_.matches` iteratee shorthand.
+     * _.findLastKey(users, { 'age': 36, 'active': true });
+     * // => 'barney'
+     *
+     * // The `_.matchesProperty` iteratee shorthand.
+     * _.findLastKey(users, ['active', false]);
+     * // => 'fred'
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.findLastKey(users, 'active');
+     * // => 'pebbles'
+     */
+    function findLastKey(object, predicate) {
+      return baseFindKey(object, getIteratee(predicate, 3), baseForOwnRight);
+    }
+
+    /**
+     * Iterates over own and inherited enumerable string keyed properties of an
+     * object and invokes `iteratee` for each property. The iteratee is invoked
+     * with three arguments: (value, key, object). Iteratee functions may exit
+     * iteration early by explicitly returning `false`.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.3.0
+     * @category Object
+     * @param {Object} object The object to iterate over.
+     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+     * @returns {Object} Returns `object`.
+     * @see _.forInRight
+     * @example
+     *
+     * function Foo() {
+     *   this.a = 1;
+     *   this.b = 2;
+     * }
+     *
+     * Foo.prototype.c = 3;
+     *
+     * _.forIn(new Foo, function(value, key) {
+     *   console.log(key);
+     * });
+     * // => Logs 'a', 'b', then 'c' (iteration order is not guaranteed).
+     */
+    function forIn(object, iteratee) {
+      return object == null
+        ? object
+        : baseFor(object, getIteratee(iteratee, 3), keysIn);
+    }
+
+    /**
+     * This method is like `_.forIn` except that it iterates over properties of
+     * `object` in the opposite order.
+     *
+     * @static
+     * @memberOf _
+     * @since 2.0.0
+     * @category Object
+     * @param {Object} object The object to iterate over.
+     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+     * @returns {Object} Returns `object`.
+     * @see _.forIn
+     * @example
+     *
+     * function Foo() {
+     *   this.a = 1;
+     *   this.b = 2;
+     * }
+     *
+     * Foo.prototype.c = 3;
+     *
+     * _.forInRight(new Foo, function(value, key) {
+     *   console.log(key);
+     * });
+     * // => Logs 'c', 'b', then 'a' assuming `_.forIn` logs 'a', 'b', then 'c'.
+     */
+    function forInRight(object, iteratee) {
+      return object == null
+        ? object
+        : baseForRight(object, getIteratee(iteratee, 3), keysIn);
+    }
+
+    /**
+     * Iterates over own enumerable string keyed properties of an object and
+     * invokes `iteratee` for each property. The iteratee is invoked with three
+     * arguments: (value, key, object). Iteratee functions may exit iteration
+     * early by explicitly returning `false`.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.3.0
+     * @category Object
+     * @param {Object} object The object to iterate over.
+     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+     * @returns {Object} Returns `object`.
+     * @see _.forOwnRight
+     * @example
+     *
+     * function Foo() {
+     *   this.a = 1;
+     *   this.b = 2;
+     * }
+     *
+     * Foo.prototype.c = 3;
+     *
+     * _.forOwn(new Foo, function(value, key) {
+     *   console.log(key);
+     * });
+     * // => Logs 'a' then 'b' (iteration order is not guaranteed).
+     */
+    function forOwn(object, iteratee) {
+      return object && baseForOwn(object, getIteratee(iteratee, 3));
+    }
+
+    /**
+     * This method is like `_.forOwn` except that it iterates over properties of
+     * `object` in the opposite order.
+     *
+     * @static
+     * @memberOf _
+     * @since 2.0.0
+     * @category Object
+     * @param {Object} object The object to iterate over.
+     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+     * @returns {Object} Returns `object`.
+     * @see _.forOwn
+     * @example
+     *
+     * function Foo() {
+     *   this.a = 1;
+     *   this.b = 2;
+     * }
+     *
+     * Foo.prototype.c = 3;
+     *
+     * _.forOwnRight(new Foo, function(value, key) {
+     *   console.log(key);
+     * });
+     * // => Logs 'b' then 'a' assuming `_.forOwn` logs 'a' then 'b'.
+     */
+    function forOwnRight(object, iteratee) {
+      return object && baseForOwnRight(object, getIteratee(iteratee, 3));
+    }
+
+    /**
+     * Creates an array of function property names from own enumerable properties
+     * of `object`.
+     *
+     * @static
+     * @since 0.1.0
+     * @memberOf _
+     * @category Object
+     * @param {Object} object The object to inspect.
+     * @returns {Array} Returns the function names.
+     * @see _.functionsIn
+     * @example
+     *
+     * function Foo() {
+     *   this.a = _.constant('a');
+     *   this.b = _.constant('b');
+     * }
+     *
+     * Foo.prototype.c = _.constant('c');
+     *
+     * _.functions(new Foo);
+     * // => ['a', 'b']
+     */
+    function functions(object) {
+      return object == null ? [] : baseFunctions(object, keys(object));
+    }
+
+    /**
+     * Creates an array of function property names from own and inherited
+     * enumerable properties of `object`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Object
+     * @param {Object} object The object to inspect.
+     * @returns {Array} Returns the function names.
+     * @see _.functions
+     * @example
+     *
+     * function Foo() {
+     *   this.a = _.constant('a');
+     *   this.b = _.constant('b');
+     * }
+     *
+     * Foo.prototype.c = _.constant('c');
+     *
+     * _.functionsIn(new Foo);
+     * // => ['a', 'b', 'c']
+     */
+    function functionsIn(object) {
+      return object == null ? [] : baseFunctions(object, keysIn(object));
+    }
+
+    /**
+     * Gets the value at `path` of `object`. If the resolved value is
+     * `undefined`, the `defaultValue` is returned in its place.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.7.0
+     * @category Object
+     * @param {Object} object The object to query.
+     * @param {Array|string} path The path of the property to get.
+     * @param {*} [defaultValue] The value returned for `undefined` resolved values.
+     * @returns {*} Returns the resolved value.
+     * @example
+     *
+     * var object = { 'a': [{ 'b': { 'c': 3 } }] };
+     *
+     * _.get(object, 'a[0].b.c');
+     * // => 3
+     *
+     * _.get(object, ['a', '0', 'b', 'c']);
+     * // => 3
+     *
+     * _.get(object, 'a.b.c', 'default');
+     * // => 'default'
+     */
+    function get(object, path, defaultValue) {
+      var result = object == null ? undefined : baseGet(object, path);
+      return result === undefined ? defaultValue : result;
+    }
+
+    /**
+     * Checks if `path` is a direct property of `object`.
+     *
+     * @static
+     * @since 0.1.0
+     * @memberOf _
+     * @category Object
+     * @param {Object} object The object to query.
+     * @param {Array|string} path The path to check.
+     * @returns {boolean} Returns `true` if `path` exists, else `false`.
+     * @example
+     *
+     * var object = { 'a': { 'b': 2 } };
+     * var other = _.create({ 'a': _.create({ 'b': 2 }) });
+     *
+     * _.has(object, 'a');
+     * // => true
+     *
+     * _.has(object, 'a.b');
+     * // => true
+     *
+     * _.has(object, ['a', 'b']);
+     * // => true
+     *
+     * _.has(other, 'a');
+     * // => false
+     */
+    function has(object, path) {
+      return object != null && hasPath(object, path, baseHas);
+    }
+
+    /**
+     * Checks if `path` is a direct or inherited property of `object`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Object
+     * @param {Object} object The object to query.
+     * @param {Array|string} path The path to check.
+     * @returns {boolean} Returns `true` if `path` exists, else `false`.
+     * @example
+     *
+     * var object = _.create({ 'a': _.create({ 'b': 2 }) });
+     *
+     * _.hasIn(object, 'a');
+     * // => true
+     *
+     * _.hasIn(object, 'a.b');
+     * // => true
+     *
+     * _.hasIn(object, ['a', 'b']);
+     * // => true
+     *
+     * _.hasIn(object, 'b');
+     * // => false
+     */
+    function hasIn(object, path) {
+      return object != null && hasPath(object, path, baseHasIn);
+    }
+
+    /**
+     * Creates an object composed of the inverted keys and values of `object`.
+     * If `object` contains duplicate values, subsequent values overwrite
+     * property assignments of previous values.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.7.0
+     * @category Object
+     * @param {Object} object The object to invert.
+     * @returns {Object} Returns the new inverted object.
+     * @example
+     *
+     * var object = { 'a': 1, 'b': 2, 'c': 1 };
+     *
+     * _.invert(object);
+     * // => { '1': 'c', '2': 'b' }
+     */
+    var invert = createInverter(function(result, value, key) {
+      if (value != null &&
+          typeof value.toString != 'function') {
+        value = nativeObjectToString.call(value);
+      }
+
+      result[value] = key;
+    }, constant(identity));
+
+    /**
+     * This method is like `_.invert` except that the inverted object is generated
+     * from the results of running each element of `object` thru `iteratee`. The
+     * corresponding inverted value of each inverted key is an array of keys
+     * responsible for generating the inverted value. The iteratee is invoked
+     * with one argument: (value).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.1.0
+     * @category Object
+     * @param {Object} object The object to invert.
+     * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
+     * @returns {Object} Returns the new inverted object.
+     * @example
+     *
+     * var object = { 'a': 1, 'b': 2, 'c': 1 };
+     *
+     * _.invertBy(object);
+     * // => { '1': ['a', 'c'], '2': ['b'] }
+     *
+     * _.invertBy(object, function(value) {
+     *   return 'group' + value;
+     * });
+     * // => { 'group1': ['a', 'c'], 'group2': ['b'] }
+     */
+    var invertBy = createInverter(function(result, value, key) {
+      if (value != null &&
+          typeof value.toString != 'function') {
+        value = nativeObjectToString.call(value);
+      }
+
+      if (hasOwnProperty.call(result, value)) {
+        result[value].push(key);
+      } else {
+        result[value] = [key];
+      }
+    }, getIteratee);
+
+    /**
+     * Invokes the method at `path` of `object`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Object
+     * @param {Object} object The object to query.
+     * @param {Array|string} path The path of the method to invoke.
+     * @param {...*} [args] The arguments to invoke the method with.
+     * @returns {*} Returns the result of the invoked method.
+     * @example
+     *
+     * var object = { 'a': [{ 'b': { 'c': [1, 2, 3, 4] } }] };
+     *
+     * _.invoke(object, 'a[0].b.c.slice', 1, 3);
+     * // => [2, 3]
+     */
+    var invoke = baseRest(baseInvoke);
+
+    /**
+     * Creates an array of the own enumerable property names of `object`.
+     *
+     * **Note:** Non-object values are coerced to objects. See the
+     * [ES spec](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
+     * for more details.
+     *
+     * @static
+     * @since 0.1.0
+     * @memberOf _
+     * @category Object
+     * @param {Object} object The object to query.
+     * @returns {Array} Returns the array of property names.
+     * @example
+     *
+     * function Foo() {
+     *   this.a = 1;
+     *   this.b = 2;
+     * }
+     *
+     * Foo.prototype.c = 3;
+     *
+     * _.keys(new Foo);
+     * // => ['a', 'b'] (iteration order is not guaranteed)
+     *
+     * _.keys('hi');
+     * // => ['0', '1']
+     */
+    function keys(object) {
+      return isArrayLike(object) ? arrayLikeKeys(object) : baseKeys(object);
+    }
+
+    /**
+     * Creates an array of the own and inherited enumerable property names of `object`.
+     *
+     * **Note:** Non-object values are coerced to objects.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Object
+     * @param {Object} object The object to query.
+     * @returns {Array} Returns the array of property names.
+     * @example
+     *
+     * function Foo() {
+     *   this.a = 1;
+     *   this.b = 2;
+     * }
+     *
+     * Foo.prototype.c = 3;
+     *
+     * _.keysIn(new Foo);
+     * // => ['a', 'b', 'c'] (iteration order is not guaranteed)
+     */
+    function keysIn(object) {
+      return isArrayLike(object) ? arrayLikeKeys(object, true) : baseKeysIn(object);
+    }
+
+    /**
+     * The opposite of `_.mapValues`; this method creates an object with the
+     * same values as `object` and keys generated by running each own enumerable
+     * string keyed property of `object` thru `iteratee`. The iteratee is invoked
+     * with three arguments: (value, key, object).
+     *
+     * @static
+     * @memberOf _
+     * @since 3.8.0
+     * @category Object
+     * @param {Object} object The object to iterate over.
+     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+     * @returns {Object} Returns the new mapped object.
+     * @see _.mapValues
+     * @example
+     *
+     * _.mapKeys({ 'a': 1, 'b': 2 }, function(value, key) {
+     *   return key + value;
+     * });
+     * // => { 'a1': 1, 'b2': 2 }
+     */
+    function mapKeys(object, iteratee) {
+      var result = {};
+      iteratee = getIteratee(iteratee, 3);
+
+      baseForOwn(object, function(value, key, object) {
+        baseAssignValue(result, iteratee(value, key, object), value);
+      });
+      return result;
+    }
+
+    /**
+     * Creates an object with the same keys as `object` and values generated
+     * by running each own enumerable string keyed property of `object` thru
+     * `iteratee`. The iteratee is invoked with three arguments:
+     * (value, key, object).
+     *
+     * @static
+     * @memberOf _
+     * @since 2.4.0
+     * @category Object
+     * @param {Object} object The object to iterate over.
+     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+     * @returns {Object} Returns the new mapped object.
+     * @see _.mapKeys
+     * @example
+     *
+     * var users = {
+     *   'fred':    { 'user': 'fred',    'age': 40 },
+     *   'pebbles': { 'user': 'pebbles', 'age': 1 }
+     * };
+     *
+     * _.mapValues(users, function(o) { return o.age; });
+     * // => { 'fred': 40, 'pebbles': 1 } (iteration order is not guaranteed)
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.mapValues(users, 'age');
+     * // => { 'fred': 40, 'pebbles': 1 } (iteration order is not guaranteed)
+     */
+    function mapValues(object, iteratee) {
+      var result = {};
+      iteratee = getIteratee(iteratee, 3);
+
+      baseForOwn(object, function(value, key, object) {
+        baseAssignValue(result, key, iteratee(value, key, object));
+      });
+      return result;
+    }
+
+    /**
+     * This method is like `_.assign` except that it recursively merges own and
+     * inherited enumerable string keyed properties of source objects into the
+     * destination object. Source properties that resolve to `undefined` are
+     * skipped if a destination value exists. Array and plain object properties
+     * are merged recursively. Other objects and value types are overridden by
+     * assignment. Source objects are applied from left to right. Subsequent
+     * sources overwrite property assignments of previous sources.
+     *
+     * **Note:** This method mutates `object`.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.5.0
+     * @category Object
+     * @param {Object} object The destination object.
+     * @param {...Object} [sources] The source objects.
+     * @returns {Object} Returns `object`.
+     * @example
+     *
+     * var object = {
+     *   'a': [{ 'b': 2 }, { 'd': 4 }]
+     * };
+     *
+     * var other = {
+     *   'a': [{ 'c': 3 }, { 'e': 5 }]
+     * };
+     *
+     * _.merge(object, other);
+     * // => { 'a': [{ 'b': 2, 'c': 3 }, { 'd': 4, 'e': 5 }] }
+     */
+    var merge = createAssigner(function(object, source, srcIndex) {
+      baseMerge(object, source, srcIndex);
+    });
+
+    /**
+     * This method is like `_.merge` except that it accepts `customizer` which
+     * is invoked to produce the merged values of the destination and source
+     * properties. If `customizer` returns `undefined`, merging is handled by the
+     * method instead. The `customizer` is invoked with six arguments:
+     * (objValue, srcValue, key, object, source, stack).
+     *
+     * **Note:** This method mutates `object`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Object
+     * @param {Object} object The destination object.
+     * @param {...Object} sources The source objects.
+     * @param {Function} customizer The function to customize assigned values.
+     * @returns {Object} Returns `object`.
+     * @example
+     *
+     * function customizer(objValue, srcValue) {
+     *   if (_.isArray(objValue)) {
+     *     return objValue.concat(srcValue);
+     *   }
+     * }
+     *
+     * var object = { 'a': [1], 'b': [2] };
+     * var other = { 'a': [3], 'b': [4] };
+     *
+     * _.mergeWith(object, other, customizer);
+     * // => { 'a': [1, 3], 'b': [2, 4] }
+     */
+    var mergeWith = createAssigner(function(object, source, srcIndex, customizer) {
+      baseMerge(object, source, srcIndex, customizer);
+    });
+
+    /**
+     * The opposite of `_.pick`; this method creates an object composed of the
+     * own and inherited enumerable property paths of `object` that are not omitted.
+     *
+     * **Note:** This method is considerably slower than `_.pick`.
+     *
+     * @static
+     * @since 0.1.0
+     * @memberOf _
+     * @category Object
+     * @param {Object} object The source object.
+     * @param {...(string|string[])} [paths] The property paths to omit.
+     * @returns {Object} Returns the new object.
+     * @example
+     *
+     * var object = { 'a': 1, 'b': '2', 'c': 3 };
+     *
+     * _.omit(object, ['a', 'c']);
+     * // => { 'b': '2' }
+     */
+    var omit = flatRest(function(object, paths) {
+      var result = {};
+      if (object == null) {
+        return result;
+      }
+      var isDeep = false;
+      paths = arrayMap(paths, function(path) {
+        path = castPath(path, object);
+        isDeep || (isDeep = path.length > 1);
+        return path;
+      });
+      copyObject(object, getAllKeysIn(object), result);
+      if (isDeep) {
+        result = baseClone(result, CLONE_DEEP_FLAG | CLONE_FLAT_FLAG | CLONE_SYMBOLS_FLAG, customOmitClone);
+      }
+      var length = paths.length;
+      while (length--) {
+        baseUnset(result, paths[length]);
+      }
+      return result;
+    });
+
+    /**
+     * The opposite of `_.pickBy`; this method creates an object composed of
+     * the own and inherited enumerable string keyed properties of `object` that
+     * `predicate` doesn't return truthy for. The predicate is invoked with two
+     * arguments: (value, key).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Object
+     * @param {Object} object The source object.
+     * @param {Function} [predicate=_.identity] The function invoked per property.
+     * @returns {Object} Returns the new object.
+     * @example
+     *
+     * var object = { 'a': 1, 'b': '2', 'c': 3 };
+     *
+     * _.omitBy(object, _.isNumber);
+     * // => { 'b': '2' }
+     */
+    function omitBy(object, predicate) {
+      return pickBy(object, negate(getIteratee(predicate)));
+    }
+
+    /**
+     * Creates an object composed of the picked `object` properties.
+     *
+     * @static
+     * @since 0.1.0
+     * @memberOf _
+     * @category Object
+     * @param {Object} object The source object.
+     * @param {...(string|string[])} [paths] The property paths to pick.
+     * @returns {Object} Returns the new object.
+     * @example
+     *
+     * var object = { 'a': 1, 'b': '2', 'c': 3 };
+     *
+     * _.pick(object, ['a', 'c']);
+     * // => { 'a': 1, 'c': 3 }
+     */
+    var pick = flatRest(function(object, paths) {
+      return object == null ? {} : basePick(object, paths);
+    });
+
+    /**
+     * Creates an object composed of the `object` properties `predicate` returns
+     * truthy for. The predicate is invoked with two arguments: (value, key).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Object
+     * @param {Object} object The source object.
+     * @param {Function} [predicate=_.identity] The function invoked per property.
+     * @returns {Object} Returns the new object.
+     * @example
+     *
+     * var object = { 'a': 1, 'b': '2', 'c': 3 };
+     *
+     * _.pickBy(object, _.isNumber);
+     * // => { 'a': 1, 'c': 3 }
+     */
+    function pickBy(object, predicate) {
+      if (object == null) {
+        return {};
+      }
+      var props = arrayMap(getAllKeysIn(object), function(prop) {
+        return [prop];
+      });
+      predicate = getIteratee(predicate);
+      return basePickBy(object, props, function(value, path) {
+        return predicate(value, path[0]);
+      });
+    }
+
+    /**
+     * This method is like `_.get` except that if the resolved value is a
+     * function it's invoked with the `this` binding of its parent object and
+     * its result is returned.
+     *
+     * @static
+     * @since 0.1.0
+     * @memberOf _
+     * @category Object
+     * @param {Object} object The object to query.
+     * @param {Array|string} path The path of the property to resolve.
+     * @param {*} [defaultValue] The value returned for `undefined` resolved values.
+     * @returns {*} Returns the resolved value.
+     * @example
+     *
+     * var object = { 'a': [{ 'b': { 'c1': 3, 'c2': _.constant(4) } }] };
+     *
+     * _.result(object, 'a[0].b.c1');
+     * // => 3
+     *
+     * _.result(object, 'a[0].b.c2');
+     * // => 4
+     *
+     * _.result(object, 'a[0].b.c3', 'default');
+     * // => 'default'
+     *
+     * _.result(object, 'a[0].b.c3', _.constant('default'));
+     * // => 'default'
+     */
+    function result(object, path, defaultValue) {
+      path = castPath(path, object);
+
+      var index = -1,
+          length = path.length;
+
+      // Ensure the loop is entered when path is empty.
+      if (!length) {
+        length = 1;
+        object = undefined;
+      }
+      while (++index < length) {
+        var value = object == null ? undefined : object[toKey(path[index])];
+        if (value === undefined) {
+          index = length;
+          value = defaultValue;
+        }
+        object = isFunction(value) ? value.call(object) : value;
+      }
+      return object;
+    }
+
+    /**
+     * Sets the value at `path` of `object`. If a portion of `path` doesn't exist,
+     * it's created. Arrays are created for missing index properties while objects
+     * are created for all other missing properties. Use `_.setWith` to customize
+     * `path` creation.
+     *
+     * **Note:** This method mutates `object`.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.7.0
+     * @category Object
+     * @param {Object} object The object to modify.
+     * @param {Array|string} path The path of the property to set.
+     * @param {*} value The value to set.
+     * @returns {Object} Returns `object`.
+     * @example
+     *
+     * var object = { 'a': [{ 'b': { 'c': 3 } }] };
+     *
+     * _.set(object, 'a[0].b.c', 4);
+     * console.log(object.a[0].b.c);
+     * // => 4
+     *
+     * _.set(object, ['x', '0', 'y', 'z'], 5);
+     * console.log(object.x[0].y.z);
+     * // => 5
+     */
+    function set(object, path, value) {
+      return object == null ? object : baseSet(object, path, value);
+    }
+
+    /**
+     * This method is like `_.set` except that it accepts `customizer` which is
+     * invoked to produce the objects of `path`.  If `customizer` returns `undefined`
+     * path creation is handled by the method instead. The `customizer` is invoked
+     * with three arguments: (nsValue, key, nsObject).
+     *
+     * **Note:** This method mutates `object`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Object
+     * @param {Object} object The object to modify.
+     * @param {Array|string} path The path of the property to set.
+     * @param {*} value The value to set.
+     * @param {Function} [customizer] The function to customize assigned values.
+     * @returns {Object} Returns `object`.
+     * @example
+     *
+     * var object = {};
+     *
+     * _.setWith(object, '[0][1]', 'a', Object);
+     * // => { '0': { '1': 'a' } }
+     */
+    function setWith(object, path, value, customizer) {
+      customizer = typeof customizer == 'function' ? customizer : undefined;
+      return object == null ? object : baseSet(object, path, value, customizer);
+    }
+
+    /**
+     * Creates an array of own enumerable string keyed-value pairs for `object`
+     * which can be consumed by `_.fromPairs`. If `object` is a map or set, its
+     * entries are returned.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @alias entries
+     * @category Object
+     * @param {Object} object The object to query.
+     * @returns {Array} Returns the key-value pairs.
+     * @example
+     *
+     * function Foo() {
+     *   this.a = 1;
+     *   this.b = 2;
+     * }
+     *
+     * Foo.prototype.c = 3;
+     *
+     * _.toPairs(new Foo);
+     * // => [['a', 1], ['b', 2]] (iteration order is not guaranteed)
+     */
+    var toPairs = createToPairs(keys);
+
+    /**
+     * Creates an array of own and inherited enumerable string keyed-value pairs
+     * for `object` which can be consumed by `_.fromPairs`. If `object` is a map
+     * or set, its entries are returned.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @alias entriesIn
+     * @category Object
+     * @param {Object} object The object to query.
+     * @returns {Array} Returns the key-value pairs.
+     * @example
+     *
+     * function Foo() {
+     *   this.a = 1;
+     *   this.b = 2;
+     * }
+     *
+     * Foo.prototype.c = 3;
+     *
+     * _.toPairsIn(new Foo);
+     * // => [['a', 1], ['b', 2], ['c', 3]] (iteration order is not guaranteed)
+     */
+    var toPairsIn = createToPairs(keysIn);
+
+    /**
+     * An alternative to `_.reduce`; this method transforms `object` to a new
+     * `accumulator` object which is the result of running each of its own
+     * enumerable string keyed properties thru `iteratee`, with each invocation
+     * potentially mutating the `accumulator` object. If `accumulator` is not
+     * provided, a new object with the same `[[Prototype]]` will be used. The
+     * iteratee is invoked with four arguments: (accumulator, value, key, object).
+     * Iteratee functions may exit iteration early by explicitly returning `false`.
+     *
+     * @static
+     * @memberOf _
+     * @since 1.3.0
+     * @category Object
+     * @param {Object} object The object to iterate over.
+     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+     * @param {*} [accumulator] The custom accumulator value.
+     * @returns {*} Returns the accumulated value.
+     * @example
+     *
+     * _.transform([2, 3, 4], function(result, n) {
+     *   result.push(n *= n);
+     *   return n % 2 == 0;
+     * }, []);
+     * // => [4, 9]
+     *
+     * _.transform({ 'a': 1, 'b': 2, 'c': 1 }, function(result, value, key) {
+     *   (result[value] || (result[value] = [])).push(key);
+     * }, {});
+     * // => { '1': ['a', 'c'], '2': ['b'] }
+     */
+    function transform(object, iteratee, accumulator) {
+      var isArr = isArray(object),
+          isArrLike = isArr || isBuffer(object) || isTypedArray(object);
+
+      iteratee = getIteratee(iteratee, 4);
+      if (accumulator == null) {
+        var Ctor = object && object.constructor;
+        if (isArrLike) {
+          accumulator = isArr ? new Ctor : [];
+        }
+        else if (isObject(object)) {
+          accumulator = isFunction(Ctor) ? baseCreate(getPrototype(object)) : {};
+        }
+        else {
+          accumulator = {};
+        }
+      }
+      (isArrLike ? arrayEach : baseForOwn)(object, function(value, index, object) {
+        return iteratee(accumulator, value, index, object);
+      });
+      return accumulator;
+    }
+
+    /**
+     * Removes the property at `path` of `object`.
+     *
+     * **Note:** This method mutates `object`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Object
+     * @param {Object} object The object to modify.
+     * @param {Array|string} path The path of the property to unset.
+     * @returns {boolean} Returns `true` if the property is deleted, else `false`.
+     * @example
+     *
+     * var object = { 'a': [{ 'b': { 'c': 7 } }] };
+     * _.unset(object, 'a[0].b.c');
+     * // => true
+     *
+     * console.log(object);
+     * // => { 'a': [{ 'b': {} }] };
+     *
+     * _.unset(object, ['a', '0', 'b', 'c']);
+     * // => true
+     *
+     * console.log(object);
+     * // => { 'a': [{ 'b': {} }] };
+     */
+    function unset(object, path) {
+      return object == null ? true : baseUnset(object, path);
+    }
+
+    /**
+     * This method is like `_.set` except that accepts `updater` to produce the
+     * value to set. Use `_.updateWith` to customize `path` creation. The `updater`
+     * is invoked with one argument: (value).
+     *
+     * **Note:** This method mutates `object`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.6.0
+     * @category Object
+     * @param {Object} object The object to modify.
+     * @param {Array|string} path The path of the property to set.
+     * @param {Function} updater The function to produce the updated value.
+     * @returns {Object} Returns `object`.
+     * @example
+     *
+     * var object = { 'a': [{ 'b': { 'c': 3 } }] };
+     *
+     * _.update(object, 'a[0].b.c', function(n) { return n * n; });
+     * console.log(object.a[0].b.c);
+     * // => 9
+     *
+     * _.update(object, 'x[0].y.z', function(n) { return n ? n + 1 : 0; });
+     * console.log(object.x[0].y.z);
+     * // => 0
+     */
+    function update(object, path, updater) {
+      return object == null ? object : baseUpdate(object, path, castFunction(updater));
+    }
+
+    /**
+     * This method is like `_.update` except that it accepts `customizer` which is
+     * invoked to produce the objects of `path`.  If `customizer` returns `undefined`
+     * path creation is handled by the method instead. The `customizer` is invoked
+     * with three arguments: (nsValue, key, nsObject).
+     *
+     * **Note:** This method mutates `object`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.6.0
+     * @category Object
+     * @param {Object} object The object to modify.
+     * @param {Array|string} path The path of the property to set.
+     * @param {Function} updater The function to produce the updated value.
+     * @param {Function} [customizer] The function to customize assigned values.
+     * @returns {Object} Returns `object`.
+     * @example
+     *
+     * var object = {};
+     *
+     * _.updateWith(object, '[0][1]', _.constant('a'), Object);
+     * // => { '0': { '1': 'a' } }
+     */
+    function updateWith(object, path, updater, customizer) {
+      customizer = typeof customizer == 'function' ? customizer : undefined;
+      return object == null ? object : baseUpdate(object, path, castFunction(updater), customizer);
+    }
+
+    /**
+     * Creates an array of the own enumerable string keyed property values of `object`.
+     *
+     * **Note:** Non-object values are coerced to objects.
+     *
+     * @static
+     * @since 0.1.0
+     * @memberOf _
+     * @category Object
+     * @param {Object} object The object to query.
+     * @returns {Array} Returns the array of property values.
+     * @example
+     *
+     * function Foo() {
+     *   this.a = 1;
+     *   this.b = 2;
+     * }
+     *
+     * Foo.prototype.c = 3;
+     *
+     * _.values(new Foo);
+     * // => [1, 2] (iteration order is not guaranteed)
+     *
+     * _.values('hi');
+     * // => ['h', 'i']
+     */
+    function values(object) {
+      return object == null ? [] : baseValues(object, keys(object));
+    }
+
+    /**
+     * Creates an array of the own and inherited enumerable string keyed property
+     * values of `object`.
+     *
+     * **Note:** Non-object values are coerced to objects.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Object
+     * @param {Object} object The object to query.
+     * @returns {Array} Returns the array of property values.
+     * @example
+     *
+     * function Foo() {
+     *   this.a = 1;
+     *   this.b = 2;
+     * }
+     *
+     * Foo.prototype.c = 3;
+     *
+     * _.valuesIn(new Foo);
+     * // => [1, 2, 3] (iteration order is not guaranteed)
+     */
+    function valuesIn(object) {
+      return object == null ? [] : baseValues(object, keysIn(object));
+    }
+
+    /*------------------------------------------------------------------------*/
+
+    /**
+     * Clamps `number` within the inclusive `lower` and `upper` bounds.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Number
+     * @param {number} number The number to clamp.
+     * @param {number} [lower] The lower bound.
+     * @param {number} upper The upper bound.
+     * @returns {number} Returns the clamped number.
+     * @example
+     *
+     * _.clamp(-10, -5, 5);
+     * // => -5
+     *
+     * _.clamp(10, -5, 5);
+     * // => 5
+     */
+    function clamp(number, lower, upper) {
+      if (upper === undefined) {
+        upper = lower;
+        lower = undefined;
+      }
+      if (upper !== undefined) {
+        upper = toNumber(upper);
+        upper = upper === upper ? upper : 0;
+      }
+      if (lower !== undefined) {
+        lower = toNumber(lower);
+        lower = lower === lower ? lower : 0;
+      }
+      return baseClamp(toNumber(number), lower, upper);
+    }
+
+    /**
+     * Checks if `n` is between `start` and up to, but not including, `end`. If
+     * `end` is not specified, it's set to `start` with `start` then set to `0`.
+     * If `start` is greater than `end` the params are swapped to support
+     * negative ranges.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.3.0
+     * @category Number
+     * @param {number} number The number to check.
+     * @param {number} [start=0] The start of the range.
+     * @param {number} end The end of the range.
+     * @returns {boolean} Returns `true` if `number` is in the range, else `false`.
+     * @see _.range, _.rangeRight
+     * @example
+     *
+     * _.inRange(3, 2, 4);
+     * // => true
+     *
+     * _.inRange(4, 8);
+     * // => true
+     *
+     * _.inRange(4, 2);
+     * // => false
+     *
+     * _.inRange(2, 2);
+     * // => false
+     *
+     * _.inRange(1.2, 2);
+     * // => true
+     *
+     * _.inRange(5.2, 4);
+     * // => false
+     *
+     * _.inRange(-3, -2, -6);
+     * // => true
+     */
+    function inRange(number, start, end) {
+      start = toFinite(start);
+      if (end === undefined) {
+        end = start;
+        start = 0;
+      } else {
+        end = toFinite(end);
+      }
+      number = toNumber(number);
+      return baseInRange(number, start, end);
+    }
+
+    /**
+     * Produces a random number between the inclusive `lower` and `upper` bounds.
+     * If only one argument is provided a number between `0` and the given number
+     * is returned. If `floating` is `true`, or either `lower` or `upper` are
+     * floats, a floating-point number is returned instead of an integer.
+     *
+     * **Note:** JavaScript follows the IEEE-754 standard for resolving
+     * floating-point values which can produce unexpected results.
+     *
+     * @static
+     * @memberOf _
+     * @since 0.7.0
+     * @category Number
+     * @param {number} [lower=0] The lower bound.
+     * @param {number} [upper=1] The upper bound.
+     * @param {boolean} [floating] Specify returning a floating-point number.
+     * @returns {number} Returns the random number.
+     * @example
+     *
+     * _.random(0, 5);
+     * // => an integer between 0 and 5
+     *
+     * _.random(5);
+     * // => also an integer between 0 and 5
+     *
+     * _.random(5, true);
+     * // => a floating-point number between 0 and 5
+     *
+     * _.random(1.2, 5.2);
+     * // => a floating-point number between 1.2 and 5.2
+     */
+    function random(lower, upper, floating) {
+      if (floating && typeof floating != 'boolean' && isIterateeCall(lower, upper, floating)) {
+        upper = floating = undefined;
+      }
+      if (floating === undefined) {
+        if (typeof upper == 'boolean') {
+          floating = upper;
+          upper = undefined;
+        }
+        else if (typeof lower == 'boolean') {
+          floating = lower;
+          lower = undefined;
+        }
+      }
+      if (lower === undefined && upper === undefined) {
+        lower = 0;
+        upper = 1;
+      }
+      else {
+        lower = toFinite(lower);
+        if (upper === undefined) {
+          upper = lower;
+          lower = 0;
+        } else {
+          upper = toFinite(upper);
+        }
+      }
+      if (lower > upper) {
+        var temp = lower;
+        lower = upper;
+        upper = temp;
+      }
+      if (floating || lower % 1 || upper % 1) {
+        var rand = nativeRandom();
+        return nativeMin(lower + (rand * (upper - lower + freeParseFloat('1e-' + ((rand + '').length - 1)))), upper);
+      }
+      return baseRandom(lower, upper);
+    }
+
+    /*------------------------------------------------------------------------*/
+
+    /**
+     * Converts `string` to [camel case](https://en.wikipedia.org/wiki/CamelCase).
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category String
+     * @param {string} [string=''] The string to convert.
+     * @returns {string} Returns the camel cased string.
+     * @example
+     *
+     * _.camelCase('Foo Bar');
+     * // => 'fooBar'
+     *
+     * _.camelCase('--foo-bar--');
+     * // => 'fooBar'
+     *
+     * _.camelCase('__FOO_BAR__');
+     * // => 'fooBar'
+     */
+    var camelCase = createCompounder(function(result, word, index) {
+      word = word.toLowerCase();
+      return result + (index ? capitalize(word) : word);
+    });
+
+    /**
+     * Converts the first character of `string` to upper case and the remaining
+     * to lower case.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category String
+     * @param {string} [string=''] The string to capitalize.
+     * @returns {string} Returns the capitalized string.
+     * @example
+     *
+     * _.capitalize('FRED');
+     * // => 'Fred'
+     */
+    function capitalize(string) {
+      return upperFirst(toString(string).toLowerCase());
+    }
+
+    /**
+     * Deburrs `string` by converting
+     * [Latin-1 Supplement](https://en.wikipedia.org/wiki/Latin-1_Supplement_(Unicode_block)#Character_table)
+     * and [Latin Extended-A](https://en.wikipedia.org/wiki/Latin_Extended-A)
+     * letters to basic Latin letters and removing
+     * [combining diacritical marks](https://en.wikipedia.org/wiki/Combining_Diacritical_Marks).
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category String
+     * @param {string} [string=''] The string to deburr.
+     * @returns {string} Returns the deburred string.
+     * @example
+     *
+     * _.deburr('déjà vu');
+     * // => 'deja vu'
+     */
+    function deburr(string) {
+      string = toString(string);
+      return string && string.replace(reLatin, deburrLetter).replace(reComboMark, '');
+    }
+
+    /**
+     * Checks if `string` ends with the given target string.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category String
+     * @param {string} [string=''] The string to inspect.
+     * @param {string} [target] The string to search for.
+     * @param {number} [position=string.length] The position to search up to.
+     * @returns {boolean} Returns `true` if `string` ends with `target`,
+     *  else `false`.
+     * @example
+     *
+     * _.endsWith('abc', 'c');
+     * // => true
+     *
+     * _.endsWith('abc', 'b');
+     * // => false
+     *
+     * _.endsWith('abc', 'b', 2);
+     * // => true
+     */
+    function endsWith(string, target, position) {
+      string = toString(string);
+      target = baseToString(target);
+
+      var length = string.length;
+      position = position === undefined
+        ? length
+        : baseClamp(toInteger(position), 0, length);
+
+      var end = position;
+      position -= target.length;
+      return position >= 0 && string.slice(position, end) == target;
+    }
+
+    /**
+     * Converts the characters "&", "<", ">", '"', and "'" in `string` to their
+     * corresponding HTML entities.
+     *
+     * **Note:** No other characters are escaped. To escape additional
+     * characters use a third-party library like [_he_](https://mths.be/he).
+     *
+     * Though the ">" character is escaped for symmetry, characters like
+     * ">" and "/" don't need escaping in HTML and have no special meaning
+     * unless they're part of a tag or unquoted attribute value. See
+     * [Mathias Bynens's article](https://mathiasbynens.be/notes/ambiguous-ampersands)
+     * (under "semi-related fun fact") for more details.
+     *
+     * When working with HTML you should always
+     * [quote attribute values](http://wonko.com/post/html-escaping) to reduce
+     * XSS vectors.
+     *
+     * @static
+     * @since 0.1.0
+     * @memberOf _
+     * @category String
+     * @param {string} [string=''] The string to escape.
+     * @returns {string} Returns the escaped string.
+     * @example
+     *
+     * _.escape('fred, barney, & pebbles');
+     * // => 'fred, barney, &amp; pebbles'
+     */
+    function escape(string) {
+      string = toString(string);
+      return (string && reHasUnescapedHtml.test(string))
+        ? string.replace(reUnescapedHtml, escapeHtmlChar)
+        : string;
+    }
+
+    /**
+     * Escapes the `RegExp` special characters "^", "$", "\", ".", "*", "+",
+     * "?", "(", ")", "[", "]", "{", "}", and "|" in `string`.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category String
+     * @param {string} [string=''] The string to escape.
+     * @returns {string} Returns the escaped string.
+     * @example
+     *
+     * _.escapeRegExp('[lodash](https://lodash.com/)');
+     * // => '\[lodash\]\(https://lodash\.com/\)'
+     */
+    function escapeRegExp(string) {
+      string = toString(string);
+      return (string && reHasRegExpChar.test(string))
+        ? string.replace(reRegExpChar, '\\$&')
+        : string;
+    }
+
+    /**
+     * Converts `string` to
+     * [kebab case](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles).
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category String
+     * @param {string} [string=''] The string to convert.
+     * @returns {string} Returns the kebab cased string.
+     * @example
+     *
+     * _.kebabCase('Foo Bar');
+     * // => 'foo-bar'
+     *
+     * _.kebabCase('fooBar');
+     * // => 'foo-bar'
+     *
+     * _.kebabCase('__FOO_BAR__');
+     * // => 'foo-bar'
+     */
+    var kebabCase = createCompounder(function(result, word, index) {
+      return result + (index ? '-' : '') + word.toLowerCase();
+    });
+
+    /**
+     * Converts `string`, as space separated words, to lower case.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category String
+     * @param {string} [string=''] The string to convert.
+     * @returns {string} Returns the lower cased string.
+     * @example
+     *
+     * _.lowerCase('--Foo-Bar--');
+     * // => 'foo bar'
+     *
+     * _.lowerCase('fooBar');
+     * // => 'foo bar'
+     *
+     * _.lowerCase('__FOO_BAR__');
+     * // => 'foo bar'
+     */
+    var lowerCase = createCompounder(function(result, word, index) {
+      return result + (index ? ' ' : '') + word.toLowerCase();
+    });
+
+    /**
+     * Converts the first character of `string` to lower case.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category String
+     * @param {string} [string=''] The string to convert.
+     * @returns {string} Returns the converted string.
+     * @example
+     *
+     * _.lowerFirst('Fred');
+     * // => 'fred'
+     *
+     * _.lowerFirst('FRED');
+     * // => 'fRED'
+     */
+    var lowerFirst = createCaseFirst('toLowerCase');
+
+    /**
+     * Pads `string` on the left and right sides if it's shorter than `length`.
+     * Padding characters are truncated if they can't be evenly divided by `length`.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category String
+     * @param {string} [string=''] The string to pad.
+     * @param {number} [length=0] The padding length.
+     * @param {string} [chars=' '] The string used as padding.
+     * @returns {string} Returns the padded string.
+     * @example
+     *
+     * _.pad('abc', 8);
+     * // => '  abc   '
+     *
+     * _.pad('abc', 8, '_-');
+     * // => '_-abc_-_'
+     *
+     * _.pad('abc', 3);
+     * // => 'abc'
+     */
+    function pad(string, length, chars) {
+      string = toString(string);
+      length = toInteger(length);
+
+      var strLength = length ? stringSize(string) : 0;
+      if (!length || strLength >= length) {
+        return string;
+      }
+      var mid = (length - strLength) / 2;
+      return (
+        createPadding(nativeFloor(mid), chars) +
+        string +
+        createPadding(nativeCeil(mid), chars)
+      );
+    }
+
+    /**
+     * Pads `string` on the right side if it's shorter than `length`. Padding
+     * characters are truncated if they exceed `length`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category String
+     * @param {string} [string=''] The string to pad.
+     * @param {number} [length=0] The padding length.
+     * @param {string} [chars=' '] The string used as padding.
+     * @returns {string} Returns the padded string.
+     * @example
+     *
+     * _.padEnd('abc', 6);
+     * // => 'abc   '
+     *
+     * _.padEnd('abc', 6, '_-');
+     * // => 'abc_-_'
+     *
+     * _.padEnd('abc', 3);
+     * // => 'abc'
+     */
+    function padEnd(string, length, chars) {
+      string = toString(string);
+      length = toInteger(length);
+
+      var strLength = length ? stringSize(string) : 0;
+      return (length && strLength < length)
+        ? (string + createPadding(length - strLength, chars))
+        : string;
+    }
+
+    /**
+     * Pads `string` on the left side if it's shorter than `length`. Padding
+     * characters are truncated if they exceed `length`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category String
+     * @param {string} [string=''] The string to pad.
+     * @param {number} [length=0] The padding length.
+     * @param {string} [chars=' '] The string used as padding.
+     * @returns {string} Returns the padded string.
+     * @example
+     *
+     * _.padStart('abc', 6);
+     * // => '   abc'
+     *
+     * _.padStart('abc', 6, '_-');
+     * // => '_-_abc'
+     *
+     * _.padStart('abc', 3);
+     * // => 'abc'
+     */
+    function padStart(string, length, chars) {
+      string = toString(string);
+      length = toInteger(length);
+
+      var strLength = length ? stringSize(string) : 0;
+      return (length && strLength < length)
+        ? (createPadding(length - strLength, chars) + string)
+        : string;
+    }
+
+    /**
+     * Converts `string` to an integer of the specified radix. If `radix` is
+     * `undefined` or `0`, a `radix` of `10` is used unless `value` is a
+     * hexadecimal, in which case a `radix` of `16` is used.
+     *
+     * **Note:** This method aligns with the
+     * [ES5 implementation](https://es5.github.io/#x15.1.2.2) of `parseInt`.
+     *
+     * @static
+     * @memberOf _
+     * @since 1.1.0
+     * @category String
+     * @param {string} string The string to convert.
+     * @param {number} [radix=10] The radix to interpret `value` by.
+     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+     * @returns {number} Returns the converted integer.
+     * @example
+     *
+     * _.parseInt('08');
+     * // => 8
+     *
+     * _.map(['6', '08', '10'], _.parseInt);
+     * // => [6, 8, 10]
+     */
+    function parseInt(string, radix, guard) {
+      if (guard || radix == null) {
+        radix = 0;
+      } else if (radix) {
+        radix = +radix;
+      }
+      return nativeParseInt(toString(string).replace(reTrimStart, ''), radix || 0);
+    }
+
+    /**
+     * Repeats the given string `n` times.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category String
+     * @param {string} [string=''] The string to repeat.
+     * @param {number} [n=1] The number of times to repeat the string.
+     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+     * @returns {string} Returns the repeated string.
+     * @example
+     *
+     * _.repeat('*', 3);
+     * // => '***'
+     *
+     * _.repeat('abc', 2);
+     * // => 'abcabc'
+     *
+     * _.repeat('abc', 0);
+     * // => ''
+     */
+    function repeat(string, n, guard) {
+      if ((guard ? isIterateeCall(string, n, guard) : n === undefined)) {
+        n = 1;
+      } else {
+        n = toInteger(n);
+      }
+      return baseRepeat(toString(string), n);
+    }
+
+    /**
+     * Replaces matches for `pattern` in `string` with `replacement`.
+     *
+     * **Note:** This method is based on
+     * [`String#replace`](https://mdn.io/String/replace).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category String
+     * @param {string} [string=''] The string to modify.
+     * @param {RegExp|string} pattern The pattern to replace.
+     * @param {Function|string} replacement The match replacement.
+     * @returns {string} Returns the modified string.
+     * @example
+     *
+     * _.replace('Hi Fred', 'Fred', 'Barney');
+     * // => 'Hi Barney'
+     */
+    function replace() {
+      var args = arguments,
+          string = toString(args[0]);
+
+      return args.length < 3 ? string : string.replace(args[1], args[2]);
+    }
+
+    /**
+     * Converts `string` to
+     * [snake case](https://en.wikipedia.org/wiki/Snake_case).
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category String
+     * @param {string} [string=''] The string to convert.
+     * @returns {string} Returns the snake cased string.
+     * @example
+     *
+     * _.snakeCase('Foo Bar');
+     * // => 'foo_bar'
+     *
+     * _.snakeCase('fooBar');
+     * // => 'foo_bar'
+     *
+     * _.snakeCase('--FOO-BAR--');
+     * // => 'foo_bar'
+     */
+    var snakeCase = createCompounder(function(result, word, index) {
+      return result + (index ? '_' : '') + word.toLowerCase();
+    });
+
+    /**
+     * Splits `string` by `separator`.
+     *
+     * **Note:** This method is based on
+     * [`String#split`](https://mdn.io/String/split).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category String
+     * @param {string} [string=''] The string to split.
+     * @param {RegExp|string} separator The separator pattern to split by.
+     * @param {number} [limit] The length to truncate results to.
+     * @returns {Array} Returns the string segments.
+     * @example
+     *
+     * _.split('a-b-c', '-', 2);
+     * // => ['a', 'b']
+     */
+    function split(string, separator, limit) {
+      if (limit && typeof limit != 'number' && isIterateeCall(string, separator, limit)) {
+        separator = limit = undefined;
+      }
+      limit = limit === undefined ? MAX_ARRAY_LENGTH : limit >>> 0;
+      if (!limit) {
+        return [];
+      }
+      string = toString(string);
+      if (string && (
+            typeof separator == 'string' ||
+            (separator != null && !isRegExp(separator))
+          )) {
+        separator = baseToString(separator);
+        if (!separator && hasUnicode(string)) {
+          return castSlice(stringToArray(string), 0, limit);
+        }
+      }
+      return string.split(separator, limit);
+    }
+
+    /**
+     * Converts `string` to
+     * [start case](https://en.wikipedia.org/wiki/Letter_case#Stylistic_or_specialised_usage).
+     *
+     * @static
+     * @memberOf _
+     * @since 3.1.0
+     * @category String
+     * @param {string} [string=''] The string to convert.
+     * @returns {string} Returns the start cased string.
+     * @example
+     *
+     * _.startCase('--foo-bar--');
+     * // => 'Foo Bar'
+     *
+     * _.startCase('fooBar');
+     * // => 'Foo Bar'
+     *
+     * _.startCase('__FOO_BAR__');
+     * // => 'FOO BAR'
+     */
+    var startCase = createCompounder(function(result, word, index) {
+      return result + (index ? ' ' : '') + upperFirst(word);
+    });
+
+    /**
+     * Checks if `string` starts with the given target string.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category String
+     * @param {string} [string=''] The string to inspect.
+     * @param {string} [target] The string to search for.
+     * @param {number} [position=0] The position to search from.
+     * @returns {boolean} Returns `true` if `string` starts with `target`,
+     *  else `false`.
+     * @example
+     *
+     * _.startsWith('abc', 'a');
+     * // => true
+     *
+     * _.startsWith('abc', 'b');
+     * // => false
+     *
+     * _.startsWith('abc', 'b', 1);
+     * // => true
+     */
+    function startsWith(string, target, position) {
+      string = toString(string);
+      position = position == null
+        ? 0
+        : baseClamp(toInteger(position), 0, string.length);
+
+      target = baseToString(target);
+      return string.slice(position, position + target.length) == target;
+    }
+
+    /**
+     * Creates a compiled template function that can interpolate data properties
+     * in "interpolate" delimiters, HTML-escape interpolated data properties in
+     * "escape" delimiters, and execute JavaScript in "evaluate" delimiters. Data
+     * properties may be accessed as free variables in the template. If a setting
+     * object is given, it takes precedence over `_.templateSettings` values.
+     *
+     * **Note:** In the development build `_.template` utilizes
+     * [sourceURLs](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/#toc-sourceurl)
+     * for easier debugging.
+     *
+     * For more information on precompiling templates see
+     * [lodash's custom builds documentation](https://lodash.com/custom-builds).
+     *
+     * For more information on Chrome extension sandboxes see
+     * [Chrome's extensions documentation](https://developer.chrome.com/extensions/sandboxingEval).
+     *
+     * @static
+     * @since 0.1.0
+     * @memberOf _
+     * @category String
+     * @param {string} [string=''] The template string.
+     * @param {Object} [options={}] The options object.
+     * @param {RegExp} [options.escape=_.templateSettings.escape]
+     *  The HTML "escape" delimiter.
+     * @param {RegExp} [options.evaluate=_.templateSettings.evaluate]
+     *  The "evaluate" delimiter.
+     * @param {Object} [options.imports=_.templateSettings.imports]
+     *  An object to import into the template as free variables.
+     * @param {RegExp} [options.interpolate=_.templateSettings.interpolate]
+     *  The "interpolate" delimiter.
+     * @param {string} [options.sourceURL='lodash.templateSources[n]']
+     *  The sourceURL of the compiled template.
+     * @param {string} [options.variable='obj']
+     *  The data object variable name.
+     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+     * @returns {Function} Returns the compiled template function.
+     * @example
+     *
+     * // Use the "interpolate" delimiter to create a compiled template.
+     * var compiled = _.template('hello <%= user %>!');
+     * compiled({ 'user': 'fred' });
+     * // => 'hello fred!'
+     *
+     * // Use the HTML "escape" delimiter to escape data property values.
+     * var compiled = _.template('<b><%- value %></b>');
+     * compiled({ 'value': '<script>' });
+     * // => '<b>&lt;script&gt;</b>'
+     *
+     * // Use the "evaluate" delimiter to execute JavaScript and generate HTML.
+     * var compiled = _.template('<% _.forEach(users, function(user) { %><li><%- user %></li><% }); %>');
+     * compiled({ 'users': ['fred', 'barney'] });
+     * // => '<li>fred</li><li>barney</li>'
+     *
+     * // Use the internal `print` function in "evaluate" delimiters.
+     * var compiled = _.template('<% print("hello " + user); %>!');
+     * compiled({ 'user': 'barney' });
+     * // => 'hello barney!'
+     *
+     * // Use the ES template literal delimiter as an "interpolate" delimiter.
+     * // Disable support by replacing the "interpolate" delimiter.
+     * var compiled = _.template('hello ${ user }!');
+     * compiled({ 'user': 'pebbles' });
+     * // => 'hello pebbles!'
+     *
+     * // Use backslashes to treat delimiters as plain text.
+     * var compiled = _.template('<%= "\\<%- value %\\>" %>');
+     * compiled({ 'value': 'ignored' });
+     * // => '<%- value %>'
+     *
+     * // Use the `imports` option to import `jQuery` as `jq`.
+     * var text = '<% jq.each(users, function(user) { %><li><%- user %></li><% }); %>';
+     * var compiled = _.template(text, { 'imports': { 'jq': jQuery } });
+     * compiled({ 'users': ['fred', 'barney'] });
+     * // => '<li>fred</li><li>barney</li>'
+     *
+     * // Use the `sourceURL` option to specify a custom sourceURL for the template.
+     * var compiled = _.template('hello <%= user %>!', { 'sourceURL': '/basic/greeting.jst' });
+     * compiled(data);
+     * // => Find the source of "greeting.jst" under the Sources tab or Resources panel of the web inspector.
+     *
+     * // Use the `variable` option to ensure a with-statement isn't used in the compiled template.
+     * var compiled = _.template('hi <%= data.user %>!', { 'variable': 'data' });
+     * compiled.source;
+     * // => function(data) {
+     * //   var __t, __p = '';
+     * //   __p += 'hi ' + ((__t = ( data.user )) == null ? '' : __t) + '!';
+     * //   return __p;
+     * // }
+     *
+     * // Use custom template delimiters.
+     * _.templateSettings.interpolate = /{{([\s\S]+?)}}/g;
+     * var compiled = _.template('hello {{ user }}!');
+     * compiled({ 'user': 'mustache' });
+     * // => 'hello mustache!'
+     *
+     * // Use the `source` property to inline compiled templates for meaningful
+     * // line numbers in error messages and stack traces.
+     * fs.writeFileSync(path.join(process.cwd(), 'jst.js'), '\
+     *   var JST = {\
+     *     "main": ' + _.template(mainText).source + '\
+     *   };\
+     * ');
+     */
+    function template(string, options, guard) {
+      // Based on John Resig's `tmpl` implementation
+      // (http://ejohn.org/blog/javascript-micro-templating/)
+      // and Laura Doktorova's doT.js (https://github.com/olado/doT).
+      var settings = lodash.templateSettings;
+
+      if (guard && isIterateeCall(string, options, guard)) {
+        options = undefined;
+      }
+      string = toString(string);
+      options = assignInWith({}, options, settings, customDefaultsAssignIn);
+
+      var imports = assignInWith({}, options.imports, settings.imports, customDefaultsAssignIn),
+          importsKeys = keys(imports),
+          importsValues = baseValues(imports, importsKeys);
+
+      var isEscaping,
+          isEvaluating,
+          index = 0,
+          interpolate = options.interpolate || reNoMatch,
+          source = "__p += '";
+
+      // Compile the regexp to match each delimiter.
+      var reDelimiters = RegExp(
+        (options.escape || reNoMatch).source + '|' +
+        interpolate.source + '|' +
+        (interpolate === reInterpolate ? reEsTemplate : reNoMatch).source + '|' +
+        (options.evaluate || reNoMatch).source + '|$'
+      , 'g');
+
+      // Use a sourceURL for easier debugging.
+      // The sourceURL gets injected into the source that's eval-ed, so be careful
+      // to normalize all kinds of whitespace, so e.g. newlines (and unicode versions of it) can't sneak in
+      // and escape the comment, thus injecting code that gets evaled.
+      var sourceURL = '//# sourceURL=' +
+        (hasOwnProperty.call(options, 'sourceURL')
+          ? (options.sourceURL + '').replace(/\s/g, ' ')
+          : ('lodash.templateSources[' + (++templateCounter) + ']')
+        ) + '\n';
+
+      string.replace(reDelimiters, function(match, escapeValue, interpolateValue, esTemplateValue, evaluateValue, offset) {
+        interpolateValue || (interpolateValue = esTemplateValue);
+
+        // Escape characters that can't be included in string literals.
+        source += string.slice(index, offset).replace(reUnescapedString, escapeStringChar);
+
+        // Replace delimiters with snippets.
+        if (escapeValue) {
+          isEscaping = true;
+          source += "' +\n__e(" + escapeValue + ") +\n'";
+        }
+        if (evaluateValue) {
+          isEvaluating = true;
+          source += "';\n" + evaluateValue + ";\n__p += '";
+        }
+        if (interpolateValue) {
+          source += "' +\n((__t = (" + interpolateValue + ")) == null ? '' : __t) +\n'";
+        }
+        index = offset + match.length;
+
+        // The JS engine embedded in Adobe products needs `match` returned in
+        // order to produce the correct `offset` value.
+        return match;
+      });
+
+      source += "';\n";
+
+      // If `variable` is not specified wrap a with-statement around the generated
+      // code to add the data object to the top of the scope chain.
+      var variable = hasOwnProperty.call(options, 'variable') && options.variable;
+      if (!variable) {
+        source = 'with (obj) {\n' + source + '\n}\n';
+      }
+      // Throw an error if a forbidden character was found in `variable`, to prevent
+      // potential command injection attacks.
+      else if (reForbiddenIdentifierChars.test(variable)) {
+        throw new Error(INVALID_TEMPL_VAR_ERROR_TEXT);
+      }
+
+      // Cleanup code by stripping empty strings.
+      source = (isEvaluating ? source.replace(reEmptyStringLeading, '') : source)
+        .replace(reEmptyStringMiddle, '$1')
+        .replace(reEmptyStringTrailing, '$1;');
+
+      // Frame code as the function body.
+      source = 'function(' + (variable || 'obj') + ') {\n' +
+        (variable
+          ? ''
+          : 'obj || (obj = {});\n'
+        ) +
+        "var __t, __p = ''" +
+        (isEscaping
+           ? ', __e = _.escape'
+           : ''
+        ) +
+        (isEvaluating
+          ? ', __j = Array.prototype.join;\n' +
+            "function print() { __p += __j.call(arguments, '') }\n"
+          : ';\n'
+        ) +
+        source +
+        'return __p\n}';
+
+      var result = attempt(function() {
+        return Function(importsKeys, sourceURL + 'return ' + source)
+          .apply(undefined, importsValues);
+      });
+
+      // Provide the compiled function's source by its `toString` method or
+      // the `source` property as a convenience for inlining compiled templates.
+      result.source = source;
+      if (isError(result)) {
+        throw result;
+      }
+      return result;
+    }
+
+    /**
+     * Converts `string`, as a whole, to lower case just like
+     * [String#toLowerCase](https://mdn.io/toLowerCase).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category String
+     * @param {string} [string=''] The string to convert.
+     * @returns {string} Returns the lower cased string.
+     * @example
+     *
+     * _.toLower('--Foo-Bar--');
+     * // => '--foo-bar--'
+     *
+     * _.toLower('fooBar');
+     * // => 'foobar'
+     *
+     * _.toLower('__FOO_BAR__');
+     * // => '__foo_bar__'
+     */
+    function toLower(value) {
+      return toString(value).toLowerCase();
+    }
+
+    /**
+     * Converts `string`, as a whole, to upper case just like
+     * [String#toUpperCase](https://mdn.io/toUpperCase).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category String
+     * @param {string} [string=''] The string to convert.
+     * @returns {string} Returns the upper cased string.
+     * @example
+     *
+     * _.toUpper('--foo-bar--');
+     * // => '--FOO-BAR--'
+     *
+     * _.toUpper('fooBar');
+     * // => 'FOOBAR'
+     *
+     * _.toUpper('__foo_bar__');
+     * // => '__FOO_BAR__'
+     */
+    function toUpper(value) {
+      return toString(value).toUpperCase();
+    }
+
+    /**
+     * Removes leading and trailing whitespace or specified characters from `string`.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category String
+     * @param {string} [string=''] The string to trim.
+     * @param {string} [chars=whitespace] The characters to trim.
+     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+     * @returns {string} Returns the trimmed string.
+     * @example
+     *
+     * _.trim('  abc  ');
+     * // => 'abc'
+     *
+     * _.trim('-_-abc-_-', '_-');
+     * // => 'abc'
+     *
+     * _.map(['  foo  ', '  bar  '], _.trim);
+     * // => ['foo', 'bar']
+     */
+    function trim(string, chars, guard) {
+      string = toString(string);
+      if (string && (guard || chars === undefined)) {
+        return baseTrim(string);
+      }
+      if (!string || !(chars = baseToString(chars))) {
+        return string;
+      }
+      var strSymbols = stringToArray(string),
+          chrSymbols = stringToArray(chars),
+          start = charsStartIndex(strSymbols, chrSymbols),
+          end = charsEndIndex(strSymbols, chrSymbols) + 1;
+
+      return castSlice(strSymbols, start, end).join('');
+    }
+
+    /**
+     * Removes trailing whitespace or specified characters from `string`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category String
+     * @param {string} [string=''] The string to trim.
+     * @param {string} [chars=whitespace] The characters to trim.
+     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+     * @returns {string} Returns the trimmed string.
+     * @example
+     *
+     * _.trimEnd('  abc  ');
+     * // => '  abc'
+     *
+     * _.trimEnd('-_-abc-_-', '_-');
+     * // => '-_-abc'
+     */
+    function trimEnd(string, chars, guard) {
+      string = toString(string);
+      if (string && (guard || chars === undefined)) {
+        return string.slice(0, trimmedEndIndex(string) + 1);
+      }
+      if (!string || !(chars = baseToString(chars))) {
+        return string;
+      }
+      var strSymbols = stringToArray(string),
+          end = charsEndIndex(strSymbols, stringToArray(chars)) + 1;
+
+      return castSlice(strSymbols, 0, end).join('');
+    }
+
+    /**
+     * Removes leading whitespace or specified characters from `string`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category String
+     * @param {string} [string=''] The string to trim.
+     * @param {string} [chars=whitespace] The characters to trim.
+     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+     * @returns {string} Returns the trimmed string.
+     * @example
+     *
+     * _.trimStart('  abc  ');
+     * // => 'abc  '
+     *
+     * _.trimStart('-_-abc-_-', '_-');
+     * // => 'abc-_-'
+     */
+    function trimStart(string, chars, guard) {
+      string = toString(string);
+      if (string && (guard || chars === undefined)) {
+        return string.replace(reTrimStart, '');
+      }
+      if (!string || !(chars = baseToString(chars))) {
+        return string;
+      }
+      var strSymbols = stringToArray(string),
+          start = charsStartIndex(strSymbols, stringToArray(chars));
+
+      return castSlice(strSymbols, start).join('');
+    }
+
+    /**
+     * Truncates `string` if it's longer than the given maximum string length.
+     * The last characters of the truncated string are replaced with the omission
+     * string which defaults to "...".
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category String
+     * @param {string} [string=''] The string to truncate.
+     * @param {Object} [options={}] The options object.
+     * @param {number} [options.length=30] The maximum string length.
+     * @param {string} [options.omission='...'] The string to indicate text is omitted.
+     * @param {RegExp|string} [options.separator] The separator pattern to truncate to.
+     * @returns {string} Returns the truncated string.
+     * @example
+     *
+     * _.truncate('hi-diddly-ho there, neighborino');
+     * // => 'hi-diddly-ho there, neighbo...'
+     *
+     * _.truncate('hi-diddly-ho there, neighborino', {
+     *   'length': 24,
+     *   'separator': ' '
+     * });
+     * // => 'hi-diddly-ho there,...'
+     *
+     * _.truncate('hi-diddly-ho there, neighborino', {
+     *   'length': 24,
+     *   'separator': /,? +/
+     * });
+     * // => 'hi-diddly-ho there...'
+     *
+     * _.truncate('hi-diddly-ho there, neighborino', {
+     *   'omission': ' [...]'
+     * });
+     * // => 'hi-diddly-ho there, neig [...]'
+     */
+    function truncate(string, options) {
+      var length = DEFAULT_TRUNC_LENGTH,
+          omission = DEFAULT_TRUNC_OMISSION;
+
+      if (isObject(options)) {
+        var separator = 'separator' in options ? options.separator : separator;
+        length = 'length' in options ? toInteger(options.length) : length;
+        omission = 'omission' in options ? baseToString(options.omission) : omission;
+      }
+      string = toString(string);
+
+      var strLength = string.length;
+      if (hasUnicode(string)) {
+        var strSymbols = stringToArray(string);
+        strLength = strSymbols.length;
+      }
+      if (length >= strLength) {
+        return string;
+      }
+      var end = length - stringSize(omission);
+      if (end < 1) {
+        return omission;
+      }
+      var result = strSymbols
+        ? castSlice(strSymbols, 0, end).join('')
+        : string.slice(0, end);
+
+      if (separator === undefined) {
+        return result + omission;
+      }
+      if (strSymbols) {
+        end += (result.length - end);
+      }
+      if (isRegExp(separator)) {
+        if (string.slice(end).search(separator)) {
+          var match,
+              substring = result;
+
+          if (!separator.global) {
+            separator = RegExp(separator.source, toString(reFlags.exec(separator)) + 'g');
+          }
+          separator.lastIndex = 0;
+          while ((match = separator.exec(substring))) {
+            var newEnd = match.index;
+          }
+          result = result.slice(0, newEnd === undefined ? end : newEnd);
+        }
+      } else if (string.indexOf(baseToString(separator), end) != end) {
+        var index = result.lastIndexOf(separator);
+        if (index > -1) {
+          result = result.slice(0, index);
+        }
+      }
+      return result + omission;
+    }
+
+    /**
+     * The inverse of `_.escape`; this method converts the HTML entities
+     * `&amp;`, `&lt;`, `&gt;`, `&quot;`, and `&#39;` in `string` to
+     * their corresponding characters.
+     *
+     * **Note:** No other HTML entities are unescaped. To unescape additional
+     * HTML entities use a third-party library like [_he_](https://mths.be/he).
+     *
+     * @static
+     * @memberOf _
+     * @since 0.6.0
+     * @category String
+     * @param {string} [string=''] The string to unescape.
+     * @returns {string} Returns the unescaped string.
+     * @example
+     *
+     * _.unescape('fred, barney, &amp; pebbles');
+     * // => 'fred, barney, & pebbles'
+     */
+    function unescape(string) {
+      string = toString(string);
+      return (string && reHasEscapedHtml.test(string))
+        ? string.replace(reEscapedHtml, unescapeHtmlChar)
+        : string;
+    }
+
+    /**
+     * Converts `string`, as space separated words, to upper case.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category String
+     * @param {string} [string=''] The string to convert.
+     * @returns {string} Returns the upper cased string.
+     * @example
+     *
+     * _.upperCase('--foo-bar');
+     * // => 'FOO BAR'
+     *
+     * _.upperCase('fooBar');
+     * // => 'FOO BAR'
+     *
+     * _.upperCase('__foo_bar__');
+     * // => 'FOO BAR'
+     */
+    var upperCase = createCompounder(function(result, word, index) {
+      return result + (index ? ' ' : '') + word.toUpperCase();
+    });
+
+    /**
+     * Converts the first character of `string` to upper case.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category String
+     * @param {string} [string=''] The string to convert.
+     * @returns {string} Returns the converted string.
+     * @example
+     *
+     * _.upperFirst('fred');
+     * // => 'Fred'
+     *
+     * _.upperFirst('FRED');
+     * // => 'FRED'
+     */
+    var upperFirst = createCaseFirst('toUpperCase');
+
+    /**
+     * Splits `string` into an array of its words.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category String
+     * @param {string} [string=''] The string to inspect.
+     * @param {RegExp|string} [pattern] The pattern to match words.
+     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+     * @returns {Array} Returns the words of `string`.
+     * @example
+     *
+     * _.words('fred, barney, & pebbles');
+     * // => ['fred', 'barney', 'pebbles']
+     *
+     * _.words('fred, barney, & pebbles', /[^, ]+/g);
+     * // => ['fred', 'barney', '&', 'pebbles']
+     */
+    function words(string, pattern, guard) {
+      string = toString(string);
+      pattern = guard ? undefined : pattern;
+
+      if (pattern === undefined) {
+        return hasUnicodeWord(string) ? unicodeWords(string) : asciiWords(string);
+      }
+      return string.match(pattern) || [];
+    }
+
+    /*------------------------------------------------------------------------*/
+
+    /**
+     * Attempts to invoke `func`, returning either the result or the caught error
+     * object. Any additional arguments are provided to `func` when it's invoked.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Util
+     * @param {Function} func The function to attempt.
+     * @param {...*} [args] The arguments to invoke `func` with.
+     * @returns {*} Returns the `func` result or error object.
+     * @example
+     *
+     * // Avoid throwing errors for invalid selectors.
+     * var elements = _.attempt(function(selector) {
+     *   return document.querySelectorAll(selector);
+     * }, '>_>');
+     *
+     * if (_.isError(elements)) {
+     *   elements = [];
+     * }
+     */
+    var attempt = baseRest(function(func, args) {
+      try {
+        return apply(func, undefined, args);
+      } catch (e) {
+        return isError(e) ? e : new Error(e);
+      }
+    });
+
+    /**
+     * Binds methods of an object to the object itself, overwriting the existing
+     * method.
+     *
+     * **Note:** This method doesn't set the "length" property of bound functions.
+     *
+     * @static
+     * @since 0.1.0
+     * @memberOf _
+     * @category Util
+     * @param {Object} object The object to bind and assign the bound methods to.
+     * @param {...(string|string[])} methodNames The object method names to bind.
+     * @returns {Object} Returns `object`.
+     * @example
+     *
+     * var view = {
+     *   'label': 'docs',
+     *   'click': function() {
+     *     console.log('clicked ' + this.label);
+     *   }
+     * };
+     *
+     * _.bindAll(view, ['click']);
+     * jQuery(element).on('click', view.click);
+     * // => Logs 'clicked docs' when clicked.
+     */
+    var bindAll = flatRest(function(object, methodNames) {
+      arrayEach(methodNames, function(key) {
+        key = toKey(key);
+        baseAssignValue(object, key, bind(object[key], object));
+      });
+      return object;
+    });
+
+    /**
+     * Creates a function that iterates over `pairs` and invokes the corresponding
+     * function of the first predicate to return truthy. The predicate-function
+     * pairs are invoked with the `this` binding and arguments of the created
+     * function.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Util
+     * @param {Array} pairs The predicate-function pairs.
+     * @returns {Function} Returns the new composite function.
+     * @example
+     *
+     * var func = _.cond([
+     *   [_.matches({ 'a': 1 }),           _.constant('matches A')],
+     *   [_.conforms({ 'b': _.isNumber }), _.constant('matches B')],
+     *   [_.stubTrue,                      _.constant('no match')]
+     * ]);
+     *
+     * func({ 'a': 1, 'b': 2 });
+     * // => 'matches A'
+     *
+     * func({ 'a': 0, 'b': 1 });
+     * // => 'matches B'
+     *
+     * func({ 'a': '1', 'b': '2' });
+     * // => 'no match'
+     */
+    function cond(pairs) {
+      var length = pairs == null ? 0 : pairs.length,
+          toIteratee = getIteratee();
+
+      pairs = !length ? [] : arrayMap(pairs, function(pair) {
+        if (typeof pair[1] != 'function') {
+          throw new TypeError(FUNC_ERROR_TEXT);
+        }
+        return [toIteratee(pair[0]), pair[1]];
+      });
+
+      return baseRest(function(args) {
+        var index = -1;
+        while (++index < length) {
+          var pair = pairs[index];
+          if (apply(pair[0], this, args)) {
+            return apply(pair[1], this, args);
+          }
+        }
+      });
+    }
+
+    /**
+     * Creates a function that invokes the predicate properties of `source` with
+     * the corresponding property values of a given object, returning `true` if
+     * all predicates return truthy, else `false`.
+     *
+     * **Note:** The created function is equivalent to `_.conformsTo` with
+     * `source` partially applied.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Util
+     * @param {Object} source The object of property predicates to conform to.
+     * @returns {Function} Returns the new spec function.
+     * @example
+     *
+     * var objects = [
+     *   { 'a': 2, 'b': 1 },
+     *   { 'a': 1, 'b': 2 }
+     * ];
+     *
+     * _.filter(objects, _.conforms({ 'b': function(n) { return n > 1; } }));
+     * // => [{ 'a': 1, 'b': 2 }]
+     */
+    function conforms(source) {
+      return baseConforms(baseClone(source, CLONE_DEEP_FLAG));
+    }
+
+    /**
+     * Creates a function that returns `value`.
+     *
+     * @static
+     * @memberOf _
+     * @since 2.4.0
+     * @category Util
+     * @param {*} value The value to return from the new function.
+     * @returns {Function} Returns the new constant function.
+     * @example
+     *
+     * var objects = _.times(2, _.constant({ 'a': 1 }));
+     *
+     * console.log(objects);
+     * // => [{ 'a': 1 }, { 'a': 1 }]
+     *
+     * console.log(objects[0] === objects[1]);
+     * // => true
+     */
+    function constant(value) {
+      return function() {
+        return value;
+      };
+    }
+
+    /**
+     * Checks `value` to determine whether a default value should be returned in
+     * its place. The `defaultValue` is returned if `value` is `NaN`, `null`,
+     * or `undefined`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.14.0
+     * @category Util
+     * @param {*} value The value to check.
+     * @param {*} defaultValue The default value.
+     * @returns {*} Returns the resolved value.
+     * @example
+     *
+     * _.defaultTo(1, 10);
+     * // => 1
+     *
+     * _.defaultTo(undefined, 10);
+     * // => 10
+     */
+    function defaultTo(value, defaultValue) {
+      return (value == null || value !== value) ? defaultValue : value;
+    }
+
+    /**
+     * Creates a function that returns the result of invoking the given functions
+     * with the `this` binding of the created function, where each successive
+     * invocation is supplied the return value of the previous.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Util
+     * @param {...(Function|Function[])} [funcs] The functions to invoke.
+     * @returns {Function} Returns the new composite function.
+     * @see _.flowRight
+     * @example
+     *
+     * function square(n) {
+     *   return n * n;
+     * }
+     *
+     * var addSquare = _.flow([_.add, square]);
+     * addSquare(1, 2);
+     * // => 9
+     */
+    var flow = createFlow();
+
+    /**
+     * This method is like `_.flow` except that it creates a function that
+     * invokes the given functions from right to left.
+     *
+     * @static
+     * @since 3.0.0
+     * @memberOf _
+     * @category Util
+     * @param {...(Function|Function[])} [funcs] The functions to invoke.
+     * @returns {Function} Returns the new composite function.
+     * @see _.flow
+     * @example
+     *
+     * function square(n) {
+     *   return n * n;
+     * }
+     *
+     * var addSquare = _.flowRight([square, _.add]);
+     * addSquare(1, 2);
+     * // => 9
+     */
+    var flowRight = createFlow(true);
+
+    /**
+     * This method returns the first argument it receives.
+     *
+     * @static
+     * @since 0.1.0
+     * @memberOf _
+     * @category Util
+     * @param {*} value Any value.
+     * @returns {*} Returns `value`.
+     * @example
+     *
+     * var object = { 'a': 1 };
+     *
+     * console.log(_.identity(object) === object);
+     * // => true
+     */
+    function identity(value) {
+      return value;
+    }
+
+    /**
+     * Creates a function that invokes `func` with the arguments of the created
+     * function. If `func` is a property name, the created function returns the
+     * property value for a given element. If `func` is an array or object, the
+     * created function returns `true` for elements that contain the equivalent
+     * source properties, otherwise it returns `false`.
+     *
+     * @static
+     * @since 4.0.0
+     * @memberOf _
+     * @category Util
+     * @param {*} [func=_.identity] The value to convert to a callback.
+     * @returns {Function} Returns the callback.
+     * @example
+     *
+     * var users = [
+     *   { 'user': 'barney', 'age': 36, 'active': true },
+     *   { 'user': 'fred',   'age': 40, 'active': false }
+     * ];
+     *
+     * // The `_.matches` iteratee shorthand.
+     * _.filter(users, _.iteratee({ 'user': 'barney', 'active': true }));
+     * // => [{ 'user': 'barney', 'age': 36, 'active': true }]
+     *
+     * // The `_.matchesProperty` iteratee shorthand.
+     * _.filter(users, _.iteratee(['user', 'fred']));
+     * // => [{ 'user': 'fred', 'age': 40 }]
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.map(users, _.iteratee('user'));
+     * // => ['barney', 'fred']
+     *
+     * // Create custom iteratee shorthands.
+     * _.iteratee = _.wrap(_.iteratee, function(iteratee, func) {
+     *   return !_.isRegExp(func) ? iteratee(func) : function(string) {
+     *     return func.test(string);
+     *   };
+     * });
+     *
+     * _.filter(['abc', 'def'], /ef/);
+     * // => ['def']
+     */
+    function iteratee(func) {
+      return baseIteratee(typeof func == 'function' ? func : baseClone(func, CLONE_DEEP_FLAG));
+    }
+
+    /**
+     * Creates a function that performs a partial deep comparison between a given
+     * object and `source`, returning `true` if the given object has equivalent
+     * property values, else `false`.
+     *
+     * **Note:** The created function is equivalent to `_.isMatch` with `source`
+     * partially applied.
+     *
+     * Partial comparisons will match empty array and empty object `source`
+     * values against any array or object value, respectively. See `_.isEqual`
+     * for a list of supported value comparisons.
+     *
+     * **Note:** Multiple values can be checked by combining several matchers
+     * using `_.overSome`
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Util
+     * @param {Object} source The object of property values to match.
+     * @returns {Function} Returns the new spec function.
+     * @example
+     *
+     * var objects = [
+     *   { 'a': 1, 'b': 2, 'c': 3 },
+     *   { 'a': 4, 'b': 5, 'c': 6 }
+     * ];
+     *
+     * _.filter(objects, _.matches({ 'a': 4, 'c': 6 }));
+     * // => [{ 'a': 4, 'b': 5, 'c': 6 }]
+     *
+     * // Checking for several possible values
+     * _.filter(objects, _.overSome([_.matches({ 'a': 1 }), _.matches({ 'a': 4 })]));
+     * // => [{ 'a': 1, 'b': 2, 'c': 3 }, { 'a': 4, 'b': 5, 'c': 6 }]
+     */
+    function matches(source) {
+      return baseMatches(baseClone(source, CLONE_DEEP_FLAG));
+    }
+
+    /**
+     * Creates a function that performs a partial deep comparison between the
+     * value at `path` of a given object to `srcValue`, returning `true` if the
+     * object value is equivalent, else `false`.
+     *
+     * **Note:** Partial comparisons will match empty array and empty object
+     * `srcValue` values against any array or object value, respectively. See
+     * `_.isEqual` for a list of supported value comparisons.
+     *
+     * **Note:** Multiple values can be checked by combining several matchers
+     * using `_.overSome`
+     *
+     * @static
+     * @memberOf _
+     * @since 3.2.0
+     * @category Util
+     * @param {Array|string} path The path of the property to get.
+     * @param {*} srcValue The value to match.
+     * @returns {Function} Returns the new spec function.
+     * @example
+     *
+     * var objects = [
+     *   { 'a': 1, 'b': 2, 'c': 3 },
+     *   { 'a': 4, 'b': 5, 'c': 6 }
+     * ];
+     *
+     * _.find(objects, _.matchesProperty('a', 4));
+     * // => { 'a': 4, 'b': 5, 'c': 6 }
+     *
+     * // Checking for several possible values
+     * _.filter(objects, _.overSome([_.matchesProperty('a', 1), _.matchesProperty('a', 4)]));
+     * // => [{ 'a': 1, 'b': 2, 'c': 3 }, { 'a': 4, 'b': 5, 'c': 6 }]
+     */
+    function matchesProperty(path, srcValue) {
+      return baseMatchesProperty(path, baseClone(srcValue, CLONE_DEEP_FLAG));
+    }
+
+    /**
+     * Creates a function that invokes the method at `path` of a given object.
+     * Any additional arguments are provided to the invoked method.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.7.0
+     * @category Util
+     * @param {Array|string} path The path of the method to invoke.
+     * @param {...*} [args] The arguments to invoke the method with.
+     * @returns {Function} Returns the new invoker function.
+     * @example
+     *
+     * var objects = [
+     *   { 'a': { 'b': _.constant(2) } },
+     *   { 'a': { 'b': _.constant(1) } }
+     * ];
+     *
+     * _.map(objects, _.method('a.b'));
+     * // => [2, 1]
+     *
+     * _.map(objects, _.method(['a', 'b']));
+     * // => [2, 1]
+     */
+    var method = baseRest(function(path, args) {
+      return function(object) {
+        return baseInvoke(object, path, args);
+      };
+    });
+
+    /**
+     * The opposite of `_.method`; this method creates a function that invokes
+     * the method at a given path of `object`. Any additional arguments are
+     * provided to the invoked method.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.7.0
+     * @category Util
+     * @param {Object} object The object to query.
+     * @param {...*} [args] The arguments to invoke the method with.
+     * @returns {Function} Returns the new invoker function.
+     * @example
+     *
+     * var array = _.times(3, _.constant),
+     *     object = { 'a': array, 'b': array, 'c': array };
+     *
+     * _.map(['a[2]', 'c[0]'], _.methodOf(object));
+     * // => [2, 0]
+     *
+     * _.map([['a', '2'], ['c', '0']], _.methodOf(object));
+     * // => [2, 0]
+     */
+    var methodOf = baseRest(function(object, args) {
+      return function(path) {
+        return baseInvoke(object, path, args);
+      };
+    });
+
+    /**
+     * Adds all own enumerable string keyed function properties of a source
+     * object to the destination object. If `object` is a function, then methods
+     * are added to its prototype as well.
+     *
+     * **Note:** Use `_.runInContext` to create a pristine `lodash` function to
+     * avoid conflicts caused by modifying the original.
+     *
+     * @static
+     * @since 0.1.0
+     * @memberOf _
+     * @category Util
+     * @param {Function|Object} [object=lodash] The destination object.
+     * @param {Object} source The object of functions to add.
+     * @param {Object} [options={}] The options object.
+     * @param {boolean} [options.chain=true] Specify whether mixins are chainable.
+     * @returns {Function|Object} Returns `object`.
+     * @example
+     *
+     * function vowels(string) {
+     *   return _.filter(string, function(v) {
+     *     return /[aeiou]/i.test(v);
+     *   });
+     * }
+     *
+     * _.mixin({ 'vowels': vowels });
+     * _.vowels('fred');
+     * // => ['e']
+     *
+     * _('fred').vowels().value();
+     * // => ['e']
+     *
+     * _.mixin({ 'vowels': vowels }, { 'chain': false });
+     * _('fred').vowels();
+     * // => ['e']
+     */
+    function mixin(object, source, options) {
+      var props = keys(source),
+          methodNames = baseFunctions(source, props);
+
+      if (options == null &&
+          !(isObject(source) && (methodNames.length || !props.length))) {
+        options = source;
+        source = object;
+        object = this;
+        methodNames = baseFunctions(source, keys(source));
+      }
+      var chain = !(isObject(options) && 'chain' in options) || !!options.chain,
+          isFunc = isFunction(object);
+
+      arrayEach(methodNames, function(methodName) {
+        var func = source[methodName];
+        object[methodName] = func;
+        if (isFunc) {
+          object.prototype[methodName] = function() {
+            var chainAll = this.__chain__;
+            if (chain || chainAll) {
+              var result = object(this.__wrapped__),
+                  actions = result.__actions__ = copyArray(this.__actions__);
+
+              actions.push({ 'func': func, 'args': arguments, 'thisArg': object });
+              result.__chain__ = chainAll;
+              return result;
+            }
+            return func.apply(object, arrayPush([this.value()], arguments));
+          };
+        }
+      });
+
+      return object;
+    }
+
+    /**
+     * Reverts the `_` variable to its previous value and returns a reference to
+     * the `lodash` function.
+     *
+     * @static
+     * @since 0.1.0
+     * @memberOf _
+     * @category Util
+     * @returns {Function} Returns the `lodash` function.
+     * @example
+     *
+     * var lodash = _.noConflict();
+     */
+    function noConflict() {
+      if (root._ === this) {
+        root._ = oldDash;
+      }
+      return this;
+    }
+
+    /**
+     * This method returns `undefined`.
+     *
+     * @static
+     * @memberOf _
+     * @since 2.3.0
+     * @category Util
+     * @example
+     *
+     * _.times(2, _.noop);
+     * // => [undefined, undefined]
+     */
+    function noop() {
+      // No operation performed.
+    }
+
+    /**
+     * Creates a function that gets the argument at index `n`. If `n` is negative,
+     * the nth argument from the end is returned.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Util
+     * @param {number} [n=0] The index of the argument to return.
+     * @returns {Function} Returns the new pass-thru function.
+     * @example
+     *
+     * var func = _.nthArg(1);
+     * func('a', 'b', 'c', 'd');
+     * // => 'b'
+     *
+     * var func = _.nthArg(-2);
+     * func('a', 'b', 'c', 'd');
+     * // => 'c'
+     */
+    function nthArg(n) {
+      n = toInteger(n);
+      return baseRest(function(args) {
+        return baseNth(args, n);
+      });
+    }
+
+    /**
+     * Creates a function that invokes `iteratees` with the arguments it receives
+     * and returns their results.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Util
+     * @param {...(Function|Function[])} [iteratees=[_.identity]]
+     *  The iteratees to invoke.
+     * @returns {Function} Returns the new function.
+     * @example
+     *
+     * var func = _.over([Math.max, Math.min]);
+     *
+     * func(1, 2, 3, 4);
+     * // => [4, 1]
+     */
+    var over = createOver(arrayMap);
+
+    /**
+     * Creates a function that checks if **all** of the `predicates` return
+     * truthy when invoked with the arguments it receives.
+     *
+     * Following shorthands are possible for providing predicates.
+     * Pass an `Object` and it will be used as an parameter for `_.matches` to create the predicate.
+     * Pass an `Array` of parameters for `_.matchesProperty` and the predicate will be created using them.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Util
+     * @param {...(Function|Function[])} [predicates=[_.identity]]
+     *  The predicates to check.
+     * @returns {Function} Returns the new function.
+     * @example
+     *
+     * var func = _.overEvery([Boolean, isFinite]);
+     *
+     * func('1');
+     * // => true
+     *
+     * func(null);
+     * // => false
+     *
+     * func(NaN);
+     * // => false
+     */
+    var overEvery = createOver(arrayEvery);
+
+    /**
+     * Creates a function that checks if **any** of the `predicates` return
+     * truthy when invoked with the arguments it receives.
+     *
+     * Following shorthands are possible for providing predicates.
+     * Pass an `Object` and it will be used as an parameter for `_.matches` to create the predicate.
+     * Pass an `Array` of parameters for `_.matchesProperty` and the predicate will be created using them.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Util
+     * @param {...(Function|Function[])} [predicates=[_.identity]]
+     *  The predicates to check.
+     * @returns {Function} Returns the new function.
+     * @example
+     *
+     * var func = _.overSome([Boolean, isFinite]);
+     *
+     * func('1');
+     * // => true
+     *
+     * func(null);
+     * // => true
+     *
+     * func(NaN);
+     * // => false
+     *
+     * var matchesFunc = _.overSome([{ 'a': 1 }, { 'a': 2 }])
+     * var matchesPropertyFunc = _.overSome([['a', 1], ['a', 2]])
+     */
+    var overSome = createOver(arraySome);
+
+    /**
+     * Creates a function that returns the value at `path` of a given object.
+     *
+     * @static
+     * @memberOf _
+     * @since 2.4.0
+     * @category Util
+     * @param {Array|string} path The path of the property to get.
+     * @returns {Function} Returns the new accessor function.
+     * @example
+     *
+     * var objects = [
+     *   { 'a': { 'b': 2 } },
+     *   { 'a': { 'b': 1 } }
+     * ];
+     *
+     * _.map(objects, _.property('a.b'));
+     * // => [2, 1]
+     *
+     * _.map(_.sortBy(objects, _.property(['a', 'b'])), 'a.b');
+     * // => [1, 2]
+     */
+    function property(path) {
+      return isKey(path) ? baseProperty(toKey(path)) : basePropertyDeep(path);
+    }
+
+    /**
+     * The opposite of `_.property`; this method creates a function that returns
+     * the value at a given path of `object`.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.0.0
+     * @category Util
+     * @param {Object} object The object to query.
+     * @returns {Function} Returns the new accessor function.
+     * @example
+     *
+     * var array = [0, 1, 2],
+     *     object = { 'a': array, 'b': array, 'c': array };
+     *
+     * _.map(['a[2]', 'c[0]'], _.propertyOf(object));
+     * // => [2, 0]
+     *
+     * _.map([['a', '2'], ['c', '0']], _.propertyOf(object));
+     * // => [2, 0]
+     */
+    function propertyOf(object) {
+      return function(path) {
+        return object == null ? undefined : baseGet(object, path);
+      };
+    }
+
+    /**
+     * Creates an array of numbers (positive and/or negative) progressing from
+     * `start` up to, but not including, `end`. A step of `-1` is used if a negative
+     * `start` is specified without an `end` or `step`. If `end` is not specified,
+     * it's set to `start` with `start` then set to `0`.
+     *
+     * **Note:** JavaScript follows the IEEE-754 standard for resolving
+     * floating-point values which can produce unexpected results.
+     *
+     * @static
+     * @since 0.1.0
+     * @memberOf _
+     * @category Util
+     * @param {number} [start=0] The start of the range.
+     * @param {number} end The end of the range.
+     * @param {number} [step=1] The value to increment or decrement by.
+     * @returns {Array} Returns the range of numbers.
+     * @see _.inRange, _.rangeRight
+     * @example
+     *
+     * _.range(4);
+     * // => [0, 1, 2, 3]
+     *
+     * _.range(-4);
+     * // => [0, -1, -2, -3]
+     *
+     * _.range(1, 5);
+     * // => [1, 2, 3, 4]
+     *
+     * _.range(0, 20, 5);
+     * // => [0, 5, 10, 15]
+     *
+     * _.range(0, -4, -1);
+     * // => [0, -1, -2, -3]
+     *
+     * _.range(1, 4, 0);
+     * // => [1, 1, 1]
+     *
+     * _.range(0);
+     * // => []
+     */
+    var range = createRange();
+
+    /**
+     * This method is like `_.range` except that it populates values in
+     * descending order.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Util
+     * @param {number} [start=0] The start of the range.
+     * @param {number} end The end of the range.
+     * @param {number} [step=1] The value to increment or decrement by.
+     * @returns {Array} Returns the range of numbers.
+     * @see _.inRange, _.range
+     * @example
+     *
+     * _.rangeRight(4);
+     * // => [3, 2, 1, 0]
+     *
+     * _.rangeRight(-4);
+     * // => [-3, -2, -1, 0]
+     *
+     * _.rangeRight(1, 5);
+     * // => [4, 3, 2, 1]
+     *
+     * _.rangeRight(0, 20, 5);
+     * // => [15, 10, 5, 0]
+     *
+     * _.rangeRight(0, -4, -1);
+     * // => [-3, -2, -1, 0]
+     *
+     * _.rangeRight(1, 4, 0);
+     * // => [1, 1, 1]
+     *
+     * _.rangeRight(0);
+     * // => []
+     */
+    var rangeRight = createRange(true);
+
+    /**
+     * This method returns a new empty array.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.13.0
+     * @category Util
+     * @returns {Array} Returns the new empty array.
+     * @example
+     *
+     * var arrays = _.times(2, _.stubArray);
+     *
+     * console.log(arrays);
+     * // => [[], []]
+     *
+     * console.log(arrays[0] === arrays[1]);
+     * // => false
+     */
+    function stubArray() {
+      return [];
+    }
+
+    /**
+     * This method returns `false`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.13.0
+     * @category Util
+     * @returns {boolean} Returns `false`.
+     * @example
+     *
+     * _.times(2, _.stubFalse);
+     * // => [false, false]
+     */
+    function stubFalse() {
+      return false;
+    }
+
+    /**
+     * This method returns a new empty object.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.13.0
+     * @category Util
+     * @returns {Object} Returns the new empty object.
+     * @example
+     *
+     * var objects = _.times(2, _.stubObject);
+     *
+     * console.log(objects);
+     * // => [{}, {}]
+     *
+     * console.log(objects[0] === objects[1]);
+     * // => false
+     */
+    function stubObject() {
+      return {};
+    }
+
+    /**
+     * This method returns an empty string.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.13.0
+     * @category Util
+     * @returns {string} Returns the empty string.
+     * @example
+     *
+     * _.times(2, _.stubString);
+     * // => ['', '']
+     */
+    function stubString() {
+      return '';
+    }
+
+    /**
+     * This method returns `true`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.13.0
+     * @category Util
+     * @returns {boolean} Returns `true`.
+     * @example
+     *
+     * _.times(2, _.stubTrue);
+     * // => [true, true]
+     */
+    function stubTrue() {
+      return true;
+    }
+
+    /**
+     * Invokes the iteratee `n` times, returning an array of the results of
+     * each invocation. The iteratee is invoked with one argument; (index).
+     *
+     * @static
+     * @since 0.1.0
+     * @memberOf _
+     * @category Util
+     * @param {number} n The number of times to invoke `iteratee`.
+     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+     * @returns {Array} Returns the array of results.
+     * @example
+     *
+     * _.times(3, String);
+     * // => ['0', '1', '2']
+     *
+     *  _.times(4, _.constant(0));
+     * // => [0, 0, 0, 0]
+     */
+    function times(n, iteratee) {
+      n = toInteger(n);
+      if (n < 1 || n > MAX_SAFE_INTEGER) {
+        return [];
+      }
+      var index = MAX_ARRAY_LENGTH,
+          length = nativeMin(n, MAX_ARRAY_LENGTH);
+
+      iteratee = getIteratee(iteratee);
+      n -= MAX_ARRAY_LENGTH;
+
+      var result = baseTimes(length, iteratee);
+      while (++index < n) {
+        iteratee(index);
+      }
+      return result;
+    }
+
+    /**
+     * Converts `value` to a property path array.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Util
+     * @param {*} value The value to convert.
+     * @returns {Array} Returns the new property path array.
+     * @example
+     *
+     * _.toPath('a.b.c');
+     * // => ['a', 'b', 'c']
+     *
+     * _.toPath('a[0].b.c');
+     * // => ['a', '0', 'b', 'c']
+     */
+    function toPath(value) {
+      if (isArray(value)) {
+        return arrayMap(value, toKey);
+      }
+      return isSymbol(value) ? [value] : copyArray(stringToPath(toString(value)));
+    }
+
+    /**
+     * Generates a unique ID. If `prefix` is given, the ID is appended to it.
+     *
+     * @static
+     * @since 0.1.0
+     * @memberOf _
+     * @category Util
+     * @param {string} [prefix=''] The value to prefix the ID with.
+     * @returns {string} Returns the unique ID.
+     * @example
+     *
+     * _.uniqueId('contact_');
+     * // => 'contact_104'
+     *
+     * _.uniqueId();
+     * // => '105'
+     */
+    function uniqueId(prefix) {
+      var id = ++idCounter;
+      return toString(prefix) + id;
+    }
+
+    /*------------------------------------------------------------------------*/
+
+    /**
+     * Adds two numbers.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.4.0
+     * @category Math
+     * @param {number} augend The first number in an addition.
+     * @param {number} addend The second number in an addition.
+     * @returns {number} Returns the total.
+     * @example
+     *
+     * _.add(6, 4);
+     * // => 10
+     */
+    var add = createMathOperation(function(augend, addend) {
+      return augend + addend;
+    }, 0);
+
+    /**
+     * Computes `number` rounded up to `precision`.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.10.0
+     * @category Math
+     * @param {number} number The number to round up.
+     * @param {number} [precision=0] The precision to round up to.
+     * @returns {number} Returns the rounded up number.
+     * @example
+     *
+     * _.ceil(4.006);
+     * // => 5
+     *
+     * _.ceil(6.004, 2);
+     * // => 6.01
+     *
+     * _.ceil(6040, -2);
+     * // => 6100
+     */
+    var ceil = createRound('ceil');
+
+    /**
+     * Divide two numbers.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.7.0
+     * @category Math
+     * @param {number} dividend The first number in a division.
+     * @param {number} divisor The second number in a division.
+     * @returns {number} Returns the quotient.
+     * @example
+     *
+     * _.divide(6, 4);
+     * // => 1.5
+     */
+    var divide = createMathOperation(function(dividend, divisor) {
+      return dividend / divisor;
+    }, 1);
+
+    /**
+     * Computes `number` rounded down to `precision`.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.10.0
+     * @category Math
+     * @param {number} number The number to round down.
+     * @param {number} [precision=0] The precision to round down to.
+     * @returns {number} Returns the rounded down number.
+     * @example
+     *
+     * _.floor(4.006);
+     * // => 4
+     *
+     * _.floor(0.046, 2);
+     * // => 0.04
+     *
+     * _.floor(4060, -2);
+     * // => 4000
+     */
+    var floor = createRound('floor');
+
+    /**
+     * Computes the maximum value of `array`. If `array` is empty or falsey,
+     * `undefined` is returned.
+     *
+     * @static
+     * @since 0.1.0
+     * @memberOf _
+     * @category Math
+     * @param {Array} array The array to iterate over.
+     * @returns {*} Returns the maximum value.
+     * @example
+     *
+     * _.max([4, 2, 8, 6]);
+     * // => 8
+     *
+     * _.max([]);
+     * // => undefined
+     */
+    function max(array) {
+      return (array && array.length)
+        ? baseExtremum(array, identity, baseGt)
+        : undefined;
+    }
+
+    /**
+     * This method is like `_.max` except that it accepts `iteratee` which is
+     * invoked for each element in `array` to generate the criterion by which
+     * the value is ranked. The iteratee is invoked with one argument: (value).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Math
+     * @param {Array} array The array to iterate over.
+     * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
+     * @returns {*} Returns the maximum value.
+     * @example
+     *
+     * var objects = [{ 'n': 1 }, { 'n': 2 }];
+     *
+     * _.maxBy(objects, function(o) { return o.n; });
+     * // => { 'n': 2 }
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.maxBy(objects, 'n');
+     * // => { 'n': 2 }
+     */
+    function maxBy(array, iteratee) {
+      return (array && array.length)
+        ? baseExtremum(array, getIteratee(iteratee, 2), baseGt)
+        : undefined;
+    }
+
+    /**
+     * Computes the mean of the values in `array`.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Math
+     * @param {Array} array The array to iterate over.
+     * @returns {number} Returns the mean.
+     * @example
+     *
+     * _.mean([4, 2, 8, 6]);
+     * // => 5
+     */
+    function mean(array) {
+      return baseMean(array, identity);
+    }
+
+    /**
+     * This method is like `_.mean` except that it accepts `iteratee` which is
+     * invoked for each element in `array` to generate the value to be averaged.
+     * The iteratee is invoked with one argument: (value).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.7.0
+     * @category Math
+     * @param {Array} array The array to iterate over.
+     * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
+     * @returns {number} Returns the mean.
+     * @example
+     *
+     * var objects = [{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }];
+     *
+     * _.meanBy(objects, function(o) { return o.n; });
+     * // => 5
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.meanBy(objects, 'n');
+     * // => 5
+     */
+    function meanBy(array, iteratee) {
+      return baseMean(array, getIteratee(iteratee, 2));
+    }
+
+    /**
+     * Computes the minimum value of `array`. If `array` is empty or falsey,
+     * `undefined` is returned.
+     *
+     * @static
+     * @since 0.1.0
+     * @memberOf _
+     * @category Math
+     * @param {Array} array The array to iterate over.
+     * @returns {*} Returns the minimum value.
+     * @example
+     *
+     * _.min([4, 2, 8, 6]);
+     * // => 2
+     *
+     * _.min([]);
+     * // => undefined
+     */
+    function min(array) {
+      return (array && array.length)
+        ? baseExtremum(array, identity, baseLt)
+        : undefined;
+    }
+
+    /**
+     * This method is like `_.min` except that it accepts `iteratee` which is
+     * invoked for each element in `array` to generate the criterion by which
+     * the value is ranked. The iteratee is invoked with one argument: (value).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Math
+     * @param {Array} array The array to iterate over.
+     * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
+     * @returns {*} Returns the minimum value.
+     * @example
+     *
+     * var objects = [{ 'n': 1 }, { 'n': 2 }];
+     *
+     * _.minBy(objects, function(o) { return o.n; });
+     * // => { 'n': 1 }
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.minBy(objects, 'n');
+     * // => { 'n': 1 }
+     */
+    function minBy(array, iteratee) {
+      return (array && array.length)
+        ? baseExtremum(array, getIteratee(iteratee, 2), baseLt)
+        : undefined;
+    }
+
+    /**
+     * Multiply two numbers.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.7.0
+     * @category Math
+     * @param {number} multiplier The first number in a multiplication.
+     * @param {number} multiplicand The second number in a multiplication.
+     * @returns {number} Returns the product.
+     * @example
+     *
+     * _.multiply(6, 4);
+     * // => 24
+     */
+    var multiply = createMathOperation(function(multiplier, multiplicand) {
+      return multiplier * multiplicand;
+    }, 1);
+
+    /**
+     * Computes `number` rounded to `precision`.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.10.0
+     * @category Math
+     * @param {number} number The number to round.
+     * @param {number} [precision=0] The precision to round to.
+     * @returns {number} Returns the rounded number.
+     * @example
+     *
+     * _.round(4.006);
+     * // => 4
+     *
+     * _.round(4.006, 2);
+     * // => 4.01
+     *
+     * _.round(4060, -2);
+     * // => 4100
+     */
+    var round = createRound('round');
+
+    /**
+     * Subtract two numbers.
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Math
+     * @param {number} minuend The first number in a subtraction.
+     * @param {number} subtrahend The second number in a subtraction.
+     * @returns {number} Returns the difference.
+     * @example
+     *
+     * _.subtract(6, 4);
+     * // => 2
+     */
+    var subtract = createMathOperation(function(minuend, subtrahend) {
+      return minuend - subtrahend;
+    }, 0);
+
+    /**
+     * Computes the sum of the values in `array`.
+     *
+     * @static
+     * @memberOf _
+     * @since 3.4.0
+     * @category Math
+     * @param {Array} array The array to iterate over.
+     * @returns {number} Returns the sum.
+     * @example
+     *
+     * _.sum([4, 2, 8, 6]);
+     * // => 20
+     */
+    function sum(array) {
+      return (array && array.length)
+        ? baseSum(array, identity)
+        : 0;
+    }
+
+    /**
+     * This method is like `_.sum` except that it accepts `iteratee` which is
+     * invoked for each element in `array` to generate the value to be summed.
+     * The iteratee is invoked with one argument: (value).
+     *
+     * @static
+     * @memberOf _
+     * @since 4.0.0
+     * @category Math
+     * @param {Array} array The array to iterate over.
+     * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
+     * @returns {number} Returns the sum.
+     * @example
+     *
+     * var objects = [{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }];
+     *
+     * _.sumBy(objects, function(o) { return o.n; });
+     * // => 20
+     *
+     * // The `_.property` iteratee shorthand.
+     * _.sumBy(objects, 'n');
+     * // => 20
+     */
+    function sumBy(array, iteratee) {
+      return (array && array.length)
+        ? baseSum(array, getIteratee(iteratee, 2))
+        : 0;
+    }
+
+    /*------------------------------------------------------------------------*/
+
+    // Add methods that return wrapped values in chain sequences.
+    lodash.after = after;
+    lodash.ary = ary;
+    lodash.assign = assign;
+    lodash.assignIn = assignIn;
+    lodash.assignInWith = assignInWith;
+    lodash.assignWith = assignWith;
+    lodash.at = at;
+    lodash.before = before;
+    lodash.bind = bind;
+    lodash.bindAll = bindAll;
+    lodash.bindKey = bindKey;
+    lodash.castArray = castArray;
+    lodash.chain = chain;
+    lodash.chunk = chunk;
+    lodash.compact = compact;
+    lodash.concat = concat;
+    lodash.cond = cond;
+    lodash.conforms = conforms;
+    lodash.constant = constant;
+    lodash.countBy = countBy;
+    lodash.create = create;
+    lodash.curry = curry;
+    lodash.curryRight = curryRight;
+    lodash.debounce = debounce;
+    lodash.defaults = defaults;
+    lodash.defaultsDeep = defaultsDeep;
+    lodash.defer = defer;
+    lodash.delay = delay;
+    lodash.difference = difference;
+    lodash.differenceBy = differenceBy;
+    lodash.differenceWith = differenceWith;
+    lodash.drop = drop;
+    lodash.dropRight = dropRight;
+    lodash.dropRightWhile = dropRightWhile;
+    lodash.dropWhile = dropWhile;
+    lodash.fill = fill;
+    lodash.filter = filter;
+    lodash.flatMap = flatMap;
+    lodash.flatMapDeep = flatMapDeep;
+    lodash.flatMapDepth = flatMapDepth;
+    lodash.flatten = flatten;
+    lodash.flattenDeep = flattenDeep;
+    lodash.flattenDepth = flattenDepth;
+    lodash.flip = flip;
+    lodash.flow = flow;
+    lodash.flowRight = flowRight;
+    lodash.fromPairs = fromPairs;
+    lodash.functions = functions;
+    lodash.functionsIn = functionsIn;
+    lodash.groupBy = groupBy;
+    lodash.initial = initial;
+    lodash.intersection = intersection;
+    lodash.intersectionBy = intersectionBy;
+    lodash.intersectionWith = intersectionWith;
+    lodash.invert = invert;
+    lodash.invertBy = invertBy;
+    lodash.invokeMap = invokeMap;
+    lodash.iteratee = iteratee;
+    lodash.keyBy = keyBy;
+    lodash.keys = keys;
+    lodash.keysIn = keysIn;
+    lodash.map = map;
+    lodash.mapKeys = mapKeys;
+    lodash.mapValues = mapValues;
+    lodash.matches = matches;
+    lodash.matchesProperty = matchesProperty;
+    lodash.memoize = memoize;
+    lodash.merge = merge;
+    lodash.mergeWith = mergeWith;
+    lodash.method = method;
+    lodash.methodOf = methodOf;
+    lodash.mixin = mixin;
+    lodash.negate = negate;
+    lodash.nthArg = nthArg;
+    lodash.omit = omit;
+    lodash.omitBy = omitBy;
+    lodash.once = once;
+    lodash.orderBy = orderBy;
+    lodash.over = over;
+    lodash.overArgs = overArgs;
+    lodash.overEvery = overEvery;
+    lodash.overSome = overSome;
+    lodash.partial = partial;
+    lodash.partialRight = partialRight;
+    lodash.partition = partition;
+    lodash.pick = pick;
+    lodash.pickBy = pickBy;
+    lodash.property = property;
+    lodash.propertyOf = propertyOf;
+    lodash.pull = pull;
+    lodash.pullAll = pullAll;
+    lodash.pullAllBy = pullAllBy;
+    lodash.pullAllWith = pullAllWith;
+    lodash.pullAt = pullAt;
+    lodash.range = range;
+    lodash.rangeRight = rangeRight;
+    lodash.rearg = rearg;
+    lodash.reject = reject;
+    lodash.remove = remove;
+    lodash.rest = rest;
+    lodash.reverse = reverse;
+    lodash.sampleSize = sampleSize;
+    lodash.set = set;
+    lodash.setWith = setWith;
+    lodash.shuffle = shuffle;
+    lodash.slice = slice;
+    lodash.sortBy = sortBy;
+    lodash.sortedUniq = sortedUniq;
+    lodash.sortedUniqBy = sortedUniqBy;
+    lodash.split = split;
+    lodash.spread = spread;
+    lodash.tail = tail;
+    lodash.take = take;
+    lodash.takeRight = takeRight;
+    lodash.takeRightWhile = takeRightWhile;
+    lodash.takeWhile = takeWhile;
+    lodash.tap = tap;
+    lodash.throttle = throttle;
+    lodash.thru = thru;
+    lodash.toArray = toArray;
+    lodash.toPairs = toPairs;
+    lodash.toPairsIn = toPairsIn;
+    lodash.toPath = toPath;
+    lodash.toPlainObject = toPlainObject;
+    lodash.transform = transform;
+    lodash.unary = unary;
+    lodash.union = union;
+    lodash.unionBy = unionBy;
+    lodash.unionWith = unionWith;
+    lodash.uniq = uniq;
+    lodash.uniqBy = uniqBy;
+    lodash.uniqWith = uniqWith;
+    lodash.unset = unset;
+    lodash.unzip = unzip;
+    lodash.unzipWith = unzipWith;
+    lodash.update = update;
+    lodash.updateWith = updateWith;
+    lodash.values = values;
+    lodash.valuesIn = valuesIn;
+    lodash.without = without;
+    lodash.words = words;
+    lodash.wrap = wrap;
+    lodash.xor = xor;
+    lodash.xorBy = xorBy;
+    lodash.xorWith = xorWith;
+    lodash.zip = zip;
+    lodash.zipObject = zipObject;
+    lodash.zipObjectDeep = zipObjectDeep;
+    lodash.zipWith = zipWith;
+
+    // Add aliases.
+    lodash.entries = toPairs;
+    lodash.entriesIn = toPairsIn;
+    lodash.extend = assignIn;
+    lodash.extendWith = assignInWith;
+
+    // Add methods to `lodash.prototype`.
+    mixin(lodash, lodash);
+
+    /*------------------------------------------------------------------------*/
+
+    // Add methods that return unwrapped values in chain sequences.
+    lodash.add = add;
+    lodash.attempt = attempt;
+    lodash.camelCase = camelCase;
+    lodash.capitalize = capitalize;
+    lodash.ceil = ceil;
+    lodash.clamp = clamp;
+    lodash.clone = clone;
+    lodash.cloneDeep = cloneDeep;
+    lodash.cloneDeepWith = cloneDeepWith;
+    lodash.cloneWith = cloneWith;
+    lodash.conformsTo = conformsTo;
+    lodash.deburr = deburr;
+    lodash.defaultTo = defaultTo;
+    lodash.divide = divide;
+    lodash.endsWith = endsWith;
+    lodash.eq = eq;
+    lodash.escape = escape;
+    lodash.escapeRegExp = escapeRegExp;
+    lodash.every = every;
+    lodash.find = find;
+    lodash.findIndex = findIndex;
+    lodash.findKey = findKey;
+    lodash.findLast = findLast;
+    lodash.findLastIndex = findLastIndex;
+    lodash.findLastKey = findLastKey;
+    lodash.floor = floor;
+    lodash.forEach = forEach;
+    lodash.forEachRight = forEachRight;
+    lodash.forIn = forIn;
+    lodash.forInRight = forInRight;
+    lodash.forOwn = forOwn;
+    lodash.forOwnRight = forOwnRight;
+    lodash.get = get;
+    lodash.gt = gt;
+    lodash.gte = gte;
+    lodash.has = has;
+    lodash.hasIn = hasIn;
+    lodash.head = head;
+    lodash.identity = identity;
+    lodash.includes = includes;
+    lodash.indexOf = indexOf;
+    lodash.inRange = inRange;
+    lodash.invoke = invoke;
+    lodash.isArguments = isArguments;
+    lodash.isArray = isArray;
+    lodash.isArrayBuffer = isArrayBuffer;
+    lodash.isArrayLike = isArrayLike;
+    lodash.isArrayLikeObject = isArrayLikeObject;
+    lodash.isBoolean = isBoolean;
+    lodash.isBuffer = isBuffer;
+    lodash.isDate = isDate;
+    lodash.isElement = isElement;
+    lodash.isEmpty = isEmpty;
+    lodash.isEqual = isEqual;
+    lodash.isEqualWith = isEqualWith;
+    lodash.isError = isError;
+    lodash.isFinite = isFinite;
+    lodash.isFunction = isFunction;
+    lodash.isInteger = isInteger;
+    lodash.isLength = isLength;
+    lodash.isMap = isMap;
+    lodash.isMatch = isMatch;
+    lodash.isMatchWith = isMatchWith;
+    lodash.isNaN = isNaN;
+    lodash.isNative = isNative;
+    lodash.isNil = isNil;
+    lodash.isNull = isNull;
+    lodash.isNumber = isNumber;
+    lodash.isObject = isObject;
+    lodash.isObjectLike = isObjectLike;
+    lodash.isPlainObject = isPlainObject;
+    lodash.isRegExp = isRegExp;
+    lodash.isSafeInteger = isSafeInteger;
+    lodash.isSet = isSet;
+    lodash.isString = isString;
+    lodash.isSymbol = isSymbol;
+    lodash.isTypedArray = isTypedArray;
+    lodash.isUndefined = isUndefined;
+    lodash.isWeakMap = isWeakMap;
+    lodash.isWeakSet = isWeakSet;
+    lodash.join = join;
+    lodash.kebabCase = kebabCase;
+    lodash.last = last;
+    lodash.lastIndexOf = lastIndexOf;
+    lodash.lowerCase = lowerCase;
+    lodash.lowerFirst = lowerFirst;
+    lodash.lt = lt;
+    lodash.lte = lte;
+    lodash.max = max;
+    lodash.maxBy = maxBy;
+    lodash.mean = mean;
+    lodash.meanBy = meanBy;
+    lodash.min = min;
+    lodash.minBy = minBy;
+    lodash.stubArray = stubArray;
+    lodash.stubFalse = stubFalse;
+    lodash.stubObject = stubObject;
+    lodash.stubString = stubString;
+    lodash.stubTrue = stubTrue;
+    lodash.multiply = multiply;
+    lodash.nth = nth;
+    lodash.noConflict = noConflict;
+    lodash.noop = noop;
+    lodash.now = now;
+    lodash.pad = pad;
+    lodash.padEnd = padEnd;
+    lodash.padStart = padStart;
+    lodash.parseInt = parseInt;
+    lodash.random = random;
+    lodash.reduce = reduce;
+    lodash.reduceRight = reduceRight;
+    lodash.repeat = repeat;
+    lodash.replace = replace;
+    lodash.result = result;
+    lodash.round = round;
+    lodash.runInContext = runInContext;
+    lodash.sample = sample;
+    lodash.size = size;
+    lodash.snakeCase = snakeCase;
+    lodash.some = some;
+    lodash.sortedIndex = sortedIndex;
+    lodash.sortedIndexBy = sortedIndexBy;
+    lodash.sortedIndexOf = sortedIndexOf;
+    lodash.sortedLastIndex = sortedLastIndex;
+    lodash.sortedLastIndexBy = sortedLastIndexBy;
+    lodash.sortedLastIndexOf = sortedLastIndexOf;
+    lodash.startCase = startCase;
+    lodash.startsWith = startsWith;
+    lodash.subtract = subtract;
+    lodash.sum = sum;
+    lodash.sumBy = sumBy;
+    lodash.template = template;
+    lodash.times = times;
+    lodash.toFinite = toFinite;
+    lodash.toInteger = toInteger;
+    lodash.toLength = toLength;
+    lodash.toLower = toLower;
+    lodash.toNumber = toNumber;
+    lodash.toSafeInteger = toSafeInteger;
+    lodash.toString = toString;
+    lodash.toUpper = toUpper;
+    lodash.trim = trim;
+    lodash.trimEnd = trimEnd;
+    lodash.trimStart = trimStart;
+    lodash.truncate = truncate;
+    lodash.unescape = unescape;
+    lodash.uniqueId = uniqueId;
+    lodash.upperCase = upperCase;
+    lodash.upperFirst = upperFirst;
+
+    // Add aliases.
+    lodash.each = forEach;
+    lodash.eachRight = forEachRight;
+    lodash.first = head;
+
+    mixin(lodash, (function() {
+      var source = {};
+      baseForOwn(lodash, function(func, methodName) {
+        if (!hasOwnProperty.call(lodash.prototype, methodName)) {
+          source[methodName] = func;
+        }
+      });
+      return source;
+    }()), { 'chain': false });
+
+    /*------------------------------------------------------------------------*/
+
+    /**
+     * The semantic version number.
+     *
+     * @static
+     * @memberOf _
+     * @type {string}
+     */
+    lodash.VERSION = VERSION;
+
+    // Assign default placeholders.
+    arrayEach(['bind', 'bindKey', 'curry', 'curryRight', 'partial', 'partialRight'], function(methodName) {
+      lodash[methodName].placeholder = lodash;
+    });
+
+    // Add `LazyWrapper` methods for `_.drop` and `_.take` variants.
+    arrayEach(['drop', 'take'], function(methodName, index) {
+      LazyWrapper.prototype[methodName] = function(n) {
+        n = n === undefined ? 1 : nativeMax(toInteger(n), 0);
+
+        var result = (this.__filtered__ && !index)
+          ? new LazyWrapper(this)
+          : this.clone();
+
+        if (result.__filtered__) {
+          result.__takeCount__ = nativeMin(n, result.__takeCount__);
+        } else {
+          result.__views__.push({
+            'size': nativeMin(n, MAX_ARRAY_LENGTH),
+            'type': methodName + (result.__dir__ < 0 ? 'Right' : '')
+          });
+        }
+        return result;
+      };
+
+      LazyWrapper.prototype[methodName + 'Right'] = function(n) {
+        return this.reverse()[methodName](n).reverse();
+      };
+    });
+
+    // Add `LazyWrapper` methods that accept an `iteratee` value.
+    arrayEach(['filter', 'map', 'takeWhile'], function(methodName, index) {
+      var type = index + 1,
+          isFilter = type == LAZY_FILTER_FLAG || type == LAZY_WHILE_FLAG;
+
+      LazyWrapper.prototype[methodName] = function(iteratee) {
+        var result = this.clone();
+        result.__iteratees__.push({
+          'iteratee': getIteratee(iteratee, 3),
+          'type': type
+        });
+        result.__filtered__ = result.__filtered__ || isFilter;
+        return result;
+      };
+    });
+
+    // Add `LazyWrapper` methods for `_.head` and `_.last`.
+    arrayEach(['head', 'last'], function(methodName, index) {
+      var takeName = 'take' + (index ? 'Right' : '');
+
+      LazyWrapper.prototype[methodName] = function() {
+        return this[takeName](1).value()[0];
+      };
+    });
+
+    // Add `LazyWrapper` methods for `_.initial` and `_.tail`.
+    arrayEach(['initial', 'tail'], function(methodName, index) {
+      var dropName = 'drop' + (index ? '' : 'Right');
+
+      LazyWrapper.prototype[methodName] = function() {
+        return this.__filtered__ ? new LazyWrapper(this) : this[dropName](1);
+      };
+    });
+
+    LazyWrapper.prototype.compact = function() {
+      return this.filter(identity);
+    };
+
+    LazyWrapper.prototype.find = function(predicate) {
+      return this.filter(predicate).head();
+    };
+
+    LazyWrapper.prototype.findLast = function(predicate) {
+      return this.reverse().find(predicate);
+    };
+
+    LazyWrapper.prototype.invokeMap = baseRest(function(path, args) {
+      if (typeof path == 'function') {
+        return new LazyWrapper(this);
+      }
+      return this.map(function(value) {
+        return baseInvoke(value, path, args);
+      });
+    });
+
+    LazyWrapper.prototype.reject = function(predicate) {
+      return this.filter(negate(getIteratee(predicate)));
+    };
+
+    LazyWrapper.prototype.slice = function(start, end) {
+      start = toInteger(start);
+
+      var result = this;
+      if (result.__filtered__ && (start > 0 || end < 0)) {
+        return new LazyWrapper(result);
+      }
+      if (start < 0) {
+        result = result.takeRight(-start);
+      } else if (start) {
+        result = result.drop(start);
+      }
+      if (end !== undefined) {
+        end = toInteger(end);
+        result = end < 0 ? result.dropRight(-end) : result.take(end - start);
+      }
+      return result;
+    };
+
+    LazyWrapper.prototype.takeRightWhile = function(predicate) {
+      return this.reverse().takeWhile(predicate).reverse();
+    };
+
+    LazyWrapper.prototype.toArray = function() {
+      return this.take(MAX_ARRAY_LENGTH);
+    };
+
+    // Add `LazyWrapper` methods to `lodash.prototype`.
+    baseForOwn(LazyWrapper.prototype, function(func, methodName) {
+      var checkIteratee = /^(?:filter|find|map|reject)|While$/.test(methodName),
+          isTaker = /^(?:head|last)$/.test(methodName),
+          lodashFunc = lodash[isTaker ? ('take' + (methodName == 'last' ? 'Right' : '')) : methodName],
+          retUnwrapped = isTaker || /^find/.test(methodName);
+
+      if (!lodashFunc) {
+        return;
+      }
+      lodash.prototype[methodName] = function() {
+        var value = this.__wrapped__,
+            args = isTaker ? [1] : arguments,
+            isLazy = value instanceof LazyWrapper,
+            iteratee = args[0],
+            useLazy = isLazy || isArray(value);
+
+        var interceptor = function(value) {
+          var result = lodashFunc.apply(lodash, arrayPush([value], args));
+          return (isTaker && chainAll) ? result[0] : result;
+        };
+
+        if (useLazy && checkIteratee && typeof iteratee == 'function' && iteratee.length != 1) {
+          // Avoid lazy use if the iteratee has a "length" value other than `1`.
+          isLazy = useLazy = false;
+        }
+        var chainAll = this.__chain__,
+            isHybrid = !!this.__actions__.length,
+            isUnwrapped = retUnwrapped && !chainAll,
+            onlyLazy = isLazy && !isHybrid;
+
+        if (!retUnwrapped && useLazy) {
+          value = onlyLazy ? value : new LazyWrapper(this);
+          var result = func.apply(value, args);
+          result.__actions__.push({ 'func': thru, 'args': [interceptor], 'thisArg': undefined });
+          return new LodashWrapper(result, chainAll);
+        }
+        if (isUnwrapped && onlyLazy) {
+          return func.apply(this, args);
+        }
+        result = this.thru(interceptor);
+        return isUnwrapped ? (isTaker ? result.value()[0] : result.value()) : result;
+      };
+    });
+
+    // Add `Array` methods to `lodash.prototype`.
+    arrayEach(['pop', 'push', 'shift', 'sort', 'splice', 'unshift'], function(methodName) {
+      var func = arrayProto[methodName],
+          chainName = /^(?:push|sort|unshift)$/.test(methodName) ? 'tap' : 'thru',
+          retUnwrapped = /^(?:pop|shift)$/.test(methodName);
+
+      lodash.prototype[methodName] = function() {
+        var args = arguments;
+        if (retUnwrapped && !this.__chain__) {
+          var value = this.value();
+          return func.apply(isArray(value) ? value : [], args);
+        }
+        return this[chainName](function(value) {
+          return func.apply(isArray(value) ? value : [], args);
+        });
+      };
+    });
+
+    // Map minified method names to their real names.
+    baseForOwn(LazyWrapper.prototype, function(func, methodName) {
+      var lodashFunc = lodash[methodName];
+      if (lodashFunc) {
+        var key = lodashFunc.name + '';
+        if (!hasOwnProperty.call(realNames, key)) {
+          realNames[key] = [];
+        }
+        realNames[key].push({ 'name': methodName, 'func': lodashFunc });
+      }
+    });
+
+    realNames[createHybrid(undefined, WRAP_BIND_KEY_FLAG).name] = [{
+      'name': 'wrapper',
+      'func': undefined
+    }];
+
+    // Add methods to `LazyWrapper`.
+    LazyWrapper.prototype.clone = lazyClone;
+    LazyWrapper.prototype.reverse = lazyReverse;
+    LazyWrapper.prototype.value = lazyValue;
+
+    // Add chain sequence methods to the `lodash` wrapper.
+    lodash.prototype.at = wrapperAt;
+    lodash.prototype.chain = wrapperChain;
+    lodash.prototype.commit = wrapperCommit;
+    lodash.prototype.next = wrapperNext;
+    lodash.prototype.plant = wrapperPlant;
+    lodash.prototype.reverse = wrapperReverse;
+    lodash.prototype.toJSON = lodash.prototype.valueOf = lodash.prototype.value = wrapperValue;
+
+    // Add lazy aliases.
+    lodash.prototype.first = lodash.prototype.head;
+
+    if (symIterator) {
+      lodash.prototype[symIterator] = wrapperToIterator;
+    }
+    return lodash;
+  });
+
+  /*--------------------------------------------------------------------------*/
+
+  // Export lodash.
+  var _ = runInContext();
+
+  // Some AMD build optimizers, like r.js, check for condition patterns like:
+  if (typeof define == 'function' && typeof define.amd == 'object' && define.amd) {
+    // Expose Lodash on the global object to prevent errors when Lodash is
+    // loaded by a script tag in the presence of an AMD loader.
+    // See http://requirejs.org/docs/errors.html#mismatch for more details.
+    // Use `_.noConflict` to remove Lodash from the global object.
+    root._ = _;
+
+    // Define as an anonymous module so, through path mapping, it can be
+    // referenced as the "underscore" module.
+    define(function() {
+      return _;
+    });
+  }
+  // Check for `exports` after `define` in case a build optimizer adds it.
+  else if (freeModule) {
+    // Export for Node.js.
+    (freeModule.exports = _)._ = _;
+    // Export for CommonJS support.
+    freeExports._ = _;
+  }
+  else {
+    // Export to the global object.
+    root._ = _;
+  }
+}.call(this));
+
+},{"buffer":"8fe9"}],"epB2":[function(require,module,exports) {
 "use strict";
 
 require("bootstrap");
 
+var charts = _interopRequireWildcard(require("./charts.js"));
+
 require("./../css/main.scss");
-},{"bootstrap":"emzB","./../css/main.scss":"8ymq"}]},{},["epB2"], null)
+
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+window.Highcharts = require("highcharts");
+window._ = require("lodash");
+window.charts = charts;
+},{"bootstrap":"emzB","./charts.js":"aJ5B","./../css/main.scss":"8ymq","highcharts":"Dm41","lodash":"hKJs"}]},{},["epB2"], null)
 //# sourceMappingURL=/main.js.map

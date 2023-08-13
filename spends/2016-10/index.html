@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2016-10 - GovSpend</title>
-    <link rel="stylesheet" href="/assets/main.css"/>
+    <link rel="stylesheet" href="/assets/main.css?v=1691930571865"/>
+    <script src="/assets/main.js?v=1691930571865"></script>
   </head>
 
 </head>
@@ -32,412 +33,769 @@
   <main class="flex-shrink-0">
     <div class="container my-4">
       
+<script id="spend-data" type="application/json">
+    [
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "HSO Braunerklingenberg",
+        "Merchant Category Name": "Colleges, universities, pro schools, junior colleges",
+        "Transaction Date": "06/10/2016",
+        "Transaction Amount": 4288.64,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Dri Mylearn vmw",
+        "Merchant Category Name": "Computer software stores",
+        "Transaction Date": "06/10/2016",
+        "Transaction Amount": 1657.36,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Uxtraining",
+        "Merchant Category Name": "Consulting, management and public relations services",
+        "Transaction Date": "18/10/2016",
+        "Transaction Amount": 645,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Grovedime Limited",
+        "Merchant Category Name": "Miscellaneous and specialty retail stores",
+        "Transaction Date": "07/10/2016",
+        "Transaction Amount": 947.88,
+        "Expense Description": "Electronic (sheep) ear tag scanners"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Arnold Clark car & van",
+        "Merchant Category Name": "Automobile rental agency - not elsewhere classified",
+        "Transaction Date": "21/10/2016",
+        "Transaction Amount": 561.79,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise rent-a-car",
+        "Transaction Date": "27/10/2016",
+        "Transaction Amount": 589.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise rent-a-car",
+        "Transaction Date": "26/10/2016",
+        "Transaction Amount": 595.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise rent-a-car",
+        "Transaction Date": "25/10/2016",
+        "Transaction Amount": 589.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise rent-a-car",
+        "Transaction Date": "25/10/2016",
+        "Transaction Amount": 589.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise rent-a-car",
+        "Transaction Date": "11/10/2016",
+        "Transaction Amount": 589.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Spectrum computers ltd",
+        "Merchant Category Name": "Computers, computer peripheral equipment, software",
+        "Transaction Date": "24/10/2016",
+        "Transaction Amount": 1175.04,
+        "Expense Description": "IT consumables"
+    },
+    {
+        "Directorate": "Directorate for Chief Economist",
+        "Merchant Name": "Financial Times lt",
+        "Merchant Category Name": "Books, periodicals and newspapers",
+        "Transaction Date": "18/10/2016",
+        "Transaction Amount": 2371.2,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Chief Information Officer",
+        "Merchant Name": "Spectrum computers ltd",
+        "Merchant Category Name": "Computers, computer peripheral equipment, software",
+        "Transaction Date": "25/10/2016",
+        "Transaction Amount": 598.13,
+        "Expense Description": "IT consumables"
+    },
+    {
+        "Directorate": "Directorate for Communications & Ministerial Support",
+        "Merchant Name": "MCI fran congres",
+        "Merchant Category Name": "Consulting, management and public relations services",
+        "Transaction Date": "05/10/2016",
+        "Transaction Amount": 959.62,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Communications & Ministerial Support",
+        "Merchant Name": "Lyreco UK ltd",
+        "Merchant Category Name": "Office, school supply and stationery stores",
+        "Transaction Date": "19/10/2016",
+        "Transaction Amount": 868.31,
+        "Expense Description": "Stationery"
+    },
+    {
+        "Directorate": "Directorate for Communications & Ministerial Support",
+        "Merchant Name": "Lyreco UK ltd",
+        "Merchant Category Name": "Office, school supply and stationery stores",
+        "Transaction Date": "14/10/2016",
+        "Transaction Amount": 761.36,
+        "Expense Description": "Stationery"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Amazon web services",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "03/10/2016",
+        "Transaction Amount": 5845.77,
+        "Expense Description": "Web service - service charge - September 2016"
+    },
+    {
+        "Directorate": "Directorate for External Affairs",
+        "Merchant Name": "Geppetto Catering",
+        "Merchant Category Name": "Caterers",
+        "Transaction Date": "27/10/2016",
+        "Transaction Amount": 990.35,
+        "Expense Description": "External event - catering costs"
+    },
+    {
+        "Directorate": "Directorate for Healthcare Quality & Improvement",
+        "Merchant Name": "Spectrum computers ltd",
+        "Merchant Category Name": "Computers, computer peripheral equipment, software",
+        "Transaction Date": "28/10/2016",
+        "Transaction Amount": 861.01,
+        "Expense Description": "IT consumables"
+    },
+    {
+        "Directorate": "Directorate for Healthcare Quality & Improvement",
+        "Merchant Name": "Spectrum computers ltd",
+        "Merchant Category Name": "Computers, computer peripheral equipment, software",
+        "Transaction Date": "12/10/2016",
+        "Transaction Amount": 720,
+        "Expense Description": "IT consumables"
+    },
+    {
+        "Directorate": "Directorate for Justice",
+        "Merchant Name": "Spectrum computers ltd",
+        "Merchant Category Name": "Computers, computer peripheral equipment, software",
+        "Transaction Date": "19/10/2016",
+        "Transaction Amount": 938.81,
+        "Expense Description": "IT consumables"
+    },
+    {
+        "Directorate": "Directorate for Local Government & Communities",
+        "Merchant Name": "WWW.STRATH.AC.UK",
+        "Merchant Category Name": "Colleges, universities, pro schools, junior colleges",
+        "Transaction Date": "11/10/2016",
+        "Transaction Amount": 600,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Local Government & Communities",
+        "Merchant Name": "Sodexo ltd",
+        "Merchant Category Name": "Eating places, restaurants",
+        "Transaction Date": "25/10/2016",
+        "Transaction Amount": 767.04,
+        "Expense Description": "Catering"
+    },
+    {
+        "Directorate": "Directorate for Local Government & Communities",
+        "Merchant Name": "Sodexo ltd",
+        "Merchant Category Name": "Eating places, restaurants",
+        "Transaction Date": "24/10/2016",
+        "Transaction Amount": 733.38,
+        "Expense Description": "Catering"
+    },
+    {
+        "Directorate": "Directorate for Local Government & Communities",
+        "Merchant Name": "Sodexo ltd",
+        "Merchant Category Name": "Eating places, restaurants",
+        "Transaction Date": "05/10/2016",
+        "Transaction Amount": 931.38,
+        "Expense Description": "Catering"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Vertical descents",
+        "Merchant Category Name": "Athletic fields, commercial sport, sport clubs, sport promotion",
+        "Transaction Date": "05/10/2016",
+        "Transaction Amount": 1056,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "City electrical FA",
+        "Merchant Category Name": "Building materials, lumber stores",
+        "Transaction Date": "27/10/2016",
+        "Transaction Amount": 527.8,
+        "Expense Description": "Vessel engineering spares"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Resolution GB ltd",
+        "Merchant Category Name": "Electrical and small appliance repair shops",
+        "Transaction Date": "05/10/2016",
+        "Transaction Amount": 600.24,
+        "Expense Description": "Specialist IT equipment - Maintenance"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "WWW.PREMIERCATERINGEQU",
+        "Merchant Category Name": "Electrical parts and equipment",
+        "Transaction Date": "28/10/2016",
+        "Transaction Amount": 549.6,
+        "Expense Description": "Vessel equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Duvalay",
+        "Merchant Category Name": "Equipment, furniture, home furnishings stores (except appliances)",
+        "Transaction Date": "03/10/2016",
+        "Transaction Amount": 559.6,
+        "Expense Description": "Vessel equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Plastor limited",
+        "Merchant Category Name": "Hardware equipment and supplies",
+        "Transaction Date": "12/10/2016",
+        "Transaction Amount": 1146,
+        "Expense Description": "Scientific equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Peter smith valve",
+        "Merchant Category Name": "Industrial supplies - not elsewhere classified",
+        "Transaction Date": "24/10/2016",
+        "Transaction Amount": 1176,
+        "Expense Description": "Vessel engineering equipment - maintenance"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Jurys Inn Gateshead",
+        "Merchant Category Name": "Lodging, hotels, motels, resorts - not elsewhere classified",
+        "Transaction Date": "05/10/2016",
+        "Transaction Amount": 613,
+        "Expense Description": "External accommodation - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Public library of science",
+        "Merchant Category Name": "Organizations, charitable and social services",
+        "Transaction Date": "05/10/2016",
+        "Transaction Amount": 1209.32,
+        "Expense Description": "Publication - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Pumpmasters",
+        "Merchant Category Name": "Plumbing and heating equipment",
+        "Transaction Date": "28/10/2016",
+        "Transaction Amount": 1255.25,
+        "Expense Description": "Vessel engineering spares"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Active comm Europe ltd",
+        "Merchant Category Name": "Professional services - not elsewhere classified",
+        "Transaction Date": "19/10/2016",
+        "Transaction Amount": 1614,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Performance & Delivery",
+        "Merchant Name": "Sodexo ltd",
+        "Merchant Category Name": "Eating places, restaurants",
+        "Transaction Date": "13/10/2016",
+        "Transaction Amount": 945,
+        "Expense Description": "Catering"
+    },
+    {
+        "Directorate": "Directorate for Safer Communities",
+        "Merchant Name": "Sodexo ltd",
+        "Merchant Category Name": "Eating places, restaurants",
+        "Transaction Date": "07/10/2016",
+        "Transaction Amount": 698.28,
+        "Expense Description": "Catering"
+    },
+    {
+        "Directorate": "Directorate for Safer Communities",
+        "Merchant Name": "Sodexo ltd",
+        "Merchant Category Name": "Eating places, restaurants",
+        "Transaction Date": "03/10/2016",
+        "Transaction Amount": 849.42,
+        "Expense Description": "Catering"
+    },
+    {
+        "Directorate": "Directorate for Strategy & Constitution",
+        "Merchant Name": "Howies restaurants",
+        "Merchant Category Name": "Eating places, restaurants",
+        "Transaction Date": "27/10/2016",
+        "Transaction Amount": 672.49,
+        "Expense Description": "External event - catering costs"
+    },
+    {
+        "Directorate": "Directorate for Strategy & Constitution",
+        "Merchant Name": "Sodexo ltd",
+        "Merchant Category Name": "Eating places, restaurants",
+        "Transaction Date": "03/10/2016",
+        "Transaction Amount": 784.8,
+        "Expense Description": "Catering"
+    },
+    {
+        "Directorate": "People Directorate",
+        "Merchant Name": "WWW.VIKING-DIRECT.CO.U",
+        "Merchant Category Name": "Stationery/office supplies/printing & writing paper",
+        "Transaction Date": "07/10/2016",
+        "Transaction Amount": 659.88,
+        "Expense Description": "Office equipment"
+    },
+    {
+        "Directorate": "People Directorate",
+        "Merchant Name": "Sign plus ltd",
+        "Merchant Category Name": "Stationery/office supplies/printing & writing paper",
+        "Transaction Date": "07/10/2016",
+        "Transaction Amount": 507.36,
+        "Expense Description": "Building indoor signage"
+    }
+]
+</script>
+
 <a href="/">Back to home</a>
 
 <h1>2016-10</h1>
 
-<table class="table table-bordered table-striped">
-    <thead>
-        <tr>
-            <th>Directorate</th>
-            <th>Merchant name</th>
-            <th>Merchant category name</th>
-            <th>Transaction date</th>
-            <th>Transaction amount</th>
-            <th>Expense description</th>
-        </tr>
-    </thead>
-    <tbody>
-        
+<div id="chart-spend-by-directorate" style="width:100%; height:600px;"></div>
+<div class"table-responsive">
+    <table class="table table-bordered table-striped">
+        <thead>
             <tr>
-                <td>Directorate for Agriculture, Food &amp; Rural Communities</td>
-                <td>HSO Braunerklingenberg</td>
-                <td>Colleges, universities, pro schools, junior colleges</td>
-                <td>06/10/2016</td>
-                <td>4288.64</td>
-                <td>External training course - fees</td>
+                <th>Directorate</th>
+                <th>Merchant name</th>
+                <th>Merchant category name</th>
+                <th>Transaction date</th>
+                <th>Transaction amount</th>
+                <th>Expense description</th>
             </tr>
+        </thead>
+        <tbody>
             
-            <tr>
-                <td>Directorate for Agriculture, Food &amp; Rural Communities</td>
-                <td>Dri Mylearn vmw</td>
-                <td>Computer software stores</td>
-                <td>06/10/2016</td>
-                <td>1657.36</td>
-                <td>External training course - fees</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Agriculture, Food &amp; Rural Communities</td>
-                <td>Uxtraining</td>
-                <td>Consulting, management and public relations services</td>
-                <td>18/10/2016</td>
-                <td>645</td>
-                <td>External training course - fees</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Agriculture, Food &amp; Rural Communities</td>
-                <td>Grovedime Limited</td>
-                <td>Miscellaneous and specialty retail stores</td>
-                <td>07/10/2016</td>
-                <td>947.88</td>
-                <td>Electronic (sheep) ear tag scanners</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Agriculture, Food &amp; Rural Communities</td>
-                <td>Arnold Clark car &amp; van</td>
-                <td>Automobile rental agency - not elsewhere classified</td>
-                <td>21/10/2016</td>
-                <td>561.79</td>
-                <td>Vehicle hire</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Agriculture, Food &amp; Rural Communities</td>
-                <td>Enterprise</td>
-                <td>Enterprise rent-a-car</td>
-                <td>27/10/2016</td>
-                <td>589.2</td>
-                <td>Vehicle hire</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Agriculture, Food &amp; Rural Communities</td>
-                <td>Enterprise</td>
-                <td>Enterprise rent-a-car</td>
-                <td>26/10/2016</td>
-                <td>595.2</td>
-                <td>Vehicle hire</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Agriculture, Food &amp; Rural Communities</td>
-                <td>Enterprise</td>
-                <td>Enterprise rent-a-car</td>
-                <td>25/10/2016</td>
-                <td>589.2</td>
-                <td>Vehicle hire</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Agriculture, Food &amp; Rural Communities</td>
-                <td>Enterprise</td>
-                <td>Enterprise rent-a-car</td>
-                <td>25/10/2016</td>
-                <td>589.2</td>
-                <td>Vehicle hire</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Agriculture, Food &amp; Rural Communities</td>
-                <td>Enterprise</td>
-                <td>Enterprise rent-a-car</td>
-                <td>11/10/2016</td>
-                <td>589.2</td>
-                <td>Vehicle hire</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Agriculture, Food &amp; Rural Communities</td>
-                <td>Spectrum computers ltd</td>
-                <td>Computers, computer peripheral equipment, software</td>
-                <td>24/10/2016</td>
-                <td>1175.04</td>
-                <td>IT consumables</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Chief Economist</td>
-                <td>Financial Times lt</td>
-                <td>Books, periodicals and newspapers</td>
-                <td>18/10/2016</td>
-                <td>2371.2</td>
-                <td>Professional subscription - fees</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Chief Information Officer</td>
-                <td>Spectrum computers ltd</td>
-                <td>Computers, computer peripheral equipment, software</td>
-                <td>25/10/2016</td>
-                <td>598.13</td>
-                <td>IT consumables</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Communications &amp; Ministerial Support</td>
-                <td>MCI fran congres</td>
-                <td>Consulting, management and public relations services</td>
-                <td>05/10/2016</td>
-                <td>959.62</td>
-                <td>External conference - fees</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Communications &amp; Ministerial Support</td>
-                <td>Lyreco UK ltd</td>
-                <td>Office, school supply and stationery stores</td>
-                <td>19/10/2016</td>
-                <td>868.31</td>
-                <td>Stationery</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Communications &amp; Ministerial Support</td>
-                <td>Lyreco UK ltd</td>
-                <td>Office, school supply and stationery stores</td>
-                <td>14/10/2016</td>
-                <td>761.36</td>
-                <td>Stationery</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Digital</td>
-                <td>Amazon web services</td>
-                <td>Business services - not elsewhere classified</td>
-                <td>03/10/2016</td>
-                <td>5845.77</td>
-                <td>Web service - service charge - September 2016</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for External Affairs</td>
-                <td>Geppetto Catering</td>
-                <td>Caterers</td>
-                <td>27/10/2016</td>
-                <td>990.35</td>
-                <td>External event - catering costs</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Healthcare Quality &amp; Improvement</td>
-                <td>Spectrum computers ltd</td>
-                <td>Computers, computer peripheral equipment, software</td>
-                <td>28/10/2016</td>
-                <td>861.01</td>
-                <td>IT consumables</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Healthcare Quality &amp; Improvement</td>
-                <td>Spectrum computers ltd</td>
-                <td>Computers, computer peripheral equipment, software</td>
-                <td>12/10/2016</td>
-                <td>720</td>
-                <td>IT consumables</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Justice</td>
-                <td>Spectrum computers ltd</td>
-                <td>Computers, computer peripheral equipment, software</td>
-                <td>19/10/2016</td>
-                <td>938.81</td>
-                <td>IT consumables</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Local Government &amp; Communities</td>
-                <td>WWW.STRATH.AC.UK</td>
-                <td>Colleges, universities, pro schools, junior colleges</td>
-                <td>11/10/2016</td>
-                <td>600</td>
-                <td>External training course - fees</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Local Government &amp; Communities</td>
-                <td>Sodexo ltd</td>
-                <td>Eating places, restaurants</td>
-                <td>25/10/2016</td>
-                <td>767.04</td>
-                <td>Catering</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Local Government &amp; Communities</td>
-                <td>Sodexo ltd</td>
-                <td>Eating places, restaurants</td>
-                <td>24/10/2016</td>
-                <td>733.38</td>
-                <td>Catering</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Local Government &amp; Communities</td>
-                <td>Sodexo ltd</td>
-                <td>Eating places, restaurants</td>
-                <td>05/10/2016</td>
-                <td>931.38</td>
-                <td>Catering</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Marine Scotland</td>
-                <td>Vertical descents</td>
-                <td>Athletic fields, commercial sport, sport clubs, sport promotion</td>
-                <td>05/10/2016</td>
-                <td>1056</td>
-                <td>External training course - fees</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Marine Scotland</td>
-                <td>City electrical FA</td>
-                <td>Building materials, lumber stores</td>
-                <td>27/10/2016</td>
-                <td>527.8</td>
-                <td>Vessel engineering spares</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Marine Scotland</td>
-                <td>Resolution GB ltd</td>
-                <td>Electrical and small appliance repair shops</td>
-                <td>05/10/2016</td>
-                <td>600.24</td>
-                <td>Specialist IT equipment - Maintenance</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Marine Scotland</td>
-                <td>WWW.PREMIERCATERINGEQU</td>
-                <td>Electrical parts and equipment</td>
-                <td>28/10/2016</td>
-                <td>549.6</td>
-                <td>Vessel equipment</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Marine Scotland</td>
-                <td>Duvalay</td>
-                <td>Equipment, furniture, home furnishings stores (except appliances)</td>
-                <td>03/10/2016</td>
-                <td>559.6</td>
-                <td>Vessel equipment</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Marine Scotland</td>
-                <td>Plastor limited</td>
-                <td>Hardware equipment and supplies</td>
-                <td>12/10/2016</td>
-                <td>1146</td>
-                <td>Scientific equipment</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Marine Scotland</td>
-                <td>Peter smith valve</td>
-                <td>Industrial supplies - not elsewhere classified</td>
-                <td>24/10/2016</td>
-                <td>1176</td>
-                <td>Vessel engineering equipment - maintenance</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Marine Scotland</td>
-                <td>Jurys Inn Gateshead</td>
-                <td>Lodging, hotels, motels, resorts - not elsewhere classified</td>
-                <td>05/10/2016</td>
-                <td>613</td>
-                <td>External accommodation - fees</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Marine Scotland</td>
-                <td>Public library of science</td>
-                <td>Organizations, charitable and social services</td>
-                <td>05/10/2016</td>
-                <td>1209.32</td>
-                <td>Publication - fees</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Marine Scotland</td>
-                <td>Pumpmasters</td>
-                <td>Plumbing and heating equipment</td>
-                <td>28/10/2016</td>
-                <td>1255.25</td>
-                <td>Vessel engineering spares</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Marine Scotland</td>
-                <td>Active comm Europe ltd</td>
-                <td>Professional services - not elsewhere classified</td>
-                <td>19/10/2016</td>
-                <td>1614</td>
-                <td>External conference - fees</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Performance &amp; Delivery</td>
-                <td>Sodexo ltd</td>
-                <td>Eating places, restaurants</td>
-                <td>13/10/2016</td>
-                <td>945</td>
-                <td>Catering</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Safer Communities</td>
-                <td>Sodexo ltd</td>
-                <td>Eating places, restaurants</td>
-                <td>07/10/2016</td>
-                <td>698.28</td>
-                <td>Catering</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Safer Communities</td>
-                <td>Sodexo ltd</td>
-                <td>Eating places, restaurants</td>
-                <td>03/10/2016</td>
-                <td>849.42</td>
-                <td>Catering</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Strategy &amp; Constitution</td>
-                <td>Howies restaurants</td>
-                <td>Eating places, restaurants</td>
-                <td>27/10/2016</td>
-                <td>672.49</td>
-                <td>External event - catering costs</td>
-            </tr>
-            
-            <tr>
-                <td>Directorate for Strategy &amp; Constitution</td>
-                <td>Sodexo ltd</td>
-                <td>Eating places, restaurants</td>
-                <td>03/10/2016</td>
-                <td>784.8</td>
-                <td>Catering</td>
-            </tr>
-            
-            <tr>
-                <td>People Directorate</td>
-                <td>WWW.VIKING-DIRECT.CO.U</td>
-                <td>Stationery/office supplies/printing &amp; writing paper</td>
-                <td>07/10/2016</td>
-                <td>659.88</td>
-                <td>Office equipment</td>
-            </tr>
-            
-            <tr>
-                <td>People Directorate</td>
-                <td>Sign plus ltd</td>
-                <td>Stationery/office supplies/printing &amp; writing paper</td>
-                <td>07/10/2016</td>
-                <td>507.36</td>
-                <td>Building indoor signage</td>
-            </tr>
-            
-        </tbody>
-    </table>
+                <tr>
+                    <td>Directorate for Agriculture, Food &amp; Rural Communities</td>
+                    <td>HSO Braunerklingenberg</td>
+                    <td>Colleges, universities, pro schools, junior colleges</td>
+                    <td>06/10/2016</td>
+                    <td>4288.64</td>
+                    <td>External training course - fees</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Agriculture, Food &amp; Rural Communities</td>
+                    <td>Dri Mylearn vmw</td>
+                    <td>Computer software stores</td>
+                    <td>06/10/2016</td>
+                    <td>1657.36</td>
+                    <td>External training course - fees</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Agriculture, Food &amp; Rural Communities</td>
+                    <td>Uxtraining</td>
+                    <td>Consulting, management and public relations services</td>
+                    <td>18/10/2016</td>
+                    <td>645.00</td>
+                    <td>External training course - fees</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Agriculture, Food &amp; Rural Communities</td>
+                    <td>Grovedime Limited</td>
+                    <td>Miscellaneous and specialty retail stores</td>
+                    <td>07/10/2016</td>
+                    <td>947.88</td>
+                    <td>Electronic (sheep) ear tag scanners</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Agriculture, Food &amp; Rural Communities</td>
+                    <td>Arnold Clark car &amp; van</td>
+                    <td>Automobile rental agency - not elsewhere classified</td>
+                    <td>21/10/2016</td>
+                    <td>561.79</td>
+                    <td>Vehicle hire</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Agriculture, Food &amp; Rural Communities</td>
+                    <td>Enterprise</td>
+                    <td>Enterprise rent-a-car</td>
+                    <td>27/10/2016</td>
+                    <td>589.20</td>
+                    <td>Vehicle hire</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Agriculture, Food &amp; Rural Communities</td>
+                    <td>Enterprise</td>
+                    <td>Enterprise rent-a-car</td>
+                    <td>26/10/2016</td>
+                    <td>595.20</td>
+                    <td>Vehicle hire</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Agriculture, Food &amp; Rural Communities</td>
+                    <td>Enterprise</td>
+                    <td>Enterprise rent-a-car</td>
+                    <td>25/10/2016</td>
+                    <td>589.20</td>
+                    <td>Vehicle hire</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Agriculture, Food &amp; Rural Communities</td>
+                    <td>Enterprise</td>
+                    <td>Enterprise rent-a-car</td>
+                    <td>25/10/2016</td>
+                    <td>589.20</td>
+                    <td>Vehicle hire</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Agriculture, Food &amp; Rural Communities</td>
+                    <td>Enterprise</td>
+                    <td>Enterprise rent-a-car</td>
+                    <td>11/10/2016</td>
+                    <td>589.20</td>
+                    <td>Vehicle hire</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Agriculture, Food &amp; Rural Communities</td>
+                    <td>Spectrum computers ltd</td>
+                    <td>Computers, computer peripheral equipment, software</td>
+                    <td>24/10/2016</td>
+                    <td>1175.04</td>
+                    <td>IT consumables</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Chief Economist</td>
+                    <td>Financial Times lt</td>
+                    <td>Books, periodicals and newspapers</td>
+                    <td>18/10/2016</td>
+                    <td>2371.20</td>
+                    <td>Professional subscription - fees</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Chief Information Officer</td>
+                    <td>Spectrum computers ltd</td>
+                    <td>Computers, computer peripheral equipment, software</td>
+                    <td>25/10/2016</td>
+                    <td>598.13</td>
+                    <td>IT consumables</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Communications &amp; Ministerial Support</td>
+                    <td>MCI fran congres</td>
+                    <td>Consulting, management and public relations services</td>
+                    <td>05/10/2016</td>
+                    <td>959.62</td>
+                    <td>External conference - fees</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Communications &amp; Ministerial Support</td>
+                    <td>Lyreco UK ltd</td>
+                    <td>Office, school supply and stationery stores</td>
+                    <td>19/10/2016</td>
+                    <td>868.31</td>
+                    <td>Stationery</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Communications &amp; Ministerial Support</td>
+                    <td>Lyreco UK ltd</td>
+                    <td>Office, school supply and stationery stores</td>
+                    <td>14/10/2016</td>
+                    <td>761.36</td>
+                    <td>Stationery</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Digital</td>
+                    <td>Amazon web services</td>
+                    <td>Business services - not elsewhere classified</td>
+                    <td>03/10/2016</td>
+                    <td>5845.77</td>
+                    <td>Web service - service charge - September 2016</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for External Affairs</td>
+                    <td>Geppetto Catering</td>
+                    <td>Caterers</td>
+                    <td>27/10/2016</td>
+                    <td>990.35</td>
+                    <td>External event - catering costs</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Healthcare Quality &amp; Improvement</td>
+                    <td>Spectrum computers ltd</td>
+                    <td>Computers, computer peripheral equipment, software</td>
+                    <td>28/10/2016</td>
+                    <td>861.01</td>
+                    <td>IT consumables</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Healthcare Quality &amp; Improvement</td>
+                    <td>Spectrum computers ltd</td>
+                    <td>Computers, computer peripheral equipment, software</td>
+                    <td>12/10/2016</td>
+                    <td>720.00</td>
+                    <td>IT consumables</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Justice</td>
+                    <td>Spectrum computers ltd</td>
+                    <td>Computers, computer peripheral equipment, software</td>
+                    <td>19/10/2016</td>
+                    <td>938.81</td>
+                    <td>IT consumables</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Local Government &amp; Communities</td>
+                    <td>WWW.STRATH.AC.UK</td>
+                    <td>Colleges, universities, pro schools, junior colleges</td>
+                    <td>11/10/2016</td>
+                    <td>600.00</td>
+                    <td>External training course - fees</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Local Government &amp; Communities</td>
+                    <td>Sodexo ltd</td>
+                    <td>Eating places, restaurants</td>
+                    <td>25/10/2016</td>
+                    <td>767.04</td>
+                    <td>Catering</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Local Government &amp; Communities</td>
+                    <td>Sodexo ltd</td>
+                    <td>Eating places, restaurants</td>
+                    <td>24/10/2016</td>
+                    <td>733.38</td>
+                    <td>Catering</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Local Government &amp; Communities</td>
+                    <td>Sodexo ltd</td>
+                    <td>Eating places, restaurants</td>
+                    <td>05/10/2016</td>
+                    <td>931.38</td>
+                    <td>Catering</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Marine Scotland</td>
+                    <td>Vertical descents</td>
+                    <td>Athletic fields, commercial sport, sport clubs, sport promotion</td>
+                    <td>05/10/2016</td>
+                    <td>1056.00</td>
+                    <td>External training course - fees</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Marine Scotland</td>
+                    <td>City electrical FA</td>
+                    <td>Building materials, lumber stores</td>
+                    <td>27/10/2016</td>
+                    <td>527.80</td>
+                    <td>Vessel engineering spares</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Marine Scotland</td>
+                    <td>Resolution GB ltd</td>
+                    <td>Electrical and small appliance repair shops</td>
+                    <td>05/10/2016</td>
+                    <td>600.24</td>
+                    <td>Specialist IT equipment - Maintenance</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Marine Scotland</td>
+                    <td>WWW.PREMIERCATERINGEQU</td>
+                    <td>Electrical parts and equipment</td>
+                    <td>28/10/2016</td>
+                    <td>549.60</td>
+                    <td>Vessel equipment</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Marine Scotland</td>
+                    <td>Duvalay</td>
+                    <td>Equipment, furniture, home furnishings stores (except appliances)</td>
+                    <td>03/10/2016</td>
+                    <td>559.60</td>
+                    <td>Vessel equipment</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Marine Scotland</td>
+                    <td>Plastor limited</td>
+                    <td>Hardware equipment and supplies</td>
+                    <td>12/10/2016</td>
+                    <td>1146.00</td>
+                    <td>Scientific equipment</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Marine Scotland</td>
+                    <td>Peter smith valve</td>
+                    <td>Industrial supplies - not elsewhere classified</td>
+                    <td>24/10/2016</td>
+                    <td>1176.00</td>
+                    <td>Vessel engineering equipment - maintenance</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Marine Scotland</td>
+                    <td>Jurys Inn Gateshead</td>
+                    <td>Lodging, hotels, motels, resorts - not elsewhere classified</td>
+                    <td>05/10/2016</td>
+                    <td>613.00</td>
+                    <td>External accommodation - fees</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Marine Scotland</td>
+                    <td>Public library of science</td>
+                    <td>Organizations, charitable and social services</td>
+                    <td>05/10/2016</td>
+                    <td>1209.32</td>
+                    <td>Publication - fees</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Marine Scotland</td>
+                    <td>Pumpmasters</td>
+                    <td>Plumbing and heating equipment</td>
+                    <td>28/10/2016</td>
+                    <td>1255.25</td>
+                    <td>Vessel engineering spares</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Marine Scotland</td>
+                    <td>Active comm Europe ltd</td>
+                    <td>Professional services - not elsewhere classified</td>
+                    <td>19/10/2016</td>
+                    <td>1614.00</td>
+                    <td>External conference - fees</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Performance &amp; Delivery</td>
+                    <td>Sodexo ltd</td>
+                    <td>Eating places, restaurants</td>
+                    <td>13/10/2016</td>
+                    <td>945.00</td>
+                    <td>Catering</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Safer Communities</td>
+                    <td>Sodexo ltd</td>
+                    <td>Eating places, restaurants</td>
+                    <td>07/10/2016</td>
+                    <td>698.28</td>
+                    <td>Catering</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Safer Communities</td>
+                    <td>Sodexo ltd</td>
+                    <td>Eating places, restaurants</td>
+                    <td>03/10/2016</td>
+                    <td>849.42</td>
+                    <td>Catering</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Strategy &amp; Constitution</td>
+                    <td>Howies restaurants</td>
+                    <td>Eating places, restaurants</td>
+                    <td>27/10/2016</td>
+                    <td>672.49</td>
+                    <td>External event - catering costs</td>
+                </tr>
+                
+                <tr>
+                    <td>Directorate for Strategy &amp; Constitution</td>
+                    <td>Sodexo ltd</td>
+                    <td>Eating places, restaurants</td>
+                    <td>03/10/2016</td>
+                    <td>784.80</td>
+                    <td>Catering</td>
+                </tr>
+                
+                <tr>
+                    <td>People Directorate</td>
+                    <td>WWW.VIKING-DIRECT.CO.U</td>
+                    <td>Stationery/office supplies/printing &amp; writing paper</td>
+                    <td>07/10/2016</td>
+                    <td>659.88</td>
+                    <td>Office equipment</td>
+                </tr>
+                
+                <tr>
+                    <td>People Directorate</td>
+                    <td>Sign plus ltd</td>
+                    <td>Stationery/office supplies/printing &amp; writing paper</td>
+                    <td>07/10/2016</td>
+                    <td>507.36</td>
+                    <td>Building indoor signage</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            charts.spendByDirectorate("spend-data", "chart-spend-by-directorate");
+        });
+    </script>
     </div>
   </main>
 
@@ -452,6 +810,4 @@
     </div>
   </footer>
 </body>
-
-<script src="/assets/main.js"></script>
 </html>
