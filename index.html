@@ -9,7 +9,7 @@ title: Home
 <ul>
   {% for spendData in collections.spendsOver500 %}
     <li>
-      <a href="spends/{{spendData.title}}">{{spendData.title}} - {{spendData.data.length}} entries</a>
+      <a href="spends/{{spendData.title}}">{{spendData.displayTitle}} - {{spendData.data.length}} entries</a>
     </li>
   {% endfor %}
 </ul>

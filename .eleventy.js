@@ -9,12 +9,13 @@ module.exports = function (eleventyConfig) {
     for (const [key, value] of Object.entries(allItems)) {
       var monthSpendData = {
         "title": key,
+        "displayTitle": (new Date(`${key}-01`)).toLocaleString("en-GB", { month: "long", year: "numeric" }),
         "data": value
       }
 
       spendCollection.push(monthSpendData);
     }
-    
+
     return spendCollection;
   });
 
