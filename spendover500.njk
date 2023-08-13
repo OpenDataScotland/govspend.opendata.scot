@@ -8,6 +8,7 @@ permalink: "spends/{{ spends.title | slugify }}/"
 layout: base
 eleventyComputed:
     title: "{{ spends.displayTitle }}"
+    description: "Spend over £500 for {{spends.displayTitle}}"
 ---
 
 <script id="spend-data" type="application/json">
