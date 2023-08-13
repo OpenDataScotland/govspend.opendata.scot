@@ -8257,7 +8257,7 @@ function spendByDirectorate(jsonElementId, chartElementId) {
     },
     xAxis: {
       categories: groupedData.map(function (x) {
-        return x.directorate;
+        return x.directorate.replaceAll(/Directorate for /gi, "");
       })
     },
     yAxis: {
