@@ -20,21 +20,32 @@ eleventyComputed:
 <h1>{{title}}</h1>
 
 <div class="row">
-    <div class="col-lg-6 col-12">
+    <div class="col-lg-8 col-12">
         <table class="table table-bordered">
             <thead>
                 <tr>
                     <th colspan="2" class="text-center bg-light">Spend profile</th>
                 </tr>
             </thead>
+            {% set total_spend = spends.data | sum("Transaction Amount") %}
+            {% set transaction_count = spends.data | length %}
+            {% set average_spend = total_spend / transaction_count %}
             <tbody>
                 <tr>
                     <th class="bg-light">Total spend</th>
-                    <td>{{spends.data | sum("Transaction Amount") | toCurrency }}</td>
+                    <td>{{total_spend | toCurrency }}</td>
                 </tr>
                 <tr>
                     <th class="bg-light">Transaction count</th>
-                    <td>{{spends.data | length }}</td>
+                    <td>{{transaction_count }}</td>
+                </tr>
+                <tr>
+                    <th class="bg-light">Average transaction spend</th>
+                    <td>{{ average_spend | toCurrency }}</td>
+                </tr>
+                <tr>
+                    <th class="bg-light">Top spender</th>
+                    <td>{{ spends.data | findTopSpender }}</td>
                 </tr>
             </tbody>
         </table>

@@ -1,4 +1,6 @@
 module.exports = function (eleventyConfig) {
+  const _ = require("lodash")
+
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
 
   eleventyConfig.addCollection("spendsOver500", (collection) => {
@@ -29,15 +31,30 @@ module.exports = function (eleventyConfig) {
     }, 0);
   });
 
-  eleventyConfig.addFilter("toCurrency", function (value) {
-    let GBPFormat = new Intl.NumberFormat('en-GB', {
-        style: 'currency',
-        currency: 'GBP',
-    });
-
+  const GBPFormat = new Intl.NumberFormat('en-GB', {
+    style: 'currency',
+    currency: 'GBP',
+  });
+  
+  function toCurrency(value){
     return GBPFormat.format(value);
+  }
+
+  eleventyConfig.addFilter("toCurrency", function (value) {
+    return toCurrency(value);
+  })
+
+  eleventyConfig.addFilter("findTopSpender", function (value) {
+    var maxSpend = _(value)
+      .groupBy("Directorate")
+      .map((directorate, total) => ({
+        directorate: total,
+        total: _.sumBy(directorate, "Transaction Amount")
+      }))
+      .maxBy("total");
+
+    return `${maxSpend.directorate} (${toCurrency(maxSpend.total)})`;
   })
 
   eleventyConfig.addPassthroughCopy("CNAME");
-
 };
