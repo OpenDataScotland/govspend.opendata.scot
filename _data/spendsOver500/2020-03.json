@@ -4,7 +4,7 @@
         "Merchant Name":"Sli Do",
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"17\/03\/2020",
-        "Transaction Amount":"£900.00",
+        "Transaction Amount":900.0,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -12,7 +12,7 @@
         "Merchant Name":"Enterprise Rent-A-Car",
         "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"16\/03\/2020",
-        "Transaction Amount":"£516.42",
+        "Transaction Amount":516.42,
         "Expense Description":"Vehicle hire"
     },
     {
@@ -20,7 +20,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"09\/03\/2020",
-        "Transaction Amount":"£540.84",
+        "Transaction Amount":540.84,
         "Expense Description":"IT peripherals"
     },
     {
@@ -28,7 +28,7 @@
         "Merchant Name":"Lyreco Uk Ltd",
         "Merchant Category Name":"Office, school supply, & stationery stores",
         "Transaction Date":"23\/03\/2020",
-        "Transaction Amount":"£797.72",
+        "Transaction Amount":797.72,
         "Expense Description":"Stationery"
     },
     {
@@ -36,7 +36,7 @@
         "Merchant Name":"Screwfix Dir. Ltd",
         "Merchant Category Name":"Building materials, lumber stores",
         "Transaction Date":"20\/03\/2020",
-        "Transaction Amount":"£734.99",
+        "Transaction Amount":734.99,
         "Expense Description":"Office equipment"
     },
     {
@@ -44,7 +44,7 @@
         "Merchant Name":"Viking Optical",
         "Merchant Category Name":"Opticians,optical goods & eyeglasses",
         "Transaction Date":"28\/02\/2020",
-        "Transaction Amount":"£583.20",
+        "Transaction Amount":583.2,
         "Expense Description":"Scientific field equipment"
     },
     {
@@ -52,7 +52,7 @@
         "Merchant Name":"Harvest Forecast",
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"30\/03\/2020",
-        "Transaction Amount":"£5,264.91",
+        "Transaction Amount":5264.91,
         "Expense Description":"Professional licence - renewal"
     },
     {
@@ -60,7 +60,7 @@
         "Merchant Name":"Surveymonkey",
         "Merchant Category Name":"Comp programing,data prcsng,intgrtd sys dsgn srvs",
         "Transaction Date":"19\/03\/2020",
-        "Transaction Amount":"£900.00",
+        "Transaction Amount":900.0,
         "Expense Description":"Professional licence - renewal"
     },
     {
@@ -68,7 +68,7 @@
         "Merchant Name":"Conference By Arinex",
         "Merchant Category Name":"Travel agencies & tour operators",
         "Transaction Date":"27\/02\/2020",
-        "Transaction Amount":"£791.76",
+        "Transaction Amount":791.76,
         "Expense Description":"External conference - fees"
     },
     {
@@ -76,7 +76,7 @@
         "Merchant Name":"Retsch (Uk) Limited",
         "Merchant Category Name":"Industrial supplies not elsewhere classified",
         "Transaction Date":"27\/02\/2020",
-        "Transaction Amount":"£2,726.16",
+        "Transaction Amount":2726.16,
         "Expense Description":"Specialist laboratory equipment - repair"
     },
     {
@@ -84,7 +84,7 @@
         "Merchant Name":"Dicksons Of",
         "Merchant Category Name":"Motor vehicle supplies & new parts",
         "Transaction Date":"19\/03\/2020",
-        "Transaction Amount":"£801.18",
+        "Transaction Amount":801.18,
         "Expense Description":"Vehicle - maintenance"
     },
     {
@@ -92,7 +92,7 @@
         "Merchant Name":"Inverness Tyre Service",
         "Merchant Category Name":"Automotive tire stores",
         "Transaction Date":"19\/03\/2020",
-        "Transaction Amount":"£938.40",
+        "Transaction Amount":938.4,
         "Expense Description":"Vehicle - maintenance"
     },
     {
@@ -100,7 +100,7 @@
         "Merchant Name":"Eb 9Th Enfsi Apst Wor",
         "Merchant Category Name":"Business services-not elsewhere classified",
         "Transaction Date":"06\/03\/2020",
-        "Transaction Amount":"£600.00",
+        "Transaction Amount":600.0,
         "Expense Description":"External conference - fees"
     },
     {
@@ -108,7 +108,7 @@
         "Merchant Name":"WWW.WESTMINSTER-BRIEFI",
         "Merchant Category Name":"Schools, business & secretarial",
         "Transaction Date":"04\/03\/2020",
-        "Transaction Amount":"£1,200.00",
+        "Transaction Amount":1200.0,
         "Expense Description":"External conference - fees"
     },
     {
@@ -116,7 +116,7 @@
         "Merchant Name":"Elite Training",
         "Merchant Category Name":"Comp programing,data prcsng,intgrtd sys dsgn srvs",
         "Transaction Date":"03\/03\/2020",
-        "Transaction Amount":"£1,428.00",
+        "Transaction Amount":1428.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -124,7 +124,7 @@
         "Merchant Name":"Aocs",
         "Merchant Category Name":"Organizations, membership-not elsewhere classified",
         "Transaction Date":"12\/03\/2020",
-        "Transaction Amount":"£629.02",
+        "Transaction Amount":629.02,
         "Expense Description":"Scientific publication - fees"
     },
     {
@@ -132,7 +132,7 @@
         "Merchant Name":"Nanoporetech.Com",
         "Merchant Category Name":"Health practitioners, medical srvcs-not elsewhere",
         "Transaction Date":"25\/03\/2020",
-        "Transaction Amount":"£9,336.00",
+        "Transaction Amount":9336.0,
         "Expense Description":"Scientific farm equipment"
     },
     {
@@ -140,7 +140,7 @@
         "Merchant Name":"Public Library Ofscien",
         "Merchant Category Name":"Organizations, charitable & social services",
         "Transaction Date":"16\/03\/2020",
-        "Transaction Amount":"£1,343.96",
+        "Transaction Amount":1343.96,
         "Expense Description":"Publication - fees"
     },
     {
@@ -148,7 +148,7 @@
         "Merchant Name":"Online Shopping",
         "Merchant Category Name":"Miscellaneous general merch&ise",
         "Transaction Date":"16\/03\/2020",
-        "Transaction Amount":"£554.94",
+        "Transaction Amount":554.94,
         "Expense Description":"Specialist laboratory equipment"
     },
     {
@@ -156,7 +156,7 @@
         "Merchant Name":"Apple.Com\/Uk",
         "Merchant Category Name":"Electronic sales",
         "Transaction Date":"17\/03\/2020",
-        "Transaction Amount":"£2,799.00",
+        "Transaction Amount":2799.0,
         "Expense Description":"IT hardware - specialist equipment"
     },
     {
@@ -164,7 +164,7 @@
         "Merchant Name":"Retsch (Uk) Limited",
         "Merchant Category Name":"Industrial supplies not elsewhere classified",
         "Transaction Date":"09\/03\/2020",
-        "Transaction Amount":"£903.12",
+        "Transaction Amount":903.12,
         "Expense Description":"Specialist laboratory equipment - repair"
     },
     {
@@ -172,7 +172,7 @@
         "Merchant Name":"Nanoporetech.Com",
         "Merchant Category Name":"Health practitioners, medical srvcs-not elsewhere",
         "Transaction Date":"11\/03\/2020",
-        "Transaction Amount":"£2,352.00",
+        "Transaction Amount":2352.0,
         "Expense Description":"Specialist laboratory equipment"
     },
     {
@@ -180,7 +180,7 @@
         "Merchant Name":"Nanoporetech.Com",
         "Merchant Category Name":"Health practitioners, medical srvcs-not elsewhere",
         "Transaction Date":"09\/03\/2020",
-        "Transaction Amount":"£1,296.00",
+        "Transaction Amount":1296.0,
         "Expense Description":"Specialist laboratory equipment"
     },
     {
@@ -188,7 +188,7 @@
         "Merchant Name":"Nanoporetech.Com",
         "Merchant Category Name":"Health practitioners, medical srvcs-not elsewhere",
         "Transaction Date":"06\/03\/2020",
-        "Transaction Amount":"£9,336.00",
+        "Transaction Amount":9336.0,
         "Expense Description":"Specialist laboratory equipment"
     },
     {
@@ -196,7 +196,7 @@
         "Merchant Name":"Online Shopping",
         "Merchant Category Name":"Miscellaneous general merch&ise",
         "Transaction Date":"05\/03\/2020",
-        "Transaction Amount":"£1,331.74",
+        "Transaction Amount":1331.74,
         "Expense Description":"Specialist laboratory equipment"
     },
     {
@@ -204,7 +204,7 @@
         "Merchant Name":"Kaneka Eurogentec Sa",
         "Merchant Category Name":"Dental\/lab\/med\/ophthalmic hosp equip & supplies",
         "Transaction Date":"02\/03\/2020",
-        "Transaction Amount":"£2,694.60",
+        "Transaction Amount":2694.6,
         "Expense Description":"Scientific equipment"
     },
     {
@@ -212,7 +212,7 @@
         "Merchant Name":"Goodnature Traps Uk",
         "Merchant Category Name":"Comp programing,data prcsng,intgrtd sys dsgn srvs",
         "Transaction Date":"04\/03\/2020",
-        "Transaction Amount":"£647.91",
+        "Transaction Amount":647.91,
         "Expense Description":"Specialist laboratory equipment"
     },
     {
@@ -220,7 +220,7 @@
         "Merchant Name":"Colourbyte Europe Ltd",
         "Merchant Category Name":"Miscellaneous general merch&ise",
         "Transaction Date":"11\/03\/2020",
-        "Transaction Amount":"£940.46",
+        "Transaction Amount":940.46,
         "Expense Description":"Office equipment"
     },
     {
@@ -228,7 +228,7 @@
         "Merchant Name":"Shakermaker",
         "Merchant Category Name":"Professional services-not elsewhere classified",
         "Transaction Date":"23\/03\/2020",
-        "Transaction Amount":"£1,008.50",
+        "Transaction Amount":1008.5,
         "Expense Description":"External event - material"
     },
     {
@@ -236,7 +236,7 @@
         "Merchant Name":"Rhs Garden",
         "Merchant Category Name":"Organizations, membership-not elsewhere classified",
         "Transaction Date":"28\/02\/2020",
-        "Transaction Amount":"£5,000.00",
+        "Transaction Amount":5000.0,
         "Expense Description":"External event - fees"
     },
     {
@@ -244,7 +244,7 @@
         "Merchant Name":"Civil Service College",
         "Merchant Category Name":"Schools, business & secretarial",
         "Transaction Date":"09\/03\/2020",
-        "Transaction Amount":"£714.00",
+        "Transaction Amount":714.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -252,7 +252,7 @@
         "Merchant Name":"Saltire Hospitality Li",
         "Merchant Category Name":"Eating places, restaurants",
         "Transaction Date":"11\/03\/2020",
-        "Transaction Amount":"£986.88",
+        "Transaction Amount":986.88,
         "Expense Description":"External event - catering costs"
     },
     {
@@ -260,7 +260,7 @@
         "Merchant Name":"Hilton",
         "Merchant Category Name":"Hilton",
         "Transaction Date":"09\/03\/2020",
-        "Transaction Amount":"£698.50",
+        "Transaction Amount":698.5,
         "Expense Description":"External event - catering costs"
     },
     {
@@ -268,7 +268,7 @@
         "Merchant Name":"Golden Jubilee Confere",
         "Merchant Category Name":"Lodging-hotels,motels,resorts-not classified",
         "Transaction Date":"28\/02\/2020",
-        "Transaction Amount":"£1,665.70",
+        "Transaction Amount":1665.7,
         "Expense Description":"External event - room hire"
     },
     {
@@ -276,7 +276,7 @@
         "Merchant Name":"Clear Business",
         "Merchant Category Name":"Utlts-elctrc, gas, heating oil, sanitary, water",
         "Transaction Date":"19\/03\/2020",
-        "Transaction Amount":"£629.05",
+        "Transaction Amount":629.05,
         "Expense Description":"Building - payment charge"
     },
     {
@@ -284,7 +284,7 @@
         "Merchant Name":"WWW.FPMAILING.CO.UK",
         "Merchant Category Name":"Commercial equipment, not elsewhere classified",
         "Transaction Date":"05\/03\/2020",
-        "Transaction Amount":"£500.00",
+        "Transaction Amount":500.0,
         "Expense Description":"Postal Services"
     },
     {
@@ -292,7 +292,7 @@
         "Merchant Name":"The Hub Events Ltd",
         "Merchant Category Name":"Comp programing,data prcsng,intgrtd sys dsgn srvs",
         "Transaction Date":"09\/03\/2020",
-        "Transaction Amount":"£626.40",
+        "Transaction Amount":626.4,
         "Expense Description":"External training course - fees"
     },
     {
@@ -300,7 +300,7 @@
         "Merchant Name":"WWW.WESTMINSTER-BRIEFI",
         "Merchant Category Name":"Schools, business & secretarial",
         "Transaction Date":"03\/03\/2020",
-        "Transaction Amount":"£708.00",
+        "Transaction Amount":708.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -308,7 +308,7 @@
         "Merchant Name":"Edinburgh Airport Ltd",
         "Merchant Category Name":"Schools, trade & vocational",
         "Transaction Date":"24\/03\/2020",
-        "Transaction Amount":"£2,880.00",
+        "Transaction Amount":2880.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -316,7 +316,7 @@
         "Merchant Name":"Edinburgh Airport Ltd",
         "Merchant Category Name":"Schools, trade & vocational",
         "Transaction Date":"24\/03\/2020",
-        "Transaction Amount":"£3,120.00",
+        "Transaction Amount":3120.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -324,7 +324,7 @@
         "Merchant Name":"Edinburgh Airport Ltd",
         "Merchant Category Name":"Schools, trade & vocational",
         "Transaction Date":"16\/03\/2020",
-        "Transaction Amount":"£4,080.00",
+        "Transaction Amount":4080.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -332,7 +332,7 @@
         "Merchant Name":"Edinburgh Airport Ltd",
         "Merchant Category Name":"Schools, trade & vocational",
         "Transaction Date":"16\/03\/2020",
-        "Transaction Amount":"£3,840.00",
+        "Transaction Amount":3840.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -340,7 +340,7 @@
         "Merchant Name":"Edinburgh Airport Ltd",
         "Merchant Category Name":"Schools, trade & vocational",
         "Transaction Date":"11\/03\/2020",
-        "Transaction Amount":"£3,380.00",
+        "Transaction Amount":3380.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -348,7 +348,7 @@
         "Merchant Name":"Security Industry",
         "Merchant Category Name":"Detectve\/protectve agncy,security srvs, armor cars",
         "Transaction Date":"06\/03\/2020",
-        "Transaction Amount":"£630.00",
+        "Transaction Amount":630.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -356,7 +356,7 @@
         "Merchant Name":"Ace Handling Uk Ltd",
         "Merchant Category Name":"Business services-not elsewhere classified",
         "Transaction Date":"10\/03\/2020",
-        "Transaction Amount":"£822.00",
+        "Transaction Amount":822.0,
         "Expense Description":"Meeting facilities at foreign airport"
     },
     {
@@ -364,7 +364,7 @@
         "Merchant Name":"WWW.APCC.COM",
         "Merchant Category Name":"Household appliance stores",
         "Transaction Date":"09\/03\/2020",
-        "Transaction Amount":"£730.80",
+        "Transaction Amount":730.8,
         "Expense Description":"Office equipment"
     },
     {
@@ -372,7 +372,7 @@
         "Merchant Name":"WWW.EVCONNECTORS.COM",
         "Merchant Category Name":"Automotive parts, accessories stores",
         "Transaction Date":"23\/03\/2020",
-        "Transaction Amount":"£658.20",
+        "Transaction Amount":658.2,
         "Expense Description":"Vehicle - maintenance"
     },
     {
@@ -380,7 +380,7 @@
         "Merchant Name":"British Parking Associ",
         "Merchant Category Name":"Organizations, membership-not elsewhere classified",
         "Transaction Date":"09\/03\/2020",
-        "Transaction Amount":"£1,423.20",
+        "Transaction Amount":1423.2,
         "Expense Description":"Professional membership - renewal fees"
     },
     {
@@ -388,7 +388,7 @@
         "Merchant Name":"Station Garage",
         "Merchant Category Name":"Auto & truck dlrs-sales,svc, reprs,prts, & leasing",
         "Transaction Date":"24\/03\/2020",
-        "Transaction Amount":"£1,079.50",
+        "Transaction Amount":1079.5,
         "Expense Description":"Vehicle - maintenance"
     },
     {
@@ -396,7 +396,7 @@
         "Merchant Name":"D Sutherland Inv",
         "Merchant Category Name":"Towing services",
         "Transaction Date":"23\/03\/2020",
-        "Transaction Amount":"£601.08",
+        "Transaction Amount":601.08,
         "Expense Description":"Vehicle - maintenance"
     },
     {
@@ -404,7 +404,7 @@
         "Merchant Name":"Macklin Motors",
         "Merchant Category Name":"Auto & truck dlrs-sales,svc, reprs,prts, & leasing",
         "Transaction Date":"18\/03\/2020",
-        "Transaction Amount":"£503.08",
+        "Transaction Amount":503.08,
         "Expense Description":"Vehicle - maintenance"
     },
     {
@@ -412,7 +412,7 @@
         "Merchant Name":"Viking Services",
         "Merchant Category Name":"Sanitation, polishing & speciality cleaning prep",
         "Transaction Date":"05\/03\/2020",
-        "Transaction Amount":"£538.80",
+        "Transaction Amount":538.8,
         "Expense Description":"Vehicle - maintenance"
     },
     {
@@ -420,7 +420,7 @@
         "Merchant Name":"WWW.BANNERUK.COM",
         "Merchant Category Name":"Stationery\/office supplies\/printing & writing pap.",
         "Transaction Date":"20\/03\/2020",
-        "Transaction Amount":"£2,649.48",
+        "Transaction Amount":2649.48,
         "Expense Description":"Office equipment"
     },
     {
@@ -428,7 +428,7 @@
         "Merchant Name":"Barrow Hepburn & Gale",
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"16\/03\/2020",
-        "Transaction Amount":"£2,788.40",
+        "Transaction Amount":2788.4,
         "Expense Description":"Office equipment"
     },
     {
@@ -436,7 +436,7 @@
         "Merchant Name":"Baymed Healthcare",
         "Merchant Category Name":"Drugs, drup proprietaries, & druggist's supplies",
         "Transaction Date":"02\/03\/2020",
-        "Transaction Amount":"£4,855.63",
+        "Transaction Amount":4855.63,
         "Expense Description":"Health & safety equipment"
     },
     {
@@ -444,7 +444,7 @@
         "Merchant Name":"Marmaxprodu",
         "Merchant Category Name":"Equip, furniture, home furnshngs strs (excpt appl)",
         "Transaction Date":"09\/03\/2020",
-        "Transaction Amount":"£2,299.20",
+        "Transaction Amount":2299.2,
         "Expense Description":"Office equipment"
     },
     {
@@ -452,7 +452,7 @@
         "Merchant Name":"Lyreco Uk Ltd",
         "Merchant Category Name":"Office, school supply, & stationery stores",
         "Transaction Date":"13\/03\/2020",
-        "Transaction Amount":"£526.22",
+        "Transaction Amount":526.22,
         "Expense Description":"Stationery"
     },
     {
@@ -460,7 +460,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"03\/03\/2020",
-        "Transaction Amount":"£711.96",
+        "Transaction Amount":711.96,
         "Expense Description":"IT peripherals"
     },
     {
@@ -468,7 +468,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"03\/03\/2020",
-        "Transaction Amount":"£747.72",
+        "Transaction Amount":747.72,
         "Expense Description":"IT peripherals"
     },
     {
@@ -476,7 +476,7 @@
         "Merchant Name":"Lyreco Uk Ltd",
         "Merchant Category Name":"Office, school supply, & stationery stores",
         "Transaction Date":"28\/02\/2020",
-        "Transaction Amount":"£958.07",
+        "Transaction Amount":958.07,
         "Expense Description":"Stationery"
     },
     {
@@ -484,7 +484,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"06\/03\/2020",
-        "Transaction Amount":"£1,066.74",
+        "Transaction Amount":1066.74,
         "Expense Description":"IT peripherals"
     },
     {
@@ -492,7 +492,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"04\/03\/2020",
-        "Transaction Amount":"£1,288.67",
+        "Transaction Amount":1288.67,
         "Expense Description":"IT peripherals"
     },
     {
@@ -500,7 +500,7 @@
         "Merchant Name":"Total Merchandise",
         "Merchant Category Name":"Miscellaneous general merch&ise",
         "Transaction Date":"19\/03\/2020",
-        "Transaction Amount":"£1,169.93",
+        "Transaction Amount":1169.93,
         "Expense Description":"Office equipment"
     },
     {
@@ -508,7 +508,7 @@
         "Merchant Name":"Lyreco Uk Ltd",
         "Merchant Category Name":"Office, school supply, & stationery stores",
         "Transaction Date":"12\/03\/2020",
-        "Transaction Amount":"£604.16",
+        "Transaction Amount":604.16,
         "Expense Description":"Stationery"
     },
     {
@@ -516,7 +516,7 @@
         "Merchant Name":"Etb Technologies Ltd",
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"19\/03\/2020",
-        "Transaction Amount":"£3,620.40",
+        "Transaction Amount":3620.4,
         "Expense Description":"IT hardware - specialist equipment"
     },
     {
@@ -524,7 +524,7 @@
         "Merchant Name":"Digicert Inc",
         "Merchant Category Name":"Business services-not elsewhere classified",
         "Transaction Date":"18\/03\/2020",
-        "Transaction Amount":"£1,127.55",
+        "Transaction Amount":1127.55,
         "Expense Description":"Professional licence - renewal"
     },
     {
@@ -532,7 +532,7 @@
         "Merchant Name":"Cyberpowerpc",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"30\/03\/2020",
-        "Transaction Amount":"£2,473.20",
+        "Transaction Amount":2473.2,
         "Expense Description":"IT hardware - specialist equipment"
     },
     {
@@ -540,7 +540,7 @@
         "Merchant Name":"Cyberpowerpc",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"30\/03\/2020",
-        "Transaction Amount":"£2,462.40",
+        "Transaction Amount":2462.4,
         "Expense Description":"IT hardware - specialist equipment"
     },
     {
@@ -548,7 +548,7 @@
         "Merchant Name":"Pc Specialist Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"10\/03\/2020",
-        "Transaction Amount":"£1,501.00",
+        "Transaction Amount":1501.0,
         "Expense Description":"IT hardware - specialist equipment"
     },
     {
@@ -556,7 +556,7 @@
         "Merchant Name":"Optimal Workshop",
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"28\/03\/2020",
-        "Transaction Amount":"£1,686.90",
+        "Transaction Amount":1686.9,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -564,7 +564,7 @@
         "Merchant Name":"Harvest",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"28\/03\/2020",
-        "Transaction Amount":"£931.60",
+        "Transaction Amount":931.6,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -572,7 +572,7 @@
         "Merchant Name":"Amznmktplace",
         "Merchant Category Name":"Miscellaneous & specialty retail stores",
         "Transaction Date":"18\/03\/2020",
-        "Transaction Amount":"£1,905.83",
+        "Transaction Amount":1905.83,
         "Expense Description":"Photographic equipment"
     },
     {
@@ -580,7 +580,7 @@
         "Merchant Name":"Harvest",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"28\/02\/2020",
-        "Transaction Amount":"£846.75",
+        "Transaction Amount":846.75,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -588,7 +588,7 @@
         "Merchant Name":"Revolution Events Ltd",
         "Merchant Category Name":"Business services-not elsewhere classified",
         "Transaction Date":"09\/03\/2020",
-        "Transaction Amount":"£696.00",
+        "Transaction Amount":696.0,
         "Expense Description":"External event - fees"
     },
     {
@@ -596,7 +596,7 @@
         "Merchant Name":"Hoo Hootsuite Inc",
         "Merchant Category Name":"Business services-not elsewhere classified",
         "Transaction Date":"28\/03\/2020",
-        "Transaction Amount":"£1,574.66",
+        "Transaction Amount":1574.66,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -604,7 +604,7 @@
         "Merchant Name":"Arlo Software Ltd",
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"23\/03\/2020",
-        "Transaction Amount":"£10,883.00",
+        "Transaction Amount":10883.0,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -612,7 +612,7 @@
         "Merchant Name":"A Cloud Guru",
         "Merchant Category Name":"Schools & educational svc-not elsewhere classified",
         "Transaction Date":"11\/03\/2020",
-        "Transaction Amount":"£6,882.57",
+        "Transaction Amount":6882.57,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -620,7 +620,7 @@
         "Merchant Name":"Amazon Web Services",
         "Merchant Category Name":"Business services-not elsewhere classified",
         "Transaction Date":"03\/03\/2020",
-        "Transaction Amount":"£1,969.85",
+        "Transaction Amount":1969.85,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -628,7 +628,7 @@
         "Merchant Name":"Enterprise Rent-A-Car",
         "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"16\/03\/2020",
-        "Transaction Amount":"£663.59",
+        "Transaction Amount":663.59,
         "Expense Description":"Vehicle hire"
     },
     {
@@ -636,7 +636,7 @@
         "Merchant Name":"Enterprise Rent-A-Car",
         "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"12\/03\/2020",
-        "Transaction Amount":"£663.59",
+        "Transaction Amount":663.59,
         "Expense Description":"Vehicle hire"
     },
     {
@@ -644,7 +644,7 @@
         "Merchant Name":"Lyreco Uk Ltd",
         "Merchant Category Name":"Office, school supply, & stationery stores",
         "Transaction Date":"28\/02\/2020",
-        "Transaction Amount":"£856.27",
+        "Transaction Amount":856.27,
         "Expense Description":"Stationery"
     },
     {
@@ -652,7 +652,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"12\/03\/2020",
-        "Transaction Amount":"£905.11",
+        "Transaction Amount":905.11,
         "Expense Description":"IT peripherals"
     },
     {
@@ -660,7 +660,7 @@
         "Merchant Name":"The Gailes Hotel",
         "Merchant Category Name":"Lodging-hotels,motels,resorts-not classified",
         "Transaction Date":"17\/03\/2020",
-        "Transaction Amount":"£1,364.90",
+        "Transaction Amount":1364.9,
         "Expense Description":"External event - room hire"
     },
     {
@@ -668,7 +668,7 @@
         "Merchant Name":"WWW.WESTMINSTER-BRIEFI",
         "Merchant Category Name":"Schools, business & secretarial",
         "Transaction Date":"06\/03\/2020",
-        "Transaction Amount":"£1,200.00",
+        "Transaction Amount":1200.0,
         "Expense Description":"External event - fees"
     },
     {
@@ -676,7 +676,7 @@
         "Merchant Name":"Tableau",
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"18\/03\/2020",
-        "Transaction Amount":"£22,215.12",
+        "Transaction Amount":22215.12,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -684,7 +684,7 @@
         "Merchant Name":"Eb Dare To Lead",
         "Merchant Category Name":"Business services-not elsewhere classified",
         "Transaction Date":"10\/03\/2020",
-        "Transaction Amount":"£750.00",
+        "Transaction Amount":750.0,
         "Expense Description":"External event - fees"
     },
     {
@@ -692,7 +692,7 @@
         "Merchant Name":"Zoom.Gbp",
         "Merchant Category Name":"Direct marketing-continuity\/subscription merchants",
         "Transaction Date":"23\/03\/2020",
-        "Transaction Amount":"£3,838.80",
+        "Transaction Amount":3838.8,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -700,7 +700,7 @@
         "Merchant Name":"WWW.EYEAIRPORTS.CO",
         "Merchant Category Name":"Miscellaneous publishing & printing",
         "Transaction Date":"19\/03\/2020",
-        "Transaction Amount":"£2,820.00",
+        "Transaction Amount":2820.0,
         "Expense Description":"Publication - Advertising costs"
     },
     {
@@ -708,7 +708,7 @@
         "Merchant Name":"Lyreco Uk Ltd",
         "Merchant Category Name":"Office, school supply, & stationery stores",
         "Transaction Date":"12\/03\/2020",
-        "Transaction Amount":"£694.67",
+        "Transaction Amount":694.67,
         "Expense Description":"Stationery"
     },
     {
@@ -716,7 +716,7 @@
         "Merchant Name":"The Whisky Shop",
         "Merchant Category Name":"Package stores, beer, wine, liquor",
         "Transaction Date":"12\/03\/2020",
-        "Transaction Amount":"£763.77",
+        "Transaction Amount":763.77,
         "Expense Description":"External event - catering costs"
     },
     {
@@ -724,7 +724,7 @@
         "Merchant Name":"Vistapr Vistaprint.Ca",
         "Merchant Category Name":"Miscellaneous publishing & printing",
         "Transaction Date":"17\/03\/2020",
-        "Transaction Amount":"£853.82",
+        "Transaction Amount":853.82,
         "Expense Description":"Publication - fees"
     },
     {
@@ -732,7 +732,7 @@
         "Merchant Name":"Mogo Direct Ltd",
         "Merchant Category Name":"Equip, furniture, home furnshngs strs (excpt appl)",
         "Transaction Date":"17\/03\/2020",
-        "Transaction Amount":"£4,322.74",
+        "Transaction Amount":4322.74,
         "Expense Description":"Office equipment"
     },
     {
@@ -740,7 +740,7 @@
         "Merchant Name":"Apple.Com\/Uk",
         "Merchant Category Name":"Electronic sales",
         "Transaction Date":"12\/03\/2020",
-        "Transaction Amount":"£2,394.14",
+        "Transaction Amount":2394.14,
         "Expense Description":"IT hardware - specialist equipment"
     },
     {
@@ -748,7 +748,7 @@
         "Merchant Name":"Sumup Holleville",
         "Merchant Category Name":"Schools & educational svc-not elsewhere classified",
         "Transaction Date":"27\/03\/2020",
-        "Transaction Amount":"£2,465.56",
+        "Transaction Amount":2465.56,
         "Expense Description":"External support services"
     },
     {
@@ -756,7 +756,7 @@
         "Merchant Name":"Sumup Holleville",
         "Merchant Category Name":"Schools & educational svc-not elsewhere classified",
         "Transaction Date":"09\/03\/2020",
-        "Transaction Amount":"£2,204.56",
+        "Transaction Amount":2204.56,
         "Expense Description":"External support services"
     },
     {
@@ -764,7 +764,7 @@
         "Merchant Name":"Art And Framing Pro In",
         "Merchant Category Name":"Miscellaneous & specialty retail stores",
         "Transaction Date":"12\/03\/2020",
-        "Transaction Amount":"£1,216.55",
+        "Transaction Amount":1216.55,
         "Expense Description":"External support services"
     },
     {
@@ -772,7 +772,7 @@
         "Merchant Name":"Justrightsc",
         "Merchant Category Name":"Organizations, charitable & social services",
         "Transaction Date":"23\/03\/2020",
-        "Transaction Amount":"£750.48",
+        "Transaction Amount":750.48,
         "Expense Description":"External training course - fees"
     },
     {
@@ -780,7 +780,7 @@
         "Merchant Name":"Justrightsc",
         "Merchant Category Name":"Organizations, charitable & social services",
         "Transaction Date":"23\/03\/2020",
-        "Transaction Amount":"£750.48",
+        "Transaction Amount":750.48,
         "Expense Description":"External training course - fees"
     },
     {
@@ -788,7 +788,7 @@
         "Merchant Name":"Watercoolersdirect.Com",
         "Merchant Category Name":"Misc food store-convenience,mrkt,splty,vendng macs",
         "Transaction Date":"03\/03\/2020",
-        "Transaction Amount":"£1,186.68",
+        "Transaction Amount":1186.68,
         "Expense Description":"Office equipment"
     },
     {
@@ -796,7 +796,7 @@
         "Merchant Name":"Sp Pos-Hardware Ltd",
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"03\/03\/2020",
-        "Transaction Amount":"£1,204.50",
+        "Transaction Amount":1204.5,
         "Expense Description":"Office equipment"
     },
     {
@@ -804,7 +804,7 @@
         "Merchant Name":"WWW.CORDONBLANC.FR",
         "Merchant Category Name":"Photographic studios",
         "Transaction Date":"12\/03\/2020",
-        "Transaction Amount":"£578.39",
+        "Transaction Amount":578.39,
         "Expense Description":"External event - catering costs - (location)"
     },
     {
@@ -812,7 +812,7 @@
         "Merchant Name":"WWW.CORDONBLANC.FR",
         "Merchant Category Name":"Photographic studios",
         "Transaction Date":"12\/03\/2020",
-        "Transaction Amount":"£578.39",
+        "Transaction Amount":578.39,
         "Expense Description":"External event - catering costs - (location)"
     },
     {
@@ -820,7 +820,7 @@
         "Merchant Name":"The Whisky Shop",
         "Merchant Category Name":"Package stores, beer, wine, liquor",
         "Transaction Date":"03\/03\/2020",
-        "Transaction Amount":"£1,112.64",
+        "Transaction Amount":1112.64,
         "Expense Description":"External event - room hire"
     },
     {
@@ -828,7 +828,7 @@
         "Merchant Name":"The Whisky Shop",
         "Merchant Category Name":"Package stores, beer, wine, liquor",
         "Transaction Date":"03\/03\/2020",
-        "Transaction Amount":"£1,112.64",
+        "Transaction Amount":1112.64,
         "Expense Description":"External event - room hire"
     },
     {
@@ -836,7 +836,7 @@
         "Merchant Name":"The Whisky Shop",
         "Merchant Category Name":"Package stores, beer, wine, liquor",
         "Transaction Date":"03\/03\/2020",
-        "Transaction Amount":"£1,112.64",
+        "Transaction Amount":1112.64,
         "Expense Description":"External event - room hire"
     },
     {
@@ -844,7 +844,7 @@
         "Merchant Name":"Adobe Creative Cloud",
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"30\/03\/2020",
-        "Transaction Amount":"£596.33",
+        "Transaction Amount":596.33,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -852,7 +852,7 @@
         "Merchant Name":"Bpp Prof Education",
         "Merchant Category Name":"Colleges, univ, pro schools, junior colleges",
         "Transaction Date":"11\/03\/2020",
-        "Transaction Amount":"£537.20",
+        "Transaction Amount":537.2,
         "Expense Description":"External training course - fees"
     },
     {
@@ -860,7 +860,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"18\/03\/2020",
-        "Transaction Amount":"£2,041.40",
+        "Transaction Amount":2041.4,
         "Expense Description":"IT peripherals"
     },
     {
@@ -868,7 +868,7 @@
         "Merchant Name":"WWW.LAWSCOT.ORG.UK",
         "Merchant Category Name":"Organizations, membership-not elsewhere classified",
         "Transaction Date":"12\/03\/2020",
-        "Transaction Amount":"£604.34",
+        "Transaction Amount":604.34,
         "Expense Description":"Professional membership - fees OR Professional subscription - fees"
     },
     {
@@ -876,7 +876,7 @@
         "Merchant Name":"Surveymonkey",
         "Merchant Category Name":"Comp programing,data prcsng,intgrtd sys dsgn srvs",
         "Transaction Date":"27\/03\/2020",
-        "Transaction Amount":"£900.00",
+        "Transaction Amount":900.0,
         "Expense Description":"Professional licence - fees OR Professional licence - renewal"
     },
     {
@@ -884,7 +884,7 @@
         "Merchant Name":"Hilton",
         "Merchant Category Name":"Hilton",
         "Transaction Date":"10\/03\/2020",
-        "Transaction Amount":"£1,836.89",
+        "Transaction Amount":1836.89,
         "Expense Description":"External event - room hire"
     },
     {
@@ -892,7 +892,7 @@
         "Merchant Name":"Stirling Court Hotel",
         "Merchant Category Name":"Schools & educational svc-not elsewhere classified",
         "Transaction Date":"10\/03\/2020",
-        "Transaction Amount":"£1,189.86",
+        "Transaction Amount":1189.86,
         "Expense Description":"External event - room hire"
     },
     {
@@ -900,7 +900,7 @@
         "Merchant Name":"Stirling Court Hotel",
         "Merchant Category Name":"Schools & educational svc-not elsewhere classified",
         "Transaction Date":"04\/03\/2020",
-        "Transaction Amount":"£2,345.27",
+        "Transaction Amount":2345.27,
         "Expense Description":"External event - room hire"
     },
     {
@@ -908,7 +908,7 @@
         "Merchant Name":"C I H",
         "Merchant Category Name":"Associations-civic, social, & fraternal",
         "Transaction Date":"10\/03\/2020",
-        "Transaction Amount":"£4,000.00",
+        "Transaction Amount":4000.0,
         "Expense Description":"External support services"
     },
     {
@@ -916,7 +916,7 @@
         "Merchant Name":"Apex City Quay Hotel A",
         "Merchant Category Name":"Lodging-hotels,motels,resorts-not classified",
         "Transaction Date":"23\/03\/2020",
-        "Transaction Amount":"£970.00",
+        "Transaction Amount":970.0,
         "Expense Description":"External event - room hire"
     },
     {
@@ -924,7 +924,7 @@
         "Merchant Name":"Apex City Quay Hotel A",
         "Merchant Category Name":"Lodging-hotels,motels,resorts-not classified",
         "Transaction Date":"02\/03\/2020",
-        "Transaction Amount":"£500.00",
+        "Transaction Amount":500.0,
         "Expense Description":"External event - room hire"
     },
     {
@@ -932,7 +932,7 @@
         "Merchant Name":"Chartered Institute Of",
         "Merchant Category Name":"Accounting, auditing & bookkeeping services",
         "Transaction Date":"30\/03\/2020",
-        "Transaction Amount":"£8,550.00",
+        "Transaction Amount":8550.0,
         "Expense Description":"Professional membership - fees"
     },
     {
@@ -940,7 +940,7 @@
         "Merchant Name":"Uk Oracle User Group",
         "Merchant Category Name":"Organizations, membership-not elsewhere classified",
         "Transaction Date":"20\/03\/2020",
-        "Transaction Amount":"£1,860.00",
+        "Transaction Amount":1860.0,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -948,7 +948,7 @@
         "Merchant Name":"The Knowledge Academy",
         "Merchant Category Name":"Schools, trade & vocational",
         "Transaction Date":"12\/03\/2020",
-        "Transaction Amount":"£1,794.00",
+        "Transaction Amount":1794.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -956,7 +956,7 @@
         "Merchant Name":"Purdue Conf Cvent",
         "Merchant Category Name":"Colleges, univ, pro schools, junior colleges",
         "Transaction Date":"24\/03\/2020",
-        "Transaction Amount":"£1,342.02",
+        "Transaction Amount":1342.02,
         "Expense Description":"External training course - fees"
     },
     {
@@ -964,7 +964,7 @@
         "Merchant Name":"Victoria University",
         "Merchant Category Name":"Schools, elementary & secondary",
         "Transaction Date":"17\/03\/2020",
-        "Transaction Amount":"£2,597.67",
+        "Transaction Amount":2597.67,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -972,7 +972,7 @@
         "Merchant Name":"Pu Ag Education",
         "Merchant Category Name":"Colleges, univ, pro schools, junior colleges",
         "Transaction Date":"12\/03\/2020",
-        "Transaction Amount":"£3,316.69",
+        "Transaction Amount":3316.69,
         "Expense Description":"External support services"
     },
     {
@@ -980,7 +980,7 @@
         "Merchant Name":"Holyrood Hotel",
         "Merchant Category Name":"Lodging-hotels,motels,resorts-not classified",
         "Transaction Date":"25\/03\/2020",
-        "Transaction Amount":"£700.00",
+        "Transaction Amount":700.0,
         "Expense Description":"External event - room hire"
     },
     {
@@ -988,7 +988,7 @@
         "Merchant Name":"Edinburgh Sales Centre",
         "Merchant Category Name":"Eating places, restaurants",
         "Transaction Date":"11\/03\/2020",
-        "Transaction Amount":"£3,457.50",
+        "Transaction Amount":3457.5,
         "Expense Description":"External event - room hire"
     },
     {
@@ -996,7 +996,7 @@
         "Merchant Name":"Apex Waterloo Place Ho",
         "Merchant Category Name":"Lodging-hotels,motels,resorts-not classified",
         "Transaction Date":"04\/03\/2020",
-        "Transaction Amount":"£525.00",
+        "Transaction Amount":525.0,
         "Expense Description":"External event - room hire"
     },
     {
@@ -1004,7 +1004,7 @@
         "Merchant Name":"Lyreco Uk Ltd",
         "Merchant Category Name":"Office, school supply, & stationery stores",
         "Transaction Date":"04\/03\/2020",
-        "Transaction Amount":"£545.47",
+        "Transaction Amount":545.47,
         "Expense Description":"Stationery"
     },
     {
@@ -1012,7 +1012,7 @@
         "Merchant Name":"WWW.BANNERUK.COM",
         "Merchant Category Name":"Stationery\/office supplies\/printing & writing pap.",
         "Transaction Date":"23\/03\/2020",
-        "Transaction Amount":"£571.68",
+        "Transaction Amount":571.68,
         "Expense Description":"IT consumables"
     },
     {
@@ -1020,7 +1020,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"18\/03\/2020",
-        "Transaction Amount":"£709.01",
+        "Transaction Amount":709.01,
         "Expense Description":"IT peripherals"
     },
     {
@@ -1028,7 +1028,7 @@
         "Merchant Name":"Msft E0800Ankm7",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"18\/03\/2020",
-        "Transaction Amount":"£501.60",
+        "Transaction Amount":501.6,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -1036,7 +1036,7 @@
         "Merchant Name":"Hilton",
         "Merchant Category Name":"Hilton",
         "Transaction Date":"28\/02\/2020",
-        "Transaction Amount":"£675.00",
+        "Transaction Amount":675.0,
         "Expense Description":"External event - room hire"
     },
     {
@@ -1044,7 +1044,7 @@
         "Merchant Name":"Zoom.Gbp",
         "Merchant Category Name":"Direct marketing-continuity\/subscription merchants",
         "Transaction Date":"25\/03\/2020",
-        "Transaction Amount":"£1,918.80",
+        "Transaction Amount":1918.8,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -1052,7 +1052,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"19\/03\/2020",
-        "Transaction Amount":"£574.87",
+        "Transaction Amount":574.87,
         "Expense Description":"IT peripherals"
     },
     {
@@ -1060,7 +1060,7 @@
         "Merchant Name":"Parlicentre.Org",
         "Merchant Category Name":"Organizations, membership-not elsewhere classified",
         "Transaction Date":"11\/03\/2020",
-        "Transaction Amount":"£684.00",
+        "Transaction Amount":684.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1068,7 +1068,7 @@
         "Merchant Name":"Smartex Limited",
         "Merchant Category Name":"Consulting, management, & public relations svcs",
         "Transaction Date":"05\/03\/2020",
-        "Transaction Amount":"£2,400.00",
+        "Transaction Amount":2400.0,
         "Expense Description":"Professional membership - fees"
     },
     {
@@ -1076,7 +1076,7 @@
         "Merchant Name":"Dell Products",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"11\/03\/2020",
-        "Transaction Amount":"£2,753.52",
+        "Transaction Amount":2753.52,
         "Expense Description":"Specialist IT equipment"
     },
     {
@@ -1084,7 +1084,7 @@
         "Merchant Name":"Dell Products",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"10\/03\/2020",
-        "Transaction Amount":"£2,753.52",
+        "Transaction Amount":2753.52,
         "Expense Description":"Specialist IT equipment"
     },
     {
@@ -1092,7 +1092,7 @@
         "Merchant Name":"Rtpi",
         "Merchant Category Name":"Organizations, charitable & social services",
         "Transaction Date":"23\/03\/2020",
-        "Transaction Amount":"£3,600.00",
+        "Transaction Amount":3600.0,
         "Expense Description":"Publication - fees"
     },
     {
@@ -1100,7 +1100,7 @@
         "Merchant Name":"Amznmktplace Amazon.Co",
         "Merchant Category Name":"Miscellaneous & specialty retail stores",
         "Transaction Date":"16\/03\/2020",
-        "Transaction Amount":"£722.79",
+        "Transaction Amount":722.79,
         "Expense Description":"Office equipment"
     },
     {
@@ -1108,7 +1108,7 @@
         "Merchant Name":"Amazon.Co.Uk 2U6Ti5Bp5",
         "Merchant Category Name":"Direct marketing-other direct marketers\/not elsew.",
         "Transaction Date":"16\/03\/2020",
-        "Transaction Amount":"£766.00",
+        "Transaction Amount":766.0,
         "Expense Description":"Office equipment"
     },
     {
@@ -1116,7 +1116,7 @@
         "Merchant Name":"Enterprise Rent-A-Car",
         "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"13\/03\/2020",
-        "Transaction Amount":"£608.44",
+        "Transaction Amount":608.44,
         "Expense Description":"Vehicle hire"
     },
     {
@@ -1124,7 +1124,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"19\/03\/2020",
-        "Transaction Amount":"£920.28",
+        "Transaction Amount":920.28,
         "Expense Description":"IT peripherals"
     },
     {
@@ -1132,7 +1132,7 @@
         "Merchant Name":"Airbnb Hmkz839Ksk",
         "Merchant Category Name":"Lodging-hotels,motels,resorts-not classified",
         "Transaction Date":"26\/03\/2020",
-        "Transaction Amount":"£590.09",
+        "Transaction Amount":590.09,
         "Expense Description":"Accomodation - fees"
     },
     {
@@ -1140,7 +1140,7 @@
         "Merchant Name":"Northern Sea Power Ltd",
         "Merchant Category Name":"Boat dealers",
         "Transaction Date":"18\/03\/2020",
-        "Transaction Amount":"£1,552.31",
+        "Transaction Amount":1552.31,
         "Expense Description":"Vessel safety equipment"
     },
     {
@@ -1148,7 +1148,7 @@
         "Merchant Name":"Airbnb Hmkz839Ksk",
         "Merchant Category Name":"Lodging-hotels,motels,resorts-not classified",
         "Transaction Date":"29\/02\/2020",
-        "Transaction Amount":"£3,422.59",
+        "Transaction Amount":3422.59,
         "Expense Description":"Accomodation - fees"
     },
     {
@@ -1156,7 +1156,7 @@
         "Merchant Name":"Amznmktplace",
         "Merchant Category Name":"Miscellaneous & specialty retail stores",
         "Transaction Date":"30\/03\/2020",
-        "Transaction Amount":"£499.90",
+        "Transaction Amount":499.9,
         "Expense Description":"Office equipment"
     },
     {
@@ -1164,7 +1164,7 @@
         "Merchant Name":"Amznmktplace",
         "Merchant Category Name":"Miscellaneous & specialty retail stores",
         "Transaction Date":"30\/03\/2020",
-        "Transaction Amount":"£499.90",
+        "Transaction Amount":499.9,
         "Expense Description":"Office equipment"
     },
     {
@@ -1172,7 +1172,7 @@
         "Merchant Name":"Amznmktplace Amazon.Co",
         "Merchant Category Name":"Miscellaneous & specialty retail stores",
         "Transaction Date":"28\/03\/2020",
-        "Transaction Amount":"£881.34",
+        "Transaction Amount":881.34,
         "Expense Description":"Office equipment"
     },
     {
@@ -1180,7 +1180,7 @@
         "Merchant Name":"Devon 4 X 4 Services",
         "Merchant Category Name":"Motor vehicle supplies & new parts",
         "Transaction Date":"20\/03\/2020",
-        "Transaction Amount":"£1,699.03",
+        "Transaction Amount":1699.03,
         "Expense Description":"Vehicle - maintenance"
     },
     {
@@ -1188,7 +1188,7 @@
         "Merchant Name":"D44 Store Limited",
         "Merchant Category Name":"Automotive body repair shops",
         "Transaction Date":"06\/03\/2020",
-        "Transaction Amount":"£500.00",
+        "Transaction Amount":500.0,
         "Expense Description":"Vehicle - maintenance"
     },
     {
@@ -1196,7 +1196,7 @@
         "Merchant Name":"Craobh Marina",
         "Merchant Category Name":"Campgrounds & trailer parks",
         "Transaction Date":"02\/03\/2020",
-        "Transaction Amount":"£1,730.00",
+        "Transaction Amount":1730.0,
         "Expense Description":"Accomodation - fees"
     },
     {
@@ -1204,7 +1204,7 @@
         "Merchant Name":"Sq The Barefoot Think",
         "Merchant Category Name":"Consulting, management, & public relations svcs",
         "Transaction Date":"17\/03\/2020",
-        "Transaction Amount":"£4,800.00",
+        "Transaction Amount":4800.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1212,7 +1212,7 @@
         "Merchant Name":"Sq The Barefoot Think",
         "Merchant Category Name":"Consulting, management, & public relations svcs",
         "Transaction Date":"12\/03\/2020",
-        "Transaction Amount":"£1,320.00",
+        "Transaction Amount":1320.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1220,7 +1220,7 @@
         "Merchant Name":"Edinburgh Napier",
         "Merchant Category Name":"Colleges, univ, pro schools, junior colleges",
         "Transaction Date":"28\/02\/2020",
-        "Transaction Amount":"£980.00",
+        "Transaction Amount":980.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1228,7 +1228,7 @@
         "Merchant Name":"Sq The Barefoot Think",
         "Merchant Category Name":"Consulting, management, & public relations svcs",
         "Transaction Date":"12\/03\/2020",
-        "Transaction Amount":"£1,320.00",
+        "Transaction Amount":1320.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1236,7 +1236,7 @@
         "Merchant Name":"Pipekit Ecom",
         "Merchant Category Name":"Building materials, lumber stores",
         "Transaction Date":"28\/02\/2020",
-        "Transaction Amount":"£600.36",
+        "Transaction Amount":600.36,
         "Expense Description":"Specialist laboratory equipment - repair"
     },
     {
@@ -1244,7 +1244,7 @@
         "Merchant Name":"WWW.NUFOX.COM",
         "Merchant Category Name":"Motor vehicle supplies & new parts",
         "Transaction Date":"16\/03\/2020",
-        "Transaction Amount":"£1,315.99",
+        "Transaction Amount":1315.99,
         "Expense Description":"Vessel engineering equipment - maintenance"
     },
     {
@@ -1252,7 +1252,7 @@
         "Merchant Name":"Influential Software S",
         "Merchant Category Name":"Schools & educational svc-not elsewhere classified",
         "Transaction Date":"28\/02\/2020",
-        "Transaction Amount":"£18,092.32",
+        "Transaction Amount":18092.32,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -1260,7 +1260,7 @@
         "Merchant Name":"WWW.TEMPCON.CO.UK",
         "Merchant Category Name":"Business services-not elsewhere classified",
         "Transaction Date":"12\/03\/2020",
-        "Transaction Amount":"£730.61",
+        "Transaction Amount":730.61,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -1268,7 +1268,7 @@
         "Merchant Name":"Macqueen Bros",
         "Merchant Category Name":"Freight carrier,trucking-lcl\/lng dist, mvg\/storage",
         "Transaction Date":"23\/03\/2020",
-        "Transaction Amount":"£625.72",
+        "Transaction Amount":625.72,
         "Expense Description":"External support services"
     },
     {
@@ -1276,7 +1276,7 @@
         "Merchant Name":"Advance He",
         "Merchant Category Name":"Organizations, charitable & social services",
         "Transaction Date":"04\/03\/2020",
-        "Transaction Amount":"£565.00",
+        "Transaction Amount":565.0,
         "Expense Description":"External conference - fees"
     },
     {
@@ -1284,7 +1284,7 @@
         "Merchant Name":"Drivesautom",
         "Merchant Category Name":"Industrial supplies not elsewhere classified",
         "Transaction Date":"24\/03\/2020",
-        "Transaction Amount":"£2,288.00",
+        "Transaction Amount":2288.0,
         "Expense Description":"Vessel safety equipment"
     },
     {
@@ -1292,7 +1292,7 @@
         "Merchant Name":"Malmaison Edinburg",
         "Merchant Category Name":"Lodging-hotels,motels,resorts-not classified",
         "Transaction Date":"18\/03\/2020",
-        "Transaction Amount":"£746.50",
+        "Transaction Amount":746.5,
         "Expense Description":"External event - catering costs"
     },
     {
@@ -1300,7 +1300,7 @@
         "Merchant Name":"Gael Force Marine",
         "Merchant Category Name":"Marinas, marine service\/supplies",
         "Transaction Date":"13\/03\/2020",
-        "Transaction Amount":"£535.29",
+        "Transaction Amount":535.29,
         "Expense Description":"Vessel safety equipment"
     },
     {
@@ -1308,7 +1308,7 @@
         "Merchant Name":"Brady",
         "Merchant Category Name":"Durable goods, not elsewhere classified",
         "Transaction Date":"27\/03\/2020",
-        "Transaction Amount":"£601.12",
+        "Transaction Amount":601.12,
         "Expense Description":"Office equipment"
     },
     {
@@ -1316,7 +1316,7 @@
         "Merchant Name":"Gilson",
         "Merchant Category Name":"Dental\/lab\/med\/ophthalmic hosp equip & supplies",
         "Transaction Date":"26\/03\/2020",
-        "Transaction Amount":"£1,280.76",
+        "Transaction Amount":1280.76,
         "Expense Description":"Specialist laboratory equipment"
     },
     {
@@ -1324,7 +1324,7 @@
         "Merchant Name":"WWW.DAXAUTOMATION.COM",
         "Merchant Category Name":"Electrical parts & equipment",
         "Transaction Date":"12\/03\/2020",
-        "Transaction Amount":"£745.00",
+        "Transaction Amount":745.0,
         "Expense Description":"Vessel engineering equipment"
     },
     {
@@ -1332,7 +1332,7 @@
         "Merchant Name":"Biomerieux",
         "Merchant Category Name":"Dental\/lab\/med\/ophthalmic hosp equip & supplies",
         "Transaction Date":"26\/03\/2020",
-        "Transaction Amount":"£996.49",
+        "Transaction Amount":996.49,
         "Expense Description":"Scientific equipment"
     },
     {
@@ -1340,7 +1340,7 @@
         "Merchant Name":"Buchi Uk Ltd",
         "Merchant Category Name":"Dental\/lab\/med\/ophthalmic hosp equip & supplies",
         "Transaction Date":"23\/03\/2020",
-        "Transaction Amount":"£2,500.74",
+        "Transaction Amount":2500.74,
         "Expense Description":"Scientific equipment"
     },
     {
@@ -1348,7 +1348,7 @@
         "Merchant Name":"Elsevier Inc.",
         "Merchant Category Name":"Books,periodicals & newspapers",
         "Transaction Date":"17\/03\/2020",
-        "Transaction Amount":"£674.38",
+        "Transaction Amount":674.38,
         "Expense Description":"Scientific equipment"
     },
     {
@@ -1356,7 +1356,7 @@
         "Merchant Name":"WWW.UK.INSIGHT.COM",
         "Merchant Category Name":"Direct marketing-catalog merchants",
         "Transaction Date":"03\/03\/2020",
-        "Transaction Amount":"£2,487.53",
+        "Transaction Amount":2487.53,
         "Expense Description":"Scientific equipment"
     },
     {
@@ -1364,7 +1364,7 @@
         "Merchant Name":"Robert Gordon Universi",
         "Merchant Category Name":"Colleges, univ, pro schools, junior colleges",
         "Transaction Date":"11\/03\/2020",
-        "Transaction Amount":"£1,302.00",
+        "Transaction Amount":1302.0,
         "Expense Description":"Scientific equipment"
     },
     {
@@ -1372,7 +1372,7 @@
         "Merchant Name":"Brady",
         "Merchant Category Name":"Durable goods, not elsewhere classified",
         "Transaction Date":"11\/03\/2020",
-        "Transaction Amount":"£513.00",
+        "Transaction Amount":513.0,
         "Expense Description":"Scientific equipment"
     },
     {
@@ -1380,7 +1380,7 @@
         "Merchant Name":"Atomscientificltd",
         "Merchant Category Name":"Industrial supplies not elsewhere classified",
         "Transaction Date":"04\/03\/2020",
-        "Transaction Amount":"£666.00",
+        "Transaction Amount":666.0,
         "Expense Description":"Scientific equipment"
     },
     {
@@ -1388,7 +1388,7 @@
         "Merchant Name":"Highland Council",
         "Merchant Category Name":"Government services-not elsewhere classified",
         "Transaction Date":"27\/03\/2020",
-        "Transaction Amount":"£9,675.00",
+        "Transaction Amount":9675.0,
         "Expense Description":"Scientific collection"
     },
     {
@@ -1396,7 +1396,7 @@
         "Merchant Name":"Makro Self Service Hul",
         "Merchant Category Name":"Wholesale clubs",
         "Transaction Date":"07\/03\/2020",
-        "Transaction Amount":"£1,473.44",
+        "Transaction Amount":1473.44,
         "Expense Description":"Vessel engineering spares"
     },
     {
@@ -1404,7 +1404,7 @@
         "Merchant Name":"Screwfix Direct",
         "Merchant Category Name":"Home supply warehouse stores",
         "Transaction Date":"17\/03\/2020",
-        "Transaction Amount":"£570.90",
+        "Transaction Amount":570.9,
         "Expense Description":"Vessel engineering equipment"
     },
     {
@@ -1412,7 +1412,7 @@
         "Merchant Name":"Sew & Sos Of Bungay Li",
         "Merchant Category Name":"Fabric, needlework, piece goods, & sewing stores",
         "Transaction Date":"06\/03\/2020",
-        "Transaction Amount":"£1,500.00",
+        "Transaction Amount":1500.0,
         "Expense Description":"Specialist laboratory equipment - repair"
     },
     {
@@ -1420,7 +1420,7 @@
         "Merchant Name":"Forth Logistics Marine",
         "Merchant Category Name":"Marinas, marine service\/supplies",
         "Transaction Date":"04\/03\/2020",
-        "Transaction Amount":"£635.76",
+        "Transaction Amount":635.76,
         "Expense Description":"External support services"
     },
     {
@@ -1428,7 +1428,7 @@
         "Merchant Name":"Amznmktplace",
         "Merchant Category Name":"Miscellaneous & specialty retail stores",
         "Transaction Date":"15\/03\/2020",
-        "Transaction Amount":"£514.70",
+        "Transaction Amount":514.7,
         "Expense Description":"Office equipment"
     },
     {
@@ -1436,7 +1436,7 @@
         "Merchant Name":"Finance Office",
         "Merchant Category Name":"Schools & educational svc-not elsewhere classified",
         "Transaction Date":"10\/03\/2020",
-        "Transaction Amount":"£1,200.00",
+        "Transaction Amount":1200.0,
         "Expense Description":"External conference - fees"
     },
     {
@@ -1444,7 +1444,7 @@
         "Merchant Name":"Sig",
         "Merchant Category Name":"Industrial supplies not elsewhere classified",
         "Transaction Date":"03\/03\/2020",
-        "Transaction Amount":"£822.00",
+        "Transaction Amount":822.0,
         "Expense Description":"Vessel safety equipment"
     },
     {
@@ -1452,7 +1452,7 @@
         "Merchant Name":"Amazon.Co.Uk Df2Qf75O5",
         "Merchant Category Name":"Direct marketing-other direct marketers\/not elsew.",
         "Transaction Date":"20\/03\/2020",
-        "Transaction Amount":"£959.80",
+        "Transaction Amount":959.8,
         "Expense Description":"Specialist IT equipment"
     },
     {
@@ -1460,7 +1460,7 @@
         "Merchant Name":"Amazon.Co.Uk 975Ly2Bs5",
         "Merchant Category Name":"Direct marketing-other direct marketers\/not elsew.",
         "Transaction Date":"21\/03\/2020",
-        "Transaction Amount":"£1,439.70",
+        "Transaction Amount":1439.7,
         "Expense Description":"Specialist IT equipment"
     },
     {
@@ -1468,7 +1468,7 @@
         "Merchant Name":"Amazon.Co.Uk 7F2Hd5Py5",
         "Merchant Category Name":"Direct marketing-other direct marketers\/not elsew.",
         "Transaction Date":"05\/03\/2020",
-        "Transaction Amount":"£719.85",
+        "Transaction Amount":719.85,
         "Expense Description":"Specialist IT equipment"
     },
     {
@@ -1476,7 +1476,7 @@
         "Merchant Name":"Eb Environmental Inte",
         "Merchant Category Name":"Business services-not elsewhere classified",
         "Transaction Date":"28\/02\/2020",
-        "Transaction Amount":"£610.00",
+        "Transaction Amount":610.0,
         "Expense Description":"External event - fees"
     },
     {
@@ -1484,7 +1484,7 @@
         "Merchant Name":"Slack",
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"19\/03\/2020",
-        "Transaction Amount":"£1,323.00",
+        "Transaction Amount":1323.0,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -1492,7 +1492,7 @@
         "Merchant Name":"Dell Products",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"01\/03\/2020",
-        "Transaction Amount":"£4,773.00",
+        "Transaction Amount":4773.0,
         "Expense Description":"IT hardware - accessories"
     },
     {
@@ -1500,7 +1500,7 @@
         "Merchant Name":"Corrocoat Corrosioneer",
         "Merchant Category Name":"Construction materials not elsewhere classified",
         "Transaction Date":"27\/03\/2020",
-        "Transaction Amount":"£1,266.00",
+        "Transaction Amount":1266.0,
         "Expense Description":"Vessel engineering equipment - maintenance"
     },
     {
@@ -1508,7 +1508,7 @@
         "Merchant Name":"Enterprise Rent-A-Car",
         "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"19\/03\/2020",
-        "Transaction Amount":"£609.59",
+        "Transaction Amount":609.59,
         "Expense Description":"Vehicle hire"
     },
     {
@@ -1516,7 +1516,7 @@
         "Merchant Name":"Enterprise Rent-A-Car",
         "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"19\/03\/2020",
-        "Transaction Amount":"£643.56",
+        "Transaction Amount":643.56,
         "Expense Description":"Vehicle hire"
     },
     {
@@ -1524,7 +1524,7 @@
         "Merchant Name":"Enterprise Rent-A-Car",
         "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"23\/03\/2020",
-        "Transaction Amount":"£857.68",
+        "Transaction Amount":857.68,
         "Expense Description":"Vehicle hire"
     },
     {
@@ -1532,7 +1532,7 @@
         "Merchant Name":"Sodexo Ltd",
         "Merchant Category Name":"Eating places, restaurants",
         "Transaction Date":"04\/03\/2020",
-        "Transaction Amount":"£888.26",
+        "Transaction Amount":888.26,
         "Expense Description":"Catering"
     },
     {
@@ -1540,7 +1540,7 @@
         "Merchant Name":"Sodexo Ltd",
         "Merchant Category Name":"Eating places, restaurants",
         "Transaction Date":"03\/03\/2020",
-        "Transaction Amount":"£945.12",
+        "Transaction Amount":945.12,
         "Expense Description":"Catering"
     },
     {
@@ -1548,7 +1548,7 @@
         "Merchant Name":"Enterprise Rent-A-Car",
         "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"09\/03\/2020",
-        "Transaction Amount":"£1,900.94",
+        "Transaction Amount":1900.94,
         "Expense Description":"Vehicle hire"
     },
     {
@@ -1556,7 +1556,7 @@
         "Merchant Name":"Adobe Creative Cloud",
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"30\/03\/2020",
-        "Transaction Amount":"£596.33",
+        "Transaction Amount":596.33,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -1564,7 +1564,7 @@
         "Merchant Name":"Edinburgh Training Cen",
         "Merchant Category Name":"Business services-not elsewhere classified",
         "Transaction Date":"19\/03\/2020",
-        "Transaction Amount":"£750.00",
+        "Transaction Amount":750.0,
         "Expense Description":"External event - room hire"
     },
     {
@@ -1572,7 +1572,7 @@
         "Merchant Name":"Capp & Co Limited",
         "Merchant Category Name":"Business services-not elsewhere classified",
         "Transaction Date":"06\/03\/2020",
-        "Transaction Amount":"£1,014.00",
+        "Transaction Amount":1014.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1580,7 +1580,7 @@
         "Merchant Name":"Edinburgh Training Cen",
         "Merchant Category Name":"Business services-not elsewhere classified",
         "Transaction Date":"06\/03\/2020",
-        "Transaction Amount":"£2,136.00",
+        "Transaction Amount":2136.0,
         "Expense Description":"External event - room hire"
     },
     {
@@ -1588,7 +1588,7 @@
         "Merchant Name":"Edinburgh Training Cen",
         "Merchant Category Name":"Business services-not elsewhere classified",
         "Transaction Date":"03\/03\/2020",
-        "Transaction Amount":"£2,136.00",
+        "Transaction Amount":2136.0,
         "Expense Description":"External event - room hire"
     },
     {
@@ -1596,7 +1596,7 @@
         "Merchant Name":"WWW.BANNERUK.COM",
         "Merchant Category Name":"Stationery\/office supplies\/printing & writing pap.",
         "Transaction Date":"10\/03\/2020",
-        "Transaction Amount":"£597.69",
+        "Transaction Amount":597.69,
         "Expense Description":"IT consumables"
     },
     {
@@ -1604,7 +1604,7 @@
         "Merchant Name":"Indigo Business Se",
         "Merchant Category Name":"Colleges, univ, pro schools, junior colleges",
         "Transaction Date":"11\/03\/2020",
-        "Transaction Amount":"£2,310.00",
+        "Transaction Amount":2310.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1612,7 +1612,7 @@
         "Merchant Name":"Sodexo Ltd",
         "Merchant Category Name":"Eating places, restaurants",
         "Transaction Date":"11\/03\/2020",
-        "Transaction Amount":"£520.18",
+        "Transaction Amount":520.18,
         "Expense Description":"Catering"
     },
     {
@@ -1620,7 +1620,7 @@
         "Merchant Name":"Leonardo Royal Edinbur",
         "Merchant Category Name":"Lodging-hotels,motels,resorts-not classified",
         "Transaction Date":"12\/03\/2020",
-        "Transaction Amount":"£2,435.90",
+        "Transaction Amount":2435.9,
         "Expense Description":"External event - room hire"
     },
     {
@@ -1628,7 +1628,7 @@
         "Merchant Name":"Isee Systems Inc",
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"19\/03\/2020",
-        "Transaction Amount":"£2,678.76",
+        "Transaction Amount":2678.76,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -1636,7 +1636,7 @@
         "Merchant Name":"WWW.LEEDSBECKETT.AC.UK",
         "Merchant Category Name":"Colleges, univ, pro schools, junior colleges",
         "Transaction Date":"26\/03\/2020",
-        "Transaction Amount":"£12,700.00",
+        "Transaction Amount":12700.0,
         "Expense Description":"External event - fees"
     },
     {
@@ -1644,7 +1644,7 @@
         "Merchant Name":"Omniplex",
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"10\/03\/2020",
-        "Transaction Amount":"£642.00",
+        "Transaction Amount":642.0,
         "Expense Description":"Specialist softwares"
     },
     {
@@ -1652,7 +1652,7 @@
         "Merchant Name":"John Lewis",
         "Merchant Category Name":"Department stores",
         "Transaction Date":"18\/03\/2020",
-        "Transaction Amount":"£3,570.05",
+        "Transaction Amount":3570.05,
         "Expense Description":"IT hardware - specialist equipment"
     },
     {
@@ -1660,7 +1660,7 @@
         "Merchant Name":"WWW.BANNERUK.COM",
         "Merchant Category Name":"Stationery\/office supplies\/printing & writing pap.",
         "Transaction Date":"17\/03\/2020",
-        "Transaction Amount":"£572.70",
+        "Transaction Amount":572.7,
         "Expense Description":"IT consumables"
     },
     {
@@ -1668,7 +1668,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"10\/03\/2020",
-        "Transaction Amount":"£1,224.85",
+        "Transaction Amount":1224.85,
         "Expense Description":"IT peripherals"
     },
     {
@@ -1676,7 +1676,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"20\/03\/2020",
-        "Transaction Amount":"£38,552.45",
+        "Transaction Amount":38552.45,
         "Expense Description":"IT peripherals"
     },
     {
@@ -1684,7 +1684,7 @@
         "Merchant Name":"Qa Limited \/ Qa.Co",
         "Merchant Category Name":"Schools & educational svc-not elsewhere classified",
         "Transaction Date":"09\/03\/2020",
-        "Transaction Amount":"£2,064.00",
+        "Transaction Amount":2064.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1692,7 +1692,7 @@
         "Merchant Name":"Learnquest Gbp",
         "Merchant Category Name":"Schools & educational svc-not elsewhere classified",
         "Transaction Date":"27\/03\/2020",
-        "Transaction Amount":"£591.00",
+        "Transaction Amount":591.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1700,7 +1700,7 @@
         "Merchant Name":"Learnquest Gbp",
         "Merchant Category Name":"Schools & educational svc-not elsewhere classified",
         "Transaction Date":"27\/03\/2020",
-        "Transaction Amount":"£591.00",
+        "Transaction Amount":591.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1708,7 +1708,7 @@
         "Merchant Name":"Learnquest Gbp",
         "Merchant Category Name":"Schools & educational svc-not elsewhere classified",
         "Transaction Date":"27\/03\/2020",
-        "Transaction Amount":"£591.00",
+        "Transaction Amount":591.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1716,7 +1716,7 @@
         "Merchant Name":"WWW.QA.COM",
         "Merchant Category Name":"Schools & educational svc-not elsewhere classified",
         "Transaction Date":"11\/03\/2020",
-        "Transaction Amount":"£1,074.00",
+        "Transaction Amount":1074.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1724,7 +1724,7 @@
         "Merchant Name":"WWW.QA.COM",
         "Merchant Category Name":"Schools & educational svc-not elsewhere classified",
         "Transaction Date":"11\/03\/2020",
-        "Transaction Amount":"£1,074.00",
+        "Transaction Amount":1074.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1732,7 +1732,7 @@
         "Merchant Name":"WWW.QA.COM",
         "Merchant Category Name":"Schools & educational svc-not elsewhere classified",
         "Transaction Date":"11\/03\/2020",
-        "Transaction Amount":"£1,074.00",
+        "Transaction Amount":1074.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1740,7 +1740,7 @@
         "Merchant Name":"WWW.QA.COM",
         "Merchant Category Name":"Schools & educational svc-not elsewhere classified",
         "Transaction Date":"11\/03\/2020",
-        "Transaction Amount":"£546.00",
+        "Transaction Amount":546.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1748,7 +1748,7 @@
         "Merchant Name":"Slack",
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"05\/03\/2020",
-        "Transaction Amount":"£2,444.94",
+        "Transaction Amount":2444.94,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -1756,7 +1756,7 @@
         "Merchant Name":"Atlassian",
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"28\/02\/2020",
-        "Transaction Amount":"£8,201.45",
+        "Transaction Amount":8201.45,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -1764,7 +1764,7 @@
         "Merchant Name":"Lyreco Uk Ltd",
         "Merchant Category Name":"Office, school supply, & stationery stores",
         "Transaction Date":"16\/03\/2020",
-        "Transaction Amount":"£781.87",
+        "Transaction Amount":781.87,
         "Expense Description":"Stationery"
     },
     {
@@ -1772,7 +1772,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"10\/03\/2020",
-        "Transaction Amount":"£1,272.60",
+        "Transaction Amount":1272.6,
         "Expense Description":"IT peripherals"
     },
     {
@@ -1780,7 +1780,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"30\/03\/2020",
-        "Transaction Amount":"£1,911.77",
+        "Transaction Amount":1911.77,
         "Expense Description":"IT peripherals"
     },
     {
@@ -1788,7 +1788,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"23\/03\/2020",
-        "Transaction Amount":"£1,982.00",
+        "Transaction Amount":1982.0,
         "Expense Description":"IT peripherals"
     },
     {
@@ -1796,7 +1796,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"03\/03\/2020",
-        "Transaction Amount":"£3,457.92",
+        "Transaction Amount":3457.92,
         "Expense Description":"IT peripherals"
     },
     {
@@ -1804,7 +1804,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"16\/03\/2020",
-        "Transaction Amount":"£26,335.08",
+        "Transaction Amount":26335.08,
         "Expense Description":"IT peripherals"
     },
     {
@@ -1812,7 +1812,7 @@
         "Merchant Name":"Vinylimpres",
         "Merchant Category Name":"Miscellaneous house furnishing specialty shops",
         "Transaction Date":"11\/03\/2020",
-        "Transaction Amount":"£1,511.00",
+        "Transaction Amount":1511.0,
         "Expense Description":"External support services"
     },
     {
@@ -1820,7 +1820,7 @@
         "Merchant Name":"Cipfa Courses",
         "Merchant Category Name":"Miscellaneous & specialty retail stores",
         "Transaction Date":"05\/03\/2020",
-        "Transaction Amount":"£846.00",
+        "Transaction Amount":846.0,
         "Expense Description":"Professional membership - fees"
     },
     {
@@ -1828,7 +1828,7 @@
         "Merchant Name":"Achilles Informat",
         "Merchant Category Name":"Information retrieval services",
         "Transaction Date":"02\/03\/2020",
-        "Transaction Amount":"£2,160.00",
+        "Transaction Amount":2160.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1836,7 +1836,7 @@
         "Merchant Name":"WWW.INDIGOBUSINESS",
         "Merchant Category Name":"Schools, trade & vocational",
         "Transaction Date":"02\/03\/2020",
-        "Transaction Amount":"£1,050.00",
+        "Transaction Amount":1050.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1844,7 +1844,7 @@
         "Merchant Name":"Creative Cloud Team",
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"11\/03\/2020",
-        "Transaction Amount":"£849.60",
+        "Transaction Amount":849.6,
         "Expense Description":"Specialist softwares"
     },
     {
@@ -1852,7 +1852,7 @@
         "Merchant Name":"Rics Subs Uk Cybs",
         "Merchant Category Name":"Organizations, membership-not elsewhere classified",
         "Transaction Date":"04\/03\/2020",
-        "Transaction Amount":"£539.00",
+        "Transaction Amount":539.0,
         "Expense Description":"Professional membership - fees"
     }
 ]

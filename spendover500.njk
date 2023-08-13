@@ -10,31 +10,43 @@ eleventyComputed:
     title: "{{ spends.title }}"
 ---
 
+<script id="spend-data" type="application/json">
+    {{spends.data | jsonify | safe }}
+</script>
+
 <a href="/">Back to home</a>
 
 <h1>{{spends.title}}</h1>
 
-<table class="table table-bordered table-striped">
-    <thead>
-        <tr>
-            <th>Directorate</th>
-            <th>Merchant name</th>
-            <th>Merchant category name</th>
-            <th>Transaction date</th>
-            <th>Transaction amount</th>
-            <th>Expense description</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for row in spends.data %}
+<div id="chart-spend-by-directorate" style="width:100%; height:600px;"></div>
+<div class"table-responsive">
+    <table class="table table-bordered table-striped">
+        <thead>
             <tr>
-                <td>{{row["Directorate"]}}</td>
-                <td>{{row["Merchant Name"]}}</td>
-                <td>{{row["Merchant Category Name"]}}</td>
-                <td>{{row["Transaction Date"]}}</td>
-                <td>{{row["Transaction Amount"]}}</td>
-                <td>{{row["Expense Description"]}}</td>
+                <th>Directorate</th>
+                <th>Merchant name</th>
+                <th>Merchant category name</th>
+                <th>Transaction date</th>
+                <th>Transaction amount</th>
+                <th>Expense description</th>
             </tr>
-            {%endfor%}
-        </tbody>
-    </table>
+        </thead>
+        <tbody>
+            {% for row in spends.data %}
+                <tr>
+                    <td>{{row["Directorate"]}}</td>
+                    <td>{{row["Merchant Name"]}}</td>
+                    <td>{{row["Merchant Category Name"]}}</td>
+                    <td>{{row["Transaction Date"]}}</td>
+                    <td>{{row["Transaction Amount"] | fixed }}</td>
+                    <td>{{row["Expense Description"]}}</td>
+                </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            charts.spendByDirectorate("spend-data", "chart-spend-by-directorate");
+        });
+    </script>

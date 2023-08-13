@@ -20,6 +20,10 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("jsonify", function (value) { return JSON.stringify(value, null, 4) });
 
+  eleventyConfig.addFilter("fixed", function (value, length) { return value?.toFixed(length || 2) });
+
+  eleventyConfig.addFilter("size", function (value) { return value.length });
+
   eleventyConfig.addPassthroughCopy("CNAME");
 
 };

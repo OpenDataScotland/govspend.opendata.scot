@@ -4,7 +4,7 @@
         "Merchant Name":"Digicert Inc",
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"27\/05\/2020",
-        "Transaction Amount":"£1,009.00",
+        "Transaction Amount":1009.0,
         "Expense Description":"Specialist softwares"
     },
     {
@@ -12,7 +12,7 @@
         "Merchant Name":"WWW.APSGROUP.CO.UK",
         "Merchant Category Name":"Consulting, management, & public relations services",
         "Transaction Date":"27\/05\/2020",
-        "Transaction Amount":"£892.82",
+        "Transaction Amount":892.82,
         "Expense Description":"Office equipment"
     },
     {
@@ -20,7 +20,7 @@
         "Merchant Name":"Laplink Software Inc.",
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"22\/05\/2020",
-        "Transaction Amount":"£5,107.30",
+        "Transaction Amount":5107.3,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -28,7 +28,7 @@
         "Merchant Name":"Dropbox",
         "Merchant Category Name":"Computer network\/information services",
         "Transaction Date":"01\/05\/2020",
-        "Transaction Amount":"£1,008.00",
+        "Transaction Amount":1008.0,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -36,7 +36,7 @@
         "Merchant Name":"Ao Retail Limited",
         "Merchant Category Name":"Household appliance stores",
         "Transaction Date":"07\/05\/2020",
-        "Transaction Amount":"£969.00",
+        "Transaction Amount":969.0,
         "Expense Description":"Office equipment"
     },
     {
@@ -44,7 +44,7 @@
         "Merchant Name":"Premiere Conferencing",
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"04\/05\/2020",
-        "Transaction Amount":"£1,129.39",
+        "Transaction Amount":1129.39,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -52,7 +52,7 @@
         "Merchant Name":"Premiere Conferencing",
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"18\/05\/2020",
-        "Transaction Amount":"£1,152.98",
+        "Transaction Amount":1152.98,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -60,7 +60,7 @@
         "Merchant Name":"Premiere Conferencing",
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"07\/05\/2020",
-        "Transaction Amount":"£908.60",
+        "Transaction Amount":908.6,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -68,7 +68,7 @@
         "Merchant Name":"The Learn And Perfor I",
         "Merchant Category Name":"Consulting, management, & public relations services",
         "Transaction Date":"06\/05\/2020",
-        "Transaction Amount":"£5,170.00",
+        "Transaction Amount":5170.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -76,7 +76,7 @@
         "Merchant Name":"The Learn And Perfor I",
         "Merchant Category Name":"Consulting, management, & public relations services",
         "Transaction Date":"06\/05\/2020",
-        "Transaction Amount":"£5,000.00",
+        "Transaction Amount":5000.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -84,7 +84,7 @@
         "Merchant Name":"Media & Communications",
         "Merchant Category Name":"Telecommunication equipment incl telephone sales",
         "Transaction Date":"15\/05\/2020",
-        "Transaction Amount":"£514.80",
+        "Transaction Amount":514.8,
         "Expense Description":"IT hardware - specialist equipment"
     },
     {
@@ -92,7 +92,7 @@
         "Merchant Name":"Dri Cisco Webex",
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"29\/05\/2020",
-        "Transaction Amount":"£547.49",
+        "Transaction Amount":547.49,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -100,7 +100,7 @@
         "Merchant Name":"Vesta Vodafone",
         "Merchant Category Name":"Telecom including prepaid\/recurring phone services",
         "Transaction Date":"26\/05\/2020",
-        "Transaction Amount":"£1,301.11",
+        "Transaction Amount":1301.11,
         "Expense Description":"IT hardware - specialist equipment"
     },
     {
@@ -108,7 +108,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"08\/05\/2020",
-        "Transaction Amount":"£5,023.25",
+        "Transaction Amount":5023.25,
         "Expense Description":"IT peripherals"
     },
     {
@@ -116,7 +116,7 @@
         "Merchant Name":"Premiere Conferencing",
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"28\/05\/2020",
-        "Transaction Amount":"£925.00",
+        "Transaction Amount":925.0,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -124,7 +124,7 @@
         "Merchant Name":"Slack T0Jr95Hk8",
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"12\/05\/2020",
-        "Transaction Amount":"£938.57",
+        "Transaction Amount":938.57,
         "Expense Description":"Professional membership - fees"
     },
     {
@@ -132,7 +132,7 @@
         "Merchant Name":"Amznmktplace Amazon.Co",
         "Merchant Category Name":"Miscellaneous & specialty retail stores",
         "Transaction Date":"01\/05\/2020",
-        "Transaction Amount":"£1,799.12",
+        "Transaction Amount":1799.12,
         "Expense Description":"Portable video equipment"
     },
     {
@@ -140,7 +140,7 @@
         "Merchant Name":"Glass'S Information Se",
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"26\/05\/2020",
-        "Transaction Amount":"£834.00",
+        "Transaction Amount":834.0,
         "Expense Description":"Vehicle - maintenance"
     },
     {
@@ -148,7 +148,7 @@
         "Merchant Name":"Premiere Conferencing",
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"04\/05\/2020",
-        "Transaction Amount":"£576.73",
+        "Transaction Amount":576.73,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -156,7 +156,7 @@
         "Merchant Name":"Newsbank Inc\/Tcr Hs",
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"14\/05\/2020",
-        "Transaction Amount":"£7,291.47",
+        "Transaction Amount":7291.47,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -164,7 +164,7 @@
         "Merchant Name":"Fast Lane Consulat",
         "Merchant Category Name":"Colleges, universities, professional schools, junior colleges",
         "Transaction Date":"06\/05\/2020",
-        "Transaction Amount":"£21,540.48",
+        "Transaction Amount":21540.48,
         "Expense Description":"External training course - fees"
     },
     {
@@ -172,7 +172,7 @@
         "Merchant Name":"Harvest",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"28\/05\/2020",
-        "Transaction Amount":"£967.44",
+        "Transaction Amount":967.44,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -180,7 +180,7 @@
         "Merchant Name":"Amazon Web Services",
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"02\/05\/2020",
-        "Transaction Amount":"£2,278.16",
+        "Transaction Amount":2278.16,
         "Expense Description":"Web service - service charge - April 2020"
     },
     {
@@ -188,7 +188,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"22\/05\/2020",
-        "Transaction Amount":"£7,969.31",
+        "Transaction Amount":7969.31,
         "Expense Description":"IT peripherals"
     },
     {
@@ -196,7 +196,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"08\/05\/2020",
-        "Transaction Amount":"£930.72",
+        "Transaction Amount":930.72,
         "Expense Description":"IT peripherals"
     },
     {
@@ -204,7 +204,7 @@
         "Merchant Name":"Enterprise Rent-A-Car",
         "Merchant Category Name":"Enterprise rent-a-car",
         "Transaction Date":"07\/05\/2020",
-        "Transaction Amount":"£663.59",
+        "Transaction Amount":663.59,
         "Expense Description":"Vehicle hire"
     },
     {
@@ -212,7 +212,7 @@
         "Merchant Name":"Premiere Conferencing",
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"06\/05\/2020",
-        "Transaction Amount":"£1,813.28",
+        "Transaction Amount":1813.28,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -220,7 +220,7 @@
         "Merchant Name":"Premiere Conferencing",
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"15\/05\/2020",
-        "Transaction Amount":"£2,743.04",
+        "Transaction Amount":2743.04,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -228,7 +228,7 @@
         "Merchant Name":"Sq Daffys Gin",
         "Merchant Category Name":"Misc food store-convenience,market,speciality,vending machines",
         "Transaction Date":"01\/05\/2020",
-        "Transaction Amount":"£1,512.00",
+        "Transaction Amount":1512.0,
         "Expense Description":"Health & safety equipment"
     },
     {
@@ -236,7 +236,7 @@
         "Merchant Name":"Premiere Conferencing",
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"06\/05\/2020",
-        "Transaction Amount":"£596.14",
+        "Transaction Amount":596.14,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -244,7 +244,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"08\/05\/2020",
-        "Transaction Amount":"£558.67",
+        "Transaction Amount":558.67,
         "Expense Description":"IT peripherals"
     },
     {
@@ -252,7 +252,7 @@
         "Merchant Name":"Chartered Institution",
         "Merchant Category Name":"Organizations, charitable & social services",
         "Transaction Date":"07\/05\/2020",
-        "Transaction Amount":"£780.00",
+        "Transaction Amount":780.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -260,7 +260,7 @@
         "Merchant Name":"Renews Ltd",
         "Merchant Category Name":"Direct marketing-continuity\/subscription merchants",
         "Transaction Date":"21\/05\/2020",
-        "Transaction Amount":"£564.00",
+        "Transaction Amount":564.0,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -268,7 +268,7 @@
         "Merchant Name":"2U Getsmarter (Uk) Ltd",
         "Merchant Category Name":"Schools & educational services - not elsewhere classified",
         "Transaction Date":"30\/04\/2020",
-        "Transaction Amount":"£2,200.00",
+        "Transaction Amount":2200.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -276,7 +276,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"08\/05\/2020",
-        "Transaction Amount":"£1,674.82",
+        "Transaction Amount":1674.82,
         "Expense Description":"IT peripherals"
     },
     {
@@ -284,7 +284,7 @@
         "Merchant Name":"Airbnb",
         "Merchant Category Name":"Lodging-hotels,motels,resorts - not elsewhere classified",
         "Transaction Date":"04\/05\/2020",
-        "Transaction Amount":"£3,230.32",
+        "Transaction Amount":3230.32,
         "Expense Description":"Accomodation - fees"
     },
     {
@@ -292,7 +292,7 @@
         "Merchant Name":"Replace A Part",
         "Merchant Category Name":"Motor vehicle supplies & new parts",
         "Transaction Date":"26\/05\/2020",
-        "Transaction Amount":"£2,027.04",
+        "Transaction Amount":2027.04,
         "Expense Description":"Vessel engineering spares"
     },
     {
@@ -300,7 +300,7 @@
         "Merchant Name":"Echoview Software",
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"08\/05\/2020",
-        "Transaction Amount":"£500.56",
+        "Transaction Amount":500.56,
         "Expense Description":"External training course - fees"
     },
     {
@@ -308,7 +308,7 @@
         "Merchant Name":"Amznmktplace",
         "Merchant Category Name":"Miscellaneous & specialty retail stores",
         "Transaction Date":"26\/05\/2020",
-        "Transaction Amount":"£975.90",
+        "Transaction Amount":975.9,
         "Expense Description":"Vessel equipment"
     },
     {
@@ -316,7 +316,7 @@
         "Merchant Name":"WWW.BLTDIRECT.COM",
         "Merchant Category Name":"Electrical parts & equipment",
         "Transaction Date":"27\/05\/2020",
-        "Transaction Amount":"£561.00",
+        "Transaction Amount":561.0,
         "Expense Description":"Vessel equipment"
     },
     {
@@ -324,7 +324,7 @@
         "Merchant Name":"Ribs Marine Services",
         "Merchant Category Name":"Miscellaneous repair shops & related services",
         "Transaction Date":"26\/05\/2020",
-        "Transaction Amount":"£1,902.66",
+        "Transaction Amount":1902.66,
         "Expense Description":"Vessel engineering spares"
     },
     {
@@ -332,7 +332,7 @@
         "Merchant Name":"Alpha Laboratories Ltd",
         "Merchant Category Name":"Dental\/labaratory\/medical\/ophthalmic hospital equipment & supplies",
         "Transaction Date":"22\/05\/2020",
-        "Transaction Amount":"£678.56",
+        "Transaction Amount":678.56,
         "Expense Description":"Scientific equipment"
     },
     {
@@ -340,7 +340,7 @@
         "Merchant Name":"Industrial Pow Unit Lt",
         "Merchant Category Name":"Motor vehicle supplies & new parts",
         "Transaction Date":"27\/05\/2020",
-        "Transaction Amount":"£1,101.00",
+        "Transaction Amount":1101.0,
         "Expense Description":"Vessel engineering spares"
     },
     {
@@ -348,7 +348,7 @@
         "Merchant Name":"Elsevier Inc.",
         "Merchant Category Name":"Books,periodicals & newspapers",
         "Transaction Date":"13\/05\/2020",
-        "Transaction Amount":"£8,406.50",
+        "Transaction Amount":8406.5,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -356,7 +356,7 @@
         "Merchant Name":"Hall Morrice Llp",
         "Merchant Category Name":"Accounting, auditing & bookkeeping services",
         "Transaction Date":"27\/05\/2020",
-        "Transaction Amount":"£672.00",
+        "Transaction Amount":672.0,
         "Expense Description":"External consultancy - fees"
     },
     {
@@ -364,7 +364,7 @@
         "Merchant Name":"Echoview Software",
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"22\/05\/2020",
-        "Transaction Amount":"£507.85",
+        "Transaction Amount":507.85,
         "Expense Description":"External training course - fees"
     },
     {
@@ -372,7 +372,7 @@
         "Merchant Name":"Sp Learningtreeinter",
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"05\/05\/2020",
-        "Transaction Amount":"£1,194.00",
+        "Transaction Amount":1194.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -380,7 +380,7 @@
         "Merchant Name":"Jwf Process Solutions",
         "Merchant Category Name":"Heating, plumbing, air conditioning contractors",
         "Transaction Date":"07\/05\/2020",
-        "Transaction Amount":"£848.80",
+        "Transaction Amount":848.8,
         "Expense Description":"Vessel engineering spares"
     },
     {
@@ -388,7 +388,7 @@
         "Merchant Name":"Cartridge Save",
         "Merchant Category Name":"Stationery\/office supplies\/printing & writing pap.",
         "Transaction Date":"18\/05\/2020",
-        "Transaction Amount":"£838.40",
+        "Transaction Amount":838.4,
         "Expense Description":"Office equipment"
     },
     {
@@ -396,7 +396,7 @@
         "Merchant Name":"Oceanfree Web",
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"18\/05\/2020",
-        "Transaction Amount":"£3,744.00",
+        "Transaction Amount":3744.0,
         "Expense Description":"Health & safety equipment"
     },
     {
@@ -404,7 +404,7 @@
         "Merchant Name":"Morse Watchmans Uk Ltd",
         "Merchant Category Name":"Household appliance stores",
         "Transaction Date":"28\/05\/2020",
-        "Transaction Amount":"£4,708.32",
+        "Transaction Amount":4708.32,
         "Expense Description":"Vessel equipment"
     },
     {
@@ -412,7 +412,7 @@
         "Merchant Name":"Cipd Integra",
         "Merchant Category Name":"Professional services - not elsewhere classified",
         "Transaction Date":"21\/05\/2020",
-        "Transaction Amount":"£1,996.00",
+        "Transaction Amount":1996.0,
         "Expense Description":"Professional membership - fees"
     },
     {
@@ -420,7 +420,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"08\/05\/2020",
-        "Transaction Amount":"£930.72",
+        "Transaction Amount":930.72,
         "Expense Description":"IT peripherals"
     },
     {
@@ -428,7 +428,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"08\/05\/2020",
-        "Transaction Amount":"£651.68",
+        "Transaction Amount":651.68,
         "Expense Description":"IT peripherals"
     },
     {
@@ -436,7 +436,7 @@
         "Merchant Name":"Kaplan Financial Ltd",
         "Merchant Category Name":"Schools, business & secretarial",
         "Transaction Date":"27\/05\/2020",
-        "Transaction Amount":"£990.29",
+        "Transaction Amount":990.29,
         "Expense Description":"External training course - fees"
     },
     {
@@ -444,7 +444,7 @@
         "Merchant Name":"Kaplan Financial Ltd",
         "Merchant Category Name":"Schools, business & secretarial",
         "Transaction Date":"26\/05\/2020",
-        "Transaction Amount":"£990.29",
+        "Transaction Amount":990.29,
         "Expense Description":"External training course - fees"
     },
     {
@@ -452,7 +452,7 @@
         "Merchant Name":"Cipfa Ess",
         "Merchant Category Name":"Miscellaneous & specialty retail stores",
         "Transaction Date":"19\/05\/2020",
-        "Transaction Amount":"£1,116.00",
+        "Transaction Amount":1116.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -460,7 +460,7 @@
         "Merchant Name":"Cipfa Ess",
         "Merchant Category Name":"Miscellaneous & specialty retail stores",
         "Transaction Date":"19\/05\/2020",
-        "Transaction Amount":"£1,882.80",
+        "Transaction Amount":1882.8,
         "Expense Description":"External training course - fees"
     },
     {
@@ -468,7 +468,7 @@
         "Merchant Name":"Cipfa Courses",
         "Merchant Category Name":"Miscellaneous & specialty retail stores",
         "Transaction Date":"07\/05\/2020",
-        "Transaction Amount":"£2,186.00",
+        "Transaction Amount":2186.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -476,7 +476,7 @@
         "Merchant Name":"Amazon Web Services",
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"21\/05\/2020",
-        "Transaction Amount":"£12,132.12",
+        "Transaction Amount":12132.12,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -484,7 +484,7 @@
         "Merchant Name":"Amazon Web Services",
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"01\/05\/2020",
-        "Transaction Amount":"£9,311.17",
+        "Transaction Amount":9311.17,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -492,7 +492,7 @@
         "Merchant Name":"Amazon Web Services",
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"01\/05\/2020",
-        "Transaction Amount":"£3,125.41",
+        "Transaction Amount":3125.41,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -500,7 +500,7 @@
         "Merchant Name":"Amazon Web Services",
         "Merchant Category Name":"Business services - not elsewhere classified",
         "Transaction Date":"01\/05\/2020",
-        "Transaction Amount":"£11,345.03",
+        "Transaction Amount":11345.03,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -508,7 +508,7 @@
         "Merchant Name":"Udemy Invoice",
         "Merchant Category Name":"Photographic studios",
         "Transaction Date":"30\/04\/2020",
-        "Transaction Amount":"£4,529.60",
+        "Transaction Amount":4529.6,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -516,7 +516,7 @@
         "Merchant Name":"Slack T6Ssmjn6T",
         "Merchant Category Name":"Computer software stores",
         "Transaction Date":"05\/05\/2020",
-        "Transaction Amount":"£2,545.20",
+        "Transaction Amount":2545.2,
         "Expense Description":"Professional subscription - renewal fees"
     },
     {
@@ -524,7 +524,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"28\/05\/2020",
-        "Transaction Amount":"£569.81",
+        "Transaction Amount":569.81,
         "Expense Description":"IT peripherals"
     },
     {
@@ -532,7 +532,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"28\/05\/2020",
-        "Transaction Amount":"£613.03",
+        "Transaction Amount":613.03,
         "Expense Description":"IT peripherals"
     },
     {
@@ -540,7 +540,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"28\/05\/2020",
-        "Transaction Amount":"£4,953.31",
+        "Transaction Amount":4953.31,
         "Expense Description":"IT peripherals"
     },
     {
@@ -548,7 +548,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"12\/05\/2020",
-        "Transaction Amount":"£1,219.14",
+        "Transaction Amount":1219.14,
         "Expense Description":"IT peripherals"
     },
     {
@@ -556,7 +556,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"08\/05\/2020",
-        "Transaction Amount":"£1,263.88",
+        "Transaction Amount":1263.88,
         "Expense Description":"IT peripherals"
     },
     {
@@ -564,7 +564,7 @@
         "Merchant Name":"Computacenter (Uk) Ltd",
         "Merchant Category Name":"Computers, computer peripheral equipment, software",
         "Transaction Date":"04\/05\/2020",
-        "Transaction Amount":"£539.78",
+        "Transaction Amount":539.78,
         "Expense Description":"IT peripherals"
     },
     {
@@ -572,7 +572,7 @@
         "Merchant Name":"Lexxion Verlagsgesells",
         "Merchant Category Name":"Miscellaneous publishing & printing",
         "Transaction Date":"19\/05\/2020",
-        "Transaction Amount":"701.05",
+        "Transaction Amount":701.05,
         "Expense Description":"External training course - fees"
     }
 ]

@@ -4,7 +4,7 @@
         "Merchant Name":"2U Getsmarter (Us) Llc",
         "Merchant Category Name":"Schools and Educational Svc-Not Elsewhere Classified",
         "Transaction Date":"20\/12\/2021",
-        "Transaction Amount":"2200",
+        "Transaction Amount":2200.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -12,7 +12,7 @@
         "Merchant Name":"Gp Smart",
         "Merchant Category Name":"Industrial Supplies Not Elsewhere Classified",
         "Transaction Date":"16\/12\/2021",
-        "Transaction Amount":"6030",
+        "Transaction Amount":6030.0,
         "Expense Description":"Farm equipment - maintenance"
     },
     {
@@ -20,7 +20,7 @@
         "Merchant Name":"Mcveigh Parker (Scotland)",
         "Merchant Category Name":"Building Materials, Lumber Stores",
         "Transaction Date":"15\/12\/2021",
-        "Transaction Amount":"2852.23",
+        "Transaction Amount":2852.23,
         "Expense Description":"Farm equipment - maintenance"
     },
     {
@@ -28,7 +28,7 @@
         "Merchant Name":"Linkedin Ireland Unlim",
         "Merchant Category Name":"Direct Marketing-Continuity\/Subscription Merchants",
         "Transaction Date":"16\/12\/2021",
-        "Transaction Amount":"2541",
+        "Transaction Amount":2541.0,
         "Expense Description":"Online IT Training"
     },
     {
@@ -36,7 +36,7 @@
         "Merchant Name":"GENEIOUS.COM",
         "Merchant Category Name":"Business Services-Not Elsewhere Classified",
         "Transaction Date":"21\/12\/2021",
-        "Transaction Amount":"2657.58",
+        "Transaction Amount":2657.58,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -44,7 +44,7 @@
         "Merchant Name":"Parcelforce Worldwide",
         "Merchant Category Name":"Freight Carrier,Trucking-Lcl\/Lng Dist, Mvg\/Storage",
         "Transaction Date":"21\/12\/2021",
-        "Transaction Amount":"825.21",
+        "Transaction Amount":825.21,
         "Expense Description":"Postal Services"
     },
     {
@@ -52,7 +52,7 @@
         "Merchant Name":"Kaneka Eurogentec S.A.",
         "Merchant Category Name":"Dental\/Lab\/Med\/Ophthalmic Hosp Equip and Supplies",
         "Transaction Date":"10\/12\/2021",
-        "Transaction Amount":"838.8",
+        "Transaction Amount":838.8,
         "Expense Description":"Specialist laboratory equipment"
     },
     {
@@ -60,7 +60,7 @@
         "Merchant Name":"Dejex Supplies",
         "Merchant Category Name":"Lawn And Garden Supply Stores",
         "Transaction Date":"16\/12\/2021",
-        "Transaction Amount":"1191.7",
+        "Transaction Amount":1191.7,
         "Expense Description":"Scientific trial consumables"
     },
     {
@@ -68,7 +68,7 @@
         "Merchant Name":"Elkay Laboratory",
         "Merchant Category Name":"Industrial Supplies Not Elsewhere Classified",
         "Transaction Date":"22\/12\/2021",
-        "Transaction Amount":"542.4",
+        "Transaction Amount":542.4,
         "Expense Description":"Specialist laboratory equipment"
     },
     {
@@ -76,7 +76,7 @@
         "Merchant Name":"Thistle Scientific Ltd",
         "Merchant Category Name":"Colleges, Univ, Pro Schools, Junior Colleges",
         "Transaction Date":"20\/12\/2021",
-        "Transaction Amount":"1704",
+        "Transaction Amount":1704.0,
         "Expense Description":"Specialist laboratory equipment"
     },
     {
@@ -84,7 +84,7 @@
         "Merchant Name":"Digicert Inc.",
         "Merchant Category Name":"Business Services-Not Elsewhere Classified",
         "Transaction Date":"24\/12\/2021",
-        "Transaction Amount":"813.2",
+        "Transaction Amount":813.2,
         "Expense Description":"Specialist software - renewal"
     },
     {
@@ -92,7 +92,7 @@
         "Merchant Name":"Www.Nwgb.Co.Uk",
         "Merchant Category Name":"Utlts-Elctrc, Gas, Heating Oil, Sanitary, Water",
         "Transaction Date":"20\/12\/2021",
-        "Transaction Amount":"2726.36",
+        "Transaction Amount":2726.36,
         "Expense Description":"Building - payment charge"
     },
     {
@@ -100,7 +100,7 @@
         "Merchant Name":"Scottish Power",
         "Merchant Category Name":"Fuel Dealers-Coal, Fuel Oil, Liq Petroleum, Wood",
         "Transaction Date":"13\/12\/2021",
-        "Transaction Amount":"1138.06",
+        "Transaction Amount":1138.06,
         "Expense Description":"Building - payment charge"
     },
     {
@@ -108,7 +108,7 @@
         "Merchant Name":"Microsoft",
         "Merchant Category Name":"Computers, Computer Peripheral Equipment, Software",
         "Transaction Date":"19\/12\/2021",
-        "Transaction Amount":"752.41",
+        "Transaction Amount":752.41,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -116,7 +116,7 @@
         "Merchant Name":"Civil Service College",
         "Merchant Category Name":"Schools and Educational Svc-Not Elsewhere Classified",
         "Transaction Date":"21\/12\/2021",
-        "Transaction Amount":"750",
+        "Transaction Amount":750.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -124,7 +124,7 @@
         "Merchant Name":"Omniplex",
         "Merchant Category Name":"Computer Software Stores",
         "Transaction Date":"13\/12\/2021",
-        "Transaction Amount":"3204",
+        "Transaction Amount":3204.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -132,7 +132,7 @@
         "Merchant Name":"Paypal Actnowtrain",
         "Merchant Category Name":"Consulting, Management, And Public Relations Svcs",
         "Transaction Date":"20\/12\/2021",
-        "Transaction Amount":"2994",
+        "Transaction Amount":2994.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -140,7 +140,7 @@
         "Merchant Name":"Qa Ltd",
         "Merchant Category Name":"Schools and Educational Svc-Not Elsewhere Classified",
         "Transaction Date":"17\/12\/2021",
-        "Transaction Amount":"1162.8",
+        "Transaction Amount":1162.8,
         "Expense Description":"External training course - fees"
     },
     {
@@ -148,7 +148,7 @@
         "Merchant Name":"Rics Subs Uk Cybs",
         "Merchant Category Name":"Organizations, Membership-Not Elsewhere Classified",
         "Transaction Date":"14\/12\/2021",
-        "Transaction Amount":"539",
+        "Transaction Amount":539.0,
         "Expense Description":"Professional membership - fees"
     },
     {
@@ -156,7 +156,7 @@
         "Merchant Name":"Ao Retail Limited",
         "Merchant Category Name":"Household Appliance Stores",
         "Transaction Date":"22\/12\/2021",
-        "Transaction Amount":"1198",
+        "Transaction Amount":1198.0,
         "Expense Description":"IT hardware - specialist equipment"
     },
     {
@@ -164,7 +164,7 @@
         "Merchant Name":"Msft",
         "Merchant Category Name":"Computers, Computer Peripheral Equipment, Software",
         "Transaction Date":"12\/12\/2021",
-        "Transaction Amount":"4414.63",
+        "Transaction Amount":4414.63,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -172,7 +172,7 @@
         "Merchant Name":"Rics Subs Uk Cybs",
         "Merchant Category Name":"Organizations, Membership-Not Elsewhere Classified",
         "Transaction Date":"16\/12\/2021",
-        "Transaction Amount":"539",
+        "Transaction Amount":539.0,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -180,7 +180,7 @@
         "Merchant Name":"Rics Subs Uk Cybs",
         "Merchant Category Name":"Organizations, Membership-Not Elsewhere Classified",
         "Transaction Date":"16\/12\/2021",
-        "Transaction Amount":"539",
+        "Transaction Amount":539.0,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -188,7 +188,7 @@
         "Merchant Name":"Rics Subs Uk Cybs",
         "Merchant Category Name":"Organizations, Membership-Not Elsewhere Classified",
         "Transaction Date":"15\/12\/2021",
-        "Transaction Amount":"539",
+        "Transaction Amount":539.0,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -196,7 +196,7 @@
         "Merchant Name":"Rics Subs Uk Cybs",
         "Merchant Category Name":"Organizations, Membership-Not Elsewhere Classified",
         "Transaction Date":"15\/12\/2021",
-        "Transaction Amount":"539",
+        "Transaction Amount":539.0,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -204,7 +204,7 @@
         "Merchant Name":"WWW.F1TRAIN.CO.UK",
         "Merchant Category Name":"Schools and Educational Svc-Not Elsewhere Classified",
         "Transaction Date":"15\/12\/2021",
-        "Transaction Amount":"716.4",
+        "Transaction Amount":716.4,
         "Expense Description":"External training course - fees"
     },
     {
@@ -212,7 +212,7 @@
         "Merchant Name":"Prosep Filter Systems",
         "Merchant Category Name":"Plumbing And Heating Equipment",
         "Transaction Date":"10\/12\/2021",
-        "Transaction Amount":"533.28",
+        "Transaction Amount":533.28,
         "Expense Description":"Vessel equipment"
     },
     {
@@ -220,23 +220,15 @@
         "Merchant Name":"WWW.PENNYANDGILES.COM",
         "Merchant Category Name":"Electrical Parts And Equipment",
         "Transaction Date":"22\/12\/2021",
-        "Transaction Amount":"593.52",
+        "Transaction Amount":593.52,
         "Expense Description":"Vessel equipment"
-    },
-    {
-        "Directorate":"Directorate",
-        "Merchant Name":"Merchant Name",
-        "Merchant Category Name":"Merchant Category Name",
-        "Transaction Date":"Transaction Date",
-        "Transaction Amount":"Transaction Amount",
-        "Expense Description":"Decsription"
     },
     {
         "Directorate":"Directorate For Agriculture and Rural Economy",
         "Merchant Name":"2U Getsmarter (Us) Llc",
         "Merchant Category Name":"Schools and Educational Svc-Not Elsewhere Classified",
         "Transaction Date":"20\/12\/2021",
-        "Transaction Amount":"526.59556",
+        "Transaction Amount":526.6,
         "Expense Description":"External training course - fees"
     },
     {
@@ -244,7 +236,7 @@
         "Merchant Name":"Gp Smart",
         "Merchant Category Name":"Industrial Supplies Not Elsewhere Classified",
         "Transaction Date":"16\/12\/2021",
-        "Transaction Amount":"451.89136",
+        "Transaction Amount":451.89,
         "Expense Description":"Farm equipment - maintenance"
     },
     {
@@ -252,7 +244,7 @@
         "Merchant Name":"Mcveigh Parker (Scotland)",
         "Merchant Category Name":"Building Materials, Lumber Stores",
         "Transaction Date":"15\/12\/2021",
-        "Transaction Amount":"377.18716",
+        "Transaction Amount":377.19,
         "Expense Description":"Farm equipment - maintenance"
     },
     {
@@ -260,7 +252,7 @@
         "Merchant Name":"Linkedin Ireland Unlim",
         "Merchant Category Name":"Direct Marketing-Continuity\/Subscription Merchants",
         "Transaction Date":"16\/12\/2021",
-        "Transaction Amount":"302.48296",
+        "Transaction Amount":302.48,
         "Expense Description":"Online IT Training"
     },
     {
@@ -268,7 +260,7 @@
         "Merchant Name":"GENEIOUS.COM",
         "Merchant Category Name":"Business Services-Not Elsewhere Classified",
         "Transaction Date":"21\/12\/2021",
-        "Transaction Amount":"227.77876",
+        "Transaction Amount":227.78,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -276,7 +268,7 @@
         "Merchant Name":"Parcelforce Worldwide",
         "Merchant Category Name":"Freight Carrier,Trucking-Lcl\/Lng Dist, Mvg\/Storage",
         "Transaction Date":"21\/12\/2021",
-        "Transaction Amount":"153.07456",
+        "Transaction Amount":153.07,
         "Expense Description":"Postal Services"
     },
     {
@@ -284,7 +276,7 @@
         "Merchant Name":"Kaneka Eurogentec S.A.",
         "Merchant Category Name":"Dental\/Lab\/Med\/Ophthalmic Hosp Equip and Supplies",
         "Transaction Date":"10\/12\/2021",
-        "Transaction Amount":"78.370367",
+        "Transaction Amount":78.37,
         "Expense Description":"Specialist laboratory equipment"
     },
     {
@@ -292,7 +284,7 @@
         "Merchant Name":"Dejex Supplies",
         "Merchant Category Name":"Lawn And Garden Supply Stores",
         "Transaction Date":"16\/12\/2021",
-        "Transaction Amount":"3.6661686",
+        "Transaction Amount":3.67,
         "Expense Description":"Scientific trial consumables"
     },
     {
@@ -300,7 +292,7 @@
         "Merchant Name":"Elkay Laboratory",
         "Merchant Category Name":"Industrial Supplies Not Elsewhere Classified",
         "Transaction Date":"22\/12\/2021",
-        "Transaction Amount":"-71.03803",
+        "Transaction Amount":-71.04,
         "Expense Description":"Specialist laboratory equipment"
     },
     {
@@ -308,7 +300,7 @@
         "Merchant Name":"Thistle Scientific Ltd",
         "Merchant Category Name":"Colleges, Univ, Pro Schools, Junior Colleges",
         "Transaction Date":"20\/12\/2021",
-        "Transaction Amount":"-145.74223",
+        "Transaction Amount":-145.74,
         "Expense Description":"Specialist laboratory equipment"
     },
     {
@@ -316,7 +308,7 @@
         "Merchant Name":"Digicert Inc.",
         "Merchant Category Name":"Business Services-Not Elsewhere Classified",
         "Transaction Date":"24\/12\/2021",
-        "Transaction Amount":"-220.44643",
+        "Transaction Amount":-220.45,
         "Expense Description":"Specialist software - renewal"
     },
     {
@@ -324,7 +316,7 @@
         "Merchant Name":"Www.Nwgb.Co.Uk",
         "Merchant Category Name":"Utlts-Elctrc, Gas, Heating Oil, Sanitary, Water",
         "Transaction Date":"20\/12\/2021",
-        "Transaction Amount":"-295.15062",
+        "Transaction Amount":-295.15,
         "Expense Description":"Building - payment charge"
     },
     {
@@ -332,7 +324,7 @@
         "Merchant Name":"Scottish Power",
         "Merchant Category Name":"Fuel Dealers-Coal, Fuel Oil, Liq Petroleum, Wood",
         "Transaction Date":"13\/12\/2021",
-        "Transaction Amount":"-369.85482",
+        "Transaction Amount":-369.85,
         "Expense Description":"Building - payment charge"
     },
     {
@@ -340,7 +332,7 @@
         "Merchant Name":"Microsoft",
         "Merchant Category Name":"Computers, Computer Peripheral Equipment, Software",
         "Transaction Date":"19\/12\/2021",
-        "Transaction Amount":"-444.55902",
+        "Transaction Amount":-444.56,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -348,7 +340,7 @@
         "Merchant Name":"Civil Service College",
         "Merchant Category Name":"Schools and Educational Svc-Not Elsewhere Classified",
         "Transaction Date":"21\/12\/2021",
-        "Transaction Amount":"-519.26322",
+        "Transaction Amount":-519.26,
         "Expense Description":"External training course - fees"
     },
     {
@@ -356,7 +348,7 @@
         "Merchant Name":"Omniplex",
         "Merchant Category Name":"Computer Software Stores",
         "Transaction Date":"13\/12\/2021",
-        "Transaction Amount":"-593.96742",
+        "Transaction Amount":-593.97,
         "Expense Description":"External training course - fees"
     },
     {
@@ -364,7 +356,7 @@
         "Merchant Name":"Paypal Actnowtrain",
         "Merchant Category Name":"Consulting, Management, And Public Relations Svcs",
         "Transaction Date":"20\/12\/2021",
-        "Transaction Amount":"-668.67161",
+        "Transaction Amount":-668.67,
         "Expense Description":"External training course - fees"
     },
     {
@@ -372,7 +364,7 @@
         "Merchant Name":"Qa Ltd",
         "Merchant Category Name":"Schools and Educational Svc-Not Elsewhere Classified",
         "Transaction Date":"17\/12\/2021",
-        "Transaction Amount":"-743.37581",
+        "Transaction Amount":-743.38,
         "Expense Description":"External training course - fees"
     },
     {
@@ -380,7 +372,7 @@
         "Merchant Name":"Rics Subs Uk Cybs",
         "Merchant Category Name":"Organizations, Membership-Not Elsewhere Classified",
         "Transaction Date":"14\/12\/2021",
-        "Transaction Amount":"-818.08001",
+        "Transaction Amount":-818.08,
         "Expense Description":"Professional membership - fees"
     },
     {
@@ -388,7 +380,7 @@
         "Merchant Name":"Ao Retail Limited",
         "Merchant Category Name":"Household Appliance Stores",
         "Transaction Date":"22\/12\/2021",
-        "Transaction Amount":"-892.78421",
+        "Transaction Amount":-892.78,
         "Expense Description":"IT hardware - specialist equipment"
     },
     {
@@ -396,7 +388,7 @@
         "Merchant Name":"Msft",
         "Merchant Category Name":"Computers, Computer Peripheral Equipment, Software",
         "Transaction Date":"12\/12\/2021",
-        "Transaction Amount":"-967.48841",
+        "Transaction Amount":-967.49,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -404,7 +396,7 @@
         "Merchant Name":"Rics Subs Uk Cybs",
         "Merchant Category Name":"Organizations, Membership-Not Elsewhere Classified",
         "Transaction Date":"16\/12\/2021",
-        "Transaction Amount":"-1042.1926",
+        "Transaction Amount":-1042.19,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -412,7 +404,7 @@
         "Merchant Name":"Rics Subs Uk Cybs",
         "Merchant Category Name":"Organizations, Membership-Not Elsewhere Classified",
         "Transaction Date":"16\/12\/2021",
-        "Transaction Amount":"-1116.8968",
+        "Transaction Amount":-1116.9,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -420,7 +412,7 @@
         "Merchant Name":"Rics Subs Uk Cybs",
         "Merchant Category Name":"Organizations, Membership-Not Elsewhere Classified",
         "Transaction Date":"15\/12\/2021",
-        "Transaction Amount":"-1191.601",
+        "Transaction Amount":-1191.6,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -428,7 +420,7 @@
         "Merchant Name":"Rics Subs Uk Cybs",
         "Merchant Category Name":"Organizations, Membership-Not Elsewhere Classified",
         "Transaction Date":"15\/12\/2021",
-        "Transaction Amount":"-1266.3052",
+        "Transaction Amount":-1266.31,
         "Expense Description":"Professional subscription - fees"
     }
 ]

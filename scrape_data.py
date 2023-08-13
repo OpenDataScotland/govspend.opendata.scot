@@ -35,7 +35,24 @@ COLUMN_HEADERS_ALIASES = {
 
 temp_headers = []
 
-def clean_report(report_dataframe):
+def clean_currency(currency_value, temp):
+    """Takes currency strings and turns them into floats with 2 decimal places"""
+
+    if not isinstance(currency_value, str):
+        return round(currency_value, 2)
+    
+    currency_value = currency_value.replace(",","")
+    currency_value = currency_value.replace("£","")
+
+    try:
+        currency_value = round(float(currency_value), 2)
+    except:
+        print(temp)
+        print(currency_value)
+
+    return currency_value
+
+def clean_report(report_dataframe, temp):
     """Cleans up any inconsistencies in the table"""
 
     # Title case all column names for consistency
@@ -48,17 +65,31 @@ def clean_report(report_dataframe):
     # Fix column aliases
     report_dataframe = report_dataframe.rename(columns=COLUMN_HEADERS_ALIASES)
 
+    # Remove duplicate header rows
+    report_dataframe = report_dataframe[report_dataframe.iloc[:, 0] != report_dataframe.columns[0]]
+
+    # Remove £ and comma from transaction amounts
+    report_dataframe["Transaction Amount"] = report_dataframe[
+        "Transaction Amount"
+    ].apply(lambda x: clean_currency(x, temp))
+    
     # Drop blank unnamed columns
-    report_dataframe = report_dataframe.loc[:, ~report_dataframe.columns.str.contains('^Unnamed')]
+    report_dataframe = report_dataframe.loc[
+        :, ~report_dataframe.columns.str.contains("^Unnamed")
+    ]
 
     # Finally, check for missing columns and if so, add them
     # January 2020 doesn't have Merchant Category Name
     if "Merchant Category Name" not in report_dataframe.columns:
-        report_dataframe.insert(loc=2,column="Merchant Category Name",value="Not specified in data source")
+        report_dataframe.insert(
+            loc=2, column="Merchant Category Name", value="Not specified in data source"
+        )
 
     # December 2019 doesn't have Expense Description
     if "Expense Description" not in report_dataframe.columns:
-        report_dataframe.insert(loc=5,column="Expense Description",value="Not specified in data source")
+        report_dataframe.insert(
+            loc=5, column="Expense Description", value="Not specified in data source"
+        )
 
     return report_dataframe
 
@@ -88,7 +119,7 @@ def extract_report(tag_href, tag_text):
 
     report_dataframe = pd.read_html(str(report_table), header=0, encoding="utf8")[0]
 
-    report_dataframe = clean_report(report_dataframe)
+    report_dataframe = clean_report(report_dataframe, report_title)
 
     report_dataframe.to_json(
         f"{SAVE_PATH}/{report_year_month}.json",

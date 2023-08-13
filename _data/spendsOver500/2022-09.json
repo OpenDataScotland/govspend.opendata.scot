@@ -4,7 +4,7 @@
         "Merchant Name":"Kaplan Financial Ltd",
         "Merchant Category Name":"SCHOOLS, BUSINESS AND SECRETARIAL",
         "Transaction Date":"09\/09\/2022",
-        "Transaction Amount":"£896.00",
+        "Transaction Amount":896.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -12,7 +12,7 @@
         "Merchant Name":"Aberdeenshire Council",
         "Merchant Category Name":"GOVERNMENT SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"26\/09\/2022",
-        "Transaction Amount":"£676.00",
+        "Transaction Amount":676.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -20,7 +20,7 @@
         "Merchant Name":"Allans Of Gillock",
         "Merchant Category Name":"BUILDING MATERIALS, LUMBER STORES",
         "Transaction Date":"29\/09\/2022",
-        "Transaction Amount":"£653.40",
+        "Transaction Amount":653.4,
         "Expense Description":"Agrigultural supplies"
     },
     {
@@ -28,7 +28,7 @@
         "Merchant Name":"Amznmktplace",
         "Merchant Category Name":"MISCELLANEOUS AND SPECIALTY RETAIL STORES",
         "Transaction Date":"14\/09\/2022",
-        "Transaction Amount":"£813.60",
+        "Transaction Amount":813.6,
         "Expense Description":"Specialist IT equipment"
     },
     {
@@ -36,7 +36,7 @@
         "Merchant Name":"Aws Emea",
         "Merchant Category Name":"BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"02\/09\/2022",
-        "Transaction Amount":"£632.61",
+        "Transaction Amount":632.61,
         "Expense Description":"Specialist softwares"
     },
     {
@@ -44,7 +44,7 @@
         "Merchant Name":"Aws Emea",
         "Merchant Category Name":"BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"02\/09\/2022",
-        "Transaction Amount":"£653.08",
+        "Transaction Amount":653.08,
         "Expense Description":"Specialist softwares"
     },
     {
@@ -52,7 +52,7 @@
         "Merchant Name":"Aws Emea",
         "Merchant Category Name":"BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"02\/09\/2022",
-        "Transaction Amount":"£5,565.73",
+        "Transaction Amount":5565.73,
         "Expense Description":"Specialist softwares"
     },
     {
@@ -60,7 +60,7 @@
         "Merchant Name":"Clr Www.Ipfstore.Co.U",
         "Merchant Category Name":"CAMERA AND PHOTOGRAPHIC SUPPLY STORES",
         "Transaction Date":"22\/09\/2022",
-        "Transaction Amount":"£1,793.94",
+        "Transaction Amount":1793.94,
         "Expense Description":"Photographic equipment - accessories"
     },
     {
@@ -68,7 +68,7 @@
         "Merchant Name":"Dicksons Of",
         "Merchant Category Name":"MOTOR VEHICLE SUPPLIES AND NEW PARTS",
         "Transaction Date":"22\/09\/2022",
-        "Transaction Amount":"£803.72",
+        "Transaction Amount":803.72,
         "Expense Description":"Photographic equipment - accessories"
     },
     {
@@ -76,7 +76,7 @@
         "Merchant Name":"ENTERPRISE RENT-A-CAR",
         "Merchant Category Name":"ENTERPRISE RENT-A-CAR",
         "Transaction Date":"28\/09\/2022",
-        "Transaction Amount":"£793.00",
+        "Transaction Amount":793.0,
         "Expense Description":"Vehicle hire"
     },
     {
@@ -84,7 +84,7 @@
         "Merchant Name":"ENTERPRISE RENT-A-CAR",
         "Merchant Category Name":"ENTERPRISE RENT-A-CAR",
         "Transaction Date":"28\/09\/2022",
-        "Transaction Amount":"£667.35",
+        "Transaction Amount":667.35,
         "Expense Description":"Vehicle hire"
     },
     {
@@ -92,7 +92,7 @@
         "Merchant Name":"ENTERPRISE RENT-A-CAR",
         "Merchant Category Name":"ENTERPRISE RENT-A-CAR",
         "Transaction Date":"02\/09\/2022",
-        "Transaction Amount":"£561.11",
+        "Transaction Amount":561.11,
         "Expense Description":"Vehicle hire"
     },
     {
@@ -100,7 +100,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
-        "Transaction Amount":"£4,717.89",
+        "Transaction Amount":4717.89,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -108,7 +108,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
-        "Transaction Amount":"£3,571.84",
+        "Transaction Amount":3571.84,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -116,7 +116,7 @@
         "Merchant Name":"Mclaren Tractors Ltd",
         "Merchant Category Name":"MISC\/AUTO\/AIRCRAFT\/FARM EQUIP NOT ELSEWHERE CLASS",
         "Transaction Date":"29\/09\/2022",
-        "Transaction Amount":"£4,010.04",
+        "Transaction Amount":4010.04,
         "Expense Description":"Farm Equipment - maintenance"
     },
     {
@@ -124,7 +124,7 @@
         "Merchant Name":"Open University",
         "Merchant Category Name":"COLLEGES, UNIV, PRO SCHOOLS, JUNIOR COLLEGES",
         "Transaction Date":"06\/09\/2022",
-        "Transaction Amount":"£537.00",
+        "Transaction Amount":537.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -132,7 +132,7 @@
         "Merchant Name":"Rainfoc Vmware Explore",
         "Merchant Category Name":"COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
         "Transaction Date":"22\/09\/2022",
-        "Transaction Amount":"£1,465.77",
+        "Transaction Amount":1465.77,
         "Expense Description":"External conference - fees"
     },
     {
@@ -140,7 +140,7 @@
         "Merchant Name":"Royal Mail Group Ltd",
         "Merchant Category Name":"POSTAL SERVICES-GOVERNMENT ONLY",
         "Transaction Date":"07\/09\/2022",
-        "Transaction Amount":"£1,305.30",
+        "Transaction Amount":1305.3,
         "Expense Description":"Postal Services"
     },
     {
@@ -148,7 +148,7 @@
         "Merchant Name":"Royal Mail Group Ltd",
         "Merchant Category Name":"POSTAL SERVICES-GOVERNMENT ONLY",
         "Transaction Date":"07\/09\/2022",
-        "Transaction Amount":"£1,010.88",
+        "Transaction Amount":1010.88,
         "Expense Description":"Postal Services"
     },
     {
@@ -156,7 +156,7 @@
         "Merchant Name":"Royal Mail Group Ltd",
         "Merchant Category Name":"POSTAL SERVICES-GOVERNMENT ONLY",
         "Transaction Date":"06\/09\/2022",
-        "Transaction Amount":"£812.36",
+        "Transaction Amount":812.36,
         "Expense Description":"Postal Services"
     },
     {
@@ -164,7 +164,7 @@
         "Merchant Name":"Royal Mail Online Shop",
         "Merchant Category Name":"POSTAL SERVICES-GOVERNMENT ONLY",
         "Transaction Date":"01\/09\/2022",
-        "Transaction Amount":"£535.50",
+        "Transaction Amount":535.5,
         "Expense Description":"Postal Services"
     },
     {
@@ -172,7 +172,7 @@
         "Merchant Name":"Scottish Power",
         "Merchant Category Name":"FUEL DEALERS-COAL, FUEL OIL, LIQ PETROLEUM, WOOD",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£813.06",
+        "Transaction Amount":813.06,
         "Expense Description":"Building - payment charge"
     },
     {
@@ -180,7 +180,7 @@
         "Merchant Name":"Scottish Power",
         "Merchant Category Name":"FUEL DEALERS-COAL, FUEL OIL, LIQ PETROLEUM, WOOD",
         "Transaction Date":"29\/09\/2022",
-        "Transaction Amount":"£1,193.47",
+        "Transaction Amount":1193.47,
         "Expense Description":"Office equipment"
     },
     {
@@ -188,7 +188,7 @@
         "Merchant Name":"Stamps Direct Ltd",
         "Merchant Category Name":"OFFICE, SCHOOL SUPPLY, AND STATIONERY STORES",
         "Transaction Date":"15\/09\/2022",
-        "Transaction Amount":"£709.75",
+        "Transaction Amount":709.75,
         "Expense Description":"Stationery"
     },
     {
@@ -196,7 +196,7 @@
         "Merchant Name":"The City Of Edinburgh",
         "Merchant Category Name":"GOVERNMENT SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"26\/09\/2022",
-        "Transaction Amount":"£706.38",
+        "Transaction Amount":706.38,
         "Expense Description":"Professional membership - fees"
     },
     {
@@ -204,7 +204,7 @@
         "Merchant Name":"Vsn International Ltd",
         "Merchant Category Name":"COMPUTER SOFTWARE STORES",
         "Transaction Date":"09\/09\/2022",
-        "Transaction Amount":"£3,944.40",
+        "Transaction Amount":3944.4,
         "Expense Description":"Specialist software - renewal"
     },
     {
@@ -212,7 +212,7 @@
         "Merchant Name":"WWW.ASSISTKD.COM",
         "Merchant Category Name":"BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"09\/09\/2022",
-        "Transaction Amount":"£1,674.00",
+        "Transaction Amount":1674.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -220,7 +220,7 @@
         "Merchant Name":"WWW.NWGB.CO.UK",
         "Merchant Category Name":"UTLTS-ELCTRC, GAS, HEATING OIL, SANITARY, WATER",
         "Transaction Date":"14\/09\/2022",
-        "Transaction Amount":"£16,070.40",
+        "Transaction Amount":16070.4,
         "Expense Description":"Building - payment charge"
     },
     {
@@ -228,7 +228,7 @@
         "Merchant Name":"WWW.QA.COM",
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"23\/09\/2022",
-        "Transaction Amount":"£4,246.80",
+        "Transaction Amount":4246.8,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -236,7 +236,7 @@
         "Merchant Name":"WWW.QA.COM",
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"23\/09\/2022",
-        "Transaction Amount":"£1,529.04",
+        "Transaction Amount":1529.04,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -244,7 +244,7 @@
         "Merchant Name":"WWW.QA.COM",
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"05\/09\/2022",
-        "Transaction Amount":"£556.80",
+        "Transaction Amount":556.8,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -252,7 +252,7 @@
         "Merchant Name":"WWW.TENHILLPACE.COM",
         "Merchant Category Name":"LODGING-HOTELS,MOTELS,RESORTS-NOT CLASSIFIED",
         "Transaction Date":"05\/09\/2022",
-        "Transaction Amount":"£1,662.00",
+        "Transaction Amount":1662.0,
         "Expense Description":"External event – accommodation"
     },
     {
@@ -260,7 +260,7 @@
         "Merchant Name":"Ah&Co",
         "Merchant Category Name":"ACCOUNTING, AUDITING AND BOOKKEEPING SERVICES",
         "Transaction Date":"01\/09\/2022",
-        "Transaction Amount":"£2,400.00",
+        "Transaction Amount":2400.0,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -268,7 +268,7 @@
         "Merchant Name":"Boulevard Hotel",
         "Merchant Category Name":"LODGING-HOTELS,MOTELS,RESORTS-NOT CLASSIFIED",
         "Transaction Date":"26\/09\/2022",
-        "Transaction Amount":"£550.00",
+        "Transaction Amount":550.0,
         "Expense Description":"External event - fees"
     },
     {
@@ -276,7 +276,7 @@
         "Merchant Name":"Sixt Car Rental",
         "Merchant Category Name":"SIXT CAR RENTAL",
         "Transaction Date":"15\/09\/2022",
-        "Transaction Amount":"£1,103.50",
+        "Transaction Amount":1103.5,
         "Expense Description":"Travel costs - car hire"
     },
     {
@@ -284,7 +284,7 @@
         "Merchant Name":"Alexander Wallace Toyo",
         "Merchant Category Name":"AUTOMOTIVE SERVICE SHOPS",
         "Transaction Date":"20\/09\/2022",
-        "Transaction Amount":"£985.00",
+        "Transaction Amount":985.0,
         "Expense Description":"Vehicle - maintenance"
     },
     {
@@ -292,7 +292,7 @@
         "Merchant Name":"Campbeltown Motor Comp",
         "Merchant Category Name":"AUTO & TRUCK DLRS-SALES,SVC, REPRS,PRTS, & LEASING",
         "Transaction Date":"13\/09\/2022",
-        "Transaction Amount":"£513.70",
+        "Transaction Amount":513.7,
         "Expense Description":"Vehicle - maintenance"
     },
     {
@@ -300,7 +300,7 @@
         "Merchant Name":"Clelands Of The Border",
         "Merchant Category Name":"AUTO & TRUCK DLRS-SALES,SVC, REPRS,PRTS, & LEASING",
         "Transaction Date":"16\/09\/2022",
-        "Transaction Amount":"£544.47",
+        "Transaction Amount":544.47,
         "Expense Description":"Vehicle - maintenance"
     },
     {
@@ -308,7 +308,7 @@
         "Merchant Name":"G B England Garage Ser",
         "Merchant Category Name":"AUTOMOTIVE SERVICE SHOPS",
         "Transaction Date":"16\/09\/2022",
-        "Transaction Amount":"£886.25",
+        "Transaction Amount":886.25,
         "Expense Description":"Vehicle - maintenance"
     },
     {
@@ -316,7 +316,7 @@
         "Merchant Name":"Hyundai Edinburgh West",
         "Merchant Category Name":"AUTO & TRUCK DLRS-SALES,SVC, REPRS,PRTS, & LEASING",
         "Transaction Date":"16\/09\/2022",
-        "Transaction Amount":"£546.00",
+        "Transaction Amount":546.0,
         "Expense Description":"Vehicle - maintenance"
     },
     {
@@ -324,7 +324,7 @@
         "Merchant Name":"Sixt Car Rental",
         "Merchant Category Name":"SIXT CAR RENTAL",
         "Transaction Date":"11\/09\/2022",
-        "Transaction Amount":"£1,103.50",
+        "Transaction Amount":1103.5,
         "Expense Description":"Travel costs - car hire"
     },
     {
@@ -332,7 +332,7 @@
         "Merchant Name":"WWW.",
         "Merchant Category Name":"SCHOOLS, TRADE AND VOCATIONAL",
         "Transaction Date":"09\/09\/2022",
-        "Transaction Amount":"£792.00",
+        "Transaction Amount":792.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -340,7 +340,7 @@
         "Merchant Name":"WWW.BLACKCIRCLES.COM",
         "Merchant Category Name":"AUTOMOTIVE TIRE STORES",
         "Transaction Date":"21\/09\/2022",
-        "Transaction Amount":"£791.96",
+        "Transaction Amount":791.96,
         "Expense Description":"Vehicle - maintenance"
     },
     {
@@ -348,7 +348,7 @@
         "Merchant Name":"WWW.BLACKCIRCLES.COM",
         "Merchant Category Name":"AUTOMOTIVE TIRE STORES",
         "Transaction Date":"21\/09\/2022",
-        "Transaction Amount":"£735.86",
+        "Transaction Amount":735.86,
         "Expense Description":"Vehicle - maintenance"
     },
     {
@@ -356,7 +356,7 @@
         "Merchant Name":"Amazon Web Services",
         "Merchant Category Name":"BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"15\/09\/2022",
-        "Transaction Amount":"£2,755.46",
+        "Transaction Amount":2755.46,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -364,7 +364,7 @@
         "Merchant Name":"Eb 2 Day Content Stra",
         "Merchant Category Name":"BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"06\/09\/2022",
-        "Transaction Amount":"£1,140.00",
+        "Transaction Amount":1140.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -372,7 +372,7 @@
         "Merchant Name":"ENTERPRISE RENT-A-CAR",
         "Merchant Category Name":"ENTERPRISE RENT-A-CAR",
         "Transaction Date":"14\/09\/2022",
-        "Transaction Amount":"£1,154.15",
+        "Transaction Amount":1154.15,
         "Expense Description":"Vehicle hire"
     },
     {
@@ -380,7 +380,7 @@
         "Merchant Name":"Goanimate, Inc.",
         "Merchant Category Name":"DIGITAL GOODS SOFTWARE APPLICATIONS",
         "Transaction Date":"08\/09\/2022",
-        "Transaction Amount":"£901.78",
+        "Transaction Amount":901.78,
         "Expense Description":"Specialist software - renewal"
     },
     {
@@ -388,7 +388,7 @@
         "Merchant Name":"Goanimate, Inc.",
         "Merchant Category Name":"DIGITAL GOODS SOFTWARE APPLICATIONS",
         "Transaction Date":"30\/08\/2022",
-        "Transaction Amount":"£1,678.65",
+        "Transaction Amount":1678.65,
         "Expense Description":"Specialist software - renewal"
     },
     {
@@ -396,7 +396,7 @@
         "Merchant Name":"Mural",
         "Merchant Category Name":"COMPUTER SOFTWARE STORES",
         "Transaction Date":"28\/09\/2022",
-        "Transaction Amount":"£1,733.32",
+        "Transaction Amount":1733.32,
         "Expense Description":"Specialist softwares"
     },
     {
@@ -404,7 +404,7 @@
         "Merchant Name":"Edinburgh Training Cen",
         "Merchant Category Name":"BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"27\/09\/2022",
-        "Transaction Amount":"£1,686.00",
+        "Transaction Amount":1686.0,
         "Expense Description":"External event - fees"
     },
     {
@@ -412,7 +412,7 @@
         "Merchant Name":"ENTERPRISE RENT-A-CAR",
         "Merchant Category Name":"ENTERPRISE RENT-A-CAR",
         "Transaction Date":"28\/09\/2022",
-        "Transaction Amount":"£722.73",
+        "Transaction Amount":722.73,
         "Expense Description":"Vehicle hire"
     },
     {
@@ -420,7 +420,7 @@
         "Merchant Name":"ENTERPRISE RENT-A-CAR",
         "Merchant Category Name":"ENTERPRISE RENT-A-CAR",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£731.13",
+        "Transaction Amount":731.13,
         "Expense Description":"Vehicle hire"
     },
     {
@@ -428,7 +428,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
-        "Transaction Amount":"£3,665.26",
+        "Transaction Amount":3665.26,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -436,7 +436,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
-        "Transaction Amount":"£4,159.31",
+        "Transaction Amount":4159.31,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -444,7 +444,7 @@
         "Merchant Name":"Currys Ireland Limeric",
         "Merchant Category Name":"VETERINARY SERVICES",
         "Transaction Date":"02\/09\/2022",
-        "Transaction Amount":"£700.75",
+        "Transaction Amount":700.75,
         "Expense Description":"Office equipment"
     },
     {
@@ -452,7 +452,7 @@
         "Merchant Name":"Hyatt Hotels",
         "Merchant Category Name":"HYATT HOTELS",
         "Transaction Date":"21\/09\/2022",
-        "Transaction Amount":"£520.43",
+        "Transaction Amount":520.43,
         "Expense Description":"Accomodation - fees"
     },
     {
@@ -460,7 +460,7 @@
         "Merchant Name":"Krh Hotel Kronprinz Ha",
         "Merchant Category Name":"LODGING-HOTELS,MOTELS,RESORTS-NOT CLASSIFIED",
         "Transaction Date":"26\/09\/2022",
-        "Transaction Amount":"£505.33",
+        "Transaction Amount":505.33,
         "Expense Description":"Accomodation - fees"
     },
     {
@@ -468,7 +468,7 @@
         "Merchant Name":"Sodexo",
         "Merchant Category Name":"CATERERS",
         "Transaction Date":"16\/09\/2022",
-        "Transaction Amount":"£687.86",
+        "Transaction Amount":687.86,
         "Expense Description":"Catering"
     },
     {
@@ -476,7 +476,7 @@
         "Merchant Name":"Sodexo",
         "Merchant Category Name":"CATERERS",
         "Transaction Date":"27\/09\/2022",
-        "Transaction Amount":"£572.81",
+        "Transaction Amount":572.81,
         "Expense Description":"Catering"
     },
     {
@@ -484,7 +484,7 @@
         "Merchant Name":"Sodexo",
         "Merchant Category Name":"CATERERS",
         "Transaction Date":"27\/09\/2022",
-        "Transaction Amount":"£1,596.96",
+        "Transaction Amount":1596.96,
         "Expense Description":"Catering"
     },
     {
@@ -492,7 +492,7 @@
         "Merchant Name":"Redactive Publishing",
         "Merchant Category Name":"MISCELLANEOUS PUBLISHING AND PRINTING",
         "Transaction Date":"16\/09\/2022",
-        "Transaction Amount":"£5,700.00",
+        "Transaction Amount":5700.0,
         "Expense Description":"External conference - fees"
     },
     {
@@ -500,7 +500,7 @@
         "Merchant Name":"Financial Times",
         "Merchant Category Name":"BOOKS,PERIODICALS AND NEWSPAPERS",
         "Transaction Date":"06\/09\/2022",
-        "Transaction Amount":"£3,539.00",
+        "Transaction Amount":3539.0,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -508,7 +508,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
-        "Transaction Amount":"£4,443.71",
+        "Transaction Amount":4443.71,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -516,7 +516,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
-        "Transaction Amount":"£3,095.52",
+        "Transaction Amount":3095.52,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -524,7 +524,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
-        "Transaction Amount":"£3,842.51",
+        "Transaction Amount":3842.51,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -532,7 +532,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
-        "Transaction Amount":"£5,192.01",
+        "Transaction Amount":5192.01,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -540,7 +540,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
-        "Transaction Amount":"£4,575.36",
+        "Transaction Amount":4575.36,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -548,7 +548,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
-        "Transaction Amount":"£4,894.26",
+        "Transaction Amount":4894.26,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -556,7 +556,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
-        "Transaction Amount":"£4,593.02",
+        "Transaction Amount":4593.02,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -564,7 +564,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£2,971.14",
+        "Transaction Amount":2971.14,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -572,7 +572,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£2,416.59",
+        "Transaction Amount":2416.59,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -580,7 +580,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£2,836.59",
+        "Transaction Amount":2836.59,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -588,7 +588,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£3,046.24",
+        "Transaction Amount":3046.24,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -596,7 +596,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£3,037.44",
+        "Transaction Amount":3037.44,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -604,7 +604,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£2,816.64",
+        "Transaction Amount":2816.64,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -612,7 +612,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£2,634.29",
+        "Transaction Amount":2634.29,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -620,7 +620,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£2,780.79",
+        "Transaction Amount":2780.79,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -628,7 +628,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£2,452.79",
+        "Transaction Amount":2452.79,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -636,7 +636,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£3,095.34",
+        "Transaction Amount":3095.34,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -644,7 +644,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£2,817.94",
+        "Transaction Amount":2817.94,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -652,7 +652,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£3,089.94",
+        "Transaction Amount":3089.94,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -660,7 +660,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£3,396.76",
+        "Transaction Amount":3396.76,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -668,7 +668,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£2,294.76",
+        "Transaction Amount":2294.76,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -676,7 +676,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£3,039.26",
+        "Transaction Amount":3039.26,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -684,7 +684,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£2,853.29",
+        "Transaction Amount":2853.29,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -692,7 +692,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£2,975.69",
+        "Transaction Amount":2975.69,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -700,7 +700,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£3,289.79",
+        "Transaction Amount":3289.79,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -708,7 +708,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£3,689.09",
+        "Transaction Amount":3689.09,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -716,7 +716,7 @@
         "Merchant Name":"Law Society Of Scotlan",
         "Merchant Category Name":"ORGANIZATIONS, MEMBERSHIP-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"23\/09\/2022",
-        "Transaction Amount":"£700.00",
+        "Transaction Amount":700.0,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -724,7 +724,7 @@
         "Merchant Name":"Zafferano Concessions",
         "Merchant Category Name":"GIFT, CARD, NOVELTY AND SOUVENIR SHOPS",
         "Transaction Date":"22\/09\/2022",
-        "Transaction Amount":"£780.70",
+        "Transaction Amount":780.7,
         "Expense Description":"External event - room hire"
     },
     {
@@ -732,7 +732,7 @@
         "Merchant Name":"Zafferano Concessions",
         "Merchant Category Name":"GIFT, CARD, NOVELTY AND SOUVENIR SHOPS",
         "Transaction Date":"21\/09\/2022",
-        "Transaction Amount":"£740.00",
+        "Transaction Amount":740.0,
         "Expense Description":"External event - room hire"
     },
     {
@@ -740,7 +740,7 @@
         "Merchant Name":"Atlassian",
         "Merchant Category Name":"COMPUTER SOFTWARE STORES",
         "Transaction Date":"06\/09\/2022",
-        "Transaction Amount":"£922.61",
+        "Transaction Amount":922.61,
         "Expense Description":"Specialist software – renewal"
     },
     {
@@ -748,7 +748,7 @@
         "Merchant Name":"C I H",
         "Merchant Category Name":"ASSOCIATIONS-CIVIC, SOCIAL, AND FRATERNAL",
         "Transaction Date":"01\/09\/2022",
-        "Transaction Amount":"£3,900.00",
+        "Transaction Amount":3900.0,
         "Expense Description":"External event - award ceremony"
     },
     {
@@ -756,7 +756,7 @@
         "Merchant Name":"Msft E0700K6Nxy",
         "Merchant Category Name":"COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
         "Transaction Date":"12\/09\/2022",
-        "Transaction Amount":"£6,226.59",
+        "Transaction Amount":6226.59,
         "Expense Description":"Professional subscription - fees"
     },
     {
@@ -764,7 +764,7 @@
         "Merchant Name":"Airbnb Hmb4Esh2Pp",
         "Merchant Category Name":"TRAVEL AGENCIES AND TOUR OPERATORS",
         "Transaction Date":"02\/09\/2022",
-        "Transaction Amount":"£5,962.65",
+        "Transaction Amount":5962.65,
         "Expense Description":"Accomodation - fees"
     },
     {
@@ -772,7 +772,7 @@
         "Merchant Name":"Airbnb Hmdntpzfrw",
         "Merchant Category Name":"TRAVEL AGENCIES AND TOUR OPERATORS",
         "Transaction Date":"03\/09\/2022",
-        "Transaction Amount":"£5,023.74",
+        "Transaction Amount":5023.74,
         "Expense Description":"Accomodation - fees"
     },
     {
@@ -780,7 +780,7 @@
         "Merchant Name":"Airbnb Hmx9Pf8Xxq",
         "Merchant Category Name":"TRAVEL AGENCIES AND TOUR OPERATORS",
         "Transaction Date":"02\/09\/2022",
-        "Transaction Amount":"£4,956.10",
+        "Transaction Amount":4956.1,
         "Expense Description":"Accomodation - fees"
     },
     {
@@ -788,7 +788,7 @@
         "Merchant Name":"Airbnb Hmyj2Xeacp",
         "Merchant Category Name":"TRAVEL AGENCIES AND TOUR OPERATORS",
         "Transaction Date":"02\/09\/2022",
-        "Transaction Amount":"£5,513.85",
+        "Transaction Amount":5513.85,
         "Expense Description":"Accomodation - fees"
     },
     {
@@ -796,7 +796,7 @@
         "Merchant Name":"Airbnb Hmzqnsmmkw",
         "Merchant Category Name":"TRAVEL AGENCIES AND TOUR OPERATORS",
         "Transaction Date":"02\/09\/2022",
-        "Transaction Amount":"£4,075.40",
+        "Transaction Amount":4075.4,
         "Expense Description":"Accomodation - fees"
     },
     {
@@ -804,7 +804,7 @@
         "Merchant Name":"Amazon.Co.Uk Ya3Ii0P45",
         "Merchant Category Name":"DIRECT MARKETING-OTHER DIRECT MARKETERS\/NOT ELSEW.",
         "Transaction Date":"21\/09\/2022",
-        "Transaction Amount":"£1,439.90",
+        "Transaction Amount":1439.9,
         "Expense Description":"Specialist IT equipment"
     },
     {
@@ -812,7 +812,7 @@
         "Merchant Name":"Amity Fish Company",
         "Merchant Category Name":"GROCERY STORES, SUPERMARKETS",
         "Transaction Date":"09\/09\/2022",
-        "Transaction Amount":"£1,046.30",
+        "Transaction Amount":1046.3,
         "Expense Description":"Vessel food stores"
     },
     {
@@ -820,7 +820,7 @@
         "Merchant Name":"Amznmktplace",
         "Merchant Category Name":"MISCELLANEOUS AND SPECIALTY RETAIL STORES",
         "Transaction Date":"19\/09\/2022",
-        "Transaction Amount":"£644.75",
+        "Transaction Amount":644.75,
         "Expense Description":"Specialist IT equipment"
     },
     {
@@ -828,7 +828,7 @@
         "Merchant Name":"Amznmktplace",
         "Merchant Category Name":"MISCELLANEOUS AND SPECIALTY RETAIL STORES",
         "Transaction Date":"15\/09\/2022",
-        "Transaction Amount":"£747.50",
+        "Transaction Amount":747.5,
         "Expense Description":"Specialist IT equipment"
     },
     {
@@ -836,7 +836,7 @@
         "Merchant Name":"Amznmktplace",
         "Merchant Category Name":"MISCELLANEOUS AND SPECIALTY RETAIL STORES",
         "Transaction Date":"15\/09\/2022",
-        "Transaction Amount":"£850.90",
+        "Transaction Amount":850.9,
         "Expense Description":"Specialist IT equipment"
     },
     {
@@ -844,7 +844,7 @@
         "Merchant Name":"Ardanair",
         "Merchant Category Name":"LODGING-HOTELS,MOTELS,RESORTS-NOT CLASSIFIED",
         "Transaction Date":"12\/09\/2022",
-        "Transaction Amount":"£500.00",
+        "Transaction Amount":500.0,
         "Expense Description":"Accomodation - fees"
     },
     {
@@ -852,7 +852,7 @@
         "Merchant Name":"Ast",
         "Merchant Category Name":"MARINAS, MARINE SERVICE\/SUPPLIES",
         "Transaction Date":"28\/09\/2022",
-        "Transaction Amount":"£550.00",
+        "Transaction Amount":550.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -860,7 +860,7 @@
         "Merchant Name":"Atlassianpt",
         "Merchant Category Name":"COMPUTER SOFTWARE STORES",
         "Transaction Date":"06\/09\/2022",
-        "Transaction Amount":"£4,250.92",
+        "Transaction Amount":4250.92,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -868,7 +868,7 @@
         "Merchant Name":"Brady",
         "Merchant Category Name":"DURABLE GOODS, NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£668.16",
+        "Transaction Amount":668.16,
         "Expense Description":"Specialist laboratory equipment"
     },
     {
@@ -876,7 +876,7 @@
         "Merchant Name":"Britches Moir Aberdeen",
         "Merchant Category Name":"MISC FOOD STORE-CONVENIENCE,MRKT,SPLTY,VENDNG MACS",
         "Transaction Date":"06\/09\/2022",
-        "Transaction Amount":"£1,046.84",
+        "Transaction Amount":1046.84,
         "Expense Description":"Vessel food stores"
     },
     {
@@ -884,7 +884,7 @@
         "Merchant Name":"Britches Moir Aberdeen",
         "Merchant Category Name":"MISC FOOD STORE-CONVENIENCE,MRKT,SPLTY,VENDNG MACS",
         "Transaction Date":"29\/09\/2022",
-        "Transaction Amount":"£717.71",
+        "Transaction Amount":717.71,
         "Expense Description":"Vessel food stores"
     },
     {
@@ -892,7 +892,7 @@
         "Merchant Name":"COMPUTACENTER (UK) LTD",
         "Merchant Category Name":"COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
         "Transaction Date":"07\/09\/2022",
-        "Transaction Amount":"£54,198.00",
+        "Transaction Amount":54198.0,
         "Expense Description":"IT peripherals"
     },
     {
@@ -900,7 +900,7 @@
         "Merchant Name":"Cts Ltd",
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"22\/09\/2022",
-        "Transaction Amount":"£990.00",
+        "Transaction Amount":990.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -908,7 +908,7 @@
         "Merchant Name":"Dirusling",
         "Merchant Category Name":"LODGING-HOTELS,MOTELS,RESORTS-NOT CLASSIFIED",
         "Transaction Date":"07\/09\/2022",
-        "Transaction Amount":"£690.00",
+        "Transaction Amount":690.0,
         "Expense Description":"Accomodation - fees"
     },
     {
@@ -916,7 +916,7 @@
         "Merchant Name":"Fraser Signs",
         "Merchant Category Name":"MISCELLANEOUS AND SPECIALTY RETAIL STORES",
         "Transaction Date":"02\/09\/2022",
-        "Transaction Amount":"£1,228.80",
+        "Transaction Amount":1228.8,
         "Expense Description":"Vehicle - maintenance"
     },
     {
@@ -924,7 +924,7 @@
         "Merchant Name":"Henderson & Dick Desig",
         "Merchant Category Name":"MISCELLANEOUS AND SPECIALTY RETAIL STORES",
         "Transaction Date":"22\/09\/2022",
-        "Transaction Amount":"£1,242.00",
+        "Transaction Amount":1242.0,
         "Expense Description":"Scientific Equipment"
     },
     {
@@ -932,7 +932,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
-        "Transaction Amount":"£4,167.36",
+        "Transaction Amount":4167.36,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -940,7 +940,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
-        "Transaction Amount":"£3,913.36",
+        "Transaction Amount":3913.36,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -948,7 +948,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
-        "Transaction Amount":"£3,286.61",
+        "Transaction Amount":3286.61,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -956,7 +956,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
-        "Transaction Amount":"£3,126.76",
+        "Transaction Amount":3126.76,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -964,7 +964,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
-        "Transaction Amount":"£3,186.16",
+        "Transaction Amount":3186.16,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -972,7 +972,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
-        "Transaction Amount":"£4,078.86",
+        "Transaction Amount":4078.86,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -980,7 +980,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
-        "Transaction Amount":"£3,899.91",
+        "Transaction Amount":3899.91,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -988,7 +988,7 @@
         "Merchant Name":"Hotel",
         "Merchant Category Name":"Hotel",
         "Transaction Date":"19\/09\/2022",
-        "Transaction Amount":"£3,829.31",
+        "Transaction Amount":3829.31,
         "Expense Description":"UKR - Resettlement"
     },
     {
@@ -996,7 +996,7 @@
         "Merchant Name":"Iceland",
         "Merchant Category Name":"GROCERY STORES, SUPERMARKETS",
         "Transaction Date":"27\/09\/2022",
-        "Transaction Amount":"£535.78",
+        "Transaction Amount":535.78,
         "Expense Description":"Vessel food stores"
     },
     {
@@ -1004,7 +1004,7 @@
         "Merchant Name":"John Morfield Ltd",
         "Merchant Category Name":"INDUSTRIAL SUPPLIES NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"05\/09\/2022",
-        "Transaction Amount":"£4,811.88",
+        "Transaction Amount":4811.88,
         "Expense Description":"Scientific equipment"
     },
     {
@@ -1012,7 +1012,7 @@
         "Merchant Name":"Martek-Marine Ltd",
         "Merchant Category Name":"MARINAS, MARINE SERVICE\/SUPPLIES",
         "Transaction Date":"22\/09\/2022",
-        "Transaction Amount":"£668.14",
+        "Transaction Amount":668.14,
         "Expense Description":"Vessel medical peripherals"
     },
     {
@@ -1020,7 +1020,7 @@
         "Merchant Name":"Relyon Nutec Uk Limite",
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"06\/09\/2022",
-        "Transaction Amount":"£567.85",
+        "Transaction Amount":567.85,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1028,7 +1028,7 @@
         "Merchant Name":"Southern Contracts",
         "Merchant Category Name":"ELECTRONIC SALES",
         "Transaction Date":"16\/09\/2022",
-        "Transaction Amount":"£4,199.67",
+        "Transaction Amount":4199.67,
         "Expense Description":"Vessel equipment"
     },
     {
@@ -1036,7 +1036,7 @@
         "Merchant Name":"Sumup Aberdeen Drysu",
         "Merchant Category Name":"GENERAL CONTRACTORS\/RESIDENTIAL BUILDINGS",
         "Transaction Date":"10\/09\/2022",
-        "Transaction Amount":"£525.00",
+        "Transaction Amount":525.0,
         "Expense Description":"Vessel safety equipment - clothing"
     },
     {
@@ -1044,7 +1044,7 @@
         "Merchant Name":"WWW.BANNERUK.COM",
         "Merchant Category Name":"STATIONERY\/OFFICE SUPPLIES\/PRINTING & WRITING PAP.",
         "Transaction Date":"13\/09\/2022",
-        "Transaction Amount":"£709.94",
+        "Transaction Amount":709.94,
         "Expense Description":"IT consumables"
     },
     {
@@ -1052,7 +1052,7 @@
         "Merchant Name":"WWW.INPD.CO.UK",
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"06\/09\/2022",
-        "Transaction Amount":"£2,520.00",
+        "Transaction Amount":2520.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1060,7 +1060,7 @@
         "Merchant Name":"WWW.LONDONPOWERTOOLS.C",
         "Merchant Category Name":"GLASS, PAINT, WALLPAPER STORES",
         "Transaction Date":"03\/09\/2022",
-        "Transaction Amount":"£548.95",
+        "Transaction Amount":548.95,
         "Expense Description":"Vessel equipment"
     },
     {
@@ -1068,7 +1068,7 @@
         "Merchant Name":"WWW.MARINESUPERSTORE.C",
         "Merchant Category Name":"MARINAS, MARINE SERVICE\/SUPPLIES",
         "Transaction Date":"10\/09\/2022",
-        "Transaction Amount":"£759.90",
+        "Transaction Amount":759.9,
         "Expense Description":"Vessel safety equipment - clothing"
     },
     {
@@ -1076,7 +1076,7 @@
         "Merchant Name":"WWW.MARINESUPERSTORE.C",
         "Merchant Category Name":"MARINAS, MARINE SERVICE\/SUPPLIES",
         "Transaction Date":"12\/09\/2022",
-        "Transaction Amount":"£759.90",
+        "Transaction Amount":759.9,
         "Expense Description":"Vessel safety equipment - clothing"
     },
     {
@@ -1084,7 +1084,7 @@
         "Merchant Name":"Alzheimer Europe",
         "Merchant Category Name":"ORGANIZATIONS, CHARITABLE AND SOCIAL SERVICES",
         "Transaction Date":"08\/09\/2022",
-        "Transaction Amount":"£805.14",
+        "Transaction Amount":805.14,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1092,7 +1092,7 @@
         "Merchant Name":"LYRECO UK LTD",
         "Merchant Category Name":"OFFICE, SCHOOL SUPPLY, AND STATIONERY STORES",
         "Transaction Date":"08\/09\/2022",
-        "Transaction Amount":"£933.58",
+        "Transaction Amount":933.58,
         "Expense Description":"Stationery"
     },
     {
@@ -1100,7 +1100,7 @@
         "Merchant Name":"C2E829200039T Ukvi",
         "Merchant Category Name":"GOVERNMENT SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"13\/09\/2022",
-        "Transaction Amount":"£3,199.00",
+        "Transaction Amount":3199.0,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -1108,7 +1108,7 @@
         "Merchant Name":"C2E829200216E Ukvi",
         "Merchant Category Name":"GOVERNMENT SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"13\/09\/2022",
-        "Transaction Amount":"£3,199.00",
+        "Transaction Amount":3199.0,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -1116,7 +1116,7 @@
         "Merchant Name":"C2E829200819I Ukvi",
         "Merchant Category Name":"GOVERNMENT SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"13\/09\/2022",
-        "Transaction Amount":"£3,199.00",
+        "Transaction Amount":3199.0,
         "Expense Description":"Professional licence - fees"
     },
     {
@@ -1124,7 +1124,7 @@
         "Merchant Name":"Possum",
         "Merchant Category Name":"ELECTRONIC SALES",
         "Transaction Date":"29\/09\/2022",
-        "Transaction Amount":"£837.60",
+        "Transaction Amount":837.6,
         "Expense Description":"Specialist IT equipment"
     },
     {
@@ -1132,7 +1132,7 @@
         "Merchant Name":"Posturite Ltd",
         "Merchant Category Name":"MISCELLANEOUS HOUSE FURNISHING SPECIALTY SHOPS",
         "Transaction Date":"01\/09\/2022",
-        "Transaction Amount":"£1,353.30",
+        "Transaction Amount":1353.3,
         "Expense Description":"Office equipment"
     },
     {
@@ -1140,7 +1140,7 @@
         "Merchant Name":"Ukevaluationsocietycl0",
         "Merchant Category Name":"ORGANIZATIONS, MEMBERSHIP-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"29\/09\/2022",
-        "Transaction Amount":"£1,140.00",
+        "Transaction Amount":1140.0,
         "Expense Description":"Professional membership - fees"
     },
     {
@@ -1148,7 +1148,7 @@
         "Merchant Name":"Digital Dna",
         "Merchant Category Name":"DIGITAL GOODS AUDIOVISUAL MEDIA",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£1,800.00",
+        "Transaction Amount":1800.0,
         "Expense Description":"External event - fees"
     },
     {
@@ -1156,7 +1156,7 @@
         "Merchant Name":"I To I Communications",
         "Merchant Category Name":"BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"07\/09\/2022",
-        "Transaction Amount":"£4,800.00",
+        "Transaction Amount":4800.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1164,7 +1164,7 @@
         "Merchant Name":"Pp Scotlandis",
         "Merchant Category Name":"ASSOCIATIONS-CIVIC, SOCIAL, AND FRATERNAL",
         "Transaction Date":"14\/09\/2022",
-        "Transaction Amount":"£1,200.00",
+        "Transaction Amount":1200.0,
         "Expense Description":"External conference - fees"
     },
     {
@@ -1172,7 +1172,7 @@
         "Merchant Name":"Rusi",
         "Merchant Category Name":"ORGANIZATIONS, CHARITABLE AND SOCIAL SERVICES",
         "Transaction Date":"21\/09\/2022",
-        "Transaction Amount":"£6,494.40",
+        "Transaction Amount":6494.4,
         "Expense Description":"Professional membership - fees"
     },
     {
@@ -1180,7 +1180,7 @@
         "Merchant Name":"The Scottish Business",
         "Merchant Category Name":"BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"05\/09\/2022",
-        "Transaction Amount":"£1,200.00",
+        "Transaction Amount":1200.0,
         "Expense Description":"External event - fees"
     },
     {
@@ -1188,7 +1188,7 @@
         "Merchant Name":"Highstreetvouchers",
         "Merchant Category Name":"ASSOCIATIONS-CIVIC, SOCIAL, AND FRATERNAL",
         "Transaction Date":"07\/09\/2022",
-        "Transaction Amount":"£504.25",
+        "Transaction Amount":504.25,
         "Expense Description":"External consultancy - fees"
     },
     {
@@ -1196,7 +1196,7 @@
         "Merchant Name":"Terrace Hotel Edingbur",
         "Merchant Category Name":"LODGING-HOTELS,MOTELS,RESORTS-NOT CLASSIFIED",
         "Transaction Date":"16\/09\/2022",
-        "Transaction Amount":"£1,125.75",
+        "Transaction Amount":1125.75,
         "Expense Description":"External event - fees"
     },
     {
@@ -1204,7 +1204,7 @@
         "Merchant Name":"WWW.QA.COM",
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"20\/09\/2022",
-        "Transaction Amount":"£1,560.00",
+        "Transaction Amount":1560.0,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1212,7 +1212,7 @@
         "Merchant Name":"WWW.QA.COM",
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£1,696.80",
+        "Transaction Amount":1696.8,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1220,7 +1220,7 @@
         "Merchant Name":"WWW.QA.COM",
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"07\/09\/2022",
-        "Transaction Amount":"£1,412.40",
+        "Transaction Amount":1412.4,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1228,7 +1228,7 @@
         "Merchant Name":"WWW.QA.COM",
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"06\/09\/2022",
-        "Transaction Amount":"£1,412.40",
+        "Transaction Amount":1412.4,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1236,7 +1236,7 @@
         "Merchant Name":"WWW.QA.COM",
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"06\/09\/2022",
-        "Transaction Amount":"£1,412.40",
+        "Transaction Amount":1412.4,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1244,7 +1244,7 @@
         "Merchant Name":"WWW.QA.COM",
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"06\/09\/2022",
-        "Transaction Amount":"£1,412.40",
+        "Transaction Amount":1412.4,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1252,7 +1252,7 @@
         "Merchant Name":"WWW.QA.COM",
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"06\/09\/2022",
-        "Transaction Amount":"£1,412.40",
+        "Transaction Amount":1412.4,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1260,7 +1260,7 @@
         "Merchant Name":"WWW.QA.COM",
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£1,412.40",
+        "Transaction Amount":1412.4,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1268,7 +1268,7 @@
         "Merchant Name":"WWW.QA.COM",
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"31\/08\/2022",
-        "Transaction Amount":"£1,412.40",
+        "Transaction Amount":1412.4,
         "Expense Description":"External training course - fees"
     },
     {
@@ -1276,7 +1276,7 @@
         "Merchant Name":"Stirling Highland Hote",
         "Merchant Category Name":"LODGING-HOTELS,MOTELS,RESORTS-NOT CLASSIFIED",
         "Transaction Date":"28\/09\/2022",
-        "Transaction Amount":"£800.00",
+        "Transaction Amount":800.0,
         "Expense Description":"Accomodation - fees"
     },
     {
@@ -1284,7 +1284,7 @@
         "Merchant Name":"Sigaria Limited",
         "Merchant Category Name":"SCHOOLS & EDUCATIONAL SVC-NOT ELSEWHERE CLASSIFIED",
         "Transaction Date":"14\/09\/2022",
-        "Transaction Amount":"£28,728.00",
+        "Transaction Amount":28728.0,
         "Expense Description":"Professional subscription - fees"
     }
 ]
