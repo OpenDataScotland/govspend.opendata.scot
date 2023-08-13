@@ -1,0 +1,9 @@
+---
+pagination:
+    data: collections.spendsOver500
+    size: 1
+    alias: spends    
+permalink: "spends/{{ spends.title | slugify }}.json"
+---
+
+{{ spends.data | jsonify | safe }}
