@@ -1,0 +1,379 @@
+
+[
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Panasonic MA",
+        "Merchant Category Name": "Computer programming, data prcsng, integrated systems design services",
+        "Transaction Date": "06/12/2016",
+        "Transaction Amount": 858.5,
+        "Expense Description": "Scientific equipment"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "WWW.CIRCDATA.COM",
+        "Merchant Category Name": "Consulting, management and public relations services",
+        "Transaction Date": "21/12/2016",
+        "Transaction Amount": 582,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "CO chomunn eirisgeidh CO",
+        "Merchant Category Name": "News dealers and newstores",
+        "Transaction Date": "22/12/2016",
+        "Transaction Amount": 587.99,
+        "Expense Description": "Building furniture"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "BIPP moto",
+        "Merchant Category Name": "Organizations, membership - not elsewhere classified",
+        "Transaction Date": "05/12/2016",
+        "Transaction Amount": 500,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "CIPD enterprises",
+        "Merchant Category Name": "Professional services - not elsewhere classified",
+        "Transaction Date": "23/12/2016",
+        "Transaction Amount": 504,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise rent-a-car",
+        "Transaction Date": "13/12/2016",
+        "Transaction Amount": 2185.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Supplies team Ltd",
+        "Merchant Category Name": "Office, school supply and stationery stores",
+        "Transaction Date": "15/12/2016",
+        "Transaction Amount": 915.57,
+        "Expense Description": "IT consumables"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Supplies team Ltd",
+        "Merchant Category Name": "Office, school supply and stationery stores",
+        "Transaction Date": "15/12/2016",
+        "Transaction Amount": 687.67,
+        "Expense Description": "IT consumables"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Supplies team Ltd",
+        "Merchant Category Name": "Office, school supply and stationery stores",
+        "Transaction Date": "15/12/2016",
+        "Transaction Amount": 501.07,
+        "Expense Description": "IT consumables"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Supplies team Ltd",
+        "Merchant Category Name": "Office, school supply and stationery stores",
+        "Transaction Date": "15/12/2016",
+        "Transaction Amount": 511.38,
+        "Expense Description": "IT consumables"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Arnold Clark car & van",
+        "Merchant Category Name": "Automobile rental agency - not elsewhere classified",
+        "Transaction Date": "23/12/2016",
+        "Transaction Amount": 561.79,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise rent-a-car",
+        "Transaction Date": "06/12/2016",
+        "Transaction Amount": 589.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise rent-a-car",
+        "Transaction Date": "06/12/2016",
+        "Transaction Amount": 589.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise rent-a-car",
+        "Transaction Date": "20/12/2016",
+        "Transaction Amount": 589.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise rent-a-car",
+        "Transaction Date": "20/12/2016",
+        "Transaction Amount": 589.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise rent-a-car",
+        "Transaction Date": "20/12/2016",
+        "Transaction Amount": 589.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise rent-a-car",
+        "Transaction Date": "22/12/2016",
+        "Transaction Amount": 589.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise rent-a-car",
+        "Transaction Date": "29/12/2016",
+        "Transaction Amount": 505.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Children & Families",
+        "Merchant Name": "Supplies team Ltd",
+        "Merchant Category Name": "Office, school supply and stationery stores",
+        "Transaction Date": "15/12/2016",
+        "Transaction Amount": 677.52,
+        "Expense Description": "IT consumables"
+    },
+    {
+        "Directorate": "Directorate for Communications & Ministerial Support",
+        "Merchant Name": "Lyreco UK Ltd",
+        "Merchant Category Name": "Office, school supply and stationery stores",
+        "Transaction Date": "14/12/2016",
+        "Transaction Amount": 676.8,
+        "Expense Description": "Stationery"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Amazon web services",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "03/12/2016",
+        "Transaction Amount": 5512.69,
+        "Expense Description": "Web service - service charge - November 2016"
+    },
+    {
+        "Directorate": "Directorate for Environment & Forestry",
+        "Merchant Name": "The Oxford farming",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "06/12/2016",
+        "Transaction Amount": 640,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for External Affairs",
+        "Merchant Name": "Paypal kd photo",
+        "Merchant Category Name": "Art Dealers & Galleries",
+        "Transaction Date": "09/12/2016",
+        "Transaction Amount": 600,
+        "Expense Description": "Publication - fees for i-licence to use images"
+    },
+    {
+        "Directorate": "Directorate for External Affairs",
+        "Merchant Name": "Capitol host (ridgewel)",
+        "Merchant Category Name": "Caterers",
+        "Transaction Date": "30/11/2016",
+        "Transaction Amount": 862.6,
+        "Expense Description": "External event - catering"
+    },
+    {
+        "Directorate": "Directorate for External Affairs",
+        "Merchant Name": "Cinars",
+        "Merchant Category Name": "Organizations, membership - not elsewhere classified",
+        "Transaction Date": "09/12/2016",
+        "Transaction Amount": 931.19,
+        "Expense Description": "External event - fees and catering"
+    },
+    {
+        "Directorate": "Directorate for Legal Services",
+        "Merchant Name": "Zaff @ UKscourt",
+        "Merchant Category Name": "Fast food restaurants",
+        "Transaction Date": "06/12/2016",
+        "Transaction Amount": 510.2,
+        "Expense Description": "External event - catering"
+    },
+    {
+        "Directorate": "Directorate for Local Government & Communities",
+        "Merchant Name": "Ryman direct",
+        "Merchant Category Name": "Office, school supply and stationery stores",
+        "Transaction Date": "07/12/2016",
+        "Transaction Amount": 524.25,
+        "Expense Description": "Stationery"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "GBICS com Ltd",
+        "Merchant Category Name": "Computers, computer peripheral equipment, software",
+        "Transaction Date": "12/12/2016",
+        "Transaction Amount": 2188.8,
+        "Expense Description": "Specialist IT equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "WWW.NISBETS.COM",
+        "Merchant Category Name": "Direct marketing - catalog merchants",
+        "Transaction Date": "30/11/2016",
+        "Transaction Amount": 1031.98,
+        "Expense Description": "Vessel equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "SKR NIBROADCAST.CO.UK",
+        "Merchant Category Name": "Electronic sales",
+        "Transaction Date": "14/12/2016",
+        "Transaction Amount": 761,
+        "Expense Description": "Specialist IT equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Ocean safety Ltd",
+        "Merchant Category Name": "Hardware equipment & supplies",
+        "Transaction Date": "23/12/2016",
+        "Transaction Amount": 768.6,
+        "Expense Description": "Vessel safety equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Machine mart Ltd",
+        "Merchant Category Name": "Household appliance stores",
+        "Transaction Date": "28/12/2016",
+        "Transaction Amount": 541.02,
+        "Expense Description": "Scientific equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Massey Coldbeck",
+        "Merchant Category Name": "Industrial supplies - not elsewhere classified",
+        "Transaction Date": "14/12/2016",
+        "Transaction Amount": 684,
+        "Expense Description": "Vessel engineering equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "WWW.GSPRODUCTS.CO.UK",
+        "Merchant Category Name": "Industrial supplies - not elsewhere classified",
+        "Transaction Date": "15/12/2016",
+        "Transaction Amount": 568.43,
+        "Expense Description": "Scientific equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Thorne & Derrick",
+        "Merchant Category Name": "Plumbing and heating equipment",
+        "Transaction Date": "02/12/2016",
+        "Transaction Amount": 505,
+        "Expense Description": "Scientific equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Millipore Europe",
+        "Merchant Category Name": "Professional services - not elsewhere classified",
+        "Transaction Date": "13/12/2016",
+        "Transaction Amount": 642,
+        "Expense Description": "Scientific equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "WWW.CONCEPT2.CO.UK",
+        "Merchant Category Name": "Sporting good stores",
+        "Transaction Date": "05/12/2016",
+        "Transaction Amount": 876.5,
+        "Expense Description": "Vessel equipment"
+    },
+    {
+        "Directorate": "Directorate for Safer Communities",
+        "Merchant Name": "Supplies team Ltd",
+        "Merchant Category Name": "Office, school supply and stationery stores",
+        "Transaction Date": "15/12/2016",
+        "Transaction Amount": 695.47,
+        "Expense Description": "IT consumables"
+    },
+    {
+        "Directorate": "Directorate for Safer Communities",
+        "Merchant Name": "Supplies team Ltd",
+        "Merchant Category Name": "Office, school supply and stationery stores",
+        "Transaction Date": "15/12/2016",
+        "Transaction Amount": 1078.95,
+        "Expense Description": "IT consumables"
+    },
+    {
+        "Directorate": "People Directorate",
+        "Merchant Name": "British Parking AS",
+        "Merchant Category Name": "Consulting, management and public relations services",
+        "Transaction Date": "19/12/2016",
+        "Transaction Amount": 1363.2,
+        "Expense Description": "Professional membership - fees"
+    },
+    {
+        "Directorate": "People Directorate",
+        "Merchant Name": "Stirling park Llp",
+        "Merchant Category Name": "Fines",
+        "Transaction Date": "15/12/2016",
+        "Transaction Amount": 771.98,
+        "Expense Description": "Building - payment charge"
+    },
+    {
+        "Directorate": "Scottish Procurement & Commercial Directorate",
+        "Merchant Name": "RICS subs UK cybs",
+        "Merchant Category Name": "Organizations, membership - not elsewhere classified",
+        "Transaction Date": "20/12/2016",
+        "Transaction Amount": 512,
+        "Expense Description": "Professional membership - fees"
+    },
+    {
+        "Directorate": "Scottish Procurement & Commercial Directorate",
+        "Merchant Name": "RICS subs UK cybs",
+        "Merchant Category Name": "Organizations, membership - not elsewhere classified",
+        "Transaction Date": "20/12/2016",
+        "Transaction Amount": 624,
+        "Expense Description": "Professional membership - fees"
+    },
+    {
+        "Directorate": "Scottish Procurement & Commercial Directorate",
+        "Merchant Name": "RICS subs UK cybs",
+        "Merchant Category Name": "Organizations, membership - not elsewhere classified",
+        "Transaction Date": "20/12/2016",
+        "Transaction Amount": 512,
+        "Expense Description": "Professional membership - fees"
+    },
+    {
+        "Directorate": "Scottish Procurement & Commercial Directorate",
+        "Merchant Name": "RICS subs UK cybs",
+        "Merchant Category Name": "Organizations, membership - not elsewhere classified",
+        "Transaction Date": "20/12/2016",
+        "Transaction Amount": 512,
+        "Expense Description": "Professional membership - fees"
+    },
+    {
+        "Directorate": "Scottish Procurement & Commercial Directorate",
+        "Merchant Name": "RICS subs UK cybs",
+        "Merchant Category Name": "Organizations, membership - not elsewhere classified",
+        "Transaction Date": "20/12/2016",
+        "Transaction Amount": 512,
+        "Expense Description": "Professional membership - fees"
+    },
+    {
+        "Directorate": "Scottish Procurement & Commercial Directorate",
+        "Merchant Name": "RICS subs UK cybs",
+        "Merchant Category Name": "Organizations, membership - not elsewhere classified",
+        "Transaction Date": "20/12/2016",
+        "Transaction Amount": 512,
+        "Expense Description": "Professional membership - fees"
+    }
+]

@@ -1,0 +1,2571 @@
+
+[
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Amazon Web Services",
+        "Merchant Category Name": "Business Services - Not Elsewhere Classified",
+        "Transaction Date": "03/07/2022",
+        "Transaction Amount": 2042.9,
+        "Expense Description": "Specialist software - renewal"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Amazon.Co.Uk 2Y27W8Ae4",
+        "Merchant Category Name": "Direct Marketing - Other Direct Marketers/Not Elsewhere Classified",
+        "Transaction Date": "01/07/2022",
+        "Transaction Amount": 1919.52,
+        "Expense Description": "IT hardware - specialist equipment"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "25/07/2022",
+        "Transaction Amount": 640,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "25/07/2022",
+        "Transaction Amount": 640,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "25/07/2022",
+        "Transaction Amount": 630,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "25/07/2022",
+        "Transaction Amount": 630,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "25/07/2022",
+        "Transaction Amount": 525,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Aps Group.Co.Uk",
+        "Merchant Category Name": "Office, School Supply, & Stationery Stores",
+        "Transaction Date": "13/07/2022",
+        "Transaction Amount": 499.78,
+        "Expense Description": "Farm equipment"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Arrochar Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "13/07/2022",
+        "Transaction Amount": 720,
+        "Expense Description": "Accomodation - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "12/07/2022",
+        "Transaction Amount": 690,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "15/07/2022",
+        "Transaction Amount": 1180,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "15/07/2022",
+        "Transaction Amount": 1180,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "15/07/2022",
+        "Transaction Amount": 1045,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "15/07/2022",
+        "Transaction Amount": 1045,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "15/07/2022",
+        "Transaction Amount": 1045,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "15/07/2022",
+        "Transaction Amount": 1045,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "14/07/2022",
+        "Transaction Amount": 720,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Aws Emea",
+        "Merchant Category Name": "Business Services - Not Elsewhere Classified",
+        "Transaction Date": "03/07/2022",
+        "Transaction Amount": 4015.08,
+        "Expense Description": "Specialist software - renewal"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "B B Wear",
+        "Merchant Category Name": "Men'S & Women'S Clothing Stores",
+        "Transaction Date": "26/07/2022",
+        "Transaction Amount": 1262.94,
+        "Expense Description": "Specialist protective clothing"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "COMPUTACENTER (UK) LTD",
+        "Merchant Category Name": "COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 2621.38,
+        "Expense Description": "IT peripherals"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "12/07/2022",
+        "Transaction Amount": 8760,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "12/07/2022",
+        "Transaction Amount": 8480,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "18/07/2022",
+        "Transaction Amount": 2893.5,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Business Services - Not Elsewhere Classified",
+        "Transaction Date": "30/06/2022",
+        "Transaction Amount": 970.99,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "ENTERPRISE RENT-A-CAR",
+        "Merchant Category Name": "ENTERPRISE RENT-A-CAR",
+        "Transaction Date": "25/07/2022",
+        "Transaction Amount": 733.48,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "ENTERPRISE RENT-A-CAR",
+        "Merchant Category Name": "ENTERPRISE RENT-A-CAR",
+        "Transaction Date": "25/07/2022",
+        "Transaction Amount": 888.04,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travel Agencies & Tour Operators",
+        "Transaction Date": "14/07/2022",
+        "Transaction Amount": 30024,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travel Agencies & Tour Operators",
+        "Transaction Date": "14/07/2022",
+        "Transaction Amount": 3344.16,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travel Agencies & Tour Operators",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 3500,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travel Agencies & Tour Operators",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 4279.75,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travel Agencies & Tour Operators",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 3387.65,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travel Agencies & Tour Operators",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 8594.75,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Gazeboshop",
+        "Merchant Category Name": "Tent & Awning Shops",
+        "Transaction Date": "18/07/2022",
+        "Transaction Amount": 527.5,
+        "Expense Description": "External event - material"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Holiday Inns",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "11/07/2022",
+        "Transaction Amount": 8123.08,
+        "Expense Description": "Accomodation - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Holiday Inns",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "11/07/2022",
+        "Transaction Amount": 8123.08,
+        "Expense Description": "Accomodation - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "11/07/2022",
+        "Transaction Amount": 6123.08,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "11/07/2022",
+        "Transaction Amount": 6123.08,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 3155.21,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 3154.56,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 2990.16,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 2888.36,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "20/07/2022",
+        "Transaction Amount": 2384.15,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Holiday Inns",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "16/07/2022",
+        "Transaction Amount": 2384.15,
+        "Expense Description": "Specialist softwares"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "13/07/2022",
+        "Transaction Amount": 1083.43,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "20/07/2022",
+        "Transaction Amount": 20442.66,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel At Booking.Com",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "15/07/2022",
+        "Transaction Amount": 1102.16,
+        "Expense Description": "Accomodation - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel At Booking.Com",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "15/07/2022",
+        "Transaction Amount": 991.76,
+        "Expense Description": "Accomodation - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 3966.25,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 3662.25,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 3581.5,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 3087,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Hotel Ibis",
+        "Transaction Date": "14/07/2022",
+        "Transaction Amount": 38420,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Hotel Ibis",
+        "Transaction Date": "13/07/2022",
+        "Transaction Amount": 19448,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Hotel Ibis",
+        "Transaction Date": "13/07/2022",
+        "Transaction Amount": 887.7,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotelscom7235241104240",
+        "Merchant Category Name": "Travel Agencies & Tour Operators",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 5355.05,
+        "Expense Description": "Accomodation - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travel Agencies & Tour Operators",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 3247.2,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotelscom7235245557106",
+        "Merchant Category Name": "Travel Agencies & Tour Operators",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 3891.9,
+        "Expense Description": "Accomodation - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travel Agencies & Tour Operators",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 7407.2,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "10/07/2022",
+        "Transaction Amount": 1183.7,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "14/07/2022",
+        "Transaction Amount": 57000,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Novotel Hotels",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 1248.6,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "15/07/2022",
+        "Transaction Amount": 6042,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "15/07/2022",
+        "Transaction Amount": 1007,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Pluralsight",
+        "Merchant Category Name": "Schools & Educational Services - Not Elsewhere Classified",
+        "Transaction Date": "06/07/2022",
+        "Transaction Amount": 24224.79,
+        "Expense Description": "Specialist softwares"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 2969.56,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Premier Inn",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 2969.56,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Premier Inn",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 2969.56,
+        "Expense Description": "Accomodation - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 2969.56,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 2969.56,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 2969.56,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 2969.56,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 2969.56,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 2969.56,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 1338.72,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 1338.72,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 1338.72,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 1338.72,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 1338.72,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Sq Robot-Coupe (Uk) L",
+        "Merchant Category Name": "Misc Food Store - Convenience,Mrkt,Splty,Vendng Machines",
+        "Transaction Date": "04/07/2022",
+        "Transaction Amount": 554.28,
+        "Expense Description": "Specialist equipment"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "The Sign Centre",
+        "Merchant Category Name": "Miscellaneous Publishing & Printing",
+        "Transaction Date": "20/07/2022",
+        "Transaction Amount": 710.4,
+        "Expense Description": "Office equipment"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travelodge",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 2415.1,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Vohkus Ltd",
+        "Merchant Category Name": "Computer Main./Repair/Services - Not Elsewhere Classified",
+        "Transaction Date": "27/07/2022",
+        "Transaction Amount": 2155.12,
+        "Expense Description": "IT hardware - specialist equipment"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "13/07/2022",
+        "Transaction Amount": 27000,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "14/07/2022",
+        "Transaction Amount": 10593.2,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "10/07/2022",
+        "Transaction Amount": 1355.4,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "10/07/2022",
+        "Transaction Amount": 1355.4,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "10/07/2022",
+        "Transaction Amount": 1355.4,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "10/07/2022",
+        "Transaction Amount": 1355.4,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "10/07/2022",
+        "Transaction Amount": 1355.4,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "10/07/2022",
+        "Transaction Amount": 1355.4,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "10/07/2022",
+        "Transaction Amount": 1355.4,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "10/07/2022",
+        "Transaction Amount": 1355.4,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "10/07/2022",
+        "Transaction Amount": 1355.4,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "10/07/2022",
+        "Transaction Amount": 1226.4,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "10/07/2022",
+        "Transaction Amount": 1226.4,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "10/07/2022",
+        "Transaction Amount": 1226.4,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Children & Families",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 8616.3,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Children & Families",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travel Agencies & Tour Operators",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 7397.3,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Children & Families",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "16/07/2022",
+        "Transaction Amount": 17850,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Children & Families",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "26/07/2022",
+        "Transaction Amount": 10340,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Children & Families",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "26/07/2022",
+        "Transaction Amount": 10000,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Children & Families",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "19/07/2022",
+        "Transaction Amount": 5940.55,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Children & Families",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "19/07/2022",
+        "Transaction Amount": 972.45,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Children & Families",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "19/07/2022",
+        "Transaction Amount": 883.3,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Children & Families",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Hotel Ibis",
+        "Transaction Date": "16/07/2022",
+        "Transaction Amount": 2628,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Children & Families",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 3363.6,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Children & Families",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 3127.6,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Children & Families",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 2995.6,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Children & Families",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 1681.8,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Children & Families",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 1497.8,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Children & Families",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 781.9,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Children & Families",
+        "Merchant Name": "Sq Hudsons Catering",
+        "Merchant Category Name": "Caterers",
+        "Transaction Date": "30/06/2022",
+        "Transaction Amount": 540,
+        "Expense Description": "External training course - catering fees"
+    },
+    {
+        "Directorate": "Directorate for Communicationss, Ministerial Support & Facilities",
+        "Merchant Name": "Walkers-Citreon & Subu",
+        "Merchant Category Name": "Auto & Truck Dealers - Sales, Services, Repairs, Parts, & Leasing",
+        "Transaction Date": "05/07/2022",
+        "Transaction Amount": 945.11,
+        "Expense Description": "Vehicle - maintenance"
+    },
+    {
+        "Directorate": "Directorate for Constitution & Cabinet",
+        "Merchant Name": "St Pierre Park Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "04/07/2022",
+        "Transaction Amount": 2145,
+        "Expense Description": "Accomodation - fees"
+    },
+    {
+        "Directorate": "Directorate for Corporate Transformation & Workplace",
+        "Merchant Name": "Amazon.Co.Uk 4B2Uo0A65",
+        "Merchant Category Name": "Direct Marketing - Other Direct Marketers/Not Elsewhere Classified",
+        "Transaction Date": "24/07/2022",
+        "Transaction Amount": 511.17,
+        "Expense Description": "Specialist IT equipment"
+    },
+    {
+        "Directorate": "Directorate for Corporate Transformation & Workplace",
+        "Merchant Name": "Hyundai Edinburgh West",
+        "Merchant Category Name": "Auto & Truck Dealers - Sales, Services, Repairs, Parts, & Leasing",
+        "Transaction Date": "20/07/2022",
+        "Transaction Amount": 983.51,
+        "Expense Description": "Vehicle - maintenance"
+    },
+    {
+        "Directorate": "Directorate for Corporate Transformation & Workplace",
+        "Merchant Name": "Qwiklube",
+        "Merchant Category Name": "Automotive Service Shops",
+        "Transaction Date": "18/07/2022",
+        "Transaction Amount": 540,
+        "Expense Description": "Vehicle - maintenance"
+    },
+    {
+        "Directorate": "Directorate for Corporate Transformation & Workplace",
+        "Merchant Name": "Station Garage",
+        "Merchant Category Name": "Automotive Service Shops",
+        "Transaction Date": "11/07/2022",
+        "Transaction Amount": 894.4,
+        "Expense Description": "Vehicle - maintenance"
+    },
+    {
+        "Directorate": "Directorate for Corporate Transformation & Workplace",
+        "Merchant Name": "Xma Ltd",
+        "Merchant Category Name": "Computer Programing,Data Processing,Intgrated System Design Services",
+        "Transaction Date": "08/07/2022",
+        "Transaction Amount": 1643.4,
+        "Expense Description": "Specialist IT equipment"
+    },
+    {
+        "Directorate": "Directorate for Covid Public Health",
+        "Merchant Name": "WWW.BANNERUK.COM",
+        "Merchant Category Name": "STATIONERY/OFFICE SUPPLIES/PRINTING & WRITING PAP.",
+        "Transaction Date": "01/07/2022",
+        "Transaction Amount": 664.97,
+        "Expense Description": "IT consumables"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Amazon Web Services",
+        "Merchant Category Name": "Business Services - Not Elsewhere Classified",
+        "Transaction Date": "02/07/2022",
+        "Transaction Amount": 2691.11,
+        "Expense Description": "External event - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Arrow Enterprise Compu",
+        "Merchant Category Name": "Computer Programing,Data Processing,Intgrated System Design Services",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 1383.96,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Arrow Enterprise Compu",
+        "Merchant Category Name": "Computer Programing,Data Processing,Intgrated System Design Services",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 2156.94,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Arrow Enterprise Compu",
+        "Merchant Category Name": "Computer Programing,Data Processing,Intgrated System Design Services",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 1383.96,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Arrow Enterprise Compu",
+        "Merchant Category Name": "Computer Programing,Data Processing,Intgrated System Design Services",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 1383.96,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Arrow Enterprise Compu",
+        "Merchant Category Name": "Computer Programing,Data Processing,Intgrated System Design Services",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 2156.94,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Arrow Enterprise Compu",
+        "Merchant Category Name": "Computer Programing,Data Processing,Intgrated System Design Services",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 2156.94,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Cisco Systems",
+        "Merchant Category Name": "Business Services - Not Elsewhere Classified",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 865.28,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Cisco Systems",
+        "Merchant Category Name": "Business Services - Not Elsewhere Classified",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 865.28,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Cisco Systems",
+        "Merchant Category Name": "Business Services - Not Elsewhere Classified",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 634.54,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Cisco Systems",
+        "Merchant Category Name": "Business Services - Not Elsewhere Classified",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 865.28,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Cisco Systems",
+        "Merchant Category Name": "Business Services - Not Elsewhere Classified",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 865.28,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Cisco Systems",
+        "Merchant Category Name": "Business Services - Not Elsewhere Classified",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 865.28,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Cisco Systems",
+        "Merchant Category Name": "Business Services - Not Elsewhere Classified",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 865.28,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Comms Express Ltd",
+        "Merchant Category Name": "Electronic Sales",
+        "Transaction Date": "06/07/2022",
+        "Transaction Amount": 607.14,
+        "Expense Description": "IT hardware - accessories"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "COMPUTACENTER (UK) LTD",
+        "Merchant Category Name": "COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 79272.9,
+        "Expense Description": "IT peripherals"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "COMPUTACENTER (UK) LTD",
+        "Merchant Category Name": "COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 79272.9,
+        "Expense Description": "IT peripherals"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "COMPUTACENTER (UK) LTD",
+        "Merchant Category Name": "COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 79272.9,
+        "Expense Description": "IT peripherals"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "COMPUTACENTER (UK) LTD",
+        "Merchant Category Name": "COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 79272.9,
+        "Expense Description": "IT peripherals"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "COMPUTACENTER (UK) LTD",
+        "Merchant Category Name": "COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 56650.9,
+        "Expense Description": "IT peripherals"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "COMPUTACENTER (UK) LTD",
+        "Merchant Category Name": "COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 67948.2,
+        "Expense Description": "IT peripherals"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "COMPUTACENTER (UK) LTD",
+        "Merchant Category Name": "COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 67948.2,
+        "Expense Description": "IT peripherals"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "COMPUTACENTER (UK) LTD",
+        "Merchant Category Name": "COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 80528.7,
+        "Expense Description": "IT peripherals"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "COMPUTACENTER (UK) LTD",
+        "Merchant Category Name": "COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 69024.6,
+        "Expense Description": "IT peripherals"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "COMPUTACENTER (UK) LTD",
+        "Merchant Category Name": "COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 80528.7,
+        "Expense Description": "IT peripherals"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "COMPUTACENTER (UK) LTD",
+        "Merchant Category Name": "COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Transaction Date": "26/07/2022",
+        "Transaction Amount": 1337.18,
+        "Expense Description": "IT peripherals"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "20/07/2022",
+        "Transaction Amount": 9779,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "20/07/2022",
+        "Transaction Amount": 9779,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "20/07/2022",
+        "Transaction Amount": 9779,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Dri Cisco Webex",
+        "Merchant Category Name": "Computer Software Stores",
+        "Transaction Date": "02/07/2022",
+        "Transaction Amount": 1710.72,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "ENTERPRISE RENT-A-CAR",
+        "Merchant Category Name": "ENTERPRISE RENT-A-CAR",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 1154.15,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Flexera Software Ltd",
+        "Merchant Category Name": "Computer Software Stores",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 5498.4,
+        "Expense Description": "Professional licence - renewal"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Goanimate, Inc.",
+        "Merchant Category Name": "Digital Goods Software Applications",
+        "Transaction Date": "02/07/2022",
+        "Transaction Amount": 858.76,
+        "Expense Description": "Specialist software - renewal"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "18/07/2022",
+        "Transaction Amount": 1268.68,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "20/07/2022",
+        "Transaction Amount": 25438.92,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "16/07/2022",
+        "Transaction Amount": 6791.96,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travelodge",
+        "Transaction Date": "16/07/2022",
+        "Transaction Amount": 6277.74,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "WWW.ED.AC.UK",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "01/07/2022",
+        "Transaction Amount": 1800,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "WWW.FLANE.CO.UK",
+        "Merchant Category Name": "Colleges, Universities, Proffesional Schools, Junior Colleges",
+        "Transaction Date": "11/07/2022",
+        "Transaction Amount": 4113.41,
+        "Expense Description": "Specialist softwares"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "WWW.FLANE.CO.UK",
+        "Merchant Category Name": "Colleges, Universities, Proffesional Schools, Junior Colleges",
+        "Transaction Date": "11/07/2022",
+        "Transaction Amount": 4113.41,
+        "Expense Description": "Specialist softwares"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "WWW.FLANE.CO.UK",
+        "Merchant Category Name": "Colleges, Universities, Proffesional Schools, Junior Colleges",
+        "Transaction Date": "11/07/2022",
+        "Transaction Amount": 4113.41,
+        "Expense Description": "Specialist softwares"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "WWW.FLANE.CO.UK",
+        "Merchant Category Name": "Colleges, Universities, Proffesional Schools, Junior Colleges",
+        "Transaction Date": "11/07/2022",
+        "Transaction Amount": 4113.41,
+        "Expense Description": "Specialist softwares"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "WWW.FLANE.CO.UK",
+        "Merchant Category Name": "Colleges, Universities, Proffesional Schools, Junior Colleges",
+        "Transaction Date": "13/07/2022",
+        "Transaction Amount": 3993.6,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "WWW.FLANE.CO.UK",
+        "Merchant Category Name": "Colleges, Universities, Proffesional Schools, Junior Colleges",
+        "Transaction Date": "06/07/2022",
+        "Transaction Amount": 2812.99,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Economic Development",
+        "Merchant Name": "Amznmktplace",
+        "Merchant Category Name": "Miscellaneous & Specialty Retail Stores",
+        "Transaction Date": "06/07/2022",
+        "Transaction Amount": 663.78,
+        "Expense Description": "Specialist IT equipment"
+    },
+    {
+        "Directorate": "Directorate for Economic Development",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Hotel Indigo",
+        "Transaction Date": "24/07/2022",
+        "Transaction Amount": 4395.12,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Economic Development",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Hotel Indigo",
+        "Transaction Date": "24/07/2022",
+        "Transaction Amount": 4395.12,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Economic Development",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Hotel Indigo",
+        "Transaction Date": "24/07/2022",
+        "Transaction Amount": 4395.12,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Economic Development",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Hotel Indigo",
+        "Transaction Date": "24/07/2022",
+        "Transaction Amount": 4395.12,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Economic Development",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Hotel Indigo",
+        "Transaction Date": "24/07/2022",
+        "Transaction Amount": 4395.12,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Economic Development",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Hotel Indigo",
+        "Transaction Date": "24/07/2022",
+        "Transaction Amount": 4395.12,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Economic Development",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 6146.28,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Economic Development",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 4231.52,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Energy & Climate Change",
+        "Merchant Name": "Faversham Drinking W",
+        "Merchant Category Name": "Miscellaneous Publishing & Printing",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 1256.4,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Energy & Climate Change",
+        "Merchant Name": "Village Hotels",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "27/07/2022",
+        "Transaction Amount": 550,
+        "Expense Description": "External event - fees"
+    },
+    {
+        "Directorate": "Directorate for Energy & Climate Change",
+        "Merchant Name": "WWW.TENHILLPACE.COM",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "11/07/2022",
+        "Transaction Amount": 654.6,
+        "Expense Description": "External event - room hire"
+    },
+    {
+        "Directorate": "Directorate for Environment & Forestry",
+        "Merchant Name": "Worldcongresssoil",
+        "Merchant Category Name": "Business Services - Not Elsewhere Classified",
+        "Transaction Date": "07/07/2022",
+        "Transaction Amount": 600,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Environment & Forestry",
+        "Merchant Name": "Worldcongresssoil",
+        "Merchant Category Name": "Business Services - Not Elsewhere Classified",
+        "Transaction Date": "07/07/2022",
+        "Transaction Amount": 600,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Environment & Forestry",
+        "Merchant Name": "Worldcongresssoil",
+        "Merchant Category Name": "Business Services - Not Elsewhere Classified",
+        "Transaction Date": "06/07/2022",
+        "Transaction Amount": 600,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Equality, Inclusion & Human Rights",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 15180,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Equality, Inclusion & Human Rights",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "27/07/2022",
+        "Transaction Amount": 7040,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Equality, Inclusion & Human Rights",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 640.98,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Equality, Inclusion & Human Rights",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 640.98,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Equality, Inclusion & Human Rights",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 640.98,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Equality, Inclusion & Human Rights",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 575.28,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Equality, Inclusion & Human Rights",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 575.28,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Equality, Inclusion & Human Rights",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 777.6,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Equality, Inclusion & Human Rights",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 870.3,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Equality, Inclusion & Human Rights",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 870.3,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Equality, Inclusion & Human Rights",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 777.6,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Equality, Inclusion & Human Rights",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 870.3,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for External Affairs",
+        "Merchant Name": "Hotel At Booking.Com",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "18/07/2022",
+        "Transaction Amount": 690.05,
+        "Expense Description": "Accomodation - fees"
+    },
+    {
+        "Directorate": "Directorate for Financial Management",
+        "Merchant Name": "Red Hat Inc",
+        "Merchant Category Name": "Computer Software Stores",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 688.11,
+        "Expense Description": "Specialist softwares"
+    },
+    {
+        "Directorate": "Directorate for Financial Management",
+        "Merchant Name": "WWW.EASYSOFT.COM",
+        "Merchant Category Name": "Computers, Computer Peripheral Equipment, Software",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 2780.02,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Health Performance & Delivery",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "24/07/2022",
+        "Transaction Amount": 11776.7,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Health Performance & Delivery",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "15/07/2022",
+        "Transaction Amount": 6449,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Health Performance & Delivery",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "15/07/2022",
+        "Transaction Amount": 6000,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Health Performance & Delivery",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travel Agencies & Tour Operators",
+        "Transaction Date": "15/07/2022",
+        "Transaction Amount": 26017.88,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Health Performance & Delivery",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travel Agencies & Tour Operators",
+        "Transaction Date": "15/07/2022",
+        "Transaction Amount": 18904,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Health Performance & Delivery",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travelodge",
+        "Transaction Date": "15/07/2022",
+        "Transaction Amount": 12218.88,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Health Performance & Delivery",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travelodge",
+        "Transaction Date": "14/07/2022",
+        "Transaction Amount": 3055.63,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Health Workforce & Leadership",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travel Agencies & Tour Operators",
+        "Transaction Date": "19/07/2022",
+        "Transaction Amount": 16269,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Health Workforce & Leadership",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 3373.65,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Health Workforce & Leadership",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "16/07/2022",
+        "Transaction Amount": 2205,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Health Workforce & Leadership",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "18/07/2022",
+        "Transaction Amount": 9878.18,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Health Workforce & Leadership",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "18/07/2022",
+        "Transaction Amount": 9878.18,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Health Workforce & Leadership",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "24/07/2022",
+        "Transaction Amount": 23685,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Health Workforce & Leadership",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "25/07/2022",
+        "Transaction Amount": 10000,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Health Workforce & Leadership",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "25/07/2022",
+        "Transaction Amount": 10000,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Health Workforce & Leadership",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "16/07/2022",
+        "Transaction Amount": 2651.6,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Internal Audit And Assurance",
+        "Merchant Name": "WWW.CIPFA.ORG.UK/PFMCO",
+        "Merchant Category Name": "Organizations, Membership - Not Elsewhere Classified",
+        "Transaction Date": "26/07/2022",
+        "Transaction Amount": 2880,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Justice",
+        "Merchant Name": "Amazon.Co.Uk Q62Te2Sh5",
+        "Merchant Category Name": "Direct Marketing - Other Direct Marketers/Not Elsewhere Classified",
+        "Transaction Date": "12/07/2022",
+        "Transaction Amount": 1190,
+        "Expense Description": "Specialist IT equipment"
+    },
+    {
+        "Directorate": "Directorate for Learning",
+        "Merchant Name": "Atlassian",
+        "Merchant Category Name": "Computer Software Stores",
+        "Transaction Date": "08/07/2022",
+        "Transaction Amount": 3247.84,
+        "Expense Description": "Specialist software - renewal"
+    },
+    {
+        "Directorate": "Directorate for Legal Services",
+        "Merchant Name": "COMPUTACENTER (UK) LTD",
+        "Merchant Category Name": "COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Transaction Date": "15/07/2022",
+        "Transaction Amount": 537.26,
+        "Expense Description": "IT peripherals"
+    },
+    {
+        "Directorate": "Directorate for Legal Services",
+        "Merchant Name": "Mansfield House Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "30/06/2022",
+        "Transaction Amount": 900,
+        "Expense Description": "External event - room hire"
+    },
+    {
+        "Directorate": "Directorate for Local Government & Housing",
+        "Merchant Name": "Atlassian",
+        "Merchant Category Name": "Computer Software Stores",
+        "Transaction Date": "06/07/2022",
+        "Transaction Amount": 801.45,
+        "Expense Description": "Specialist softwares"
+    },
+    {
+        "Directorate": "Directorate for Local Government & Housing",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travel Agencies & Tour Operators",
+        "Transaction Date": "10/07/2022",
+        "Transaction Amount": 31128.45,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Local Government & Housing",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "10/07/2022",
+        "Transaction Amount": 34878.6,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Local Government & Housing",
+        "Merchant Name": "Microsoft Store",
+        "Merchant Category Name": "Digital Goods Games",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 639.99,
+        "Expense Description": "Specialist softwares"
+    },
+    {
+        "Directorate": "Directorate for Local Government & Housing",
+        "Merchant Name": "Microsoft Store",
+        "Merchant Category Name": "Digital Goods Games",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 639.99,
+        "Expense Description": "Specialist softwares"
+    },
+    {
+        "Directorate": "Directorate for Local Government & Housing",
+        "Merchant Name": "Msft E0700Ib1Tz,E070",
+        "Merchant Category Name": "Computers, Computer Peripheral Equipment, Software",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 22416.22,
+        "Expense Description": "Specialist software - renewal"
+    },
+    {
+        "Directorate": "Directorate for Local Government & Housing",
+        "Merchant Name": "Paypal Europeanpub",
+        "Merchant Category Name": "Organizations, Membership - Not Elsewhere Classified",
+        "Transaction Date": "15/07/2022",
+        "Transaction Amount": 658.36,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Local Government & Housing",
+        "Merchant Name": "Thomson Reuters Uk Ltd",
+        "Merchant Category Name": "Professional Services - Not Elsewhere Classified",
+        "Transaction Date": "15/07/2022",
+        "Transaction Amount": 1680,
+        "Expense Description": "Specialist softwares"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 2861.95,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Arco Limited (Sap)",
+        "Merchant Category Name": "Industrial Supplies - Not Elsewhere Classified",
+        "Transaction Date": "29/06/2022",
+        "Transaction Amount": 539.11,
+        "Expense Description": "Vehicle - purchase"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Binn Skips Limited",
+        "Merchant Category Name": "Equipment Rental & Leasing Services, Furnture/Tool Rental",
+        "Transaction Date": "18/07/2022",
+        "Transaction Amount": 642.54,
+        "Expense Description": "Scientific equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Britches Moir Aberdeen",
+        "Merchant Category Name": "Misc Food Store - Convenience,Mrkt,Splty,Vendng Machines",
+        "Transaction Date": "20/07/2022",
+        "Transaction Amount": 656.95,
+        "Expense Description": "Accomodation - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Camlab",
+        "Merchant Category Name": "Dental/Lab/Med/Ophthalmic Hosp Equipment & Supplies",
+        "Transaction Date": "12/07/2022",
+        "Transaction Amount": 557.44,
+        "Expense Description": "Specialist protective clothing"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Cks Global Solutions L",
+        "Merchant Category Name": "Computers, Computer Peripheral Equipment, Software",
+        "Transaction Date": "08/07/2022",
+        "Transaction Amount": 645.12,
+        "Expense Description": "Specialist IT equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Craobh Marina",
+        "Merchant Category Name": "Campgrounds & Trailer Parks",
+        "Transaction Date": "10/07/2022",
+        "Transaction Amount": 3087.92,
+        "Expense Description": "Accomodation - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "ENTERPRISE RENT-A-CAR",
+        "Merchant Category Name": "ENTERPRISE RENT-A-CAR",
+        "Transaction Date": "14/07/2022",
+        "Transaction Amount": 516.24,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travel Agencies & Tour Operators",
+        "Transaction Date": "15/07/2022",
+        "Transaction Amount": 28040.56,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travel Agencies & Tour Operators",
+        "Transaction Date": "16/07/2022",
+        "Transaction Amount": 15167.24,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travel Agencies & Tour Operators",
+        "Transaction Date": "20/07/2022",
+        "Transaction Amount": 7630,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travel Agencies & Tour Operators",
+        "Transaction Date": "20/07/2022",
+        "Transaction Amount": 19053.08,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travel Agencies & Tour Operators",
+        "Transaction Date": "20/07/2022",
+        "Transaction Amount": 24715.32,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Frontiers Media Sa",
+        "Merchant Category Name": "Book Stores",
+        "Transaction Date": "04/07/2022",
+        "Transaction Amount": 1633.22,
+        "Expense Description": "Scientific publication – fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Fs Cables",
+        "Merchant Category Name": "Electrical Parts & Equipment",
+        "Transaction Date": "18/07/2022",
+        "Transaction Amount": 1152.88,
+        "Expense Description": "IT hardware - accessories"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Heddle Construction",
+        "Merchant Category Name": "General Contractors/Residential Buildings",
+        "Transaction Date": "04/07/2022",
+        "Transaction Amount": 539.76,
+        "Expense Description": "Vessel equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Heddle Construction",
+        "Merchant Category Name": "General Contractors/Residential Buildings",
+        "Transaction Date": "30/06/2022",
+        "Transaction Amount": 539.76,
+        "Expense Description": "Vessel equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "19/07/2022",
+        "Transaction Amount": 26110.62,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 2131.77,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 1974.67,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 1939.17,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "20/07/2022",
+        "Transaction Amount": 1563.83,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "16/07/2022",
+        "Transaction Amount": 1465.93,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "16/07/2022",
+        "Transaction Amount": 1465.93,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "16/07/2022",
+        "Transaction Amount": 1465.93,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "16/07/2022",
+        "Transaction Amount": 1465.93,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "16/07/2022",
+        "Transaction Amount": 1465.93,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Holiday Inns",
+        "Transaction Date": "25/07/2022",
+        "Transaction Amount": 1410,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "15/07/2022",
+        "Transaction Amount": 12219.78,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 11648,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Hotel Indigo",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 2223.07,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Hotel Indigo",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 2223.07,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Hotel Indigo",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 2223.07,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Hotel Indigo",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 2223.07,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Hotel Indigo",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 2223.07,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Hotel Indigo",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 2223.07,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Hotel Mercure",
+        "Transaction Date": "14/07/2022",
+        "Transaction Amount": 52077,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Hotel Mercure",
+        "Transaction Date": "14/07/2022",
+        "Transaction Amount": 52077,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travel Agencies & Tour Operators",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 1038,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travel Agencies & Tour Operators",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 13790.98,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travel Agencies & Tour Operators",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 17472.49,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Jfd Limited",
+        "Merchant Category Name": "Boat Dealers",
+        "Transaction Date": "26/07/2022",
+        "Transaction Amount": 1367.24,
+        "Expense Description": "Vessel safety equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Kent Bearings",
+        "Merchant Category Name": "Industrial Supplies - Not Elsewhere Classified",
+        "Transaction Date": "18/07/2022",
+        "Transaction Amount": 599.64,
+        "Expense Description": "Accomodation - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Ocean Scientific Intl",
+        "Merchant Category Name": "Miscellaneous & Specialty Retail Stores",
+        "Transaction Date": "12/07/2022",
+        "Transaction Amount": 543.6,
+        "Expense Description": "Laboratory research testing"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "20/07/2022",
+        "Transaction Amount": 6740,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 1260,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 8592.91,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 8592.91,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 8592.91,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 8592.91,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 8592.91,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 8592.91,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 8592.91,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 8592.91,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 8592.91,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Premier Inn",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 3568,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Pressreader.Com",
+        "Merchant Category Name": "News Dealers & Newsst&s",
+        "Transaction Date": "20/07/2022",
+        "Transaction Amount": 2000,
+        "Expense Description": "Specialist software - renewal"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Bar, Lounge, Disco, Nightclub,Tavern - Alcoholic Drinks",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 3559.71,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Richards Hose Limited",
+        "Merchant Category Name": "Industrial Supplies - Not Elsewhere Classified",
+        "Transaction Date": "06/07/2022",
+        "Transaction Amount": 655.8,
+        "Expense Description": "Vessel equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Rs Components",
+        "Merchant Category Name": "Electrical Parts & Equipment",
+        "Transaction Date": "12/07/2022",
+        "Transaction Amount": 757.37,
+        "Expense Description": "Vessel engineering spares"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Scandic Hotels",
+        "Merchant Category Name": "Sc&ic Hotels",
+        "Transaction Date": "01/07/2022",
+        "Transaction Amount": 540.1,
+        "Expense Description": "Accomodation - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Sciquip Ltd",
+        "Merchant Category Name": "Dental/Lab/Med/Ophthalmic Hosp Equipment & Supplies",
+        "Transaction Date": "06/07/2022",
+        "Transaction Amount": 1056.1,
+        "Expense Description": "Scientific equipment (furniture)"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travelodge",
+        "Transaction Date": "15/07/2022",
+        "Transaction Amount": 9652.15,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travelodge",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 3941.94,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travelodge",
+        "Transaction Date": "16/07/2022",
+        "Transaction Amount": 3198.43,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 5329,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 5329,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 5329,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 5329,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 5329,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 5329,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 5329,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 9240,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "WWW.MARINESUPERSTORE.C",
+        "Merchant Category Name": "Marinas, Marine Service/Supplies",
+        "Transaction Date": "01/07/2022",
+        "Transaction Amount": 899.9,
+        "Expense Description": "Vessel safety equipment - clothing"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "WWW.MARINESUPERSTORE.C",
+        "Merchant Category Name": "Marinas, Marine Service/Supplies",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 2639.45,
+        "Expense Description": "Vessel safety equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 18398.58,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Directorate for People",
+        "Merchant Name": "C2E824500312D Ukvi",
+        "Merchant Category Name": "Government Services - Not Elsewhere Classified",
+        "Transaction Date": "28/07/2022",
+        "Transaction Amount": 5199,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for People",
+        "Merchant Name": "C2E824501311A Ukvi",
+        "Merchant Category Name": "Government Services - Not Elsewhere Classified",
+        "Transaction Date": "28/07/2022",
+        "Transaction Amount": 5199,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for People",
+        "Merchant Name": "Ikea Ltd Shop Online",
+        "Merchant Category Name": "Equipment, Furniture, Home Furnshngs Strs (Excpt Appl)",
+        "Transaction Date": "28/07/2022",
+        "Transaction Amount": 515,
+        "Expense Description": "Health & safety equipment"
+    },
+    {
+        "Directorate": "Directorate for People",
+        "Merchant Name": "St John Ambulance",
+        "Merchant Category Name": "Organizations, Charitable & Social Services",
+        "Transaction Date": "30/06/2022",
+        "Transaction Amount": 1758,
+        "Expense Description": "Health & safety equipment"
+    },
+    {
+        "Directorate": "Directorate for Population Health",
+        "Merchant Name": "Expo Hire Uk",
+        "Merchant Category Name": "Equipment Rental & Leasing Services, Furnture/Tool Rental",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 582,
+        "Expense Description": "External event - fees"
+    },
+    {
+        "Directorate": "Directorate for Safer Communities",
+        "Merchant Name": "Premier Publishing",
+        "Merchant Category Name": "Books, Periodicals & Newspapers",
+        "Transaction Date": "20/07/2022",
+        "Transaction Amount": 1736.51,
+        "Expense Description": "External Event - Stand"
+    },
+    {
+        "Directorate": "Directorate for Safer Communities",
+        "Merchant Name": "WWW.ABERTAY.AC.UK-ONLI",
+        "Merchant Category Name": "Schools & Educational Services - Not Elsewhere Classified",
+        "Transaction Date": "04/07/2022",
+        "Transaction Amount": 6000,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Social & National Care",
+        "Merchant Name": "WWW.KPMG.CO.UK",
+        "Merchant Category Name": "Tax Preparation Service",
+        "Transaction Date": "11/07/2022",
+        "Transaction Amount": 754.8,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Social & National Care",
+        "Merchant Name": "WWW.KPMG.CO.UK",
+        "Merchant Category Name": "Tax Preparation Service",
+        "Transaction Date": "11/07/2022",
+        "Transaction Amount": 754.8,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Social Security",
+        "Merchant Name": "Dods Group Limited",
+        "Merchant Category Name": "Business Services - Not Elsewhere Classified",
+        "Transaction Date": "22/07/2022",
+        "Transaction Amount": 3300,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Social Security",
+        "Merchant Name": "Eb 2 Day Content Stra",
+        "Merchant Category Name": "Business Services - Not Elsewhere Classified",
+        "Transaction Date": "20/07/2022",
+        "Transaction Amount": 2280,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Social Security",
+        "Merchant Name": "Open University",
+        "Merchant Category Name": "Colleges, Universities, Proffesional Schools, Junior Colleges",
+        "Transaction Date": "26/07/2022",
+        "Transaction Amount": 1505,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Social Security",
+        "Merchant Name": "WWW.QA.COM",
+        "Merchant Category Name": "Schools & Educational Services - Not Elsewhere Classified",
+        "Transaction Date": "28/07/2022",
+        "Transaction Amount": 1412.4,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Social Security",
+        "Merchant Name": "WWW.QA.COM",
+        "Merchant Category Name": "Schools & Educational Services - Not Elsewhere Classified",
+        "Transaction Date": "21/07/2022",
+        "Transaction Amount": 1849.21,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Social Security",
+        "Merchant Name": "WWW.QA.COM",
+        "Merchant Category Name": "Schools & Educational Services - Not Elsewhere Classified",
+        "Transaction Date": "01/07/2022",
+        "Transaction Amount": 1200,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Scottish Procurement & Property Directorate",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Hotel Indigo",
+        "Transaction Date": "26/07/2022",
+        "Transaction Amount": 4416.11,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Scottish Procurement & Property Directorate",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Hotel Indigo",
+        "Transaction Date": "26/07/2022",
+        "Transaction Amount": 4416.11,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Scottish Procurement & Property Directorate",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Hotel Indigo",
+        "Transaction Date": "26/07/2022",
+        "Transaction Amount": 4416.11,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Scottish Procurement & Property Directorate",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Hotel Indigo",
+        "Transaction Date": "26/07/2022",
+        "Transaction Amount": 4416.11,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Scottish Procurement & Property Directorate",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Hotel Indigo",
+        "Transaction Date": "26/07/2022",
+        "Transaction Amount": 4416.11,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Scottish Procurement & Property Directorate",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Lodging - Hotels, Motels, Resorts - Not Classified",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 6456,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    },
+    {
+        "Directorate": "Scottish Procurement & Property Directorate",
+        "Merchant Name": "Hotel",
+        "Merchant Category Name": "Travelodge",
+        "Transaction Date": "23/07/2022",
+        "Transaction Amount": 8871.85,
+        "Expense Description": "UKR Resettlement – Hotel Accommodation"
+    }
+]

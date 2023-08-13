@@ -1,0 +1,779 @@
+
+[
+    {
+        "Directorate": "DG Health and Social Care & Chief Executive NHS Scotland",
+        "Merchant Name": "WWW.GROUP.BMJ.COM",
+        "Merchant Category Name": "Direct marketing - combination catalog / retail merchandise",
+        "Transaction Date": "22/03/2017",
+        "Transaction Amount": 1145,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Arnold Clark",
+        "Merchant Category Name": "Automobile rental agency - not elsewhere classified",
+        "Transaction Date": "14/03/2017",
+        "Transaction Amount": 561.79,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "SLRHUT",
+        "Merchant Category Name": "Camera and photographic supply stores",
+        "Transaction Date": "22/03/2017",
+        "Transaction Amount": 784.98,
+        "Expense Description": "Photography equipment"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Queen Margaret university",
+        "Merchant Category Name": "Colleges, universities, professional schools, junior colleges",
+        "Transaction Date": "27/03/2017",
+        "Transaction Amount": 625.44,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Paypal greatstone",
+        "Merchant Category Name": "Computer programing, data processing, integrated system design services",
+        "Transaction Date": "29/03/2017",
+        "Transaction Amount": 5895,
+        "Expense Description": "Specialist software"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Mci fran congres",
+        "Merchant Category Name": "Consulting, management & public relations services",
+        "Transaction Date": "08/03/2017",
+        "Transaction Amount": 1181.38,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Mci fran congres",
+        "Merchant Category Name": "Consulting, management & public relations services",
+        "Transaction Date": "08/03/2017",
+        "Transaction Amount": 1279.75,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Paypal visualinspe",
+        "Merchant Category Name": "Electronic sales",
+        "Transaction Date": "16/03/2017",
+        "Transaction Amount": 600.6,
+        "Expense Description": "Specialist laboratory equipment"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise Rent-A-Car",
+        "Transaction Date": "28/03/2017",
+        "Transaction Amount": 589.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise Rent-A-Car",
+        "Transaction Date": "16/03/2017",
+        "Transaction Amount": 589.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise Rent-A-Car",
+        "Transaction Date": "14/03/2017",
+        "Transaction Amount": 589.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise Rent-A-Car",
+        "Transaction Date": "14/03/2017",
+        "Transaction Amount": 589.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise Rent-A-Car",
+        "Transaction Date": "14/03/2017",
+        "Transaction Amount": 589.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise Rent-A-Car",
+        "Transaction Date": "03/03/2017",
+        "Transaction Amount": 589.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Lyreco UK Ltd",
+        "Merchant Category Name": "Office, school supply & stationery stores",
+        "Transaction Date": "01/03/2017",
+        "Transaction Amount": 1529.08,
+        "Expense Description": "Stationery"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Paypal vettrustltd",
+        "Merchant Category Name": "Organizations, charitable and social services",
+        "Transaction Date": "17/03/2017",
+        "Transaction Amount": 540,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Paypal user vision",
+        "Merchant Category Name": "Professional services - not elsewhere classified",
+        "Transaction Date": "30/03/2017",
+        "Transaction Amount": 720,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "SPORTSDIRECT.COM",
+        "Merchant Category Name": "Sporting goods stores",
+        "Transaction Date": "24/03/2017",
+        "Transaction Amount": 664.94,
+        "Expense Description": "Protective clothing"
+    },
+    {
+        "Directorate": "Directorate for Chief Economist",
+        "Merchant Name": "Sodexo Ltd",
+        "Merchant Category Name": "Eating places, restaurants",
+        "Transaction Date": "10/03/2017",
+        "Transaction Amount": 506.1,
+        "Expense Description": "Catering"
+    },
+    {
+        "Directorate": "Directorate for Communications & Ministerial Support",
+        "Merchant Name": "WWW.ISTOCK.COM",
+        "Merchant Category Name": "Art dealers and galleries",
+        "Transaction Date": "14/03/2017",
+        "Transaction Amount": 751,
+        "Expense Description": "Specialist software"
+    },
+    {
+        "Directorate": "Directorate for Communications & Ministerial Support",
+        "Merchant Name": "Google site search",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "23/03/2017",
+        "Transaction Amount": 1652.05,
+        "Expense Description": "Web service - service charge - 12 months"
+    },
+    {
+        "Directorate": "Directorate for Communications & Ministerial Support",
+        "Merchant Name": "Eb PR fest - public relations",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "22/03/2017",
+        "Transaction Amount": 945.77,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Communications & Ministerial Support",
+        "Merchant Name": "WWW.TURINGFESTIVALCOM",
+        "Merchant Category Name": "Consulting, management & public relations services",
+        "Transaction Date": "09/03/2017",
+        "Transaction Amount": 950.4,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Avizandum law bookshop",
+        "Merchant Category Name": "Book stores",
+        "Transaction Date": "02/03/2017",
+        "Transaction Amount": 990.67,
+        "Expense Description": "Media - books"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Amazon web services",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "03/03/2017",
+        "Transaction Amount": 4699.9,
+        "Expense Description": "Web service - service charge -Feb 2017"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Dri techsmith",
+        "Merchant Category Name": "Computer software stores",
+        "Transaction Date": "29/03/2017",
+        "Transaction Amount": 1576.36,
+        "Expense Description": "Software purchases"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Optimal workshop",
+        "Merchant Category Name": "Computer software stores",
+        "Transaction Date": "29/03/2017",
+        "Transaction Amount": 1637.59,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Sight and sound techno",
+        "Merchant Category Name": "Computers, computer peripheral equipment, software",
+        "Transaction Date": "30/03/2017",
+        "Transaction Amount": 1332,
+        "Expense Description": "Software purchases"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "WWW.TURINGFESTIVALCOM",
+        "Merchant Category Name": "Consulting, management & public relations services",
+        "Transaction Date": "08/03/2017",
+        "Transaction Amount": 633.6,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "WWW.GEAR4MUSIC.COM",
+        "Merchant Category Name": "Music stores - instruments, pianos, sheet music",
+        "Transaction Date": "29/03/2017",
+        "Transaction Amount": 507,
+        "Expense Description": "Video Equipment"
+    },
+    {
+        "Directorate": "Directorate for Economic Development",
+        "Merchant Name": "Bray leino limited",
+        "Merchant Category Name": "Advertising services",
+        "Transaction Date": "28/02/2017",
+        "Transaction Amount": 1044,
+        "Expense Description": "External event - fees"
+    },
+    {
+        "Directorate": "Directorate for Economic Development",
+        "Merchant Name": "Royal society of arts",
+        "Merchant Category Name": "Organizations, membership - not elsewhere classified",
+        "Transaction Date": "29/03/2017",
+        "Transaction Amount": 1628.98,
+        "Expense Description": "External event - fees"
+    },
+    {
+        "Directorate": "Directorate for External Affairs",
+        "Merchant Name": "WWW.NORWOODCLUB.COM",
+        "Merchant Category Name": "Associations - civic, social & fraternal",
+        "Transaction Date": "24/03/2017",
+        "Transaction Amount": 3830.12,
+        "Expense Description": "External event - actual catering costs"
+    },
+    {
+        "Directorate": "Directorate for External Affairs",
+        "Merchant Name": "WWW.NORWOODCLUB.COM",
+        "Merchant Category Name": "Associations - civic, social & fraternal",
+        "Transaction Date": "24/03/2017",
+        "Transaction Amount": 3191.77,
+        "Expense Description": "External event - actual catering costs"
+    },
+    {
+        "Directorate": "Directorate for External Affairs",
+        "Merchant Name": "WWW.NORWOODCLUB.COM",
+        "Merchant Category Name": "Associations - civic, social & fraternal",
+        "Transaction Date": "13/03/2017",
+        "Transaction Amount": 1843.48,
+        "Expense Description": "External event - venue rental deposit"
+    },
+    {
+        "Directorate": "Directorate for Health & Social Care Integration",
+        "Merchant Name": "WWW.GROUP.BMJ.COM",
+        "Merchant Category Name": "Direct marketing - combination catalog / retail merchandise",
+        "Transaction Date": "15/03/2017",
+        "Transaction Amount": 503,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Housing & Social Justice",
+        "Merchant Name": "Simul8 corporation",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "09/03/2017",
+        "Transaction Amount": 648,
+        "Expense Description": "Specialist IT equipment - maintenance"
+    },
+    {
+        "Directorate": "Directorate for Justice",
+        "Merchant Name": "Apple store R328",
+        "Merchant Category Name": "Electronic sales",
+        "Transaction Date": "15/03/2017",
+        "Transaction Amount": 2356.05,
+        "Expense Description": "Specialist IT equipment"
+    },
+    {
+        "Directorate": "Directorate for Justice",
+        "Merchant Name": "Lyreco UK Ltd",
+        "Merchant Category Name": "Office, school supply & stationery stores",
+        "Transaction Date": "24/03/2017",
+        "Transaction Amount": 1199.1,
+        "Expense Description": "Stationery"
+    },
+    {
+        "Directorate": "Directorate for Legal Services",
+        "Merchant Name": "Itrain Scotland",
+        "Merchant Category Name": "Computer software stores",
+        "Transaction Date": "30/03/2017",
+        "Transaction Amount": 714,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Legal Services",
+        "Merchant Name": "GTD seminar 200617",
+        "Merchant Category Name": "Computer software stores",
+        "Transaction Date": "30/03/2017",
+        "Transaction Amount": 1350,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Legal Services",
+        "Merchant Name": "WWW.QA.COM",
+        "Merchant Category Name": "Schools & educational services - not elsewhere classified",
+        "Transaction Date": "30/03/2017",
+        "Transaction Amount": 2718.72,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Legal Services",
+        "Merchant Name": "WWW.QA.COM",
+        "Merchant Category Name": "Schools & educational services - not elsewhere classified",
+        "Transaction Date": "30/03/2017",
+        "Transaction Amount": 862.08,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Legal Services",
+        "Merchant Name": "WWW.QA.COM",
+        "Merchant Category Name": "Schools & educational services - not elsewhere classified",
+        "Transaction Date": "30/03/2017",
+        "Transaction Amount": 862.08,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Legal Services",
+        "Merchant Name": "WWW.QA.COM",
+        "Merchant Category Name": "Schools & educational services - not elsewhere classified",
+        "Transaction Date": "30/03/2017",
+        "Transaction Amount": 1794.24,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Legal Services",
+        "Merchant Name": "WWW.QA.COM",
+        "Merchant Category Name": "Schools & educational services - not elsewhere classified",
+        "Transaction Date": "30/03/2017",
+        "Transaction Amount": 1794.24,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Local Government & Communities",
+        "Merchant Name": "Lyreco UK Ltd",
+        "Merchant Category Name": "Office, school supply & stationery stores",
+        "Transaction Date": "13/03/2017",
+        "Transaction Amount": 831.96,
+        "Expense Description": "Stationery"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Dawson Bowman ltd",
+        "Merchant Category Name": "Architectural, engineering & surveying services",
+        "Transaction Date": "28/02/2017",
+        "Transaction Amount": 1247.92,
+        "Expense Description": "Vessel engineering spares"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Smart refinishes (Aberdeen)",
+        "Merchant Category Name": "Automotive body repair shops",
+        "Transaction Date": "28/03/2017",
+        "Transaction Amount": 528,
+        "Expense Description": "Forklift transportation"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Amazon UK marketplace",
+        "Merchant Category Name": "Book stores",
+        "Transaction Date": "16/03/2017",
+        "Transaction Amount": 629.91,
+        "Expense Description": "Scientific equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "WWW.HAPPENINGCONFERENC",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "28/03/2017",
+        "Transaction Amount": 676.5,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "WWW.HAPPENINGCONFERENC",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "28/03/2017",
+        "Transaction Amount": 676.5,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "WWW.HAPPENINGCONFERENC",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "07/03/2017",
+        "Transaction Amount": 584.25,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "WWW.HAPPENINGCONFERENC",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "07/03/2017",
+        "Transaction Amount": 676.5,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "WWW.HAPPENINGCONFERENC",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "07/03/2017",
+        "Transaction Amount": 676.5,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "WWW.HAPPENINGCONFERENC",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "07/03/2017",
+        "Transaction Amount": 676.5,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "HR wallingford",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "07/03/2017",
+        "Transaction Amount": 619.2,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "HR wallingford",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "07/03/2017",
+        "Transaction Amount": 619.2,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "HR wallingford",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "07/03/2017",
+        "Transaction Amount": 619.2,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Agi-org (moto)",
+        "Merchant Category Name": "Clubs - country, membership (athletics, sports, private golf)",
+        "Transaction Date": "06/03/2017",
+        "Transaction Amount": 744,
+        "Expense Description": "Professional membership - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "OU finance moto",
+        "Merchant Category Name": "Colleges, universities, professional schools, junior colleges",
+        "Transaction Date": "06/03/2017",
+        "Transaction Amount": 940,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "University of Birmingham",
+        "Merchant Category Name": "Colleges, universities, professional schools, junior colleges",
+        "Transaction Date": "07/03/2017",
+        "Transaction Amount": 500,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Mines rescue service",
+        "Merchant Category Name": "Colleges, universities, professional schools, junior colleges",
+        "Transaction Date": "14/03/2017",
+        "Transaction Amount": 1440,
+        "Expense Description": "Vessel engineering survey"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Edmund optics",
+        "Merchant Category Name": "Commercial equipment - not elsewhere classified",
+        "Transaction Date": "16/03/2017",
+        "Transaction Amount": 957.9,
+        "Expense Description": "Specialist laboratory equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "RANAVIRUS.COM",
+        "Merchant Category Name": "Computer software stores",
+        "Transaction Date": "24/03/2017",
+        "Transaction Amount": 596.69,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "PCWB telesales",
+        "Merchant Category Name": "Computer software stores",
+        "Transaction Date": "14/03/2017",
+        "Transaction Amount": 799.92,
+        "Expense Description": "Specialist equipment - item returned - await credit"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Federal express europe",
+        "Merchant Category Name": "Courier services - air & ground, freight forwarders",
+        "Transaction Date": "09/03/2017",
+        "Transaction Amount": 925.71,
+        "Expense Description": "Vessel engineering spares - customs/delivery charges"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Wolf laboratories ltd",
+        "Merchant Category Name": "Dental, laboratories, medical, ophthalmic hospital equipment & supplies",
+        "Transaction Date": "20/03/2017",
+        "Transaction Amount": 1593.51,
+        "Expense Description": "Specialist laboratory equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Intime holding ltd",
+        "Merchant Category Name": "Electrical contractors",
+        "Transaction Date": "28/02/2017",
+        "Transaction Amount": 778.56,
+        "Expense Description": "Scientific equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "WWW.HTLUK.CO.UK",
+        "Merchant Category Name": "Electrical parts and equipment",
+        "Transaction Date": "05/03/2017",
+        "Transaction Amount": 798.6,
+        "Expense Description": "Vessel engineering equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "WWW.CRITICALPOWERSUPPL",
+        "Merchant Category Name": "Electrical parts and equipment",
+        "Transaction Date": "14/03/2017",
+        "Transaction Amount": 2495.1,
+        "Expense Description": "Vessel engineering equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Currys online",
+        "Merchant Category Name": "Electronic sales",
+        "Transaction Date": "02/03/2017",
+        "Transaction Amount": 730.94,
+        "Expense Description": "Scientific equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise Rent-A-Car",
+        "Transaction Date": "27/03/2017",
+        "Transaction Amount": 531.6,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise Rent-A-Car",
+        "Transaction Date": "06/03/2017",
+        "Transaction Amount": 853.82,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "WWW.PIPESTOCK.COM",
+        "Merchant Category Name": "Hardware equipment and supplies",
+        "Transaction Date": "28/02/2017",
+        "Transaction Amount": 991.36,
+        "Expense Description": "Scientific equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Eti ltd",
+        "Merchant Category Name": "Industrial supplies not elsewhere classified",
+        "Transaction Date": "16/03/2017",
+        "Transaction Amount": 1018.5,
+        "Expense Description": "Specialist laboratory equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "4 kam sports",
+        "Merchant Category Name": "Miscellaneous and specialty retail stores",
+        "Transaction Date": "21/03/2017",
+        "Transaction Amount": 900,
+        "Expense Description": "Scientific equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Amazon UK retail amazon",
+        "Merchant Category Name": "Miscellaneous and specialty retail stores",
+        "Transaction Date": "26/03/2017",
+        "Transaction Amount": 618.34,
+        "Expense Description": "Vessel surveillance equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Micro epsilon UK ltd",
+        "Merchant Category Name": "Miscellaneous and specialty retail stores",
+        "Transaction Date": "14/03/2017",
+        "Transaction Amount": 997.2,
+        "Expense Description": "Vessel engineering equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Banner Group Ltd",
+        "Merchant Category Name": "Office, school supply & stationery stores",
+        "Transaction Date": "09/03/2017",
+        "Transaction Amount": 613.34,
+        "Expense Description": "IT consumables"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Lyreco UK Ltd",
+        "Merchant Category Name": "Office, school supply & stationery stores",
+        "Transaction Date": "22/03/2017",
+        "Transaction Amount": 1102.58,
+        "Expense Description": "Stationery"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Boothroyds",
+        "Merchant Category Name": "Professional services - not elsewhere classified",
+        "Transaction Date": "15/03/2017",
+        "Transaction Amount": 959.4,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Petrofac facilities",
+        "Merchant Category Name": "Schools & educational services - not elsewhere classified",
+        "Transaction Date": "14/03/2017",
+        "Transaction Amount": 548.4,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "WWW.ABREU.PT",
+        "Merchant Category Name": "Travel agencies & tour operators",
+        "Transaction Date": "29/03/2017",
+        "Transaction Amount": 659.47,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for People",
+        "Merchant Name": "The learn centre",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "28/02/2017",
+        "Transaction Amount": 1260,
+        "Expense Description": "Professional membership - fees"
+    },
+    {
+        "Directorate": "Directorate for People",
+        "Merchant Name": "Opp ltd sterling web",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "10/03/2017",
+        "Transaction Amount": 839.4,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for People",
+        "Merchant Name": "Sign plus ltd",
+        "Merchant Category Name": "Stationery, office supplies, printing & writing paper",
+        "Transaction Date": "21/03/2017",
+        "Transaction Amount": 514.3,
+        "Expense Description": "Building equipment"
+    },
+    {
+        "Directorate": "Directorate for People",
+        "Merchant Name": "WWW.VIKING-DIRECT.CO.U",
+        "Merchant Category Name": "Stationery, office supplies, printing & writing paper",
+        "Transaction Date": "28/03/2017",
+        "Transaction Amount": 659.88,
+        "Expense Description": "Building equipment"
+    },
+    {
+        "Directorate": "Directorate for Strategy & Constitution",
+        "Merchant Name": "Sodexo Ltd",
+        "Merchant Category Name": "Eating places, restaurants",
+        "Transaction Date": "14/03/2017",
+        "Transaction Amount": 6021,
+        "Expense Description": "Catering"
+    },
+    {
+        "Directorate": "Directorate for Strategy & Constitution",
+        "Merchant Name": "Sodexo Ltd",
+        "Merchant Category Name": "Eating places, restaurants",
+        "Transaction Date": "07/03/2017",
+        "Transaction Amount": 5872.5,
+        "Expense Description": "Catering"
+    },
+    {
+        "Directorate": "Directore for Health Workforce & Strategic Change",
+        "Merchant Name": "Banner Group Ltd",
+        "Merchant Category Name": "Office, school supply & stationery stores",
+        "Transaction Date": "02/03/2017",
+        "Transaction Amount": 807.18,
+        "Expense Description": "IT consumables"
+    },
+    {
+        "Directorate": "Scottish Fiscal Commission",
+        "Merchant Name": "Currys online",
+        "Merchant Category Name": "Electronic sales",
+        "Transaction Date": "02/03/2017",
+        "Transaction Amount": 1098,
+        "Expense Description": "Office equipment"
+    },
+    {
+        "Directorate": "Scottish Fiscal Commission",
+        "Merchant Name": "Don Ruffles ltd",
+        "Merchant Category Name": "Office, school supply & stationery stores",
+        "Transaction Date": "14/03/2017",
+        "Transaction Amount": 1583.88,
+        "Expense Description": "Office equipment"
+    },
+    {
+        "Directorate": "Scottish Land Commission",
+        "Merchant Name": "WWW.VIKING-DIRECT.CO.UK",
+        "Merchant Category Name": "Stationery, office supplies, printing & writing paper",
+        "Transaction Date": "16/03/2017",
+        "Transaction Amount": 1152.42,
+        "Expense Description": "Office equipment"
+    },
+    {
+        "Directorate": "Scottish Procurement & Commercial Directorate",
+        "Merchant Name": "WHITEPAPERCOUK",
+        "Merchant Category Name": "Computer software stores",
+        "Transaction Date": "03/03/2017",
+        "Transaction Amount": 1000.8,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Scottish Procurement & Commercial Directorate",
+        "Merchant Name": "WP-UNICORN TRAINING GR",
+        "Merchant Category Name": "Schools & educational services - not elsewhere classified",
+        "Transaction Date": "21/03/2017",
+        "Transaction Amount": 648,
+        "Expense Description": "Educational course - fees"
+    },
+    {
+        "Directorate": "Scottish Procurement & Commercial Directorate",
+        "Merchant Name": "WP-UNICORN TRAINING GR",
+        "Merchant Category Name": "Schools & educational services - not elsewhere classified",
+        "Transaction Date": "16/03/2017",
+        "Transaction Amount": 648,
+        "Expense Description": "Educational course - fees"
+    }
+]

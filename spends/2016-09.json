@@ -1,0 +1,371 @@
+
+[
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Bioreba",
+        "Merchant Category Name": "Chemicals/allied products not elsewhere classified",
+        "Transaction Date": "31/08/2016",
+        "Transaction Amount": 600.95,
+        "Expense Description": "Laboratory research testing"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Black Hat",
+        "Merchant Category Name": "Advertising services",
+        "Transaction Date": "28/09/2016",
+        "Transaction Amount": 3118.8,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Bioreba",
+        "Merchant Category Name": "Chemicals/allied products not elsewhere classified",
+        "Transaction Date": "22/09/2016",
+        "Transaction Amount": 1526.72,
+        "Expense Description": "Laboratory research - testing"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "16085607",
+        "Merchant Category Name": "Miscellaneous and specialty retail stores",
+        "Transaction Date": "21/09/2016",
+        "Transaction Amount": 571.57,
+        "Expense Description": "IT consumables"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Parthen R&S Bv",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "06/09/2016",
+        "Transaction Amount": 608.93,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Arnold Clark can & van rental",
+        "Merchant Category Name": "Automobile rental agency - not elsewhere classified",
+        "Transaction Date": "23/09/2016",
+        "Transaction Amount": 561.79,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise rent-a-car",
+        "Transaction Date": "29/09/2016",
+        "Transaction Amount": 589.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise rent-a-car",
+        "Transaction Date": "27/09/2016",
+        "Transaction Amount": 589.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise rent-a-car",
+        "Transaction Date": "27/09/2016",
+        "Transaction Amount": 589.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise rent-a-car",
+        "Transaction Date": "14/09/2016",
+        "Transaction Amount": 589.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise rent-a-car",
+        "Transaction Date": "01/09/2016",
+        "Transaction Amount": 589.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise rent-a-car",
+        "Transaction Date": "31/08/2016",
+        "Transaction Amount": 589.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Enterprise",
+        "Merchant Category Name": "Enterprise rent-a-car",
+        "Transaction Date": "31/08/2016",
+        "Transaction Amount": 589.2,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Agriculture, Food & Rural Communities",
+        "Merchant Name": "Spectrum computers ltd",
+        "Merchant Category Name": "Computers, computer peripheral equipment, software",
+        "Transaction Date": "12/09/2016",
+        "Transaction Amount": 984.95,
+        "Expense Description": "IT consumables"
+    },
+    {
+        "Directorate": "Directorate for Children & Families",
+        "Merchant Name": "WWW.CLT.CO.UK",
+        "Merchant Category Name": "Colleges, univ, pro schools, junior colleges",
+        "Transaction Date": "07/09/2016",
+        "Transaction Amount": 834,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Children & Families",
+        "Merchant Name": "Finnish baby box ltd",
+        "Merchant Category Name": "Children's and infant's wear stores",
+        "Transaction Date": "22/09/2016",
+        "Transaction Amount": 1344.76,
+        "Expense Description": "Baby box initiative - promotional materials"
+    },
+    {
+        "Directorate": "Directorate for Communications and Ministerial Support",
+        "Merchant Name": "VIP & business center",
+        "Merchant Category Name": "Airports, airport terminals, flying fields",
+        "Transaction Date": "01/09/2016",
+        "Transaction Amount": 831.25,
+        "Expense Description": "Meeting facilities at foreign airport"
+    },
+    {
+        "Directorate": "Directorate for Communications and Ministerial Support",
+        "Merchant Name": "Paypal Charteredin",
+        "Merchant Category Name": "Consulting, management and public relations svcs",
+        "Transaction Date": "23/09/2016",
+        "Transaction Amount": 1185.6,
+        "Expense Description": "External event - awards ceremony"
+    },
+    {
+        "Directorate": "Directorate for Communications and Ministerial Support",
+        "Merchant Name": "Spectrum computers ltd",
+        "Merchant Category Name": "Computers, computer peripheral equipment, software",
+        "Transaction Date": "26/09/2016",
+        "Transaction Amount": 629.12,
+        "Expense Description": "IT consumables"
+    },
+    {
+        "Directorate": "Directorate for Communications and Ministerial Support",
+        "Merchant Name": "Spectrum computers ltd",
+        "Merchant Category Name": "Computers, computer peripheral equipment, software",
+        "Transaction Date": "22/09/2016",
+        "Transaction Amount": 743.83,
+        "Expense Description": "IT consumables"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Paypal wealthdynam",
+        "Merchant Category Name": "Professional services - not elsewhere classified",
+        "Transaction Date": "21/09/2016",
+        "Transaction Amount": 994.03,
+        "Expense Description": "Licenses for website"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Amazon web services",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "03/09/2016",
+        "Transaction Amount": 5758.29,
+        "Expense Description": "Web service- service charges - August 2016"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Amazon web services",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "02/09/2016",
+        "Transaction Amount": 5226.55,
+        "Expense Description": "Web service - service charges - July 2016"
+    },
+    {
+        "Directorate": "Directorate for External Affairs",
+        "Merchant Name": "Air bnb",
+        "Merchant Category Name": "Lodging - hotels, motels, resorts - not classified",
+        "Transaction Date": "16/09/2016",
+        "Transaction Amount": 761,
+        "Expense Description": "External conference - accommodation fees"
+    },
+    {
+        "Directorate": "Directorate for external Affairs",
+        "Merchant Name": "Air bnb",
+        "Merchant Category Name": "Lodging - hotels, motels, resorts - not classified",
+        "Transaction Date": "15/09/2016",
+        "Transaction Amount": 676,
+        "Expense Description": "External conference - accommodation fees"
+    },
+    {
+        "Directorate": "Directorate for External Affairs",
+        "Merchant Name": "Air bnb",
+        "Merchant Category Name": "Lodging - hotels, motels, resorts - not classified",
+        "Transaction Date": "09/09/2016",
+        "Transaction Amount": 763,
+        "Expense Description": "External conference - accommodation fees"
+    },
+    {
+        "Directorate": "Directorate for External Affairs",
+        "Merchant Name": "Webucator",
+        "Merchant Category Name": "Schools & educational svc - not elsewhere classified",
+        "Transaction Date": "14/09/2016",
+        "Transaction Amount": 506.03,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Health Finance",
+        "Merchant Name": "Spectrum computers ltd",
+        "Merchant Category Name": "Computers, computer peripheral equipment, software",
+        "Transaction Date": "21/09/2016",
+        "Transaction Amount": 523.16,
+        "Expense Description": "IT consumables"
+    },
+    {
+        "Directorate": "Directorate for Housing, Regeneration and Welfare",
+        "Merchant Name": "WWW.MOVERSANDSHAKERS.U",
+        "Merchant Category Name": "Organizations, membership - not elsewhere classified",
+        "Transaction Date": "01/09/2016",
+        "Transaction Amount": 630,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate of Learning",
+        "Merchant Name": "Sodexo ltd",
+        "Merchant Category Name": "Eating places, restaurants",
+        "Transaction Date": "31/08/2016",
+        "Transaction Amount": 632.52,
+        "Expense Description": "Catering"
+    },
+    {
+        "Directorate": "Directorate of Local Government & Communities",
+        "Merchant Name": "Sodexo ltd",
+        "Merchant Category Name": "Eating places, restaurants",
+        "Transaction Date": "15/09/2016",
+        "Transaction Amount": 640.87,
+        "Expense Description": "Catering"
+    },
+    {
+        "Directorate": "Directorate of Marine Scotland",
+        "Merchant Name": "Tesco Stores 5441",
+        "Merchant Category Name": "Grocery stores, supermarkets",
+        "Transaction Date": "22/09/2016",
+        "Transaction Amount": 531.43,
+        "Expense Description": "Vessel food stores"
+    },
+    {
+        "Directorate": "Directorate of Marine Scotland",
+        "Merchant Name": "ST-ANDREWS.AC.UK",
+        "Merchant Category Name": "Colleges, univ, pro schools, junior colleges",
+        "Transaction Date": "16/09/2016",
+        "Transaction Amount": 555,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate of Marine Scotland",
+        "Merchant Name": "WWW.THEHUBEVENTS.COM",
+        "Merchant Category Name": "Consulting, management and public relations svcs",
+        "Transaction Date": "15/09/2016",
+        "Transaction Amount": 588,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate of Marine Scotland",
+        "Merchant Name": "Mafco (UK) ltd",
+        "Merchant Category Name": "Sporting goods stores",
+        "Transaction Date": "21/09/2016",
+        "Transaction Amount": 3583.71,
+        "Expense Description": "Vessel equipment"
+    },
+    {
+        "Directorate": "Directorate of Marine Scotland",
+        "Merchant Name": "RS components",
+        "Merchant Category Name": "Electrical parts and equipment",
+        "Transaction Date": "20/09/2016",
+        "Transaction Amount": 906.6,
+        "Expense Description": "Scientific equipment"
+    },
+    {
+        "Directorate": "Directorate of Marine Scotland",
+        "Merchant Name": "ESEDIRECT.CO.UK",
+        "Merchant Category Name": "Office, school supply and stationery stores",
+        "Transaction Date": "09/09/2016",
+        "Transaction Amount": 866.82,
+        "Expense Description": "Scientific equipment"
+    },
+    {
+        "Directorate": "Directorate of Marine Scotland",
+        "Merchant Name": "Saltire softwood",
+        "Merchant Category Name": "Building materials, lumber stores",
+        "Transaction Date": "31/08/2016",
+        "Transaction Amount": 749,
+        "Expense Description": "Scientific equipment"
+    },
+    {
+        "Directorate": "Directorate of Marine Scotland",
+        "Merchant Name": "GB Informa UK moto GB",
+        "Merchant Category Name": "Miscellaneous publishing and printing",
+        "Transaction Date": "01/09/2016",
+        "Transaction Amount": 556.6,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate of Marine Scotland",
+        "Merchant Name": "Paypal quikslinglt",
+        "Merchant Category Name": "Durable goods, not elsewhere classified",
+        "Transaction Date": "13/09/2016",
+        "Transaction Amount": 2394,
+        "Expense Description": "Vessel safety equipment"
+    },
+    {
+        "Directorate": "Directorate of Marine Scotland",
+        "Merchant Name": "WWW.BEARINGBOYS.CO.UK",
+        "Merchant Category Name": "Hardware stores",
+        "Transaction Date": "14/09/2016",
+        "Transaction Amount": 1794.58,
+        "Expense Description": "Vessel engineering spares"
+    },
+    {
+        "Directorate": "Directorate of Marine Scotland",
+        "Merchant Name": "RGBE events",
+        "Merchant Category Name": "Eating places, restaurants",
+        "Transaction Date": "02/09/2016",
+        "Transaction Amount": 5000,
+        "Expense Description": "External event - catering costs"
+    },
+    {
+        "Directorate": "Directorate of Marine Scotland",
+        "Merchant Name": "RGBE events",
+        "Merchant Category Name": "Eating places, restaurants",
+        "Transaction Date": "02/09/2016",
+        "Transaction Amount": 2530.36,
+        "Expense Description": "External event - catering costs"
+    },
+    {
+        "Directorate": "Directorate of Marine Scotland",
+        "Merchant Name": "Spectrum computers ltd",
+        "Merchant Category Name": "Computers, computer peripheral equipment, software",
+        "Transaction Date": "02/09/2016",
+        "Transaction Amount": 810.18,
+        "Expense Description": "IT consumables"
+    },
+    {
+        "Directorate": "People Directorate",
+        "Merchant Name": "DBL software ltd",
+        "Merchant Category Name": "Computer software stores",
+        "Transaction Date": "09/09/2016",
+        "Transaction Amount": 542.84,
+        "Expense Description": "Specialist software - renewal"
+    },
+    {
+        "Directorate": null,
+        "Merchant Name": null,
+        "Merchant Category Name": null,
+        "Transaction Date": null,
+        "Transaction Amount": null,
+        "Expense Description": null
+    }
+]

@@ -1,0 +1,651 @@
+
+[
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Direct Water Tanks",
+        "Merchant Category Name": "Industrial supplies - not elsewhere classified",
+        "Transaction Date": "16/07/2020",
+        "Transaction Amount": 504.28,
+        "Expense Description": "Office equipment"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Livingston Garden Mach",
+        "Merchant Category Name": "Lawn & garden supply stores",
+        "Transaction Date": "29/07/2020",
+        "Transaction Amount": 2050.92,
+        "Expense Description": "Farm equipment - maintenance"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Double A Trading Co Lt",
+        "Merchant Category Name": "Lawn & garden supply stores",
+        "Transaction Date": "23/07/2020",
+        "Transaction Amount": 1421.34,
+        "Expense Description": "Farm equipment - maintenance"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "WWW.QA.COM",
+        "Merchant Category Name": "Schools & educational services - not elsewhere classified",
+        "Transaction Date": "28/07/2020",
+        "Transaction Amount": 1588.2,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "WWW.QA.COM",
+        "Merchant Category Name": "Schools & educational services - not elsewhere classified",
+        "Transaction Date": "28/07/2020",
+        "Transaction Amount": 556.2,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "WWW.QA.COM",
+        "Merchant Category Name": "Schools & educational services - not elsewhere classified",
+        "Transaction Date": "23/07/2020",
+        "Transaction Amount": 3004.92,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "WWW.QA.COM",
+        "Merchant Category Name": "Schools & educational services - not elsewhere classified",
+        "Transaction Date": "09/07/2020",
+        "Transaction Amount": 2112,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "WWW.MOLEVALLEYFARMERS.",
+        "Merchant Category Name": "Building materials, lumber stores",
+        "Transaction Date": "07/07/2020",
+        "Transaction Amount": 612,
+        "Expense Description": "Health & safety equipment"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Cell Projects Ltd",
+        "Merchant Category Name": "Dental/labaratory/medical/ophthalmic hospital equiment & supplies",
+        "Transaction Date": "13/07/2020",
+        "Transaction Amount": 2554.8,
+        "Expense Description": "Health & safety equipment"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Webanywhere Ltd",
+        "Merchant Category Name": "Schools & educational services - not elsewhere classified",
+        "Transaction Date": "08/07/2020",
+        "Transaction Amount": 1584,
+        "Expense Description": "Web service - service charge - month + year"
+    },
+    {
+        "Directorate": "Directorate for Agriculture & Rural Economy",
+        "Merchant Name": "Catering Hygiene",
+        "Merchant Category Name": "Commercial equipment - not elsewhere classified",
+        "Transaction Date": "30/07/2020",
+        "Transaction Amount": 2062.93,
+        "Expense Description": "Office equipment"
+    },
+    {
+        "Directorate": "Directorate for Chief Medical Officer",
+        "Merchant Name": "Premiere Conferencing",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "17/07/2020",
+        "Transaction Amount": 762.3,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Chief Medical Officer",
+        "Merchant Name": "Premiere Conferencing",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "10/07/2020",
+        "Transaction Amount": 1025.16,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Chief Medical Officer",
+        "Merchant Name": "Premiere Conferencing",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "10/07/2020",
+        "Transaction Amount": 676.93,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Chief Medical Officer",
+        "Merchant Name": "Premiere Conferencing",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "10/07/2020",
+        "Transaction Amount": 677.58,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Chief Medical Officer",
+        "Merchant Name": "Premiere Conferencing",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "06/07/2020",
+        "Transaction Amount": 696.84,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Communications, Ministerial Support & Facilities",
+        "Merchant Name": "Premiere Conferencing",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "16/07/2020",
+        "Transaction Amount": 950,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Communications, Ministerial Support & Facilities",
+        "Merchant Name": "Premiere Conferencing",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "02/07/2020",
+        "Transaction Amount": 1000,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Communications, Ministerial Support & Facilities",
+        "Merchant Name": "Sli Do",
+        "Merchant Category Name": "Computer software stores",
+        "Transaction Date": "13/07/2020",
+        "Transaction Amount": 600,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Communications, Ministerial Support & Facilities",
+        "Merchant Name": "Westfield Motors Peter",
+        "Merchant Category Name": "Automotive service shops",
+        "Transaction Date": "29/07/2020",
+        "Transaction Amount": 785.44,
+        "Expense Description": "Vehicle - maintenance"
+    },
+    {
+        "Directorate": "Directorate for Communications, Ministerial Support & Facilities",
+        "Merchant Name": "Corrie Motors",
+        "Merchant Category Name": "Auto & truck dealers-sales,service, repairs,parts, & leasing",
+        "Transaction Date": "22/07/2020",
+        "Transaction Amount": 546.6,
+        "Expense Description": "Vehicle - maintenance"
+    },
+    {
+        "Directorate": "Directorate for Communications, Ministerial Support & Facilities",
+        "Merchant Name": "Struans,T/P Service",
+        "Merchant Category Name": "Auto & truck dealers-sales,service, repairs,parts, & leasing",
+        "Transaction Date": "03/07/2020",
+        "Transaction Amount": 655.8,
+        "Expense Description": "Vehicle - maintenance"
+    },
+    {
+        "Directorate": "Directorate for Communications, Ministerial Support & Facilities",
+        "Merchant Name": "Premiere Conferencing",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "17/07/2020",
+        "Transaction Amount": 4703,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Communications, Ministerial Support & Facilities",
+        "Merchant Name": "Premiere Conferencing",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "01/07/2020",
+        "Transaction Amount": 1893.36,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Communications, Ministerial Support & Facilities",
+        "Merchant Name": "Lyreco Uk Ltd",
+        "Merchant Category Name": "Office, school supply, & stationery stores",
+        "Transaction Date": "20/07/2020",
+        "Transaction Amount": 2727,
+        "Expense Description": "Stationery"
+    },
+    {
+        "Directorate": "Directorate for Community Health & Care",
+        "Merchant Name": "Working Career",
+        "Merchant Category Name": "Professional services - not elsewhere classified",
+        "Transaction Date": "15/07/2020",
+        "Transaction Amount": 500,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Harvest",
+        "Merchant Category Name": "Computers, computer peripheral equipment, software",
+        "Transaction Date": "28/07/2020",
+        "Transaction Amount": 961.42,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Dri Cisco Webex",
+        "Merchant Category Name": "Computer software stores",
+        "Transaction Date": "02/07/2020",
+        "Transaction Amount": 891,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Legalesign.Com",
+        "Merchant Category Name": "Computer software stores",
+        "Transaction Date": "30/07/2020",
+        "Transaction Amount": 705.6,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "1 Spatial",
+        "Merchant Category Name": "Schools, trade & vocational",
+        "Transaction Date": "21/07/2020",
+        "Transaction Amount": 1920,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Premiere Conferencing",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "29/07/2020",
+        "Transaction Amount": 1656.48,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "WWW.ICO.ORG.UK",
+        "Merchant Category Name": "Government services - not elsewhere classified",
+        "Transaction Date": "30/06/2020",
+        "Transaction Amount": 2900,
+        "Expense Description": "Professional licence - renewal"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Amazon Web Services",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "03/07/2020",
+        "Transaction Amount": 2543.75,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Digital",
+        "Merchant Name": "Enterprise Rent-A-Car",
+        "Merchant Category Name": "Enterprise rent-a-car",
+        "Transaction Date": "17/07/2020",
+        "Transaction Amount": 516.42,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate for Economic Development",
+        "Merchant Name": "WWW.FSB.ORG.UK",
+        "Merchant Category Name": "Organizations, membership - not elsewhere classified",
+        "Transaction Date": "07/07/2020",
+        "Transaction Amount": 4200,
+        "Expense Description": "External support services"
+    },
+    {
+        "Directorate": "Directorate for Environment & Forestry",
+        "Merchant Name": "Premiere Conferencing",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "28/07/2020",
+        "Transaction Amount": 2924.41,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Eu Exit And Transition",
+        "Merchant Name": "Premiere Conferencing",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "08/07/2020",
+        "Transaction Amount": 673.11,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for External Affairs",
+        "Merchant Name": "Premiere Conferencing",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "08/07/2020",
+        "Transaction Amount": 749.98,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for External Affairs",
+        "Merchant Name": "Premiere Conferencing",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "08/07/2020",
+        "Transaction Amount": 641.06,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for External Affairs",
+        "Merchant Name": "Financial Times Lt",
+        "Merchant Category Name": "Books,periodicals & newspapers",
+        "Transaction Date": "01/07/2020",
+        "Transaction Amount": 1813.2,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Fair Work, Employability",
+        "Merchant Name": "Premiere Conferencing",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "13/07/2020",
+        "Transaction Amount": 724.93,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Healthcare Quality & Imp",
+        "Merchant Name": "Instiheatlhcareimp",
+        "Merchant Category Name": "Organizations, charitable & social services",
+        "Transaction Date": "15/07/2020",
+        "Transaction Amount": 7115.56,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Housing & Social Justice",
+        "Merchant Name": "Amazon.Co.Uk J98Ya1S25",
+        "Merchant Category Name": "Direct marketing-other direct marketers/not elsew.",
+        "Transaction Date": "13/07/2020",
+        "Transaction Amount": 564.63,
+        "Expense Description": "Office equipment"
+    },
+    {
+        "Directorate": "Directorate for Housing & Social Justice",
+        "Merchant Name": "Amazon.Co.Uk Qa5232Rn5",
+        "Merchant Category Name": "Direct marketing-other direct marketers/not elsew.",
+        "Transaction Date": "13/07/2020",
+        "Transaction Amount": 564.63,
+        "Expense Description": "Office equipment"
+    },
+    {
+        "Directorate": "Directorate for Housing & Social Justice",
+        "Merchant Name": "Amazon.Co.Uk 106Zr0Nc5",
+        "Merchant Category Name": "Direct marketing-other direct marketers/not elsew.",
+        "Transaction Date": "11/07/2020",
+        "Transaction Amount": 564.63,
+        "Expense Description": "Office equipment"
+    },
+    {
+        "Directorate": "Directorate for Inter Trade & Investment",
+        "Merchant Name": "Premiere Conferencing",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "17/07/2020",
+        "Transaction Amount": 598.15,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Justice",
+        "Merchant Name": "Premiere Conferencing",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "23/07/2020",
+        "Transaction Amount": 3746.79,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Learning",
+        "Merchant Name": "Solarwinds",
+        "Merchant Category Name": "Computer software stores",
+        "Transaction Date": "25/07/2020",
+        "Transaction Amount": 791.34,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Learning",
+        "Merchant Name": "Atlassian",
+        "Merchant Category Name": "Computer software stores",
+        "Transaction Date": "16/07/2020",
+        "Transaction Amount": 1438.88,
+        "Expense Description": "Professional licence - renewal"
+    },
+    {
+        "Directorate": "Directorate for Local Govt & Communities",
+        "Merchant Name": "Retail Week",
+        "Merchant Category Name": "Information retrieval services",
+        "Transaction Date": "03/07/2020",
+        "Transaction Amount": 2160,
+        "Expense Description": "External support services"
+    },
+    {
+        "Directorate": "Directorate for Local Govt & Communities",
+        "Merchant Name": "The Hub Events Ltd",
+        "Merchant Category Name": "Consulting, management, & public relations services",
+        "Transaction Date": "15/07/2020",
+        "Transaction Amount": 4560,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Local Govt & Communities",
+        "Merchant Name": "Msft E0700Bjah7",
+        "Merchant Category Name": "Computers, computer peripheral equipment, software",
+        "Transaction Date": "13/07/2020",
+        "Transaction Amount": 728.17,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Local Govt & Communities",
+        "Merchant Name": "Premiere Conferencing",
+        "Merchant Category Name": "Business services - not elsewhere classified",
+        "Transaction Date": "17/07/2020",
+        "Transaction Amount": 544.14,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Your Order Microscope",
+        "Merchant Category Name": "Computers, computer peripheral equipment, software",
+        "Transaction Date": "21/07/2020",
+        "Transaction Amount": 571.98,
+        "Expense Description": "Specialist IT equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Bm Steel",
+        "Merchant Category Name": "Architectural, engineering, & surveying services",
+        "Transaction Date": "23/07/2020",
+        "Transaction Amount": 509.16,
+        "Expense Description": "Vessel food stores"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Gopro.Com Via Mlnk",
+        "Merchant Category Name": "Camera & photographic supply stores",
+        "Transaction Date": "08/07/2020",
+        "Transaction Amount": 519.96,
+        "Expense Description": "Photographic equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Mo & Co",
+        "Merchant Category Name": "Men's & women's clothing stores",
+        "Transaction Date": "20/07/2020",
+        "Transaction Amount": 930,
+        "Expense Description": "Health & safety equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Ocean Scientific Intl",
+        "Merchant Category Name": "Miscellaneous & specialty retail stores",
+        "Transaction Date": "23/07/2020",
+        "Transaction Amount": 721.2,
+        "Expense Description": "Laboratory research testing"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "George Anderson & Son",
+        "Merchant Category Name": "Grocery stores, supermarkets",
+        "Transaction Date": "03/07/2020",
+        "Transaction Amount": 504.16,
+        "Expense Description": "Vessel food stores"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Videotel Marine In",
+        "Merchant Category Name": "Schools & educational services - not elsewhere classified",
+        "Transaction Date": "08/07/2020",
+        "Transaction Amount": 3060,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Videotel Marine In",
+        "Merchant Category Name": "Schools & educational services - not elsewhere classified",
+        "Transaction Date": "02/07/2020",
+        "Transaction Amount": 918,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Camlab Ltd",
+        "Merchant Category Name": "Dental/labaratory/medical/ophthalmic hospital equiment & supplies",
+        "Transaction Date": "28/07/2020",
+        "Transaction Amount": 569.39,
+        "Expense Description": "Specialist laboratory equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "The Tally Counter Co.",
+        "Merchant Category Name": "Computer software stores",
+        "Transaction Date": "14/07/2020",
+        "Transaction Amount": 889.2,
+        "Expense Description": "Scientific equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Wells Offshore",
+        "Merchant Category Name": "Drug stores, pharmacies",
+        "Transaction Date": "16/07/2020",
+        "Transaction Amount": 535.12,
+        "Expense Description": "Vessel medical peripherals"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Gnb Industrial Power (",
+        "Merchant Category Name": "Electrical parts & equipment",
+        "Transaction Date": "07/07/2020",
+        "Transaction Amount": 3249.79,
+        "Expense Description": "Office equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Sp Glencraft Luxury",
+        "Merchant Category Name": "Computer software stores",
+        "Transaction Date": "08/07/2020",
+        "Transaction Amount": 552,
+        "Expense Description": "Vessel equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Amazon.Co.Uk Af52V5Uf5",
+        "Merchant Category Name": "Direct marketing-other direct marketers/not elsew.",
+        "Transaction Date": "09/07/2020",
+        "Transaction Amount": 659.78,
+        "Expense Description": "Photographic equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "WWW.ARCO.CO.UK",
+        "Merchant Category Name": "Industrial supplies - not elsewhere classified",
+        "Transaction Date": "09/07/2020",
+        "Transaction Amount": 540.3,
+        "Expense Description": "Health & safety equipment"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Uk Battery Sales Ltd",
+        "Merchant Category Name": "Automotive parts, accessories stores",
+        "Transaction Date": "03/07/2020",
+        "Transaction Amount": 648,
+        "Expense Description": "Vessel engineering spares"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "WWW.BANNERUK.COM",
+        "Merchant Category Name": "Stationery/office supplies/printing & writing paper",
+        "Transaction Date": "22/07/2020",
+        "Transaction Amount": 608.26,
+        "Expense Description": "IT consumables"
+    },
+    {
+        "Directorate": "Directorate for Marine Scotland",
+        "Merchant Name": "Lyreco Uk Ltd",
+        "Merchant Category Name": "Office, school supply, & stationery stores",
+        "Transaction Date": "09/07/2020",
+        "Transaction Amount": 528,
+        "Expense Description": "Stationery"
+    },
+    {
+        "Directorate": "Directorate for People",
+        "Merchant Name": "Surveymonkey",
+        "Merchant Category Name": "Computer programing, data processing, integrated system design services",
+        "Transaction Date": "21/07/2020",
+        "Transaction Amount": 900,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Planning & Environmental Appeals",
+        "Merchant Name": "Computacenter (Uk) Ltd",
+        "Merchant Category Name": "Computers, computer peripheral equipment, software",
+        "Transaction Date": "22/07/2020",
+        "Transaction Amount": 13525.34,
+        "Expense Description": "IT peripherals"
+    },
+    {
+        "Directorate": "Directorate for Social Security",
+        "Merchant Name": "Browserstack.Com",
+        "Merchant Category Name": "Computer programing, data processing, integrated system design services",
+        "Transaction Date": "26/07/2020",
+        "Transaction Amount": 3875.5,
+        "Expense Description": "Specialist software - renewal"
+    },
+    {
+        "Directorate": "Directorate for Social Security",
+        "Merchant Name": "Slack T6Ssmjn6T",
+        "Merchant Category Name": "Computer software stores",
+        "Transaction Date": "05/07/2020",
+        "Transaction Amount": 2848,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Social Security",
+        "Merchant Name": "Your Order Kmacleod -",
+        "Merchant Category Name": "Computers, computer peripheral equipment, software",
+        "Transaction Date": "17/06/2020",
+        "Transaction Amount": 509.64,
+        "Expense Description": "Office equipment"
+    },
+    {
+        "Directorate": "Directorate for Social Security",
+        "Merchant Name": "WWW.KPMG.CO.UK",
+        "Merchant Category Name": "Tax preparation service",
+        "Transaction Date": "02/07/2020",
+        "Transaction Amount": 9804,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate for Social Security",
+        "Merchant Name": "Computacenter (Uk) Ltd",
+        "Merchant Category Name": "Computers, computer peripheral equipment, software",
+        "Transaction Date": "15/07/2020",
+        "Transaction Amount": 1337.9,
+        "Expense Description": "IT peripherals"
+    },
+    {
+        "Directorate": "Directorate for Social Security",
+        "Merchant Name": "Computacenter (Uk) Ltd",
+        "Merchant Category Name": "Computers, computer peripheral equipment, software",
+        "Transaction Date": "15/07/2020",
+        "Transaction Amount": 2898.6,
+        "Expense Description": "IT peripherals"
+    },
+    {
+        "Directorate": "Directorate for Social Security",
+        "Merchant Name": "Computacenter (Uk) Ltd",
+        "Merchant Category Name": "Computers, computer peripheral equipment, software",
+        "Transaction Date": "09/07/2020",
+        "Transaction Amount": 2898.6,
+        "Expense Description": "IT peripherals"
+    },
+    {
+        "Directorate": "Parliamentary Counsel Office",
+        "Merchant Name": "Hp Inc Uk Limited",
+        "Merchant Category Name": "Computers, computer peripheral equipment, software",
+        "Transaction Date": "10/07/2020",
+        "Transaction Amount": 2319.9,
+        "Expense Description": "Specialist IT equipment"
+    }
+]

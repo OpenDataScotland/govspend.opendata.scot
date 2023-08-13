@@ -1,0 +1,595 @@
+
+[
+    {
+        "Directorate": "Directorate For Agriculture & Rural Economy",
+        "Merchant Name": "Amznmktplace",
+        "Merchant Category Name": "Miscellaneous And Specialty Retail Stores",
+        "Transaction Date": "26/08/2021",
+        "Transaction Amount": 805.05,
+        "Expense Description": "IT hardware - accessories"
+    },
+    {
+        "Directorate": "Directorate For Agriculture & Rural Economy",
+        "Merchant Name": "AMAZON.CO.UK",
+        "Merchant Category Name": "Direct Marketing-Other Direct Marketers/Not Elsew.",
+        "Transaction Date": "26/08/2021",
+        "Transaction Amount": 599.96,
+        "Expense Description": "IT hardware - specialist equipment"
+    },
+    {
+        "Directorate": "Directorate For Agriculture & Rural Economy",
+        "Merchant Name": "Integrity Print",
+        "Merchant Category Name": "Quick Copy,Reproduction And Blueprinting Services",
+        "Transaction Date": "12/08/2021",
+        "Transaction Amount": 1908,
+        "Expense Description": "Farm equipment OR Agricultural supplies"
+    },
+    {
+        "Directorate": "Directorate For Agriculture & Rural Economy",
+        "Merchant Name": "Pp Airsciencet",
+        "Merchant Category Name": "Accounting, Auditing And Bookkeeping Services",
+        "Transaction Date": "20/08/2021",
+        "Transaction Amount": 505.8,
+        "Expense Description": "Laboratory equipment - maintenance"
+    },
+    {
+        "Directorate": "Directorate For Agriculture & Rural Economy",
+        "Merchant Name": "Your Order 10Ke",
+        "Merchant Category Name": "Computers, Computer Peripheral Equipment, Software",
+        "Transaction Date": "27/08/2021",
+        "Transaction Amount": 842.12,
+        "Expense Description": "IT hardware - accessories"
+    },
+    {
+        "Directorate": "Directorate For Agriculture & Rural Economy",
+        "Merchant Name": "Hp Inc Hp.Com Store Uk",
+        "Merchant Category Name": "Electronic Sales",
+        "Transaction Date": "29/08/2021",
+        "Transaction Amount": 1399.92,
+        "Expense Description": "IT hardware - specialist equipment"
+    },
+    {
+        "Directorate": "Directorate For Agriculture & Rural Economy",
+        "Merchant Name": "Amz Catering Applian",
+        "Merchant Category Name": "Household Appliance Stores",
+        "Transaction Date": "25/08/2021",
+        "Transaction Amount": 535.02,
+        "Expense Description": "Scientific equipment"
+    },
+    {
+        "Directorate": "Directorate For Agriculture & Rural Economy",
+        "Merchant Name": "WWW.EPCOLLEGE.COM",
+        "Merchant Category Name": "Colleges, Universities, Professional Schools, and Junior Colleges",
+        "Transaction Date": "23/08/2021",
+        "Transaction Amount": 708,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate For Agriculture & Rural Economy",
+        "Merchant Name": "WWW.THEHUBEVENTS.COM",
+        "Merchant Category Name": "Consulting, Management, And Public Relations Svcs",
+        "Transaction Date": "24/08/2021",
+        "Transaction Amount": 624,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate For Agriculture & Rural Economy",
+        "Merchant Name": "Allans Of Gillock Ltd",
+        "Merchant Category Name": "Building Materials, Lumber Stores",
+        "Transaction Date": "23/08/2021",
+        "Transaction Amount": 996.12,
+        "Expense Description": "Farm equipment OR Agricultural supplies"
+    },
+    {
+        "Directorate": "Directorate For Agriculture & Rural Economy",
+        "Merchant Name": "Mark Garrick Ltd",
+        "Merchant Category Name": "Misc/Auto/Aircraft/Farm Equip Not Elsewhere Class",
+        "Transaction Date": "18/08/2021",
+        "Transaction Amount": 1697.96,
+        "Expense Description": "Farm equipment - maintenance"
+    },
+    {
+        "Directorate": "Directorate For Agriculture & Rural Economy",
+        "Merchant Name": "Hp Inc Hp.Com Store Uk",
+        "Merchant Category Name": "Electronic Sales",
+        "Transaction Date": "15/08/2021",
+        "Transaction Amount": 1399.9,
+        "Expense Description": "IT hardware - specialist equipment"
+    },
+    {
+        "Directorate": "Directorate For Agriculture & Rural Economy",
+        "Merchant Name": "Scottish Power",
+        "Merchant Category Name": "Utlts-Elctrc, Gas, Heating Oil, Sanitary, Water",
+        "Transaction Date": "30/08/2021",
+        "Transaction Amount": 641.23,
+        "Expense Description": "Building - payment charge"
+    },
+    {
+        "Directorate": "Directorate For Agriculture & Rural Economy",
+        "Merchant Name": "Adobe.Com",
+        "Merchant Category Name": "Digital Goods Software Applications",
+        "Transaction Date": "30/08/2021",
+        "Transaction Amount": 849.6,
+        "Expense Description": "Specialist softwares OR Specialist software - renewal"
+    },
+    {
+        "Directorate": "Directorate For Agriculture & Rural Economy",
+        "Merchant Name": "Enterprise Rent-A-Car",
+        "Merchant Category Name": "Enterprise Rent-A-Car",
+        "Transaction Date": "05/08/2021",
+        "Transaction Amount": 546.36,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate For Chief Medical Officer",
+        "Merchant Name": "Capita Business Servs",
+        "Merchant Category Name": "Government Services-Not Elsewhere Classified",
+        "Transaction Date": "18/08/2021",
+        "Transaction Amount": 2880,
+        "Expense Description": "External support services"
+    },
+    {
+        "Directorate": "Directorate For Corporate Transformation",
+        "Merchant Name": "Westfield Motors",
+        "Merchant Category Name": "Automotive Service Shops",
+        "Transaction Date": "27/08/2021",
+        "Transaction Amount": 619.54,
+        "Expense Description": "Vehicle - maintenance"
+    },
+    {
+        "Directorate": "Directorate For Corporate Transformation",
+        "Merchant Name": "Vision Events Uk Ltd",
+        "Merchant Category Name": "Electrical Parts And Equipment",
+        "Transaction Date": "27/08/2021",
+        "Transaction Amount": 1370.52,
+        "Expense Description": "External event - fees"
+    },
+    {
+        "Directorate": "Directorate For Corporate Transformation",
+        "Merchant Name": "Amznmktplace Amazon.Co",
+        "Merchant Category Name": "Miscellaneous And Specialty Retail Stores",
+        "Transaction Date": "16/08/2021",
+        "Transaction Amount": 758.5,
+        "Expense Description": "Office equipment"
+    },
+    {
+        "Directorate": "Directorate For Corporate Transformation",
+        "Merchant Name": "Amznmktplace",
+        "Merchant Category Name": "Miscellaneous And Specialty Retail Stores",
+        "Transaction Date": "13/08/2021",
+        "Transaction Amount": 547.96,
+        "Expense Description": "IT hardware - specialist equipment"
+    },
+    {
+        "Directorate": "Directorate For Corporate Transformation",
+        "Merchant Name": "Canva I03163-9763817",
+        "Merchant Category Name": "Photographic Studios",
+        "Transaction Date": "30/08/2021",
+        "Transaction Amount": 576,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate For Corporate Transformation",
+        "Merchant Name": "Arnold Clark Ford",
+        "Merchant Category Name": "Automobile And Truck Dealers-(Used Only)-Sales",
+        "Transaction Date": "24/08/2021",
+        "Transaction Amount": 893.43,
+        "Expense Description": "Vehicle - maintenance"
+    },
+    {
+        "Directorate": "Directorate For Corporate Transformation",
+        "Merchant Name": "Arnold Clark Ford",
+        "Merchant Category Name": "Automobile And Truck Dealers-(Used Only)-Sales",
+        "Transaction Date": "24/08/2021",
+        "Transaction Amount": 630.64,
+        "Expense Description": "Vehicle - maintenance"
+    },
+    {
+        "Directorate": "Directorate For Corporate Transformation",
+        "Merchant Name": "D Sutherland Inv",
+        "Merchant Category Name": "Towing Services",
+        "Transaction Date": "20/08/2021",
+        "Transaction Amount": 820.22,
+        "Expense Description": "Vehicle - maintenance"
+    },
+    {
+        "Directorate": "Directorate For Corporate Transformation",
+        "Merchant Name": "Adam Purves Mitsubishi",
+        "Merchant Category Name": "Automobile and Truck Dealers - Sales, Service, Repairs, Parts, and Leasing",
+        "Transaction Date": "16/08/2021",
+        "Transaction Amount": 1328.17,
+        "Expense Description": "Vehicle - maintenance"
+    },
+    {
+        "Directorate": "Directorate For Corporate Transformation",
+        "Merchant Name": "Walkers- Fife Mitsubis",
+        "Merchant Category Name": "Automobile and Truck Dealers - Sales, Service, Repairs, Parts, and Leasing",
+        "Transaction Date": "09/08/2021",
+        "Transaction Amount": 1188.68,
+        "Expense Description": "Vehicle - maintenance"
+    },
+    {
+        "Directorate": "Directorate For Corporate Transformation",
+        "Merchant Name": "ISTOCK.COM",
+        "Merchant Category Name": "Commercial Art, Graphics, Photography",
+        "Transaction Date": "11/08/2021",
+        "Transaction Amount": 648,
+        "Expense Description": "Image copyright – fees"
+    },
+    {
+        "Directorate": "Directorate For Corporate Transformation",
+        "Merchant Name": "PDC-BIG.CO.UK",
+        "Merchant Category Name": "Miscellaneous General Merchandise",
+        "Transaction Date": "16/08/2021",
+        "Transaction Amount": 734.4,
+        "Expense Description": "Stationery"
+    },
+    {
+        "Directorate": "Directorate For Corporate Transformation",
+        "Merchant Name": "Lyreco Uk Ltd",
+        "Merchant Category Name": "Office, School Supply, And Stationery Stores",
+        "Transaction Date": "20/08/2021",
+        "Transaction Amount": 659.99,
+        "Expense Description": "Stationery"
+    },
+    {
+        "Directorate": "Directorate For Digital",
+        "Merchant Name": "Act Now Training Limit",
+        "Merchant Category Name": "Schools, Trade And Vocational",
+        "Transaction Date": "18/08/2021",
+        "Transaction Amount": 2820,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate For Digital",
+        "Merchant Name": "Salford Professional D",
+        "Merchant Category Name": "Schools & Educational Svc-Not Elsewhere Classified",
+        "Transaction Date": "16/08/2021",
+        "Transaction Amount": 3234,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate For Digital",
+        "Merchant Name": "Enterprise Rent-A-Car",
+        "Merchant Category Name": "Enterprise Rent-A-Car",
+        "Transaction Date": "16/08/2021",
+        "Transaction Amount": 1154.15,
+        "Expense Description": "Vehicle hire"
+    },
+    {
+        "Directorate": "Directorate For Economic Development",
+        "Merchant Name": "2U Getsmarter (Us) Llc",
+        "Merchant Category Name": "Schools & Educational Svc-Not Elsewhere Classified",
+        "Transaction Date": "30/08/2021",
+        "Transaction Amount": 2200,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate For Energy & Climate Change",
+        "Merchant Name": "Faversham House",
+        "Merchant Category Name": "News Dealers And Newsstands",
+        "Transaction Date": "16/08/2021",
+        "Transaction Amount": 5000,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate For Energy & Climate Change",
+        "Merchant Name": "Faversham House Ltd",
+        "Merchant Category Name": "Miscellaneous Publishing And Printing",
+        "Transaction Date": "06/08/2021",
+        "Transaction Amount": 837.6,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "Directorate For External Affairs",
+        "Merchant Name": "Sendinblue",
+        "Merchant Category Name": "Computer Programming, Data Processing, and Integrated Systems Design Services",
+        "Transaction Date": "26/08/2021",
+        "Transaction Amount": 920.7,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate for Health and Social care",
+        "Merchant Name": "Lyreco Uk Ltd",
+        "Merchant Category Name": "Office, School Supply, And Stationery Stores",
+        "Transaction Date": "13/08/2021",
+        "Transaction Amount": 572.16,
+        "Expense Description": "Stationery"
+    },
+    {
+        "Directorate": "Directorate For Healthcare Quality & Improvement",
+        "Merchant Name": "Institute for healthcare improvement",
+        "Merchant Category Name": "Organizations, Charitable And Social Services",
+        "Transaction Date": "10/08/2021",
+        "Transaction Amount": 2788.53,
+        "Expense Description": "External event - fees"
+    },
+    {
+        "Directorate": "Directorate For International Trade & Investment",
+        "Merchant Name": "Financial Times Lt",
+        "Merchant Category Name": "Books,Periodicals And Newspapers",
+        "Transaction Date": "19/08/2021",
+        "Transaction Amount": 3370,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate For Learning",
+        "Merchant Name": "Atlassian",
+        "Merchant Category Name": "Computer Software Stores",
+        "Transaction Date": "16/08/2021",
+        "Transaction Amount": 1303.01,
+        "Expense Description": "Specialist softwares OR Specialist software - renewal"
+    },
+    {
+        "Directorate": "Directorate For Local Government & Communities",
+        "Merchant Name": "Microsoft",
+        "Merchant Category Name": "Computers, Computer Peripheral Equipment, Software",
+        "Transaction Date": "09/08/2021",
+        "Transaction Amount": 4211.95,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "Wills Ridley Ltd",
+        "Merchant Category Name": "Commercial Equipment, Not Elsewhere Classified",
+        "Transaction Date": "24/08/2021",
+        "Transaction Amount": 645,
+        "Expense Description": "Vessel engineering spares"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "Wills Ridley Ltd",
+        "Merchant Category Name": "Commercial Equipment, Not Elsewhere Classified",
+        "Transaction Date": "23/08/2021",
+        "Transaction Amount": 3013.5,
+        "Expense Description": "Vessel engineering spares"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "Pump Action Ltd",
+        "Merchant Category Name": "Heating, Plumbing, Air Conditioning Contractors",
+        "Transaction Date": "11/08/2021",
+        "Transaction Amount": 878.4,
+        "Expense Description": "Vessel engineering spares"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "WWW.NISBETS.COM",
+        "Merchant Category Name": "Direct Marketing-Catalog Merchants",
+        "Transaction Date": "29/08/2021",
+        "Transaction Amount": 551.99,
+        "Expense Description": "Vessel engineering equipment"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "Wills Ridley Ltd",
+        "Merchant Category Name": "Commercial Equipment, Not Elsewhere Classified",
+        "Transaction Date": "24/08/2021",
+        "Transaction Amount": 4025,
+        "Expense Description": "Vessel engineering equipment - maintenance"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "Prosep Filter Systems",
+        "Merchant Category Name": "Architectural, Engineering, And Surveying Services",
+        "Transaction Date": "13/08/2021",
+        "Transaction Amount": 2642.4,
+        "Expense Description": "Vessel engineering equipment"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "Amity Fish Company",
+        "Merchant Category Name": "Grocery Stores, Supermarkets",
+        "Transaction Date": "19/08/2021",
+        "Transaction Amount": 695.7,
+        "Expense Description": "Vessel food stores"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "Argos Ltd",
+        "Merchant Category Name": "Discount Stores",
+        "Transaction Date": "24/08/2021",
+        "Transaction Amount": 658,
+        "Expense Description": "IT hardware - specialist equipment"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "Frontiers Media Sa",
+        "Merchant Category Name": "Book Stores",
+        "Transaction Date": "26/08/2021",
+        "Transaction Amount": 2228.98,
+        "Expense Description": "Publication - fees"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "Sciquip Ltd",
+        "Merchant Category Name": "Dental/Lab/Med/Ophthalmic Hosp Equip & Supplies",
+        "Transaction Date": "13/08/2021",
+        "Transaction Amount": 551.94,
+        "Expense Description": "Specialist laboratory equipment"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "WWW.INPD.CO.UK",
+        "Merchant Category Name": "Schools & Educational Svc-Not Elsewhere Classified",
+        "Transaction Date": "27/08/2021",
+        "Transaction Amount": 5400,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "Hallprint Pty Ltd",
+        "Merchant Category Name": "Sporting Goods Stores",
+        "Transaction Date": "24/08/2021",
+        "Transaction Amount": 598.53,
+        "Expense Description": "Vessel equipment OR Vessel scientific equipment"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "Malakoff Limited",
+        "Merchant Category Name": "Architectural, Engineering, And Surveying Services",
+        "Transaction Date": "18/08/2021",
+        "Transaction Amount": 1375,
+        "Expense Description": "Vessel equipment OR Vessel scientific equipment"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "Amznmktplace",
+        "Merchant Category Name": "Miscellaneous And Specialty Retail Stores",
+        "Transaction Date": "27/08/2021",
+        "Transaction Amount": 1530.49,
+        "Expense Description": "IT hardware - specialist equipment"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "Amznmktplace",
+        "Merchant Category Name": "Miscellaneous And Specialty Retail Stores",
+        "Transaction Date": "25/08/2021",
+        "Transaction Amount": 500.85,
+        "Expense Description": "IT hardware - specialist equipment"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "Amznmktplace",
+        "Merchant Category Name": "Miscellaneous And Specialty Retail Stores",
+        "Transaction Date": "19/08/2021",
+        "Transaction Amount": 519.17,
+        "Expense Description": "IT hardware - specialist equipment"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "www.advancedfluidsolutions.co.uk",
+        "Merchant Category Name": "Industrial Supplies Not Elsewhere Classified",
+        "Transaction Date": "08/08/2021",
+        "Transaction Amount": 711.53,
+        "Expense Description": "Vessel engineering equipment"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "Rs Components",
+        "Merchant Category Name": "Electrical Parts And Equipment",
+        "Transaction Date": "06/08/2021",
+        "Transaction Amount": 515.45,
+        "Expense Description": "Vessel engineering spares"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "Dickies Pharmacy",
+        "Merchant Category Name": "Drug Stores, Pharmacies",
+        "Transaction Date": "18/08/2021",
+        "Transaction Amount": 569.01,
+        "Expense Description": "Vessel medical peripherals"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "Dickies Pharmacy",
+        "Merchant Category Name": "Drug Stores, Pharmacies",
+        "Transaction Date": "18/08/2021",
+        "Transaction Amount": 560.72,
+        "Expense Description": "Vessel medical peripherals"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "Atlassianpt",
+        "Merchant Category Name": "Computer Software Stores",
+        "Transaction Date": "17/08/2021",
+        "Transaction Amount": 4800.24,
+        "Expense Description": "Specialist softwares OR Specialist software - renewal"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "Quest Software Inc",
+        "Merchant Category Name": "Computer Main./Repair/Services Not Elsewhere Class",
+        "Transaction Date": "09/08/2021",
+        "Transaction Amount": 4209.25,
+        "Expense Description": "Specialist softwares OR Specialist software - renewal"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "Buyabattery Co Uk",
+        "Merchant Category Name": "Electrical Parts And Equipment",
+        "Transaction Date": "19/08/2021",
+        "Transaction Amount": 1027.98,
+        "Expense Description": "Vessel equipment OR Vessel scientific equipment"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "Sterimist Ltd",
+        "Merchant Category Name": "Business Services-Not Elsewhere Classified",
+        "Transaction Date": "13/08/2021",
+        "Transaction Amount": 4400.4,
+        "Expense Description": "Vessel equipment OR Vessel scientific equipment"
+    },
+    {
+        "Directorate": "Directorate For People",
+        "Merchant Name": "Capp & Co Limited",
+        "Merchant Category Name": "Business Services-Not Elsewhere Classified",
+        "Transaction Date": "17/08/2021",
+        "Transaction Amount": 936,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate For Safer Communities",
+        "Merchant Name": "Articulate Global, Llc",
+        "Merchant Category Name": "Computer Software Stores",
+        "Transaction Date": "14/08/2021",
+        "Transaction Amount": 2909.34,
+        "Expense Description": "Professional licence - fees OR Professional licence - renewal"
+    },
+    {
+        "Directorate": "Directorate For Social Security",
+        "Merchant Name": "Optimal Workshop",
+        "Merchant Category Name": "Computer Software Stores",
+        "Transaction Date": "26/08/2021",
+        "Transaction Amount": 1496.2,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate For Social Security",
+        "Merchant Name": "Elite Training",
+        "Merchant Category Name": "Computer Programming, Data Processing, and Integrated Systems Design Services",
+        "Transaction Date": "12/08/2021",
+        "Transaction Amount": 834,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate For Social Security",
+        "Merchant Name": "Babington Business Col",
+        "Merchant Category Name": "Schools, Elementary And Secondary",
+        "Transaction Date": "11/08/2021",
+        "Transaction Amount": 3240,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate For Social Security",
+        "Merchant Name": "WWW.AMBERHAWK.COM",
+        "Merchant Category Name": "Business Services-Not Elsewhere Classified",
+        "Transaction Date": "06/08/2021",
+        "Transaction Amount": 2796,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate For Social Security",
+        "Merchant Name": "Dods Group Limited",
+        "Merchant Category Name": "Business Services-Not Elsewhere Classified",
+        "Transaction Date": "25/08/2021",
+        "Transaction Amount": 1200,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate For Social Security",
+        "Merchant Name": "Premiere Conferencing",
+        "Merchant Category Name": "Business Services-Not Elsewhere Classified",
+        "Transaction Date": "13/08/2021",
+        "Transaction Amount": 5686.6,
+        "Expense Description": "Professional membership - fees OR Professional subscription - fees"
+    },
+    {
+        "Directorate": "Scottish Procurement & Property Directorate",
+        "Merchant Name": "Sq Indigo Business Se",
+        "Merchant Category Name": "Schools & Educational Svc-Not Elsewhere Classified",
+        "Transaction Date": "11/08/2021",
+        "Transaction Amount": 2970,
+        "Expense Description": "External training course - fees"
+    }
+]

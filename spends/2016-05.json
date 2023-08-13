@@ -1,0 +1,315 @@
+
+[
+    {
+        "Directorate": "CNO PATIENTS PUBLIC HEALTH PROFESSIONS",
+        "Merchant Name": "MEETING MAKERS IHWC",
+        "Merchant Category Name": "CLUBS-CNTRY,MBRSHIP(ATHLET,REC,SPRTS,PRIVATE GOLF",
+        "Transaction Date": "11/05/2016",
+        "Transaction Amount": 500,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "DIRECTORATE FOR AGRICULTURE,FOOD & RURAL COMM",
+        "Merchant Name": "NORTON HOUSE HOTEL FO",
+        "Merchant Category Name": "LODGING-HOTELS,MOTELS,RESORTS-NOT CLASSIFIED",
+        "Transaction Date": "23/05/2016",
+        "Transaction Amount": 663.74,
+        "Expense Description": "External event - accommodation and catering fees"
+    },
+    {
+        "Directorate": "DIRECTORATE FOR AGRICULTURE,FOOD & RURAL COMM",
+        "Merchant Name": "CANKARJEV DOM",
+        "Merchant Category Name": "DIRECT MARKETING-CATALOG MERCHANTS",
+        "Transaction Date": "12/05/2016",
+        "Transaction Amount": 570.49,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "DIRECTORATE FOR AGRICULTURE,FOOD & RURAL COMM",
+        "Merchant Name": "ISTA SECRETARIAT",
+        "Merchant Category Name": "ORGANIZATIONS, MEMBERSHIP-NOT ELSEWHERE CLASSIFIED",
+        "Transaction Date": "11/05/2016",
+        "Transaction Amount": 854.23,
+        "Expense Description": "External conference - fees"
+    },
+    {
+        "Directorate": "DIRECTORATE FOR AGRICULTURE,FOOD & RURAL COMM",
+        "Merchant Name": "WWW.NEVISPORT.CO.UK",
+        "Merchant Category Name": "WOMEN'S READY TO WEAR STORES",
+        "Transaction Date": "23/05/2016",
+        "Transaction Amount": 696,
+        "Expense Description": "Protective clothing"
+    },
+    {
+        "Directorate": "DIRECTORATE FOR CULTURE, EUROPE & EXTERNAL AFFAIRS",
+        "Merchant Name": "EUROP. INST. OF PUBL.A",
+        "Merchant Category Name": "ORGANIZATIONS, CHARITABLE AND SOCIAL SERVICES",
+        "Transaction Date": "29/04/2016",
+        "Transaction Amount": 833.69,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "DIRECTORATE FOR CULTURE, EUROPE & EXTERNAL AFFAIRS",
+        "Merchant Name": "GEPPETTO CATERING",
+        "Merchant Category Name": "CATERERS",
+        "Transaction Date": "25/05/2016",
+        "Transaction Amount": 1241.17,
+        "Expense Description": "External event - catering"
+    },
+    {
+        "Directorate": "DIRECTORATE FOR DIGITAL",
+        "Merchant Name": "AMAZON WEB SERVICES",
+        "Merchant Category Name": "BUSINESS SERVICES-NOT ELSEWHERE CLASSIFIED",
+        "Transaction Date": "03/05/2016",
+        "Transaction Amount": 4783.68,
+        "Expense Description": "Web hosting for Mygov - May 2016"
+    },
+    {
+        "Directorate": "DIRECTORATE FOR ECONOMIC DEVELOPMENT",
+        "Merchant Name": "PAYPAL HOTBOX LTD",
+        "Merchant Category Name": "PROFESSIONAL SERVICES-NOT ELSEWHERE CLASSIFIED",
+        "Transaction Date": "03/05/2016",
+        "Transaction Amount": 1492.56,
+        "Expense Description": "Office equipment"
+    },
+    {
+        "Directorate": "DIRECTORATE FOR ENERGY & CLIMATE CHANGE",
+        "Merchant Name": "RENEWS LTD",
+        "Merchant Category Name": "DIRECT MARKETING-CONTINUITY/SUBSCRIPTION MERCHANTS",
+        "Transaction Date": "26/05/2016",
+        "Transaction Amount": 541.2,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "DIRECTORATE FOR JUSTICE",
+        "Merchant Name": "CAFE HUB",
+        "Merchant Category Name": "THEATRICAL PRODUCERS(EXCL MOTION PIX),TICKET AGNCY",
+        "Transaction Date": "25/05/2016",
+        "Transaction Amount": 681.3,
+        "Expense Description": "External event - fees"
+    },
+    {
+        "Directorate": "DIRECTORATE FOR SAFER COMMUNITIES",
+        "Merchant Name": "AMAZON EU",
+        "Merchant Category Name": "DIRECT MARKETING-OTHER DIRECT MARKETERS/NOT ELSEW.",
+        "Transaction Date": "13/05/2016",
+        "Transaction Amount": 912.65,
+        "Expense Description": "Office equipment"
+    },
+    {
+        "Directorate": "MARINE SCOTLAND",
+        "Merchant Name": "AMAZON EU",
+        "Merchant Category Name": "DIRECT MARKETING-OTHER DIRECT MARKETERS/NOT ELSEW.",
+        "Transaction Date": "26/05/2016",
+        "Transaction Amount": 702.91,
+        "Expense Description": "IT equipment"
+    },
+    {
+        "Directorate": "MARINE SCOTLAND",
+        "Merchant Name": "NORDIC HOTELS FORUM RE",
+        "Merchant Category Name": "LODGING-HOTELS,MOTELS,RESORTS-NOT CLASSIFIED",
+        "Transaction Date": "25/05/2016",
+        "Transaction Amount": 675.1,
+        "Expense Description": "External event - catering"
+    },
+    {
+        "Directorate": "MARINE SCOTLAND",
+        "Merchant Name": "SIMON SAFETY AND LIFTI",
+        "Merchant Category Name": "DENTAL/LAB/MED/OPHTHALMIC HOSP EQUIP & SUPPLIES",
+        "Transaction Date": "20/05/2016",
+        "Transaction Amount": 513.42,
+        "Expense Description": "Vessel safety equipment - clothing"
+    },
+    {
+        "Directorate": "MARINE SCOTLAND",
+        "Merchant Name": "LION LABORATORIES LTD",
+        "Merchant Category Name": "DENTAL/LAB/MED/OPHTHALMIC HOSP EQUIP & SUPPLIES",
+        "Transaction Date": "25/05/2016",
+        "Transaction Amount": 3043.35,
+        "Expense Description": "Vessel equipment"
+    },
+    {
+        "Directorate": "MARINE SCOTLAND",
+        "Merchant Name": "BRISTOL UNIFORMS L",
+        "Merchant Category Name": "MEN'S/WOMEN'S/CHILDREN'S UNIFORMS/COMMERCIAL CLOTH",
+        "Transaction Date": "09/05/2016",
+        "Transaction Amount": 1635.34,
+        "Expense Description": "Vessel safety equipment - clothing"
+    },
+    {
+        "Directorate": "MARINE SCOTLAND",
+        "Merchant Name": "BLACKCOUNTRYMETAL",
+        "Merchant Category Name": "COMMERCIAL ART, GRAPHICS, PHOTOGRAPHY",
+        "Transaction Date": "17/05/2016",
+        "Transaction Amount": 1199.9,
+        "Expense Description": "Vessel safety equipment"
+    },
+    {
+        "Directorate": "MARINE SCOTLAND",
+        "Merchant Name": "WWW.NISBETS.COM",
+        "Merchant Category Name": "DIRECT MARKETING-CATALOG MERCHANTS",
+        "Transaction Date": "11/05/2016",
+        "Transaction Amount": 526.07,
+        "Expense Description": "Vessel equipment"
+    },
+    {
+        "Directorate": "MARINE SCOTLAND",
+        "Merchant Name": "BM ABERDEEN",
+        "Merchant Category Name": "ARCHITECTURAL, ENGINEERING, AND SURVEYING SERVICES",
+        "Transaction Date": "18/05/2016",
+        "Transaction Amount": 499.2,
+        "Expense Description": "Vessel engineering equipment"
+    },
+    {
+        "Directorate": "MARINE SCOTLAND",
+        "Merchant Name": "SAFETYSIGNSUP.COUK",
+        "Merchant Category Name": "COMMERCIAL ART, GRAPHICS, PHOTOGRAPHY",
+        "Transaction Date": "12/05/2016",
+        "Transaction Amount": 507.92,
+        "Expense Description": "Laboratory equipment"
+    },
+    {
+        "Directorate": "MARINE SCOTLAND",
+        "Merchant Name": "REWARD ELECTRICAL",
+        "Merchant Category Name": "ELECTRICAL CONTRACTORS",
+        "Transaction Date": "16/05/2016",
+        "Transaction Amount": 500.4,
+        "Expense Description": "Vessel safety equipment"
+    },
+    {
+        "Directorate": "MARINE SCOTLAND",
+        "Merchant Name": "BUCHAN BRAES HOTEL",
+        "Merchant Category Name": "LODGING-HOTELS,MOTELS,RESORTS-NOT CLASSIFIED",
+        "Transaction Date": "11/05/2016",
+        "Transaction Amount": 2100,
+        "Expense Description": "External conference - accommodation fees"
+    },
+    {
+        "Directorate": "MARINE SCOTLAND",
+        "Merchant Name": "TESCO STORES 2549",
+        "Merchant Category Name": "GROCERY STORES, SUPERMARKETS",
+        "Transaction Date": "18/05/2016",
+        "Transaction Amount": 568.96,
+        "Expense Description": "Vessel food stores"
+    },
+    {
+        "Directorate": "PEOPLE DIRECTORATE",
+        "Merchant Name": "HUMANWARE LTD",
+        "Merchant Category Name": "MISCELLANEOUS AND SPECIALTY RETAIL STORES",
+        "Transaction Date": "25/05/2016",
+        "Transaction Amount": 3588,
+        "Expense Description": "IT hardware - specialist equipment and associated training fees"
+    },
+    {
+        "Directorate": "DG Finance",
+        "Merchant Name": "ARNOLD CLARK CAR & VAN",
+        "Merchant Category Name": "AUTOMOBILE RENTAL AGENCY-NOT ELSEWHERE CLASSIFIED",
+        "Transaction Date": "11/05/2016",
+        "Transaction Amount": 562.79,
+        "Expense Description": "Vehicle Hire"
+    },
+    {
+        "Directorate": "DG Finance",
+        "Merchant Name": "ENTERPRISE",
+        "Merchant Category Name": "ENTERPRISE RENT-A-CAR",
+        "Transaction Date": "18/05/2016",
+        "Transaction Amount": 607.2,
+        "Expense Description": "Vehicle Hire"
+    },
+    {
+        "Directorate": "DG Finance",
+        "Merchant Name": "OFFICE DEPOT",
+        "Merchant Category Name": "STATIONERY/OFFICE SUPPLIES/PRINTING & WRITING PAP.",
+        "Transaction Date": "20/05/2016",
+        "Transaction Amount": 514.36,
+        "Expense Description": "Stationery"
+    },
+    {
+        "Directorate": "DG Finance",
+        "Merchant Name": "OFFICE DEPOT",
+        "Merchant Category Name": "STATIONERY/OFFICE SUPPLIES/PRINTING & WRITING PAP.",
+        "Transaction Date": "19/05/2016",
+        "Transaction Amount": 964.8,
+        "Expense Description": "Stationery"
+    },
+    {
+        "Directorate": "DG Finance",
+        "Merchant Name": "SODEXO LTD",
+        "Merchant Category Name": "EATING PLACES, RESTAURANTS",
+        "Transaction Date": "19/05/2016",
+        "Transaction Amount": 547.5,
+        "Expense Description": "Catering"
+    },
+    {
+        "Directorate": "DG Finance",
+        "Merchant Name": "SPECTRUM COMPUTERS LTD",
+        "Merchant Category Name": "COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Transaction Date": "23/05/2016",
+        "Transaction Amount": 618.82,
+        "Expense Description": "IT Consumables"
+    },
+    {
+        "Directorate": "DG Finance",
+        "Merchant Name": "SPECTRUM COMPUTERS LTD",
+        "Merchant Category Name": "COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Transaction Date": "20/05/2016",
+        "Transaction Amount": 1011.52,
+        "Expense Description": "IT Consumables"
+    },
+    {
+        "Directorate": "DG Finance",
+        "Merchant Name": "SPECTRUM COMPUTERS LTD",
+        "Merchant Category Name": "COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Transaction Date": "20/05/2016",
+        "Transaction Amount": 614.54,
+        "Expense Description": "IT Consumables"
+    },
+    {
+        "Directorate": "DG Finance",
+        "Merchant Name": "SPECTRUM COMPUTERS LTD",
+        "Merchant Category Name": "COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Transaction Date": "16/05/2016",
+        "Transaction Amount": 635.11,
+        "Expense Description": "IT Consumables"
+    },
+    {
+        "Directorate": "DG Finance",
+        "Merchant Name": "SPECTRUM COMPUTERS LTD",
+        "Merchant Category Name": "COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Transaction Date": "16/05/2016",
+        "Transaction Amount": 1363.85,
+        "Expense Description": "IT Consumables"
+    },
+    {
+        "Directorate": "DG Finance",
+        "Merchant Name": "SPECTRUM COMPUTERS LTD",
+        "Merchant Category Name": "COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Transaction Date": "16/05/2016",
+        "Transaction Amount": 535.09,
+        "Expense Description": "IT Consumables"
+    },
+    {
+        "Directorate": "DG Finance",
+        "Merchant Name": "SPECTRUM COMPUTERS LTD",
+        "Merchant Category Name": "COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Transaction Date": "09/05/2016",
+        "Transaction Amount": 538.68,
+        "Expense Description": "IT Consumables"
+    },
+    {
+        "Directorate": "DG Finance",
+        "Merchant Name": "SPECTRUM COMPUTERS LTD",
+        "Merchant Category Name": "COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Transaction Date": "04/05/2016",
+        "Transaction Amount": 877.2,
+        "Expense Description": "IT Consumables"
+    },
+    {
+        "Directorate": "DG Finance",
+        "Merchant Name": "SPECTRUM COMPUTERS LTD",
+        "Merchant Category Name": "COMPUTERS, COMPUTER PERIPHERAL EQUIPMENT, SOFTWARE",
+        "Transaction Date": "29/04/2016",
+        "Transaction Amount": 585.47,
+        "Expense Description": "IT Consumables"
+    }
+]

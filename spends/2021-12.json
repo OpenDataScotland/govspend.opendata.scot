@@ -1,0 +1,427 @@
+
+[
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "2U Getsmarter (Us) Llc",
+        "Merchant Category Name": "Schools and Educational Svc-Not Elsewhere Classified",
+        "Transaction Date": "20/12/2021",
+        "Transaction Amount": 2200,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "Gp Smart",
+        "Merchant Category Name": "Industrial Supplies Not Elsewhere Classified",
+        "Transaction Date": "16/12/2021",
+        "Transaction Amount": 6030,
+        "Expense Description": "Farm equipment - maintenance"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "Mcveigh Parker (Scotland)",
+        "Merchant Category Name": "Building Materials, Lumber Stores",
+        "Transaction Date": "15/12/2021",
+        "Transaction Amount": 2852.23,
+        "Expense Description": "Farm equipment - maintenance"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "Linkedin Ireland Unlim",
+        "Merchant Category Name": "Direct Marketing-Continuity/Subscription Merchants",
+        "Transaction Date": "16/12/2021",
+        "Transaction Amount": 2541,
+        "Expense Description": "Online IT Training"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "GENEIOUS.COM",
+        "Merchant Category Name": "Business Services-Not Elsewhere Classified",
+        "Transaction Date": "21/12/2021",
+        "Transaction Amount": 2657.58,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "Parcelforce Worldwide",
+        "Merchant Category Name": "Freight Carrier,Trucking-Lcl/Lng Dist, Mvg/Storage",
+        "Transaction Date": "21/12/2021",
+        "Transaction Amount": 825.21,
+        "Expense Description": "Postal Services"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "Kaneka Eurogentec S.A.",
+        "Merchant Category Name": "Dental/Lab/Med/Ophthalmic Hosp Equip and Supplies",
+        "Transaction Date": "10/12/2021",
+        "Transaction Amount": 838.8,
+        "Expense Description": "Specialist laboratory equipment"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "Dejex Supplies",
+        "Merchant Category Name": "Lawn And Garden Supply Stores",
+        "Transaction Date": "16/12/2021",
+        "Transaction Amount": 1191.7,
+        "Expense Description": "Scientific trial consumables"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "Elkay Laboratory",
+        "Merchant Category Name": "Industrial Supplies Not Elsewhere Classified",
+        "Transaction Date": "22/12/2021",
+        "Transaction Amount": 542.4,
+        "Expense Description": "Specialist laboratory equipment"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "Thistle Scientific Ltd",
+        "Merchant Category Name": "Colleges, Univ, Pro Schools, Junior Colleges",
+        "Transaction Date": "20/12/2021",
+        "Transaction Amount": 1704,
+        "Expense Description": "Specialist laboratory equipment"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "Digicert Inc.",
+        "Merchant Category Name": "Business Services-Not Elsewhere Classified",
+        "Transaction Date": "24/12/2021",
+        "Transaction Amount": 813.2,
+        "Expense Description": "Specialist software - renewal"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "Www.Nwgb.Co.Uk",
+        "Merchant Category Name": "Utlts-Elctrc, Gas, Heating Oil, Sanitary, Water",
+        "Transaction Date": "20/12/2021",
+        "Transaction Amount": 2726.36,
+        "Expense Description": "Building - payment charge"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "Scottish Power",
+        "Merchant Category Name": "Fuel Dealers-Coal, Fuel Oil, Liq Petroleum, Wood",
+        "Transaction Date": "13/12/2021",
+        "Transaction Amount": 1138.06,
+        "Expense Description": "Building - payment charge"
+    },
+    {
+        "Directorate": "Directorate For Digital",
+        "Merchant Name": "Microsoft",
+        "Merchant Category Name": "Computers, Computer Peripheral Equipment, Software",
+        "Transaction Date": "19/12/2021",
+        "Transaction Amount": 752.41,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate For Digital",
+        "Merchant Name": "Civil Service College",
+        "Merchant Category Name": "Schools and Educational Svc-Not Elsewhere Classified",
+        "Transaction Date": "21/12/2021",
+        "Transaction Amount": 750,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate For Digital",
+        "Merchant Name": "Omniplex",
+        "Merchant Category Name": "Computer Software Stores",
+        "Transaction Date": "13/12/2021",
+        "Transaction Amount": 3204,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate For Digital",
+        "Merchant Name": "Paypal Actnowtrain",
+        "Merchant Category Name": "Consulting, Management, And Public Relations Svcs",
+        "Transaction Date": "20/12/2021",
+        "Transaction Amount": 2994,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate For Digital",
+        "Merchant Name": "Qa Ltd",
+        "Merchant Category Name": "Schools and Educational Svc-Not Elsewhere Classified",
+        "Transaction Date": "17/12/2021",
+        "Transaction Amount": 1162.8,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate For Healthcare Quality and Improvement",
+        "Merchant Name": "Rics Subs Uk Cybs",
+        "Merchant Category Name": "Organizations, Membership-Not Elsewhere Classified",
+        "Transaction Date": "14/12/2021",
+        "Transaction Amount": 539,
+        "Expense Description": "Professional membership - fees"
+    },
+    {
+        "Directorate": "Directorate For Legal Services",
+        "Merchant Name": "Ao Retail Limited",
+        "Merchant Category Name": "Household Appliance Stores",
+        "Transaction Date": "22/12/2021",
+        "Transaction Amount": 1198,
+        "Expense Description": "IT hardware - specialist equipment"
+    },
+    {
+        "Directorate": "Directorate For Local Government and Communities",
+        "Merchant Name": "Msft",
+        "Merchant Category Name": "Computers, Computer Peripheral Equipment, Software",
+        "Transaction Date": "12/12/2021",
+        "Transaction Amount": 4414.63,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate For Local Government and Communities",
+        "Merchant Name": "Rics Subs Uk Cybs",
+        "Merchant Category Name": "Organizations, Membership-Not Elsewhere Classified",
+        "Transaction Date": "16/12/2021",
+        "Transaction Amount": 539,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate For Local Government and Communities",
+        "Merchant Name": "Rics Subs Uk Cybs",
+        "Merchant Category Name": "Organizations, Membership-Not Elsewhere Classified",
+        "Transaction Date": "16/12/2021",
+        "Transaction Amount": 539,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate For Local Government and Communities",
+        "Merchant Name": "Rics Subs Uk Cybs",
+        "Merchant Category Name": "Organizations, Membership-Not Elsewhere Classified",
+        "Transaction Date": "15/12/2021",
+        "Transaction Amount": 539,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate For Local Government and Communities",
+        "Merchant Name": "Rics Subs Uk Cybs",
+        "Merchant Category Name": "Organizations, Membership-Not Elsewhere Classified",
+        "Transaction Date": "15/12/2021",
+        "Transaction Amount": 539,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "WWW.F1TRAIN.CO.UK",
+        "Merchant Category Name": "Schools and Educational Svc-Not Elsewhere Classified",
+        "Transaction Date": "15/12/2021",
+        "Transaction Amount": 716.4,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "Prosep Filter Systems",
+        "Merchant Category Name": "Plumbing And Heating Equipment",
+        "Transaction Date": "10/12/2021",
+        "Transaction Amount": 533.28,
+        "Expense Description": "Vessel equipment"
+    },
+    {
+        "Directorate": "Directorate For Marine Scotland",
+        "Merchant Name": "WWW.PENNYANDGILES.COM",
+        "Merchant Category Name": "Electrical Parts And Equipment",
+        "Transaction Date": "22/12/2021",
+        "Transaction Amount": 593.52,
+        "Expense Description": "Vessel equipment"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "2U Getsmarter (Us) Llc",
+        "Merchant Category Name": "Schools and Educational Svc-Not Elsewhere Classified",
+        "Transaction Date": "20/12/2021",
+        "Transaction Amount": 526.6,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "Gp Smart",
+        "Merchant Category Name": "Industrial Supplies Not Elsewhere Classified",
+        "Transaction Date": "16/12/2021",
+        "Transaction Amount": 451.89,
+        "Expense Description": "Farm equipment - maintenance"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "Mcveigh Parker (Scotland)",
+        "Merchant Category Name": "Building Materials, Lumber Stores",
+        "Transaction Date": "15/12/2021",
+        "Transaction Amount": 377.19,
+        "Expense Description": "Farm equipment - maintenance"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "Linkedin Ireland Unlim",
+        "Merchant Category Name": "Direct Marketing-Continuity/Subscription Merchants",
+        "Transaction Date": "16/12/2021",
+        "Transaction Amount": 302.48,
+        "Expense Description": "Online IT Training"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "GENEIOUS.COM",
+        "Merchant Category Name": "Business Services-Not Elsewhere Classified",
+        "Transaction Date": "21/12/2021",
+        "Transaction Amount": 227.78,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "Parcelforce Worldwide",
+        "Merchant Category Name": "Freight Carrier,Trucking-Lcl/Lng Dist, Mvg/Storage",
+        "Transaction Date": "21/12/2021",
+        "Transaction Amount": 153.07,
+        "Expense Description": "Postal Services"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "Kaneka Eurogentec S.A.",
+        "Merchant Category Name": "Dental/Lab/Med/Ophthalmic Hosp Equip and Supplies",
+        "Transaction Date": "10/12/2021",
+        "Transaction Amount": 78.37,
+        "Expense Description": "Specialist laboratory equipment"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "Dejex Supplies",
+        "Merchant Category Name": "Lawn And Garden Supply Stores",
+        "Transaction Date": "16/12/2021",
+        "Transaction Amount": 3.67,
+        "Expense Description": "Scientific trial consumables"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "Elkay Laboratory",
+        "Merchant Category Name": "Industrial Supplies Not Elsewhere Classified",
+        "Transaction Date": "22/12/2021",
+        "Transaction Amount": -71.04,
+        "Expense Description": "Specialist laboratory equipment"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "Thistle Scientific Ltd",
+        "Merchant Category Name": "Colleges, Univ, Pro Schools, Junior Colleges",
+        "Transaction Date": "20/12/2021",
+        "Transaction Amount": -145.74,
+        "Expense Description": "Specialist laboratory equipment"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "Digicert Inc.",
+        "Merchant Category Name": "Business Services-Not Elsewhere Classified",
+        "Transaction Date": "24/12/2021",
+        "Transaction Amount": -220.45,
+        "Expense Description": "Specialist software - renewal"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "Www.Nwgb.Co.Uk",
+        "Merchant Category Name": "Utlts-Elctrc, Gas, Heating Oil, Sanitary, Water",
+        "Transaction Date": "20/12/2021",
+        "Transaction Amount": -295.15,
+        "Expense Description": "Building - payment charge"
+    },
+    {
+        "Directorate": "Directorate For Agriculture and Rural Economy",
+        "Merchant Name": "Scottish Power",
+        "Merchant Category Name": "Fuel Dealers-Coal, Fuel Oil, Liq Petroleum, Wood",
+        "Transaction Date": "13/12/2021",
+        "Transaction Amount": -369.85,
+        "Expense Description": "Building - payment charge"
+    },
+    {
+        "Directorate": "Directorate For Digital",
+        "Merchant Name": "Microsoft",
+        "Merchant Category Name": "Computers, Computer Peripheral Equipment, Software",
+        "Transaction Date": "19/12/2021",
+        "Transaction Amount": -444.56,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate For Digital",
+        "Merchant Name": "Civil Service College",
+        "Merchant Category Name": "Schools and Educational Svc-Not Elsewhere Classified",
+        "Transaction Date": "21/12/2021",
+        "Transaction Amount": -519.26,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate For Digital",
+        "Merchant Name": "Omniplex",
+        "Merchant Category Name": "Computer Software Stores",
+        "Transaction Date": "13/12/2021",
+        "Transaction Amount": -593.97,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate For Digital",
+        "Merchant Name": "Paypal Actnowtrain",
+        "Merchant Category Name": "Consulting, Management, And Public Relations Svcs",
+        "Transaction Date": "20/12/2021",
+        "Transaction Amount": -668.67,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate For Digital",
+        "Merchant Name": "Qa Ltd",
+        "Merchant Category Name": "Schools and Educational Svc-Not Elsewhere Classified",
+        "Transaction Date": "17/12/2021",
+        "Transaction Amount": -743.38,
+        "Expense Description": "External training course - fees"
+    },
+    {
+        "Directorate": "Directorate For Healthcare Quality and Improvement",
+        "Merchant Name": "Rics Subs Uk Cybs",
+        "Merchant Category Name": "Organizations, Membership-Not Elsewhere Classified",
+        "Transaction Date": "14/12/2021",
+        "Transaction Amount": -818.08,
+        "Expense Description": "Professional membership - fees"
+    },
+    {
+        "Directorate": "Directorate For Legal Services",
+        "Merchant Name": "Ao Retail Limited",
+        "Merchant Category Name": "Household Appliance Stores",
+        "Transaction Date": "22/12/2021",
+        "Transaction Amount": -892.78,
+        "Expense Description": "IT hardware - specialist equipment"
+    },
+    {
+        "Directorate": "Directorate For Local Government and Communities",
+        "Merchant Name": "Msft",
+        "Merchant Category Name": "Computers, Computer Peripheral Equipment, Software",
+        "Transaction Date": "12/12/2021",
+        "Transaction Amount": -967.49,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate For Local Government and Communities",
+        "Merchant Name": "Rics Subs Uk Cybs",
+        "Merchant Category Name": "Organizations, Membership-Not Elsewhere Classified",
+        "Transaction Date": "16/12/2021",
+        "Transaction Amount": -1042.19,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate For Local Government and Communities",
+        "Merchant Name": "Rics Subs Uk Cybs",
+        "Merchant Category Name": "Organizations, Membership-Not Elsewhere Classified",
+        "Transaction Date": "16/12/2021",
+        "Transaction Amount": -1116.9,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate For Local Government and Communities",
+        "Merchant Name": "Rics Subs Uk Cybs",
+        "Merchant Category Name": "Organizations, Membership-Not Elsewhere Classified",
+        "Transaction Date": "15/12/2021",
+        "Transaction Amount": -1191.6,
+        "Expense Description": "Professional subscription - fees"
+    },
+    {
+        "Directorate": "Directorate For Local Government and Communities",
+        "Merchant Name": "Rics Subs Uk Cybs",
+        "Merchant Category Name": "Organizations, Membership-Not Elsewhere Classified",
+        "Transaction Date": "15/12/2021",
+        "Transaction Amount": -1266.31,
+        "Expense Description": "Professional subscription - fees"
+    }
+]
