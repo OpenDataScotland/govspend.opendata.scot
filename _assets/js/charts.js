@@ -21,7 +21,7 @@ export function spendByDirectorate(jsonElementId, chartElementId) {
             text: 'Spend by Directorate'
         },
         xAxis: {
-            categories: groupedData.map(x => x.directorate),            
+            categories: groupedData.map(x => x.directorate.replaceAll(/Directorate for /gi, "")),
         },
         yAxis: {
             title: {
