@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+        
+            <url>
+                <loc>https://govspend.opendata.scot/acknowledgements/</loc>
+                <lastmod>2023-08-15T19:40:10.560Z</lastmod>
+            </url>
+            
+        
+        
+            <url>
+                <loc>https://govspend.opendata.scot/contact/</loc>
+                <lastmod>2023-08-15T19:40:10.560Z</lastmod>
+            </url>
+            
+        
+        
+            <url>
+                <loc>https://govspend.opendata.scot/</loc>
+                <lastmod>2023-08-15T19:40:10.560Z</lastmod>
+            </url>
+            
+        
+        
+            <url>
+                <loc>https://govspend.opendata.scot/sitemap.xml</loc>
+                <lastmod>2023-08-15T19:40:10.564Z</lastmod>
+            </url>
+            
+        
+        
+        
+        
+        
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2016-05/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2016-05.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2016-06/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2016-06.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2016-07/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2016-07.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2016-08/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2016-08.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2016-09/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2016-09.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2016-10/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2016-10.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2016-11/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2016-11.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2016-12/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2016-12.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2017-01/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2017-01.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2017-02/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2017-02.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2017-03/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2017-03.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2017-04/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2017-04.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2017-05/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2017-05.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2017-06/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2017-06.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2017-07/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2017-07.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2017-08/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2017-08.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2017-09/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2017-09.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2017-10/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2017-10.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2017-11/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2017-11.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2017-12/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2017-12.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2018-01/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2018-01.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2018-02/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2018-02.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2018-03/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2018-03.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2018-04/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2018-04.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2018-05/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2018-05.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2018-06/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2018-06.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2018-07/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2018-07.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2018-08/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2018-08.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2018-09/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2018-09.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2018-10/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2018-10.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2018-11/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2018-11.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2018-12/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2018-12.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2019-01/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2019-01.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2019-02/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2019-02.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2019-03/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2019-03.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2019-04/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2019-04.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2019-05/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2019-05.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2019-06/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2019-06.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2019-07/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2019-07.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2019-08/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2019-08.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2019-09/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2019-09.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2019-10/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2019-10.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2019-11/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2019-11.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2019-12/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2019-12.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2020-01/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2020-01.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2020-02/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2020-02.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2020-03/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2020-03.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2020-04/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2020-04.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2020-05/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2020-05.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2020-06/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2020-06.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2020-07/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2020-07.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2020-08/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2020-08.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2020-09/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2020-09.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2020-10/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2020-10.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2020-11/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2020-11.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2020-12/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2020-12.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2021-01/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2021-01.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2021-02/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2021-02.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2021-03/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2021-03.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2021-04/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2021-04.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2021-05/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2021-05.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2021-06/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2021-06.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2021-07/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2021-07.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2021-08/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2021-08.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2021-09/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2021-09.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2021-10/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2021-10.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2021-11/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2021-11.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2021-12/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2021-12.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2022-01/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2022-01.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2022-02/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2022-02.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2022-03/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2022-03.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2022-04/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2022-04.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2022-05/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2022-05.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2022-06/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2022-06.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2022-07/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2022-07.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2022-08/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2022-08.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2022-09/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2022-09.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2022-10/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2022-10.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2022-11/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2022-11.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2022-12/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2022-12.json</loc>
+            </url>
+        
+    </urlset>
