@@ -1,0 +1,23 @@
+---
+permalink: /sitemap.xml
+addAllPagesToCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% for page in collections.all %}
+        {%if page.url.startsWith("/spends/") == false%}
+            <url>
+                <loc>{{ site.url }}{{ page.url | url }}</loc>
+                <lastmod>{{ page.date.toISOString() }}</lastmod>
+            </url>
+            {%endif%}
+        {% endfor %}
+        {% for spendData in collections.spendsOver500 %}
+            <url>
+                <loc>{{ site.url }}/spends/{{ spendData.title | url }}/</loc>
+            </url>
+            <url>
+                <loc>{{ site.url }}/spends/{{ spendData.title | url }}.json</loc>
+            </url>
+        {% endfor %}
+    </urlset>

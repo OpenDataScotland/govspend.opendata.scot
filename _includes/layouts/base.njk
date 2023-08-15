@@ -1,5 +1,4 @@
-{% set site_name = "ODS GovSpend" %}
-{% set page_title = title + " | " + site_name %}
+{% set page_title = title + " | " + site.name %}
 
 <!doctype html>
 <html lang="en" class="h-100">
@@ -10,8 +9,8 @@
 
     {# Metadata #}
     <meta property="og:title" content="{{page_title}}">
-    <meta property="og:site_name" content="{{site_name}}">
-    <meta property="og:url" content="https://govspend.opendata.scot{{page.url}}">
+    <meta property="og:site_name" content="{{ site.name }}">
+    <meta property="og:url" content="{{site.url}}/{{page.url}}">
     <meta property="og:description" content="{{description}}">
     <meta name="description" content="{{description}}">
 
@@ -20,7 +19,7 @@
     <script src="/assets/main.js?v={{ site.buildTime }}"></script>
 
     {# Analytics #}
-    <script defer data-domain="govspend.opendata.scot" src="https://plausible.io/js/script.js"></script>    
+    <script defer data-domain="govspend.opendata.scot" src="https://plausible.io/js/script.js"></script>
   </head>
 
 </head>
@@ -29,13 +28,13 @@
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">{{site_name}}</a>
+        <a class="navbar-brand" href="/">{{site.name}}</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            {# TODO: Add active class depending on what page is currently being visited #}            
+            {# TODO: Add active class depending on what page is currently being visited #}
             <li class="nav-item">
               <a class="nav-link active" href="/">Home</a>
             </li>
