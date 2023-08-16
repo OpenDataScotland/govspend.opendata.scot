@@ -4,8 +4,14 @@ title: Home
 description: "An open data source of Scottish Government spending data"
 ---
 
+<script id="spend-data" type="application/json">
+  {{ collections.spendsOver500_monthly | jsonify | safe }}
+</script>
+
 <h1>Welcome to Open Data Scotland GovSpend</h1>
 <p class="lead">An open data source of Scottish Government spending data</p>
+
+<div id="chart-spend-by-month" style="width:100%; height:500px;"></div>
 
 <h2>Spends over £500 per month</h2>
 
@@ -16,3 +22,9 @@ description: "An open data source of Scottish Government spending data"
     </li>
   {% endfor %}
 </ul>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    charts.spendByMonth("spend-data", "chart-spend-by-month");
+  });
+</script>

@@ -21,22 +21,30 @@ module.exports = function (eleventyConfig) {
     return spendCollection;
   });
 
+  eleventyConfig.addCollection("spendsOver500_monthly", (collection) => {
+    return _(collection.getAll()[0].data.spendsOver500).transform(function (result, value, key) {
+      result.push({
+        title: key,
+        displayTitle: (new Date(`${key}-01`)).toLocaleString("en-GB", { month: "long", year: "numeric" }),
+        total: _(value).sumBy("Transaction Amount")
+      })
+    }, []);
+  })
+
   eleventyConfig.addFilter("jsonify", function (value) { return JSON.stringify(value, null, 4) });
 
   eleventyConfig.addFilter("fixed", function (value, length) { return value?.toFixed(length || 2) });
 
   eleventyConfig.addFilter("sum", function (value, propName) {
-    return value.reduce((accumulator, currentValue) => {
-      return accumulator + currentValue[propName]
-    }, 0);
+    return _(value).sumBy(propName);
   });
 
   const GBPFormat = new Intl.NumberFormat('en-GB', {
     style: 'currency',
     currency: 'GBP',
   });
-  
-  function toCurrency(value){
+
+  function toCurrency(value) {
     return GBPFormat.format(value);
   }
 

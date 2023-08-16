@@ -41,5 +41,36 @@ export function spendByDirectorate(jsonElementId, chartElementId) {
             enabled: false
         },
     });
+}
 
+export function spendByMonth(jsonElementId, chartElementId) {
+    const jsonData = JSON.parse(document.getElementById(jsonElementId).textContent);
+
+    const chart = Highcharts.chart(chartElementId, {
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'Spends over £500 by month'
+        },
+        xAxis: {            
+            type: "category"
+        },
+        yAxis: {
+            title: {text:"Spend in £"}
+        },
+        series: [{
+            name: "Spend for month by all directorates",
+            data: jsonData.map(x => [x.displayTitle, x.total])
+        }],
+        tooltip: {
+            useHTML: true,
+            formatter: function () {                
+                return `<p><strong>${this.point.name}</strong></p><p>${GBPFormat.format(this.y)}</p>`;
+            }
+        },
+        credits: {
+            enabled: false
+        },
+    });
 }
