@@ -15,8 +15,8 @@
     <meta name="description" content="An open data source of Scottish Government spending data">
 
     
-    <link rel="stylesheet" href="/assets/main.css?v=1692128614288"/>
-    <script src="/assets/main.js?v=1692128614288"></script>
+    <link rel="stylesheet" href="/assets/main.css?v=1692218239156"/>
+    <script src="/assets/main.js?v=1692218239156"></script>
 
     
     <script defer data-domain="govspend.opendata.scot" src="https://plausible.io/js/script.js"></script>
@@ -54,8 +54,415 @@
   <main class="flex-shrink-0">
     <div class="container my-4">
       
+<script id="spend-data" type="application/json">
+  [
+    {
+        "title": "2016-05",
+        "displayTitle": "May 2016",
+        "total": 39808.20999999999
+    },
+    {
+        "title": "2016-06",
+        "displayTitle": "June 2016",
+        "total": 52085.85999999999
+    },
+    {
+        "title": "2016-07",
+        "displayTitle": "July 2016",
+        "total": 32529.219999999998
+    },
+    {
+        "title": "2016-08",
+        "displayTitle": "August 2016",
+        "total": 36394.66
+    },
+    {
+        "title": "2016-09",
+        "displayTitle": "September 2016",
+        "total": 56187.24
+    },
+    {
+        "title": "2016-10",
+        "displayTitle": "October 2016",
+        "total": 45598.11
+    },
+    {
+        "title": "2016-11",
+        "displayTitle": "November 2016",
+        "total": 51195.26000000001
+    },
+    {
+        "title": "2016-12",
+        "displayTitle": "December 2016",
+        "total": 39031.75
+    },
+    {
+        "title": "2017-01",
+        "displayTitle": "January 2017",
+        "total": 54953.469999999994
+    },
+    {
+        "title": "2017-02",
+        "displayTitle": "February 2017",
+        "total": 80082.1
+    },
+    {
+        "title": "2017-03",
+        "displayTitle": "March 2017",
+        "total": 115847.9
+    },
+    {
+        "title": "2017-04",
+        "displayTitle": "April 2017",
+        "total": 81159.65
+    },
+    {
+        "title": "2017-05",
+        "displayTitle": "May 2017",
+        "total": 36586.549999999996
+    },
+    {
+        "title": "2017-06",
+        "displayTitle": "June 2017",
+        "total": 56061.170000000006
+    },
+    {
+        "title": "2017-07",
+        "displayTitle": "July 2017",
+        "total": 26836.760000000002
+    },
+    {
+        "title": "2017-08",
+        "displayTitle": "August 2017",
+        "total": 89690.38
+    },
+    {
+        "title": "2017-09",
+        "displayTitle": "September 2017",
+        "total": 117726.59000000003
+    },
+    {
+        "title": "2017-10",
+        "displayTitle": "October 2017",
+        "total": 114237.92999999998
+    },
+    {
+        "title": "2017-11",
+        "displayTitle": "November 2017",
+        "total": 114237.92999999998
+    },
+    {
+        "title": "2017-12",
+        "displayTitle": "December 2017",
+        "total": 229198.73000000016
+    },
+    {
+        "title": "2018-01",
+        "displayTitle": "January 2018",
+        "total": 142404.80999999997
+    },
+    {
+        "title": "2018-02",
+        "displayTitle": "February 2018",
+        "total": 229198.73000000016
+    },
+    {
+        "title": "2018-03",
+        "displayTitle": "March 2018",
+        "total": 305418.02
+    },
+    {
+        "title": "2018-04",
+        "displayTitle": "April 2018",
+        "total": 149281.85000000006
+    },
+    {
+        "title": "2018-05",
+        "displayTitle": "May 2018",
+        "total": 114339.26999999999
+    },
+    {
+        "title": "2018-06",
+        "displayTitle": "June 2018",
+        "total": 157929.97
+    },
+    {
+        "title": "2018-07",
+        "displayTitle": "July 2018",
+        "total": 145307.21000000002
+    },
+    {
+        "title": "2018-08",
+        "displayTitle": "August 2018",
+        "total": 186194.97
+    },
+    {
+        "title": "2018-09",
+        "displayTitle": "September 2018",
+        "total": 186194.97
+    },
+    {
+        "title": "2018-10",
+        "displayTitle": "October 2018",
+        "total": 202249.86
+    },
+    {
+        "title": "2018-11",
+        "displayTitle": "November 2018",
+        "total": 262406.5600000002
+    },
+    {
+        "title": "2018-12",
+        "displayTitle": "December 2018",
+        "total": 144674.43
+    },
+    {
+        "title": "2019-01",
+        "displayTitle": "January 2019",
+        "total": 225894.02
+    },
+    {
+        "title": "2019-02",
+        "displayTitle": "February 2019",
+        "total": 338021.3900000001
+    },
+    {
+        "title": "2019-03",
+        "displayTitle": "March 2019",
+        "total": 355073
+    },
+    {
+        "title": "2019-04",
+        "displayTitle": "April 2019",
+        "total": 236785.03000000003
+    },
+    {
+        "title": "2019-05",
+        "displayTitle": "May 2019",
+        "total": 195258.99000000002
+    },
+    {
+        "title": "2019-06",
+        "displayTitle": "June 2019",
+        "total": 280716.11999999994
+    },
+    {
+        "title": "2019-07",
+        "displayTitle": "July 2019",
+        "total": 172929.17999999996
+    },
+    {
+        "title": "2019-08",
+        "displayTitle": "August 2019",
+        "total": 246790.37999999998
+    },
+    {
+        "title": "2019-09",
+        "displayTitle": "September 2019",
+        "total": 238641.15
+    },
+    {
+        "title": "2019-10",
+        "displayTitle": "October 2019",
+        "total": 308396.03
+    },
+    {
+        "title": "2019-11",
+        "displayTitle": "November 2019",
+        "total": 282627.29
+    },
+    {
+        "title": "2019-12",
+        "displayTitle": "December 2019",
+        "total": 229403.36000000002
+    },
+    {
+        "title": "2020-01",
+        "displayTitle": "January 2020",
+        "total": 265813.6500000001
+    },
+    {
+        "title": "2020-02",
+        "displayTitle": "February 2020",
+        "total": 463459.25999999983
+    },
+    {
+        "title": "2020-03",
+        "displayTitle": "March 2020",
+        "total": 490664.5000000001
+    },
+    {
+        "title": "2020-04",
+        "displayTitle": "April 2020",
+        "total": 522746.3399999998
+    },
+    {
+        "title": "2020-05",
+        "displayTitle": "May 2020",
+        "total": 184379.5
+    },
+    {
+        "title": "2020-06",
+        "displayTitle": "June 2020",
+        "total": 190664.67999999996
+    },
+    {
+        "title": "2020-07",
+        "displayTitle": "July 2020",
+        "total": 140881.65999999997
+    },
+    {
+        "title": "2020-08",
+        "displayTitle": "August 2020",
+        "total": 129885.87
+    },
+    {
+        "title": "2020-09",
+        "displayTitle": "September 2020",
+        "total": 168079.29999999993
+    },
+    {
+        "title": "2020-10",
+        "displayTitle": "October 2020",
+        "total": 184896.97
+    },
+    {
+        "title": "2020-11",
+        "displayTitle": "November 2020",
+        "total": 208687.13000000003
+    },
+    {
+        "title": "2020-12",
+        "displayTitle": "December 2020",
+        "total": 202750.61999999997
+    },
+    {
+        "title": "2021-01",
+        "displayTitle": "January 2021",
+        "total": 205850.81
+    },
+    {
+        "title": "2021-02",
+        "displayTitle": "February 2021",
+        "total": 193386.7399999999
+    },
+    {
+        "title": "2021-03",
+        "displayTitle": "March 2021",
+        "total": 337432.2899999999
+    },
+    {
+        "title": "2021-04",
+        "displayTitle": "April 2021",
+        "total": 127434.02000000002
+    },
+    {
+        "title": "2021-05",
+        "displayTitle": "May 2021",
+        "total": 157665.49
+    },
+    {
+        "title": "2021-06",
+        "displayTitle": "June 2021",
+        "total": 223134.26999999993
+    },
+    {
+        "title": "2021-07",
+        "displayTitle": "July 2021",
+        "total": 741120.0300000001
+    },
+    {
+        "title": "2021-08",
+        "displayTitle": "August 2021",
+        "total": 120804.86
+    },
+    {
+        "title": "2021-09",
+        "displayTitle": "September 2021",
+        "total": 158889.66999999998
+    },
+    {
+        "title": "2021-10",
+        "displayTitle": "October 2021",
+        "total": 180485.41999999993
+    },
+    {
+        "title": "2021-11",
+        "displayTitle": "November 2021",
+        "total": 263580.8099999998
+    },
+    {
+        "title": "2021-12",
+        "displayTitle": "December 2021",
+        "total": 35828.210000000014
+    },
+    {
+        "title": "2022-01",
+        "displayTitle": "January 2022",
+        "total": 152804.74000000002
+    },
+    {
+        "title": "2022-02",
+        "displayTitle": "February 2022",
+        "total": 256381.28999999995
+    },
+    {
+        "title": "2022-03",
+        "displayTitle": "March 2022",
+        "total": 726743.1600000001
+    },
+    {
+        "title": "2022-04",
+        "displayTitle": "April 2022",
+        "total": 824103.8400000003
+    },
+    {
+        "title": "2022-05",
+        "displayTitle": "May 2022",
+        "total": 630147.1599999999
+    },
+    {
+        "title": "2022-06",
+        "displayTitle": "June 2022",
+        "total": 291727.74
+    },
+    {
+        "title": "2022-07",
+        "displayTitle": "July 2022",
+        "total": 2327144.3200000003
+    },
+    {
+        "title": "2022-08",
+        "displayTitle": "August 2022",
+        "total": 781224.7100000002
+    },
+    {
+        "title": "2022-09",
+        "displayTitle": "September 2022",
+        "total": 427027.53000000014
+    },
+    {
+        "title": "2022-10",
+        "displayTitle": "October 2022",
+        "total": 320257.6100000002
+    },
+    {
+        "title": "2022-11",
+        "displayTitle": "November 2022",
+        "total": 259675.65000000002
+    },
+    {
+        "title": "2022-12",
+        "displayTitle": "December 2022",
+        "total": 382158.98
+    }
+]
+</script>
+
 <h1>Welcome to Open Data Scotland GovSpend</h1>
 <p class="lead">An open data source of Scottish Government spending data</p>
+
+<div id="chart-spend-by-month" style="width:100%; height:500px;"></div>
 
 <h2>Spends over £500 per month</h2>
 
@@ -382,6 +789,12 @@
     </li>
   
 </ul>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    charts.spendByMonth("spend-data", "chart-spend-by-month");
+  });
+</script>
     </div>
   </main>
 

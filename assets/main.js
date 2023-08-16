@@ -8235,6 +8235,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.spendByDirectorate = spendByDirectorate;
+exports.spendByMonth = spendByMonth;
 
 var _constants = require("./constants");
 
@@ -8274,6 +8275,41 @@ function spendByDirectorate(jsonElementId, chartElementId) {
     tooltip: {
       formatter: function formatter() {
         return _constants.GBPFormat.format(this.y);
+      }
+    },
+    credits: {
+      enabled: false
+    }
+  });
+}
+
+function spendByMonth(jsonElementId, chartElementId) {
+  var jsonData = JSON.parse(document.getElementById(jsonElementId).textContent);
+  var chart = Highcharts.chart(chartElementId, {
+    chart: {
+      type: 'line'
+    },
+    title: {
+      text: 'Spends over £500 by month'
+    },
+    xAxis: {
+      type: "category"
+    },
+    yAxis: {
+      title: {
+        text: "Spend in £"
+      }
+    },
+    series: [{
+      name: "Spend for month by all directorates",
+      data: jsonData.map(function (x) {
+        return [x.displayTitle, x.total];
+      })
+    }],
+    tooltip: {
+      useHTML: true,
+      formatter: function formatter() {
+        return "<p><strong>".concat(this.point.name, "</strong></p><p>").concat(_constants.GBPFormat.format(this.y), "</p>");
       }
     },
     credits: {
