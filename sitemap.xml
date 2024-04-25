@@ -4,28 +4,28 @@
         
             <url>
                 <loc>https://govspend.opendata.scot/acknowledgements/</loc>
-                <lastmod>2023-08-16T20:36:52.117Z</lastmod>
+                <lastmod>2024-04-25T19:28:39.775Z</lastmod>
             </url>
             
         
         
             <url>
                 <loc>https://govspend.opendata.scot/contact/</loc>
-                <lastmod>2023-08-16T20:36:52.117Z</lastmod>
+                <lastmod>2024-04-25T19:28:39.775Z</lastmod>
             </url>
             
         
         
             <url>
                 <loc>https://govspend.opendata.scot/</loc>
-                <lastmod>2023-08-16T20:36:52.117Z</lastmod>
+                <lastmod>2024-04-25T19:28:39.775Z</lastmod>
             </url>
             
         
         
             <url>
                 <loc>https://govspend.opendata.scot/sitemap.xml</loc>
-                <lastmod>2023-08-16T20:36:52.121Z</lastmod>
+                <lastmod>2024-04-25T19:28:39.779Z</lastmod>
             </url>
             
         
@@ -592,6 +592,69 @@
             </url>
             <url>
                 <loc>https://govspend.opendata.scot/spends/2022-12.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2023-01/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2023-01.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2023-02/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2023-02.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2023-03/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2023-03.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2023-04/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2023-04.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2023-05/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2023-05.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2023-06/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2023-06.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2023-07/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2023-07.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2023-08/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2023-08.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2023-09/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2023-09.json</loc>
             </url>
         
     </urlset>
