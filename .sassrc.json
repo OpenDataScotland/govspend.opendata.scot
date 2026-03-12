@@ -1,0 +1,6 @@
+{
+  "quietDeps": true,
+  "loadPaths": [
+    "node_modules"
+  ]
+}
