@@ -1,6 +1,8 @@
 """Script to scrape payment card spend data over £500 from gov.scot"""
 
+import argparse
 import concurrent.futures
+import io
 import os
 import urllib.parse
 from datetime import datetime
@@ -32,8 +34,6 @@ COLUMN_HEADERS_ALIASES = {
     "Final Description": "Expense Description",
     "Final Expense Description": "Expense Description",
 }
-
-temp_headers = []
 
 def clean_currency(currency_value, temp):
     """Takes currency strings and turns them into floats with 2 decimal places"""
@@ -94,7 +94,7 @@ def clean_report(report_dataframe, temp):
     return report_dataframe
 
 
-def extract_report(tag_href, tag_text):
+def extract_report(tag_href, tag_text, skip_existing=False):
     """Extracts the month's spending report from the given href URL and saves it to a JSON file"""
 
     report_url = tag_href
@@ -108,6 +108,12 @@ def extract_report(tag_href, tag_text):
     report_year_number = report_year_month_array[1]
     report_year_month = f"{report_year_number}-{report_month_number}"
 
+    save_file = f"{SAVE_PATH}/{report_year_month}.json"
+
+    if skip_existing and os.path.exists(save_file):
+        print(f"Skipping {report_title} - data file already exists")
+        return f"Skipped {report_title}"
+
     print(f"Accessing spend for {report_title} at {report_url}...")
 
     report_url = urllib.parse.urljoin(MONTHLY_SPEND_URL, report_url)
@@ -117,7 +123,7 @@ def extract_report(tag_href, tag_text):
 
     report_table = report_soup.find("table")
 
-    report_dataframe = pd.read_html(str(report_table), header=0, encoding="utf8")[0]
+    report_dataframe = pd.read_html(io.StringIO(str(report_table)), header=0, encoding="utf8")[0]
 
     report_dataframe = clean_report(report_dataframe, report_title)
 
@@ -129,13 +135,21 @@ def extract_report(tag_href, tag_text):
         force_ascii=False,
     )
 
-    temp_headers.append([report_year_month] + report_dataframe.columns.tolist())
-
     return f"Completed {report_title} at {report_url}"
 
 
 def main():
     """Main method"""
+
+    parser = argparse.ArgumentParser(
+        description="Scrape government spend data over £500 from gov.scot"
+    )
+    parser.add_argument(
+        "--skip-existing",
+        action="store_true",
+        help="Skip months that already have data files (useful for incremental updates)",
+    )
+    args = parser.parse_args()
 
     # Pre-check if the data folder exists and if not, create it
     if not os.path.exists(SAVE_PATH):
@@ -155,17 +169,29 @@ def main():
 
     with concurrent.futures.ThreadPoolExecutor() as executor:
         futures = [
-            executor.submit(extract_report, tag["href"], tag.text)
+            executor.submit(extract_report, tag["href"], tag.text, args.skip_existing)
             for tag in report_url_tags
         ]
 
+        results = []
         for future in concurrent.futures.as_completed(futures):
             result = future.result()
+            results.append(result)
             print(result)
 
-    headers_df = pd.DataFrame(temp_headers)
+    # Regenerate headers.csv only when new files were downloaded
+    new_downloads = [r for r in results if r.startswith("Completed")]
+    if new_downloads:
+        all_headers = []
+        for json_file in sorted(os.listdir(SAVE_PATH)):
+            if json_file.endswith(".json"):
+                year_month = json_file.replace(".json", "")
+                df = pd.read_json(f"{SAVE_PATH}/{json_file}")
+                all_headers.append([year_month] + df.columns.tolist())
 
-    headers_df.to_csv("headers.csv", index=False)
+        if all_headers:
+            headers_df = pd.DataFrame(all_headers)
+            headers_df.to_csv("headers.csv", index=False)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,754 @@
+[
+    {
+        "Directorate":"Directorate For Agriculture & Rural Economy",
+        "Merchant Name":"Carters Packaging Ltd",
+        "Merchant Category Name":"Business Services-Not Elsewhere Classified",
+        "Transaction Date":"09\/06\/2025",
+        "Transaction Amount":720.0,
+        "Expense Description":"Specialist laboratory equipment"
+    },
+    {
+        "Directorate":"Directorate For Agriculture & Rural Economy",
+        "Merchant Name":"Www.Alsglobal.Pt\/",
+        "Merchant Category Name":"Business Services-Not Elsewhere Classified",
+        "Transaction Date":"09\/06\/2025",
+        "Transaction Amount":551.84,
+        "Expense Description":"Specialist laboratory equipment"
+    },
+    {
+        "Directorate":"Directorate For Agriculture & Rural Economy",
+        "Merchant Name":"Orkney Islands Council",
+        "Merchant Category Name":"Government Services-Not Elsewhere Classified",
+        "Transaction Date":"04\/06\/2025",
+        "Transaction Amount":1021.6,
+        "Expense Description":"Building landscaping"
+    },
+    {
+        "Directorate":"Directorate For Agriculture & Rural Economy",
+        "Merchant Name":"Cell Projects Ltd",
+        "Merchant Category Name":"Dental\/Lab\/Med\/Ophthalmic Hosp Equip & Supplies",
+        "Transaction Date":"20\/06\/2025",
+        "Transaction Amount":1703.86,
+        "Expense Description":"Specialist laboratory equipment"
+    },
+    {
+        "Directorate":"Directorate For Agriculture & Rural Economy",
+        "Merchant Name":"Www.Bcpc.Org",
+        "Merchant Category Name":"Book Stores",
+        "Transaction Date":"17\/06\/2025",
+        "Transaction Amount":903.12,
+        "Expense Description":"Professional subscription - fees"
+    },
+    {
+        "Directorate":"Directorate For Agriculture & Rural Economy",
+        "Merchant Name":"Scan Computers Int Ltd",
+        "Merchant Category Name":"Electronic Sales",
+        "Transaction Date":"12\/06\/2025",
+        "Transaction Amount":1243.98,
+        "Expense Description":"IT hardware - specialist equipment"
+    },
+    {
+        "Directorate":"Directorate For Agriculture & Rural Economy",
+        "Merchant Name":"Amazon.Co.Uk 0X4Rj5Xm5",
+        "Merchant Category Name":"Direct Marketing-Other Direct Marketers\/Not Elsew.",
+        "Transaction Date":"11\/06\/2025",
+        "Transaction Amount":1174.98,
+        "Expense Description":"IT hardware - specialist equipment"
+    },
+    {
+        "Directorate":"Directorate For Agriculture & Rural Economy",
+        "Merchant Name":"Hp Inc Hp.Com Store Uk",
+        "Merchant Category Name":"Electronic Sales",
+        "Transaction Date":"31\/05\/2025",
+        "Transaction Amount":3971.99,
+        "Expense Description":"IT hardware - specialist equipment"
+    },
+    {
+        "Directorate":"Directorate For Agriculture & Rural Economy",
+        "Merchant Name":"His Ltd",
+        "Merchant Category Name":"Industrial Supplies Not Elsewhere Classified",
+        "Transaction Date":"05\/06\/2025",
+        "Transaction Amount":1163.47,
+        "Expense Description":"Specialist protective clothing"
+    },
+    {
+        "Directorate":"Directorate For Agriculture & Rural Economy",
+        "Merchant Name":"Winterhalter Ltd",
+        "Merchant Category Name":"Commercial Equipment, Not Elsewhere Classified",
+        "Transaction Date":"30\/05\/2025",
+        "Transaction Amount":1892.4,
+        "Expense Description":"External support services"
+    },
+    {
+        "Directorate":"Directorate For Agriculture & Rural Economy",
+        "Merchant Name":"Interfocus Ltd",
+        "Merchant Category Name":"Health Practitioners, Medical Srvcs-Not Elsewhere",
+        "Transaction Date":"19\/06\/2025",
+        "Transaction Amount":689.4,
+        "Expense Description":"Specialist laboratory equipment"
+    },
+    {
+        "Directorate":"Directorate For Agriculture & Rural Economy",
+        "Merchant Name":"Www.Royensoc.Co.Uk",
+        "Merchant Category Name":"Associations-Civic, Social, And Fraternal",
+        "Transaction Date":"26\/06\/2025",
+        "Transaction Amount":570.0,
+        "Expense Description":"External conference - fees"
+    },
+    {
+        "Directorate":"Directorate For Agriculture & Rural Economy",
+        "Merchant Name":"Sq Events Fantastique",
+        "Merchant Category Name":"Caterers",
+        "Transaction Date":"10\/06\/2025",
+        "Transaction Amount":948.0,
+        "Expense Description":"External training course - catering fees"
+    },
+    {
+        "Directorate":"Directorate For Agriculture & Rural Economy",
+        "Merchant Name":"Sp Gs Equestrian",
+        "Merchant Category Name":"Sports Apparel, Riding Apparel Stores",
+        "Transaction Date":"17\/06\/2025",
+        "Transaction Amount":562.79,
+        "Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate For Chief Operating Officer",
+        "Merchant Name":"Miro.Com",
+        "Merchant Category Name":"Comp Programing,Data Prcsng,Intgrtd Sys Dsgn Srvs",
+        "Transaction Date":"20\/06\/2025",
+        "Transaction Amount":1240.94,
+        "Expense Description":"Professional subscription - fees"
+    },
+    {
+        "Directorate":"Directorate For Children & Families",
+        "Merchant Name":"Mural",
+        "Merchant Category Name":"Computer Software Stores",
+        "Transaction Date":"13\/06\/2025",
+        "Transaction Amount":639.04,
+        "Expense Description":"Professional subscription - fees"
+    },
+    {
+        "Directorate":"Directorate For Comms, Ministerial Support & Facil",
+        "Merchant Name":"Www.Lexisnexis.Co.Uk",
+        "Merchant Category Name":"Miscellaneous Publishing And Printing",
+        "Transaction Date":"02\/06\/2025",
+        "Transaction Amount":764.7,
+        "Expense Description":"Professional subscription - fees"
+    },
+    {
+        "Directorate":"Directorate For Corporate Transformation & Workp",
+        "Merchant Name":"Bemrosebooth",
+        "Merchant Category Name":"Quick Copy,Reproduction And Blueprinting Services",
+        "Transaction Date":"20\/06\/2025",
+        "Transaction Amount":1481.94,
+        "Expense Description":"Office equipment"
+    },
+    {
+        "Directorate":"Directorate For Corporate Transformation & Workp",
+        "Merchant Name":"Kia Mg Edinburgh",
+        "Merchant Category Name":"Automobile And Truck Dealers-(Used Only)-Sales",
+        "Transaction Date":"11\/06\/2025",
+        "Transaction Amount":667.79,
+        "Expense Description":"Vehicle - maintenance"
+    },
+    {
+        "Directorate":"Directorate For Corporate Transformation & Workp",
+        "Merchant Name":"Dundee Mercedes",
+        "Merchant Category Name":"Automobile And Truck Dealers-(Used Only)-Sales",
+        "Transaction Date":"09\/06\/2025",
+        "Transaction Amount":506.74,
+        "Expense Description":"Vehicle - maintenance"
+    },
+    {
+        "Directorate":"Directorate For Corporate Transformation & Workp",
+        "Merchant Name":"Peoples",
+        "Merchant Category Name":"Auto & Truck Dlrs-Sales,Svc, Reprs,Prts, & Leasing",
+        "Transaction Date":"25\/06\/2025",
+        "Transaction Amount":1779.34,
+        "Expense Description":"Vehicle - maintenance"
+    },
+    {
+        "Directorate":"Directorate For Corporate Transformation & Workp",
+        "Merchant Name":"Posturite Ltd",
+        "Merchant Category Name":"Miscellaneous House Furnishing Specialty Shops",
+        "Transaction Date":"26\/06\/2025",
+        "Transaction Amount":1414.08,
+        "Expense Description":"Specialist IT equipment"
+    },
+    {
+        "Directorate":"Directorate For Digital",
+        "Merchant Name":"Starlink Internet",
+        "Merchant Category Name":"Computer Network\/Information Services",
+        "Transaction Date":"09\/06\/2025",
+        "Transaction Amount":522.0,
+        "Expense Description":"Professional subscription - fees"
+    },
+    {
+        "Directorate":"Directorate For Digital",
+        "Merchant Name":"Paddle.Net Easyretro",
+        "Merchant Category Name":"Digital Goods Software Applications",
+        "Transaction Date":"16\/06\/2025",
+        "Transaction Amount":600.0,
+        "Expense Description":"Specialist software - renewal"
+    },
+    {
+        "Directorate":"Directorate For Digital",
+        "Merchant Name":"Notion Labs, Inc.",
+        "Merchant Category Name":"Comp Programing,Data Prcsng,Intgrtd Sys Dsgn Srvs",
+        "Transaction Date":"16\/06\/2025",
+        "Transaction Amount":548.54,
+        "Expense Description":"Professional subscription - fees"
+    },
+    {
+        "Directorate":"Directorate For Digital",
+        "Merchant Name":"Personal Career Manage",
+        "Merchant Category Name":"Consulting, Management, And Public Relations Svcs",
+        "Transaction Date":"20\/06\/2025",
+        "Transaction Amount":600.0,
+        "Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate For Digital",
+        "Merchant Name":"Figma",
+        "Merchant Category Name":"Comp Programing,Data Prcsng,Intgrtd Sys Dsgn Srvs",
+        "Transaction Date":"18\/06\/2025",
+        "Transaction Amount":879.03,
+        "Expense Description":"Professional subscription - fees"
+    },
+    {
+        "Directorate":"Directorate For Digital",
+        "Merchant Name":"Adobe.Com",
+        "Merchant Category Name":"Digital Goods Multi Category",
+        "Transaction Date":"13\/06\/2025",
+        "Transaction Amount":656.21,
+        "Expense Description":"Professional subscription - fees"
+    },
+    {
+        "Directorate":"Directorate For Digital",
+        "Merchant Name":"Finops Fou Finops Cer",
+        "Merchant Category Name":"Organizations, Membership-Not Elsewhere Classified",
+        "Transaction Date":"04\/06\/2025",
+        "Transaction Amount":1908.03,
+        "Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate For Digital",
+        "Merchant Name":"Finops Fou Finops Cer",
+        "Merchant Category Name":"Organizations, Membership-Not Elsewhere Classified",
+        "Transaction Date":"04\/06\/2025",
+        "Transaction Amount":2289.64,
+        "Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate For Economic Development",
+        "Merchant Name":"Bray Leino Ltd",
+        "Merchant Category Name":"Professional Services-Not Elsewhere Classified",
+        "Transaction Date":"24\/06\/2025",
+        "Transaction Amount":660.0,
+        "Expense Description":"External conference - fees"
+    },
+    {
+        "Directorate":"Directorate For Economic Development",
+        "Merchant Name":"Bray Leino Ltd",
+        "Merchant Category Name":"Professional Services-Not Elsewhere Classified",
+        "Transaction Date":"18\/06\/2025",
+        "Transaction Amount":660.0,
+        "Expense Description":"External conference - fees"
+    },
+    {
+        "Directorate":"Directorate For Energy & Climate Change",
+        "Merchant Name":"Trello.Com Atlassian",
+        "Merchant Category Name":"Computer Software Stores",
+        "Transaction Date":"23\/06\/2025",
+        "Transaction Amount":7956.03,
+        "Expense Description":"Professional subscription - fees"
+    },
+    {
+        "Directorate":"Directorate For Environment & Forestry",
+        "Merchant Name":"Infogram.Com",
+        "Merchant Category Name":"Computers, Computer Peripheral Equipment, Software",
+        "Transaction Date":"01\/06\/2025",
+        "Transaction Amount":1852.54,
+        "Expense Description":"Professional subscription - fees"
+    },
+    {
+        "Directorate":"Directorate For Equality, Inclusion & Human Rights",
+        "Merchant Name":"Saltire Hospitality",
+        "Merchant Category Name":"Caterers",
+        "Transaction Date":"05\/06\/2025",
+        "Transaction Amount":1062.72,
+        "Expense Description":"External event - catering costs"
+    },
+    {
+        "Directorate":"Directorate For External Affairs",
+        "Merchant Name":"000 Trip.Com",
+        "Merchant Category Name":"Travel Agencies And Tour Operators",
+        "Transaction Date":"27\/06\/2025",
+        "Transaction Amount":622.4,
+        "Expense Description":"Travel costs - flight"
+    },
+    {
+        "Directorate":"Directorate For External Affairs",
+        "Merchant Name":"Booking.Com Hotel",
+        "Merchant Category Name":"Lodging-Hotels,Motels,Resorts-Not Classified",
+        "Transaction Date":"21\/06\/2025",
+        "Transaction Amount":871.52,
+        "Expense Description":"Travel costs - accomodation"
+    },
+    {
+        "Directorate":"Directorate For Financial Management",
+        "Merchant Name":"Https:\/\/Payments.Strat",
+        "Merchant Category Name":"Colleges, Univ, Pro Schools, Junior Colleges",
+        "Transaction Date":"05\/06\/2025",
+        "Transaction Amount":1132.82,
+        "Expense Description":"External event - catering costs"
+    },
+    {
+        "Directorate":"Directorate For Justice",
+        "Merchant Name":"White Rhino Event Mgmt",
+        "Merchant Category Name":"Other Services (Not Elsewhere Classified)",
+        "Transaction Date":"19\/06\/2025",
+        "Transaction Amount":876.0,
+        "Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate For Lifelong Learning & Skills",
+        "Merchant Name":"Sq The Keil Centre",
+        "Merchant Category Name":"Consulting, Management, And Public Relations Svcs",
+        "Transaction Date":"18\/06\/2025",
+        "Transaction Amount":1800.0,
+        "Expense Description":"External support services"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Sumup Inver Lodge Ho",
+        "Merchant Category Name":"Lodging-Hotels,Motels,Resorts-Not Classified",
+        "Transaction Date":"30\/05\/2025",
+        "Transaction Amount":780.0,
+        "Expense Description":"Accomodation - fees"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Isell Ltd",
+        "Merchant Category Name":"Equip, Furniture, Home Furnshngs Strs (Excpt Appl)",
+        "Transaction Date":"26\/06\/2025",
+        "Transaction Amount":879.59,
+        "Expense Description":"Vessel equipment"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"City Of Glasgow Colleg",
+        "Merchant Category Name":"Colleges, Univ, Pro Schools, Junior Colleges",
+        "Transaction Date":"17\/06\/2025",
+        "Transaction Amount":4512.0,
+        "Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Streammarinetraininglt",
+        "Merchant Category Name":"Schools & Educational Svc-Not Elsewhere Classified",
+        "Transaction Date":"24\/06\/2025",
+        "Transaction Amount":814.8,
+        "Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Streammarinetraininglt",
+        "Merchant Category Name":"Schools & Educational Svc-Not Elsewhere Classified",
+        "Transaction Date":"20\/06\/2025",
+        "Transaction Amount":585.6,
+        "Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Streammarinetraininglt",
+        "Merchant Category Name":"Schools & Educational Svc-Not Elsewhere Classified",
+        "Transaction Date":"20\/06\/2025",
+        "Transaction Amount":585.6,
+        "Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"South Tyneside Col",
+        "Merchant Category Name":"Colleges, Univ, Pro Schools, Junior Colleges",
+        "Transaction Date":"17\/06\/2025",
+        "Transaction Amount":540.0,
+        "Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Humberside Offshore Tr",
+        "Merchant Category Name":"Schools, Trade And Vocational",
+        "Transaction Date":"04\/06\/2025",
+        "Transaction Amount":1040.4,
+        "Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Workplacedepot.Co.Uk",
+        "Merchant Category Name":"Industrial Supplies Not Elsewhere Classified",
+        "Transaction Date":"10\/06\/2025",
+        "Transaction Amount":536.96,
+        "Expense Description":"Vessel equipment"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Robush Components Ltd",
+        "Merchant Category Name":"Hardware Stores",
+        "Transaction Date":"04\/06\/2025",
+        "Transaction Amount":765.67,
+        "Expense Description":"Vessel engineering equipment"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Lidl Gb Aberdeen",
+        "Merchant Category Name":"Grocery Stores, Supermarkets",
+        "Transaction Date":"11\/06\/2025",
+        "Transaction Amount":518.62,
+        "Expense Description":"Vessel safety equipment - clothing"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Draeger Safety Uk Ltd",
+        "Merchant Category Name":"Dental\/Lab\/Med\/Ophthalmic Hosp Equip & Supplies",
+        "Transaction Date":"27\/06\/2025",
+        "Transaction Amount":2040.1,
+        "Expense Description":"Vessel engineering equipment"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Sp Gaps Water Treatmen",
+        "Merchant Category Name":"Industrial Supplies Not Elsewhere Classified",
+        "Transaction Date":"26\/06\/2025",
+        "Transaction Amount":501.12,
+        "Expense Description":"Vessel engineering equipment"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Rs Components",
+        "Merchant Category Name":"Electrical Parts And Equipment",
+        "Transaction Date":"07\/06\/2025",
+        "Transaction Amount":631.12,
+        "Expense Description":"Vessel engineering equipment"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Ocean Safety",
+        "Merchant Category Name":"Marinas, Marine Service\/Supplies",
+        "Transaction Date":"27\/06\/2025",
+        "Transaction Amount":1234.57,
+        "Expense Description":"Vessel engineering equipment"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Jbs Group",
+        "Merchant Category Name":"Schools, Trade And Vocational",
+        "Transaction Date":"19\/06\/2025",
+        "Transaction Amount":4261.14,
+        "Expense Description":"Personal protective equipment"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Adexa.Co.Uk",
+        "Merchant Category Name":"Commercial Equipment, Not Elsewhere Classified",
+        "Transaction Date":"17\/06\/2025",
+        "Transaction Amount":776.3,
+        "Expense Description":"Vessel scientific equipment"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Paypal Fow3Aey",
+        "Merchant Category Name":"Professional Services-Not Elsewhere Classified",
+        "Transaction Date":"18\/06\/2025",
+        "Transaction Amount":1211.59,
+        "Expense Description":"Vessel scientific equipment"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Amazon 3V3Eh4N25",
+        "Merchant Category Name":"Miscellaneous General Merchandise",
+        "Transaction Date":"12\/06\/2025",
+        "Transaction Amount":656.91,
+        "Expense Description":"IT hardware - accessories"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Www.Amazon. 2P4K49Hy5",
+        "Merchant Category Name":"Miscellaneous General Merchandise",
+        "Transaction Date":"30\/05\/2025",
+        "Transaction Amount":658.98,
+        "Expense Description":"IT hardware - accessories"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"George Anderson And So",
+        "Merchant Category Name":"Nondurable Goods (Not Elsewhere Classified)",
+        "Transaction Date":"09\/06\/2025",
+        "Transaction Amount":510.82,
+        "Expense Description":"Vessel food stores"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Bartech Marine",
+        "Merchant Category Name":"Marinas, Marine Service\/Supplies",
+        "Transaction Date":"19\/06\/2025",
+        "Transaction Amount":934.4,
+        "Expense Description":"Vessel safety equipment"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Sp Foxs Chandlery",
+        "Merchant Category Name":"Automotive Parts, Accessories Stores",
+        "Transaction Date":"25\/06\/2025",
+        "Transaction Amount":809.85,
+        "Expense Description":"Safety clothing - coastal operation"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Dole Edinburgh",
+        "Merchant Category Name":"Grocery Stores, Supermarkets",
+        "Transaction Date":"03\/06\/2025",
+        "Transaction Amount":763.49,
+        "Expense Description":"Vessel food stores"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Steveweld Ltd",
+        "Merchant Category Name":"Architectural, Engineering, And Surveying Services",
+        "Transaction Date":"12\/06\/2025",
+        "Transaction Amount":702.85,
+        "Expense Description":"Personal protective equipment"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Hbc Radiomatic (Uk) Lt",
+        "Merchant Category Name":"Electrical Parts And Equipment",
+        "Transaction Date":"18\/06\/2025",
+        "Transaction Amount":2380.0,
+        "Expense Description":"Vessel safety equipment"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Rs Components",
+        "Merchant Category Name":"Electrical Parts And Equipment",
+        "Transaction Date":"20\/06\/2025",
+        "Transaction Amount":661.13,
+        "Expense Description":"Vessel engineering equipment"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Www.Criticalpowersuppl",
+        "Merchant Category Name":"Electrical Parts And Equipment",
+        "Transaction Date":"20\/06\/2025",
+        "Transaction Amount":982.52,
+        "Expense Description":"Vessel engineering equipment"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Www.Gsproducts.Co.Uk",
+        "Merchant Category Name":"Miscellaneous General Merchandise",
+        "Transaction Date":"16\/06\/2025",
+        "Transaction Amount":760.79,
+        "Expense Description":"Vessel engineering equipment"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Parts Town Uk Limited",
+        "Merchant Category Name":"Commercial Equipment, Not Elsewhere Classified",
+        "Transaction Date":"09\/06\/2025",
+        "Transaction Amount":883.32,
+        "Expense Description":"Vessel engineering equipment"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Airbnb Hmra5Jhnhr",
+        "Merchant Category Name":"Travel Agencies And Tour Operators",
+        "Transaction Date":"21\/06\/2025",
+        "Transaction Amount":1804.25,
+        "Expense Description":"Accomodation - fees"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Airbnb Hmhdtc3M53",
+        "Merchant Category Name":"Travel Agencies And Tour Operators",
+        "Transaction Date":"17\/06\/2025",
+        "Transaction Amount":1446.26,
+        "Expense Description":"Accomodation - fees"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Airbnb Hmkm3Nm33F",
+        "Merchant Category Name":"Travel Agencies And Tour Operators",
+        "Transaction Date":"17\/06\/2025",
+        "Transaction Amount":2982.0,
+        "Expense Description":"Accomodation - fees"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Airbnb Hm2Msfahq5",
+        "Merchant Category Name":"Travel Agencies And Tour Operators",
+        "Transaction Date":"17\/06\/2025",
+        "Transaction Amount":895.0,
+        "Expense Description":"Accomodation - fees"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Airbnb Hmhdtc3M53",
+        "Merchant Category Name":"Travel Agencies And Tour Operators",
+        "Transaction Date":"13\/06\/2025",
+        "Transaction Amount":1446.31,
+        "Expense Description":"Accomodation - fees"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Ferry Marine Ltd",
+        "Merchant Category Name":"Marinas, Marine Service\/Supplies",
+        "Transaction Date":"13\/06\/2025",
+        "Transaction Amount":1454.77,
+        "Expense Description":"External support services"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Laptops Direct",
+        "Merchant Category Name":"Electronic Sales",
+        "Transaction Date":"19\/06\/2025",
+        "Transaction Amount":778.9,
+        "Expense Description":"IT hardware - accessories"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Www.Targetcomponents.C",
+        "Merchant Category Name":"Computers, Computer Peripheral Equipment, Software",
+        "Transaction Date":"19\/06\/2025",
+        "Transaction Amount":833.24,
+        "Expense Description":"IT hardware - accessories"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Boat Electrics & Elect",
+        "Merchant Category Name":"Electrical Contractors",
+        "Transaction Date":"16\/06\/2025",
+        "Transaction Amount":912.12,
+        "Expense Description":"Vessel equipment"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Sumup Aberdeen Drysu",
+        "Merchant Category Name":"General Contractors\/Residential Buildings",
+        "Transaction Date":"27\/06\/2025",
+        "Transaction Amount":500.0,
+        "Expense Description":"Vessel safety equipment - clothing"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Glasgow Maritime Acade",
+        "Merchant Category Name":"Schools & Educational Svc-Not Elsewhere Classified",
+        "Transaction Date":"18\/06\/2025",
+        "Transaction Amount":1675.0,
+        "Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Hardies Llp",
+        "Merchant Category Name":"Architectural, Engineering, And Surveying Services",
+        "Transaction Date":"27\/06\/2025",
+        "Transaction Amount":996.0,
+        "Expense Description":"Building - payment charge"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Romil Ltd",
+        "Merchant Category Name":"Nondurable Goods (Not Elsewhere Classified)",
+        "Transaction Date":"12\/06\/2025",
+        "Transaction Amount":843.48,
+        "Expense Description":"Laboratory Research Testing"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Ocean Scientific Intl",
+        "Merchant Category Name":"Industrial Supplies Not Elsewhere Classified",
+        "Transaction Date":"10\/06\/2025",
+        "Transaction Amount":1326.0,
+        "Expense Description":"Laboratory research testing"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Rs Aqua",
+        "Merchant Category Name":"Miscellaneous General Merchandise",
+        "Transaction Date":"02\/06\/2025",
+        "Transaction Amount":2460.0,
+        "Expense Description":"Vessel engineering equipment"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Trojan Crates Limited",
+        "Merchant Category Name":"Commercial Equipment, Not Elsewhere Classified",
+        "Transaction Date":"30\/05\/2025",
+        "Transaction Amount":716.4,
+        "Expense Description":"Vessel engineering equipment"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Sq Mkith Rentals Ltd",
+        "Merchant Category Name":"Travel Agencies And Tour Operators",
+        "Transaction Date":"30\/05\/2025",
+        "Transaction Amount":520.0,
+        "Expense Description":"Accomodation - fees"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Bkg Booking.Com Hotel",
+        "Merchant Category Name":"Travel Agencies And Tour Operators",
+        "Transaction Date":"31\/05\/2025",
+        "Transaction Amount":725.0,
+        "Expense Description":"Accomodation - fees"
+    },
+    {
+        "Directorate":"Directorate For Marine Scotland",
+        "Merchant Name":"Land Rover Experience",
+        "Merchant Category Name":"Computer Software Stores",
+        "Transaction Date":"13\/06\/2025",
+        "Transaction Amount":1668.0,
+        "Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Directorate For People",
+        "Merchant Name":"Posturite Ltd",
+        "Merchant Category Name":"Miscellaneous House Furnishing Specialty Shops",
+        "Transaction Date":"10\/06\/2025",
+        "Transaction Amount":556.32,
+        "Expense Description":"Health & safety equipment"
+    },
+    {
+        "Directorate":"Directorate For Social Security",
+        "Merchant Name":"Eb Sdingov 2025",
+        "Merchant Category Name":"Business Services-Not Elsewhere Classified",
+        "Transaction Date":"12\/06\/2025",
+        "Transaction Amount":810.0,
+        "Expense Description":"External conference - fees"
+    },
+    {
+        "Directorate":"Directorate For Social Security",
+        "Merchant Name":"Cc-Highstreetvouchers",
+        "Merchant Category Name":"Poi Funding Transactions",
+        "Transaction Date":"06\/06\/2025",
+        "Transaction Amount":970.0,
+        "Expense Description":"External event - material"
+    },
+    {
+        "Directorate":"Scottish Procurement & Property Directorate",
+        "Merchant Name":"Payment To Cipr",
+        "Merchant Category Name":"Organizations, Membership-Not Elsewhere Classified",
+        "Transaction Date":"30\/05\/2025",
+        "Transaction Amount":606.0,
+        "Expense Description":"External training course - fees"
+    },
+    {
+        "Directorate":"Scottish Procurement & Property Directorate",
+        "Merchant Name":"Payment To Cipr",
+        "Merchant Category Name":"Organizations, Membership-Not Elsewhere Classified",
+        "Transaction Date":"30\/05\/2025",
+        "Transaction Amount":606.0,
+        "Expense Description":"External training course - fees"
+    }
+]
