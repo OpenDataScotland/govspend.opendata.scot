@@ -40,14 +40,14 @@ The site is built with [Eleventy](https://www.11ty.dev/) and deployed to GitHub 
 
 Each monthly report is stored as `_data/spendsOver500/YYYY-MM.json`. Records follow this schema:
 
-| Field | Description |
-|---|---|
-| `Directorate` | Scottish Government directorate or department |
-| `Merchant Name` | Vendor or supplier name |
-| `Merchant Category Name` | Payment category |
-| `Transaction Date` | Date of transaction (DD/MM/YYYY) |
-| `Transaction Amount` | Value in GBP (numeric) |
-| `Expense Description` | Description of the purchase |
+| Field                    | Description                                   |
+| ------------------------ | --------------------------------------------- |
+| `Directorate`            | Scottish Government directorate or department |
+| `Merchant Name`          | Vendor or supplier name                       |
+| `Merchant Category Name` | Payment category                              |
+| `Transaction Date`       | Date of transaction (DD/MM/YYYY)              |
+| `Transaction Amount`     | Value in GBP (numeric)                        |
+| `Expense Description`    | Description of the purchase                   |
 
 Data covers May 2016 onwards and includes only transactions over £500.
 
@@ -74,19 +74,10 @@ To only download months that are not already present locally (faster for increme
 python scrape_data.py --skip-existing
 ```
 
-### Build the site
-
-```bash
-npm install
-npm run build
-```
-
-The built site is output to `_site/`.
-
 ### Run locally
 
 ```bash
-npm start
+npm run start
 ```
 
 This starts Eleventy with live reload and the Parcel asset bundler in watch mode.
@@ -104,7 +95,3 @@ The workflow can also be triggered manually from the Actions tab in GitHub using
 ## Deployment
 
 The site is deployed automatically to GitHub Pages on every push to `main` (via `build.yml`), and also as part of the monthly data update workflow. GitHub Pages should be configured to serve from the `gh-pages` branch.
-
-## License
-
-MIT
