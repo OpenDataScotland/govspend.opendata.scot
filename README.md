@@ -64,7 +64,7 @@ Data covers May 2016 onwards and includes only transactions over £500.
 To download all monthly reports from gov.scot:
 
 ```bash
-pip install requests beautifulsoup4 pandas lxml
+pip install -r requirements.txt
 python scrape_data.py
 ```
 
