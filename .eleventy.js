@@ -9,10 +9,15 @@ module.exports = function (eleventyConfig) {
     var spendCollection = [];
 
     for (const [key, value] of Object.entries(allItems)) {
+
+      // Format to "Month Year" format for display, e.g. "January 2024"
+      var linkSlug = new Date(`${key}-01`).toLocaleString("en-GB", { month: "long", year: "numeric" }).toLowerCase().replace(" ", "-");
+
       var monthSpendData = {
         "title": key,
         "displayTitle": (new Date(`${key}-01`)).toLocaleString("en-GB", { month: "long", year: "numeric" }),
-        "data": value
+        "data": value,
+        "originalDataLink": `https://www.gov.scot/publications/spend-over-gbp500-${linkSlug}`
       }
 
       spendCollection.push(monthSpendData);
