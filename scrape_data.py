@@ -33,6 +33,8 @@ COLUMN_HEADERS_ALIASES = {
     "Description To Be Published": "Expense Description",
     "Final Description": "Expense Description",
     "Final Expense Description": "Expense Description",
+    "Agreed Description": "Expense Description",
+    "Transaction Description": "Expense Description",
 }
 
 def clean_currency(currency_value, temp):
@@ -85,7 +87,7 @@ def clean_report(report_dataframe, temp):
             loc=2, column="Merchant Category Name", value="Not specified in data source"
         )
 
-    # December 2019 doesn't have Expense Description
+    # December 2018 doesn't have Expense Description
     if "Expense Description" not in report_dataframe.columns:
         report_dataframe.insert(
             loc=5, column="Expense Description", value="Not specified in data source"
@@ -118,6 +120,8 @@ def extract_report(tag_href, tag_text, skip_existing=False):
 
     report_url = urllib.parse.urljoin(MONTHLY_SPEND_URL, report_url)
     report_html = requests.get(report_url, timeout=TIMEOUT)
+
+    print(report_html.status_code)
 
     report_soup = BeautifulSoup(report_html.content, "html.parser")
 
