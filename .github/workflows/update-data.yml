@@ -1,0 +1,64 @@
+name: Update Spend Data
+
+on:
+  schedule:
+    # Run at 09:00 UTC on the 1st of every month
+    - cron: '0 9 1 * *'
+  workflow_dispatch:
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install Python dependencies
+        run: pip install requests beautifulsoup4 pandas lxml
+
+      - name: Scrape latest spend data
+        run: python scrape_data.py --skip-existing
+
+      - name: Check for new data
+        id: check-changes
+        run: |
+          git diff --quiet _data/spendsOver500/ headers.csv \
+            || echo "changes=true" >> "$GITHUB_OUTPUT"
+
+      - name: Commit updated data
+        if: steps.check-changes.outputs.changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _data/spendsOver500/ headers.csv
+          git commit -m "chore: update spend data $(date +'%Y-%m')"
+          git push
+
+      - name: Set up Node.js
+        if: steps.check-changes.outputs.changes == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+
+      - name: Install Node dependencies & build
+        if: steps.check-changes.outputs.changes == 'true'
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy to GitHub Pages
+        if: steps.check-changes.outputs.changes == 'true'
+        uses: peaceiris/actions-gh-pages@v3.8.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _site
+          publish_branch: gh-pages
