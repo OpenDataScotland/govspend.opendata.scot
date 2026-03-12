@@ -2,6 +2,7 @@
 
 import argparse
 import concurrent.futures
+import io
 import os
 import urllib.parse
 from datetime import datetime
@@ -122,7 +123,7 @@ def extract_report(tag_href, tag_text, skip_existing=False):
 
     report_table = report_soup.find("table")
 
-    report_dataframe = pd.read_html(str(report_table), header=0, encoding="utf8")[0]
+    report_dataframe = pd.read_html(io.StringIO(str(report_table)), header=0, encoding="utf8")[0]
 
     report_dataframe = clean_report(report_dataframe, report_title)
 
