@@ -21,6 +21,29 @@ module.exports = function (eleventyConfig) {
     return spendCollection;
   });
 
+  eleventyConfig.addCollection("spendsOver500_yearDescMonthAsc", (collection) => {
+    const allItems = collection.getAll()[0].data.spendsOver500;
+
+    var spendCollection = [];
+
+    for (const [key, value] of Object.entries(allItems)) {
+      spendCollection.push({
+        title: key,
+        displayTitle: (new Date(`${key}-01`)).toLocaleString("en-GB", { month: "long", year: "numeric" }),
+        data: value
+      });
+    }
+
+    return _.orderBy(
+      spendCollection,
+      [
+        (item) => Number(item.title.substring(0, 4)),
+        (item) => Number(item.title.substring(5, 7))
+      ],
+      ["desc", "asc"]
+    );
+  });
+
   eleventyConfig.addCollection("spendsOver500_monthly", (collection) => {
     return _(collection.getAll()[0].data.spendsOver500).transform(function (result, value, key) {
       result.push({

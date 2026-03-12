@@ -15,13 +15,43 @@ description: "An open data source of Scottish Government spending data"
 
 <h2>Spends over £500 per month</h2>
 
-<ul>
-  {% for spendData in collections.spendsOver500 %}
+<div class="accordion" id="spend-links-by-year">
+  {% set currentYear = "" %}
+  {% for spendData in collections.spendsOver500_yearDescMonthAsc %}
+    {% set spendYear = spendData.title.substring(0, 4) %}
+
+    {% if spendYear != currentYear %}
+      {% if not loop.first %}
+            </ul>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+
+      {% set currentYear = spendYear %}
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="heading-{{spendYear}}">
+          <button class="accordion-button{% if not loop.first %} collapsed{% endif %}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{spendYear}}" aria-expanded="{% if loop.first %}true{% else %}false{% endif %}" aria-controls="collapse-{{spendYear}}">
+            {{spendYear}}
+          </button>
+        </h3>
+        <div id="collapse-{{spendYear}}" class="accordion-collapse collapse{% if loop.first %} show{% endif %}" aria-labelledby="heading-{{spendYear}}" data-bs-parent="#spend-links-by-year">
+          <div class="accordion-body py-2">
+            <ul class="mb-0">
+    {% endif %}
+
     <li>
       <a href="spends/{{spendData.title}}">{{spendData.displayTitle}} - {{spendData.data.length}} entries</a>
     </li>
+
+    {% if loop.last %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    {% endif %}
   {% endfor %}
-</ul>
+</div>
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
