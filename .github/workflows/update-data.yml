@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -67,8 +67,12 @@ jobs:
 
       - name: Deploy to GitHub Pages
         if: steps.check-changes.outputs.changes == 'true'
-        uses: peaceiris/actions-gh-pages@a1b2c3d4e5f67890123456789abcdef012345678
+        uses: peaceiris/actions-gh-pages@v3.8.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          #publish_dir is the folder on the docker instance which eleventy builds the pages to.
+          #it is not the docs folder in the repository
           publish_dir: _site
+          #publish_branch is the branch in the repository.
+          #this is where you need to point GitHub pages
           publish_branch: gh-pages
