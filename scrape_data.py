@@ -166,7 +166,7 @@ def main():
     report_url_tags = index_soup.find_all(
         lambda tag: tag.name == "a"
         and tag.text != "Spend over £500: archive (pre - May 2016)"
-        and tag.text.startswith("Spend over £500")
+        and tag.text.lower().startswith("spend over £500")
     )
 
     print(f"Got {len(report_url_tags)} tags\n")
