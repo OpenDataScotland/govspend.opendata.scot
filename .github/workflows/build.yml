@@ -6,6 +6,7 @@ on:
     paths-ignore:
       - '**.py'
       - 'requirements.txt'
+  workflow_dispatch:
 
 jobs:
   build:
