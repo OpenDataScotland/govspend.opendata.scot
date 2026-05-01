@@ -4,28 +4,28 @@
         
             <url>
                 <loc>https://govspend.opendata.scot/acknowledgements/</loc>
-                <lastmod>2026-05-01T18:43:22.771Z</lastmod>
+                <lastmod>2026-05-01T19:23:00.429Z</lastmod>
             </url>
             
         
         
             <url>
                 <loc>https://govspend.opendata.scot/contact/</loc>
-                <lastmod>2026-05-01T18:43:22.771Z</lastmod>
+                <lastmod>2026-05-01T19:23:00.429Z</lastmod>
             </url>
             
         
         
             <url>
                 <loc>https://govspend.opendata.scot/</loc>
-                <lastmod>2026-05-01T18:43:22.771Z</lastmod>
+                <lastmod>2026-05-01T19:23:00.429Z</lastmod>
             </url>
             
         
         
             <url>
                 <loc>https://govspend.opendata.scot/sitemap.xml</loc>
-                <lastmod>2026-05-01T18:43:22.771Z</lastmod>
+                <lastmod>2026-05-01T19:23:00.430Z</lastmod>
             </url>
             
         
@@ -844,6 +844,20 @@
             </url>
             <url>
                 <loc>https://govspend.opendata.scot/spends/2025-12.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2026-01/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2026-01.json</loc>
+            </url>
+        
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2026-02/</loc>
+            </url>
+            <url>
+                <loc>https://govspend.opendata.scot/spends/2026-02.json</loc>
             </url>
         
     </urlset>
